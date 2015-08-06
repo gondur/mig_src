@@ -1,0 +1,37 @@
+.EXTENSIONS: 
+.EXTENSIONS: .ibm .sbm .lbm .pcx .mif
+.OPTIMIZE
+
+#
+#.lbm are normal lbm files
+#.ibm are invisible encoded files
+#.sbm are invisible encoded, with no palette files
+#
+
+SRC	=	S:\PROJECTS\mig\ARTSRC\imagemap\
+DEST	= 	..\GAME\ARTWORK\SIDEART\
+
+.pcx:	$(SRC)
+.lbm:	$(DEST)
+.ibm:	$(DEST)
+.sbm:	$(DEST)
+
+
+SIDEART	=	f86sa00.sbm&
+		f86sa01.sbm&	
+
+
+all:	$(SIDEART)
+
+
+.pcx.lbm:
+	tt -lp$(SRC)$^&.pcx -wl$(DEST)$^&.lbm
+
+.pcx.ibm:
+	tt -lp$(SRC)$^&.pcx -wi$(DEST)$^&.ibm
+
+.pcx.sbm:
+	tt -lp$(SRC)$^&.pcx -wI$(DEST)$^&.sbm
+
+
+

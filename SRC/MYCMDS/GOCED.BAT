@@ -1,0 +1,2 @@
+call mkeced.bat
+ceditor

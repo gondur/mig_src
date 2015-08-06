@@ -1,0 +1,73 @@
+// REdit.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (REdit.tlb) that will become a resource in
+// REdit.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(499E2BE3-AC32-11D1-A1F0-444553540000), version(1.0),
+  helpfile("REdit.hlp"),
+  helpstring("REdit ActiveX Control module"),
+  control ]
+library REDITLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CREditCtrl
+
+	[ uuid(499E2BE4-AC32-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for REdit Control"), hidden ]
+	dispinterface _DREdit
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CREditCtrl)
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(DISPID_CAPTION), bindable, requestedit] BSTR Caption;
+			[id(1)] long FontNum;
+			[id(DISPID_ENABLED), bindable, requestedit] boolean Enabled;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CREditCtrl)
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CREditCtrl
+
+	[ uuid(499E2BE5-AC32-11D1-A1F0-444553540000),
+	  helpstring("Event interface for REdit Control") ]
+	dispinterface _DREditEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CREditCtrl)
+			[id(2)] void TextChanged(BSTR text);
+			[id(1)] void ReturnPressed(BSTR text);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CREditCtrl
+
+	[ uuid(499E2BE6-AC32-11D1-A1F0-444553540000), licensed,
+	  helpstring("REdit Control"), control ]
+	coclass REdit
+	{
+		[default] dispinterface _DREdit;
+		[default, source] dispinterface _DREditEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

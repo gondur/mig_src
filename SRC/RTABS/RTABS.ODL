@@ -1,0 +1,77 @@
+// RTabs.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RTabs.tlb) that will become a resource in
+// RTabs.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(4A1E1983-8B31-11D1-A1F0-444553540000), version(1.0),
+  helpfile("RTabs.hlp"),
+  helpstring("RTabs ActiveX Control module"),
+  control ]
+library RTABSLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRTabsCtrl
+
+	[ uuid(4A1E1984-8B31-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RTabs Control"), hidden ]
+	dispinterface _DRTabs
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRTabsCtrl)
+			[id(1)] long FirstTab;
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(2)] boolean HorzAlign;
+			[id(3)] long FontNum;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRTabsCtrl)
+			[id(4)] void AddTab(BSTR text, long pWnd);
+			[id(5)] void Clear();
+			[id(6)] long CalculateHeight(long totalWidth);
+			[id(7)] long CalcWidestWord();
+			[id(8)] long SelectTab(long tab);
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRTabsCtrl
+
+	[ uuid(4A1E1985-8B31-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RTabs Control") ]
+	dispinterface _DRTabsEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRTabsCtrl)
+			[id(1)] void SelectTab(long tab);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRTabsCtrl
+
+	[ uuid(4A1E1986-8B31-11D1-A1F0-444553540000), licensed,
+	  helpstring("RTabs Control"), control ]
+	coclass RTabs
+	{
+		[default] dispinterface _DRTabs;
+		[default, source] dispinterface _DRTabsEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

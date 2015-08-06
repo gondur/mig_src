@@ -1,0 +1,98 @@
+ARTISTS.BAT     copy ..\game\mig.exe s:\transfer\robert\thegame\
+ARTVER.BAT      copy s:\transfer\robert\mig.exe ..\game\
+BFIELDS.BAT     \mig\debug\exe\makebf.exe bfields\initial.res bfields\battle.src ..\game\bfields
+BUG.BAT s:\watdeb\wd /i=%user%.dbg wmig.exe %&
+BUG.BAT s:\watcom\binnt\wd /i=%user%.db9 wmig.exe %&
+CHANGES.BAT     set /r s:\projects\mig\admin\version\%user%.ver
+CHANGES.BAT     del mfc\migold.rc)
+CHANGES.BAT     except (*.sym *.map *.exe mig.* ) dir /sb /a-h /a-d /[d%DateForUp@%TimeForUp] >m:poo
+CHANGES.BAT     if not %@filedate[m:poo]==%@filedate[s:\transfer\updates\mig\%user.zip] mv s:\transfer\updates\mig\%user.zip s:\transfer\updates\mig\lastver\%user.zip
+CHANGES.BAT     if exist s:\transfer\updates\mig\%user.zip del s:\transfer\updates\mig\%user.zip
+CHANGES.BAT     pkzip -exrP s:\transfer\updates\mig\%user @m:poo
+CHANGES.BAT     dir /sba-d /[d%DateForUp@%TimeForUp] >s:\transfer\updates\mig\%user.gam
+CHANGES.BAT     pmail -f m:poo -t rattus -s "Update from %user for Migalley"
+CLIST.BAT       set /r s:\projects\mig\admin\version\%user%.ver
+CLIST.BAT       except (obj\*.* tmp\*.* mig.* install.* demo.*) dir /sba-d /a-h %& /[d%DateForUp@%TimeForUp] >m:poo
+CMK.BAT tt -lgs:\projects\mig\landscap\colmap01 -pw2048h2048 -wh..\game\imagemap\clrs00
+CMK.BAT tt -lgs:\projects\mig\landscap\altmap01 -pw256h256 -wh..\game\imagemap\land00
+FOAD.BAT        echo y|c:\windows\net use u: \\migalley\mig
+FOO.BAT imgres3 -m -d master.fil -f imagemap.grp -s s:\projects\mig\artsrc
+GETBAT.BAT      for %i in (INTRBFLD MIGS NODES RAILAREA ROADAREA SO_BFLDS TB_BFLDS) echo %i>>bfields\workers\dirlist.txt
+GETBAT.BAT      for %i in (@workers\dirlist.txt) (echo %i^for %j in (%i\*.*) if %@fileage[\\%1\share_c\mig\src\bfields\%j] GT %@fileage[%j] echo %j>>difflist.err)
+GETBAT.BAT      copy /q \\%1\share_c\mig\src\bfields\%3* bfields\%3
+LANDUP.BAT      copy  \\jimsbigone\landscape\cd_10m.l2\cd_data\currland\*.* \mig\game\landscap\*.*
+LANDUP.BAT      copy  \\jimsbigone\landscape\cd_10m.l2\cd_data\prevland\*.* \mig\game\landscap\*.*
+LANDUP.BAT      copy s:\projects\mig\game\landscap\*.* \mig\game\landscap\*.*
+LANDUP.BAT      if exist \\%2\share_c\mig\game\landscap\*.dat copy \\%2\share_c\mig\game\landscap\*.* \mig\game\landscap\*.*
+LANDUP.BAT      if exist \\%2\c\mig\game\landscap\*.dat copy \\%2\c\mig\game\landscap\*.* \mig\game\landscap\*.*
+LANDUP.BAT      if exist \\%2\share_d\mig\game\landscap\*.dat copy \\%2\share_d\mig\game\landscap\*.* \mig\game\landscap\*.*
+LANG.BAT        echo y|c:\windows\net use u: \\migalley\mig
+MAKEALL.BAT     echo y|c:\windows\net use u: \\migalley\mig
+MAKEALL.BAT     rem if exist e:\mig\game\landscap\dirtable.bin copy ..\game\landscap\*.bin /c e:\mig\game\landscap\
+MAKEALL.BAT     if not exist \mig\backup\history.lst md \mig\backup
+MAKEALL.BAT     if exist \mig\backup\history.lst del /y \mig\backup\*.* 
+MAKEALL.BAT     echo.>\mig\backup\history.lst
+MAKECHAT.BAT    if not exist %projpath\game\player\*.wav set projpath=u:\mig
+MAKECHAT.BAT    if not exist %projpath\game\player\*.wav set projpath=\\migalley\mig
+MAKESHPS.BAT    copy /qu s:\projects\mig\shapes\*.* ..\shapes
+MAKESHPS.BAT            copy /qu s:\projects\mig\shapes\shpsrc\*.asc;*.grp ..\shapes\shpsrc
+MAKESHPS.BAT            copy /qu s:\projects\mig\shapes\shpdat\*.dat ..\shapes\shpdat
+MAKESHPS.BAT            copy /qu s:\projects\mig\shapes\shpani\*.vue ..\shapes\shpani
+MAKESHPS.BAT    imgres3 -m -d master.fil -f imagemap.grp -s s:\projects\mig\artsrc
+MAKEXMI2.BAT    copy /qu s:\projects\mig\music\musichi\field1.wav ..\game\samples
+MAKEXMI2.BAT    copy /qu s:\projects\mig\music\musichi\field2.wav ..\game\samples
+MAKEXMI2.BAT    copy s:\projects\mig\music\fieldsnr.sf2 ..\game\music
+MAKEXMI2.BAT    copy s:\projects\mig\music\wavetabh.txt ..\game\music
+MAKEXMI2.BAT    rem copy s:\projects\mig\music\wavetabl.txt .
+MAKEXMI2.BAT    copy /qu s:\projects\mig\music\musichi\*.xmi ..\game\music
+MAKEXMI2.BAT    copy /qu s:\projects\mig\music\musicmed\*.xmi ..\game\musicmed
+MAKEXMI2.BAT    copy /qu s:\projects\mig\music\musiclo\*.xmi ..\game\musiclow
+MAKEXMI2.BAT    copy /qu s:\projects\mig\music\musiclo\*.wav ..\game\musiclow
+MEDITOR.BAT     echo 14         \mig\src>>roots.dir
+MEDITOR.BAT     if %2==14               echo %2         \mig\src >>roots.dir
+MERGETXT.BAT    copy %Lang%\mig.rc ..\%Lang%mig.rc
+MERGETXT.BAT    if not exist %projpath\game\player\*.wav set projpath=u:\mig
+MERGETXT.BAT    if not exist %projpath\game\player\*.wav set projpath=\\migalley\migalley\mig
+MERGETXT.BAT    echo %Lang%\mig.rc                      >>%lang%\mergelst.lst
+MKCNTRS.BAT     cd S:\projects\mig\artsrc\
+MLM.BAT echo %SP                                                        \mig\debug\obj\pclust2.x8 >> %outfile
+MLM.BAT echo %SP echo -es -r \mig\debug\obj\pclust2.x8 %=> domap.res >> %outfile
+MLM.BAT :echo %SP                                                       \mig\debug\obj\pclust2.x8 >> %outfile
+MLM.BAT :echo %SP echo -es -r \mig\debug\obj\pclust2.x8 %=> domap.res >> %outfile
+MLM.BAT set srcpath=s:\projects\mig\artsrc\
+MLM.BAT set srcpath=s:\projects\mig\artsrc\
+MLM.BAT set srcpath=s:\projects\mig\artsrc\
+NETART.BAT      copy /qu %src\mig.bmp           %trg 
+NETART.BAT      copy /qu %src\migcap.bmp        %trg 
+NEWMAPS.BAT     imgres3 -m -d master.fil -f imagemap.grp -s s:\projects\mig\artsrc
+PREPCD.BAT      call setproj mig
+PREPCD.BAT      echo y|c:\windows\net use u: \\migalley\mig
+PREPCD.BAT      copy /q u:\readmes\readme.txt c:\mig\cd
+PREPCD.BAT      copy /q u:\readmes\readme.txt d:\mig\game
+PREPCD.BAT      copy /q c:\mig\src\h\keymaps.h c:\mig\game\h\
+PREPCD.BAT      copy /qu c:\mig\controls\release\controls.exe c:\mig\game 
+PREPCD.BAT      copy /qu c:\mig\controls\hlp\controls.cnt c:\mig\game 
+PREPCD.BAT      copy /qu c:\mig\controls\hlp\controls.hlp c:\mig\game 
+PREPCD.BAT      rem copy c:\mig\release\exe\mig.exe d:\mig\game
+PROF.BAT        set EXENAME=mig
+RADBACK.BAT     copy s:\projects\mig\sounds\radio\rchatter.grp ..\radiobak
+RADBACK.BAT     copy s:\projects\mig\sounds\radio\rchatter.res ..\radiobak
+RADBACK.BAT     copy s:\projects\mig\sounds\radio\places.res ..\radiobak
+UIMAP.BAT       start \\migalley\mig\vjhftu >Nul
+UIMAP.BAT       del \\migalley\mig\game\frontmap\*.bmp
+UIMAP.BAT       del \\migalley\mig\game\frbigmap\*.bmp
+UIMAP.BAT       copy ..\game\frontmap\*.* \\migalley\mig\game\frontmap\*.*
+UIMAP.BAT       copy ..\game\frbigmap\*.* \\migalley\mig\game\frbigmap\*.*
+UIMAP.BAT       copy frontmap.fil \\migalley\mig\game\frontmap\
+UIMAP.BAT       copy h\frontmap.h \\migalley\mig\game\frontmap\
+UIMAP.BAT       copy %@search[%0] \\migalley\mig\game\frontmap\
+UIMAP.BAT       copy \\migalley\mig\game\frontmap\*.dir ..\game\frontmap\*.*
+UIMAP.BAT       copy \\migalley\mig\game\frontmap\*.bmp ..\game\frontmap\*.*
+UIMAP.BAT       copy \\migalley\mig\game\frbigmap\*.dir ..\game\frbigmap\*.*
+UIMAP.BAT       copy \\migalley\mig\game\frbigmap\*.bmp ..\game\frbigmap\*.*
+UIMAP.BAT       copy \\migalley\mig\game\frontmap\frontmap.fil* . 
+UIMAP.BAT       copy \\migalley\mig\game\frontmap\frontmap.h* h
+UPLODMAP.BAT    copy ..\game\frontmap\*.bmp s:\projects\mig\game\frontmap\
+UPLODMAP.BAT    copy ..\game\frbigmap\*.bmp s:\projects\mig\game\frbigmap\
+WOTEDIT.BAT     set /r s:\projects\mig\admin\%user%.ver
+WOTEDIT.BAT     except (obj\*.* tmp\*.* *.log *.cfg *.sym *.map mig.*) dir /sba-d /a-h /[d%DateForUp@%TimeForUp]

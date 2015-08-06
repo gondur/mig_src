@@ -1,0 +1,311 @@
+##------------------------------------------------------------------------------
+##Filename       makecntr.mke
+##System         
+##Author         Paul.   
+##Date           Mon 27 Nov 1995
+##Description    Landscape data generation makefile
+##------------------------------------------------------------------------------
+
+### PATHS
+
+SRC	=	S:LANDSCAP
+SRCL	=	S:IMAGEMAP
+SRCH	=	s:\projects\MIG\ARTSRC\IMAGE16
+SRCH2 = s:\projects\MIG\ARTSRC\TRANS16
+DEST_MAP= 	..\GAME\LANDMAPS
+DEST_DAT= 	..\GAME\LANDMAPS
+DEST_MAP2= 	..\GAME\LANDMAP2
+DEST_DAT2= 	..\GAME\LANDMAP2
+LDATAPTH=	..\GAME\LANDSCAP
+TMPPTH =	..\DEBUG\OBJ
+SRCLND =	s:\projects\mig\game\landscap
+DSTLND =	..\GAME\LANDSCAP
+
+### UTILITIES
+
+MAPMKE	=	TT2
+INDEXMKE = 	LANDTBL
+
+### TT COMMAND LINE OPTIONS
+
+TT_MAP		=	-pw128h128
+TT_TL		=	-pw128h128
+TT_TR		=	-px128w128h128
+TT_BL		=	-py128w128h128
+TT_BR		=	-px128y128w128h128
+
+TT_TL64		=	-pw64h64
+TT_TR64		=	-px64w64h64
+TT_BL64		=	-py64w64h64
+TT_BR64		=	-px64y64w64h64
+
+### PALETTE NAMES
+
+PAL_DAY1	=	$(SRC)\daypal.pal
+PAL_DAWN1	=	$(SRC)\dawnpal.pal
+PAL_DUSK1	=	$(SRC)\duskpal.pal
+PAL_NITE1	=	$(SRC)\nitepal.pal
+
+PAL_DAY2	=	$(SRC)\land.pal
+PAL_DAWN2	=	$(SRC)\land.pal
+PAL_DUSK2	=	$(SRC)\land.pal
+PAL_NITE2	=	$(SRC)\land.pal
+
+PAL_DAY3 	=	$(SRC)\daypal.pal
+PAL_DAWN3	=	$(SRC)\dawnpal.pal
+PAL_DUSK3	=	$(SRC)\duskpal.pal
+PAL_NITE3	=	$(SRC)\nitepal.pal
+
+PAL_DAY4	=	$(SRC)\daypal.pal
+PAL_DAWN4	=	$(SRC)\dawnpal.pal
+PAL_DUSK4	=	$(SRC)\duskpal.pal
+PAL_NITE4	=	$(SRC)\nitepal.pal
+
+PAL_DAY5	=	$(SRC)\daypal.pal
+PAL_DAWN5	=	$(SRC)\dawnpal.pal
+PAL_DUSK5	=	$(SRC)\duskpal.pal
+PAL_NITE5	=	$(SRC)\nitepal.pal
+
+PAL_DAY6	=	$(SRC)\daypal.pal
+PAL_DAWN6	=	$(SRC)\dawnpal.pal
+PAL_DUSK6	=	$(SRC)\duskpal.pal
+PAL_NITE6	=	$(SRC)\nitepal.pal
+
+PAL_DAY7	=	$(SRC)\daypal.pal
+PAL_DAWN7	=	$(SRC)\dawnpal.pal
+PAL_DUSK7	=	$(SRC)\duskpal.pal
+PAL_NITE7	=	$(SRC)\nitepal.pal
+
+PAL_DAY8	=	$(SRC)\explo.pal
+PAL_DAWN8	=	$(SRC)\explo.pal
+PAL_DUSK8	=	$(SRC)\explo.pal
+PAL_NITE8	=	$(SRC)\explo.pal
+
+PCLUST1		=	$(TMPPTH)\pclust1.x8
+PCLUST2		=	$(TMPPTH)\pclust2.x8
+PCLUST3		=	$(TMPPTH)\pclust3.x8
+PCLUST4		=	$(TMPPTH)\pclust4.x8
+PCLUST5		=	$(TMPPTH)\pclust5.x8
+PCLUST6		=	$(TMPPTH)\pclust6.x8
+PCLUST7		=	$(TMPPTH)\pclust7.x8
+PCLUST8		=	$(TMPPTH)\pclust8.x8
+
+
+### MAIN BIT OF MAKEFILE
+
+L_INDEX =	$(LDATAPTH)\north.ind\
+		$(LDATAPTH)\east.ind\
+		$(LDATAPTH)\south.ind\
+		$(LDATAPTH)\west.ind
+
+COL_DAT =	$(DEST_DAT)\aliaspal.x8\
+		$(DEST_DAT)\horizpal.x8\
+		$(DEST_DAT)\cloudpal.x8\
+		$(DEST_DAT)\alspal75.x8\
+		$(DEST_DAT)\lumpal.x8\
+
+TEXT_DAT = 	$(TMPPTH)\PCLUST1.x8\
+		$(TMPPTH)\PCLUST2.x8\
+		$(TMPPTH)\PCLUST3.x8\
+		$(TMPPTH)\PCLUST4.x8\
+		$(TMPPTH)\PCLUST5.x8\
+		$(TMPPTH)\PCLUST6.x8\
+		$(TMPPTH)\PCLUST7.x8\
+		$(TMPPTH)\PCLUST8.x8\
+		$(DEST_DAT)\PALCLUST.x8\
+		$(DEST_DAT)\CLDCNTR.x8\
+		$(DEST_DAT)\CLOUD.x8\
+		$(DEST_DAT)\HORIZ.x8\
+		$(DEST_DAT)\SKY1.x8\
+		$(DEST_DAT)\BADSKY1.x8
+
+THARD_DAT = 	$(DEST_DAT2)\PALCLUST.x8\
+		$(DEST_DAT2)\CLDCNTR.x8\
+		$(DEST_DAT2)\CLOUD.x8\
+		$(DEST_DAT2)\HORIZ.x8\
+		$(DEST_DAT2)\SKY1.x8\
+		$(DEST_DAT2)\BADSKY1.x8
+
+HCOL_DAT =	$(DEST_DAT2)\aliaspal.x8\
+		$(DEST_DAT2)\horizpal.x8\
+		$(DEST_DAT2)\cloudpal.x8\
+		$(DEST_DAT2)\alspal75.x8\
+		$(DEST_DAT2)\lumpal.x8\
+
+ALLDATA: 	$(COL_DAT)\
+		$(HCOL_DAT)\
+	 	$(TEXT_DAT)\
+		$(THARD_DAT)\
+		$(L_INDEX)
+
+$(SRC)\npal.pcx:	$(SRC)\pal3d.pcx
+		$(MAPMKE) $(SRC)\pal3d.pcx -mah208 -w $(SRC)\npal.pcx
+
+$(DEST_DAT)\horizpal.x8:	$(SRC)\npal2.pcx
+		$(MAPMKE) $(SRC)\npal2.pcx -w $(DEST_MAP)\horizpal.x8
+
+$(DEST_DAT)\aliaspal.x8:	$(SRC)\npal2.pcx
+		$(MAPMKE) $(SRC)\npal2.pcx -mab -w $(DEST_MAP)\aliaspal.x8
+
+$(DEST_DAT)\alspal75.x8:	$(SRC)\npal2.pcx
+		$(MAPMKE) $(SRC)\npal2.pcx -mab75 -w $(DEST_MAP)\alspal75.x8
+
+$(DEST_DAT)\cloudpal.x8:	$(SRC)\npal2.pcx
+		$(MAPMKE) $(SRC)\npal2.pcx -mah 31 -w $(DEST_MAP)\cloudpal.x8
+
+$(DEST_DAT)\lumpal.x8:	$(SRC)\npal2.pcx
+		$(MAPMKE) $(SRC)\npal2.pcx -mal -w $(DEST_MAP)\lumpal.x8
+
+
+$(DEST_DAT2)\horizpal.x8:	$(DEST_DAT)\horizpal.x8
+		copy $(DEST_DAT)\horizpal.x8 $(DEST_DAT2)\horizpal.x8
+
+$(DEST_DAT2)\aliaspal.x8:	$(DEST_DAT)\aliaspal.x8
+		copy $(DEST_DAT)\aliaspal.x8	$(DEST_DAT2)\aliaspal.x8
+
+$(DEST_DAT2)\alspal75.x8:	$(DEST_DAT)\alspal75.x8
+		copy $(DEST_DAT)\alspal75.x8	$(DEST_DAT2)\alspal75.x8
+
+$(DEST_DAT2)\cloudpal.x8:	$(DEST_DAT)\cloudpal.x8
+		copy $(DEST_DAT)\cloudpal.x8	$(DEST_DAT2)\cloudpal.x8
+
+$(DEST_DAT2)\lumpal.x8:	$(DEST_DAT)\lumpal.x8
+		copy $(DEST_DAT)\lumpal.x8	$(DEST_DAT2)\lumpal.x8
+
+
+############################
+##
+## Route textures
+##
+############################
+
+
+$(TMPPTH)\PCLUST1.x8:	$(PAL_DAY1)
+	echo -e > pal.res 
+	echo -r $(PAL_DAY1) >> pal.res
+	echo -r $(PAL_DUSK1) >> pal.res
+	echo -r $(PAL_NITE1) >> pal.res
+	echo -r $(PAL_DAWN1) >> pal.res
+	echo -epx -w $(PCLUST1) >> pal.res
+	$(MAPMKE) -d -r pal.res
+
+$(TMPPTH)\PCLUST2.x8:	$(PAL_DAY2)
+	echo -e > pal.res 
+	echo -r $(PAL_DAY2) >> pal.res
+	echo -r $(PAL_DUSK2) >> pal.res
+	echo -r $(PAL_NITE2) >> pal.res
+	echo -r $(PAL_DAWN2) >> pal.res
+	echo -epx -w $(PCLUST2) >> pal.res
+	$(MAPMKE) -d -r pal.res
+
+$(TMPPTH)\PCLUST3.x8:	$(PAL_DAY3)
+	echo -e > pal.res 
+	echo -r $(PAL_DAY3) >> pal.res
+	echo -r $(PAL_DUSK3) >> pal.res
+	echo -r $(PAL_NITE3) >> pal.res
+	echo -r $(PAL_DAWN3) >> pal.res
+	echo -epx -w $(PCLUST3) >> pal.res
+	$(MAPMKE) -d -r pal.res
+
+$(TMPPTH)\PCLUST4.x8:	$(PAL_DAY4)
+	echo -e > pal.res 
+	echo -r $(PAL_DAY4) >> pal.res
+	echo -r $(PAL_DUSK4) >> pal.res
+	echo -r $(PAL_NITE4) >> pal.res
+	echo -r $(PAL_DAWN4) >> pal.res
+	echo -epx -w $(PCLUST4) >> pal.res
+	$(MAPMKE) -d -r pal.res
+
+$(TMPPTH)\PCLUST5.x8:	$(PAL_DAY5)
+	echo -e > pal.res 
+	echo -r $(PAL_DAY5) >> pal.res
+	echo -r $(PAL_DUSK5) >> pal.res
+	echo -r $(PAL_NITE5) >> pal.res
+	echo -r $(PAL_DAWN5) >> pal.res
+	echo -epx -w $(PCLUST5) >> pal.res
+	$(MAPMKE) -d -r pal.res
+
+$(TMPPTH)\PCLUST6.x8:	$(PAL_DAY6)
+	echo -e > pal.res 
+	echo -r $(PAL_DAY6) >> pal.res
+	echo -r $(PAL_DUSK6) >> pal.res
+	echo -r $(PAL_NITE6) >> pal.res
+	echo -r $(PAL_DAWN6) >> pal.res
+	echo -epx -w $(PCLUST6) >> pal.res
+	$(MAPMKE) -d -r pal.res
+
+$(TMPPTH)\PCLUST7.x8:	$(PAL_DAY7)
+	echo -e > pal.res 
+	echo -r $(PAL_DAY7) >> pal.res
+	echo -r $(PAL_DUSK7) >> pal.res
+	echo -r $(PAL_NITE7) >> pal.res
+	echo -r $(PAL_DAWN7) >> pal.res
+	echo -epx -w $(PCLUST7) >> pal.res
+	$(MAPMKE) -d -r pal.res
+
+$(TMPPTH)\PCLUST8.x8:	$(PAL_DAY8)
+	echo -e > pal.res 
+	echo -r $(PAL_DAY8) >> pal.res
+	echo -r $(PAL_DUSK8) >> pal.res
+	echo -r $(PAL_NITE8) >> pal.res
+	echo -r $(PAL_DAWN8) >> pal.res
+	echo -epx -w $(PCLUST8) >> pal.res
+	$(MAPMKE) -d -r pal.res
+
+$(DEST_DAT)\PALCLUST.x8:	$(PCLUST1)
+	echo -eps > pal.res 
+	echo -r $(PCLUST1) >> pal.res
+	echo -r $(PCLUST2) >> pal.res
+	echo -r $(PCLUST3) >> pal.res
+	echo -r $(PCLUST4) >> pal.res
+	echo -r $(PCLUST5) >> pal.res
+	echo -r $(PCLUST6) >> pal.res
+	echo -r $(PCLUST7) >> pal.res
+	echo -r $(PCLUST8) >> pal.res
+	echo -w $(DEST_MAP)\palclust.x8 >> pal.res
+	$(MAPMKE) -d -r pal.res
+
+$(DEST_DAT2)\PALCLUST.x8:	$(DEST_DAT)\PALCLUST.x8
+	copy $(DEST_DAT)\PALCLUST.x8 $(DEST_DAT2)\PALCLUST.x8
+
+$(DEST_DAT)\CLDCNTR.x8:		$(SRCL)\cldcntr.pcx
+		$(MAPMKE) $(SRCL)\cldcntr.pcx -cw32h32 -w $(DEST_MAP)\cldcntr.x8
+
+$(DEST_DAT)\CLOUD.x8:		$(SRCL)\cloud.pcx
+		$(MAPMKE) $(SRCL)\cloud.pcx -cw256h256 -w $(DEST_MAP)\cloud.x8
+
+$(DEST_DAT)\HORIZ.x8:		$(SRCL)\horiz.pcx
+		$(MAPMKE) $(SRCL)\horiz.pcx -cw256h128 -w $(DEST_MAP)\horiz.x8
+
+$(DEST_DAT)\SKY1.x8:		$(SRCL)\sky1.pcx
+		$(MAPMKE) $(SRCL)\sky1.pcx -cw256h256 -w $(DEST_MAP)\sky1.x8
+
+$(DEST_DAT)\BADSky1.x8:		$(SRCL)\BADSky1.pcx
+		$(MAPMKE) $(SRCL)\BADSky1.pcx -cw256h256 -w $(DEST_MAP)\BADSky1.x8
+
+$(DEST_DAT2)\CLDCNTR.x8: $(DEST_DAT)\CLDCNTR.x8
+	copy $(DEST_DAT)\CLDCNTR.x8 $(DEST_DAT2)\CLDCNTR.x8
+
+$(DEST_DAT2)\CLOUD.x8: $(DEST_DAT)\CLOUD.x8
+	copy $(DEST_DAT)\CLOUD.x8 $(DEST_DAT2)\CLOUD.x8
+
+$(DEST_DAT2)\HORIZ.x8: $(DEST_DAT)\HORIZ.x8
+	copy $(DEST_DAT)\HORIZ.x8 $(DEST_DAT2)\HORIZ.x8
+
+$(DEST_DAT2)\SKY1.x8: $(DEST_DAT)\SKY1.x8
+	copy $(DEST_DAT)\SKY1.x8 $(DEST_DAT2)\SKY1.x8
+
+$(DEST_DAT2)\BADSky1.x8: $(DEST_DAT)\BADSky1.x8
+	copy $(DEST_DAT)\BADSky1.x8 $(DEST_DAT2)\BADSky1.x8
+
+$(LDATAPTH)\north.ind: $(LDATAPTH)\north.dat
+	$(INDEXMKE) /i$(LDATAPTH)\north.dat /o$(LDATAPTH)\north.ind /dn
+
+$(LDATAPTH)\east.ind: $(LDATAPTH)\east.dat
+	$(INDEXMKE) /i$(LDATAPTH)\east.dat /o$(LDATAPTH)\east.ind /de
+
+$(LDATAPTH)\south.ind: $(LDATAPTH)\south.dat
+	$(INDEXMKE) /i$(LDATAPTH)\south.dat /o$(LDATAPTH)\south.ind /ds
+
+$(LDATAPTH)\west.ind: $(LDATAPTH)\west.dat
+	$(INDEXMKE) /i$(LDATAPTH)\west.dat /o$(LDATAPTH)\west.ind /dw

@@ -1,0 +1,75 @@
+// RTree.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RTree.tlb) that will become a resource in
+// RTree.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(E8CBAEAB-85C1-11D1-A1F0-444553540000), version(1.0),
+  helpfile("RTree.hlp"),
+  helpstring("RTree ActiveX Control module"),
+  control ]
+library RTREELib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRTreeCtrl
+
+	[ uuid(E8CBAEAC-85C1-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RTree Control"), hidden ]
+	dispinterface _DRTree
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRTreeCtrl)
+			[id(1)] IPictureDisp* ControlPicture;
+			[id(2)] long Depth;
+			[id(3)] long BoxWidth;
+			[id(4)] long BoxHeight;
+			[id(5)] long GapWidth;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRTreeCtrl)
+			[id(6)] long GetText(short index);
+			[id(7)] void Clear();
+			[id(8)] void SetText(BSTR text, short index);
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRTreeCtrl
+
+	[ uuid(E8CBAEAD-85C1-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RTree Control") ]
+	dispinterface _DRTreeEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRTreeCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRTreeCtrl
+
+	[ uuid(E8CBAEAE-85C1-11D1-A1F0-444553540000), licensed,
+	  helpstring("RTree Control"), control ]
+	coclass RTree
+	{
+		[default] dispinterface _DRTree;
+		[default, source] dispinterface _DRTreeEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

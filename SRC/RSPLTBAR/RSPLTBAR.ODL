@@ -1,0 +1,69 @@
+// RSpltBar.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RSpltBar.tlb) that will become a resource in
+// RSpltBar.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(0542BF43-88DF-11D1-A1F0-444553540000), version(1.0),
+  helpfile("RSpltBar.hlp"),
+  helpstring("RSpltBar ActiveX Control module"),
+  control ]
+library RSPLTBARLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRSpltBarCtrl
+
+	[ uuid(0542BF44-88DF-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RSpltBar Control"), hidden ]
+	dispinterface _DRSpltBar
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRSpltBarCtrl)
+			[id(1)] long TopLeftWindow;
+			[id(2)] long BottomRightWindow;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRSpltBarCtrl)
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRSpltBarCtrl
+
+	[ uuid(0542BF45-88DF-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RSpltBar Control") ]
+	dispinterface _DRSpltBarEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRSpltBarCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRSpltBarCtrl
+
+	[ uuid(0542BF46-88DF-11D1-A1F0-444553540000), licensed,
+	  helpstring("RSpltBar Control"), control ]
+	coclass RSpltBar
+	{
+		[default] dispinterface _DRSpltBar;
+		[default, source] dispinterface _DRSpltBarEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

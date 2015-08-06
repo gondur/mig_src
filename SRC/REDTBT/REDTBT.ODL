@@ -1,0 +1,75 @@
+// REdtBt.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (REdtBt.tlb) that will become a resource in
+// REdtBt.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(461A1FE0-B81B-11D1-A1F0-444553540000), version(1.0),
+  helpfile("REdtBt.hlp"),
+  helpstring("REdtBt ActiveX Control module"),
+  control ]
+library REDTBTLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CREdtBtCtrl
+
+	[ uuid(461A1FE1-B81B-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for REdtBt Control"), hidden ]
+	dispinterface _DREdtBt
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CREdtBtCtrl)
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(DISPID_CAPTION), bindable, requestedit] BSTR Caption;
+			[id(1)] long FontNum;
+			[id(2)] long DragAndDropID;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CREdtBtCtrl)
+			[id(3)] void SetPictureFileNum(long picture);
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CREdtBtCtrl
+
+	[ uuid(461A1FE2-B81B-11D1-A1F0-444553540000),
+	  helpstring("Event interface for REdtBt Control") ]
+	dispinterface _DREdtBtEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CREdtBtCtrl)
+			[id(1)] void Clicked();
+			[id(2)] void CanAcceptDrop(long sourcedropID, boolean* pReply);
+			[id(3)] void DroppedOn(long sourcedropID);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CREdtBtCtrl
+
+	[ uuid(461A1FE3-B81B-11D1-A1F0-444553540000), licensed,
+	  helpstring("REdtBt Control"), control ]
+	coclass REdtBt
+	{
+		[default] dispinterface _DREdtBt;
+		[default, source] dispinterface _DREdtBtEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,15 @@
+\MIG/GAME/*.dir
+\MIG/SRC/*.dir
+\MIG/SRC/*.lnk
+\MIG/SRC/*.fil
+\MIG/SRC/h/*.*
+\MIG/SRC/bfields/*.*
+\MIG/SRC/meditor/*.exe
+\MIG/SRC/meditor/*.bmp
+\MIG/SRC/meditor/*.dir
+\MIG/SRC/meditor/*.h
+\MIG/SRC/meditor/*.hlp
+\MIG/SRC/meditor/*.ico
+\MIG/SRC/english/*.*
+\MIG/GAME/BFIELDS/*.*
+\mig\debug\exe\makebf.exe

@@ -1,0 +1,15 @@
+138 4 bfields
+139 6 userobj
+137 139 default
+120 138 intrbfld
+121 138 bridges
+122 138 railarea
+123 138 roadarea
+124 138 convoys
+125 138 nodes
+126 138 airfield
+127 138 battles
+128 138 events
+129 138 migs
+72 14 usersrc
+110 8 bfields

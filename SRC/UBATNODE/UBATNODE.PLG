@@ -1,0 +1,71 @@
+--------------------Configuration: ubatnode - Win32 Debug--------------------
+Begining build with project "C:\Mig\Src\ubatnode\Ubatnode.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MLd /W3 /Gm /GX /Zi /Od /I "..\h" /I "..\bfields" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\mig\Debug\obj/Ubatnode.pch" /YX /Fo"\mig\Debug\obj/" /Fd"\mig\Debug\obj/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0x809 /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"\mig\Debug\exe/Ubatnode.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"\mig\Debug\exe/Ubatnode.pdb" /debug /machine:I386 /out:"\mig\Debug\exe/Ubatnode.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "e:\TEMP\RSP4156.TMP" with contents </nologo /MLd /W3 /Gm /GX /Zi /Od /I "..\h" /I "..\bfields" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\mig\Debug\obj/Ubatnode.pch" /YX /Fo"\mig\Debug\obj/" /Fd"\mig\Debug\obj/" /FD /c 
+"C:\Mig\Src\Bfields\Batnode.cpp"
+>
+Creating command line "cl.exe @e:\TEMP\RSP4156.TMP" 
+Creating temp file "e:\TEMP\RSP4157.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"\mig\Debug\exe/Ubatnode.pdb" /debug /machine:I386 /out:"\mig\Debug\exe/Ubatnode.exe" /pdbtype:sept 
+\mig\Debug\obj\Batnode.obj>
+Creating command line "link.exe @e:\TEMP\RSP4157.TMP" 
+Compiling...
+Batnode.cpp
+C:\Mig\Src\Bfields\Batnode.cpp(84): include batuids.h
+C:\Mig\Src\Bfields\Batnode.cpp(90): include batuids.h
+C:\Mig\Src\Bfields\Batnode.cpp(95): include batuids.h
+C:\Mig\Src\Bfields\Batnode.cpp(101): include batuids.h
+C:\Mig\Src\Bfields\Batnode.cpp(106): include batuids.h
+C:\Mig\Src\Bfields\Batnode.cpp(116): include batuids.h
+C:\Mig\Src\Bfields\Batnode.cpp(126): include batuids.h
+C:\Mig\Src\Bfields\BN_west.h(244) : error C2065: 'UID_BNW_0a_XX' : undeclared identifier
+C:\Mig\Src\Bfields\BN_west.h(244) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(245) : error C2065: 'UID_BNW_0b_XX' : undeclared identifier
+C:\Mig\Src\Bfields\BN_west.h(245) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(254) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(255) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(255) : error C2065: 'UID_BNW_0c_XX' : undeclared identifier
+C:\Mig\Src\Bfields\BN_west.h(255) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(264) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(265) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(265) : error C2065: 'UID_BNW_0d_XX' : undeclared identifier
+C:\Mig\Src\Bfields\BN_west.h(265) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(274) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(275) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(275) : error C2065: 'UID_BNW_0e_XX' : undeclared identifier
+C:\Mig\Src\Bfields\BN_west.h(275) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(284) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(285) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(285) : error C2065: 'UID_BNW_0f_XX' : undeclared identifier
+C:\Mig\Src\Bfields\BN_west.h(285) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(294) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+C:\Mig\Src\Bfields\BN_west.h(295) : error C2440: 'initializing' : cannot convert from 'int' to 'enum LocalUniqueID'
+                                                 Conversion to enumeration type requires a static_cast, C-style cast or function-style cast
+Error executing cl.exe.
+
+
+
+Ubatnode.exe - 22 error(s), 0 warning(s)

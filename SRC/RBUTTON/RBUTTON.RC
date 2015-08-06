@@ -1,0 +1,176 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""RButton.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Rowan Software\0"
+            VALUE "FileDescription", "RButton ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RBUTTON\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RBUTTON.OCX\0"
+            VALUE "ProductName", "RButton ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_RBUTTON             BITMAP  DISCARDABLE     "RButtonC.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_RBUTTON DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Moves Parent?",IDC_MOVES_PARENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,154,15,64,10
+    EDITTEXT        IDC_FONT_NUMBER,95,5,40,14,ES_AUTOHSCROLL
+    LTEXT           "Font Number",IDC_STATIC,5,10,42,8
+    CONTROL         "Close Button?",IDC_CLOSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,154,23,60,10
+    CONTROL         "Tick Button?",IDC_TICK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,153,31,57,10
+    GROUPBOX        "Only applies to title strips",IDC_STATIC,146,0,95,42
+    CONTROL         "Drop Shadows?",IDC_DROP_SHADOWS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,20,63,10
+    EDITTEXT        IDC_PRESSED_PICTURE_FILE_NUM,66,45,75,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NORMAL_PICTURE_FILE_NUM,66,30,76,14,ES_AUTOHSCROLL
+    LTEXT           "Normal File Num",IDC_STATIC,5,35,52,8
+    LTEXT           "Pressed File Num",IDC_STATIC,5,50,56,8
+    CONTROL         "Update captions",IDC_UPDATE_CAPTION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,75,20,68,10
+    EDITTEXT        IDC_PRESSED_PICTURE_FILE_NUM2,66,59,75,14,ES_AUTOHSCROLL
+    LTEXT           "Hint text",IDC_STATIC,5,64,27,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_BYEDOWN             ICON    DISCARDABLE     "res\\close1.ico"
+IDI_TICKDOWN            ICON    DISCARDABLE     "res\\tick.ico"
+IDI_BYEUP               ICON    DISCARDABLE     "res\\bye1.ico"
+IDI_TICKUP              ICON    DISCARDABLE     "res\\tickup.ico"
+IDI_HELPDOWN            ICON    DISCARDABLE     "res\\helpdown.ico"
+IDI_HELPUP              ICON    DISCARDABLE     "res\\helpup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RBUTTON             "RButton Control"
+    IDS_RBUTTON_PPG         "RButton Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RBUTTON_PPG_CAPTION "General"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "RButton.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

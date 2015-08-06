@@ -1,0 +1,66 @@
+.EXTENSIONS: 
+.EXTENSIONS: .ibm .sbm .lbm .pcx .mif
+.OPTIMIZE
+
+#
+#.lbm are normal lbm files
+#.ibm are invisible encoded files
+#.sbm are invisible encoded, with no palette files
+#
+
+
+
+
+SRC	=	S:\PROJECTS\mig\ARTSRC\STILLS\FINISH\
+DEST	= 	..\GAME\ARTWORK\SCRN640\
+DEST2	= 	..\GAME\ARTWORK\SCRN320\
+
+.pcx:	$(SRC)
+.lbm:	$(DEST)
+.ibm:	$(DEST)
+.sbm:	$(DEST)
+
+
+STILLS	=	black.lbm&
+		pal3d.lbm&
+		mapback.lbm&
+		title.lbm&
+		office.lbm&
+		acelist.lbm&
+		records.lbm&
+		paint.lbm&
+		screen.lbm&
+		fil_pack.sbm&
+		out_pack.sbm&
+		grnshut.sbm&
+		grnopen.sbm&
+		fil_int.sbm&
+		out_int.sbm&
+		fil_resr.sbm&
+		out_resr.sbm&
+		litegrey.sbm&
+		litebrwn.sbm&
+		teleprnt.sbm&
+		koreamap.sbm&
+		brown.sbm&
+		blue.sbm&
+		yellow.sbm&
+		green.sbm&
+		black.sbm&
+		black.ibm&
+
+
+all:	$(STILLS)
+
+
+.pcx.lbm:
+	tt -lp$(SRC)$^&.pcx -wl$(DEST)$^&.lbm
+
+.pcx.ibm:
+	tt -lp$(SRC)$^&.pcx -wi$(DEST)$^&.ibm
+
+.pcx.sbm:
+	tt -lp$(SRC)$^&.pcx -wI$(DEST)$^&.sbm
+
+#	tt -lp$(SRC)$^&.pcx -sqw320h200 -wI$(DEST2)$^&.sbm
+

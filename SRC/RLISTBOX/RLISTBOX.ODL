@@ -1,0 +1,128 @@
+// RListBox.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RListBox.tlb) that will become a resource in
+// RListBox.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(90B5EDA5-666F-11D1-A1F0-444553540000), version(1.1),
+  helpfile("RListBox.hlp"),
+  helpstring("RListBox ActiveX Control module"),
+  control ]
+library RLISTBOXLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRListBoxCtrl
+
+	[ uuid(90B5EDA6-666F-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RListBox Control"), hidden ]
+	dispinterface _DRListBox
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRListBoxCtrl)
+			[id(1), bindable] boolean IsStripey;
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(DISPID_BACKCOLOR), bindable, requestedit] OLE_COLOR BackColor;
+			[id(2)] OLE_COLOR StripeColor;
+			[id(3)] OLE_COLOR SelectColor;
+			[id(4)] boolean Lines;
+			[id(5)] OLE_COLOR LineColor;
+			[id(6)] OLE_COLOR DarkStripeColor;
+			[id(7)] OLE_COLOR DarkBackColor;
+			[id(8)] boolean LockLeftColumn;
+			[id(9)] boolean LockTopRow;
+			[id(10)] OLE_COLOR LockColor;
+			[id(11)] boolean DragAndDrop;
+			[id(12)] long FontNum;
+			[id(13)] boolean Blackboard;
+			[id(14)] long FontNum2;
+			[id(15)] boolean Lines2;
+			[id(16)] OLE_COLOR HeaderColor;
+			[id(17)] boolean SelectWholeRows;
+			[id(18)] long FontPtr;
+			[id(19)] long ParentPointer;
+			[id(20)] long HilightRow;
+			[id(21)] long HilightCol;
+			[id(22)] boolean Border;
+			[id(23)] boolean Centred;
+			[id(24)] long HorzSeperation;
+			[id(25)] long VertSeperation;
+			[id(26)] boolean ToggleResizableColumns;
+			[id(27)] short ScrlBarOffset;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRListBoxCtrl)
+			[id(28)] short GetCount();
+			[id(29)] void AddString(BSTR text, short index);
+			[id(30)] void DeleteString(short row,short column);
+			[id(31)] void Clear();
+			[id(32)] void AddColumn(long width);
+			[id(33)] void SetColumnWidth(short index, long width);
+			[id(34)] void AddPlayerNum(long playerNum);
+			[id(35)] long DeletePlayerNum(short row);
+			[id(36)] long ReplacePlayerNum(long playerNum, short row);
+			[id(37)] void ReplaceString(BSTR text, short row, short col);
+			[id(38)] long GetString(short row, short col);
+			[id(39)] long GetPlayerNum(short row);
+			[id(40)] short GetRowFromY(long y);
+			[id(41)] void UpdateScrollBar();
+			[id(42)] long GetListHeight();
+			[id(43)] void ResizeToFit();
+			[id(45)] long GetColumnWidth(long col);
+			[id(46)] void SetNumberOfRows(long rows);
+			[id(47)] void InsertRow(long row);
+			[id(48)] void DeleteRow(long row);
+			[id(44)] void Shrink();
+			[id(49)] boolean SelectRecentlyFired();
+			[id(50)] void AddIconColumn(long width);
+			[id(51)] void AddIcon(long filenum, short index);
+			[id(52)] void SetHorizontalOption(short columns);
+			[id(53)] short GetColFromX(long x);
+			[id(54)] long GetRowColPlayerNum(long row, long col);
+			[id(55)] void SetColumnRightAligned(long index, boolean bNewVal);
+			[id(56)] void SetRowColour(long row, long RGBcolour);
+			[id(57)] void SetIcon(long filenum, short row, short column);
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRListBoxCtrl
+
+	[ uuid(90B5EDA7-666F-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RListBox Control") ]
+	dispinterface _DRListBoxEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRListBoxCtrl)
+			[id(1)] void Select(long row,long column);
+			[id(2)] void DoubleSelect(long row, long column);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRListBoxCtrl
+
+	[ uuid(48814009-65AE-11D1-A1F0-444553540000), licensed,
+	  helpstring("RListBox Control"), control ]
+	coclass RListBox
+	{
+		[default] dispinterface _DRListBox;
+		[default, source] dispinterface _DRListBoxEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

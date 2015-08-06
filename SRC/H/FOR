@@ -1,0 +1,8 @@
+#ifndef MH_for
+#pragma message("")
+#endif
+#include "\mig\src\h\h2\for"
+#ifndef MH_for
+#define MH_for
+#pragma message("")
+#endif

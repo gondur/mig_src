@@ -1,0 +1,75 @@
+// RStatic.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RStatic.tlb) that will become a resource in
+// RStatic.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(C42BAC3A-CA3C-11D1-A1F0-444553540000), version(1.0),
+  helpfile("RStatic.hlp"),
+  helpstring("RStatic ActiveX Control module"),
+  control ]
+library RSTATICLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRStaticCtrl
+
+	[ uuid(C42BAC3B-CA3C-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RStatic Control"), hidden ]
+	dispinterface _DRStatic
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRStaticCtrl)
+			[id(DISPID_CAPTION), bindable, requestedit] BSTR Caption;
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(1)] boolean UpdateCaption;
+			[id(2)] long FontNum;
+			[id(3)] BSTR String;
+			[id(4)] long ResourceNumber;
+			[id(5)]	long PictureFileNum;
+			[id(6)] boolean Central;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRStaticCtrl)
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRStaticCtrl
+
+	[ uuid(C42BAC3C-CA3C-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RStatic Control") ]
+	dispinterface _DRStaticEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRStaticCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRStaticCtrl
+
+	[ uuid(C42BAC3D-CA3C-11D1-A1F0-444553540000), licensed,
+	  helpstring("RStatic Control"), control ]
+	coclass RStatic
+	{
+		[default] dispinterface _DRStatic;
+		[default, source] dispinterface _DRStaticEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

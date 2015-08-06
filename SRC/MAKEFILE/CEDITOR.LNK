@@ -1,0 +1,24 @@
+system win95
+name ceditor.exe
+debug all
+file obj\ceditor.obj,
+obj\curves.obj,
+obj\winerror.obj,
+obj\modvec.obj,
+obj\cdcomm.obj,
+obj\cdf86e.obj,
+obj\cdmig15.obj,
+obj\cdf84e.obj,
+obj\cdf80c.obj,
+obj\cdf51d.obj,
+obj\cdatmos.obj,
+obj\cdf94a.obj,
+obj\cdf9f2.obj,
+obj\cdf8.obj,
+obj\cdf82g.obj,
+obj\cdyak9.obj,
+obj\cdf4u5.obj,
+obj\cdsfury.obj,
+obj\cdffly.obj
+
+

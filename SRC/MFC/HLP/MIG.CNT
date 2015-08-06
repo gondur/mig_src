@@ -1,0 +1,46 @@
+:Base MIG.hlp
+1 Overview
+2 Command Briefing=HIDD_INTRODUCTION
+2 Battle Scenario=HIDD_BATTLESCENARIO
+2 Resources=HIDD_RESOURCES
+2 Missions Generation=HIDD_MISSIONGENERATION
+2 Mission Structure=HIDD_MISSIONSTRUCTURE
+2 Routes Overview=HIDD_ROUTESINTRO
+2 The Map=HIDD_THEMAP
+1 Main Tool Bar and Dialogues
+2 Icons=HIDD_MAINTOOLBAR
+2 Bases=HIDD_BASES_TITLE
+2 Squadron Info=HIDD_SQUADS
+3 Flight Details=HIDD_PILOTS
+4 Paint Shop=HIDD_PAINTSHOP
+4 Casualty List=HIDD_RIP_LIST
+2 Weather Forecast=HIDD_WEATHER
+2 Daily Intelligence Summary=HIDD_DIS
+2 Target List=HIDD_AUTHORISATION
+3 Front Line Details=HIDD_ARMYREQUESTS
+2 Directives=HIDD_COMIT_E
+3 Selection Results=HIDD_CAMPLIST
+2 Mission Folder=HIDD_MISSION_FOLDER
+3 Mission Profile=HIDD_PROFILE
+4 Saveprofile=HIDD_SAVEPROFILE
+3 Insert a Wave=HIDD_WAVEINSERT
+4 Tasks=HIDD_TASKTABS
+5 Aircraft Select=HIDD_CHOOSESQUAD
+5 Pay_Load=HIDD_PAYLOAD
+4 Routes=HIDD_WAVETABS
+3 Overview=HIDD_OVERVIEW
+3 Player Log=HIDD_PLAYERLOG
+3 Frag=HIDD_FRAGORDER
+1 Other Toolbars and Dialogues
+2 Title Toolbar=HIDD_TITLETOOLBAR
+2 Utility Toolbar=HIDD_UTILITYTOOLBAR
+3 Thumbnail Map=HIDD_THUMBNAIL
+3 Filing=HIDD_FILING
+2 Scale Toolbar=HIDD_SCALETOOLBAR
+2 Filters Toolbar=HIDD_FILTERTOOLBAR
+2 Debrief Toolbar=HIDD_DEBRIEFTOOLBAR
+3 Mission Results=HIDD_RESULTS
+3 Debrief=HIDD_DEBRIEF
+1 Map
+2 Dossier=HIDD_TARGETDOSSIER
+3 Load Profile=HIDD_LOADPROFILE

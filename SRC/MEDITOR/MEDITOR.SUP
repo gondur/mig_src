@@ -1,0 +1,4 @@
+//SUPPRESSIONPROJ:MEditor
+//VERSION:5.00
+//ENABLE:Yes
+!include RTL.SUP

@@ -1,0 +1,887 @@
+--------------------Configuration: RButton - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\rbutton\Rbutton.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\mig\Debug\rbutton/" /Fo"\mig\Debug\rbutton/" /Fd"\mig\Debug\rbutton/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\mig\Debug\rbutton/RButton.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\mig\Debug\exe/Rbutton.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RButton.def" /out:"\mig\Debug\exe/Rbutton.ocx" /implib:"\mig\Debug\exe/Rbutton.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPA315.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\mig\Debug\rbutton/" /Fo"\mig\Debug\rbutton/" /Fd"\mig\Debug\rbutton/" /FD /c 
+"C:\mig\Src\rbutton\all.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPA315.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RButton.def" /out:"\mig\Debug\exe/Rbutton.ocx" /implib:"\mig\Debug\exe/Rbutton.lib"  \mig\Debug\rbutton\all.obj \mig\Debug\rbutton\RButton.res" 
+Creating temp file "c:\temp\RSPA316.BAT" with contents <@echo off
+regsvr32 /s /c "\mig\Debug\exe\Rbutton.ocx"
+echo regsvr32 exec. time > \mig\Debug\exe\regsvr32.trg
+>
+Creating command line "c:\temp\RSPA316.BAT" 
+Compiling...
+all.cpp
+Linking...
+   Creating library \mig\Debug\exe/Rbutton.lib and object \mig\Debug\exe/Rbutton.exp
+Registering ActiveX Control...
+--------------------Configuration: RScrlBar - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RSCRLBAR\Rscrlbar.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rscrlbar/" /Fd"\Mig\Debug\Rscrlbar/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\Rscrlbar/RScrlBar.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/Rscrlbar.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RScrlBar.def" /out:"\Mig\Debug\exe/Rscrlbar.ocx" /implib:"\Mig\Debug\exe/Rscrlbar.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPB030.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rscrlbar/" /Fd"\Mig\Debug\Rscrlbar/" /FD /c 
+"C:\mig\Src\RSCRLBAR\RScrlBar.cpp"
+"C:\mig\Src\RSCRLBAR\rscrlbrc.cpp"
+"C:\mig\Src\RSCRLBAR\rscrlbrp.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB030.TMP" 
+Creating temp file "c:\temp\RSPB031.TMP" with contents </nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RScrlBar.def" /out:"\Mig\Debug\exe/Rscrlbar.ocx" /implib:"\Mig\Debug\exe/Rscrlbar.lib" 
+\Mig\Debug\Rscrlbar\RScrlBar.obj
+\Mig\Debug\Rscrlbar\rscrlbrc.obj
+\Mig\Debug\Rscrlbar\rscrlbrp.obj
+\Mig\Debug\Rscrlbar\RScrlBar.res>
+Creating command line "link.exe @c:\temp\RSPB031.TMP" 
+Creating temp file "c:\temp\RSPB032.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\Rscrlbar.ocx"
+echo regsvr32 exec. time > "\Mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSPB032.BAT" 
+Compiling...
+RScrlBar.cpp
+rscrlbrc.cpp
+rscrlbrp.cpp
+Generating Code...
+Linking...
+   Creating library \Mig\Debug\exe/Rscrlbar.lib and object \Mig\Debug\exe/Rscrlbar.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \Mig\Debug\exe\Rscrlbar.ocx succeeded.
+
+--------------------Configuration: RListBox - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\rlistbox\RListBox.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\mig\Debug\RListBox/" /Fo"\mig\Debug\RListBox/" /Fd"\mig\Debug\RListBox/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\mig\Debug\RListBox/RListBox.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\mig\Debug\exe/RListBox.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RListBox.def" /out:"\mig\Debug\exe/RListBox.ocx" /implib:"\mig\Debug\exe/RListBox.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPB080.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\mig\Debug\RListBox/" /Fo"\mig\Debug\RListBox/" /Fd"\mig\Debug\RListBox/" /FD /c 
+"C:\mig\Src\Mfc\Getshadw.cpp"
+"C:\mig\Src\rlistbox\RListBox.cpp"
+"C:\mig\Src\rlistbox\rlistbxc.cpp"
+"C:\mig\Src\rlistbox\rlistbxp.cpp"
+"C:\mig\Src\rlistbox\rscrlbar.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB080.TMP" 
+Creating temp file "c:\temp\RSPB081.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /D "NO_AFX_AUTO" /FR"\mig\Debug\RListBox/" /Fo"\mig\Debug\RListBox/" /Fd"\mig\Debug\RListBox/" /FD /c 
+"C:\mig\Src\rlistbox\picture.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB081.TMP" 
+Creating temp file "c:\temp\RSPB082.TMP" with contents </nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RListBox.def" /out:"\mig\Debug\exe/RListBox.ocx" /implib:"\mig\Debug\exe/RListBox.lib" 
+\mig\Debug\RListBox\Getshadw.obj
+\mig\Debug\RListBox\picture.obj
+\mig\Debug\RListBox\RListBox.obj
+\mig\Debug\RListBox\rlistbxc.obj
+\mig\Debug\RListBox\rlistbxp.obj
+\mig\Debug\RListBox\rscrlbar.obj
+\mig\Debug\RListBox\RListBox.res
+\Mig\Debug\exe\Rscrlbar.lib>
+Creating command line "link.exe @c:\temp\RSPB082.TMP" 
+Creating temp file "c:\temp\RSPB083.BAT" with contents <@echo off
+regsvr32 /s /c "\mig\Debug\exe\RListBox.ocx"
+echo regsvr32 exec. time > "\mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSPB083.BAT" 
+Compiling...
+Getshadw.cpp
+RListBox.cpp
+rlistbxc.cpp
+rlistbxp.cpp
+rscrlbar.cpp
+Generating Code...
+Compiling...
+picture.cpp
+Linking...
+   Creating library \mig\Debug\exe/RListBox.lib and object \mig\Debug\exe/RListBox.exp
+Registering ActiveX Control...
+--------------------Configuration: RCombo - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RCOMBO\RCombo.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\mig\Debug\rcombo/" /Fd"\mig\Debug\rcombo/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\mig\Debug\rcombo/RCombo.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\mig\Debug\exe/RCombo.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RCombo.def" /out:"\mig\Debug\exe/RCombo.ocx" /implib:"\mig\Debug\exe/RCombo.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPB130.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\mig\Debug\rcombo/" /Fd"\mig\Debug\rcombo/" /FD /c 
+"C:\mig\Src\RCOMBO\all.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB130.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RCombo.def" /out:"\mig\Debug\exe/RCombo.ocx" /implib:"\mig\Debug\exe/RCombo.lib"  \mig\Debug\rcombo\all.obj \mig\Debug\rcombo\RCombo.res \mig\Debug\exe\RListBox.lib" 
+Creating temp file "c:\temp\RSPB131.BAT" with contents <@echo off
+regsvr32 /s /c "\mig\Debug\exe\RCombo.ocx"
+echo regsvr32 exec. time > "\mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSPB131.BAT" 
+Compiling...
+all.cpp
+Linking...
+   Creating library \mig\Debug\exe/RCombo.lib and object \mig\Debug\exe/RCombo.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \mig\Debug\exe\RCombo.ocx succeeded.
+
+--------------------Configuration: REdit - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\redit\Redit.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\mig\Debug\redit/" /Fo"\mig\Debug\redit/" /Fd"\mig\Debug\redit/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\mig\Debug\redit/REdit.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\mig\Debug\exe/Redit.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\REdit.def" /out:"\mig\Debug\exe/Redit.ocx" /implib:"\mig\Debug\exe/Redit.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPB161.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\mig\Debug\redit/" /Fo"\mig\Debug\redit/" /Fd"\mig\Debug\redit/" /FD /c 
+"C:\mig\Src\Mfc\Getshadw.cpp"
+"C:\mig\Src\redit\REdit.cpp"
+"C:\mig\Src\redit\REditCtl.cpp"
+"C:\mig\Src\redit\REditPpg.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB161.TMP" 
+Creating temp file "c:\temp\RSPB162.TMP" with contents </nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\REdit.def" /out:"\mig\Debug\exe/Redit.ocx" /implib:"\mig\Debug\exe/Redit.lib" 
+\mig\Debug\redit\Getshadw.obj
+\mig\Debug\redit\REdit.obj
+\mig\Debug\redit\REditCtl.obj
+\mig\Debug\redit\REditPpg.obj
+\mig\Debug\redit\REdit.res>
+Creating command line "link.exe @c:\temp\RSPB162.TMP" 
+Creating temp file "c:\temp\RSPB163.BAT" with contents <@echo off
+regsvr32 /s /c "\mig\Debug\exe\Redit.ocx"
+echo regsvr32 exec. time > "\mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSPB163.BAT" 
+Compiling...
+Getshadw.cpp
+REdit.cpp
+REditCtl.cpp
+REditPpg.cpp
+Generating Code...
+Linking...
+   Creating library \mig\Debug\exe/Redit.lib and object \mig\Debug\exe/Redit.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \mig\Debug\exe\Redit.ocx succeeded.
+
+--------------------Configuration: REdtBt - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\REdtBt\REdtBt.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Redtbt/" /Fd"\Mig\Debug\Redtbt/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\Redtbt/REdtBt.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/REdtBt.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\REdtBt.def" /out:"\Mig\Debug\exe/REdtBt.ocx" /implib:"\Mig\Debug\exe/REdtBt.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPB1D2.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Redtbt/" /Fd"\Mig\Debug\Redtbt/" /FD /c 
+"C:\mig\Src\Mfc\Getshadw.cpp"
+"C:\mig\Src\REdtBt\REdtBt.cpp"
+"C:\mig\Src\REdtBt\redtbtc.cpp"
+"C:\mig\Src\REdtBt\redtbtp.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB1D2.TMP" 
+Creating temp file "c:\temp\RSPB1D3.TMP" with contents </nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\REdtBt.def" /out:"\Mig\Debug\exe/REdtBt.ocx" /implib:"\Mig\Debug\exe/REdtBt.lib" 
+\Mig\Debug\Redtbt\Getshadw.obj
+\Mig\Debug\Redtbt\REdtBt.obj
+\Mig\Debug\Redtbt\redtbtc.obj
+\Mig\Debug\Redtbt\redtbtp.obj
+\Mig\Debug\Redtbt\REdtBt.res>
+Creating command line "link.exe @c:\temp\RSPB1D3.TMP" 
+Creating temp file "c:\temp\RSPB1D4.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\REdtBt.ocx"
+echo regsvr32 exec. time > "\Mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSPB1D4.BAT" 
+Compiling...
+Getshadw.cpp
+REdtBt.cpp
+redtbtc.cpp
+redtbtp.cpp
+Generating Code...
+Linking...
+   Creating library \Mig\Debug\exe/REdtBt.lib and object \Mig\Debug\exe/REdtBt.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \Mig\Debug\exe\REdtBt.ocx succeeded.
+
+--------------------Configuration: RJoyCfg - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RJoyCfg\RJoyCfg.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\RJoyCfg/" /Fd"\Mig\Debug\RJoyCfg/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\RJoyCfg/RJoyCfg.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/RJoyCfg.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RJoyCfg.def" /out:"\Mig\Debug\exe/RJoyCfg.ocx" /implib:"\Mig\Debug\exe/RJoyCfg.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPB234.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\RJoyCfg/" /Fd"\Mig\Debug\RJoyCfg/" /FD /c 
+"C:\mig\Src\RJoyCfg\RJoyCfg.cpp"
+"C:\mig\Src\RJoyCfg\RJoyCfgC.cpp"
+"C:\mig\Src\RJoyCfg\RJoyCfgP.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB234.TMP" 
+Creating temp file "c:\temp\RSPB235.TMP" with contents </nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RJoyCfg.def" /out:"\Mig\Debug\exe/RJoyCfg.ocx" /implib:"\Mig\Debug\exe/RJoyCfg.lib" 
+\Mig\Debug\RJoyCfg\RJoyCfg.obj
+\Mig\Debug\RJoyCfg\RJoyCfgC.obj
+\Mig\Debug\RJoyCfg\RJoyCfgP.obj
+\Mig\Debug\RJoyCfg\RJoyCfg.res>
+Creating command line "link.exe @c:\temp\RSPB235.TMP" 
+Creating temp file "c:\temp\RSPB236.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\RJoyCfg.ocx"
+echo regsvr32 exec. time > "\Mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSPB236.BAT" 
+Compiling...
+RJoyCfg.cpp
+RJoyCfgC.cpp
+RJoyCfgP.cpp
+Generating Code...
+Linking...
+   Creating library \Mig\Debug\exe/RJoyCfg.lib and object \Mig\Debug\exe/RJoyCfg.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \Mig\Debug\exe\RJoyCfg.ocx succeeded.
+
+--------------------Configuration: RScrlBar - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RSCRLBAR\Rscrlbar.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rscrlbar/" /Fd"\Mig\Debug\Rscrlbar/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\Rscrlbar/RScrlBar.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/Rscrlbar.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RScrlBar.def" /out:"\Mig\Debug\exe/Rscrlbar.ocx" /implib:"\Mig\Debug\exe/Rscrlbar.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPB283.TMP" with contents </nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RScrlBar.def" /out:"\Mig\Debug\exe/Rscrlbar.ocx" /implib:"\Mig\Debug\exe/Rscrlbar.lib" 
+\Mig\Debug\Rscrlbar\RScrlBar.obj
+\Mig\Debug\Rscrlbar\rscrlbrc.obj
+\Mig\Debug\Rscrlbar\rscrlbrp.obj
+\Mig\Debug\Rscrlbar\RScrlBar.res>
+Creating command line "link.exe @c:\temp\RSPB283.TMP" 
+Creating temp file "c:\temp\RSPB284.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\Rscrlbar.ocx"
+echo regsvr32 exec. time > "\Mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSPB284.BAT" 
+Linking...
+   Creating library \Mig\Debug\exe/Rscrlbar.lib and object \Mig\Debug\exe/Rscrlbar.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \Mig\Debug\exe\Rscrlbar.ocx succeeded.
+
+--------------------Configuration: RSpltBar - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RSpltBar\RSpltBar.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\Mig\Debug\Rspltbar/" /Fo"\Mig\Debug\Rspltbar/" /Fd"\Mig\Debug\Rspltbar/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\Rspltbar/RSpltBar.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/RSpltBar.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RSpltBar.def" /out:"\Mig\Debug\exe/RSpltBar.ocx" /implib:"\Mig\Debug\exe/RSpltBar.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPB2A0.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\Mig\Debug\Rspltbar/" /Fo"\Mig\Debug\Rspltbar/" /Fd"\Mig\Debug\Rspltbar/" /FD /c 
+"C:\mig\Src\RSpltBar\RSpltBar.cpp"
+"C:\mig\Src\RSpltBar\rspltbC.CPP"
+"C:\mig\Src\RSpltBar\rspltbP.CPP"
+"C:\mig\Src\Mfc\Getshadw.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB2A0.TMP" 
+Creating temp file "c:\temp\RSPB2A1.TMP" with contents </nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RSpltBar.def" /out:"\Mig\Debug\exe/RSpltBar.ocx" /implib:"\Mig\Debug\exe/RSpltBar.lib" 
+\Mig\Debug\Rspltbar\RSpltBar.obj
+\Mig\Debug\Rspltbar\rspltbC.obj
+\Mig\Debug\Rspltbar\rspltbP.obj
+\Mig\Debug\Rspltbar\Getshadw.obj
+\Mig\Debug\Rspltbar\RSpltBar.res>
+Creating command line "link.exe @c:\temp\RSPB2A1.TMP" 
+Creating temp file "c:\temp\RSPB2A2.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\RSpltBar.ocx"
+echo regsvr32 exec. time > \Mig\Debug\exe\regsvr32.trg
+>
+Creating command line "c:\temp\RSPB2A2.BAT" 
+Compiling...
+RSpltBar.cpp
+rspltbC.CPP
+rspltbP.CPP
+Getshadw.cpp
+Generating Code...
+Linking...
+   Creating library \Mig\Debug\exe/RSpltBar.lib and object \Mig\Debug\exe/RSpltBar.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \Mig\Debug\exe\RSpltBar.ocx succeeded.
+
+--------------------Configuration: RStatic - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RStatic\RStatic.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rstatic/" /Fd"\Mig\Debug\Rstatic/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\Rstatic/RStatic.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/RStatic.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RStatic.def" /out:"\Mig\Debug\exe/RStatic.ocx" /implib:"\Mig\Debug\exe/RStatic.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPB311.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /D "NO_AFX_AUTO" /Fo"\Mig\Debug\Rstatic/" /Fd"\Mig\Debug\Rstatic/" /FD /c 
+"C:\mig\Src\Mfc\Getresrc.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB311.TMP" 
+Creating temp file "c:\temp\RSPB312.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rstatic/" /Fd"\Mig\Debug\Rstatic/" /FD /c 
+"C:\mig\Src\Mfc\Getshadw.cpp"
+"C:\mig\Src\RStatic\RStatic.cpp"
+"C:\mig\Src\RStatic\RStaticC.cpp"
+"C:\mig\Src\RStatic\RStaticP.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB312.TMP" 
+Creating temp file "c:\temp\RSPB313.TMP" with contents </nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RStatic.def" /out:"\Mig\Debug\exe/RStatic.ocx" /implib:"\Mig\Debug\exe/RStatic.lib" 
+\Mig\Debug\Rstatic\Getresrc.obj
+\Mig\Debug\Rstatic\Getshadw.obj
+\Mig\Debug\Rstatic\RStatic.obj
+\Mig\Debug\Rstatic\RStaticC.obj
+\Mig\Debug\Rstatic\RStaticP.obj
+\Mig\Debug\Rstatic\RStatic.res>
+Creating command line "link.exe @c:\temp\RSPB313.TMP" 
+Creating temp file "c:\temp\RSPB314.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\RStatic.ocx"
+echo regsvr32 exec. time > "\Mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSPB314.BAT" 
+Compiling...
+Getresrc.cpp
+Compiling...
+Getshadw.cpp
+RStatic.cpp
+RStaticC.cpp
+RStaticP.cpp
+Generating Code...
+Linking...
+   Creating library \Mig\Debug\exe/RStatic.lib and object \Mig\Debug\exe/RStatic.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \Mig\Debug\exe\RStatic.ocx succeeded.
+
+--------------------Configuration: RTabs - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RTabs\RTabs.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rtabs/" /Fd"\Mig\Debug\Rtabs/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\Rtabs/RTabs.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/RTabs.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /incremental:yes /pdb:"\Mig\Debug\exe/RTabs.pdb" /debug /machine:I386 /def:".\RTabs.def" /out:"\Mig\Debug\exe/RTabs.ocx" /implib:"\Mig\Debug\exe/RTabs.lib" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPB383.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rtabs/" /Fd"\Mig\Debug\Rtabs/" /FD /c 
+"C:\mig\Src\Mfc\Getshadw.cpp"
+"C:\mig\Src\RTabs\RTabs.cpp"
+"C:\mig\Src\RTabs\RTabsCtl.cpp"
+"C:\mig\Src\RTabs\RTabsPpg.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPB383.TMP" 
+Creating temp file "c:\temp\RSPB384.TMP" with contents </nologo /subsystem:windows /dll /incremental:yes /pdb:"\Mig\Debug\exe/RTabs.pdb" /debug /machine:I386 /def:".\RTabs.def" /out:"\Mig\Debug\exe/RTabs.ocx" /implib:"\Mig\Debug\exe/RTabs.lib" /pdbtype:sept 
+\Mig\Debug\Rtabs\Getshadw.obj
+\Mig\Debug\Rtabs\RTabs.obj
+\Mig\Debug\Rtabs\RTabsCtl.obj
+\Mig\Debug\Rtabs\RTabsPpg.obj
+\Mig\Debug\Rtabs\RTabs.res>
+Creating command line "link.exe @c:\temp\RSPB384.TMP" 
+Creating temp file "c:\temp\RSPB385.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\RTabs.ocx"
+echo regsvr32 exec. time > \Mig\Debug\exe\regsvr32.trg
+>
+Creating command line "c:\temp\RSPB385.BAT" 
+Compiling...
+Getshadw.cpp
+RTabs.cpp
+RTabsCtl.cpp
+RTabsPpg.cpp
+Generating Code...
+Linking...
+Registering ActiveX Control...
+--------------------Configuration: RTickBox - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RTickBox\RTickBox.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rtickbox/" /Fd"\Mig\Debug\Rtickbox/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\Rtickbox/RTickBox.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/RTickBox.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RTickBox.def" /out:"\Mig\Debug\exe/RTickBox.ocx" /implib:"\Mig\Debug\exe/RTickBox.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSP23.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rtickbox/" /Fd"\Mig\Debug\Rtickbox/" /FD /c 
+"C:\mig\Src\RTickBox\RTickBox.cpp"
+"C:\mig\Src\RTickBox\RTickBxC.cpp"
+"C:\mig\Src\RTickBox\RTickBxP.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSP23.TMP" 
+Creating temp file "c:\temp\RSP0024.TMP" with contents </nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RTickBox.def" /out:"\Mig\Debug\exe/RTickBox.ocx" /implib:"\Mig\Debug\exe/RTickBox.lib" 
+\Mig\Debug\Rtickbox\RTickBox.obj
+\Mig\Debug\Rtickbox\RTickBxC.obj
+\Mig\Debug\Rtickbox\RTickBxP.obj
+\Mig\Debug\Rtickbox\RTickBox.res>
+Creating command line "link.exe @c:\temp\RSP0024.TMP" 
+Creating temp file "c:\temp\RSP0025.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\RTickBox.ocx"
+echo regsvr32 exec. time > "\Mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSP0025.BAT" 
+Compiling...
+RTickBox.cpp
+RTickBxC.cpp
+RTickBxP.cpp
+Generating Code...
+Linking...
+   Creating library \Mig\Debug\exe/RTickBox.lib and object \Mig\Debug\exe/RTickBox.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \Mig\Debug\exe\RTickBox.ocx succeeded.
+
+--------------------Configuration: UBfields - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\UBfields\UBfields.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MLd /W3 /Gm /GX /Zi /Od /Gf /I "..\h" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"\Mig\Debug\utilobj/" /Fo"\Mig\Debug\utilobj/" /Fd"\Mig\Debug\utilobj/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0x809 /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/UBfields.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /pdb:none /debug /machine:I386 /out:"\mig\debug\exe\makebf.exe" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSP75.TMP" with contents </nologo /MLd /W3 /Gm /GX /Zi /Od /Gf /I "..\h" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"\Mig\Debug\utilobj/" /Fo"\Mig\Debug\utilobj/" /Fd"\Mig\Debug\utilobj/" /FD /c 
+"C:\mig\Src\Bfields\Makebf.cxx"
+>
+Creating command line "cl.exe @c:\temp\RSP75.TMP" 
+Creating temp file "c:\temp\RSP0076.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /pdb:none /debug /machine:I386 /out:"\mig\debug\exe\makebf.exe" 
+\Mig\Debug\utilobj\Makebf.obj>
+Creating command line "link.exe @c:\temp\RSP0076.TMP" 
+Compiling...
+Makebf.cxx
+Linking...
+--------------------Configuration: RRadio - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RRadio\RRadio.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rradio/" /Fd"\Mig\Debug\Rradio/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\Rradio/RRadio.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/RRadio.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /incremental:yes /pdb:"\Mig\Debug\exe/RRadio.pdb" /debug /machine:I386 /def:".\RRadio.def" /out:"\Mig\Debug\exe/RRadio.ocx" /implib:"\Mig\Debug\exe/RRadio.lib" /pdbtype:sept /out:"/mig/Debug/exe/RRadio.ocx" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSPD0.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rradio/" /Fd"\Mig\Debug\Rradio/" /FD /c 
+"C:\mig\Src\Mfc\Getshadw.cpp"
+"C:\mig\Src\RRadio\RRadio.cpp"
+"C:\mig\Src\RRadio\RRadioC.cpp"
+"C:\mig\Src\RRadio\RRadioP.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSPD0.TMP" 
+Creating temp file "c:\temp\RSP00D1.TMP" with contents </nologo /subsystem:windows /dll /incremental:yes /pdb:"\Mig\Debug\exe/RRadio.pdb" /debug /machine:I386 /def:".\RRadio.def" /out:"\Mig\Debug\exe/RRadio.ocx" /implib:"\Mig\Debug\exe/RRadio.lib" /pdbtype:sept /out:"/mig/Debug/exe/RRadio.ocx" 
+\Mig\Debug\Rradio\Getshadw.obj
+\Mig\Debug\Rradio\RRadio.obj
+\Mig\Debug\Rradio\RRadioC.obj
+\Mig\Debug\Rradio\RRadioP.obj
+\Mig\Debug\Rradio\RRadio.res>
+Creating command line "link.exe @c:\temp\RSP00D1.TMP" 
+Creating temp file "c:\temp\RSP00D2.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\RRadio.ocx"
+echo regsvr32 exec. time > "\Mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSP00D2.BAT" 
+Compiling...
+Getshadw.cpp
+RRadio.cpp
+RRadioC.cpp
+RRadioP.cpp
+Generating Code...
+Linking...
+Registering ActiveX Control...
+--------------------Configuration: ukeylist - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\INPUT\Ukeylist.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MLd /W3 /Gm /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\Mig\Debug\utilobj/Ukeylist.pch" /YX /Fo"\Mig\Debug\utilobj/" /Fd"\Mig\Debug\utilobj/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0x809 /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/Ukeylist.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"\Mig\Debug\exe/Ukeylist.pdb" /debug /machine:I386 /out:"\Mig\Debug\exe/Ukeylist.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSP144.TMP" with contents </nologo /MLd /W3 /Gm /GX /Zi /O2 /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fo"\Mig\Debug\utilobj/" /Fd"\Mig\Debug\utilobj/" /FD /c 
+"C:\mig\Src\INPUT\keylist.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSP144.TMP" 
+Creating temp file "c:\temp\RSP0145.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"\Mig\Debug\exe/Ukeylist.pdb" /debug /machine:I386 /out:"\Mig\Debug\exe/Ukeylist.exe" /pdbtype:sept 
+\Mig\Debug\utilobj\keylist.obj>
+Creating command line "link.exe @c:\temp\RSP0145.TMP" 
+Compiling...
+keylist.cpp
+Linking...
+--------------------Configuration: ubatnode - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\ubatnode\Ubatnode.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MLd /W3 /Gm /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\Mig\Debug\obj/Ubatnode.pch" /YX /Fo"\Mig\Debug\obj/" /Fd"\Mig\Debug\obj/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0x809 /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/Ubatnode.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"\Mig\Debug\exe/Ubatnode.pdb" /debug /machine:I386 /out:"\Mig\Debug\exe/Ubatnode.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSP160.TMP" with contents </nologo /MLd /W3 /Gm /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\Mig\Debug\obj/Ubatnode.pch" /YX /Fo"\Mig\Debug\obj/" /Fd"\Mig\Debug\obj/" /FD /c 
+"C:\mig\Src\Bfields\Batnode.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSP160.TMP" 
+Creating temp file "c:\temp\RSP0161.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"\Mig\Debug\exe/Ubatnode.pdb" /debug /machine:I386 /out:"\Mig\Debug\exe/Ubatnode.exe" /pdbtype:sept 
+\Mig\Debug\obj\Batnode.obj>
+Creating command line "link.exe @c:\temp\RSP0161.TMP" 
+Compiling...
+Batnode.cpp
+C:\mig\Src\Bfields\Batnode.cpp(195): include batuids.h
+C:\mig\Src\Bfields\Batnode.cpp(201): include batuids.h
+C:\mig\Src\Bfields\Batnode.cpp(206): include batuids.h
+C:\mig\Src\Bfields\Batnode.cpp(212): include batuids.h
+C:\mig\Src\Bfields\Batnode.cpp(217): include batuids.h
+C:\mig\Src\Bfields\Batnode.cpp(227): include batuids.h
+C:\mig\Src\Bfields\Batnode.cpp(237): include batuids.h
+Linking...
+Creating temp file "c:\temp\RSP193.BAT" with contents <@echo off
+\Mig\Debug\exe\Ubatnode
+>
+Creating command line "c:\temp\RSP193.BAT" 
+Making battle mnodes...
+29 files written. 0 problems
+--------------------Configuration: RSpinBut - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RSPINBUT\Rspinbut.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rspinbut/" /Fd"\Mig\Debug\Rspinbut/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\Rspinbut/RSpinBut.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/Rspinbut.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /incremental:yes /pdb:"\Mig\Debug\exe/Rspinbut.pdb" /debug /machine:I386 /def:".\RSpinBut.def" /out:"\Mig\Debug\exe/Rspinbut.ocx" /implib:"\Mig\Debug\exe/Rspinbut.lib" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSP196.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rspinbut/" /Fd"\Mig\Debug\Rspinbut/" /FD /c 
+"C:\mig\Src\Mfc\Getshadw.cpp"
+"C:\mig\Src\RSPINBUT\Rspinbtc.cpp"
+"C:\mig\Src\RSPINBUT\Rspinbtp.cpp"
+"C:\mig\Src\RSPINBUT\RSpinBut.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSP196.TMP" 
+Creating temp file "c:\temp\RSP0197.TMP" with contents </nologo /subsystem:windows /dll /incremental:yes /pdb:"\Mig\Debug\exe/Rspinbut.pdb" /debug /machine:I386 /def:".\RSpinBut.def" /out:"\Mig\Debug\exe/Rspinbut.ocx" /implib:"\Mig\Debug\exe/Rspinbut.lib" /pdbtype:sept 
+\Mig\Debug\Rspinbut\Getshadw.obj
+\Mig\Debug\Rspinbut\Rspinbtc.obj
+\Mig\Debug\Rspinbut\Rspinbtp.obj
+\Mig\Debug\Rspinbut\RSpinBut.obj
+\Mig\Debug\Rspinbut\RSpinBut.res>
+Creating command line "link.exe @c:\temp\RSP0197.TMP" 
+Creating temp file "c:\temp\RSP0198.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\Rspinbut.ocx"
+echo regsvr32 exec. time > "\Mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "c:\temp\RSP0198.BAT" 
+Compiling...
+Getshadw.cpp
+Rspinbtc.cpp
+Rspinbtp.cpp
+RSpinBut.cpp
+Generating Code...
+Linking...
+Registering ActiveX Control...
+--------------------Configuration: Projects - Win32 Debug--------------------
+
+here...
+--------------------Configuration: MIG - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\Mfc\Mig.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"Win32 (x86)  Tool" with flags ""
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /GX /Zi /O2 /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"\mig\debug\obj/" /Fp"\mig\debug\obj/Mig.pch" /Yu"stdafx.h" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\mig\debug\obj/MIG.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\mig\debug\exe/Mig.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ddraw.lib mss32.lib dplay.lib winmm.lib dinput.lib dxguid.lib smackw32.lib /nologo /subsystem:windows /incremental:no /pdb:"\mig\debug\exe/Mig.pdb" /debug /machine:I386 /nodefaultlib:"libc" /out:"\mig\debug\exe/Mig.exe" /libpath:"..\lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\temp\RSP224.BAT" with contents <@echo off
+if exist \mig\src\bfieldsm.fil del \mig\src\bfieldsm.fil
+if exist \mig\src\bferr.txt del \mig\src\bferr.txt
+start /w /m ..\bfields
+echo :wait >wait.bat
+echo delay 1>>wait.bat
+echo if exist \mig\src\bferr.txt goto end>>wait.bat
+echo if not exist \mig\src\bfieldsm.fil goto wait>>wait.bat
+echo :end>>wait.bat
+wait
+>
+Creating command line "c:\temp\RSP224.BAT" 
+Creating temp file "c:\temp\RSP0225.BAT" with contents <@echo off
+start /w /m ..\fmake2
+echo.>\mig\debug\obj\fmake.dep
+>
+Creating command line "c:\temp\RSP0225.BAT" 
+Creating temp file "c:\temp\RSP0226.BAT" with contents <@echo off
+start /w /m ..\..\Debug\exe\Ukeylist.exe \mig\game\keyboard\keyb3d.bin
+>
+Creating command line "c:\temp\RSP0226.BAT" 
+Creating temp file "c:\temp\RSP0227.BAT" with contents <@echo off
+cd.>..\h\000tools.h
+>
+Creating command line "c:\temp\RSP0227.BAT" 
+Creating temp file "c:\temp\RSP0228.TMP" with contents </nologo /MDd /W3 /GX /Zi /O2 /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\Mfc\000tools.cpp"
+"C:\mig\Src\3D\Jimcol.cpp"
+"C:\mig\Src\3D\particle.cpp"
+"C:\mig\Src\3d\Tilemake.cpp"
+"C:\mig\Src\3d\Weappak.cpp"
+"C:\mig\Src\Graphics\Winsmack.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSP0228.TMP" 
+Creating temp file "c:\temp\RSP0229.TMP" with contents </nologo /MDd /W3 /Gm- /Gi- /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_3D" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\3D\_3D.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP0229.TMP" 
+Creating temp file "c:\temp\RSP022A.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\3D\Overlay.cpp"
+"C:\mig\Src\Missman\Noderev.cpp"
+"C:\mig\Src\3d\Monotxt.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSP022A.TMP" 
+Creating temp file "c:\temp\RSP022B.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_AI" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\AI\_AI.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP022B.TMP" 
+Creating temp file "c:\temp\RSP022C.TMP" with contents </nologo /MDd /W3 /GX /Zi /O2 /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_AIRCRAFT" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\AIRCRAFT\_AIRC.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP022C.TMP" 
+Creating temp file "c:\temp\RSP022D.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_BFIELDS" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\BFIELDS\_BFIE.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP022D.TMP" 
+Creating temp file "c:\temp\RSP022E.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_FILES" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\FILES\_FILE.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP022E.TMP" 
+Creating temp file "c:\temp\RSP022F.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_GENERAL" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\GENERAL\_GENE.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP022F.TMP" 
+Creating temp file "c:\temp\RSP0230.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_GRAPHICS" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\GRAPHICS\_GRAP.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP0230.TMP" 
+Creating temp file "c:\temp\RSP0231.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_HARDWARE" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\HARDWARE\_HARD.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP0231.TMP" 
+Creating temp file "c:\temp\RSP0232.TMP" with contents </nologo /MDd /W3 /GX /Zi /O2 /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_INPUT" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\INPUT\_INPU.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP0232.TMP" 
+Creating temp file "c:\temp\RSP0233.TMP" with contents </nologo /MDd /W3 /GX /Zi /O2 /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_MATH" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\MATH\_MATH.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP0233.TMP" 
+Creating temp file "c:\temp\RSP0234.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_MISSMAN" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\MISSMAN\_MISS.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP0234.TMP" 
+Creating temp file "c:\temp\RSP0235.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_MODEL" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\MODEL\_MODE.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP0235.TMP" 
+Creating temp file "c:\temp\RSP0236.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_MOVECODE" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\MOVECODE\_MOVE.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP0236.TMP" 
+Creating temp file "c:\temp\RSP0237.TMP" with contents </nologo /MDd /W3 /GX /Zi /O2 /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_TEXT" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\TEXT\_TEXT.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP0237.TMP" 
+Creating temp file "c:\temp\RSP0238.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "MIG_COMMS" /FR"\mig\debug\obj/" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\COMMS\_COMM.CPP"
+>
+Creating command line "cl.exe @c:\temp\RSP0238.TMP" 
+Creating temp file "c:\temp\RSP0239.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"\mig\debug\obj/" /Fp"\mig\debug\obj/Mig.pch" /Yu"stdafx.h" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\Mfc\_MFC.CPP"
+"C:\mig\Src\Mfc\_AFX.CPP"
+"C:\mig\Src\Mfc\_SHEETS.CPP"
+"C:\mig\Src\Mfc\credits.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSP0239.TMP" 
+Creating temp file "c:\temp\RSP023A.TMP" with contents </nologo /MDd /W3 /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"\mig\debug\obj/" /Fp"\mig\debug\obj/Mig.pch" /Yc"stdafx.h" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/" /FD /c 
+"C:\mig\Src\Mfc\stdafx.cpp"
+>
+Creating command line "cl.exe @c:\temp\RSP023A.TMP" 
+Compiling battlefields
+Making file-lists
+making keyboard table
+End of utilities
+Creating temp file "c:\temp\RSP2F0.BAT" with contents <@echo off
+cl 000tools.cpp /c /nologo /W3 /GX /Zi /I "..\h"                                                                                                  /FR"\mig\debug\obj/" /Od /D "_DEBUG" /Fo"\mig\debug\obj/" /Fd"\mig\debug\obj/"
+>
+Creating command line "c:\temp\RSP2F0.BAT" 
+Compiling...
+stdafx.cpp
+Processing UI includes
+..\h\bitfield.h(29): Assert is non functional!!!
+C:\mig\Src\Mfc\..\h\myError.h(91): assert redefined
+Compiling...
+000tools.cpp
+Jimcol.cpp
+particle.cpp
+Tilemake.cpp
+Weappak.cpp
+Winsmack.cpp
+Generating Code...
+Compiling...
+_3D.CPP
+C:\mig\Src\3D\..\3D\Collided.cpp(765): OK: check for updating deltas when StillLanded gets called
+AddTransientItemToTrailList debug!!
+Compiling...
+Overlay.cpp
+Noderev.cpp
+Monotxt.cpp
+Generating Code...
+C:\mig\Src\3d\Monotxt.cpp(80): Mono debugs enabled!!!!
+Compiling...
+_AI.CPP
+Compiling...
+_AIRC.CPP
+Compiling...
+_BFIE.CPP
+Compiling...
+_FILE.CPP
+Compiling...
+_GENE.CPP
+Compiling...
+_GRAP.CPP
+Compiling...
+_HARD.CPP
+..\h\myError.h(91): assert redefined
+GetFakePlaceName has noexistant phrase
+Compiling...
+_INPU.CPP
+..\h\BitField.h(29): Assert is non functional!!!
+..\h\myerror.h(91): assert redefined
+Compiling...
+_MATH.CPP
+Compiling...
+_MISS.CPP
+..\h\bitfield.h(29): Assert is non functional!!!
+C:\mig\Src\MISSMAN\..\MISSMAN\Missinit.cpp(1030): release campaign line
+..\h\myerror.h(91): assert redefined
+Compiling...
+_MODE.CPP
+C:\mig\Src\MODEL\..\MODEL\Model.cpp(132): Mono fm output disabled
+Compiling...
+_MOVE.CPP
+Compiling...
+_TEXT.CPP
+Compiling...
+_COMM.CPP
+C:\mig\Src\COMMS\..\COMMS\Winmove.cpp(11822) : warning C4800: 'enum Bool' : forcing value to bool 'true' or 'false' (performance warning)
+Compiling...
+_MFC.CPP
+_AFX.CPP
+Keystub
+C:\mig\Src\Mfc\.\Stub3d.cpp(2044): GETPREC()!=3  !!!!
+HintBox
+_SHEETS.CPP
+credits.cpp
+Generating Code...
+Creating temp file "c:\temp\RSP3041.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ddraw.lib mss32.lib dplay.lib winmm.lib dinput.lib dxguid.lib smackw32.lib /nologo /subsystem:windows /incremental:no /pdb:"\mig\debug\exe/Mig.pdb" /debug /machine:I386 /nodefaultlib:"libc" /out:"\mig\debug\exe/Mig.exe" /libpath:"..\lib" 
+\mig\debug\obj\000tools.obj
+\mig\debug\obj\stdafx.obj
+\mig\debug\obj\_3D.OBJ
+\mig\debug\obj\Jimcol.obj
+\mig\debug\obj\Overlay.obj
+\mig\debug\obj\particle.obj
+\mig\debug\obj\Tilemake.obj
+\mig\debug\obj\Weappak.obj
+\mig\debug\obj\_AI.OBJ
+\mig\debug\obj\_AIRC.OBJ
+\mig\debug\obj\_BFIE.OBJ
+\mig\debug\obj\_FILE.OBJ
+\mig\debug\obj\_GENE.OBJ
+\mig\debug\obj\_GRAP.OBJ
+\mig\debug\obj\Winsmack.obj
+\mig\debug\obj\_HARD.OBJ
+\mig\debug\obj\_INPU.OBJ
+\mig\debug\obj\_MATH.OBJ
+\mig\debug\obj\_MISS.OBJ
+\mig\debug\obj\Noderev.obj
+\mig\debug\obj\_MODE.OBJ
+\mig\debug\obj\_MOVE.OBJ
+\mig\debug\obj\_TEXT.OBJ
+\mig\debug\obj\_COMM.OBJ
+\mig\debug\obj\_MFC.OBJ
+\mig\debug\obj\Monotxt.obj
+\mig\debug\obj\_AFX.OBJ
+\mig\debug\obj\_SHEETS.OBJ
+\mig\debug\obj\credits.obj
+\mig\debug\obj\MIG.res
+\mig\debug\obj\Grafpasm.obj
+\mig\debug\obj\Lstrasm.obj
+\mig\debug\obj\Matrasm.obj>
+Creating command line "link.exe @c:\temp\RSP3041.TMP" 
+Pre Link
+000tools.cpp
+Linking...
+\mig\debug\obj\Grafpasm.obj : warning LNK4033: converting object format from OMF to COFF
+\mig\debug\obj\Lstrasm.obj : warning LNK4033: converting object format from OMF to COFF
+\mig\debug\obj\Matrasm.obj : warning LNK4033: converting object format from OMF to COFF
+
+
+
+Mig.exe - 0 error(s), 4 warning(s)

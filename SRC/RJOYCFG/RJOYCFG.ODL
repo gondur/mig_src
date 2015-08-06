@@ -1,0 +1,70 @@
+// RJoyCfg.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RJoyCfg.tlb) that will become a resource in
+// RJoyCfg.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(1B499F68-C31E-11D1-A1F0-444553540000), version(1.0),
+  helpfile("RJoyCfg.hlp"),
+  helpstring("RJoyCfg ActiveX Control module"),
+  control ]
+library RJOYCFGLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRJoyCfgCtrl
+
+	[ uuid(1B499F69-C31E-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RJoyCfg Control"), hidden ]
+	dispinterface _DRJoyCfg
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRJoyCfgCtrl)
+			[id(1)] IPictureDisp* ControlPicture;
+			[id(2)] long X;
+			[id(3)] long Y;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRJoyCfgCtrl)
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRJoyCfgCtrl
+
+	[ uuid(1B499F6A-C31E-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RJoyCfg Control") ]
+	dispinterface _DRJoyCfgEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRJoyCfgCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRJoyCfgCtrl
+
+	[ uuid(1B499F6B-C31E-11D1-A1F0-444553540000), licensed,
+	  helpstring("RJoyCfg Control"), control ]
+	coclass RJoyCfg
+	{
+		[default] dispinterface _DRJoyCfg;
+		[default, source] dispinterface _DRJoyCfgEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,1 @@
+del ..\debug\exe\*.ocx

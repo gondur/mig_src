@@ -1,0 +1,33 @@
+.EXTENSIONS: 
+.EXTENSIONS: .exe .lst .bin
+.EXTENSIONS: .o .oo .op .os .od .ou .ol	.dep .o1 .det .ow .ox .oc .oow
+.EXTENSIONS: .cpp .cc .asm .c .mif .txt
+.EXTENSIONS: .h .m .g .res .fil .i .inc 
+
+
+.g:	h
+.h:	h;y:\watcom\h;y:\watcom\h\sys;y:\includes
+.m:	h
+.inc:	h
+.i:	h
+.cc:	text;bfields;input;files
+.txt:	english
+.mif:	makefile
+.cpp:	ui;ai;3d;files;hardware;math;general;graphics;text;movecode;input;bfields;model;aircraft
+.asm:	hardware;graphics;input;math;3d;files
+.o:	obj
+.ow:	obj
+.oow:	obj
+.ox:	obj
+.oo:	obj
+.op:	obj
+.os:	obj
+.ou:	obj
+.oc:	obj
+.ol:	obj
+.od:	obj
+.o1:	obj
+.dep:	obj
+.res:	obj
+.bin:	..\game\libcode
+.exe:	mycmds

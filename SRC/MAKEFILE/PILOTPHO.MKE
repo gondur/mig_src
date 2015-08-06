@@ -1,0 +1,42 @@
+.EXTENSIONS: 
+.EXTENSIONS: .ibm .sbm .lbm .pcx .mif
+.OPTIMIZE
+
+#
+#.lbm are normal lbm files
+#.ibm are invisible encoded files
+#.sbm are invisible encoded, with no palette files
+#
+
+
+
+SRC	=	S:\PROJECTS\mig\ARTSRC\STILLS\FINISH\
+DEST	= 	..\GAME\ARTWORK\photo640\
+#DEST2	= 	..\GAME\ARTWORK\photo320\
+
+.pcx:	$(SRC)
+.lbm:	$(DEST)
+.ibm:	$(DEST)
+.sbm:	$(DEST)
+
+PHOTOS	=	fc_pilt1.sbm&
+
+
+
+all:	$(PHOTOS)
+
+
+.pcx.lbm:
+	tt -lp$(SRC)$^&.pcx -wl$(DEST)$^&.lbm
+
+#	tt -lp$(SRC)$^&.pcx -sqw320h200 -wl$(DEST2)$^&.lbm
+
+.pcx.ibm:
+	tt -lp$(SRC)$^&.pcx -wi$(DEST)$^&.ibm
+
+#	tt -lp$(SRC)$^&.pcx -sqw320h200 -wi$(DEST2)$^&.ibm
+
+.pcx.sbm:
+	tt -lp$(SRC)$^&.pcx -wI$(DEST)$^&.sbm
+
+#	tt -lp$(SRC)$^&.pcx -sqw320h200 -wI$(DEST2)$^&.sbm

@@ -1,0 +1,1532 @@
+/*
+	 MiG Alley
+	 Copyright (C) 1998, 1999, 2000, 2001 Empire Interactive (Europe) Ltd,
+	 677 High Road, North Finchley, London N12 0DA
+
+	 Please see the document licence.doc for the full licence agreement
+
+2. LICENCE
+ 2.1 	
+ 	Subject to the provisions of this Agreement we now grant to you the 
+ 	following rights in respect of the Source Code:
+  2.1.1 
+  	the non-exclusive right to Exploit  the Source Code and Executable 
+  	Code on any medium; and 
+  2.1.2 
+  	the non-exclusive right to create and distribute Derivative Works.
+ 2.2 	
+ 	Subject to the provisions of this Agreement we now grant you the
+	following rights in respect of the Object Code:
+  2.2.1 
+	the non-exclusive right to Exploit the Object Code on the same
+	terms and conditions set out in clause 3, provided that any
+	distribution is done so on the terms of this Agreement and is
+	accompanied by the Source Code and Executable Code (as
+	applicable).
+
+3. GENERAL OBLIGATIONS
+ 3.1 
+ 	In consideration of the licence granted in clause 2.1 you now agree:
+  3.1.1 
+	that when you distribute the Source Code or Executable Code or
+	any Derivative Works to Recipients you will also include the
+	terms of this Agreement;
+  3.1.2 
+	that when you make the Source Code, Executable Code or any
+	Derivative Works ("Materials") available to download, you will
+	ensure that Recipients must accept the terms of this Agreement
+	before being allowed to download such Materials;
+  3.1.3 
+	that by Exploiting the Source Code or Executable Code you may
+	not impose any further restrictions on a Recipient's subsequent
+	Exploitation of the Source Code or Executable Code other than
+	those contained in the terms and conditions of this Agreement;
+  3.1.4 
+	not (and not to allow any third party) to profit or make any
+	charge for the Source Code, or Executable Code, any
+	Exploitation of the Source Code or Executable Code, or for any
+	Derivative Works;
+  3.1.5 
+	not to place any restrictions on the operability of the Source 
+	Code;
+  3.1.6 
+	to attach prominent notices to any Derivative Works stating
+	that you have changed the Source Code or Executable Code and to
+	include the details anddate of such change; and
+  3.1.7 
+  	not to Exploit the Source Code or Executable Code otherwise than
+	as expressly permitted by  this Agreement.
+
+questions about this file may be asked at http://www.simhq.com/
+*/
+
+//------------------------------------------------------------------------------
+//Filename       formatn.cpp
+//System         
+//Author         R. Hyde 
+//Date           Wed 17 Jan 1996
+//Description
+//
+//For FC:	Each in-flight formation needs 5 followers.
+//			Each interflight formation needs a leader and 4 followers
+//
+//For MiG:	
+//	For Blues	- max 4 flights of [2 elts of 2 ac]
+//		Each in-flight form has 3 followers
+//		Follower position 3 is relative to position 2 while (2) is alive
+//			then is relative to the leader
+//		Each inter-flight form needs 7 followers and a leader escort pos
+//	For Reds	- max 25 aircraft - max 8 fl and max 8 aircraft per flight?
+//		Each in flight form needs 7 followers
+//		Each interflight form needs 1 for leader & 7 followers
+//	If the migs are going to throw a ruse, 
+//		the ruse aircraft are a second group.
+//
+//Special:
+//	If 1 or 2 groups are escorting others of the same aircraft type, 
+//	and the same formation type,
+//	then I want them to all fly in formation with each other, 
+//	not in escort formation.
+//------------------------------------------------------------------------------
+
+
+//DeadCode DAW 29Feb96 #include	"dosdefs.h"
+//DeadCode DAW 29Feb96 #include	"Files.G"
+//DeadCode DAW 29Feb96 #include	"uniqueid.g"
+//DeadCode JIM 16Nov95 #include	"text.G"
+//#include	"miss_man.h"
+//#undef	MISS_MAN_Included
+//------------------------------------------------------------------------------
+
+
+//DeadCode JIM 30Apr96 #include	"miss_man.h"
+//#include	"ui.h"												//JIM 30Apr96
+//LastModified:	JIM 24Jul96
+
+#include	"dosdefs.h"
+#include	"files.g"
+#include	"text.h"
+#include	"ranges.h"
+#include	"mytime.h"											//RDH 12Jan96
+#include	"uniqueid.h"
+#include	"worldinc.h"
+#include	"bitfield.h"
+
+#include	"misssub.h"
+
+
+
+FormationType FlatV_Form =
+{
+	12,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	FT_300,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	FT_300,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	FT_300,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	FT_600,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	FT_300,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	FT_600,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	FT_300,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	FT_900,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	FT_300,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	FT_900,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	FT_300,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	FT_300,ANGLES_240Deg,METRES00,SAME_ALT}
+
+	}
+};
+
+FormationType StackedV_Form =	//BORROWED BECAUSE THIS IS FORMATION 0!!! //JIM 01/02/99
+{
+	5,//	/*name*/		(TextRef)TEXT_STACKEDV,
+	{													//leader not decribed
+		{	METRES28,ANGLES_120Deg,METRES00,SAME_ALT},	//wingman
+		{	METRES28,ANGLES_270Deg,METRES00,SAME_ALT},	//elt lead
+		{	METRES28,ANGLES_210Deg,METRES00,SAME_ALT},	//elt wingman
+		{	METRES28,ANGLES_180Deg,METRES05,SAME_ALT},	//2nd elt lead
+		{	METRES28,ANGLES_180Deg,METRES05,SAME_ALT}	//2nd elt wing
+	}
+};
+
+FormationType TwoV_Form =
+{
+	5,//	/*name*/		(TextRef)TEXT_TWOV,
+	{
+		{	METRES28,ANGLES_120Deg,METRES00,HIGHER},
+		{	METRES28,ANGLES_240Deg,METRES00,HIGHER},
+		{	METRES56,ANGLES_120Deg,METRES10,HIGHER},
+		{	METRES84,ANGLES_120Deg,METRES10,HIGHER},
+		{	METRES62_6,ANGLES_161_5Deg,METRES10,HIGHER}
+	}
+};
+
+
+FormationType Diamond_Form =
+{
+	5,//	/*name*/		(TextRef)TEXT_DIAMOND,
+	{
+		{	METRES28,ANGLES_120Deg,METRES00,HIGHER},
+		{	METRES28,ANGLES_240Deg,METRES00,HIGHER},
+		{	METRES56,ANGLES_120Deg,METRES10,HIGHER},
+		{	METRES56,ANGLES_240Deg,METRES10,HIGHER},
+		{	METRES40,ANGLES_180Deg,METRES20,HIGHER}
+	}
+};
+
+FormationType FilledV_Form =
+{
+	5,//	/*name*/		(TextRef)TEXT_FILLEDV,
+	{
+		{	METRES30,ANGLES_120Deg,METRES15,HIGHER},
+		{	METRES30,ANGLES_240Deg,METRES15,HIGHER},
+		{	METRES78,ANGLES_180Deg,METRES30,HIGHER},
+		{	METRES120,ANGLES_120Deg,METRES25,HIGHER},
+		{	METRES120,ANGLES_240Deg,METRES25,HIGHER}
+	}
+};
+
+
+
+
+FormationType FlatBox_Form =
+{
+	5,//	/*name*/		(TextRef)TEXT_FLATBOX,
+	{
+		{	METRES60,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES60,ANGLES_90Deg,METRES00,SAME_ALT},
+		{	METRES84,ANGLES_135Deg,METRES00,SAME_ALT},
+		{	METRES120,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES133_8,ANGLES_153_4Deg,METRES00,SAME_ALT}
+	}
+};
+
+
+FormationType StackedBox_Form =
+{
+	5,//	/*name*/		(TextRef)TEXT_STACKEDBOX,
+	{
+		{	METRES60,ANGLES_90Deg,METRES00,HIGHER},
+		{	METRES60,ANGLES_180Deg,METRES10,HIGHER},
+		{	METRES84,ANGLES_135Deg,METRES10,HIGHER},
+		{	METRES120,ANGLES_180Deg,METRES20,HIGHER},
+		{	METRES133_8,ANGLES_153_4Deg,METRES20,HIGHER}
+	}
+};
+
+
+FormationType Shepherd_Form =
+{
+	5,//	/*name*/		(TextRef)TEXT_SHEPHERD,
+	{
+		{	METRES150,ANGLES_0Deg,-METRES100,LOWER},
+		{	METRES150,ANGLES_10Deg,-METRES100,LOWER},
+		{	METRES150,ANGLES_350Deg,-METRES100,LOWER},
+//DeadCode RDH 12Dec96 		{	METRES150,ANGLES_20Deg,METRES10,LOWER},
+//DeadCode RDH 12Dec96 		{	METRES150,ANGLES_340Deg,METRES10,LOWER}
+		{	METRES150,ANGLES_20Deg,-METRES100,LOWER},			//RDH 12Dec96
+		{	METRES150,ANGLES_340Deg,-METRES100,LOWER}			//RDH 12Dec96
+	}
+};
+
+FormationType Loose_Form =
+{
+	5,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES100,ANGLES_160Deg,METRES00,SAME_ALT},
+		{	METRES100,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	METRES200,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	METRES200,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	METRES300,ANGLES_120Deg,METRES00,SAME_ALT}
+	}
+};
+
+
+FormationType TakeOff_Form =
+{
+	5,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES80,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	METRES80,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	METRES140,ANGLES_150Deg,METRES00,SAME_ALT},
+		{	METRES140,ANGLES_210Deg,METRES00,SAME_ALT},
+		{	METRES130,ANGLES_180Deg,METRES00,SAME_ALT}
+	}
+};
+
+FormationType SingleFile_Form =
+{
+	12,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES15,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES30,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES45,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES60,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES75,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES90,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES105,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES120,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES135,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES150,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES165,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES180,ANGLES_180Deg,METRES00,SAME_ALT}
+	}
+};
+
+FormationType TruckConvoy_Form =
+{
+	15,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES50,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES100,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES150,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES200,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES300,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES350,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES400,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES450,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES500,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES550,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES600,ANGLES_180Deg,METRES00,SAME_ALT},			//MS 11Jun99
+		{	METRES650,ANGLES_180Deg,METRES00,SAME_ALT},			//MS 11Jun99
+		{	METRES700,ANGLES_180Deg,METRES00,SAME_ALT},			//MS 11Jun99
+		{	METRES750,ANGLES_180Deg,METRES00,SAME_ALT},			//MS 11Jun99
+	}
+};
+
+//TempCode MS 21Apr99 		{	METRES30,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES60,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES90,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES120,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES150,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES180,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES210,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES240,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES260,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES300,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES313,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 21Apr99 		{	METRES350,ANGLES_180Deg,METRES00,SAME_ALT}
+
+
+FormationType Random_Form =
+{
+	11,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES15,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	METRES15,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	METRES15,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	METRES30,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	METRES30,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	METRES45,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	METRES15,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	METRES15,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	METRES30,ANGLES_120Deg,METRES00,SAME_ALT},
+		{	METRES30,ANGLES_240Deg,METRES00,SAME_ALT},
+		{	METRES45,ANGLES_120Deg,METRES00,SAME_ALT}
+	}
+};
+FormationType Implode_Form =
+{
+	7,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES250,ANGLES_225Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_90Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_270Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_45Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_315Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_135Deg,METRES00,SAME_ALT},
+	}
+};
+FormationType Explode_Form =
+{
+	7,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES50,ANGLES_225Deg,METRES00,SAME_ALT},
+		{	METRES50,ANGLES_90Deg,METRES00,SAME_ALT},
+		{	METRES50,ANGLES_270Deg,METRES00,SAME_ALT},
+		{	METRES50,ANGLES_45Deg,METRES00,SAME_ALT},
+		{	METRES50,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES50,ANGLES_315Deg,METRES00,SAME_ALT},
+		{	METRES50,ANGLES_135Deg,METRES00,SAME_ALT},
+	}
+};
+
+
+FormationType String_Form =
+{
+	15,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES50,ANGLES_185Deg,FT_0,SAME_ALT},
+		{	METRES100,ANGLES_185Deg,FT_20,SAME_ALT},
+		{	METRES150,ANGLES_175Deg,-FT_20,SAME_ALT},
+		{	METRES200,ANGLES_180Deg,-FT_10,SAME_ALT},
+		{	METRES250,ANGLES_175Deg,FT_0,SAME_ALT},
+		{	METRES300,ANGLES_180Deg,FT_20,SAME_ALT},
+		{	METRES350,ANGLES_185Deg,FT_0,SAME_ALT},
+		{	METRES400,ANGLES_180Deg,-FT_20,SAME_ALT},
+		{	METRES450,ANGLES_180Deg,FT_0,SAME_ALT},
+		{	METRES500,ANGLES_180Deg,-FT_20,SAME_ALT},
+		{	METRES550,ANGLES_175Deg,FT_20,SAME_ALT},
+		{	METRES650,ANGLES_185Deg,-FT_10,SAME_ALT},
+		{	METRES700,ANGLES_180Deg,FT_0,SAME_ALT},
+		{	METRES750,ANGLES_185Deg,FT_10,SAME_ALT},
+		{	METRES800,ANGLES_185Deg,FT_20,SAME_ALT}
+
+//TempCode MS 16Apr99 		{	METRES50,ANGLES_180Deg,FT_0,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES100,ANGLES_181Deg,-FT_10,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES150,ANGLES_179Deg,-FT_20,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES200,ANGLES_180Deg,-FT_10,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES250,ANGLES_179Deg,FT_0,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES300,ANGLES_180Deg,FT_10,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES350,ANGLES_181Deg,FT_0,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES400,ANGLES_180Deg,-FT_20,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES450,ANGLES_180Deg,FT_0,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES500,ANGLES_180Deg,-FT_20,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES550,ANGLES_179Deg,FT_20,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES650,ANGLES_181Deg,-FT_10,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES700,ANGLES_180Deg,FT_0,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES750,ANGLES_181Deg,FT_10,SAME_ALT},
+//TempCode MS 16Apr99 		{	METRES800,ANGLES_181Deg,FT_20,SAME_ALT}
+
+	}
+};
+
+FormationType Gaggle_Form =
+{
+	7,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES250,ANGLES_90Deg,METRES00,SAME_ALT},
+		{	FT_250,ANGLES_100Deg,FT_0,SAME_ALT},
+		{	FT_300,ANGLES_240Deg,-FT_10,SAME_ALT},
+		{	FT_500,ANGLES_186Deg,FT_20,SAME_ALT},
+		{	FT_750,ANGLES_170Deg,-FT_10,SAME_ALT},
+		{	FT_800,ANGLES_110Deg,FT_0,SAME_ALT},
+		{	FT_900,ANGLES_135Deg,FT_10,SAME_ALT},
+		{	FT_1000,ANGLES_180Deg,-FT_20,SAME_ALT},
+	}
+};
+
+//TempCode MS 07Apr99 FormationType Finger4_Form =
+//TempCode MS 07Apr99 {
+//TempCode MS 07Apr99 	7,//	/*name*/		(TextRef)TEXT_FLATV,
+//TempCode MS 07Apr99 	{
+//TempCode MS 07Apr99 		{	FT_250,ANGLES_225Deg,FT_0,SAME_ALT},
+//TempCode MS 07Apr99 		{	FT_300,ANGLES_110Deg,FT_50,HIGHER},
+//TempCode MS 07Apr99 		{	FT_250,ANGLES_135Deg,FT_0,SAME_ALT},
+//TempCode MS 07Apr99 		{	METRES250,ANGLES_45Deg,METRES00,SAME_ALT},
+//TempCode MS 07Apr99 		{	METRES250,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 07Apr99 		{	METRES250,ANGLES_315Deg,METRES00,SAME_ALT},
+//TempCode MS 07Apr99 		{	METRES250,ANGLES_135Deg,METRES00,SAME_ALT},
+//TempCode MS 07Apr99 	}
+//TempCode MS 07Apr99 };
+
+FormationType Finger4_Form =
+{
+	7,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	FT_200,ANGLES_235Deg,FT_0,SAME_ALT},
+		{	FT_250,ANGLES_120Deg,FT_50,HIGHER},
+		{	FT_200,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES250,ANGLES_45Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_315Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_135Deg,METRES00,SAME_ALT},
+//DeadCode MS 18Apr99 		{	METRES20,ANGLES_235Deg,FT_0,SAME_ALT},
+//DeadCode MS 18Apr99 		{	METRES25,ANGLES_120Deg,FT_0,HIGHER},
+//DeadCode MS 18Apr99 		{	METRES20,ANGLES_125Deg,FT_0,SAME_ALT},
+//DeadCode MS 18Apr99 		{	METRES25,ANGLES_45Deg,METRES00,SAME_ALT},
+//DeadCode MS 18Apr99 		{	METRES25,ANGLES_180Deg,METRES00,SAME_ALT},
+//DeadCode MS 18Apr99 		{	METRES25,ANGLES_315Deg,METRES00,SAME_ALT},
+//DeadCode MS 18Apr99 		{	METRES25,ANGLES_135Deg,METRES00,SAME_ALT},
+	}
+};
+
+FormationType Combat4_Form =
+{
+	7,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	FT_600,ANGLES_190Deg,FT_0,SAME_ALT},
+		{	FT_600,ANGLES_110Deg,FT_50,HIGHER},
+		{	FT_600,ANGLES_170Deg,FT_0,SAME_ALT},
+		{	METRES25,ANGLES_225Deg,FT_0,SAME_ALT},
+		{	METRES30,ANGLES_110Deg,FT_0,HIGHER},
+		{	METRES25,ANGLES_135Deg,FT_0,SAME_ALT},
+	}
+};
+
+FormationType LooseFinger_Form =
+{
+	7,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES250,ANGLES_225Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_90Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_270Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_45Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_180Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_315Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_135Deg,METRES00,SAME_ALT},
+	}
+};
+
+//Checked by //MS 18Apr99
+FormationType EchelonRight_Form =
+{
+	15,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+//TempCode MS 30Jun99 		{	METRES100,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES200,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES300,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES400,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES500,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES600,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES700,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES800,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES900,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES1000,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES1100,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES1200,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES1300,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES1400,ANGLES_125Deg,FT_0,SAME_ALT},
+//TempCode MS 30Jun99 		{	METRES1500,ANGLES_125Deg,FT_0,SAME_ALT}
+		{	METRES50,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES100,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES150,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES200,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES250,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES300,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES350,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES400,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES450,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES500,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES550,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES600,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES650,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES700,ANGLES_125Deg,FT_0,SAME_ALT},
+		{	METRES750,ANGLES_125Deg,FT_0,SAME_ALT}
+	}
+//TempCode MS 14Apr99 		{	METRES250,ANGLES_225Deg,METRES00,SAME_ALT},
+//TempCode MS 14Apr99 		{	METRES250,ANGLES_90Deg,METRES00,SAME_ALT},
+//TempCode MS 14Apr99 		{	METRES250,ANGLES_270Deg,METRES00,SAME_ALT},
+//TempCode MS 14Apr99 		{	METRES250,ANGLES_45Deg,METRES00,SAME_ALT},
+//TempCode MS 14Apr99 		{	METRES250,ANGLES_180Deg,METRES00,SAME_ALT},
+//TempCode MS 14Apr99 		{	METRES250,ANGLES_315Deg,METRES00,SAME_ALT},
+//TempCode MS 14Apr99 		{	METRES250,ANGLES_135Deg,METRES00,SAME_ALT},
+};
+
+//Checked by //MS 18Apr99
+FormationType EchelonLeft_Form =
+{
+	15,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES100,ANGLES_240Deg,FT_0,SAME_ALT},
+		{	METRES200,ANGLES_240Deg,-METRES10,SAME_ALT},
+		{	METRES300,ANGLES_240Deg,METRES10,SAME_ALT},
+		{	METRES400,ANGLES_240Deg,-METRES10,SAME_ALT},
+		{	METRES500,ANGLES_240Deg,FT_0,SAME_ALT},
+		{	METRES600,ANGLES_240Deg,METRES10,SAME_ALT},
+		{	METRES700,ANGLES_240Deg,FT_0,SAME_ALT},
+		{	METRES800,ANGLES_240Deg,-METRES10,SAME_ALT},
+		{	METRES900,ANGLES_240Deg,FT_0,SAME_ALT},
+		{	METRES1000,ANGLES_240Deg,-METRES10,SAME_ALT},
+		{	METRES1100,ANGLES_240Deg,METRES10,SAME_ALT},
+		{	METRES1200,ANGLES_240Deg,-METRES10,SAME_ALT},
+		{	METRES1300,ANGLES_240Deg,FT_0,SAME_ALT},
+		{	METRES1400,ANGLES_240Deg,METRES10,SAME_ALT},
+		{	METRES1500,ANGLES_240Deg,METRES10,SAME_ALT}
+	}
+};
+
+FormationType Abreast_Form =
+{
+	15,//	/*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES50,ANGLES_90Deg,FT_0,SAME_ALT},
+		{	METRES50,ANGLES_270Deg,FT_0,SAME_ALT},
+		{	METRES100,ANGLES_90Deg,FT_0,SAME_ALT},
+		{	METRES100,ANGLES_270Deg,FT_0,SAME_ALT},
+		{	METRES150,ANGLES_90Deg,FT_0,SAME_ALT},
+		{	METRES150,ANGLES_270Deg,FT_0,SAME_ALT},
+		{	METRES200,ANGLES_90Deg,FT_0,SAME_ALT},
+		{	METRES200,ANGLES_270Deg,FT_0,SAME_ALT},
+		{	METRES250,ANGLES_90Deg,FT_0,SAME_ALT},
+		{	METRES300,ANGLES_270Deg,FT_0,SAME_ALT},
+		{	METRES300,ANGLES_90Deg,FT_0,SAME_ALT},
+		{	METRES350,ANGLES_270Deg,FT_0,SAME_ALT},
+		{	METRES350,ANGLES_90Deg,FT_0,SAME_ALT},
+		{	METRES400,ANGLES_270Deg,FT_0,SAME_ALT},
+		{	METRES400,ANGLES_90Deg,FT_0,SAME_ALT}
+	}
+};
+
+FormationType BattleLine_Form =
+{
+	15,///*name*/		(TextRef)TEXT_FLATV,
+	{
+		{	METRES50,ANGLES_100Deg,METRES00,SAME_ALT},
+		{	METRES50,ANGLES_270Deg,METRES00,SAME_ALT},
+		{	METRES100,ANGLES_90Deg,METRES00,SAME_ALT},
+		{	METRES100,ANGLES_260Deg,METRES00,SAME_ALT},
+		{	METRES150,ANGLES_90Deg,METRES00,SAME_ALT},
+		{	METRES150,ANGLES_270Deg,METRES00,SAME_ALT},
+		{	METRES200,ANGLES_90Deg,METRES00,SAME_ALT},
+		{	METRES200,ANGLES_270Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_100Deg,METRES00,SAME_ALT},
+		{	METRES250,ANGLES_260Deg,METRES00,SAME_ALT},
+		{	METRES300,ANGLES_90Deg,METRES00,SAME_ALT},
+		{	METRES300,ANGLES_260Deg,METRES00,SAME_ALT},
+		{	METRES350,ANGLES_90Deg,METRES00,SAME_ALT},
+		{	METRES350,ANGLES_270Deg,METRES00,SAME_ALT},
+		{	METRES400,ANGLES_90Deg,METRES00,SAME_ALT}
+	}
+};
+
+
+SquadronType SquadronTakeOff =
+{
+	8,//	/*name*/		(TextRef)TEXT_STACKEDLINE,
+	{
+		{	METRES1400,ANGLES_180Deg,FT_1000,HIGHER},
+		{	METRES200,ANGLES_150Deg,METRES00,SAME_ALT},
+		{	METRES200,ANGLES_210Deg,METRES00,SAME_ALT},
+		{	METRES150,ANGLES_225Deg,METRES00,HIGHER},
+		{	METRES200,ANGLES_225Deg,METRES00,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES00,HIGHER},
+		{	METRES300,ANGLES_225Deg,METRES00,HIGHER},
+		{	METRES350,ANGLES_225Deg,METRES00,HIGHER},
+	}
+};
+
+
+
+//the first entry for the squadron formations determines the position that 
+//the leader will take wrt any escortee
+
+SquadronType StackedV_Squad =
+{	//need up to 16 entries...for MiGs
+	22,//	/*name*/		(TextRef)TEXT_STACKEDV_FORM,
+	{
+		{	METRES1400,ANGLES_180Deg,FT_1000,HIGHER},	 //0
+		{	METRES100,ANGLES_135Deg,METRES50,HIGHER},	 //1
+		{	METRES100,ANGLES_225Deg,METRES100,HIGHER},	 //2
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 //3
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},	 //4
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 //5
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	 //6
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	 //7
+		{	METRES100,ANGLES_135Deg,METRES100,HIGHER},	 //8
+		{	METRES100,ANGLES_225Deg,METRES150,HIGHER},	 //9
+		{	METRES150,ANGLES_225Deg,METRES150,HIGHER},	 //10
+		{	METRES200,ANGLES_225Deg,METRES150,HIGHER},	 //11
+		{	METRES150,ANGLES_225Deg,METRES150,HIGHER},	 //12
+		{	METRES300,ANGLES_225Deg,METRES150,HIGHER},	 //13
+		{	METRES350,ANGLES_225Deg,METRES150,HIGHER},	 //14
+		{	METRES100,ANGLES_135Deg,0,HIGHER},			 //15
+		{	METRES100,ANGLES_225Deg,METRES50,HIGHER},	 //16
+		{	METRES150,ANGLES_225Deg,METRES50,HIGHER},	 //17
+		{	METRES200,ANGLES_225Deg,METRES50,HIGHER},	 //18
+		{	METRES150,ANGLES_225Deg,METRES50,HIGHER},	 //19
+		{	METRES300,ANGLES_225Deg,METRES50,HIGHER},	 //20
+		{	METRES350,ANGLES_225Deg,METRES50,HIGHER},	 //21
+	}
+};
+
+SquadronType FlatV_Squad =
+{	//need up to 16 entries...
+	22,//	/*name*/		(TextRef)TEXT_STACKEDV_FORM,
+	{
+		{	METRES1400,ANGLES_180Deg,FT_1000,HIGHER},	 //0
+		{	METRES100,ANGLES_135Deg,METRES50,HIGHER},	 //1
+		{	METRES100,ANGLES_225Deg,METRES100,HIGHER},	 //2
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 //3
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},	 //4
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 //5
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	 //6
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	 //7
+		{	METRES100,ANGLES_135Deg,METRES100,HIGHER},	 //8
+		{	METRES100,ANGLES_225Deg,METRES150,HIGHER},	 //9
+		{	METRES150,ANGLES_225Deg,METRES150,HIGHER},	 //10
+		{	METRES200,ANGLES_225Deg,METRES150,HIGHER},	 //11
+		{	METRES150,ANGLES_225Deg,METRES150,HIGHER},	 //12
+		{	METRES300,ANGLES_225Deg,METRES150,HIGHER},	 //13
+		{	METRES350,ANGLES_225Deg,METRES150,HIGHER},	 //14
+		{	METRES100,ANGLES_135Deg,0,HIGHER},			 //15
+		{	METRES100,ANGLES_225Deg,METRES50,HIGHER},	 //16
+		{	METRES150,ANGLES_225Deg,METRES50,HIGHER},	 //17
+		{	METRES200,ANGLES_225Deg,METRES50,HIGHER},	 //18
+		{	METRES150,ANGLES_225Deg,METRES50,HIGHER},	 //19
+		{	METRES300,ANGLES_225Deg,METRES50,HIGHER},	 //20
+		{	METRES350,ANGLES_225Deg,METRES50,HIGHER},	 //21
+	}
+};
+
+SquadronType StackedSquadLine =
+{
+	8,//	/*name*/		(TextRef)TEXT_STACKEDLINE,
+	{
+		{	METRES1400,ANGLES_180Deg,FT_1000,HIGHER},
+		{	METRES100,ANGLES_180Deg,METRES100,HIGHER},
+		{	METRES200,ANGLES_180Deg,METRES200,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},
+	}
+};
+
+SquadronType Bait =
+{
+	8,//	/*name*/		(TextRef)TEXT_BAIT,
+	{
+		{	METRES1400,ANGLES_180Deg,FT_4000,HIGHER},			//MS 16Dec96
+		{	METRES500,ANGLES_135Deg,METRES100,HIGHER},			//RDH 14Dec96
+		{	METRES1000,ANGLES_0Deg,-METRES300,LOWER},			//RDH 14Dec96
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},
+	}
+};
+
+
+SquadronType StackedDiagonalLine =
+{
+	8,//	/*name*/		(TextRef)TEXT_DIAGONALLINE,
+	{
+		{	METRES1400,ANGLES_180Deg,FT_1000,HIGHER},
+		{	METRES100,ANGLES_120Deg,METRES100,HIGHER},
+		{	METRES200,ANGLES_120Deg,METRES200,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},
+	}
+};
+
+SquadronType Group_EchelonRight =
+{
+	8,//	/*name*/		(TextRef)TEXT_DIAGONALLINE,
+	{
+		{	FT_2000,ANGLES_180Deg,FT_10000,HIGHER},
+		{	METRES100,ANGLES_120Deg,METRES100,HIGHER},
+		{	METRES200,ANGLES_120Deg,METRES200,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES250,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},
+	}
+};
+
+SquadronType Group_EchelonLeft =
+{
+	8,//	/*name*/		(TextRef)TEXT_DIAGONALLINE,
+	{
+		{	METRES2000,ANGLES_180Deg,FT_10000,HIGHER},
+		{	METRES100,ANGLES_120Deg,METRES100,HIGHER},
+		{	METRES200,ANGLES_120Deg,METRES200,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},
+	}
+};
+
+
+SquadronType StackedABreast =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABREAST,
+	{
+		{	METRES1400,ANGLES_180Deg,FT_1000,HIGHER},
+		{	METRES400,ANGLES_90Deg,FT_0,HIGHER},
+		{	METRES400,ANGLES_90Deg,FT_0,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},
+	}
+};
+
+//********************************************************		//MS 07Apr99
+
+#define	FOLLOWERS_Box	\
+		{	METRES200,ANGLES_110Deg,FT_0,HIGHER},\
+		{	METRES200,ANGLES_170Deg,FT_0,HIGHER}, \
+		{	METRES300,ANGLES_140Deg,FT_0,HIGHER}, \
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},	\
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 \
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	  \
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	   \
+
+SquadronType Group_Box_CLOSE =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABREAST,
+	{
+		{	METRES500,ANGLES_100Deg,FT_1000,HIGHER},
+		FOLLOWERS_Box
+	}
+};
+
+SquadronType Group_Box_RIGHT =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABREAST,
+	{
+		{	METRES1000,ANGLES_90Deg,FT_2000,HIGHER},
+		FOLLOWERS_Box
+	}
+};
+
+SquadronType Group_Box_LEFT =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABREAST,
+	{
+		{	METRES1000,ANGLES_270Deg,FT_2000,HIGHER},
+		FOLLOWERS_Box
+	}
+};
+
+SquadronType Group_Box_AHEAD =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABREAST,
+	{
+		{	METRES1000,ANGLES_5Deg,FT_1000,HIGHER},
+		FOLLOWERS_Box
+	}
+};
+
+//--------------------------------------------------------		//MS 07Apr99
+
+#define	FOLLOWERS_Abreast	\
+		{	METRES200,ANGLES_95Deg,FT_20,HIGHER},\
+		{	METRES400,ANGLES_95Deg,FT_40,HIGHER}, \
+		{	METRES600,ANGLES_95Deg,FT_60,HIGHER}, \
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},	\
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 \
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	  \
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	   \
+
+SquadronType Group_Abreast_CLOSE =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABREAST,
+	{
+		{	METRES500,ANGLES_100Deg,FT_1000,HIGHER},
+		FOLLOWERS_Abreast
+	}
+};
+
+SquadronType Group_Abreast_RIGHT =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABREAST,
+	{
+		{	METRES1000,ANGLES_90Deg,FT_2000,HIGHER},
+		FOLLOWERS_Abreast
+	}
+};
+
+SquadronType Group_Abreast_LEFT =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABREAST,
+	{
+		{	METRES1000,ANGLES_270Deg,FT_2000,HIGHER},
+		FOLLOWERS_Abreast
+	}
+};
+
+SquadronType Group_Abreast_AHEAD =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABREAST,
+	{
+		{	METRES1000,ANGLES_5Deg,FT_1000,HIGHER},
+		FOLLOWERS_Abreast
+	}
+};
+
+//--------------------------------------------------------		//MS 07Apr99
+
+#define	FOLLOWERS_Diamond	\
+		{	METRES100,ANGLES_90Deg,METRES100,HIGHER},\
+		{	METRES200,ANGLES_90Deg,METRES200,HIGHER}, \
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER}, \
+		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},	\
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 \
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	  \
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	   \
+//TempCode RDH 07Jul99 		{	METRES100,ANGLES_90Deg,METRES100,HIGHER},\
+//TempCode RDH 07Jul99 		{	METRES200,ANGLES_90Deg,METRES200,HIGHER}, \
+//TempCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER}, \
+//TempCode RDH 07Jul99 		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},	\
+//TempCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 \
+//TempCode RDH 07Jul99 		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	  \
+//TempCode RDH 07Jul99 		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	   \
+
+SquadronType Group_Diamond_CLOSE =
+{
+	8,//	/*name*/		(TextRef)TEXT_Diamond,
+	{
+		{	METRES500,ANGLES_100Deg,FT_1000,HIGHER},
+		FOLLOWERS_Diamond
+	}
+};
+
+SquadronType Group_Diamond_RIGHT =
+{
+	8,//	/*name*/		(TextRef)TEXT_Diamond,
+	{
+		{	METRES1000,ANGLES_90Deg,FT_2000,HIGHER},
+		FOLLOWERS_Diamond
+	}
+};
+
+SquadronType Group_Diamond_LEFT =
+{
+	8,//	/*name*/		(TextRef)TEXT_Diamond,
+	{
+		{	METRES1000,ANGLES_270Deg,FT_2000,HIGHER},
+		FOLLOWERS_Diamond
+	}
+};
+
+SquadronType Group_Diamond_AHEAD =
+{
+	8,//	/*name*/		(TextRef)TEXT_Diamond,
+	{
+		{	METRES1000,ANGLES_5Deg,FT_1000,HIGHER},
+		FOLLOWERS_Diamond
+	}
+};
+
+//--------------------------------------------------------		//MS 07Apr99
+
+#define	FOLLOWERS_FlatV	\
+		{	FT_1250,ANGLES_125Deg,FT_100,HIGHER},\
+		{	FT_1000,ANGLES_240Deg,FT_100,HIGHER}, \
+		{	FT_2500,ANGLES_125Deg,FT_200,HIGHER}, \
+		{	FT_2500,ANGLES_235Deg,FT_200,HIGHER},	\
+		{	FT_2500,ANGLES_125Deg,FT_300,HIGHER},	 \
+		{	FT_2500,ANGLES_235Deg,FT_300,HIGHER},	  \
+		{	FT_2500,ANGLES_125Deg,FT_400,HIGHER},	   \
+//DeadCode RDH 07Jul99 		{	FT_1000,ANGLES_125Deg,0,HIGHER},\
+//DeadCode RDH 07Jul99 		{	FT_1000,ANGLES_235Deg,0,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	FT_2000,ANGLES_125Deg,0,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	FT_2000,ANGLES_235Deg,0,HIGHER},	\
+//DeadCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 \
+//DeadCode RDH 07Jul99 		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	  \
+//DeadCode RDH 07Jul99 		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	   \
+
+SquadronType Group_FlatV_CLOSE =
+{
+	8,//	/*name*/		(TextRef)TEXT_FlatV,
+	{
+		{	METRES500,ANGLES_100Deg,FT_1000,HIGHER},
+		FOLLOWERS_FlatV
+	}
+};
+
+SquadronType Group_FlatV_RIGHT =
+{
+	8,//	/*name*/		(TextRef)TEXT_FlatV,
+	{
+		{	METRES2000,ANGLES_100Deg,FT_5000,HIGHER},			//MS 24May99
+		FOLLOWERS_FlatV
+	}
+};
+
+SquadronType Group_FlatV_LEFT =
+{
+	8,//	/*name*/		(TextRef)TEXT_FlatV,
+	{
+		{	METRES1000,ANGLES_270Deg,FT_2000,HIGHER},
+		FOLLOWERS_FlatV
+	}
+};
+
+SquadronType Group_FlatV_AHEAD =
+{
+	8,//	/*name*/		(TextRef)TEXT_FlatV,
+	{
+		{	METRES1000,ANGLES_5Deg,FT_1000,HIGHER},
+		FOLLOWERS_FlatV
+	}
+};
+
+//--------------------------------------------------------		//MS 07Apr99
+
+#define	FOLLOWERS_StackedV	\
+		{	FT_1250,ANGLES_125Deg,FT_400,HIGHER},\
+		{	FT_1000,ANGLES_240Deg,FT_400,HIGHER}, \
+		{	FT_2500,ANGLES_125Deg,FT_800,HIGHER}, \
+		{	FT_2500,ANGLES_235Deg,FT_800,HIGHER},	\
+		{	FT_2500,ANGLES_125Deg,FT_1200,HIGHER},	 \
+		{	FT_2500,ANGLES_235Deg,FT_1200,HIGHER},	  \
+		{	FT_2500,ANGLES_125Deg,FT_1400,HIGHER},	   \
+//DeadCode RDH 07Jul99 		{	FT_500,ANGLES_125Deg,FT_400,HIGHER},\
+//DeadCode RDH 07Jul99 		{	FT_500,ANGLES_235Deg,FT_800,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	FT_1000,ANGLES_125Deg,FT_1200,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	FT_1000,ANGLES_235Deg,FT_1400,HIGHER},	\
+//DeadCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 \
+//DeadCode RDH 07Jul99 		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	  \
+//DeadCode RDH 07Jul99 		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	   \
+
+SquadronType Group_StackedV_CLOSE =
+{
+	8,//	/*name*/		(TextRef)TEXT_StackedV,
+	{
+		{	METRES500,ANGLES_100Deg,FT_1000,HIGHER},
+		FOLLOWERS_StackedV
+	}
+};
+
+SquadronType Group_StackedV_RIGHT =
+{
+	8,//	/*name*/		(TextRef)TEXT_StackedV,
+	{
+		{	METRES1000,ANGLES_90Deg,FT_2000,HIGHER},
+		FOLLOWERS_StackedV
+	}
+};
+
+SquadronType Group_StackedV_LEFT =
+{
+	8,//	/*name*/		(TextRef)TEXT_StackedV,
+	{
+		{	METRES1000,ANGLES_270Deg,FT_2000,HIGHER},
+		FOLLOWERS_StackedV
+	}
+};
+
+SquadronType Group_StackedV_AHEAD =
+{
+	8,//	/*name*/		(TextRef)TEXT_StackedV,
+	{
+		{	METRES1000,ANGLES_5Deg,FT_1000,HIGHER},
+		FOLLOWERS_StackedV
+	}
+};
+
+//--------------------------------------------------------		//MS 07Apr99
+
+#define	FOLLOWERS_EchelonRight	\
+		{	FT_1250,ANGLES_125Deg,FT_100,HIGHER},\
+		{	FT_2500,ANGLES_125Deg,FT_200,HIGHER}, \
+		{	FT_3750,ANGLES_125Deg,FT_300,HIGHER}, \
+		{	FT_5000,ANGLES_125Deg,FT_400,HIGHER},	\
+		{	FT_5000,ANGLES_125Deg,FT_500,HIGHER},	 \
+		{	FT_5000,ANGLES_125Deg,FT_600,HIGHER},	  \
+		{	FT_5000,ANGLES_125Deg,FT_700,HIGHER},	   \
+//DeadCode RDH 07Jul99 		{	METRES100,ANGLES_90Deg,METRES100,HIGHER},\
+//DeadCode RDH 07Jul99 		{	METRES200,ANGLES_90Deg,METRES200,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},	\
+//DeadCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 \
+//DeadCode RDH 07Jul99 		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	  \
+//DeadCode RDH 07Jul99 		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	   \
+
+SquadronType Group_EchelonRight_CLOSE =
+{
+	8,//	/*name*/		(TextRef)TEXT_EchelonRight,
+	{
+		{	METRES500,ANGLES_100Deg,FT_1000,HIGHER},
+		FOLLOWERS_EchelonRight
+	}
+};
+
+SquadronType Group_EchelonRight_RIGHT =
+{
+	8,//	/*name*/		(TextRef)TEXT_EchelonRight,
+	{
+		{	METRES1000,ANGLES_90Deg,FT_2000,HIGHER},
+		FOLLOWERS_EchelonRight
+	}
+};
+
+SquadronType Group_EchelonRight_LEFT =
+{
+	8,//	/*name*/		(TextRef)TEXT_EchelonRight,
+	{
+		{	METRES1000,ANGLES_270Deg,FT_2000,HIGHER},
+		FOLLOWERS_EchelonRight
+	}
+};
+
+SquadronType Group_EchelonRight_AHEAD =
+{
+	8,//	/*name*/		(TextRef)TEXT_EchelonRight,
+	{
+		{	METRES1000,ANGLES_5Deg,FT_1000,HIGHER},
+		FOLLOWERS_EchelonRight
+	}
+};
+
+//--------------------------------------------------------		//MS 07Apr99
+
+#define	FOLLOWERS_EchelonLeft	\
+		{	FT_1000,ANGLES_240Deg,FT_100,HIGHER},\
+		{	FT_2000,ANGLES_240Deg,FT_200,HIGHER}, \
+		{	FT_3000,ANGLES_240Deg,FT_300,HIGHER}, \
+		{	FT_4000,ANGLES_240Deg,FT_400,HIGHER},	\
+		{	FT_4000,ANGLES_240Deg,FT_500,HIGHER},	 \
+		{	FT_4000,ANGLES_240Deg,FT_600,HIGHER},	  \
+		{	FT_4000,ANGLES_240Deg,FT_700,HIGHER},	   \
+//DeadCode RDH 07Jul99 		{	METRES100,ANGLES_90Deg,METRES100,HIGHER},\
+//DeadCode RDH 07Jul99 		{	METRES200,ANGLES_90Deg,METRES200,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},	\
+//DeadCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 \
+//DeadCode RDH 07Jul99 		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	  \
+//DeadCode RDH 07Jul99 		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	   \
+
+SquadronType Group_EchelonLeft_CLOSE =
+{
+	8,//	/*name*/		(TextRef)TEXT_EchelonLeft,
+	{
+		{	METRES500,ANGLES_100Deg,FT_1000,HIGHER},
+		FOLLOWERS_EchelonLeft
+	}
+};
+
+SquadronType Group_EchelonLeft_RIGHT =
+{
+	8,//	/*name*/		(TextRef)TEXT_EchelonLeft,
+	{
+		{	METRES1000,ANGLES_90Deg,FT_2000,HIGHER},
+		FOLLOWERS_EchelonLeft
+	}
+};
+
+SquadronType Group_EchelonLeft_LEFT =
+{
+	8,//	/*name*/		(TextRef)TEXT_EchelonLeft,
+	{
+		{	METRES1000,ANGLES_270Deg,FT_2000,HIGHER},
+		FOLLOWERS_EchelonLeft
+	}
+};
+
+SquadronType Group_EchelonLeft_AHEAD =
+{
+	8,//	/*name*/		(TextRef)TEXT_EchelonLeft,
+	{
+		{	METRES1000,ANGLES_5Deg,FT_1000,HIGHER},
+		FOLLOWERS_EchelonLeft
+	}
+};
+
+//--------------------------------------------------------		//MS 07Apr99
+
+#define	FOLLOWERS_LineToRear	\
+		{	FT_1250,ANGLES_181Deg,FT_25,HIGHER},\
+		{	FT_2500,ANGLES_179Deg,FT_50,HIGHER}, \
+		{	FT_3750,ANGLES_181Deg,FT_75,HIGHER}, \
+		{	FT_5000,ANGLES_180Deg,FT_100,HIGHER},	\
+		{	FT_5000,ANGLES_180Deg,FT_100,HIGHER},	\
+		{	FT_5000,ANGLES_180Deg,FT_100,HIGHER},	\
+		{	FT_5000,ANGLES_180Deg,FT_100,HIGHER},	\
+//DeadCode RDH 07Jul99 		{	METRES100,ANGLES_90Deg,METRES100,HIGHER},\
+//DeadCode RDH 07Jul99 		{	METRES200,ANGLES_90Deg,METRES200,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},	\
+//DeadCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 \
+//DeadCode RDH 07Jul99 		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	  \
+//DeadCode RDH 07Jul99 		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	   \
+
+SquadronType Group_LineToRear_CLOSE =
+{
+	8,//	/*name*/		(TextRef)TEXT_LineToRear,
+	{
+		{	METRES500,ANGLES_100Deg,FT_1000,HIGHER},
+		FOLLOWERS_LineToRear
+	}
+};
+
+SquadronType Group_LineToRear_RIGHT =
+{
+	8,//	/*name*/		(TextRef)TEXT_LineToRear,
+	{
+		{	METRES1000,ANGLES_90Deg,FT_2000,HIGHER},
+		FOLLOWERS_LineToRear
+	}
+};
+
+SquadronType Group_LineToRear_LEFT =
+{
+	8,//	/*name*/		(TextRef)TEXT_LineToRear,
+	{
+		{	METRES1000,ANGLES_270Deg,FT_2000,HIGHER},
+		FOLLOWERS_LineToRear
+	}
+};
+
+SquadronType Group_LineToRear_AHEAD =
+{
+	8,//	/*name*/		(TextRef)TEXT_LineToRear,
+	{
+		{	METRES1000,ANGLES_5Deg,FT_1000,HIGHER},
+		FOLLOWERS_LineToRear
+	}
+};
+
+//--------------------------------------------------------		//MS 07Apr99
+
+#define	FOLLOWERS_ABreast	\
+		{	FT_1250,ANGLES_270Deg,FT_100,HIGHER},\
+		{	FT_1000,ANGLES_90Deg,FT_100,HIGHER}, \
+		{	FT_1250,ANGLES_270Deg,FT_200,HIGHER}, \
+		{	FT_2500,ANGLES_90Deg,FT_200,HIGHER}, \
+		{	FT_2500,ANGLES_90Deg,FT_200,HIGHER}, \
+		{	FT_2500,ANGLES_90Deg,FT_200,HIGHER}, \
+		{	FT_2500,ANGLES_90Deg,FT_200,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	METRES100,ANGLES_90Deg,METRES100,HIGHER},\
+//DeadCode RDH 07Jul99 		{	METRES200,ANGLES_90Deg,METRES200,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER}, \
+//DeadCode RDH 07Jul99 		{	METRES200,ANGLES_225Deg,METRES100,HIGHER},	\
+//DeadCode RDH 07Jul99 		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},	 \
+//DeadCode RDH 07Jul99 		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},	  \
+//DeadCode RDH 07Jul99 		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},	   \
+
+SquadronType Group_ABreast_CLOSE =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABreast,
+	{
+		{	METRES500,ANGLES_100Deg,FT_1000,HIGHER},
+		FOLLOWERS_ABreast
+	}
+};
+
+SquadronType Group_ABreast_RIGHT =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABreast,
+	{
+		{	METRES1000,ANGLES_90Deg,FT_2000,HIGHER},
+		FOLLOWERS_ABreast
+	}
+};
+
+SquadronType Group_ABreast_LEFT =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABreast,
+	{
+		{	METRES1000,ANGLES_270Deg,FT_2000,HIGHER},
+		FOLLOWERS_ABreast
+	}
+};
+
+SquadronType Group_ABreast_AHEAD =
+{
+	8,//	/*name*/		(TextRef)TEXT_ABreast,
+	{
+		{	METRES1000,ANGLES_5Deg,FT_1000,HIGHER},
+		FOLLOWERS_ABreast
+	}
+};
+
+//********************************************************		//MS 07Apr99
+
+
+//NEW SQUADS BY MARK											//MS 05Mar99
+
+SquadronType Decoy =
+{
+	8,//	/*name*/		(TextRef)TEXT_BAIT,
+	{
+		{	METRES5000,ANGLES_180Deg,FT_20000,HIGHER},			//MS 08Mar99
+		{	METRES5000,ANGLES_180Deg,FT_20000,HIGHER},			//MS 08Mar99
+		{	METRES5000,ANGLES_180Deg,FT_20000,HIGHER},			//MS 08Mar99
+		{	METRES5000,ANGLES_180Deg,FT_20000,HIGHER},			//MS 08Mar99
+		{	METRES5000,ANGLES_180Deg,FT_20000,HIGHER},			//MS 08Mar99
+		{	METRES5000,ANGLES_180Deg,FT_20000,HIGHER},			//MS 08Mar99
+		{	METRES5000,ANGLES_180Deg,FT_20000,HIGHER},			//MS 08Mar99
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},
+	}
+};
+
+SquadronType Uppercut =
+{
+	8,//	/*name*/		(TextRef)TEXT_BAIT,
+	{
+		{	METRES1000,ANGLES_90Deg,FT_1000,HIGHER},			
+		{	METRES4000,ANGLES_0Deg,FT_4000,HIGHER},			
+		{	METRES100,ANGLES_135Deg,FT_200,HIGHER},			
+		{	METRES200,ANGLES_135Deg,FT_200,HIGHER},			
+		{	METRES300,ANGLES_135Deg,FT_200,HIGHER},			
+		{	METRES400,ANGLES_135Deg,FT_200,HIGHER},			
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},
+	}
+};
+
+SquadronType Staircase =
+{
+	8,//	/*name*/		(TextRef)TEXT_BAIT,
+	{	{	METRES1000,ANGLES_90Deg,FT_1000,HIGHER},			
+		{	FT_2000,ANGLES_0Deg,FT_2000,HIGHER},			
+		{	FT_4000,ANGLES_0Deg,FT_4000,HIGHER},			
+		{	FT_6000,ANGLES_0Deg,FT_6000,HIGHER},			
+		{	FT_8000,ANGLES_0Deg,FT_8000,HIGHER},			
+		{	FT_10000,ANGLES_0Deg,FT_10000,HIGHER},			
+		{	FT_12000,ANGLES_0Deg,FT_12000,HIGHER},			
+		{	FT_14000,ANGLES_0Deg,FT_14000,HIGHER},			
+	}
+};
+
+SquadronType Threelevels =
+{
+	8,//	/*name*/		(TextRef)TEXT_BAIT,
+	{
+		{	METRES2000,ANGLES_90Deg,FT_1000,HIGHER},			
+		{	FT_0,ANGLES_135Deg,FT_5000,HIGHER},			//MS 08Mar99
+		{	FT_0,ANGLES_225Deg,-FT_5000,HIGHER},			//MS 08Mar99
+		{	METRES1000,ANGLES_340Deg,-FT_3000,HIGHER},			//RDH 14Dec96
+		{	METRES1000,ANGLES_340Deg,-FT_4000,HIGHER},			//RDH 14Dec96
+		{	METRES150,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES300,ANGLES_225Deg,METRES100,HIGHER},
+		{	METRES350,ANGLES_225Deg,METRES100,HIGHER},
+	}
+};
+
+SquadronType Strung =
+{
+	8,//	/*name*/		(TextRef)TEXT_BAIT,
+	{
+		{	METRES750,ANGLES_270Deg,FT_1000,HIGHER},			//MS 16Mar99
+		{	METRES900,ANGLES_180Deg,FT_100,HIGHER},				//MS 16Mar99 
+		{	METRES2000,ANGLES_180Deg,FT_200,LOWER},				//MS 16Mar99
+		{	METRES3000,ANGLES_180Deg,FT_300,LOWER},				//MS 16Mar99
+		{	METRES4000,ANGLES_180Deg,FT_400,LOWER},				//MS 16Mar99
+		{	METRES5000,ANGLES_180Deg,FT_500,LOWER},				//MS 16Mar99
+		{	METRES6000,ANGLES_180Deg,FT_600,LOWER},			//MS 16Mar99
+		{	METRES7000,ANGLES_180Deg,FT_700,LOWER},				//MS 16Mar99
+	}
+};
+
+
+//the list here is matched to the flight list					//RDH 15Aug96
+//MAXSQUAD_FORMS_NUM in missman.h needs to be updated			//RDH 18Aug96
+SquadFormation	Squadron_Formations [] =
+
+	{
+		{&StackedV_Squad},
+		{&StackedV_Squad},
+		{&StackedV_Squad},
+//UN SQUAD FORMATIONS
+		{&Group_FlatV_CLOSE},
+		{&Group_FlatV_RIGHT},
+		{&Group_FlatV_LEFT},
+		{&Group_FlatV_AHEAD},
+		{&Group_StackedV_CLOSE},
+		{&Group_StackedV_RIGHT},
+		{&Group_StackedV_LEFT},
+		{&Group_StackedV_AHEAD},
+		{&Group_EchelonRight_CLOSE},
+		{&Group_EchelonRight_RIGHT},
+		{&Group_EchelonRight_LEFT},
+		{&Group_EchelonRight_AHEAD},
+		{&Group_EchelonLeft_CLOSE},
+		{&Group_EchelonLeft_RIGHT},
+		{&Group_EchelonLeft_LEFT},
+		{&Group_EchelonLeft_AHEAD},
+		{&Group_LineToRear_CLOSE},
+		{&Group_LineToRear_RIGHT},
+		{&Group_LineToRear_LEFT},
+		{&Group_LineToRear_AHEAD},
+		{&Group_Abreast_CLOSE},
+		{&Group_Abreast_RIGHT},
+		{&Group_Abreast_LEFT},
+		{&Group_Abreast_AHEAD},
+		{&Group_Box_CLOSE},
+		{&Group_Box_RIGHT},
+		{&Group_Box_LEFT},
+		{&Group_Box_AHEAD},
+		{&Group_Diamond_CLOSE},
+		{&Group_Diamond_RIGHT},
+		{&Group_Diamond_LEFT},
+		{&Group_Diamond_AHEAD},
+//UN SQUAD FORMATIONS IN COMBAT FLIGHT FORM
+		{&Group_FlatV_CLOSE},
+//DEADCODE DAW 15/04/99 		{&Group_FlatV_RIGHT},
+//DEADCODE DAW 15/04/99 		{&Group_FlatV_LEFT},
+//DEADCODE DAW 15/04/99 		{&Group_FlatV_AHEAD},
+//DEADCODE DAW 15/04/99 		{&Group_StackedV_CLOSE},
+//DEADCODE DAW 15/04/99 		{&Group_StackedV_RIGHT},
+//DEADCODE DAW 15/04/99 		{&Group_StackedV_LEFT},
+//DEADCODE DAW 15/04/99 		{&Group_StackedV_AHEAD},
+//DEADCODE DAW 15/04/99 		{&Group_EchelonRight_CLOSE},
+//DEADCODE DAW 15/04/99 		{&Group_EchelonRight_RIGHT},
+//DEADCODE DAW 15/04/99 		{&Group_EchelonRight_LEFT},
+//DEADCODE DAW 15/04/99 		{&Group_EchelonRight_AHEAD},
+//DEADCODE DAW 15/04/99 		{&Group_EchelonLeft_CLOSE},
+//DEADCODE DAW 15/04/99 		{&Group_EchelonLeft_RIGHT},
+//DEADCODE DAW 15/04/99 		{&Group_EchelonLeft_LEFT},
+//DEADCODE DAW 15/04/99 		{&Group_EchelonLeft_AHEAD},
+//DEADCODE DAW 15/04/99 		{&Group_LineToRear_CLOSE},
+//DEADCODE DAW 15/04/99 		{&Group_LineToRear_RIGHT},
+//DEADCODE DAW 15/04/99 		{&Group_LineToRear_LEFT},
+//DEADCODE DAW 15/04/99 		{&Group_LineToRear_AHEAD},
+//DEADCODE DAW 15/04/99 		{&Group_Abreast_CLOSE},
+//DEADCODE DAW 15/04/99 		{&Group_Abreast_RIGHT},
+//DEADCODE DAW 15/04/99 		{&Group_Abreast_LEFT},
+//DEADCODE DAW 15/04/99 		{&Group_Abreast_AHEAD},
+//DEADCODE DAW 15/04/99 		{&Group_Box_CLOSE},
+//DEADCODE DAW 15/04/99 		{&Group_Box_RIGHT},
+//DEADCODE DAW 15/04/99 		{&Group_Box_LEFT},
+//DEADCODE DAW 15/04/99 		{&Group_Box_AHEAD},
+//DEADCODE DAW 15/04/99 		{&Group_Diamond_CLOSE},
+//DEADCODE DAW 15/04/99 		{&Group_Diamond_RIGHT},
+//DEADCODE DAW 15/04/99 		{&Group_Diamond_LEFT},
+//DEADCODE DAW 15/04/99 		{&Group_Diamond_AHEAD},
+//DEADCODE DAW 15/04/99 
+//DEADCODE DAW 15/04/99 
+//MIG SQUAD FORMATIONS - NOT ACCESIBLE BY PLAYER				//MS 07Apr99
+		{&Decoy},
+		{&Uppercut},
+		{&Staircase},
+		{&Threelevels},
+		{&Strung},
+		{&StackedABreast},
+		{&Strung},
+		{&Group_EchelonLeft},
+		{&Group_EchelonRight},
+		{&StackedV_Squad},
+//below here the formations are not accessible by player
+		{&Strung},
+		{&Strung},
+		{&Strung},
+		{&SquadronTakeOff},
+//h2h2 formations
+		{&StackedV_Squad},
+		{&StackedV_Squad},
+		{&StackedV_Squad},
+		{&StackedV_Squad},
+		{&StackedV_Squad},
+		{&SquadronTakeOff},
+		{&SquadronTakeOff},
+		{&SquadronTakeOff},
+		{&SquadronTakeOff}
+	};
+
+
+//when a formation is added here, add an equate in flyinit.h
+//the list here is matched to the squadron list					//RDH 15Aug96
+//also MAXFLIGHT_FORMS_NUM in missman.h needs to be updated
+SingleFormation	Aircraft_Formations [] =
+
+	{
+		{&FlatV_Form},											//MS 07Apr99
+		{&SingleFile_Form},										//MS 07Apr99
+		{&Finger4_Form},
+//UN SQUAD FORMATIONS
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+		{&Finger4_Form},
+//UN COMBAT FORMATIONS
+		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 		{&Combat4_Form},
+//DEADCODE DAW 15/04/99 
+
+//NEW SQUADS FOR REDS BY MARK											//MS 05Mar99
+		{&EchelonRight_Form},
+		{&EchelonRight_Form},
+		{&EchelonRight_Form},
+		{&EchelonRight_Form},
+		{&String_Form},
+		{&Abreast_Form},
+		{&Gaggle_Form},
+		{&EchelonLeft_Form},
+		{&EchelonRight_Form},
+		{&FlatV_Form},
+//below here the formations are not accessible by player
+		{&TruckConvoy_Form},
+		{&SingleFile_Form},
+		{&BattleLine_Form},
+		{&Finger4_Form},
+//h2h2 formations
+
+//TempCode MS 08Mar99 		{&StackedBox_Form},
+//TempCode MS 08Mar99 		{&Diamond_Form},
+//TempCode MS 08Mar99 		{&FlatBox_Form},
+//TempCode MS 08Mar99 		{&FlatV_Form},
+//TempCode MS 08Mar99 		{&TwoV_Form},
+//TempCode MS 08Mar99 		{&FilledV_Form},
+//TempCode MS 08Mar99 		{&Shepherd_Form},
+//TempCode MS 08Mar99 		{&String_Form},
+//TempCode MS 08Mar99 		{&Gaggle_Form},
+//TempCode MS 08Mar99 		{&Finger4_Form},
+//TempCode MS 08Mar99 		{&LooseFinger_Form},
+//TempCode MS 08Mar99 		{&EchelonRight_Form},
+//TempCode MS 08Mar99 		{&EchelonLeft_Form},
+//TempCode MS 08Mar99 		{&Abreast_Form},
+
+//below here the formations are not accessible by player
+		{&Loose_Form},
+//h2h2 formations
+		{&Random_Form},
+		{&Implode_Form},
+		{&Explode_Form},
+		{&TakeOff_Form},
+		{&SingleFile_Form}
+	};
+
+

@@ -1,0 +1,48 @@
+--------------------Configuration: RButton - Win32 Debug--------------------
+Begining build with project "C:\Mig\Src\rbutton\Rbutton.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\mig\Debug\axobj\rbutton/" /Fo"\mig\Debug\axobj\rbutton/" /Fd"\mig\Debug\axobj\rbutton/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\mig\Debug\axobj\rbutton/RButton.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\mig\Debug\exe/Rbutton.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RButton.def" /out:"\mig\Debug\exe/Rbutton.ocx" /implib:"\mig\Debug\exe/Rbutton.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "e:\TEMP\RSPF244.BAT" with contents <@echo off
+copy ".\Rbutton.lic" "\mig\Debug\exe"
+>
+Creating command line "e:\TEMP\RSPF244.BAT" 
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "\mig\Debug\exe/RButton.tlb" /mktyplib203 /o NUL /win32 "C:\Mig\Src\rbutton\RButton.odl"" 
+Copying license file...
+C:\MIG\SRC\RBUTTON\RBUTTON.LIC => C:\mig\Debug\exe\RBUTTON.LIC
+     1 file copied
+Creating command line "rc.exe /l 0x809 /fo"\mig\Debug\axobj\rbutton/RButton.res" /i "\mig\Debug\exe" /d "_DEBUG" /d "_AFXDLL" "C:\Mig\Src\rbutton\RButton.rc"" 
+Creating temp file "e:\TEMP\RSPF255.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\mig\Debug\axobj\rbutton/" /Fo"\mig\Debug\axobj\rbutton/" /Fd"\mig\Debug\axobj\rbutton/" /FD /c 
+"C:\Mig\Src\rbutton\all.cpp"
+>
+Creating command line "cl.exe @e:\TEMP\RSPF255.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\RButton.def" /out:"\mig\Debug\exe/Rbutton.ocx" /implib:"\mig\Debug\exe/Rbutton.lib"  \mig\Debug\axobj\rbutton\all.obj \mig\Debug\axobj\rbutton\RButton.res" 
+Creating temp file "e:\TEMP\RSPF256.BAT" with contents <@echo off
+regsvr32 /s /c "\mig\Debug\exe\Rbutton.ocx"
+echo regsvr32 exec. time > \mig\Debug\exe\regsvr32.trg
+>
+Creating command line "e:\TEMP\RSPF256.BAT" 
+Creating Type Library...
+RButton.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+all.cpp
+Linking...
+LINK : fatal error LNK1104: cannot open file "\mig\Debug\exe/Rbutton.ocx"
+Error executing link.exe.
+
+
+
+Rbutton.ocx - 1 error(s), 0 warning(s)

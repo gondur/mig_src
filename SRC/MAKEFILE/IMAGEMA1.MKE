@@ -1,0 +1,220 @@
+###################################################################################
+##
+##		AUTO-GENERATED IMAGEMAP MAKEFILE : Jun  1 1999
+##
+###################################################################################
+
+SRC  = s:\projects\mig\artsrc\IMAGEMAP
+DEST = ..\GAME\imagemap
+TT32X32 = -cw32h32
+TT64X64 = -cw64h64
+TT256X256 = -cw256h256
+TT64X32 = -cw64h32
+TT32X64 = -cw32h64
+TT128X128 = -cw128h128
+TT256X128 = -cw256h128
+TT16X16 = -cw16h16
+TT32X256 = -cw32h256
+TT128X64 = -cw128h64
+TT128X32 = -cw128h32
+TT64X256 = -cw64h256
+TT64X512 = -cw64h512
+TT16X256 = -cw16h256
+TT64X128 = -cw64h128
+TT128X16 = -cw128h16
+TT4X4 = -cw4h4
+TT512X512 = -cw512h512
+TT256X64 = -cw256h64
+
+
+MAPS32X32	=	$(DEST)\VILTILE.x8\
+	$(DEST)\VILRTILE.x8\
+
+
+MAPS64X64	=	$(DEST)\SANDY.x8\
+	$(DEST)\REVCON.x8\
+	$(DEST)\REVCOND.x8\
+	$(DEST)\REVCONR.x8\
+	$(DEST)\SANDYD.x8\
+	$(DEST)\SANDYDR.x8\
+	$(DEST)\GRNSHED.x8\
+	$(DEST)\SLIT.x8\
+	$(DEST)\CHMBRCK.x8\
+	$(DEST)\DEDBRCK.x8\
+	$(DEST)\CRATE.x8\
+	$(DEST)\CRATEL.x8\
+	$(DEST)\CRATED.x8\
+	$(DEST)\BARRELM.x8\
+	$(DEST)\BARRELD.x8\
+	$(DEST)\BARRELL.x8\
+	$(DEST)\BARRELT.x8\
+	$(DEST)\BOXM.x8\
+	$(DEST)\BOXL.x8\
+	$(DEST)\BOXD.x8\
+	$(DEST)\WINDOWS.x8\
+	$(DEST)\SLATS.x8\
+	$(DEST)\WDROAD.x8\
+	$(DEST)\TOPBRIC.x8\
+	$(DEST)\WOOD.x8\
+	$(DEST)\INSIDE.x8\
+
+
+MAPS256X256	=	$(DEST)\GL_MET1.x8\
+	$(DEST)\C47FUSEL.x8\
+	$(DEST)\TENGINE.x8\
+	$(DEST)\ERTRUCK.x8\
+	$(DEST)\HQ.x8\
+	$(DEST)\MUSHYPEA.x8\
+	$(DEST)\CITY1.x8\
+	$(DEST)\BRIBASE.x8\
+	$(DEST)\RANGE.x8\
+	$(DEST)\CONCRE.x8\
+	$(DEST)\BRIBITS.x8\
+	$(DEST)\CLOUD.x8\
+	$(DEST)\MAP1.x8\
+	$(DEST)\MAP2.x8\
+	$(DEST)\THUMBTOP.x8\
+	$(DEST)\THUMBBOT.x8\
+	$(DEST)\STACKED.x8\
+	$(DEST)\SHIPBIT.x8\
+	$(DEST)\BALL01.x8\
+	$(DEST)\SKY1.x8\
+	$(DEST)\SMAP0_0.x8\
+	$(DEST)\SMAP0_1.x8\
+	$(DEST)\SMAP0_2.x8\
+	$(DEST)\SMAP0_3.x8\
+	$(DEST)\SMAP0_4.x8\
+	$(DEST)\SMAP0_5.x8\
+	$(DEST)\SMAP0_6.x8\
+	$(DEST)\SMAP0_7.x8\
+	$(DEST)\SMAP1_0.x8\
+	$(DEST)\SMAP1_1.x8\
+	$(DEST)\SMAP1_2.x8\
+	$(DEST)\SMAP1_3.x8\
+	$(DEST)\SMAP1_4.x8\
+	$(DEST)\SMAP1_5.x8\
+	$(DEST)\SMAP1_6.x8\
+	$(DEST)\SMAP1_7.x8\
+	$(DEST)\SMAP2_0.x8\
+	$(DEST)\SMAP2_1.x8\
+	$(DEST)\SMAP2_2.x8\
+	$(DEST)\SMAP2_3.x8\
+	$(DEST)\SMAP2_4.x8\
+	$(DEST)\SMAP2_5.x8\
+	$(DEST)\SMAP2_6.x8\
+	$(DEST)\SMAP2_7.x8\
+	$(DEST)\SMAP3_0.x8\
+	$(DEST)\SMAP3_1.x8\
+	$(DEST)\SMAP3_2.x8\
+	$(DEST)\SMAP3_3.x8\
+	$(DEST)\SMAP3_4.x8\
+	$(DEST)\SMAP3_5.x8\
+	$(DEST)\SMAP3_6.x8\
+	$(DEST)\SMAP3_7.x8\
+
+
+MAPS64X32	=
+
+MAPS32X64	=	$(DEST)\RAIL2.x8\
+
+
+MAPS128X128	=	$(DEST)\T6TAIL.x8\
+	$(DEST)\C47TAILS.x8\
+	$(DEST)\HALFTRK.x8\
+	$(DEST)\FOODS.x8\
+	$(DEST)\RPLYICNS.x8\
+	$(DEST)\CITY3.x8\
+	$(DEST)\MEN.x8\
+	$(DEST)\GRNSHDS.x8\
+	$(DEST)\COVER1.x8\
+	$(DEST)\COVER2.x8\
+	$(DEST)\COVER3.x8\
+	$(DEST)\COVER4.x8\
+	$(DEST)\RPLYICN2.x8\
+	$(DEST)\MAPICNS.x8\
+	$(DEST)\MAPICN2.x8\
+	$(DEST)\SOOT.x8\
+	$(DEST)\BALL03.x8\
+	$(DEST)\CANVAS.x8\
+	$(DEST)\CITYDAM1.x8\
+	$(DEST)\CITYDAM2.x8\
+
+
+MAPS256X128	=
+
+MAPS16X16	=
+
+MAPS32X256	=
+
+MAPS128X64	=	$(DEST)\CITY2.x8\
+
+
+MAPS128X32	=
+
+MAPS64X256	=
+
+MAPS64X512	=
+
+MAPS16X256	=	$(DEST)\NUMS.x8\
+
+
+MAPS64X128	=	$(DEST)\CONAIR.x8\
+
+
+MAPS128X16	=	$(DEST)\NUMD.x8\
+	$(DEST)\COMPASS.x8\
+
+
+MAPS4X4	=
+
+MAPS512X512	=
+
+MAPS256X64	=
+
+ALLMAPS:	$(MAPS32X32)\
+	$(MAPS64X64)\
+	$(MAPS256X256)\
+	$(MAPS64X32)\
+	$(MAPS32X64)\
+	$(MAPS128X128)\
+	$(MAPS256X128)\
+	$(MAPS16X16)\
+	$(MAPS32X256)\
+	$(MAPS128X64)\
+	$(MAPS128X32)\
+	$(MAPS64X256)\
+	$(MAPS64X512)\
+	$(MAPS16X256)\
+	$(MAPS64X128)\
+	$(MAPS128X16)\
+	$(MAPS4X4)\
+	$(MAPS512X512)\
+	$(MAPS256X64)
+
+$(MAPS32X32):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT32X32) -dw $(DEST)\$*.x8
+
+$(MAPS64X64):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT64X64) -dw $(DEST)\$*.x8
+
+$(MAPS256X256):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT256X256) -dw $(DEST)\$*.x8
+
+$(MAPS32X64):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT32X64) -dw $(DEST)\$*.x8
+
+$(MAPS128X128):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT128X128) -dw $(DEST)\$*.x8
+
+$(MAPS128X64):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT128X64) -dw $(DEST)\$*.x8
+
+$(MAPS16X256):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT16X256) -dw $(DEST)\$*.x8
+
+$(MAPS64X128):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT64X128) -dw $(DEST)\$*.x8
+
+$(MAPS128X16):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT128X16) -dw $(DEST)\$*.x8
+

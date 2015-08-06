@@ -1,0 +1,190 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""RListBox.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "RowanSoftware\0"
+            VALUE "FileDescription", "RListBox ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RLISTBOX\0"
+            VALUE "LegalCopyright", "Copyright (C) 1997-1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RLISTBOX.OCX\0"
+            VALUE "ProductName", "RListBox ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_RLISTBOX            BITMAP  DISCARDABLE     "RListBxC.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_RLISTBOX DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Stripes style",IDC_IS_STRIPEY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,5,53,10
+    CONTROL         "Column Seperators",IDC_LINES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,65,75,10
+    CONTROL         "Lock left Column",IDC_LOCK_LEFT_COLUMN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,115,5,69,10
+    CONTROL         "Lock top Row",IDC_LOCK_TOP_ROW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,115,20,61,10
+    CONTROL         "Drag and Drop row headers",IDC_DRAG_AND_DROP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,35,103,10
+    EDITTEXT        IDC_FONT_NUMBER,185,45,40,14,ES_AUTOHSCROLL
+    LTEXT           "Data Font",IDC_STATIC,120,50,32,8
+    CONTROL         "Blackboard style",IDC_BLACKBOARD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,20,68,10
+    EDITTEXT        IDC_FONT_NUMBER2,185,60,40,14,ES_AUTOHSCROLL
+    LTEXT           "Header Font",IDC_STATIC,120,65,40,8
+    CONTROL         "Row Seperators",IDC_LINES2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,50,67,10
+    CONTROL         "Select Whole Rows",IDC_SELECT_WHOLE_ROWS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,80,75,8
+    CONTROL         "Border",IDC_SELECT_WHOLE_ROWS2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,94,75,8
+    EDITTEXT        IDC_HORZ_SEPERATION,185,75,40,14,ES_AUTOHSCROLL
+    LTEXT           "Horz Seperation",IDC_STATIC,120,80,52,8
+    EDITTEXT        IDC_VERT_SEPERATION,185,90,40,14,ES_AUTOHSCROLL
+    LTEXT           "Vert Seperation",IDC_STATIC,120,95,50,8
+    CONTROL         "Centred",IDC_CENTRED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,115,35,41,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPPAGE_RLISTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RLISTBOX            "RListBox Control"
+    IDS_RLISTBOX_PPG        "RListBox Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RLISTBOX_PPG_CAPTION "General"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "RListBox.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

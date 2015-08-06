@@ -1,0 +1,63 @@
+--------------------Configuration: RSpinBut - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\RSPINBUT\Rspinbut.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rspinbut/" /Fd"\Mig\Debug\Rspinbut/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\Mig\Debug\Rspinbut/RSpinBut.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\Mig\Debug\exe/Rspinbut.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /incremental:yes /pdb:"\Mig\Debug\exe/Rspinbut.pdb" /debug /machine:I386 /def:".\RSpinBut.def" /out:"\Mig\Debug\exe/Rspinbut.ocx" /implib:"\Mig\Debug\exe/Rspinbut.lib" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "e:\TEMP\RSPD196.BAT" with contents <@echo off
+copy ".\Rspinbut.lic" "\Mig\Debug\exe"
+>
+Creating command line "e:\TEMP\RSPD196.BAT" 
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "\Mig\Debug\exe/RSpinBut.tlb" /mktyplib203 /o NUL /win32 "C:\mig\Src\RSPINBUT\RSpinBut.odl"" 
+Copying license file...
+C:\mig\SRC\RSPINBUT\RSPINBUT.LIC => C:\Mig\Debug\exe\RSPINBUT.LIC
+     1 file copied
+Creating command line "rc.exe /l 0x809 /fo"\Mig\Debug\Rspinbut/RSpinBut.res" /i "\Mig\Debug\exe" /d "_DEBUG" /d "_AFXDLL" "C:\mig\Src\RSPINBUT\RSpinBut.rc"" 
+Creating temp file "e:\TEMP\RSPD1B1.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\Mig\Debug\Rspinbut/" /Fd"\Mig\Debug\Rspinbut/" /FD /c 
+"C:\mig\Src\Mfc\Getshadw.cpp"
+"C:\mig\Src\RSPINBUT\Rspinbtc.cpp"
+"C:\mig\Src\RSPINBUT\Rspinbtp.cpp"
+"C:\mig\Src\RSPINBUT\RSpinBut.cpp"
+>
+Creating command line "cl.exe @e:\TEMP\RSPD1B1.TMP" 
+Creating temp file "e:\TEMP\RSPD1B2.TMP" with contents </nologo /subsystem:windows /dll /incremental:yes /pdb:"\Mig\Debug\exe/Rspinbut.pdb" /debug /machine:I386 /def:".\RSpinBut.def" /out:"\Mig\Debug\exe/Rspinbut.ocx" /implib:"\Mig\Debug\exe/Rspinbut.lib" /pdbtype:sept 
+\Mig\Debug\Rspinbut\Getshadw.obj
+\Mig\Debug\Rspinbut\Rspinbtc.obj
+\Mig\Debug\Rspinbut\Rspinbtp.obj
+\Mig\Debug\Rspinbut\RSpinBut.obj
+\Mig\Debug\Rspinbut\RSpinBut.res>
+Creating command line "link.exe @e:\TEMP\RSPD1B2.TMP" 
+Creating temp file "e:\TEMP\RSPD1B3.BAT" with contents <@echo off
+regsvr32 /s /c "\Mig\Debug\exe\Rspinbut.ocx"
+echo regsvr32 exec. time > "\Mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "e:\TEMP\RSPD1B3.BAT" 
+Creating Type Library...
+RSpinBut.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+Getshadw.cpp
+Rspinbtc.cpp
+Rspinbtp.cpp
+RSpinBut.cpp
+Generating Code...
+Linking...
+   Creating library \Mig\Debug\exe/Rspinbut.lib and object \Mig\Debug\exe/Rspinbut.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \Mig\Debug\exe\Rspinbut.ocx succeeded.
+
+
+
+
+Rspinbut.ocx - 0 error(s), 0 warning(s)

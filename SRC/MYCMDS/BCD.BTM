@@ -1,0 +1,323 @@
+rem --- Auto generated CD data extraction batch file ---
+
+
+tt2 -rcdb Q 335811 -q -qc
+copy /b 335811.dat+335811a.dat ..\game\landscap\l335811.dat
+del /yq 335811.dat
+del /yq 335811a.dat
+
+tt2 -rcdb Q 335821 -q -qc
+copy /b 335821.dat+335821a.dat ..\game\landscap\l335821.dat
+del /yq 335821.dat
+del /yq 335821a.dat
+
+tt2 -rcdb Q 335831 -q -qc
+copy /b 335831.dat+335831a.dat ..\game\landscap\l335831.dat
+del /yq 335831.dat
+del /yq 335831a.dat
+
+tt2 -rcdb Q 335841 -q -qc
+copy /b 335841.dat+335841a.dat ..\game\landscap\l335841.dat
+del /yq 335841.dat
+del /yq 335841a.dat
+
+tt2 -rcdb Q 335851 -q -qc
+copy /b 335851.dat+335851a.dat ..\game\landscap\l335851.dat
+del /yq 335851.dat
+del /yq 335851a.dat
+
+tt2 -rcdb Q 335861 -q -qc
+copy /b 335861.dat+335861a.dat ..\game\landscap\l335861.dat
+del /yq 335861.dat
+del /yq 335861a.dat
+
+tt2 -rcdb Q 335871 -q -qc
+copy /b 335871.dat+335871a.dat ..\game\landscap\l335871.dat
+del /yq 335871.dat
+del /yq 335871a.dat
+
+tt2 -rcdb Q 335881 -q -qc
+copy /b 335881.dat+335881a.dat ..\game\landscap\l335881.dat
+del /yq 335881.dat
+del /yq 335881a.dat
+
+tt2 -rcdb Q 335812 -q -qc
+copy /b 335812.dat+335812a.dat ..\game\landscap\l335812.dat
+del /yq 335812.dat
+del /yq 335812a.dat
+
+tt2 -rcdb Q 335822 -q -qc
+copy /b 335822.dat+335822a.dat ..\game\landscap\l335822.dat
+del /yq 335822.dat
+del /yq 335822a.dat
+
+tt2 -rcdb Q 335832 -q -qc
+copy /b 335832.dat+335832a.dat ..\game\landscap\l335832.dat
+del /yq 335832.dat
+del /yq 335832a.dat
+
+tt2 -rcdb Q 335842 -q -qc
+copy /b 335842.dat+335842a.dat ..\game\landscap\l335842.dat
+del /yq 335842.dat
+del /yq 335842a.dat
+
+tt2 -rcdb Q 335852 -q -qc
+copy /b 335852.dat+335852a.dat ..\game\landscap\l335852.dat
+del /yq 335852.dat
+del /yq 335852a.dat
+
+tt2 -rcdb Q 335862 -q -qc
+copy /b 335862.dat+335862a.dat ..\game\landscap\l335862.dat
+del /yq 335862.dat
+del /yq 335862a.dat
+
+tt2 -rcdb Q 335872 -q -qc
+copy /b 335872.dat+335872a.dat ..\game\landscap\l335872.dat
+del /yq 335872.dat
+del /yq 335872a.dat
+
+tt2 -rcdb Q 335882 -q -qc
+copy /b 335882.dat+335882a.dat ..\game\landscap\l335882.dat
+del /yq 335882.dat
+del /yq 335882a.dat
+
+tt2 -rcdb Q 335813 -q -qc
+copy /b 335813.dat+335813a.dat ..\game\landscap\l335813.dat
+del /yq 335813.dat
+del /yq 335813a.dat
+
+tt2 -rcdb Q 335823 -q -qc
+copy /b 335823.dat+335823a.dat ..\game\landscap\l335823.dat
+del /yq 335823.dat
+del /yq 335823a.dat
+
+tt2 -rcdb Q 335833 -q -qc
+copy /b 335833.dat+335833a.dat ..\game\landscap\l335833.dat
+del /yq 335833.dat
+del /yq 335833a.dat
+
+tt2 -rcdb Q 335843 -q -qc
+copy /b 335843.dat+335843a.dat ..\game\landscap\l335843.dat
+del /yq 335843.dat
+del /yq 335843a.dat
+
+tt2 -rcdb Q 335853 -q -qc
+copy /b 335853.dat+335853a.dat ..\game\landscap\l335853.dat
+del /yq 335853.dat
+del /yq 335853a.dat
+
+tt2 -rcdb Q 335863 -q -qc
+copy /b 335863.dat+335863a.dat ..\game\landscap\l335863.dat
+del /yq 335863.dat
+del /yq 335863a.dat
+
+tt2 -rcdb Q 335873 -q -qc
+copy /b 335873.dat+335873a.dat ..\game\landscap\l335873.dat
+del /yq 335873.dat
+del /yq 335873a.dat
+
+tt2 -rcdb Q 335883 -q -qc
+copy /b 335883.dat+335883a.dat ..\game\landscap\l335883.dat
+del /yq 335883.dat
+del /yq 335883a.dat
+
+tt2 -rcdb Q 335814 -q -qc
+copy /b 335814.dat+335814a.dat ..\game\landscap\l335814.dat
+del /yq 335814.dat
+del /yq 335814a.dat
+
+tt2 -rcdb Q 335824 -q -qc
+copy /b 335824.dat+335824a.dat ..\game\landscap\l335824.dat
+del /yq 335824.dat
+del /yq 335824a.dat
+
+tt2 -rcdb Q 335834 -q -qc
+copy /b 335834.dat+335834a.dat ..\game\landscap\l335834.dat
+del /yq 335834.dat
+del /yq 335834a.dat
+
+tt2 -rcdb Q 335844 -q -qc
+copy /b 335844.dat+335844a.dat ..\game\landscap\l335844.dat
+del /yq 335844.dat
+del /yq 335844a.dat
+
+tt2 -rcdb Q 335854 -q -qc
+copy /b 335854.dat+335854a.dat ..\game\landscap\l335854.dat
+del /yq 335854.dat
+del /yq 335854a.dat
+
+tt2 -rcdb Q 335864 -q -qc
+copy /b 335864.dat+335864a.dat ..\game\landscap\l335864.dat
+del /yq 335864.dat
+del /yq 335864a.dat
+
+tt2 -rcdb Q 335874 -q -qc
+copy /b 335874.dat+335874a.dat ..\game\landscap\l335874.dat
+del /yq 335874.dat
+del /yq 335874a.dat
+
+tt2 -rcdb Q 335884 -q -qc
+copy /b 335884.dat+335884a.dat ..\game\landscap\l335884.dat
+del /yq 335884.dat
+del /yq 335884a.dat
+
+tt2 -rcdb Q 335815 -q -qc
+copy /b 335815.dat+335815a.dat ..\game\landscap\l335815.dat
+del /yq 335815.dat
+del /yq 335815a.dat
+
+tt2 -rcdb Q 335825 -q -qc
+copy /b 335825.dat+335825a.dat ..\game\landscap\l335825.dat
+del /yq 335825.dat
+del /yq 335825a.dat
+
+tt2 -rcdb Q 335835 -q -qc
+copy /b 335835.dat+335835a.dat ..\game\landscap\l335835.dat
+del /yq 335835.dat
+del /yq 335835a.dat
+
+tt2 -rcdb Q 335845 -q -qc
+copy /b 335845.dat+335845a.dat ..\game\landscap\l335845.dat
+del /yq 335845.dat
+del /yq 335845a.dat
+
+tt2 -rcdb Q 335855 -q -qc
+copy /b 335855.dat+335855a.dat ..\game\landscap\l335855.dat
+del /yq 335855.dat
+del /yq 335855a.dat
+
+tt2 -rcdb Q 335865 -q -qc
+copy /b 335865.dat+335865a.dat ..\game\landscap\l335865.dat
+del /yq 335865.dat
+del /yq 335865a.dat
+
+tt2 -rcdb Q 335875 -q -qc
+copy /b 335875.dat+335875a.dat ..\game\landscap\l335875.dat
+del /yq 335875.dat
+del /yq 335875a.dat
+
+tt2 -rcdb Q 335885 -q -qc
+copy /b 335885.dat+335885a.dat ..\game\landscap\l335885.dat
+del /yq 335885.dat
+del /yq 335885a.dat
+
+tt2 -rcdb Q 335816 -q -qc
+copy /b 335816.dat+335816a.dat ..\game\landscap\l335816.dat
+del /yq 335816.dat
+del /yq 335816a.dat
+
+tt2 -rcdb Q 335826 -q -qc
+copy /b 335826.dat+335826a.dat ..\game\landscap\l335826.dat
+del /yq 335826.dat
+del /yq 335826a.dat
+
+tt2 -rcdb Q 335836 -q -qc
+copy /b 335836.dat+335836a.dat ..\game\landscap\l335836.dat
+del /yq 335836.dat
+del /yq 335836a.dat
+
+tt2 -rcdb Q 335846 -q -qc
+copy /b 335846.dat+335846a.dat ..\game\landscap\l335846.dat
+del /yq 335846.dat
+del /yq 335846a.dat
+
+tt2 -rcdb Q 335856 -q -qc
+copy /b 335856.dat+335856a.dat ..\game\landscap\l335856.dat
+del /yq 335856.dat
+del /yq 335856a.dat
+
+tt2 -rcdb Q 335866 -q -qc
+copy /b 335866.dat+335866a.dat ..\game\landscap\l335866.dat
+del /yq 335866.dat
+del /yq 335866a.dat
+
+tt2 -rcdb Q 335876 -q -qc
+copy /b 335876.dat+335876a.dat ..\game\landscap\l335876.dat
+del /yq 335876.dat
+del /yq 335876a.dat
+
+tt2 -rcdb Q 335886 -q -qc
+copy /b 335886.dat+335886a.dat ..\game\landscap\l335886.dat
+del /yq 335886.dat
+del /yq 335886a.dat
+
+tt2 -rcdb Q 335817 -q -qc
+copy /b 335817.dat+335817a.dat ..\game\landscap\l335817.dat
+del /yq 335817.dat
+del /yq 335817a.dat
+
+tt2 -rcdb Q 335827 -q -qc
+copy /b 335827.dat+335827a.dat ..\game\landscap\l335827.dat
+del /yq 335827.dat
+del /yq 335827a.dat
+
+tt2 -rcdb Q 335837 -q -qc
+copy /b 335837.dat+335837a.dat ..\game\landscap\l335837.dat
+del /yq 335837.dat
+del /yq 335837a.dat
+
+tt2 -rcdb Q 335847 -q -qc
+copy /b 335847.dat+335847a.dat ..\game\landscap\l335847.dat
+del /yq 335847.dat
+del /yq 335847a.dat
+
+tt2 -rcdb Q 335857 -q -qc
+copy /b 335857.dat+335857a.dat ..\game\landscap\l335857.dat
+del /yq 335857.dat
+del /yq 335857a.dat
+
+tt2 -rcdb Q 335867 -q -qc
+copy /b 335867.dat+335867a.dat ..\game\landscap\l335867.dat
+del /yq 335867.dat
+del /yq 335867a.dat
+
+tt2 -rcdb Q 335877 -q -qc
+copy /b 335877.dat+335877a.dat ..\game\landscap\l335877.dat
+del /yq 335877.dat
+del /yq 335877a.dat
+
+tt2 -rcdb Q 335887 -q -qc
+copy /b 335887.dat+335887a.dat ..\game\landscap\l335887.dat
+del /yq 335887.dat
+del /yq 335887a.dat
+
+tt2 -rcdb Q 335818 -q -qc
+copy /b 335818.dat+335818a.dat ..\game\landscap\l335818.dat
+del /yq 335818.dat
+del /yq 335818a.dat
+
+tt2 -rcdb Q 335828 -q -qc
+copy /b 335828.dat+335828a.dat ..\game\landscap\l335828.dat
+del /yq 335828.dat
+del /yq 335828a.dat
+
+tt2 -rcdb Q 335838 -q -qc
+copy /b 335838.dat+335838a.dat ..\game\landscap\l335838.dat
+del /yq 335838.dat
+del /yq 335838a.dat
+
+tt2 -rcdb Q 335848 -q -qc
+copy /b 335848.dat+335848a.dat ..\game\landscap\l335848.dat
+del /yq 335848.dat
+del /yq 335848a.dat
+
+tt2 -rcdb Q 335858 -q -qc
+copy /b 335858.dat+335858a.dat ..\game\landscap\l335858.dat
+del /yq 335858.dat
+del /yq 335858a.dat
+
+tt2 -rcdb Q 335868 -q -qc
+copy /b 335868.dat+335868a.dat ..\game\landscap\l335868.dat
+del /yq 335868.dat
+del /yq 335868a.dat
+
+tt2 -rcdb Q 335878 -q -qc
+copy /b 335878.dat+335878a.dat ..\game\landscap\l335878.dat
+del /yq 335878.dat
+del /yq 335878a.dat
+
+tt2 -rcdb Q 335888 -q -qc
+copy /b 335888.dat+335888a.dat ..\game\landscap\l335888.dat
+del /yq 335888.dat
+del /yq 335888a.dat
+

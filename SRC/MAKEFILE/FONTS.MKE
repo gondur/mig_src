@@ -1,0 +1,61 @@
+.EXTENSIONS: 
+.EXTENSIONS: .fnu .fns .fnt .pcx .mif
+
+
+SRC	=	s:\projects\mig\artsrc\fonts\
+DST	= 	..\game\artwork\fonts640\
+
+.pcx:	$(SRC)
+.fnt:	$(DST)
+.fns:	$(DST)
+
+#
+#256 colour fonts
+#
+FONTS256=&
+	$(DST)typewrte.Fnt&
+
+#
+#16 coulour fonts
+#
+FONTS16=&
+	$(DST)redfont.fns&
+	$(DST)blufont.fns&
+	$(DST)grnfont.fns&
+	$(DST)large.fns&
+	$(DST)largeneg.fns&
+	$(DST)smllfnt.Fns&
+	$(DST)maintext.Fns&
+	$(DST)emboss.Fns&
+	$(DST)korea.Fns&
+	$(DST)chalk.Fns&
+	$(DST)f3by5.Fns&
+	$(DST)type16.Fns&
+	$(DST)install.Fns&
+	$(DST)f3by5.Fns&
+
+FONTSUNPACKED=&
+	$(DST)mouse.Fnu&
+
+
+all:	$(FONTS256) $(FONTS16) $(FONTSUNPACKED)
+
+#
+#you make 16 colour fonts this way
+#
+.pcx.fns: $(FONTS16)
+	font -i$(SRC)$^&.pcx -o$@ -ts
+
+#
+#defaults to 256 colour fonts
+#
+.pcx.fnt:
+	font -i$(SRC)$^&.pcx -o$@ -tc
+
+#
+#you make Unpacked fonts this way [i.e. the mouse]
+#
+.pcx.fnu: $(FONTS16)
+	font -i$(SRC)$^&.pcx -o$@ -tp
+
+

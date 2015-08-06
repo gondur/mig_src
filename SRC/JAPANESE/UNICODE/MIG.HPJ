@@ -1,0 +1,20 @@
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+DBCS=Yes
+LCID=0x411 0x0 0x0 ; “ú–{Œê
+REPORT=Yes
+CHARSET=128
+CONTENTS=HIDD_THEMAP
+TITLE=Mig Alley Help
+CNT=Mig.cnt
+HLP=mig.hlp
+
+[FILES]
+Mig.rtf
+
+[MAP]
+#include \Program Files\DevStudio\VC\MFC\include\afxhelp.hm
+#include \mig\src\mfc\hlp\MIG.hm
+
+[WINDOWS]
+main="",(18,61,453,590),27904,(r14876671),(r12632256),f3

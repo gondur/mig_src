@@ -1,0 +1,10 @@
+-eps
+-r ..\DEBUG\OBJ\pclust1.x8
+-r ..\DEBUG\OBJ\pclust2.x8
+-r ..\DEBUG\OBJ\pclust3.x8
+-r ..\DEBUG\OBJ\pclust4.x8
+-r ..\DEBUG\OBJ\pclust5.x8
+-r ..\DEBUG\OBJ\pclust6.x8
+-r ..\DEBUG\OBJ\pclust7.x8
+-r ..\DEBUG\OBJ\pclust8.x8
+-w ..\GAME\LANDMAPS\palclust.x8

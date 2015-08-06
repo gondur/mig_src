@@ -1,0 +1,19 @@
+;;------------------------------------------------------------------------------
+;;Filename       curves.rc
+;;System         
+;;Author         Andrew McRae
+;;Date           Mon 10 Feb 1997
+;;Description    Flight Model Curves Editor Resource File
+;;------------------------------------------------------------------------------
+
+#include <windows.h>
+
+Dialog DIALOG  FIXED IMPURE 10, 10, 223, 71
+STYLE DS_MODALFRAME | WS_OVERLAPPED | WS_CAPTION | WS_VISIBLE | WS_SYSMENU
+CAPTION "Dialog Title"
+FONT 8, "Helv"
+{
+	CONTROL "poo",	101, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 79, 5, 133, 17
+	CONTROL "boo",	302, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 79, 27, 133, 17
+	CONTROL "moo",	102, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 79, 49, 133, 17
+}

@@ -1,0 +1,40 @@
+--------------------Configuration: REdit - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\redit\Redit.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\mig\Debug\redit/" /Fo"\mig\Debug\redit/" /Fd"\mig\Debug\redit/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"\mig\Debug\redit/REdit.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"\mig\Debug\exe/Redit.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\REdit.def" /out:"\mig\Debug\exe/Redit.ocx" /implib:"\mig\Debug\exe/Redit.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "e:\TEMP\RSP5202.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "\mig\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\mig\Debug\redit/" /Fo"\mig\Debug\redit/" /Fd"\mig\Debug\redit/" /FD /c 
+"C:\mig\Src\redit\REditCtl.cpp"
+>
+Creating command line "cl.exe @e:\TEMP\RSP5202.TMP" 
+Creating temp file "e:\TEMP\RSP5203.TMP" with contents </nologo /subsystem:windows /dll /pdb:none /debug /machine:I386 /def:".\REdit.def" /out:"\mig\Debug\exe/Redit.ocx" /implib:"\mig\Debug\exe/Redit.lib" 
+\mig\Debug\redit\Getshadw.obj
+\mig\Debug\redit\REdit.obj
+\mig\Debug\redit\REditCtl.obj
+\mig\Debug\redit\REditPpg.obj
+\mig\Debug\redit\REdit.res>
+Creating command line "link.exe @e:\TEMP\RSP5203.TMP" 
+Creating temp file "e:\TEMP\RSP5204.BAT" with contents <@echo off
+regsvr32 /s /c "\mig\Debug\exe\Redit.ocx"
+echo regsvr32 exec. time > "\mig\Debug\exe\regsvr32.trg"
+>
+Creating command line "e:\TEMP\RSP5204.BAT" 
+Compiling...
+REditCtl.cpp
+Linking...
+   Creating library \mig\Debug\exe/Redit.lib and object \mig\Debug\exe/Redit.exp
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \mig\Debug\exe\Redit.ocx succeeded.
+
+
+
+
+Redit.ocx - 0 error(s), 0 warning(s)

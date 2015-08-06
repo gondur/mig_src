@@ -1,0 +1,148 @@
+TARG_WhRdSinuiju,
+
+Sinuiju is one of three main supply points. Supplies enter Korea at Sinuiju and travel southward to major supply-dispersal areas.
+
+TARG_SCCYomju,
+
+No info available  
+TARG_SdRdSonchon,
+
+Sonchon is a supply-center connected by rail to Sinanju, North of the Chongchon River.
+
+TARG_SCCSakchu,
+
+Sakchu is situated near the Yalu river and holds the North Korean Military Academy.
+
+TARG_SCCChosan,
+
+Chosan has both supply and communication centres, and is located on the Yalu river.
+
+TARG_SdRdPungsan,				//MS 22Feb99
+
+No info available  
+TARG_MyRlChongjin,
+
+Chongjin has two major harbours, a railway yard and workshops. There is also a Japanese iron company, Mitsubishi Iron company.
+
+TARG_MSPKimchaek,
+
+No info available  
+TARG_MSPTanchon,
+
+No info available  
+TARG_MyRdHamhung,
+
+Supplies would be brought to Hamhung  from one of the three gateway cities,  and then passed on by rail and truck to the major supply dispersal areas.
+
+TARG_SCCManpo,
+
+Manpo is one of three gateway cities for supplies. Supplies were brought in through these cities and then filtered out to the supply dispersal points.
+
+TARG_SCCKangye,
+
+Kangye is used as a large supplie depot of arsenal and has a tremendously communication centre.
+
+TARG_SCCHuichon,
+
+Huichon is a supply dispersal piont connected to Kunu-ri by a single track railway line. 
+
+TARG_WhRdSukchon,
+
+No info available  
+TARG_SdRdYulLi,					//MS 22Feb99
+
+No info available  
+TARG_MyRdPyongyang,
+
+Pyongyang is the arsenal centre of North Korea, having armanet plants, large freight yards and major railway plants.
+
+TARG_ICMPNampo,
+
+No info available  
+TARG_SdRdIchon,
+
+No info available  
+TARG_SdRdSariwon,				//MS 22Feb99
+
+Sariwon has a supply depot which has is connected to Pyongyang by rail track. 
+TARG_SdRdKumchon,
+
+South of Suwon, Kumchon has a railway connecting it to Suwon supply depot.  
+TARG_SdRdKaesong,
+
+Kaesong is a supply depot used for vehicle convoys to supply a major Red militiary headquarters near Kaesong.
+
+TARG_MyRlWonsan,
+
+Wonsan is a major seaport and railway centre and the main site for petroleum refining in North Korea. Wonsan also has one of the three most importnant
+railway hubs in Korea.
+
+TARG_SdRdKumhwa,					//MS 22Feb99
+
+Kumwha has a vital supply depot, and also holds one of three major Communist communications centres.
+
+TARG_SdRdYangyang,					//MS 20Jan99
+
+No info available  
+TARG_SdRdYangdok,				//MS 22Feb99
+
+Yangdok was used in conjuction with other supply depots in the region, to move supplies by rail to various vital areas.
+
+TARG_SdRdPyonggang,				//MS 20Jan99
+
+Located on the east coast of Korea, Pyonggang is part of the east coast rail line, from Kilchu, Hungnam and Wonsan
+
+TARG_SdRdYonchon,				//MS 22Feb99
+
+No info available  
+TARG_MyBlMunsan,
+
+No info available  
+TARG_MyBlSeoul,
+
+Seoul has a major role in the Korean war as a supply centre, Filtering large amounts of supplies to the smaller supply depots. Seoul has both rail and road
+supply depots.
+
+TARG_SdBlSuwon,
+
+As well as its Marshalling yard and supply depots, Suwon was also the orignal location for the ACDOM but were foreced to retreat to Taejon.
+
+TARG_MyBlKuri,
+
+Kuri is recieves supplies from the three gateway cities, and then moves them on to other smaller supply areas.
+
+TARG_SdRdHongchon,
+
+No info available  
+TARG_Ichon_S,	
+
+No info available  
+TARG_SdRdWonju,					//MS 20Jan99
+
+Wonju is a key road-junction city nestled in a mountain basin of central Korea.  
+TARG_SdBlPyongtaek,
+
+No info available  
+TARG_SdBlHongsong,
+
+No info available  
+TARG_MyBlChochiwon,
+
+Chochiwon is located in the west of Korea, south of Chonui and Chonan.  Chochiwon is important due to the marshalling yard and a small oil dump.
+
+TARG_SdBlTaejon,
+
+Taejon is a important postion in the south of Korea. Taejon is home to the  ADCOM (Advanced Command and Liason Group in Korea). 
+
+TARG_SdBlYongdong,
+
+No info available  
+TARG_MyBlKumi,
+
+NNo info available   info available  
+
+ 
+
+ 
+
+ 

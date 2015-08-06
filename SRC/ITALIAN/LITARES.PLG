@@ -1,0 +1,28 @@
+--------------------Configuration: LItaRes - Win32 Release--------------------
+Begining build with project "C:\mig\Src\Italian\lItares.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"..\..\Release\italian/lItares.pch" /YX /Fo"..\..\Release\italian/" /Fd"..\..\Release\italian/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"..\..\Release\italian/Mig.res" /i "..\mfc" /i "..\mfc\res" /d "NDEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"..\..\release\italian/lItares.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\release\italian/miglang.pdb" /machine:I386 /out:"..\..\release\italian/miglang.dll" /implib:"..\..\release\italian/miglang.lib" /NOENTRY "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x809 /fo"..\..\Release\italian/Mig.res" /i "..\mfc" /i "..\mfc\res" /d "NDEBUG" "C:\mig\Src\Italian\Mig.rc"" 
+Creating command line "link.exe /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\release\italian/miglang.pdb" /machine:I386 /out:"..\..\release\italian/miglang.dll" /implib:"..\..\release\italian/miglang.lib" /NOENTRY  \mig\Release\italian\Mig.res" 
+Compiling resources...
+Linking...
+Creating temp file "e:\TEMP\RSP5040.BAT" with contents <@echo off
+copy ..\..\release\italian\miglang.dll ..\..\game\italian\text
+>
+Creating command line "e:\TEMP\RSP5040.BAT" 
+Copying
+C:\mig\release\italian\miglang.dll => C:\mig\game\italian\text\miglang.dll
+     1 file copied
+
+
+
+miglang.dll - 0 error(s), 0 warning(s)

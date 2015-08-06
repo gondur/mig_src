@@ -1,0 +1,78 @@
+// RScrlBar.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RScrlBar.tlb) that will become a resource in
+// RScrlBar.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(505AEE43-6A66-11D1-A1F0-444553540000), version(1.0),
+  helpfile("RScrlBar.hlp"),
+  helpstring("RScrlBar ActiveX Control module"),
+  control ]
+library RSCRLBARLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRScrlBarCtrl
+
+	[ uuid(505AEE44-6A66-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RScrlBar Control"), hidden ]
+	dispinterface _DRScrlBar
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRScrlBarCtrl)
+			[id(1)] long MinValue;
+			[id(2)] long MaxValue;
+			[id(3)] long StepSize;
+			[id(4)] boolean HorzAlign;
+			[id(5)] long parentPointer;
+			[id(6)] long PageSize;
+			[id(7)] long ScrollPos;
+			[id(8)] boolean UseMessagesInsteadOfEvents;
+			[id(9)] long FileNumOffset;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRScrlBarCtrl)
+			[id(10)] void Move(long left, long top, long right, long bottom);
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRScrlBarCtrl
+
+	[ uuid(505AEE45-6A66-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RScrlBar Control") ]
+	dispinterface _DRScrlBarEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRScrlBarCtrl)
+			[id(1)] void Scroll(long nPos);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRScrlBarCtrl
+
+	[ uuid(505AEE46-6A66-11D1-A1F0-444553540000), licensed,
+	  helpstring("RScrlBar Control"), control ]
+	coclass RScrlBar
+	{
+		[default] dispinterface _DRScrlBar;
+		[default, source] dispinterface _DRScrlBarEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

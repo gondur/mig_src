@@ -1,0 +1,88 @@
+:Base mehelp.hlp
+:Title Mission Editor Help
+1 Getting Started
+2 What is the Flying Corps Mission Editor?=IDH_WhatisFCGME
+1 Tutorials
+2 First  Mission
+3 Mission Group=IDH_FM_MakingMissionGroup
+3 Initialisation=IDH_FirstMissionInit
+3 Filtering=IDH_FirstMissionFiltering
+3 Creating an Aircraft=IDH_FirstMissionCreateAc
+3 Editing the Aircraft=IDH_FirstMissionSpecifyAc
+3 Editing the Route=IDH_FirstMissionSpecifyRoute
+3 Adding a Second Aircraft=IDH_FirstMissionSecondAc
+3 The Second Aircraft's Route=IDH_FirstMissionSecondAcRoute
+3 Saving and Testing=IDH_FM_SavingAndTesting
+2 First Campaign
+3 Initialisation=IDH_FirstCampaignInit
+3 Adding Ground Items=IDH_FirstCampaignFirstMsnGrndItems
+3 The Player's Aircraft=IDH_FirstCampaignFirstMsnPlayerAc
+3 The Player's Route=IDH_FirstCampaignFirstMsnPlayerRoute
+3 The Second Mission=IDH_FC_SaveTestCampMission
+3 Testing a Campaign=IDH_FC_TestingCampaign
+3 The Player's Squadron=IDH_FC_DefiningPlayerSquadron
+2 Events
+3 What is an Event?=IDH_EV_WhatIsAnEvent
+3 A Mission with an Event=IDH_MissionwithEvents
+3 Choosing Scenarios=IDH_EV_BuildingEvent
+3 Setting Event Variables=IDH_EV_SpecifyingEventMacro
+3 Editing Event Waypoint=IDH_EV_CreatingEventWaypoint
+3 Creating Multiple Event Macros=IDH_EV_MultipleEventMacros
+3 Another Event Waypoint=IDH_EV_AnotherEventWaypoint
+1 Reference
+2 Mission Group
+3 Mission Group=IDH_MissionGroup
+2 Campaign
+3 Campaign=IDH_Campaign
+3 Parameters=IDH_CampaignParameters
+3 Text=IDH_MIText
+3 Pilots=IDH_Pilots
+3 Rank=IDH_Rank
+3 Edit Campaign Missions=IDH_EditMissions
+2 Mission
+3 Initialisation=IDH_Initialisation
+3 Text=IDH_MIText
+3 Conditions=IDH_MIConditions
+3 Objectives=IDH_Objectives
+2 Main Map and Display
+3 Create Bar=IDH_CreateBar
+3 Filter Bar=IDH_FilterBar
+3 Status Bar=IDH_HelpBar
+3 World Template=IDH_WorldTemplate
+3 Zooming Map=IDH_Zoom
+2 Items
+3 World Template=IDH_WorldTemplate
+3 Locking Positions=IDH_LockingItemPosn
+3 Creating Items=IDH_CreateBar
+3 Item Count=IDH_ItemCount
+3 Aircraft Item
+4 Aircraft Group=IDH_AircraftGroup
+4 Squadron Data=IDH_SquadronData
+4 Setting TakeOff=IDH_TakeOff
+4 Available Colour Schemes=IDH_ColourScheme
+3 Ground Item
+4 Ground Items=IDH_GroundItems
+4 Ground Item Status=IDH_Status
+4 Rules of Engagement=IDH_ROE
+2 Waypoints
+3 Inserting Waypoints=IDH_WaypointInsertion
+3 Waypoint Info=IDH_WaypointInfo
+3 Event Waypoint=IDH_EventWaypointDialogue
+3 Inspecting Waypoints=IDH_InspectingWaypoints
+3 Looping Waypoints=IDH_LoopingWaypoints
+3 Waypoint Actions=IDH_WPActions
+2 Events
+3 What is an Event?=IDH_EV_WhatIsAnEvent
+3 Event Waypoint=IDH_EventWaypointDialogue
+3 Event Item=IDH_EventItems
+3 Choosing Scenarios=IDH_ChooseScenarios
+3 Event Macro=IDH_EventMacro
+3 Trigger and Timer=IDH_Triggers
+3 Painting Aircraft=IDH_PaintSchemes
+2 Organisation
+3 Configure Menu=IDH_ConfigureMenu
+3 Right-Click Menu=IDH_RightClickMenu
+3 File Operations=IDH_Files
+3 Pre-Compilation Editing=IDH_PreCompilation
+3 Testing=IDH_RunningFromME
+3 Distribution=IDH_SendToFriend

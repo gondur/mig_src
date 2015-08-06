@@ -1,0 +1,80 @@
+// RCombo.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RCombo.tlb) that will become a resource in
+// RCombo.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(737CB0C6-B42B-11D1-A1F0-444553540000), version(1.0),
+  helpfile("RCombo.hlp"),
+  helpstring("RCombo ActiveX Control module"),
+  control ]
+library RCOMBOLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRComboCtrl
+
+	[ uuid(737CB0C7-B42B-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RCombo Control"), hidden ]
+	dispinterface _DRCombo
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRComboCtrl)
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(DISPID_CAPTION), bindable, requestedit] BSTR Caption;
+			[id(1)] long FontNum;
+			[id(2)] long ListboxLength;
+			[id(3)] boolean CircularStyle;
+			[id(DISPID_ENABLED), bindable, requestedit] boolean Enabled;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRComboCtrl)
+			[id(4)] void AddString(BSTR text);
+			[id(5)] long GetListbox();
+			[id(6)] void SetIndex(long row);
+			[id(7)] long GetIndex();
+			[id(8)] void Clear();
+			[id(9)] void DeleteString(long index);
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRComboCtrl
+
+	[ uuid(737CB0C8-B42B-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RCombo Control") ]
+	dispinterface _DRComboEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRComboCtrl)
+			[id(1)] void TextChanged(BSTR text);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRComboCtrl
+
+	[ uuid(737CB0C9-B42B-11D1-A1F0-444553540000), licensed,
+	  helpstring("RCombo Control"), control ]
+	coclass RCombo
+	{
+		[default] dispinterface _DRCombo;
+		[default, source] dispinterface _DRComboEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,15 @@
+--------------------Configuration: UBfields - Win32 Release--------------------
+Begining build with project "C:\mig\Src\UBfields\UBfields.dsp", with item "Makebf.cxx"
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+
+Creating temp file "e:\TEMP\RSPE163.TMP" with contents </nologo /G5 /ML /W3 /GX- /O2 /I "\mig\src\h" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fo"\Mig\Release\utilobj/" /Fd"\Mig\Release\utilobj/" /FD /c 
+"C:\mig\Src\Bfields\Makebf.cxx"
+>
+Creating command line "cl.exe @e:\TEMP\RSPE163.TMP" 
+Compiling...
+Makebf.cxx
+
+
+
+Makebf.obj - 0 error(s), 0 warning(s)

@@ -1,0 +1,16 @@
+make45 -fMAKEFILE\imagema0.MKE %&
+make45 -fMAKEFILE\imagema1.MKE %&
+make45 -fMAKEFILE\maskmap0.MKE %&
+make45 -fMAKEFILE\maskmap1.MKE %&
+make45 -fMAKEFILE\imgmap10.MKE %&
+make45 -fMAKEFILE\imgmap11.MKE %&
+make45 -fMAKEFILE\mskmap10.MKE %&
+make45 -fMAKEFILE\mskmap11.MKE %&
+make45 -fMAKEFILE\cockpit0.MKE %&
+make45 -fMAKEFILE\cockpit1.MKE %&
+make45 -fMAKEFILE\cockmas0.MKE %&
+make45 -fMAKEFILE\cockmas1.MKE %&
+make45 -fMAKEFILE\cockpt10.MKE %&
+make45 -fMAKEFILE\cockpt11.MKE %&
+make45 -fMAKEFILE\cockpm10.MKE %&
+make45 -fMAKEFILE\cockpm11.MKE %&

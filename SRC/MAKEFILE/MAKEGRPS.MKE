@@ -1,0 +1,49 @@
+###################################################################################
+##
+##			AUTO-GENERATED SHAPE MAKEFILE : Feb 10 1997
+##
+###################################################################################
+
+### PATHS
+
+SRC	=	SHAPES
+DEST_SHP= 	SHAPES\SHPGRP
+DEST_COM=	GAME\SHPBIN
+
+SRC_ASC	=	$(SRC)\SHPSRC
+SRC_GRP	=	$(SRC)\SHPSRC
+SRC_DAT	=	$(SRC)\SHPDAT
+
+### UTILITIES
+
+SHPCNV	=	WSHPMKE.EXE
+SHPSHD	=	SHADE3DS.EXE
+SHPASM	=	TASMX.EXE
+SHPLNK	=	TLINK.EXE
+GRPMASH	=	WGROUP.EXE
+
+### 3DS->SHP COMMAND LINE OPTIONS
+
+V201CMMKSHP	=	/M_$(SRC)\MATERIAL.TXT /I_$(SRC)\IMAGEMAP.TXT /V2 /1cm /Complex
+V204CMMKSHP	=	/M_$(SRC)\MATERIAL.TXT /I_$(SRC)\IMAGEMAP.TXT /V2 /4cm /Complex
+V216CMMKSHP	=	/M_$(SRC)\MATERIAL.TXT /I_$(SRC)\IMAGEMAP.TXT /V2 /16cm /Complex
+V201CMMKSHPD=	/M_$(SRC)\MATERIAL.TXT /I_$(SRC)\IMAGEMAP.TXT /V2 /1cm /Complex /Dead
+V204CMMKSHPD=	/M_$(SRC)\MATERIAL.TXT /I_$(SRC)\IMAGEMAP.TXT /V2 /4cm /Complex /Dead
+V216CMMKSHPD=	/M_$(SRC)\MATERIAL.TXT /I_$(SRC)\IMAGEMAP.TXT /V2 /16cm /Complex /Dead
+
+### MAIN BIT OF MAKEFILE
+ 
+GROUP =		$(DEST_COM)\EMPTY.COM\
+	$(DEST_COM)\KIMPO.COM\
+
+
+ALLSHAPES: $(GROUP) 
+
+$(GROUP):	$(SRC)\IMAGEMAP.RES $(SRC)\SHAPES.RES\
+		$(SRC_GRP)\$*.grp
+		$(GRPMASH) $(SRC_GRP)\$*.grp $(DEST_SHP)\$*.grp
+		$(SHPASM) /t /i$(SRC) /kh16384 SHAPES\SHPGRP\$*.grp,M:\SHAPES\$*.obj
+		$(SHPLNK) /t /x M:\SHAPES\$*.obj,M:\SHAPES\$*.bin
+		copy M:\SHAPES\$*.bin $(DEST_COM)\$*.com
+
+

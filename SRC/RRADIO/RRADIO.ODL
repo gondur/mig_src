@@ -1,0 +1,75 @@
+// RRadio.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RRadio.tlb) that will become a resource in
+// RRadio.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(7EBC74E2-0F3C-11D2-A1F0-0080C8582DE4), version(1.0),
+  helpfile("RRadio.hlp"),
+  helpstring("RRadio ActiveX Control module"),
+  control ]
+library RRADIOLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRRadioCtrl
+
+	[ uuid(7EBC74E3-0F3C-11D2-A1F0-0080C8582DE4),
+	  helpstring("Dispatch interface for RRadio Control"), hidden ]
+	dispinterface _DRRadio
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRRadioCtrl)
+			[id(1)] long FontNum;
+			[id(2)] long Cols;
+			[id(3)] long CurrentSelection;
+			[id(4)] long ColumnWidth;
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRRadioCtrl)
+			[id(5)] void AddButton(BSTR text);
+			[id(6)] void Clear();
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRRadioCtrl
+
+	[ uuid(7EBC74E4-0F3C-11D2-A1F0-0080C8582DE4),
+	  helpstring("Event interface for RRadio Control") ]
+	dispinterface _DRRadioEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRRadioCtrl)
+			[id(1)] void Selected(long ButtonNum);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRRadioCtrl
+
+	[ uuid(5363BA22-D90A-11D1-A1F0-0080C8582DE4), licensed,
+	  helpstring("RRadio Control"), control ]
+	coclass RRadio
+	{
+		[default] dispinterface _DRRadio;
+		[default, source] dispinterface _DRRadioEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

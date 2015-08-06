@@ -1,0 +1,81 @@
+// RSpinBut.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RSpinBut.tlb) that will become a resource in
+// RSpinBut.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(C3270E63-6D6B-11D1-A1F0-444553540000), version(1.0),
+  helpfile("RSpinBut.hlp"),
+  helpstring("RSpinBut ActiveX Control module"),
+  control ]
+library RSPINBUTLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRSpinButCtrl
+
+	[ uuid(C3270E64-6D6B-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RSpinBut Control"), hidden ]
+	dispinterface _DRSpinBut
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRSpinButCtrl)
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(1)] long RepeatDelay;
+			[id(2)] long Index;
+			[id(3)] long FontNum;
+			[id(4)] long CurrentValue;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRSpinButCtrl)
+			[id(5)] void AddString(BSTR text);
+			[id(6)] void DeleteString(long index);
+			[id(7)] void Clear();
+			[id(8)] boolean SetPriceOption(long min, long max, long current);
+			[id(9)] boolean SetValueOption(long min, long max, long current);
+			[id(10)] void SetPassWord(boolean ispassword);
+			[id(11)] boolean SetSearchValueOption(long min, long max, long current);
+			[id(12)] boolean SetPlayerNegPriceOption(long min, long max, long current);
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRSpinButCtrl
+
+	[ uuid(C3270E65-6D6B-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RSpinBut Control") ]
+	dispinterface _DRSpinButEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRSpinButCtrl)
+			[id(1)] void TextChanged(BSTR text);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRSpinButCtrl
+
+	[ uuid(C3270E66-6D6B-11D1-A1F0-444553540000), licensed,
+	  helpstring("RSpinBut Control"), control ]
+	coclass RSpinBut
+	{
+		[default] dispinterface _DRSpinBut;
+		[default, source] dispinterface _DRSpinButEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

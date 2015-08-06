@@ -1,0 +1,71 @@
+// RTickBox.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RTickBox.tlb) that will become a resource in
+// RTickBox.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(840ED4A4-CF9B-11D1-A1F0-0080C8582DE4), version(1.0),
+  helpfile("RTickBox.hlp"),
+  helpstring("RTickBox ActiveX Control module"),
+  control ]
+library RTICKBOXLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRTickBoxCtrl
+
+	[ uuid(840ED4A5-CF9B-11D1-A1F0-0080C8582DE4),
+	  helpstring("Dispatch interface for RTickBox Control"), hidden ]
+	dispinterface _DRTickBox
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRTickBoxCtrl)
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(DISPID_CAPTION), bindable, requestedit] BSTR Caption;
+			[id(1)] boolean State;
+			[id(2)] long FontNum;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRTickBoxCtrl)
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRTickBoxCtrl
+
+	[ uuid(840ED4A6-CF9B-11D1-A1F0-0080C8582DE4),
+	  helpstring("Event interface for RTickBox Control") ]
+	dispinterface _DRTickBoxEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRTickBoxCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRTickBoxCtrl
+
+	[ uuid(840ED4A7-CF9B-11D1-A1F0-0080C8582DE4), licensed,
+	  helpstring("RTickBox Control"), control ]
+	coclass RTickBox
+	{
+		[default] dispinterface _DRTickBox;
+		[default, source] dispinterface _DRTickBoxEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,85 @@
+// RAniBut.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RAniBut.tlb) that will become a resource in
+// RAniBut.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(8E9ADEE3-6C9B-11D1-A1F0-444553540000), version(1.0),
+  helpfile("RAniBut.hlp"),
+  helpstring("RAniBut ActiveX Control module"),
+  control ]
+library RANIBUTLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRAniButCtrl
+
+	[ uuid(8E9ADEE4-6C9B-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RAniBut Control"), hidden ]
+	dispinterface _DRAniBut
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRAniButCtrl)
+			[id(1)] IPictureDisp* Frame1;
+			[id(2)] IPictureDisp* Frame2;
+			[id(3)] IPictureDisp* Frame3;
+			[id(4)] IPictureDisp* Frame4;
+			[id(5)] IPictureDisp* Frame5;
+			[id(6)] IPictureDisp* Frame6;
+			[id(7)] IPictureDisp* Frame7;
+			[id(8)] IPictureDisp* Frame8;
+			[id(9)] IPictureDisp* Frame9;
+			[id(10)] IPictureDisp* Frame10;
+			[id(11)] IPictureDisp* Frame11;
+			[id(12)] IPictureDisp* Frame12;
+			[id(13)] IPictureDisp* Frame13;
+			[id(14)] IPictureDisp* Frame14;
+			[id(15)] IPictureDisp* Frame15;
+			[id(16)] long Speed;
+			[id(17)] long frameTotal;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRAniButCtrl)
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRAniButCtrl
+
+	[ uuid(8E9ADEE5-6C9B-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RAniBut Control") ]
+	dispinterface _DRAniButEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRAniButCtrl)
+			[id(1)] void Pressed();
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRAniButCtrl
+
+	[ uuid(8E9ADEE6-6C9B-11D1-A1F0-444553540000), licensed,
+	  helpstring("RAniBut Control"), control ]
+	coclass RAniBut
+	{
+		[default] dispinterface _DRAniBut;
+		[default, source] dispinterface _DRAniButEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

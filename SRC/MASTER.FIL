@@ -1,0 +1,837 @@
+#Master file for file equates. The file is brought in from master.res if it
+exists. Master.res is just a list of .fil files and it allows no comments.
+
+Can you make sure that the Groups section has the file names in the format of
+F_~ with no .dir at the end
+
+DAW 25Sep96 if you add a Directory group item - you need to add a file in that
+directory - at the very least the dir.dir file should be named see enteries 50
+/ 52 videos / savegame
+
+
+Directory Bases :- roots.dir
+0	- smallest install
+1	- medium install
+2	- large install
+3	- never installed - CD data / smackers
+
+4-15	- in roots.dir. Can be based on 0-3 or be full specifications
+16-255	- must be based on 0-3
+
+
+# ; // can be used as comment blocks after this area
+
+
+File name	list of .dir files
+[Groups]
+F_COMMON	common
+F_GRAFIX	res640
+F_SOUNDS	sounds
+F_BATTLE	battle
+
+
+# num	name of .dir	directory name
+[Directories]
+
+50	common		4	videos
+51	common		4	stills
+52	common		4	savegame
+55	common		11	stdprof
+53	common		11	stdprof
+54	common		4	userprof
+
+70	common		4	meditor
+71	common		4	h
+72	battle		4	usersrc
+
+174	sounds		4	player
+175	sounds		4	pexcite
+176	sounds		4	other
+177	sounds		4	oexcite
+178	sounds		4	factac0
+179	sounds		4	factac1
+180	sounds		4	dentist
+181	sounds		4	tower0
+182	sounds		4	tower1
+183	sounds		4	tower2
+
+118	sounds		4	musicmed
+119	sounds		4	musiclow
+
+
+//I have reserved blocks 120..129 and 130..139 for the battlefield system!!!
+138	battle		4	bfields	//remaining source files
+139	battle		7	userobj
+137	battle		139	default
+136	battle		138	gengrnd
+135	battle		138	batnode
+
+120	battle		138	intrbfld
+121	battle		138	chokes
+122	battle		138	railarea
+123	battle		138	roadarea
+124	battle		138	convoys
+125	battle		138	nodes
+126	battle		138	airfield
+127	battle		138	battles
+128	battle		138	events
+129	battle		138	migs
+130	battle		138	prepack
+131	battle		138	userpack
+132	battle		138 	runpack
+133 	battle		138 	prepack
+
+113	common		11	text
+
+140	common		12	landscap
+150	common		4	landmaps
+151	common		4	imagemap
+152	common		4	maskmap
+153	common		4	cockpits
+154	common		4	imgmap16
+155	common		4	mskmap16
+156	common		4	cockmask
+157	common		4	cockpt16
+158	common		4	cockpm16
+160	common		4	landmap2
+
+170	common		4	shpbin
+171	common		4	shpbin2
+172	common		4	grpbin
+
+
+141	common		10	frontmap
+142	common		10	frbigmap
+
+
+200	res640		13	smacker
+201	common		4	libcode
+
+101	res640		9	scrn640
+102	res640		9	axart2
+104	res640		9	water2
+106	res640		9	axart
+107	res640		9	dial640
+108	res640		9	dial800
+109	res640		9	dial1024
+110	res640		9	dial1280
+111 res640		9	nosestd
+112 res640		9	noseuser
+
+114	sounds		4	miles
+115	sounds		4	music
+116	sounds		4	samples
+117	common		4	keyboard
+
+
+[files]
+15
+	dir.dir
+	roots.dir
+	common.dir	FIL_CommonDIR
+	res320.dir	FIL_320resDIR
+	res640.dir	FIL_640resDIR
+	res800.dir	FIL_800resDIR
+	sounds.dir	FIL_soundsDIR
+	battle.dir	FIL_battleDIR
+	
+50	dir.dir		FIL_VIDEOS_START_DIR
+
+51	dir.dir	   FIL_STILLS_START_DIR
+	screen00.lbm	FIL_STILLS_START
+
+52	dir.dir		FIL_SAVEGAMEDIR
+
+55	dir.dir		FIL_STANDARD_PROFILES_DIR_LONG
+
+53	dir.dir		FIL_STANDARD_PROFILES_DIR_SHORT
+	alphastr.prd	FIL_ALPHASTRIKE
+	fbstrike.prd	FIL_FBSTRIKE
+	mbstrike.prd	FIL_MEDBSTRIKE
+	npstrike.prd	FIL_NAPALMSTRIKE
+	crack.prd	FIL_CRACKNBURN
+	cas.prd		FIL_CAS
+	barcap.prd	FIL_BARCAP
+	arconn.prd 	FIL_ARMEDRECONN
+	choke.prd	FIL_CHOKESTRIKE
+	minstrike.prd	FIL_SINGLEFLIGHTSTRIKE
+	caspusan.prd	FIL_CASPUSAN
+	c1m1.prd	FIL_C1M1
+	c1m3.prd	FIL_C1M3
+
+54	dir.dir		FIL_USER_PROFILES_DIR
+
+
+201	dir.dir
+	hard320.bin	LIB_320_COPY
+	hard320d.bin	LIB_320_DEBUG
+	hardvbe1.bin	LIB_VBE_COPY
+	hardvbe2.bin	LIB_VBE_SWAP2
+	hardvbe3.bin	LIB_VBE_SWAP3
+	hardvbed.bin	LIB_VBE_DEBUG
+	hardwin1.bin	LIB_WING_COPY
+	hardwin2.bin	LIB_WING_SWAP
+
+	analmous.bin	FILLIB_ANALOGUE_MOUSE
+	analjoy.bin	FILLIB_ANALOGUE_JOYSTICK
+	analjoy.dll	FILLIB_JOYSTICK_DLL
+	preload.txt	FIL_PRELOAD_LIST
+
+101	
+	dir.dir
+
+
+104	dir.dir		FIL_SIDEARTDIR					
+	resource.bmp	FIL_MAP_RESOURCE
+	f86sqdn.bmp	FIL_MAP_SABRESQUADRON
+	f51sqdn.bmp	FIL_MAP_MUSTANGSQUADRON
+	f84sqdn.bmp	FIL_MAP_THUNDERJETSQUADRON
+	f80sqdn.bmp	FIL_MAP_SHOOTINGSTARSQUADRON
+	pilots.bmp	FIL_MAP_PILOTDETAILS
+	losses.bmp	FIL_MAP_PILOTLOSSES
+	tactics.JNK	FIL_MAP_TACTICS_xxxx
+	cloud1.bmp	FIL_MAP_CLOUD1
+	cloud2.bmp	FIL_MAP_CLOUD2
+	cloud3.bmp	FIL_MAP_CLOUD3
+	cloud4.bmp	FIL_MAP_CLOUD4
+	dis.bmp		FIL_MAP_INTELLIGENCE
+	directs.bmp	FIL_MAP_DIRECTIVES
+	choke.bmp	FIL_MAP_CHOKEPOINTS
+	traffic.bmp	FIL_MAP_TRAFFIC
+	supply.bmp	FIL_MAP_SUPPLY
+	airfield.bmp	FIL_MAP_AIRFIELD
+	army.bmp	FIL_MAP_ARMY
+	mig.jnk		FIL_MAP_MIGS_xxxx
+	library.bmp	FIL_MAP_PROFILESLIBRARY
+	requests.jnk	FIL_MAP_REQUESTS_xxxx
+	misnfldr.bmp	FIL_MAP_MISSIONFOLDER
+	profile.bmp	FIL_MAP_PROFILE
+	route.bmp	FIL_MAP_ROUTE
+	migcap.bmp	FIL_MAP_MIGCAP
+	strike.bmp	FIL_MAP_STRIKE
+	aaa.bmp		FIL_MAP_AAA
+	aimpoint.jnk	FIL_MAP_AIMPOINTS_xxxx
+	payload.bmp	FIL_MAP_PAYLOAD
+	misnrslt.bmp	FIL_MAP_MISSIONRESULTS
+	player.bmp	FIL_MAP_PLAYER_LOG
+	waypoint.jnk	FIL_MAP_WAYPOINT_xxxx
+	congrats.jnk	FIL_MAP_100MISSIONS_xxxx
+	overview.bmp	FIL_MAP_OVERVIEW
+	warn.jnk	FIL_MAP_WARNING_xxxx
+	contr2.bmp	FIL_LOADERART
+	photo.bmp	FIL_PHOTOART
+	
+106	dir.dir		DIR_ICONS_1
+	titleb.bmp	FIL_TITLEB_BMP
+	forty.bmp	FIL_FORTY_BMP
+	forty2.bmp	FIL_FORTY2_BMP
+	button1.bmp	FIL_MAP_BUTTON1
+	button2.bmp	FIL_MAP_BUTTON2
+	toolside.bmp	FIL_TOOL_VERTICAL
+	tooltop.bmp	FIL_TOOL_HORIZONTAL
+	grip.bmp	FIL_MAP_GRIP
+	b_ac1.bmp    	FIL_ICON_B_AIRCRAFT_ON
+	b_ac2.bmp    	FIL_ICON_B_AIRCRAFT_OFF1
+	b_ac3.bmp    	FIL_ICON_B_AIRCRAFT_OFF2
+	b_af1.bmp    	FIL_ICON_B_AIRFIELD_ON
+	b_af2.bmp    	FIL_ICON_B_AIRFIELD_OFF1
+	b_af3.bmp    	FIL_ICON_B_AIRFIELD_OFF2
+	b_artie1.bmp 	FIL_ICON_B_ARTILLERY_ON
+	b_artie2.bmp 	FIL_ICON_B_ARTILLERY_OFF1
+	b_artie3.bmp 	FIL_ICON_B_ARTILLERY_OFF2
+	b_bridg1.bmp	FIL_ICON_B_BRIDGE_ON
+	b_bridg2.bmp	FIL_ICON_B_BRIDGE_OFF1
+	b_bridg3.bmp	FIL_ICON_B_BRIDGE_OFF2
+	b_civil1.bmp 	FIL_ICON_B_CIVILIAN_ON
+	b_civil2.bmp 	FIL_ICON_B_CIVILIAN_OFF
+	b_civil3.bmp 	FIL_ICON_B_CIVILIAN_OFF2
+	b_myrd1.bmp  	FIL_ICON_B_MARSHALLINGYARD_ON
+	b_myrd2.bmp  	FIL_ICON_B_MARSHALLINGYARD_OFF1
+	b_myrd3.bmp  	FIL_ICON_B_MARSHALLINGYARD_OFF2
+	b_rail1.bmp  	FIL_ICON_B_RAILLINK_ON
+	b_rail2.bmp  	FIL_ICON_B_RAILLINK_OFF1
+	b_rail3.bmp  	FIL_ICON_B_RAILLINK_OFF2
+	b_road1.bmp  	FIL_ICON_B_ROADLINK_ON
+	b_road2.bmp  	FIL_ICON_B_ROADLINK_OFF1
+	b_road3.bmp  	FIL_ICON_B_ROADLINK_OFF2
+	b_suply1.bmp	FIL_ICON_B_SUPPLY_ON
+	b_suply2.bmp	FIL_ICON_B_SUPPLY_OFF1
+	b_suply3.bmp	FIL_ICON_B_SUPPLY_OFF2
+	b_tank1.bmp  	FIL_ICON_B_TANK_ON
+	b_tank2.bmp  	FIL_ICON_B_TANK_OFF1
+	b_tank3.bmp  	FIL_ICON_B_TANK_OFF2
+	b_train1.bmp 	FIL_ICON_B_TRAIN_ON
+	b_train2.bmp 	FIL_ICON_B_TRAIN_OFF1
+	b_train3.bmp 	FIL_ICON_B_TRAIN_OFF2
+	b_troop1.bmp 	FIL_ICON_B_TROOP_ON
+	b_troop2.bmp 	FIL_ICON_B_TROOP_OFF1
+	b_troop3.bmp 	FIL_ICON_B_TROOP_OFF2
+	b_truck1.bmp 	FIL_ICON_B_TRUCK_ON
+	b_truck2.bmp 	FIL_ICON_B_TRUCK_OFF1
+	b_truck3.bmp 	FIL_ICON_B_TRUCK_OFF2
+	r_ac1.bmp    	FIL_ICON_R_AIRCRAFT_ON
+	r_ac2.bmp   	FIL_ICON_R_AIRCRAFT_OFF1
+	r_ac3.bmp    	FIL_ICON_R_AIRCRAFT_OFF2
+	r_af1.bmp    	FIL_ICON_R_AIRFIELD_ON
+	r_af2.bmp    	FIL_ICON_R_AIRFIELD_OFF1
+	r_af3.bmp    	FIL_ICON_R_AIRFIELD_OFF2
+	r_artie1.bmp 	FIL_ICON_R_ARTILLERY_ON
+	r_artie2.bmp 	FIL_ICON_R_ARTILLERY_OFF1
+	r_artie3.bmp 	FIL_ICON_R_ARTILLERY_OFF2
+	r_bridg1.bmp	FIL_ICON_R_BRIDGE_ON
+	r_bridg2.bmp	FIL_ICON_R_BRIDGE_OFF1
+	r_bridg3.bmp	FIL_ICON_R_BRIDGE_OFF2
+	r_civil1.bmp 	FIL_ICON_R_CIVILIAN_ON
+	r_civil2.bmp 	FIL_ICON_R_CIVILIAN_OFF1
+	r_civil3.bmp 	FIL_ICON_R_CIVILIAN_OFF2
+	r_myrd1.bmp  	FIL_ICON_R_MARSHALLINGYARD_ON
+	r_myrd2.bmp  	FIL_ICON_R_MARSHALLINGYARD_OFF1
+	r_myrd3.bmp  	FIL_ICON_R_MARSHALLINGYARD_OFF2
+	r_rail1.bmp  	FIL_ICON_R_RAILLINK_ON
+	r_rail2.bmp  	FIL_ICON_R_RAILLINK_OFF1
+	r_rail3.bmp  	FIL_ICON_R_RAILLINK_OFF2
+	r_road1.bmp  	FIL_ICON_R_ROADLINK_ON
+	r_road2.bmp  	FIL_ICON_R_ROADLINK_OFF1
+	r_road3.bmp  	FIL_ICON_R_ROADLINK_OFF2
+	r_suply1.bmp	FIL_ICON_R_SUPPLY_ON
+	r_suply2.bmp	FIL_ICON_R_SUPPLY_OFF1
+	r_suply3.bmp	FIL_ICON_R_SUPPLY_OFF2
+	r_tank1.bmp  	FIL_ICON_R_TANK_ON
+	r_tank2.bmp  	FIL_ICON_R_TANK_OFF1
+	r_tank3.bmp  	FIL_ICON_R_TANK_OFF2
+	r_train1.bmp 	FIL_ICON_R_TRAIN_ON
+	r_train2.bmp 	FIL_ICON_R_TRAIN_OFF1
+	r_train3.bmp 	FIL_ICON_R_TRAIN_OFF2
+	r_troop1.bmp 	FIL_ICON_R_TROOP_ON
+	r_troop2.bmp 	FIL_ICON_R_TROOP_OFF1
+	r_troop3.bmp 	FIL_ICON_R_TROOP_OFF2
+	r_truck1.bmp 	FIL_ICON_R_TRUCK_ON
+	r_truck2.bmp 	FIL_ICON_R_TRUCK_OFF1
+	r_truck3.bmp 	FIL_ICON_R_TRUCK_OFF2
+	r_all1.bmp 	FIL_ICON_R_ALL_ON
+	r_all2.bmp 	FIL_ICON_R_ALL_OFF1
+	r_all3.bmp 	FIL_ICON_R_ALL_OFF2
+	b_all1.bmp 	FIL_ICON_B_ALL_ON
+	b_all2.bmp 	FIL_ICON_B_ALL_OFF1
+	b_all3.bmp 	FIL_ICON_B_ALL_OFF2
+	n_wpnav1.bmp	FIL_ICON_N_WP_NAV
+	n_wpnav2.bmp	FIL_ICON_N_WP_NOFF1
+	n_wpnav2.bmp	FIL_ICON_N_WP_NOFF2
+	n_wptgt1.bmp	FIL_ICON_N_WP_TGT
+	n_wptgt2.bmp	FIL_ICON_N_WP_TOFF1
+	n_wptgt2.bmp	FIL_ICON_N_WP_TOFF2
+	i_bases.bmp	FIL_ICON_BASES
+	i_bases2.bmp	FIL_ICON_BASOFF1
+	i_bases2.bmp	FIL_ICON_BASOFF2
+	i_squads.bmp	FIL_ICON_SQUADRONS
+	i_squad2.bmp	FIL_ICON_SQUADROOFF1
+	i_squad2.bmp	FIL_ICON_SQUADROOFF2
+	i_clouds.bmp	FIL_ICON_WEATHER
+	i_cloud2.bmp	FIL_ICON_WEATHOFF1
+	i_cloud2.bmp	FIL_ICON_WEATHOFF2
+	i_dis.bmp	FIL_ICON_DIS
+	i_dis2.bmp	
+	i_dis2.bmp	
+	i_intell.bmp	FIL_ICON_INTELLIGENCE
+	i_intel2.bmp	
+	i_intel2.bmp	
+	i_direct.bmp	FIL_ICON_SPARESPARE
+	i_direc2.bmp	
+	i_direc2.bmp	
+	i_misn.bmp	FIL_ICON_MISSIONFOLDER
+	i_misn2.bmp	
+	i_misn2.bmp	
+	i_result.bmp	FIL_ICON_MISSIONRESULTS
+	i_resul2.bmp	
+	i_resul2.bmp	
+	i_player.bmp	FIL_ICON_PLAYERLOG
+	i_playe2.bmp	
+	i_playe2.bmp	
+	i_overvw.bmp	FIL_ICON_OVERVIEW
+	i_overv2.bmp	
+	i_overv2.bmp	
+	tickbox1.bmp	FIL_ICON_TICKBOX1
+	tickbox2.bmp	FIL_ICON_TICKBOX2
+	tickbox3.bmp	FIL_ICON_TICKBOX3
+	i_thumb1.bmp	FIL_ICON_THUMBNAIL
+	i_thumb2.bmp	
+	i_thumb2.bmp	
+	i_zm_in1.bmp	FIL_ICON_ZOOMIN
+	i_zm_in2.bmp
+	i_zm_in2.bmp
+	i_zm_ot1.bmp	FIL_ICON_ZOOMOUT
+	i_zm_ot2.bmp
+	i_zm_ot2.bmp
+	i_files1.bmp	FIL_ICON_FILES_LOADSAVE
+	i_files2.bmp
+	i_files2.bmp
+	i_comms1.bmp	FIL_ICON_COMMS
+	i_comms2.bmp		  
+	i_comms2.bmp
+	i_reply1.bmp	FIL_ICON_SPARE
+	i_reply2.bmp		  
+	i_reply2.bmp
+	i_frag1.bmp	FIL_ICON_FRAG
+	i_frag2.bmp		  
+	i_frag2.bmp
+	i_toolb.bmp	FIL_ICON_TOOLBAR_HIDE
+	i_toolb2.bmp
+	i_toolb2.bmp
+	i_screen.bmp	FIL_ICON_SCREENSIZE
+	i_scree2.bmp
+	i_fullsc.bmp	
+	i_fulls2.bmp
+	i_close.bmp	FIL_ICON_CLOSE1	
+	i_close2.bmp	FIL_ICON_CLOSE2
+	i_gap.bmp	FIL_GAP
+	button1.bmp	FIL_MAP_DIS_BUTTON
+	button2.bmp	
+	button1.bmp	
+	dbutt1.bmp	
+	dbutt2.bmp	
+	i_move1.bmp	FIL_ICON_NEXT_PERIOD
+	i_move2.bmp		  
+	i_move2.bmp
+	mainwp.bmp	FIL_ICON_MAINWP
+	mainwp2.bmp	FIL_ICON_MAINWP_OFF1
+	mainwp3.bmp	FIL_ICON_MAINWP_OFF2
+	mainwp4.bmp	
+	mainwp5.bmp	
+	subwp.bmp	FIL_ICON_SUBWP
+	subwp2.bmp	FIL_ICON_SUBOFF1
+	subwp3.bmp	FIL_ICON_SUBOFF2
+	subwp4.bmp	
+	subwp5.bmp	
+	piltbut1.bmp	FIL_BUTTON_PILOT
+	piltbut1.bmp
+	piltbut2.bmp
+	piltbut3.bmp
+	piltbut3.bmp
+	scrlhorz.bmp	FIL_HORZ_SCROLLBAR
+	scrlvert.bmp	FIL_VERT_SCROLLBAR
+	pucktop.bmp	FIL_PUCK_TOP
+	puckbot.bmp	FIL_PUCK_BOTTOM
+	puckvert.bmp	FIL_PUCK_MIDDLE_VERT
+	puckleft.bmp	FIL_PUCK_LEFT
+	puckrght.bmp	FIL_PUCK_RIGHT
+	puckhorz.bmp	FIL_PUCK_MIDDLE_HORZ
+	radioup.bmp	FIL_RADIO_BUTTON_UP
+	radiodn.bmp	FIL_RADIO_BUTTON_DOWN
+	radioupd.bmp	FIL_RADIO_BUTTON_UP_DISABLED
+	radiodnd.bmp	FIL_RADIO_BUTTON_DOWN_DISABLED
+	combo.bmp	FIL_COMBO_BUTTON
+	spinup.bmp	FIL_SPIN_UP
+	spindown.bmp	FIL_SPIN_DOWN
+	scrlbutu.bmp	FIL_SCROLLBAR_BUTTON_UP
+	scrlbutd.bmp	FIL_SCROLLBAR_BUTTON_DOWN
+	large1.bmp	FIL_LARGE_BUTTON
+	large2.bmp	
+	large1.bmp	
+	large3.bmp	
+	large4.bmp	
+	red1.bmp 	FIL_ICON_RED_ON
+	red2.bmp 	FIL_ICON_RED_OFF1
+	red2.bmp 	FIL_ICON_RED_OFF2
+	blue1.bmp 	FIL_ICON_BLUE_ON
+	blue2.bmp 	FIL_ICON_BLUE_OFF1
+	blue2.bmp 	FIL_ICON_BLUE_OFF2
+	yellow1.bmp 	FIL_ICON_YELLOW_ON
+	yellow2.bmp 	FIL_ICON_YELLOW_OFF1
+	yellow2.bmp 	FIL_ICON_YELLOW_OFF2
+	F51_0_3.bmp 	FIL_ICON_F51_0_3
+	F51_1_2.bmp 	FIL_ICON_F51_1_2
+	F51_2_1.bmp 	FIL_ICON_F51_2_1
+	F51_3_0.bmp 	FIL_ICON_F51_3_0
+	F86_0_3.bmp 	FIL_ICON_F86_0_3
+	F86_1_2.bmp 	FIL_ICON_F86_1_2
+	F86_2_1.bmp 	FIL_ICON_F86_2_1
+	F86_3_0.bmp 	FIL_ICON_F86_3_0
+	arrow.bmp	FIL_ICON_ARROW
+	routes.bmp	FIL_ICON_ROUTES
+	routes2.bmp	FIL_ICON_ROUTES_OFF1
+	routes3.bmp	FIL_ICON_ROUTES_OFF2
+	front.bmp	FIL_ICON_FRONTLINE
+	front2.bmp	FIL_ICON_FRONTLINE_OFF1
+	front3.bmp	FIL_ICON_FRONTLINE_OFF2
+	yellow1.bmp	FIL_ICON_SMALL_FRONTLINE
+	yellow2.bmp	FIL_ICON_SMALL_FRONTLINE_OFF1
+	yellow2.bmp	FIL_ICON_SMALL_FRONTLINE_OFF2
+	green1.bmp	FIL_ICON_GREEN_ON
+	green2.bmp	FIL_ICON_GREEN_OFF
+	redtbt.bmp	FIL_EDIT_BUTTON
+	ccombo.bmp	FIL_CIRCULAR_COMBO_BUTTON
+	flight1.bmp	FIL_ICON_FLIGHT1
+	flight1d.bmp	FIL_ICON_FLIGHT1D
+	flight2.bmp	FIL_ICON_FLIGHT2
+	flight2d.bmp	FIL_ICON_FLIGHT2D
+	flight3.bmp	FIL_ICON_FLIGHT3
+	flight3d.bmp	FIL_ICON_FLIGHT3D
+	flight4.bmp	FIL_ICON_FLIGHT4
+	flight4d.bmp	FIL_ICON_FLIGHT4D
+	flight5.bmp	FIL_ICON_FLIGHT5
+	flight5d.bmp	FIL_ICON_FLIGHT5D
+	flight6.bmp	FIL_ICON_FLIGHT6
+	flight6d.bmp	FIL_ICON_FLIGHT6D
+	element1.bmp	FIL_ICON_ELEMENT1
+	elemen1d.bmp	FIL_ICON_ELEMENT1D
+	element2.bmp	FIL_ICON_ELEMENT2
+	elemen2d.bmp	FIL_ICON_ELEMENT2D
+
+107	dir.dir
+	title.bmp	FIL_TITLE_640
+	autopilt.jnk	FIL_AUTOPILOT_640_xxxx
+	d3disply.bmp	FIL_3DDISPLAY_640
+	flghtcon.bmp	FIL_FLIGHTCONFIG_640
+	gamsetup.bmp	FIL_GAMESETUP_640
+	quickmis.bmp	FIL_QUICKMISSION_640
+	repscrn.bmp	FIL_REPLAY_640
+	soundset.bmp	FIL_SOUNDSETUP_640
+	viewer00.bmp	FIL_VIEWOPTIONS_640
+	locker.bmp	FIL_LOCKERROOM_640
+	campaign.bmp	FIL_CAMPAIGNSELECT_640
+	ready.bmp	FIL_READYROOM_640
+	paintshp.bmp	FIL_PAINTSHOP_640
+	loadsave.bmp	FIL_LOADSAVE_640
+
+108	dir.dir
+	title.bmp	FIL_TITLE_800
+	autopilt.jnk	FIL_AUTOPILOT_800_xxxx
+	d3disply.bmp	FIL_3DDISPLAY_800
+	flghtcon.bmp	FIL_FLIGHTCONFIG_800
+	gamsetup.bmp	FIL_GAMESETUP_800
+	quickmis.bmp	FIL_QUICKMISSION_800
+	repscrn.bmp	FIL_REPLAY_800
+	soundset.bmp	FIL_SOUNDSETUP_800
+	viewer00.bmp	FIL_VIEWOPTIONS_800
+	locker.bmp	FIL_LOCKERROOM_800
+	campaign.bmp	FIL_CAMPAIGNSELECT_800
+	ready.bmp	FIL_READYROOM_800
+	paintshp.bmp	FIL_PAINTSHOP_800
+	loadsave.bmp	FIL_LOADSAVE_800
+
+109	dir.dir
+	title.bmp	FIL_TITLE_1024
+	autopilt.jnk	FIL_AUTOPILOT_1024_xxxx
+	d3disply.bmp	FIL_3DDISPLAY_1024
+	flghtcon.bmp	FIL_FLIGHTCONFIG_1024
+	gamsetup.bmp	FIL_GAMESETUP_1024
+	quickmis.bmp	FIL_QUICKMISSION_1024
+	repscrn.bmp	FIL_REPLAY_1024
+	soundset.bmp	FIL_SOUNDSETUP_1024
+	viewer00.bmp	FIL_VIEWOPTIONS_1024
+	locker.bmp	FIL_LOCKERROOM_1024
+	campaign.bmp	FIL_CAMPAIGNSELECT_1024
+	ready.bmp	FIL_READYROOM_1024
+	paintshp.bmp	FIL_PAINTSHOP_1024
+	loadsave.bmp	FIL_LOADSAVE_1024
+
+110	dir.dir
+	title.bmp	FIL_TITLE_1280
+	autopilt.jnk	FIL_AUTOPILOT_1280_xxxx
+	d3disply.bmp	FIL_3DDISPLAY_1280
+	flghtcon.bmp	FIL_FLIGHTCONFIG_1280
+	gamsetup.bmp	FIL_GAMESETUP_1280
+	quickmis.bmp	FIL_QUICKMISSION_1280
+	repscrn.bmp	FIL_REPLAY_1280
+	soundset.bmp	FIL_SOUNDSETUP_1280
+	viewer00.bmp	FIL_VIEWOPTIONS_1280
+	locker.bmp	FIL_LOCKERROOM_1280
+	campaign.bmp	FIL_CAMPAIGNSELECT_1280
+	ready.bmp	FIL_READYROOM_1280
+	paintshp.bmp	FIL_PAINTSHOP_1280
+	loadsave.bmp	FIL_LOADSAVE_1280
+
+111 dir.dir			DIR_NOSE_STD
+	nose1.bmp		FIL_NOSE_STD_1
+	nose2.bmp		FIL_NOSE_STD_2
+	nose3.bmp		FIL_NOSE_STD_3
+	nose4.bmp		FIL_NOSE_STD_4
+	nose5.bmp		FIL_NOSE_STD_5
+	nose6.bmp		FIL_NOSE_STD_6
+	nose7.bmp		FIL_NOSE_STD_7
+	nose8.bmp		FIL_NOSE_STD_8
+	nose9.bmp		FIL_NOSE_STD_9
+	nose10.bmp		FIL_NOSE_STD_10
+	nose11.bmp		FIL_NOSE_STD_11
+	nose12.bmp		FIL_NOSE_STD_12
+	nose13.bmp		FIL_NOSE_STD_13
+	nose14.bmp		FIL_NOSE_STD_14
+	nose15.bmp		FIL_NOSE_STD_15
+	nose16.bmp	     	FIL_NOSE_STD_16
+
+112 dir.dir			DIR_NOSE_USER
+	nose1.bmp		FIL_NOSE_USER_1
+	nose2.bmp		FIL_NOSE_USER_2
+	nose3.bmp		FIL_NOSE_USER_3
+	nose4.bmp		FIL_NOSE_USER_4
+	nose5.bmp		FIL_NOSE_USER_5
+	nose6.bmp		FIL_NOSE_USER_6
+	nose7.bmp		FIL_NOSE_USER_7
+	nose8.bmp		FIL_NOSE_USER_8
+	nose9.bmp		FIL_NOSE_USER_9
+	nose10.bmp		FIL_NOSE_USER_10
+	nose11.bmp		FIL_NOSE_USER_11
+	nose12.bmp		FIL_NOSE_USER_12
+	nose13.bmp		FIL_NOSE_USER_13
+	nose14.bmp		FIL_NOSE_USER_14
+	nose15.bmp		FIL_NOSE_USER_15
+	nose16.bmp		FIL_NOSE_USER_16
+
+102	dir.dir		DIR_ICONS_2
+	i_ready1.bmp	FIL_ICON_READYROOM
+	i_ready2.bmp		  
+	i_ready2.bmp		  
+	dead1.bmp	FIL_ICON_DEAD_ON
+	dead2.bmp	FIL_ICON_DEAD_OFF 	  
+	dead2.bmp		  
+	i_direct.bmp	FIL_ICON_DIRECTIVES
+	i_direc2.bmp	
+	i_direc2.bmp	
+	i_dirdis.bmp
+	i_dirdis.bmp		  
+	i_reply1.bmp	FIL_ICON_REPLAY
+	i_reply2.bmp		  
+	i_reply2.bmp
+	i_repdis.bmp
+	i_repdis.bmp
+
+
+113
+	dir.dir		FIL_TEXTBLOCKSTART
+	miglang.dll	FIL_LANGRESOURCEDLL	
+	mig.hlp		FIL_LANGRESOURCEHELP
+	radnames.bin	FIL_RCHAT_NAMEGRID
+	radscrpt.bin	FIL_RCHAT_SCRIPT_TABLE
+	migtabs.hlp	FIL_LANGRESOURCEHELPSEPARATETABS
+	migpanes.hlp	FIL_LANGRESOURCEHELPPANELS
+	migall.hlp	FIL_LANGRESOURCEHELPTABSANDPANELS
+
+114	dir.dir		
+	dig.ini		FIL_DIG_INI
+	mdi.ini		FIL_MDI_INI
+	*.dig		FIL_WILD_DIG
+	*.mdi		FIL_WILD_MDI
+	AILDRVR.LST	FIL_AIL_DRIVER_LIST
+	sample		FIL_GTL_PREFIX
+	adrv688.dig	FIL_FIRST_DIG
+	jammer.dig
+	proaudio.dig
+	rap10.dig
+	sb16.dig
+	sblaster.dig
+	sbpro.dig
+	sndscape.dig
+	ultra.dig	FIL_LAST_DIG
+	adlib.mdi	FIL_FIRST_MDI
+	adlibg.mdi
+	mpu401.mdi
+	mt32mpu.mdi
+	null.mdi
+	opl3.mdi
+	pas.mdi
+	pasplus.mdi
+	pcspkr.mdi
+	sbawe32.mdi
+	sblaster.mdi
+	sbpro1.mdi
+	sbpro2.mdi
+	sndscape.mdi
+	tandy.mdi
+	ultra.mdi	FIL_LAST_MDI
+
+115	dir.dir		FIL_DIR_MUSIC
+	comba2.xmi	FIL_MUSIC_MAIN
+	combat.xmi	FIL_MUSIC_MAIN_RHYTHM
+	STANDALONE	FIL_MUSIC_STAND_ALONE
+	anxiou2.xmi	FIL_MUSIC_SPOTTED_UNKNOWN
+	anxious.xmi	FIL_MUSIC_SPOTTED_UNKNOWN_RHYTHM
+	apath2.xmi	FIL_MUSIC_SNEAKING_AWAY
+	apath3.xmi	FIL_MUSIC_SNEAKING_AWAY_RHYTHM
+	fla2.xmi	FIL_MUSIC_FLAK
+	flak.xmi	FIL_MUSIC_FLAK_RHYTHM
+	init2.xmi	FIL_MUSIC_INIT
+	init.xmi	FIL_MUSIC_INIT_RHYTHM
+	relie2.xmi	FIL_MUSIC_FRIENDLY_SEEN
+	relief.xmi	FIL_MUSIC_FRIENDLY_SEEN_RHYTHM
+	sadsnst2.xmi	FIL_MUSIC_SAD
+	sadsnstr.xmi	FIL_MUSIC_SAD_RHYTHM
+	spira2.xmi	FIL_MUSIC_SPIRALLING
+	spiral.xmi	FIL_MUSIC_SPIRALLING_RHYTHM
+	HIGHPRI		FIL_MUSIC_PRIORITY
+	objcomp2.xmi	FIL_MUSIC_OBJECTIVE_COMPLETED
+	objcompl.xmi	FIL_MUSIC_OBJECTIVE_COMPLETED_RHYTHM
+	objfail2.xmi	FIL_MUSIC_OBJECTIVE_FAILED
+	objfaild.xmi	FIL_MUSIC_OBJECTIVE_FAILED_RHYTHM
+	objsigh2.xmi	FIL_MUSIC_OBJECTIVE_SIGHTED
+	objsight.xmi	FIL_MUSIC_OBJECTIVE_SIGHTED_RHYTHM
+	parachu2.xmi	FIL_MUSIC_PARACHUTE
+	parachut.xmi	FIL_MUSIC_PARACHUTE_RHYTHM
+	LASTTUNE	FIL_MUSIC_LAST_TUNE
+	wavetab.wvl	FIL_MUSIC_WAVETABLE
+	fieldsnr.sf2	FIL_SFONT_SNARES
+	sama.wav	FIL_MUSIC_FIRST_SAMPLE
+	samb.wav
+	samc.wav
+	samd.wav
+	same.wav
+	samf.wav
+	samg.wav
+	samh.wav
+	sami.wav
+	LASTMSAMP	FIL_MUSIC_LAST_SAMPLE
+
+
+118	dir.dir		FIL_DIR_MUSICMED
+	comba2.xmi	
+	combat.xmi	
+	STANDALONE	
+	anxiou2.xmi	
+	anxious.xmi	
+	apath2.xmi	
+	apath3.xmi	
+	fla2.xmi	
+	flak.xmi	
+	init2.xmi	
+	init.xmi	
+	relie2.xmi	
+	relief.xmi	
+	sadsnst2.xmi	
+	sadsnstr.xmi	
+	spira2.xmi	
+	spiral.xmi
+	HIGHPRI	    
+	objcomp2.xmi
+	objcompl.xmi
+	objfail2.xmi
+	objfaild.xmi
+	objsigh2.xmi
+	objsight.xmi
+	parachu2.xmi
+	parachut.xmi
+	LASTTUNE
+	wavetab.wvl
+	fieldsnr.sf2
+	sama.wav
+	samb.wav
+	samc.wav
+	samd.wav
+	same.wav
+	samf.wav
+	samg.wav
+	samh.wav
+	sami.wav
+	LASTMSAMP
+
+
+119	dir.dir		FIL_DIR_MUSICLOW
+	comba2.xmi	
+	combat.xmi	
+	STANDALONE	
+	anxiou2.xmi	
+	anxious.xmi	
+	apath2.xmi	
+	apath3.xmi	
+	fla2.xmi	
+	flak.xmi	
+	init2.xmi	
+	init.xmi	
+	relie2.xmi	
+	relief.xmi	
+	sadsnst2.xmi	
+	sadsnstr.xmi	
+	spira2.xmi	
+	spiral.xmi	
+	HIGHPRI	    
+	objcomp2.xmi
+	objcompl.xmi
+	objfail2.xmi
+	objfaild.xmi
+	objsigh2.xmi
+	objsight.xmi
+	parachu2.xmi
+	parachut.xmi
+	LASTTUNE
+	wavetab.wvl
+	fieldsnr.sf2
+	sama.wav
+	samb.wav
+	samc.wav
+	samd.wav
+	same.wav
+	samf.wav
+	samg.wav
+	samh.wav
+	sami.wav
+	LASTMSAMP
+
+
+117	dir.dir
+	keyb3d.bin	FIL_3D_KEYBOARD_TABLE	
+
+
+70	dir.dir
+	set.bmp		FIL_BUTTONSET
+71	dir.dir
+139	dir.dir		DIR_USEROBJ
+	dummy		FIL_USERMISSION1
+	german.plt
+	english.plt
+	american.plt
+	french.plt
+
+132	dir.dir		DIR_RUNTIMEPACKAGES
+	runpack0.bf	FIL_RUNTIMEPACK0
+	runpack1.bf
+	runpack2.bf
+	runpack3.bf
+	runpack4.bf
+	runpack5.bf
+	runpack6.bf
+	runpack7.bf
+	runpack8.bf
+	runpack9.bf
+	runpackA.bf
+	runpackB.bf
+
+200	dir.dir
+	intro.smk	FIL_SMACK_GAMEINTRO		//remove the dodgy ones
+	c1_int.smk	FIL_SMACK_CAMP1INTRO		//use these ones
+	c2_int.smk	FIL_SMACK_CAMP2INTRO
+	c3_int.smk	FIL_SMACK_CAMP3INTRO
+	c4_int.smk	FIL_SMACK_CAMP4INTRO
+	c5_int.smk	FIL_SMACK_CAMP5INTRO
+	c1_good.smk	FIL_SMACK_CAMP1GOOD
+	c2_good.smk	FIL_SMACK_CAMP2GOOD
+	c3_good.smk	FIL_SMACK_CAMP3GOOD
+	c4_good.smk	FIL_SMACK_CAMP4GOOD
+	c5_bad.smk	FIL_SMACK_CAMP5LOSE
+	c5_peace.smk	FIL_SMACK_CAMP5PEACE
+	aljolson.smk	FIL_SMACK_ALJOLSON
+	brits.smk	FIL_SMACK_BRIT_TROOPS
+	b_mortar.smk	FIL_SMACK_BATTLE_MORTAR
+	b_artie.smk	FIL_SMACK_BATTLE_ARTILLERY
+	b_half.smk	FIL_SMACK_BATTLE_HALFTRACK
+	b_mgun.smk	FIL_SMACK_BATTLE_MGUN
+	b_men.smk	FIL_SMACK_BATTLE_MEN
+	b_tanks.smk	FIL_SMACK_BATTLE_TANKS
+	b_spare.smk	FIL_SMACK_BATTLE_SPARE
+	a_half.smk	FIL_SMACK_UN_ADVANCE_HALFTRACK
+	a_men.smk	FIL_SMACK_UN_ADVANCE_MEN
+	a_han.smk	FIL_SMACK_UN_ADVANCE_HAN
+	a_dead.smk	FIL_SMACK_UN_ADVANCE_DEAD
+	a_tank.smk	FIL_SMACK_UN_ADVANCE_TANK
+	b29_on.smk	FIL_SMACK_B29_ONLINE
+	b29_off.smk	FIL_SMACK_B29_STANDDOWN
+	prisoner.smk	FIL_SMACK_CHINESE_PRISONER
+	r_labour.smk	FIL_SMACK_LABOUR
+	migs.smk	FIL_SMACK_MIGS_ATTACK
+	stable.smk	FIL_SMACK_LINE_STABLE
+	kimpo.smk	FIL_SMACK_KIMPO
+	newline1.smk	FIL_SMACK_UN_NEWLINE_1
+	newline2.smk	FIL_SMACK_UN_NEWLINE_2
+	newline3.smk	FIL_SMACK_UN_NEWLINE_3
+	
+
+130	dir.dir		//dummy bfields directory
+131	dir.dir		//dummy bfields directory
+132	dir.dir		//dummy bfields directory

@@ -1,0 +1,303 @@
+# obj\*.o	are files that are compiled with debugs but no optimisations
+# obj\*.os	are files that have stack checking on
+# obj\*.oo	are files that are optimized fully, no debugs, 
+# obj\*.op	are files for profiler, optimized, stack checking off, minimal debugs
+# obj\*.od	are files optimized and debuggerable
+# obj\*.ol	are library files. These are always fully optimised and never debugable.
+# obj\*.ou	are user interface files
+# miles.o replaced with milestub.o ARM 4 June 96
+# hardgap replaced with hardwin added ARM 7 June 96
+#
+# Note that a number of files in the ui directory must NOT have .ou extensions.
+# because they include other files before UI.H, and can't share the precompiled header.
+#
+# NOTE malloc needs RAD.H therefore needs to be DOS/WINDOWs not QNX//ARM 18Jul96
+
+MOD4DOS			=&
+	main.ox		&
+	keytasm.o	&
+	keytests.ox	&
+	hardpub.ol	&
+	hardgap.ol	&
+	miles.ox	&
+	winsmack.ox	&
+	doserror.ox	&
+	dosfile.oo	&
+	hardinit.ox	&
+	analpub.ol	&
+	analgap.ol	&
+	malloc.ox	&
+	dosmove.ox	&
+	monotxt.o	&
+	memblock.o	&
+	loadlib.ox	&
+
+MOD4WIN 		=&
+	winmain.ow	&
+	keyStub.ow	&
+	hardpub.ol	&
+	hardwin.ow	&
+	miles.ow	&
+	winsmack.ow	&
+	winerror.ow	&
+	ddrwinit.ow	&
+	malloc.ow	&
+	winmove.ow	&
+	comms.ow	&
+	winfile.ow	&
+	monotxt.o	&
+	newfix.o	&
+	loadlib.ow	&
+	analpub.ol	&
+	analgap.ow	&
+	win3d.ow	&
+
+#	wintime.ow	&
+#	hardinit.ow	&
+#Windows contains MONOTXT WITHOUT DEBUGS so calls succeed but do nothing.
+
+
+# Install, demo,game:
+# There are no common ui sheets, but the support services are common
+# 3d support is in demo/game only
+#
+MOD4INST_DEMO_GAME	=&
+	dostime.oo	&
+	getset.oo	&
+	static.oo	&
+	math.oo		&
+	fileman.o	&
+	cdrom.o		&
+	textref.oo	&
+	grafpasm.o	&
+	grafprim.o	&
+	lbm.oo		&
+	tga.oo		&
+	wrapper.oo	&
+	analogue.o	&
+	mouse.oo	&
+	ui.oo		&
+	forms.oo	&
+	trisheet.oo	&
+	uitools.oo	&
+	sure.oo		&
+	h2herr.oo	&
+	surefile.oo	&
+	strentry.oo	&
+	
+# Install:
+# All user interface, no 3d
+#
+MOD4INST		=&
+	install.od	&
+	uisound.od	&
+	drvchng.od	&
+	Copying.od	&
+	size.od		&
+	inststub.od	&
+	instlast.od	&
+
+
+# Winstall:
+# windows install
+#
+MOD4WINST		=&
+	winstall.od	&
+	winsterr.od	&
+	keyStub.ow	&
+	hardpub.ol	&
+	hardwin.ow	&
+	analpub.ol	&
+	analwin.ow	&
+	malloc.ow	&
+	newfix.o	&
+	fileman.o	&
+	monotxt.oo	&
+	math.oo		&
+	textinit.oo	&
+	textref.oo	&
+
+
+# Demo and main game:
+# Mainly 3d services. A couple of shared ui sheets 
+#
+#
+# This is in 3 sections.
+# The top section is non-UI files
+# The middile section is files in UI directory that should NOT be .ou
+# The bottom section is files that should be .ou, but may be changed to .o to aid debugging
+#
+
+MOD4DEMO_GAME		=&
+	loadlist.oo	&
+	viewsel.o	&
+	3dcode.o	&
+	3dcom.o	&
+	Collided.oo	&
+	jimcol.o	&
+	btree.oo	&
+	shpbld.oo	&
+	imagemap.o	&
+	landscap.o	&
+	lstream.o	&
+	lstrasm.o	&
+	shapes.o	&
+	world.o	&
+	polygon.o	&
+	matrix.o	&
+	matrasm.o	&
+	transite.o	&
+	globrefs.o	&
+	flyinit.o	&
+	keyfly.o	&
+	persons.o	&
+	automove.o	&
+	wpaction.o	&
+	moveall.o	&
+	scoring.o	&
+	msgai.o	&
+	aaa.o		&
+	messages.o	&
+&
+	state3d.o	&
+	3dpaintw.oo	&
+	tank.o		&
+	missinit.o	&
+	node.o		&
+	fullsmk.oo	&
+&
+	formatn.oo	&
+#	winmove.o	&
+
+# Self running demo only:
+#
+#
+MOD4DEMO		=&
+	demobits.oo	&
+
+# Main game only:
+# All user interface and game management
+# A few modules access non-graphic stuff.
+#
+
+#
+# This is in 3 sections.
+# The top section is non-UI files
+# The middile section is files in UI directory that should NOT be .ou
+# The bottom section is files that should be .ou, but may be changed to .o to aid debugging
+#
+
+MOD4GAME		=&
+	textinit.oo	&
+	flymodel.o	&
+	modvec.o	&
+	model.o		&
+	dervs.o		&
+	elmt.o		&
+	aerodev.o	&
+	engine.o	&
+	ctrl.o		&
+	gear.o		&
+	acmmodel.o	&
+	modint.o	&
+	curves.o	&
+	acmman.o	&
+	acmai.o		&
+	sky.o		&
+	calib.o		&
+	dt_f86e.o	&
+	dt_mig15.o	&
+	dt_f84e.o	&
+	dt_f80c.o	&
+	dt_f51d.o	&
+	dt_f9f2.o	&
+	dt_f8.o		&
+	dt_f82g.o	&
+	dt_yak9.o	&
+	dt_f4u5.o	&
+	dt_sfury.o	&
+	dt_ffly.o	&
+	cd_comm.o	&
+	cd_f86e.o	&
+	cd_mig15.o	&
+	cd_f84e.o	&
+	cd_f80c.o	&
+	cd_f51d.o	&
+	cd_f9f2.o	&
+	cd_f8.o		&
+	cd_f82g.o	&
+	cd_yak9.o	&
+	cd_f4u5.o	&
+	cd_sfury.o	&
+	cd_ffly.o	&
+	cd_atmos.o	&
+	cd_f94a.o	&
+&
+	fullsmk2.oo	&
+	smackwin.oo	&
+	c_report.o	&
+	peacmiss.oo	&
+	so51miss.oo	&
+	intrmiss.oo	&
+	onemiss.oo	&
+	savegame.o	&
+	specmain.oo	&
+	newstart.o	&
+	loadsave.oo	&
+	realscrm.o	&
+	scramble.oo	&
+	sfxconfg.oo	&
+	map.o		&
+	noderev.o 	&
+	drawmap.o	&
+	resource.o	&
+	intell.o	&
+	package.o	&
+	records.o	&
+	ctrlroom.o	&
+&
+	uigen.o   	&
+	list.o		&
+	joyerror.ou	&
+	joystick.ou	&
+	campintr.ou	&
+	introsub.ou	&
+	spec_sub.ou	&
+	cr_sub.ou	&
+	lc_sub.ou	&
+	end_sub.ou	&
+	h2hmain.oo	&
+	h2hintro.ou	&
+	quit.ou		&
+	map3d.oo	&
+	p3d.ou		&
+	specevnt.ou	&
+	tnksquad.ou	&
+	gamepref.ou	&
+	chgsquad.ou	&
+	change.ou	&
+	campsel.ou	&
+	acelist.ou	&
+	screen.ou	&
+	paint.o		&
+	personl.o	&
+	phasesel.ou	&
+	credits.ou	&
+	lostcamp.ou	&
+	endcamp.ou	&
+	lostanim.ou	&
+	uistart.oo	&
+	flightpm.ou	&
+	gamediff.o	&
+	inputcfg.ou	&
+	scrnres.ou	&
+	graphcfg.ou	&
+
+
+
+
+
+
+
+
+

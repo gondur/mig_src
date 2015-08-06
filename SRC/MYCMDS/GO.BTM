@@ -1,0 +1,63 @@
+@echo off
+rem mode co80
+rem \univbe51\univbe
+set command=mig
+set dtaline=rem
+if not "%windir%"="" set command=wmig
+:loop1
+if "%1"=="" goto outloop
+if "%1"=="/w" set command=dos4gw %command%
+if %@EMS[m] gt 15	set bugmem=4000000
+if %@EMS[m] lt 15	set bugmem=1500000
+if not "%1"=="/x" goto sx
+if "%windir%"="" set command=wd /TRap=rsi.trp /I=%USER.dbg /DY=%bugmem% %command%
+if not "%windir%"="" set command=s:\watcom\binnt\wd /I=%USER.dbg %command%
+:sx
+set bugmem=
+if "%1"=="/v" set command=wvideo %trap% :%command%.sym %command%
+if "%1"=="/d" set command=debug32 %command%
+if "%1"=="/a" set dtaline=dtax
+if "%1"=="/s" set command=wsamprsi /r=1 %command%.exe
+shift
+goto loop1
+:outloop
+set loop=5
+set lines=%@lines[go.log]
+set poo=
+if %loop GT %lines set loop=%lines
+if "%loop"=="" goto noout
+if "%loop"=="0" goto noloop
+:loop
+echo %command %@line[go.log,%@eval[%lines-%loop]]
+set loop=%@eval[%loop-1]
+if NOT %loop == 0 goto loop
+:noloop
+set loop=
+set lines=
+set poo=%@line[go.log,%@lines[go.log]]
+:noout
+:DeadCode JIM 01May96 echo. %command %poo
+keystack "%poo"
+input %command %%z
+if ""=="%z" goto blank
+if NOT "%poo"=="%z" echo %z >>go.log
+goto done
+:blank
+if NOT exist go.log echo.>go.log
+if NOT "%poo"=="%z" echo.>>go.log
+:done
+timer /1 on
+cls
+rem copy /u mig.sym mig.exe ..\game
+rem cd ..\game
+rem i /v-
+%command %z
+maketime
+rem i /v+
+
+rem cd -
+unset poo,z>&NUL
+%dtaline /c9 /r6 /s08 out\migt???.tga
+unset dtaline command
+timer /1 off
+rem \univbe51\univbe -u

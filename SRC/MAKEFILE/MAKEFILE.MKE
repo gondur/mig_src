@@ -1,0 +1,419 @@
+#.OPTIMIZE means clever directory searching. i.e. if you keep the the files
+#listed in the directoies they appear in then you get a search speed up
+#
+.OPTIMIZE
+
+##
+## Use the following 3 sections to do what build does?
+## These are called only if there is something to do.
+## 
+##
+
+.BEFORE
+	@castoff
+	del *.err   /q
+	del m:*.err /q
+
+#only if no error
+.AFTER
+	@caston
+	@echo	COMPILATION SUCCESSFUL
+
+#only if error
+.ERROR
+	@caston
+	@echo	THERE WERE ERRORS
+
+#
+#use GAME for the final version and DEBUG for debugging
+#
+#Just del obj and type B V=OPTIMISE on the cmd line
+
+#
+#directories for objects listings and include files
+#
+OBJ		= obj\
+LIBDIR		= ..\game\libcode\
+LST		= ..\listings\
+INC		= $(%cdrive):H
+
+#
+#Directories where the source files can be found
+#Note: they can also be found in the current directory.
+#Any implicit target must either be an explicit source to 
+#another rule, or the generator must contain the explicit 
+#directory name.
+#
+!include	makefile\dirs.mif
+
+#
+#default programs for compilation
+#
+C		= wcc386
+CC		= wpp386
+LINK		= wlink
+LINKW		= wlink
+DISASM		= wdisasm
+ASM		= tasm3 
+
+#
+#flags used by the above programs
+#
+
+
+CFLAGS_OPTIMIZE	= -omaxntr -s
+CFLAGS_SIZE	= -omaxnsr -s
+CFLAGS_STACKON	= -s
+CFLAGS_NODEBUG	= -d0
+CFLAGS_PROFILER	= -d1
+CFLAGS_DEBUG	= -d2
+CFLAGS_PRECOMH	= -fh
+CFLAGS_GAME 	= -omaxntr
+CFLAGS_UI 	= -od -d1
+##library patches must never have any debugs at all, ever!!!
+CFLAGS_LPATCH1 = -bt=dos -oxmantr -I=$(INC) -zq -mf -w5 -fp3 -5r
+CFLAGS_LIBPATCH	= $CFLAGS_LPATCH1 -d0
+##CFLAGS_WINDOWS	= -bt=nt  -d2 -oxmantr -I=$(INC) -zq -mf -w5 -fp3 -5r
+CFLAGS_WINDOWS	=  -bt=nt  -d2 -I=$(INC) -zq -mf -w5 -fp3 -5r
+CFLAGS_WINDOWSOPT =  -bt=nt  -d0 -oxmantr -I=$(INC) -zq -mf -w5 -fp3 -5r
+CFLAGS_EXTENDER	= $CFLAGS_LPATCH1 -d2
+
+!ifndef V
+CFLAGS		=  -I=$(INC) -zq -mf -bt=qnx -w5 -fp3 -5r
+!else
+##only gets here if special version optimisation selected for everything using "V=name" on command-line
+CFLAGS		= $+ -I=$(INC) -zq $CFLAGS_$(V) -mf -bt=qnx -w5 -fp3 -5r $-
+CFLAGS_OPTIMIZE	= 
+CFLAGS_STACKON	= 
+CFLAGS_NODEBUG	= 
+CFLAGS_PROFILER	= 
+CFLAGS_DEBUG	= 
+CFLAGS_PRECOMH	= 
+CFLAGS_GAME 	= 
+CFLAGS_UI 	= -oxmansr -d1
+!endif
+# -bm
+
+DASMFLAGS	= -i=@ -a -e -p
+ASMFLAGS	= /t /ml /zi /m3 /i$(INC)
+
+#
+#lists of all the targets 
+#
+
+
+LISTINGS	=&
+
+#	$(LST)LBM.lst
+
+!include	makefile\errors.mif
+!include	makefile\objects.mif
+
+
+hardpub	 =	hard320.bin  hard320d.bin hardvbe1.bin &
+                hardvbe2.bin hardvbed.bin   
+
+analpub	=	analmous.bin analjoy.bin analdig.bin
+
+#
+#the all target should be the first one mentioned in the file as this is
+#becomes the default target when you just execute b 
+#	[wmake -f makefile\makefile.mke]
+#
+all:	&
+	obj\battle.dep &
+	obj\dummytex.dep &
+	obj\keyboard.dep &
+	obj\files.dep &
+	obj\loadlist.dep &
+	runlib.dep &
+	..\game\libcode\analjoy.dll &
+	..\game\libcode\analifrc.dll &
+	..\game\libcode\analjoy.dll &
+	..\game\libcode\analifrc.dll &
+	wmig.exe &
+	list
+
+#	mig.exe &
+#	wmig.exe &
+#	..\game\libcode\analjoy.dll &
+#	..\game\libcode\analifrc.dll &
+#	install.exe&
+#	mig.exe &
+#	demo.exe &
+#	winstall.exe&
+#	.SYMBOLIC
+
+
+mig.exe: obj\mig.res $(ERROREDMODULES) $(MOD4DOS) $(MOD4INST_DEMO_GAME) $(MOD4DEMO_GAME) $(MOD4GAME)
+	$(LINK) @obj\mig.res
+	@type	m:linkerr.err
+
+wmig.exe: obj\wmig.res $(ERROREDMODULES) $(MOD4WIN) $(MOD4INST_DEMO_GAME) $(MOD4DEMO_GAME) $(MOD4GAME)
+	$(LINKW) @obj\wmig.res
+	@type	m:linkerr.err
+
+
+clean:	.SYMBOLIC
+	ECHO %@dosmem[b]
+	del *.rst;*.err;*.exe;*.sym;*.map;*.pch;*.tmp;*.poo;poo.* /sq >&>NUL
+
+
+#####################################
+##
+## Stand-alone tools. Need to make a proper rule for these!
+##
+
+.o1.exe:
+	@%write	m:temp.res	NAME	$^& DEBUG all FILE $(OBJ)$[.
+	@%append m:temp.res	SYSTEM dos4g OP Caseexact
+	@%append m:temp.res	OP SYMFile=$^&.sym OP verbose OP stack=100000
+	$(LINK) @m:temp.res
+
+obj\dummytex.dep:	textbin.exe inputdat.txt install.txt joystick.txt&
+	uidnames.txt uniqueid.h messages.txt scramble.txt credits.txt&
+	h2h.txt pilotnom.txt newtext.txt briefing.txt general.txt
+	textbin.exe -ienglish -t..\game\english\text\
+	@%write obj\dummytex.dep
+
+
+#	textbin.exe -igerman -t..\game\german\text\
+#	textbin.exe -ifrench -t..\game\french\text\
+#	textbin.exe -iitalian -t..\game\italian\text\
+#	textbin.exe -ispanish -t..\game\spanish\text\
+
+obj\battle.dep: makebf.exe &
+		bfields\battle.src &
+		bfields\battle.inc &
+		bfields\initial.res &
+		bfields\initial.typ &
+		bfields\franc.asc&
+		bfields\demoscpt.src&
+		bfields\scramble.inc&
+		bfields\h2h.inc&
+		bfields\event.inc&
+		shapenum.g	&
+		worldinc.h	&
+		movement.h	&
+		persons2.h	&
+		uniqueid.h	&
+		myangles.h	&
+		flyinit.h	&
+		miss_man.h	&
+		viewsel.h	&
+		h\files.g	&
+		h\f_sounds.g	&
+		bfields\globrefs.txt
+	wpp386 -p -zs h\files.g -dF_COMMON -dF_GRAFIX -dF_BATTLE> h\sounds.g
+	bfields
+	@%write obj\battle.dep	
+
+obj\keyboard.dep: makehot.exe
+	makehot	..\game\keyboard\
+	@%write obj\keyboard.dep	
+
+obj\loadlist.dep: preload.exe
+	preload ..\game\libcode\preload.txt
+	@%write obj\loadlist.dep	
+
+obj\files.dep: master.res *.fil
+	fmake2
+	@%write obj\files.dep
+
+fonts:	makefile\fonts.mke
+	wmake -f makefile\fonts.mke
+
+#####################################
+##
+## Libraries
+##
+## these should become a simple rule
+
+..\game\libcode\analjoy.dll:	analwin.ow analpub.ow makefile\makefile.mke
+	wlink N ..\game\libcode\analjoy.dll D all F obj\analpub.ol, obj\analwin.ow SYS win95 dll
+
+..\game\libcode\analifrc.dll:	analifrc.ow analpub.ow makefile\makefile.mke
+	wlink N ..\game\libcode\analifrc.dll D all F obj\analpub.ol, obj\analifrc.ow L lib\iforce.lib SYS win95 dll
+
+##lib\analjoy.lib:	analjoy.dll
+##	wlib lib\analjoy +analjoy.dll
+
+
+runlib.dep:	hardpub.dep  $(hardpub) &
+		analpub.dep  $(analpub)
+	@%write obj\runlib.dep
+
+pubdep1=@for %%i in ($($[&) ) do wtouch /c /d 01/01/90 $(libdir)%%i
+pubdep2=@for %%i in ($($[&) ) do copy $(obj)$[. $(obj)%%i
+pubdep3=echo.>$(obj)$^. 
+
+analpub.dep:	$(obj)analpub.ol
+	$(pubdep1)
+	$(pubdep2)
+	$(pubdep3)
+	
+
+hardpub.dep:	$(obj)hardpub.ol
+	$(pubdep1)
+	$(pubdep2)
+	$(pubdep3)
+
+.ol.bin:
+	$(LINK) NAME $(LIBDIR)$^. FILE $(obj)$[&.bin FILE $(obj)$[.
+
+#####################################
+##
+## Main program build
+##
+
+
+lib_lib	=	lib\smack.lib 	lib\ail.lib
+lib_obj	=	lib\dllload.obj 
+
+lib_wlib =	lib\smackw32.lib lib\ddraw.lib	lib\wail32.lib lib\dplay.lib
+lib_wobj =
+
+obj\mig.res: objects.mif makefile\makefile.mke
+	@%create	$^@
+	@%append	$^@	NAME	$^&
+	@%append	$^@	DEBUG	all
+	@%append	$^@	SYSTEM dos4g
+	@%append	$^@	OP Caseexact
+	@%append	$^@	OP map=$^&.map OP SYMFile=$^&.sym
+	@%append	$^@	OP verbose OP stack=32768
+	@for %%i in ($(lib_lib)) do @%append $^@ L	%%i
+	@for %%i in ($(lib_obj)) do @%append $^@ F	%%i
+	@for %%i in ($(MOD4DOS) $(MOD4INST_DEMO_GAME) ) do @%append $^@	F	$(OBJ)%%i
+	@for %%i in ($(MOD4DEMO_GAME) $(MOD4GAME) ) do @%append $^@	F	$(OBJ)%%i
+
+obj\wmig.res: objects.mif makefile\makefile.mke
+	@%create	$^@
+	@%append	$^@	NAME	$^&
+	@%append	$^@	DEBUG	all
+	@%append	$^@	SYSTEM win95
+	@%append	$^@	OP Caseexact
+	@%append	$^@	OP map=$^&.map OP SYMFile=$^&.sym
+	@%append	$^@	OP verbose OP stack=32768
+	@for %%i in ($(lib_wlib)) do @%append $^@ L	%%i
+	@for %%i in ($(lib_wobj)) do @%append $^@ F	%%i
+	@for %%i in ($(MOD4WIN) $(MOD4INST_DEMO_GAME)) do @%append $^@	F	$(OBJ)%%i
+	@for %%i in ($(MOD4DEMO_GAME) $(MOD4GAME) ) do @%append $^@	F	$(OBJ)%%i
+
+obj\demo.res: objects.mif makefile\makefile.mke
+	@%create	$^@
+	@%append	$^@	NAME	$^&
+	@%append	$^@	DEBUG	all
+	@for %%i in ($(lib_lib)) do @%append $^@ L	%%i
+	@for %%i in ($(lib_obj)) do @%append $^@ F	%%i
+	@%append	$^@	SYSTEM dos4g
+	@%append	$^@	OP Caseexact
+	@%append	$^@	OP map=$^&.map OP SYMFile=$^&.sym
+	@%append	$^@	OP verbose OP stack=32768
+	@for %%i in ($(MOD4DOS) $(MOD4INST_DEMO_GAME)) do @%append $^@	F	$(OBJ)%%i
+	@for %%i in ($(MOD4DEMO_GAME) $(MOD4DEMO) ) do @%append $^@	F	$(OBJ)%%i
+
+demo.exe: obj\demo.res $(ERROREDMODULES) $(MOD4DOS) $(MOD4INST_DEMO_GAME) $(MOD4DEMO_GAME) $(MOD4DEMO) $(lib_lib) $(lib_obj)
+	$(LINK) @obj\demo.res
+
+obj\install.res: makefile\objects.mif
+	@%create	$^@
+	@%append	$^@	NAME	$^&
+	@%append	$^@	DEBUG	all
+	@for %%i in ($(lib_lib)) do @%append $^@ L	%%i
+	@for %%i in ($(lib_obj)) do @%append $^@ F	%%i
+	@%append	$^@	SYSTEM dos4g
+	@%append	$^@	OP Caseexact
+	@%append	$^@	OP map=$^&.map OP SYMFile=$^&.sym
+	@%append	$^@	OP verbose OP stack=32768
+	@for %%i in ($(MOD4DOS) $(MOD4INST_DEMO_GAME) $(MOD4INST) ) do @%append $^@	F	$(obj)%%i
+
+install.exe: obj\install.res $(ERROREDMODULES) $(MOD4DOS) $(MOD4INST_DEMO_GAME) $(MOD4INST)
+	$(LINK) @obj\install.res
+
+
+obj\winstall.res: makefile\objects.mif
+	@%create	$^@
+	@%append	$^@	NAME	$^&
+	@%append	$^@	DEBUG	all
+	@for %%i in ($(lib_wlib)) do @%append $^@ L	%%i
+	@%append	$^@	L lib\dsetup.lib
+	@for %%i in ($(lib_wobj)) do @%append $^@ F	%%i
+	@%append	$^@	SYSTEM win95
+	@%append	$^@	OP Caseexact
+	@%append	$^@	OP map=$^&.map OP SYMFile=$^&.sym
+	@%append	$^@	OP verbose OP stack=32768
+	@for %%i in ($(MOD4WINST)) do @%append $^@	F	$(obj)%%i
+
+winstall.exe: obj\winstall.res $(MOD4WINST)
+	$(LINK) @obj\winstall.res
+
+
+list:	$(LISTINGS) .SYMBOLIC
+
+
+#
+#Rules for compilation:
+#	      
+outfile = -fo=$(obj)$^.
+
+.cpp.oo:	.AUTODEPEND
+	$(CC) $(CFLAGS) $(CFLAGS_NODEBUG) $(CFLAGS_OPTIMIZE) $(%cdrive):$< $(outfile)
+
+.cpp.od:	.AUTODEPEND
+	$(CC) $(CFLAGS) $(CFLAGS_DEBUG) $(CFLAGS_OPTIMIZE) $(%cdrive):$< $(outfile)
+
+##must never have any debugs at all!!!
+.cpp.ol:	.AUTODEPEND
+	$(CC) $(CFLAGS_LIBPATCH) $(%cdrive):$[@ $(outfile)
+
+.cpp.op:	.AUTODEPEND
+	$(CC) $(CFLAGS) $(CFLAGS_PROFILER) $(CFLAGS_OPTIMIZE) $(%cdrive):$< $(outfile)
+
+.cpp.ou:	.AUTODEPEND
+	@echo	%@dosmem[]
+	$(CC) $(CFLAGS) $(CFLAGS_UI) -fh -fh=$[:pch.pch $(%cdrive):$< $(outfile)
+	@echo	%@dosmem[]
+
+.cpp.os:	.AUTODEPEND
+	$(CC) $(CFLAGS) $(CFLAGS_STACKON) $(%cdrive):$< $(outfile)
+
+.cpp.oc:	.AUTODEPEND
+	$(CC) $(CFLAGS) $(CFLAGS_SIZE) $(%cdrive):$< $(outfile)
+	
+
+.cpp.o:		.AUTODEPEND
+	$(CC) $(CFLAGS) $(CFLAGS_DEBUG) $(%cdrive):$< $(outfile)
+
+.cc.o1:		.AUTODEPEND
+	$(CC) $(CFLAGS) $(CFLAGS_OPTIMIZE) $(%cdrive):$< $(outfile)
+
+###MUST NOT HAVE CFLAGS IN HERERERE!
+.cpp.ow:	.AUTODEPEND
+	$(CC) $(CFLAGS_WINDOWS) $(%cdrive):$[@ $(outfile)
+
+.cpp.oow:	.AUTODEPEND
+	$(CC) $(CFLAGS_WINDOWSOPT) $(%cdrive):$[@ $(outfile)
+
+.cpp.ox:	.AUTODEPEND
+	$(CC) $(CFLAGS_EXTENDER) $(%cdrive):$[@ $(outfile)
+
+.c.o:
+	$(C) $(CFLAGS) $(%cdrive):$< $(outfile)
+
+.asm.o:
+	$(ASM) $(ASMFLAGS) $(%cdrive):$<,$(obj)$^. >>errors.err
+
+.cc.lst:
+	$(DISASM) $(DASMFLAGS) -l=$*.lst -s=$< $(OBJ)$^&.o
+
+.cpp.lst:
+	$(DISASM) $(DASMFLAGS) -l=$*.lst -s=$< $(OBJ)$^&.op
+
+.asm.lst:
+	$(DISASM) $(DASMFLAGS) -l=$*.lst -s=$< $(OBJ)$^&.o
+
+
+#
+#include all the dependencies [.mif is Make Include Files]
+#
+##DeadCode JIM 08Jul96 !include	makefile\deps.mif

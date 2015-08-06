@@ -1,0 +1,47 @@
+.EXTENSIONS: 
+.EXTENSIONS: .xmi .mid
+.OPTIMIZE
+
+#SRC	=	S:\PROJECTS\mig\MUSIC\
+SRC	=	..\MUSIC\
+DEST	= 	..\GAME\MUSIC\
+
+.mid:	$(SRC)
+.xmi:	$(DEST)
+
+MUSIC	=	base.xmi&
+
+#		incid.xmi&
+#		seqeff.xmi&
+#		simeff.xmi&
+
+all:	$(MUSIC)
+
+
+.mid.xmi:
+	midiform /c $(DEST)$^&.xmi $<
+
+
+
+base.xmi:	$(SRC)ch1.mid
+
+
+#$(DEST)incid.xmi:	$(SRC)\ch2.mid&
+#			$(SRC)\ch3.mid&
+#			$(SRC)\ch4.mid&
+#			$(SRC)\ch5.mid&
+#			$(SRC)\ch6.mid&
+#
+#
+#$(DEST)seqeff.xmi:	$(SRC)\ch13a.mid&
+#			$(SRC)\ch13b.mid&
+#			$(SRC)\ch13c.mid&
+#			$(SRC)\ch13d.mid&
+#
+#$(DEST)simeff.xmi:	$(SRC)\ch10.mid&
+#			$(SRC)\ch11.mid&
+#			$(SRC)\ch12.mid&
+#			$(SRC)\ch14.mid&
+#			$(SRC)\ch15.mid&
+#
+#

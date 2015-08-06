@@ -1,0 +1,10 @@
+[Directories]
+Target=\mig\profile\exe
+Intermediates=\mig\profile\obj
+
+[Instrumentation]
+Inlines=No
+
+[General]
+BuildModel=0
+Target=Projects - Win32 Debug

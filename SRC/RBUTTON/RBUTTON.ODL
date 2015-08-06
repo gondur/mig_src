@@ -1,0 +1,91 @@
+// RButton.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RButton.tlb) that will become a resource in
+// RButton.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(78918643-A917-11D1-A1F0-444553540000), version(1.1),
+  helpfile("RButton.hlp"),
+  helpstring("RButton ActiveX Control module"),
+  control ]
+library RBUTTONLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRButtonCtrl
+
+	[ uuid(78918644-A917-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RButton Control"), hidden ]
+	dispinterface _DRButton
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRButtonCtrl)
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(DISPID_CAPTION), bindable, requestedit] BSTR Caption;
+			[id(2)] boolean MovesParent;
+			[id(3)] long FontNum;
+			[id(4)] boolean CloseButton;
+			[id(5)] boolean TickButton;
+			[id(6)] boolean ShowShadow;
+			[id(7)] OLE_COLOR ShadowColor;
+			[id(8)] BSTR String;
+			[id(9)] long ResourceNumber;
+			[id(10)] long NormalFileNum;
+			[id(11)] long PressedFileNum;
+			[id(12)] BSTR NormalFileNumString;
+			[id(13)] BSTR PressedFileNumString;
+			[id(1)] boolean UpdateCaption;
+			[id(14)] boolean Pressed;
+			[id(15)] boolean Disabled;
+			[id(18)] boolean Transparency;
+			[id(19)] long TransparentFileNum;
+			[id(20)] boolean HelpButton;
+			[id(21)] BSTR HintString;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRButtonCtrl)
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRButtonCtrl
+
+	[ uuid(78918645-A917-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RButton Control") ]
+	dispinterface _DRButtonEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRButtonCtrl)
+			[id(1)] void Clicked();
+			[id(2)] void Cancel();
+			[id(3)] void OK();
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRButtonCtrl
+
+	[ uuid(78918646-A917-11D1-A1F0-444553540000), licensed,
+	  helpstring("RButton Control"), control ]
+	coclass RButton
+	{
+		[default] dispinterface _DRButton;
+		[default, source] dispinterface _DRButtonEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

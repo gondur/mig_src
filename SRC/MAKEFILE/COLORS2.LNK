@@ -1,0 +1,5 @@
+system win95
+name colors2.exe
+debug all
+file obj\colors2.obj
+

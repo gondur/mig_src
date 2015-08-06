@@ -1,0 +1,71 @@
+// RTitle.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RTitle.tlb) that will become a resource in
+// RTitle.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(008F23E6-9243-11D1-A1F0-444553540000), version(1.0),
+  helpfile("RTitle.hlp"),
+  helpstring("RTitle ActiveX Control module"),
+  control ]
+library RTITLELib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRTitleCtrl
+
+	[ uuid(008F23E7-9243-11D1-A1F0-444553540000),
+	  helpstring("Dispatch interface for RTitle Control"), hidden ]
+	dispinterface _DRTitle
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRTitleCtrl)
+			[id(DISPID_FONT), bindable] IFontDisp* Font;
+			[id(DISPID_CAPTION), bindable, requestedit] BSTR Caption;
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRTitleCtrl)
+			[id(1)] long SelStockFont(long pDC);
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CRTitleCtrl
+
+	[ uuid(008F23E8-9243-11D1-A1F0-444553540000),
+	  helpstring("Event interface for RTitle Control") ]
+	dispinterface _DRTitleEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRTitleCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRTitleCtrl
+
+	[ uuid(008F23E9-9243-11D1-A1F0-444553540000), licensed,
+	  helpstring("RTitle Control"), control ]
+	coclass RTitle
+	{
+		[default] dispinterface _DRTitle;
+		[default, source] dispinterface _DRTitleEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

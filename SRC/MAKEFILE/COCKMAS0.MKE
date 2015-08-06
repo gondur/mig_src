@@ -1,0 +1,107 @@
+###################################################################################
+##
+##		AUTO-GENERATED IMAGEMAP MAKEFILE : Jun  1 1999
+##
+###################################################################################
+
+SRC  = s:\projects\mig\artsrc\IMAGEMAP
+DEST = ..\GAME\cockmask
+TT32X32 = -cw32h32
+TT64X64 = -cw64h64
+TT256X256 = -cw256h256
+TT64X32 = -cw64h32
+TT32X64 = -cw32h64
+TT128X128 = -cw128h128
+TT256X128 = -cw256h128
+TT16X16 = -cw16h16
+TT32X256 = -cw32h256
+TT128X64 = -cw128h64
+TT128X32 = -cw128h32
+TT64X256 = -cw64h256
+TT64X512 = -cw64h512
+TT16X256 = -cw16h256
+TT64X128 = -cw64h128
+TT128X16 = -cw128h16
+TT4X4 = -cw4h4
+TT512X512 = -cw512h512
+TT256X64 = -cw256h64
+
+
+MAPS32X32	=
+
+MAPS64X64	=
+
+MAPS256X256	=	$(DEST)\CPTF86WL.x8\
+	$(DEST)\CPTF86BT.x8\
+	$(DEST)\CPTM15HD.x8\
+	$(DEST)\CPTM15AM.x8\
+
+
+MAPS64X32	=
+
+MAPS32X64	=
+
+MAPS128X128	=	$(DEST)\CPTF86M8.x8\
+	$(DEST)\CPTF8614.x8\
+	$(DEST)\CPTM15D5.x8\
+	$(DEST)\CPTM15D6.x8\
+	$(DEST)\CPTF51D7.x8\
+	$(DEST)\CPTF5112.x8\
+
+
+MAPS256X128	=
+
+MAPS16X16	=
+
+MAPS32X256	=
+
+MAPS128X64	=
+
+MAPS128X32	=
+
+MAPS64X256	=
+
+MAPS64X512	=
+
+MAPS16X256	=
+
+MAPS64X128	=
+
+MAPS128X16	=
+
+MAPS4X4	=
+
+MAPS512X512	=	$(DEST)\CPTM15WL.x8\
+
+
+MAPS256X64	=
+
+ALLMAPS:	$(MAPS32X32)\
+	$(MAPS64X64)\
+	$(MAPS256X256)\
+	$(MAPS64X32)\
+	$(MAPS32X64)\
+	$(MAPS128X128)\
+	$(MAPS256X128)\
+	$(MAPS16X16)\
+	$(MAPS32X256)\
+	$(MAPS128X64)\
+	$(MAPS128X32)\
+	$(MAPS64X256)\
+	$(MAPS64X512)\
+	$(MAPS16X256)\
+	$(MAPS64X128)\
+	$(MAPS128X16)\
+	$(MAPS4X4)\
+	$(MAPS512X512)\
+	$(MAPS256X64)
+
+$(MAPS256X256):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT256X256) -dw $(DEST)\$*.x8
+
+$(MAPS128X128):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT128X128) -dw $(DEST)\$*.x8
+
+$(MAPS512X512):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT512X512) -dw $(DEST)\$*.x8
+

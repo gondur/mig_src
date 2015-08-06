@@ -1,0 +1,6 @@
+Level	124,
+FileName	USEROBJ\default,
+	BattleField
+	{
+		FileName	FIL_USERMISSION1=rhj.BF
+	};

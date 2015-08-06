@@ -1,0 +1,114 @@
+# Flight Model Curves Editor
+# Andrew McRae
+# 10/2/97
+
+debug2 = /oneatx /zp4 /5r /d2 /j /w4 /zq
+
+# /bm
+nodebug = /oneatx /zp4 /5r /d0 /j /w4 /zq
+
+options = $(debug2)
+
+all : ceditor.exe
+
+# CURVES
+
+# must compile ceditor.cpp first
+obj\ceditor.obj : model\ceditor.cpp h\dosdefs.h h\worldinc.h h\modvec.h h\curves.h h\ceditor.h h\error.h h\link.h
+   s:\watcom\binnt\wpp386 model\ceditor.cpp $(options) -i=h -bt=nt -fo=obj\ceditor.obj
+
+obj\winerror.obj : general\winerror.cpp h\dosdefs.h h\palette.h h\wrapper.h  h\error.h h\myangles.h h\worldinc.h h\world.h h\winmain.h h\link.h
+   s:\watcom\binnt\wpp386 general\winerror.cpp $(options) -i=h -bt=nt -fo=obj\winerror.obj
+
+obj\curves.obj : model\curves.cpp h\dosdefs.h h\worldinc.h h\modvec.h h\curves.h h\error.h h\link.h
+   s:\watcom\binnt\wpp386 model\curves.cpp $(options) -i=h -bt=nt -fo=obj\curves.obj
+
+#obj\cdat.obj : model\cdat.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+#   s:\watcom\binnt\wpp386 model\cdat.cpp $(options) -i=h -bt=nt -fo=obj\cdat.obj
+
+# AIRCRAFT START HERE
+
+obj\cdcomm.obj : aircraft\cd_comm.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_comm.cpp $(options) -i=h -bt=nt -fo=obj\cdcomm.obj
+
+obj\cdf86e.obj : aircraft\cd_f86e.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_f86e.cpp $(options) -i=h -bt=nt -fo=obj\cdf86e.obj
+
+obj\cdmig15.obj : aircraft\cd_mig15.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_mig15.cpp $(options) -i=h -bt=nt -fo=obj\cdmig15.obj
+
+obj\cdf84e.obj : aircraft\cd_f84e.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_f84e.cpp $(options) -i=h -bt=nt -fo=obj\cdf84e.obj
+
+obj\cdf80c.obj : aircraft\cd_f80c.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_f80c.cpp $(options) -i=h -bt=nt -fo=obj\cdf80c.obj
+
+obj\cdf51d.obj : aircraft\cd_f51d.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_f51d.cpp $(options) -i=h -bt=nt -fo=obj\cdf51d.obj
+
+obj\cdatmos.obj : aircraft\cd_atmos.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_atmos.cpp $(options) -i=h -bt=nt -fo=obj\cdatmos.obj
+
+obj\cdf94a.obj : aircraft\cd_f94a.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_f94a.cpp $(options) -i=h -bt=nt -fo=obj\cdf94a.obj
+
+obj\cdf9f2.obj : aircraft\cd_f9f2.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_f9f2.cpp $(options) -i=h -bt=nt -fo=obj\cdf9f2.obj
+
+obj\cdf8.obj : aircraft\cd_f8.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_f8.cpp $(options) -i=h -bt=nt -fo=obj\cdf8.obj
+
+obj\cdf82g.obj : aircraft\cd_f82g.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_f82g.cpp $(options) -i=h -bt=nt -fo=obj\cdf82g.obj
+
+obj\cdyak9.obj : aircraft\cd_yak9.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_yak9.cpp $(options) -i=h -bt=nt -fo=obj\cdyak9.obj
+
+obj\cdf4u5.obj : aircraft\cd_f4u5.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_f4u5.cpp $(options) -i=h -bt=nt -fo=obj\cdf4u5.obj
+
+obj\cdsfury.obj : aircraft\cd_sfury.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_sfury.cpp $(options) -i=h -bt=nt -fo=obj\cdsfury.obj
+
+obj\cdffly.obj : aircraft\cd_ffly.cpp h\dosdefs.h h\modvec.h h\curves.h h\link.h
+   s:\watcom\binnt\wpp386 aircraft\cd_ffly.cpp $(options) -i=h -bt=nt -fo=obj\cdffly.obj
+
+
+# AIRCRAFT END HERE
+
+obj\modvec.obj : model\modvec.cpp h\dosdefs.h h\modvec.h
+   s:\watcom\binnt\wpp386 model\modvec.cpp $(options) -i=h -bt=nt -fo=obj\modvec.obj
+
+#obj\newfix2.obj : general\newfix2.cpp h\dosdefs.h  h\fileman.h
+#   s:\watcom\binnt\wpp386 general\newfix2.cpp $(options) -i=h -bt=nt -fo=obj\newfix2.obj
+
+obj\ceditor.res : model\ceditor.rc
+   wrc model\ceditor.rc -ad -bt=nt -r -fo=obj\ceditor.res
+
+ceditor.exe : obj\ceditor.obj		&
+		obj\curves.obj		&
+		obj\ceditor.res		&
+		obj\winerror.obj	&
+		obj\cdcomm.obj		&
+		obj\cdf86e.obj		&
+		obj\cdmig15.obj		&
+		obj\cdf84e.obj		&
+		obj\cdf80c.obj		&
+		obj\cdf51d.obj		&
+		obj\cdatmos.obj		&
+		obj\cdf94a.obj		&
+		obj\cdf9f2.obj		&
+		obj\cdf8.obj		&
+		obj\cdf82g.obj		&
+		obj\cdyak9.obj		&
+		obj\cdf4u5.obj		&
+		obj\cdsfury.obj		&
+		obj\cdffly.obj		&
+		obj\modvec.obj
+   wlink @makefile\ceditor.lnk
+   wrc -ad obj\ceditor.res ceditor.exe
+
+#
+#End..
+#
+

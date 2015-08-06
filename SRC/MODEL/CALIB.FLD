@@ -1,0 +1,5 @@
+~#PrintVar{
+			Height -= dHeight;
+			dHeight *= 0.5;
+		}
+

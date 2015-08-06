@@ -1,0 +1,501 @@
+[files]
+174	dir.dir		FIL_DIR_RCHAT_PLAYER
+	parts.wav	FIL_RCHAT_PARTS_S
+	punctuat.wav	FIL_RCHAT_PUNCTUATION
+	parts2.wav	FIL_RCHAT_PARTS_COMBAT
+	parts3.wav	FIL_RCHAT_PARTS_KILL
+	parts4.wav	FIL_RCHAT_PARTS_EJECT
+	parts5.wav	FIL_RCHAT_PARTS_DAMAGE
+	parts6.wav	FIL_RCHAT_PARTS_MISC
+	ranges.wav	FIL_RCHAT_SMALLRANGES
+	relbring.wav	FIL_RCHAT_RELPOSITION
+	bearings.wav	FIL_RCHAT_BEARINGS
+	trgtype.wav	FIL_RCHAT_TARGTYPE
+	trgname.wav	FIL_RCHAT_TARGNAME
+	trgmov.wav	FIL_RCHAT_TARGMOV
+	factac.wav	FIL_RCHAT_FACTAC
+	csgns0.wav	FIL_RCHAT_CALLSIGNS_N
+	Tsmlnm.wav	FIL_RCHAT_TNUMTABLE1
+	fnums.wav	FIL_RCHAT_NUMTABLEF
+	smlnums.wav	FIL_RCHAT_NUMTABLE1
+	qnamedac.wav	FIL_RCHAT_QNAMED_AC
+	namedac.wav	FIL_RCHAT_ANAMED_AC
+	namedacs.wav	FIL_RCHAT_NAMED_ACS
+	placedir.wav	FIL_RCHAT_DIRECTIONS_PLACENAME
+	placnams.wav	FIL_RCHAT_PLACENAMES
+	randband.wav	FIL_RCHAT_BANDIT_ALERT
+	sillies.wav	FIL_RCHAT_SILLY_LIST
+	userdef.wav	FIL_RCHAT_USER_DEFINED
+	spectwr.wav	FIL_RCHAT_SPECIAL_TOWER
+	airflds.wav	FIL_RCHAT_AIRFIELDS
+	specrad.wav	FIL_RCHAT_SPECIAL_RADAR
+	grpinfo.wav	FIL_RCHAT_GROUP_INFO
+	grpcmb.wav	FIL_RCHAT_GROUP_COMBAT
+	grpptcmb.wav	FIL_RCHAT_GROUP_POSTCOMBAT
+	totower.wav	FIL_RCHAT_TO_TOWER
+	commspcl.wav	FIL_RCHAT_COMMS_ONLY
+	voice2.wav	FIL_RCHAT_VOICE2_ONLY
+	xparts2.wav	FIL_RCHAT_PARTS_XCOMBAT
+	bignums.wav	FIL_RCHAT_NUMTABLE25
+	cgroups.wav	FIL_RCHAT_CALLGROUPS
+	lparts6.wav	FIL_RCHAT_LEAD_PARTS_MISC
+	Lgrpinfo.wav	FIL_RCHAT_LEAD_GROUP_INFO
+	Lgrprcmb.wav	FIL_RCHAT_LEAD_GROUP_PRECOMBAT
+	Lgrpcmb.wav	FIL_RCHAT_LEAD_GROUP_COMBAT
+	Lgrpptcm.wav	FIL_RCHAT_LEAD_GROUP_POSTCOMBAT
+	Lgrphome.wav	FIL_RCHAT_LEAD_GROUP_HOME
+	weapons.wav	FIL_RCHAT_WEAPONS
+	tofac.wav	FIL_RCHAT_TO_FACTAC
+	travdir.wav	FIL_RCHAT_DIRECTIONS_TRAVEL
+
+
+175	dir.dir		FIL_DIR_RCHAT_XPLAYER
+	parts.wav
+	punctuat.wav
+	parts2.wav
+	parts3.wav
+	parts4.wav
+	parts5.wav
+	parts6.wav
+	ranges.wav
+	relbring.wav
+	bearings.wav
+	trgtype.wav
+	trgname.wav
+	trgmov.wav
+	factac.wav
+	csgns0.wav
+	Tsmlnm.wav
+	fnums.wav
+	smlnums.wav
+	qnamedac.wav
+	namedac.wav
+	namedacs.wav
+	placedir.wav
+	placnams.wav
+	randband.wav
+	sillies.wav
+	userdef.wav
+	spectwr.wav
+	airflds.wav
+	specrad.wav
+	grpinfo.wav
+	grpcmb.wav
+	grpptcmb.wav
+	totower.wav
+	commspcl.wav
+	voice2.wav
+	xparts2.wav
+	bignums.wav
+	cgroups.wav
+	lparts6.wav
+	Lgrpinfo.wav
+	Lgrprcmb.wav
+	Lgrpcmb.wav
+	Lgrpptcm.wav
+	Lgrphome.wav
+	weapons.wav
+	tofac.wav
+	travdir.wav
+
+
+176	dir.dir		FIL_DIR_RCHAT_OTHER
+	parts.wav
+	punctuat.wav
+	parts2.wav
+	parts3.wav
+	parts4.wav
+	parts5.wav
+	parts6.wav
+	ranges.wav
+	relbring.wav
+	bearings.wav
+	trgtype.wav
+	trgname.wav
+	trgmov.wav
+	factac.wav
+	csgns0.wav
+	Tsmlnm.wav
+	fnums.wav
+	smlnums.wav
+	qnamedac.wav
+	namedac.wav
+	namedacs.wav
+	placedir.wav
+	placnams.wav
+	randband.wav
+	sillies.wav
+	userdef.wav
+	spectwr.wav
+	airflds.wav
+	specrad.wav
+	grpinfo.wav
+	grpcmb.wav
+	grpptcmb.wav
+	totower.wav
+	commspcl.wav
+	voice2.wav
+	xparts2.wav
+	bignums.wav
+	cgroups.wav
+	lparts6.wav
+	Lgrpinfo.wav
+	Lgrprcmb.wav
+	Lgrpcmb.wav
+	Lgrpptcm.wav
+	Lgrphome.wav
+	weapons.wav
+	tofac.wav
+	travdir.wav
+
+
+177	dir.dir		FIL_DIR_RCHAT_XOTHER
+	parts.wav
+	punctuat.wav
+	parts2.wav
+	parts3.wav
+	parts4.wav
+	parts5.wav
+	parts6.wav
+	ranges.wav
+	relbring.wav
+	bearings.wav
+	trgtype.wav
+	trgname.wav
+	trgmov.wav
+	factac.wav
+	csgns0.wav
+	Tsmlnm.wav
+	fnums.wav
+	smlnums.wav
+	qnamedac.wav
+	namedac.wav
+	namedacs.wav
+	placedir.wav
+	placnams.wav
+	randband.wav
+	sillies.wav
+	userdef.wav
+	spectwr.wav
+	airflds.wav
+	specrad.wav
+	grpinfo.wav
+	grpcmb.wav
+	grpptcmb.wav
+	totower.wav
+	commspcl.wav
+	voice2.wav
+	xparts2.wav
+	bignums.wav
+	cgroups.wav
+	lparts6.wav
+	Lgrpinfo.wav
+	Lgrprcmb.wav
+	Lgrpcmb.wav
+	Lgrpptcm.wav
+	Lgrphome.wav
+	weapons.wav
+	tofac.wav
+	travdir.wav
+
+
+178	dir.dir		FIL_DIR_RCHAT_FACTAC
+	parts.wav
+	punctuat.wav
+	parts2.wav
+	parts3.wav
+	parts4.wav
+	parts5.wav
+	parts6.wav
+	ranges.wav
+	relbring.wav
+	bearings.wav
+	trgtype.wav
+	trgname.wav
+	trgmov.wav
+	factac.wav
+	csgns0.wav
+	Tsmlnm.wav
+	fnums.wav
+	smlnums.wav
+	qnamedac.wav
+	namedac.wav
+	namedacs.wav
+	placedir.wav
+	placnams.wav
+	randband.wav
+	sillies.wav
+	userdef.wav
+	spectwr.wav
+	airflds.wav
+	specrad.wav
+	grpinfo.wav
+	grpcmb.wav
+	grpptcmb.wav
+	totower.wav
+	commspcl.wav
+	voice2.wav
+	xparts2.wav
+	bignums.wav
+	cgroups.wav
+	lparts6.wav
+	Lgrpinfo.wav
+	Lgrprcmb.wav
+	Lgrpcmb.wav
+	Lgrpptcm.wav
+	Lgrphome.wav
+	weapons.wav
+	tofac.wav
+	travdir.wav
+
+
+179	dir.dir		FIL_DIR_RCHAT_FACTAC1
+	parts.wav
+	punctuat.wav
+	parts2.wav
+	parts3.wav
+	parts4.wav
+	parts5.wav
+	parts6.wav
+	ranges.wav
+	relbring.wav
+	bearings.wav
+	trgtype.wav
+	trgname.wav
+	trgmov.wav
+	factac.wav
+	csgns0.wav
+	Tsmlnm.wav
+	fnums.wav
+	smlnums.wav
+	qnamedac.wav
+	namedac.wav
+	namedacs.wav
+	placedir.wav
+	placnams.wav
+	randband.wav
+	sillies.wav
+	userdef.wav
+	spectwr.wav
+	airflds.wav
+	specrad.wav
+	grpinfo.wav
+	grpcmb.wav
+	grpptcmb.wav
+	totower.wav
+	commspcl.wav
+	voice2.wav
+	xparts2.wav
+	bignums.wav
+	cgroups.wav
+	lparts6.wav
+	Lgrpinfo.wav
+	Lgrprcmb.wav
+	Lgrpcmb.wav
+	Lgrpptcm.wav
+	Lgrphome.wav
+	weapons.wav
+	tofac.wav
+	travdir.wav
+
+
+180	dir.dir		FIL_DIR_RCHAT_DENTIST
+	parts.wav
+	punctuat.wav
+	parts2.wav
+	parts3.wav
+	parts4.wav
+	parts5.wav
+	parts6.wav
+	ranges.wav
+	relbring.wav
+	bearings.wav
+	trgtype.wav
+	trgname.wav
+	trgmov.wav
+	factac.wav
+	csgns0.wav
+	Tsmlnm.wav
+	fnums.wav
+	smlnums.wav
+	qnamedac.wav
+	namedac.wav
+	namedacs.wav
+	placedir.wav
+	placnams.wav
+	randband.wav
+	sillies.wav
+	userdef.wav
+	spectwr.wav
+	airflds.wav
+	specrad.wav
+	grpinfo.wav
+	grpcmb.wav
+	grpptcmb.wav
+	totower.wav
+	commspcl.wav
+	voice2.wav
+	xparts2.wav
+	bignums.wav
+	cgroups.wav
+	lparts6.wav
+	Lgrpinfo.wav
+	Lgrprcmb.wav
+	Lgrpcmb.wav
+	Lgrpptcm.wav
+	Lgrphome.wav
+	weapons.wav
+	tofac.wav
+	travdir.wav
+
+
+181	dir.dir		FIL_DIR_RCHAT_TOWER
+	parts.wav
+	punctuat.wav
+	parts2.wav
+	parts3.wav
+	parts4.wav
+	parts5.wav
+	parts6.wav
+	ranges.wav
+	relbring.wav
+	bearings.wav
+	trgtype.wav
+	trgname.wav
+	trgmov.wav
+	factac.wav
+	csgns0.wav
+	Tsmlnm.wav
+	fnums.wav
+	smlnums.wav
+	qnamedac.wav
+	namedac.wav
+	namedacs.wav
+	placedir.wav
+	placnams.wav
+	randband.wav
+	sillies.wav
+	userdef.wav
+	spectwr.wav
+	airflds.wav
+	specrad.wav
+	grpinfo.wav
+	grpcmb.wav
+	grpptcmb.wav
+	totower.wav
+	commspcl.wav
+	voice2.wav
+	xparts2.wav
+	bignums.wav
+	cgroups.wav
+	lparts6.wav
+	Lgrpinfo.wav
+	Lgrprcmb.wav
+	Lgrpcmb.wav
+	Lgrpptcm.wav
+	Lgrphome.wav
+	weapons.wav
+	tofac.wav
+	travdir.wav
+
+
+182	dir.dir		FIL_DIR_RCHAT_TOWER1
+	parts.wav
+	punctuat.wav
+	parts2.wav
+	parts3.wav
+	parts4.wav
+	parts5.wav
+	parts6.wav
+	ranges.wav
+	relbring.wav
+	bearings.wav
+	trgtype.wav
+	trgname.wav
+	trgmov.wav
+	factac.wav
+	csgns0.wav
+	Tsmlnm.wav
+	fnums.wav
+	smlnums.wav
+	qnamedac.wav
+	namedac.wav
+	namedacs.wav
+	placedir.wav
+	placnams.wav
+	randband.wav
+	sillies.wav
+	userdef.wav
+	spectwr.wav
+	airflds.wav
+	specrad.wav
+	grpinfo.wav
+	grpcmb.wav
+	grpptcmb.wav
+	totower.wav
+	commspcl.wav
+	voice2.wav
+	xparts2.wav
+	bignums.wav
+	cgroups.wav
+	lparts6.wav
+	Lgrpinfo.wav
+	Lgrprcmb.wav
+	Lgrpcmb.wav
+	Lgrpptcm.wav
+	Lgrphome.wav
+	weapons.wav
+	tofac.wav
+	travdir.wav
+
+
+183	dir.dir		FIL_DIR_RCHAT_TOWER2
+	parts.wav
+	punctuat.wav
+	parts2.wav
+	parts3.wav
+	parts4.wav
+	parts5.wav
+	parts6.wav
+	ranges.wav
+	relbring.wav
+	bearings.wav
+	trgtype.wav
+	trgname.wav
+	trgmov.wav
+	factac.wav
+	csgns0.wav
+	Tsmlnm.wav
+	fnums.wav
+	smlnums.wav
+	qnamedac.wav
+	namedac.wav
+	namedacs.wav
+	placedir.wav
+	placnams.wav
+	randband.wav
+	sillies.wav
+	userdef.wav
+	spectwr.wav
+	airflds.wav
+	specrad.wav
+	grpinfo.wav
+	grpcmb.wav
+	grpptcmb.wav
+	totower.wav
+	commspcl.wav
+	voice2.wav
+	xparts2.wav
+	bignums.wav
+	cgroups.wav
+	lparts6.wav
+	Lgrpinfo.wav
+	Lgrprcmb.wav
+	Lgrpcmb.wav
+	Lgrpptcm.wav
+	Lgrphome.wav
+	weapons.wav
+	tofac.wav
+	travdir.wav
+
+

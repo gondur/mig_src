@@ -1,0 +1,38 @@
+@Echo off
+setlocal
+Rem	This sould be used to create game versions from the source
+Rem	This need Updating DAW 04Sep95
+Rem
+Rem	Get the product info
+set /r makever.ver
+
+IFF "%project"=="" THEN
+set project=%@substr[%@name[%@truename[%_cwd]],0,8]
+ELSE
+set project=%@substr[%project,0,8]
+ENDIFF
+set ver=-1
+set version=s:\version
+set DirList=%@Unique[%tmp]
+
+dir %version%\%project%.[0-9][0-9][0-9] /bod >%DirList
+iff NOT %@lines[%dirlist]==%ver then
+	set ver=%@eval[%@substr[%@line[%dirlist,%@lines[%dirlist]],%@eval[%@len[%project]+1],3]+1]
+	iff %ver lt 10 then
+		set ver=00%ver
+	else
+		if %ver lt 100 set ver=0%ver
+	endiff
+else
+	set ver=000
+endiff
+REM We Now have the new version number so make the directory
+md %version%\%project%.%ver
+
+Rem Insert the bits here to produce the correct game setup
+
+XCopy /s ..\game %version%\%project%.%ver
+
+del %DirList
+
+endlocal

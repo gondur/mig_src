@@ -1,0 +1,35 @@
+@echo off
+set command=install.exe
+set dtaline=rem
+:loop1
+if "%1"=="" goto outloop
+if "%1"=="/w" set command=dos4gw install.exe
+if "%1"=="/x" set command=wd /TRap=rsi.trp /I=%USER.dbg :install.sym install.exe
+if "%1"=="/v" set command=wvideo /TRap=rsi.trp :install.sym install.exe
+if "%1"=="/d" set command=debug32 install
+if "%1"=="/s" set command=wsamprsi /r=1 install.exe
+shift
+goto loop1
+:outloop
+set loop=5
+set lines=%@lines[go.log]
+set poo=%@line[go.log,%lines]
+if %loop GT %lines set loop=%lines
+:loop
+echo. %command %@line[go.log,%@eval[%lines-%loop]]
+set loop=%@eval[%loop-1]
+if NOT %loop == 0 goto loop
+echo. %command %poo
+keystack "%poo"
+input %command %%z
+if NOT "%poo"=="%z" echo %z >>go.log
+timer /1 on
+cls
+copy install.* ..\game\ /u
+cdd ..\game\
+%command %z
+maketime
+unset lines,poo,z,c >&nul
+%dtaline /c9 /r6 /s08 out\installt???.tga
+unset dtaline command loop
+timer /1 off

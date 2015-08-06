@@ -1,0 +1,25 @@
+	SimpleItem	BRIDGE25_043c,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE25=BRIDGE25.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlTokohig,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE25_043c=
+				{
+					Posn
+					{
+						Abs
+						{	X	65703424,
+							Z	83411456
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

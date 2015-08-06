@@ -1,0 +1,38 @@
+	SimpleItem	main2_0b08,
+	SimpleItem	main2_0b0b,
+	BattleField
+	{
+		FileName	FIL_1_main2=main2.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	main2_0b08=
+			{
+				Posn
+				{
+					Abs
+					{	X	30048256,
+						Z	1061679104
+					}
+				},
+				UIDBand		BlueMilitaryBAND,
+				SetUID	UID_gun2,
+				Shape		BEXP
+			},
+			SimpleItem	main2_0b0b=
+			{
+				Posn
+				{
+					Abs
+					{	X	28553216,
+						Z	1062293504
+					}
+				},
+				UIDBand		BlueMilitaryBAND,
+				SetUID	UID_,
+				Shape		BEXP
+			}
+		}
+	};

@@ -1,0 +1,395 @@
+	SimpleItem	HONGCHON_0403,
+	SimpleItem	HONGCHON_0404,
+	SimpleItem	HONGCHON_040c,
+	SimpleItem	HONGCHON_040f,
+	SimpleItem	HONGCHON_0412,
+	SimpleItem	HONGCHON_0415,
+	SimpleItem	HONGCHON_0417,
+	SimpleItem	HONGCHON_041b,
+	SimpleItem	HONGCHON_041d,
+	SimpleItem	HONGCHON_0421,
+	SimpleItem	HONGCHON_0423,
+	SimpleItem	HONGCHON_0425,
+	SimpleItem	HONGCHON_0427,
+	SimpleItem	HONGCHON_1803,
+	SimpleItem	HONGCHON_1804,
+	SimpleItem	HONGCHON_1805,
+	SimpleItem	HONGCHON_2005,
+	SimpleItem	HONGCHON_2006,
+	SimpleItem	HONGCHON_2007,
+	SimpleItem	HONGCHON_2008,
+	SimpleItem	HONGCHON_2009,
+	SimpleItem	HONGCHON_200a,
+	SimpleItem	HONGCHON_2200,
+	SimpleItem	HONGCHON_2201,
+	SimpleItem	HONGCHON_2202,
+	SimpleItem	HONGCHON_2203,
+	SimpleItem	HONGCHON_2204,
+	SimpleItem	HONGCHON_2205,
+	SimpleItem	HONGCHON_2206,
+	BattleField
+	{
+		FileName	FIL_1_HONGCHON=HONGCHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SdRdHongchon,
+		ItemGroup
+		{
+				SimpleItem	HONGCHON_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	71390208,
+							Z	62602240
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		HUT
+				},
+				SimpleItem	HONGCHON_0404=
+				{
+					Posn
+					{
+						Abs
+						{	X	71373824,
+							Z	62593024
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		HUT
+				},
+				SimpleItem	HONGCHON_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	71221248,
+							Z	62919680
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HONGCHON_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	71220224,
+							Z	62865408
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HONGCHON_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	71265280,
+							Z	62885888
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HONGCHON_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	71251968,
+							Z	62904320
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	HONGCHON_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	71202816,
+							Z	62879744
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF1S
+				},
+				SimpleItem	HONGCHON_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	71248896,
+							Z	62885888
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	HONGCHON_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	71186432,
+							Z	62906368
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF1S
+				},
+				SimpleItem	HONGCHON_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	71219200,
+							Z	62882816
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	HONGCHON_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	71209984,
+							Z	62905344
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	HONGCHON_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	71238656,
+							Z	62869504
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StHongchon,
+		ItemGroup
+		{
+				SimpleItem	HONGCHON_040c=
+				{
+					Posn
+					{
+						Abs
+						{	X	71201792,
+							Z	62855168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	HONGCHON_040f=
+				{
+					Posn
+					{
+						Abs
+						{	X	71140352,
+							Z	62846976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HONGCHON_0412=
+				{
+					Posn
+					{
+						Abs
+						{	X	71151616,
+							Z	62872576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HONGCHON_0415=
+				{
+					Posn
+					{
+						Abs
+						{	X	71164928,
+							Z	62879744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HONGCHON_0417=
+				{
+					Posn
+					{
+						Abs
+						{	X	71171072,
+							Z	62888960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HONGCHON_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	71232512,
+							Z	62906368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HONGCHON_041d=
+				{
+					Posn
+					{
+						Abs
+						{	X	71225344,
+							Z	62904320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HONGCHON_0421=
+				{
+					Posn
+					{
+						Abs
+						{	X	71236608,
+							Z	62939136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HONGCHON_0423=
+				{
+					Posn
+					{
+						Abs
+						{	X	71211008,
+							Z	62951424
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HONGCHON_0425=
+				{
+					Posn
+					{
+						Abs
+						{	X	71220224,
+							Z	62837760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HONGCHON_0427=
+				{
+					Posn
+					{
+						Abs
+						{	X	71200768,
+							Z	62814208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HONGCHON_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	71098368,
+							Z	62856192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	HONGCHON_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	71121920,
+							Z	62812160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	HONGCHON_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	71160832,
+							Z	62822400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	HONGCHON_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	71171072,
+							Z	62857216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	HONGCHON_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	71189504,
+							Z	62926848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	HONGCHON_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	71143424,
+							Z	62925824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				}
+		}
+	}	
+	};

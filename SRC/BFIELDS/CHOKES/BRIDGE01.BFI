@@ -1,0 +1,6 @@
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE01=BRIDGE01.BF,
+		Title	{},
+		Comment	{}
+	};

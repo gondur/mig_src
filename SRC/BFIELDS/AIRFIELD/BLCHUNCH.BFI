@@ -1,0 +1,252 @@
+	WayPoint	blchunch_0103,
+	SimpleItem	blchunch_1200,
+	SimpleItem	blchunch_1703,
+	SimpleItem	blchunch_1704,
+	GroundItem	blchunch_2f61,
+	SimpleItem	blchunch_2aff,
+	SimpleItem	blchunch_2afe,
+	SimpleItem	blchunch_2afd,
+	SimpleItem	blchunch_2afc,
+	SimpleItem	blchunch_2afb,
+	SimpleItem	blchunch_2afa,
+	SimpleItem	blchunch_2af9,
+	SimpleItem	blchunch_2af8,
+	SimpleItem	blchunch_2af7,
+	SimpleItem	blchunch_2af6,
+	BattleField
+	{
+		FileName	FIL_1_BLCHUNCH=blchunch.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlChuncheon,
+		ItemGroup
+		{
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	69755965,
+							Z	64919289
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		JEEP1
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	69756375,
+							Z	64924613
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		JEEP1
+				},
+				SimpleItem	blchunch_2aff=
+				{
+					Posn
+					{
+						Abs
+						{	X	69720740,
+							Z	64985439
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI2,
+					Shape		WINDSC
+				},
+				SimpleItem	blchunch_2afe=
+				{
+					Posn
+					{
+						Abs
+						{	X	69732823,
+							Z	64996703
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI1,
+					Shape		WINDSC
+				},
+				SimpleItem	blchunch_2afd=
+				{
+					Posn
+					{
+						Abs
+						{	X	69752074,
+							Z	64996089
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI0,
+					Shape		WINDSC
+				},
+				SimpleItem	blchunch_2afc=
+				{
+					Posn
+					{
+						Abs
+						{	X	69758218,
+							Z	64990559
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIE,
+					Shape		WINDSC
+				},
+				SimpleItem	blchunch_2afb=
+				{
+					Posn
+					{
+						Abs
+						{	X	69760266,
+							Z	64986258
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIL,
+					Shape		WINDSC
+				},
+				SimpleItem	blchunch_2afa=
+				{
+					Posn
+					{
+						Abs
+						{	X	69679872,
+							Z	64916736
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK0,
+					Shape		WINDSC
+				},
+				SimpleItem	blchunch_2af9=
+				{
+					Posn
+					{
+						Abs
+						{	X	69709824,
+							Z	64948480
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK1,
+					Shape		WINDSC
+				},
+				SimpleItem	blchunch_2af8=
+				{
+					Posn
+					{
+						Abs
+						{	X	69713920,
+							Z	64952064
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKL,
+					Shape		WINDSC
+				},
+				SimpleItem	blchunch_2af7=
+				{
+					Posn
+					{
+						Abs
+						{	X	69712128,
+							Z	64950784
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKW,
+					Shape		WINDSC
+				},
+				SimpleItem	blchunch_2af6=
+				{
+					Posn
+					{
+						Abs
+						{	X	69812490,
+							Z	65038483
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_LANDING,
+					Shape		WINDSC
+				},
+				SimpleItem	blchunch_1200=
+				{
+					Posn
+					{
+						Abs
+						{	X	69689610,
+							Z	64893484
+						}
+					},
+					UIDBand		AmberAirfieldBAND,
+					Shape		UNSBAA
+				},
+				SimpleItem	blchunch_1703=
+				{
+					Posn
+					{
+						Abs
+						{	X	69756785,
+							Z	65002847
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		UNSBAA
+				},
+				SimpleItem	blchunch_1704=
+				{
+					Posn
+					{
+						Abs
+						{	X	69683466,
+							Z	64880785
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		UNSBAA
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	69739581,
+						Z	64984006
+					}
+				},
+				Route
+				{
+					WayPoint	blchunch_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	69684696,
+								Z	64926252
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	blchunch_2f61=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	JEEP2,
+					Vel	112
+			}	}	}
+	};

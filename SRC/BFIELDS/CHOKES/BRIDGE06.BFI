@@ -1,0 +1,38 @@
+	SimpleItem	BRIDGE06_0406,
+	SimpleItem	BRIDGE06_040a,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE06=BRIDGE06.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlTaeryong,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE06_0406=
+				{
+					Posn
+					{
+						Abs
+						{	X	51112448,
+							Z	84657152
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE06_040a=
+				{
+					Posn
+					{
+						Abs
+						{	X	51037696,
+							Z	84712960
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

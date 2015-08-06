@@ -1,0 +1,246 @@
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0406,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_040a,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_040d,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0410,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0413,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0416,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_041c,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_041f,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0423,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0426,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0429,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_042c,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_042f,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0432,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0435,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0438,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_043b,
+//DeadCode JIM 05May99 	SimpleItem	AFUIJI_0444,
+//DeadCode JIM 05May99 	BattleField
+//DeadCode JIM 05May99 	{
+//DeadCode JIM 05May99 		FileName	FIL_1_AFUIJI=AFUIJI.BF,
+//DeadCode JIM 05May99 		Title	{},
+//DeadCode JIM 05May99 		Comment	{}
+//DeadCode JIM 05May99 ,
+//DeadCode JIM 05May99 	ItemGroup
+//DeadCode JIM 05May99 	{	Target	UID_AfRdUiju,
+//DeadCode JIM 05May99 		ItemGroup
+//DeadCode JIM 05May99 		{
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0406=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42181588,
+//DeadCode JIM 05May99 							Z	90095039
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		AFDS
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_040a=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42174215,
+//DeadCode JIM 05May99 							Z	90095449
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		AFDS
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_040d=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42183636,
+//DeadCode JIM 05May99 							Z	90074149
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		MDL
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0410=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42172987,
+//DeadCode JIM 05May99 							Z	90063090
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		MDL
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0413=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42156193,
+//DeadCode JIM 05May99 							Z	90044248
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		MDL
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0416=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42230740,
+//DeadCode JIM 05May99 							Z	90141734
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfRunwayBAND,
+//DeadCode JIM 05May99 					Shape		OPPSM
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_041c=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42220501,
+//DeadCode JIM 05May99 							Z	90135180
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		AFDS
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_041f=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42212308,
+//DeadCode JIM 05May99 							Z	90126988
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		AFDS
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0423=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42250811,
+//DeadCode JIM 05May99 							Z	90125350
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		MDM
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0426=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42236475,
+//DeadCode JIM 05May99 							Z	90109375
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		MDM
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0429=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42289313,
+//DeadCode JIM 05May99 							Z	90076607
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfRevetmentBAND,
+//DeadCode JIM 05May99 					Shape		RRNESW
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_042c=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42231560,
+//DeadCode JIM 05May99 							Z	90011890
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfRevetmentBAND,
+//DeadCode JIM 05May99 					Shape		RRNESW
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_042f=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42123834,
+//DeadCode JIM 05May99 							Z	89996325
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		MDL
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0432=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42141857,
+//DeadCode JIM 05May99 							Z	90017215
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		AFDS
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0435=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42148001,
+//DeadCode JIM 05May99 							Z	90034008
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfSupplyBAND,
+//DeadCode JIM 05May99 					Shape		AFDS
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0438=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42143495,
+//DeadCode JIM 05May99 							Z	90054079
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfRunwayBAND,
+//DeadCode JIM 05May99 					Shape		OPPSM
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_043b=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42157831,
+//DeadCode JIM 05May99 							Z	90073330
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfRunwayBAND,
+//DeadCode JIM 05May99 					Shape		OPPSM
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFUIJI_0444=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	42196334,
+//DeadCode JIM 05May99 							Z	90106508
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		AfHangerBAND,
+//DeadCode JIM 05May99 					Shape		HRNS
+//DeadCode JIM 05May99 				}
+//DeadCode JIM 05May99 		}	}
+//DeadCode JIM 05May99 	};

@@ -1,0 +1,316 @@
+	SimpleItem	Sonchon_1503,
+	SimpleItem	Sonchon_1504,
+	SimpleItem	Sonchon_1505,
+	SimpleItem	Sonchon_1506,
+	SimpleItem	Sonchon_1507,
+	SimpleItem	Sonchon_1508,
+	SimpleItem	Sonchon_1a00,
+	SimpleItem	Sonchon_1a01,
+	SimpleItem	Sonchon_1a02,
+	SimpleItem	Sonchon_1a03,
+	SimpleItem	Sonchon_1a04,
+	SimpleItem	Sonchon_1a05,
+	SimpleItem	Sonchon_1a06,
+	SimpleItem	Sonchon_1a07,
+	SimpleItem	Sonchon_1a08,
+	SimpleItem	Sonchon_2500,
+	SimpleItem	Sonchon_2501,
+	SimpleItem	Sonchon_2502,
+	SimpleItem	Sonchon_2503,
+	SimpleItem	Sonchon_2504,
+	SimpleItem	Sonchon_2505,
+	SimpleItem	Sonchon_2506,
+	SimpleItem	Sonchon_2507,
+	BattleField
+	{
+		FileName	FIL_1_SONCHON=Sonchon.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SdRdSonchon,
+		ItemGroup
+		{
+				SimpleItem	Sonchon_1503=
+				{
+					Posn
+					{
+						Abs
+						{	X	45618176,
+							Z	86093824
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Sonchon_1504=
+				{
+					Posn
+					{
+						Abs
+						{	X	45643776,
+							Z	86160384
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Sonchon_1505=
+				{
+					Posn
+					{
+						Abs
+						{	X	45641728,
+							Z	86225920
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Sonchon_1506=
+				{
+					Posn
+					{
+						Abs
+						{	X	45497344,
+							Z	86224896
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Sonchon_1507=
+				{
+					Posn
+					{
+						Abs
+						{	X	45552640,
+							Z	86269952
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Sonchon_1508=
+				{
+					Posn
+					{
+						Abs
+						{	X	45549568,
+							Z	86137856
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Sonchon_2500=
+				{
+					Posn
+					{
+						Abs
+						{	X	45643776,
+							Z	86111232
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	Sonchon_2501=
+				{
+					Posn
+					{
+						Abs
+						{	X	45652992,
+							Z	86094848
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	Sonchon_2502=
+				{
+					Posn
+					{
+						Abs
+						{	X	45596672,
+							Z	86224896
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	Sonchon_2503=
+				{
+					Posn
+					{
+						Abs
+						{	X	45584384,
+							Z	86235136
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	Sonchon_2504=
+				{
+					Posn
+					{
+						Abs
+						{	X	45614080,
+							Z	86212608
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	Sonchon_2505=
+				{
+					Posn
+					{
+						Abs
+						{	X	45599744,
+							Z	86198272
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	Sonchon_2506=
+				{
+					Posn
+					{
+						Abs
+						{	X	45612032,
+							Z	86172672
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF1S
+				},
+				SimpleItem	Sonchon_2507=
+				{
+					Posn
+					{
+						Abs
+						{	X	45593600,
+							Z	86178816
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StSonchon,
+		ItemGroup
+		{
+				SimpleItem	Sonchon_1a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	45561856,
+							Z	86203392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Sonchon_1a01=
+				{
+					Posn
+					{
+						Abs
+						{	X	45899776,
+							Z	86228992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Sonchon_1a02=
+				{
+					Posn
+					{
+						Abs
+						{	X	45531136,
+							Z	86195200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	Sonchon_1a03=
+				{
+					Posn
+					{
+						Abs
+						{	X	45546496,
+							Z	86171648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	Sonchon_1a04=
+				{
+					Posn
+					{
+						Abs
+						{	X	45885440,
+							Z	86193152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Sonchon_1a05=
+				{
+					Posn
+					{
+						Abs
+						{	X	45900800,
+							Z	86206464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Sonchon_1a06=
+				{
+					Posn
+					{
+						Abs
+						{	X	45887488,
+							Z	86215680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Sonchon_1a07=
+				{
+					Posn
+					{
+						Abs
+						{	X	45903872,
+							Z	86193152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Sonchon_1a08=
+				{
+					Posn
+					{
+						Abs
+						{	X	45586432,
+							Z	86158336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				}
+		}	}
+	};

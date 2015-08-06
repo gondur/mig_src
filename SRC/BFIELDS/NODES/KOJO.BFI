@@ -1,0 +1,103 @@
+	SimpleItem	KOJO_044c,
+	SimpleItem	KOJO_0450,
+	SimpleItem	KOJO_0453,
+	SimpleItem	KOJO_0456,
+	SimpleItem	KOJO_045a,
+	SimpleItem	KOJO_200f,
+	SimpleItem	KOJO_2010,
+	BattleField
+	{
+		FileName	FIL_1_KOJO=KOJO.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKojo,
+		ItemGroup
+		{
+				SimpleItem	KOJO_044c=
+				{
+					Posn
+					{
+						Abs
+						{	X	70828032,
+							Z	77198336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		GHANDI
+				},
+				SimpleItem	KOJO_0450=
+				{
+					Posn
+					{
+						Abs
+						{	X	70846464,
+							Z	77181952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KOJO_0453=
+				{
+					Posn
+					{
+						Abs
+						{	X	70828032,
+							Z	77219840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	KOJO_0456=
+				{
+					Posn
+					{
+						Abs
+						{	X	70841344,
+							Z	77219840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	KOJO_045a=
+				{
+					Posn
+					{
+						Abs
+						{	X	70848512,
+							Z	77212672
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		HUT
+				},
+				SimpleItem	KOJO_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	70820864,
+							Z	77210624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KOJO_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	70845440,
+							Z	77202432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				}
+		}	}
+	};

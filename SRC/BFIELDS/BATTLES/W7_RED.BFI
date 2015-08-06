@@ -1,0 +1,472 @@
+	SimpleItem	W7_RED_0405,
+	SimpleItem	W7_RED_0407,
+	SimpleItem	W7_RED_0409,
+	SimpleItem	W7_RED_040b,
+	SimpleItem	W7_RED_040d,
+	SimpleItem	W7_RED_040f,
+	SimpleItem	W7_RED_041a,
+	SimpleItem	W7_RED_041d,
+	SimpleItem	W7_RED_0420,
+	SimpleItem	W7_RED_0423,
+	SimpleItem	W7_RED_0426,
+	SimpleItem	W7_RED_0429,
+	SimpleItem	W7_RED_042c,
+	SimpleItem	W7_RED_042f,
+	SimpleItem	W7_RED_0432,
+	SimpleItem	W7_RED_2aff,
+	SimpleItem	W7_RED_2afe,
+	SimpleItem	W7_RED_2afd,
+	SimpleItem	W7_RED_2afc,
+	SimpleItem	W7_RED_2afb,
+	SimpleItem	W7_RED_2afa,
+	SimpleItem	W7_RED_2af9,
+	SimpleItem	W7_RED_2af8,
+	SimpleItem	W7_RED_2af7,
+	SimpleItem	W7_RED_2af6,
+	SimpleItem	W7_RED_2af5,
+	SimpleItem	W7_RED_2af4,
+	SimpleItem	W7_RED_2af3,
+	SimpleItem	W7_RED_2af2,
+	SimpleItem	W7_RED_2ae5,
+	SimpleItem	W7_RED_2adf,
+	SimpleItem	W7_RED_2ade,
+	SimpleItem	W7_RED_2ad3,
+	BattleField
+	{
+		FileName	FIL_1_W7_RED=W7_RED.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	W7_RED_2aff=
+			{
+				Posn
+				{
+					Abs
+					{	X	52359168,
+						Z	77340672
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1c_o,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2afe=
+			{
+				Posn
+				{
+					Abs
+					{	X	52464640,
+						Z	77340672
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1c_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2afd=
+			{
+				Posn
+				{
+					Abs
+					{	X	52685824,
+						Z	77284352
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1d,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2afc=
+			{
+				Posn
+				{
+					Abs
+					{	X	52715520,
+						Z	77235200
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1d_o,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2afb=
+			{
+				Posn
+				{
+					Abs
+					{	X	52674560,
+						Z	77335552
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1d_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2afa=
+			{
+				Posn
+				{
+					Abs
+					{	X	52769792,
+						Z	77460480
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1e,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2af9=
+			{
+				Posn
+				{
+					Abs
+					{	X	52847616,
+						Z	77417472
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1e_o,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2af8=
+			{
+				Posn
+				{
+					Abs
+					{	X	52722688,
+						Z	77485056
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1e_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2af7=
+			{
+				Posn
+				{
+					Abs
+					{	X	52310016,
+						Z	77708288
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1a,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2af6=
+			{
+				Posn
+				{
+					Abs
+					{	X	52252672,
+						Z	77719552
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1a_o,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2af5=
+			{
+				Posn
+				{
+					Abs
+					{	X	52359168,
+						Z	77698048
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1a_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2af4=
+			{
+				Posn
+				{
+					Abs
+					{	X	52418560,
+						Z	77553664
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1b,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2af3=
+			{
+				Posn
+				{
+					Abs
+					{	X	52454400,
+						Z	77572096
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1b_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2af2=
+			{
+				Posn
+				{
+					Abs
+					{	X	52361216,
+						Z	77550592
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1b_o,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2ae5=
+			{
+				Posn
+				{
+					Abs
+					{	X	52415488,
+						Z	77334528
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1c,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2adf=
+			{
+				Posn
+				{
+					Abs
+					{	X	52923392,
+						Z	77544448
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1f,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2ade=
+			{
+				Posn
+				{
+					Abs
+					{	X	52922368,
+						Z	77509632
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1f_o,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_2ad3=
+			{
+				Posn
+				{
+					Abs
+					{	X	52923392,
+						Z	77588480
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_1f_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_0405=
+			{
+				Posn
+				{
+					Abs
+					{	X	53041152,
+						Z	77401088
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0e,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_0407=
+			{
+				Posn
+				{
+					Abs
+					{	X	53004288,
+						Z	77401088
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0e_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_0409=
+			{
+				Posn
+				{
+					Abs
+					{	X	53036032,
+						Z	77504512
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0f,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_040b=
+			{
+				Posn
+				{
+					Abs
+					{	X	53000192,
+						Z	77505536
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0f_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_040d=
+			{
+				Posn
+				{
+					Abs
+					{	X	52921344,
+						Z	77028352
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0d,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_040f=
+			{
+				Posn
+				{
+					Abs
+					{	X	52885504,
+						Z	77063168
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0d_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_041a=
+			{
+				Posn
+				{
+					Abs
+					{	X	52108288,
+						Z	77404160
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0c,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_041d=
+			{
+				Posn
+				{
+					Abs
+					{	X	52150272,
+						Z	77402112
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0c_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_0420=
+			{
+				Posn
+				{
+					Abs
+					{	X	52253696,
+						Z	77541376
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0b,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_0423=
+			{
+				Posn
+				{
+					Abs
+					{	X	52307968,
+						Z	77544448
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0b_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_0426=
+			{
+				Posn
+				{
+					Abs
+					{	X	52085760,
+						Z	77758464
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0a,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_0429=
+			{
+				Posn
+				{
+					Abs
+					{	X	52112384,
+						Z	77758464
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_0a_i,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_042c=
+			{
+				Posn
+				{
+					Abs
+					{	X	52557824,
+						Z	77874176
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_2a,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_042f=
+			{
+				Posn
+				{
+					Abs
+					{	X	52557824,
+						Z	77838336
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_2a_o,
+				Shape		EMPTY
+			},
+			SimpleItem	W7_RED_0432=
+			{
+				Posn
+				{
+					Abs
+					{	X	52558848,
+						Z	77914112
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_BNW_2a_i,
+				Shape		EMPTY
+			}
+		}
+	};

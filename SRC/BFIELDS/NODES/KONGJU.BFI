@@ -1,0 +1,129 @@
+//DeadCode MS 02May99 	SimpleItem	KONGJU_0403,
+//DeadCode MS 02May99 	SimpleItem	KONGJU_0404,
+//DeadCode MS 02May99 	SimpleItem	KONGJU_0405,
+//DeadCode MS 02May99 	SimpleItem	KONGJU_2051,
+//DeadCode MS 02May99 	SimpleItem	KONGJU_2052,
+//DeadCode MS 02May99 	SimpleItem	KONGJU_2053,
+//DeadCode MS 02May99 	SimpleItem	KONGJU_2054,
+//DeadCode MS 02May99 	SimpleItem	KONGJU_2055,
+//DeadCode MS 02May99 	SimpleItem	KONGJU_2056,
+	BattleField
+	{
+		FileName	FIL_1_KONGJU=KONGJU.BF
+//DeadCode MS 02May99 		Title	{},
+//DeadCode MS 02May99 		Comment	{}
+//DeadCode MS 02May99 ,
+//DeadCode MS 02May99 	ItemGroup
+//DeadCode MS 02May99 	{	Target	UID_StKongju,
+//DeadCode MS 02May99 		ItemGroup
+//DeadCode MS 02May99 		{
+//DeadCode MS 02May99 				SimpleItem	KONGJU_0403=
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs
+//DeadCode MS 02May99 						{	X	64470016,
+//DeadCode MS 02May99 							Z	49271808
+//DeadCode MS 02May99 						}
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		V4NWSE
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	KONGJU_0404=
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs
+//DeadCode MS 02May99 						{	X	64460800,
+//DeadCode MS 02May99 							Z	49287168
+//DeadCode MS 02May99 						}
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		V1NS
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	KONGJU_0405=
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs
+//DeadCode MS 02May99 						{	X	64193536,
+//DeadCode MS 02May99 							Z	48655360
+//DeadCode MS 02May99 						}
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		V3NESW
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	KONGJU_2051=
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs
+//DeadCode MS 02May99 						{	X	64482304,
+//DeadCode MS 02May99 							Z	49055744
+//DeadCode MS 02May99 						}
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		TWN4
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	KONGJU_2052=
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs
+//DeadCode MS 02May99 						{	X	64446464,
+//DeadCode MS 02May99 							Z	48957440
+//DeadCode MS 02May99 						}
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		TWN3
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	KONGJU_2053=
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs
+//DeadCode MS 02May99 						{	X	64416768,
+//DeadCode MS 02May99 							Z	48957440
+//DeadCode MS 02May99 						}
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		TWN2
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	KONGJU_2054=
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs
+//DeadCode MS 02May99 						{	X	64445440,
+//DeadCode MS 02May99 							Z	49062912
+//DeadCode MS 02May99 						}
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		TWN3
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	KONGJU_2055=
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs
+//DeadCode MS 02May99 						{	X	64439296,
+//DeadCode MS 02May99 							Z	48989184
+//DeadCode MS 02May99 						}
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		TWN4
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	KONGJU_2056=
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs
+//DeadCode MS 02May99 						{	X	64415744,
+//DeadCode MS 02May99 							Z	49085440
+//DeadCode MS 02May99 						}
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		TWN1
+//DeadCode MS 02May99 				}
+//DeadCode MS 02May99 		}	}
+	};

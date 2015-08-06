@@ -1,0 +1,86 @@
+	BattleField
+	{
+		FileName	FIL_1_YONAN=YONAN.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_StYonan,
+			ItemGroup
+			{
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYonan},
+						Rel	{X METRES300
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYonan},
+						Rel	{Z -METRES400	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYonan},
+						Rel	{Z METRES400	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYonan},
+						Rel	{X -METRES250,
+							 Z METRES250	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2A
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYonan},
+						Rel	{X -METRES500,
+							 Z METRES500
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYonan},
+						Rel	{X -METRES500
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				}
+			}
+		}
+	};

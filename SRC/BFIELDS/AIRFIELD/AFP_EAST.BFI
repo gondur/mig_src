@@ -1,0 +1,503 @@
+//DeadCode JIM 05May99 	SimpleItem	AFP_EAST_3900,
+//DeadCode JIM 05May99 	SimpleItem	AFP_EAST_3940,
+	SimpleItem	AFP_EAST_3980,
+	SimpleItem	AFP_EAST_3981,
+	SimpleItem	AFP_EAST_3a00,
+	SimpleItem	AFP_EAST_3a40,
+	SimpleItem	AFP_EAST_3a41,
+	SimpleItem	AFP_EAST_3a42,
+	SimpleItem	AFP_EAST_3a43,
+	SimpleItem	AFP_EAST_3a44,
+	SimpleItem	AFP_EAST_3a45,
+	SimpleItem	AFP_EAST_3a46,
+	SimpleItem	AFP_EAST_3a47,
+	SimpleItem	AFP_EAST_3a48,
+	SimpleItem	AFP_EAST_3a49,
+	SimpleItem	AFP_EAST_3a4a,
+	SimpleItem	AFP_EAST_3a4b,
+	SimpleItem	AFP_EAST_3a4c,
+	SimpleItem	AFP_EAST_3a4d,
+	SimpleItem	AFP_EAST_3a4e,
+	SimpleItem	AFP_EAST_3a4f,
+	SimpleItem	AFP_EAST_3a50,
+	SimpleItem	AFP_EAST_3a51,
+	SimpleItem	AFP_EAST_3a80,
+	SimpleItem	AFP_EAST_3a81,
+	SimpleItem	AFP_EAST_3a82,
+	SimpleItem	AFP_EAST_3a83,
+	SimpleItem	AFP_EAST_3a84,
+	SimpleItem	AFP_EAST_3a85,
+	SimpleItem	AFP_EAST_3a86,
+	SimpleItem	AFP_EAST_3ac0,
+	SimpleItem	AFP_EAST_3ac1,
+	SimpleItem	AFP_EAST_3ac2,
+	SimpleItem	AFP_EAST_3ac3,
+	SimpleItem	AFP_EAST_3ac4,
+	BattleField
+	{
+		FileName	FIL_1_AFP_EAST=AFP_EAST.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdPyongyangE,
+		ItemGroup
+		{
+//DeadCode JIM 05May99 				SimpleItem	AFP_EAST_3900=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	53714739,
+//DeadCode JIM 05May99 							Z	77482177
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwaySBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFP_EAST_3940=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	53652070,
+//DeadCode JIM 05May99 							Z	77544437
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwayEBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	53620121,
+							Z	77554678
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	53719655,
+							Z	77538294
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	53728256,
+							Z	77424015
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	AFP_EAST_3980=
+				{
+					Posn
+					{
+						Abs
+						{	X	53776999,
+							Z	77424424
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HANGER
+				},
+				SimpleItem	AFP_EAST_3981=
+				{
+					Posn
+					{
+						Abs
+						{	X	53760615,
+							Z	77425244
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HANGER
+				},
+				SimpleItem	AFP_EAST_3a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	53673370,
+							Z	77447772
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		RREW
+				},
+				SimpleItem	AFP_EAST_3a40=
+				{
+					Posn
+					{
+						Abs
+						{	X	53622579,
+							Z	77464565
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFP_EAST_3a41=
+				{
+					Posn
+					{
+						Abs
+						{	X	53713511,
+							Z	77519042
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a42=
+				{
+					Posn
+					{
+						Abs
+						{	X	53722112,
+							Z	77511260
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a43=
+				{
+					Posn
+					{
+						Abs
+						{	X	53643059,
+							Z	77487093
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a44=
+				{
+					Posn
+					{
+						Abs
+						{	X	53602918,
+							Z	77487503
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a45=
+				{
+					Posn
+					{
+						Abs
+						{	X	53593088,
+							Z	77513717
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a46=
+				{
+					Posn
+					{
+						Abs
+						{	X	53593088,
+							Z	77496514
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a47=
+				{
+					Posn
+					{
+						Abs
+						{	X	53597184,
+							Z	77473167
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a48=
+				{
+					Posn
+					{
+						Abs
+						{	X	53776589,
+							Z	77536655
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a49=
+				{
+					Posn
+					{
+						Abs
+						{	X	53708187,
+							Z	77546076
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a4a=
+				{
+					Posn
+					{
+						Abs
+						{	X	53757338,
+							Z	77537474
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	AFP_EAST_3a4b=
+				{
+					Posn
+					{
+						Abs
+						{	X	53733581,
+							Z	77537884
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	AFP_EAST_3a4c=
+				{
+					Posn
+					{
+						Abs
+						{	X	53602099,
+							Z	77525185
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFP_EAST_3a4d=
+				{
+					Posn
+					{
+						Abs
+						{	X	53776999,
+							Z	77478901
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFP_EAST_3a4e=
+				{
+					Posn
+					{
+						Abs
+						{	X	53754880,
+							Z	77478492
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFP_EAST_3a4f=
+				{
+					Posn
+					{
+						Abs
+						{	X	53733581,
+							Z	77478901
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a50=
+				{
+					Posn
+					{
+						Abs
+						{	X	53777408,
+							Z	77516175
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a51=
+				{
+					Posn
+					{
+						Abs
+						{	X	53776589,
+							Z	77497333
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_EAST_3a80=
+				{
+					Posn
+					{
+						Abs
+						{	X	53628928,
+							Z	77459456
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CTS
+				},
+				SimpleItem	AFP_EAST_3a81=
+				{
+					Posn
+					{
+						Abs
+						{	X	53703270,
+							Z	77530511
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFP_EAST_3a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	53732352,
+							Z	77501839
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFP_EAST_3a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	53621760,
+							Z	77487093
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFP_EAST_3a84=
+				{
+					Posn
+					{
+						Abs
+						{	X	53613158,
+							Z	77473167
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFP_EAST_3a85=
+				{
+					Posn
+					{
+						Abs
+						{	X	53718426,
+							Z	77424424
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFP_EAST_3a86=
+				{
+					Posn
+					{
+						Abs
+						{	X	53741363,
+							Z	77424015
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFP_EAST_3ac0=
+				{
+					Posn
+					{
+						Abs
+						{	X	53718426,
+							Z	77591132
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	AFP_EAST_3ac1=
+				{
+					Posn
+					{
+						Abs
+						{	X	53760616,
+							Z	77560822
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	AFP_EAST_3ac2=
+				{
+					Posn
+					{
+						Abs
+						{	X	53811815,
+							Z	77508393
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	AFP_EAST_3ac3=
+				{
+					Posn
+					{
+						Abs
+						{	X	53761434,
+							Z	77604649
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	AFP_EAST_3ac4=
+				{
+					Posn
+					{
+						Abs
+						{	X	53831066,
+							Z	77559183
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V3NESW
+				}
+		}	}
+	};

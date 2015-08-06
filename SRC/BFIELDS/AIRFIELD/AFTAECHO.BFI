@@ -1,0 +1,372 @@
+//DeadCode JIM 05May99 	SimpleItem	AFTAECHO_3900,
+//DeadCode JIM 05May99 	SimpleItem	AFTAECHO_3940,
+	SimpleItem	AFTAECHO_3980,
+	SimpleItem	AFTAECHO_3981,
+	SimpleItem	AFTAECHO_3a00,
+	SimpleItem	AFTAECHO_3a40,
+	SimpleItem	AFTAECHO_3a41,
+	SimpleItem	AFTAECHO_3a42,
+	SimpleItem	AFTAECHO_3a43,
+	SimpleItem	AFTAECHO_3a44,
+	SimpleItem	AFTAECHO_3a45,
+	SimpleItem	AFTAECHO_3a46,
+	SimpleItem	AFTAECHO_3a47,
+	SimpleItem	AFTAECHO_3a48,
+	SimpleItem	AFTAECHO_3a49,
+	SimpleItem	AFTAECHO_3a4a,
+	SimpleItem	AFTAECHO_3a4b,
+	SimpleItem	AFTAECHO_3a4c,
+	SimpleItem	AFTAECHO_3a4d,
+	SimpleItem	AFTAECHO_3a80,
+	SimpleItem	AFTAECHO_3a81,
+	SimpleItem	AFTAECHO_3a82,
+	SimpleItem	AFTAECHO_3a83,
+	SimpleItem	AFTAECHO_3a84,
+	BattleField
+	{
+		FileName	FIL_1_AFTAECHO=AFTAECHO.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdTaechon,
+		ItemGroup
+		{
+//DeadCode JIM 05May99 				SimpleItem	AFTAECHO_3900=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	50514932,
+//DeadCode JIM 05May99 							Z	87353985
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwaySBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFTAECHO_3940=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	50356827,
+//DeadCode JIM 05May99 							Z	87380610
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwayEBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	50444071,
+							Z	87400270
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	50524353,
+							Z	87338011
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	50356827,
+							Z	87421570
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	50381402,
+							Z	87335553
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	AFTAECHO_3980=
+				{
+					Posn
+					{
+						Abs
+						{	X	50451853,
+							Z	87316302
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		CIVI09
+				},
+				SimpleItem	AFTAECHO_3981=
+				{
+					Posn
+					{
+						Abs
+						{	X	50468647,
+							Z	87316712
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		CIVI09
+				},
+				SimpleItem	AFTAECHO_3a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	50453082,
+							Z	87390440
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		RREW
+				},
+				SimpleItem	AFTAECHO_3a40=
+				{
+					Posn
+					{
+						Abs
+						{	X	50448986,
+							Z	87338830
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAECHO_3a41=
+				{
+					Posn
+					{
+						Abs
+						{	X	50468647,
+							Z	87333915
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAECHO_3a42=
+				{
+					Posn
+					{
+						Abs
+						{	X	50487079,
+							Z	87331457
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAECHO_3a43=
+				{
+					Posn
+					{
+						Abs
+						{	X	50377715,
+							Z	87412968
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAECHO_3a44=
+				{
+					Posn
+					{
+						Abs
+						{	X	50397786,
+							Z	87412558
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAECHO_3a45=
+				{
+					Posn
+					{
+						Abs
+						{	X	50420314,
+							Z	87413378
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAECHO_3a46=
+				{
+					Posn
+					{
+						Abs
+						{	X	50373619,
+							Z	87336782
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAECHO_3a47=
+				{
+					Posn
+					{
+						Abs
+						{	X	50431783,
+							Z	87329000
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAECHO_3a48=
+				{
+					Posn
+					{
+						Abs
+						{	X	50453901,
+							Z	87407234
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAECHO_3a49=
+				{
+					Posn
+					{
+						Abs
+						{	X	50476429,
+							Z	87402728
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAECHO_3a4a=
+				{
+					Posn
+					{
+						Abs
+						{	X	50475201,
+							Z	87427714
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAECHO_3a4b=
+				{
+					Posn
+					{
+						Abs
+						{	X	50366248,
+							Z	87351118
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAECHO_3a4c=
+				{
+					Posn
+					{
+						Abs
+						{	X	50487489,
+							Z	87315483
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAECHO_3a4d=
+				{
+					Posn
+					{
+						Abs
+						{	X	50506740,
+							Z	87315073
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAECHO_3a80=
+				{
+					Posn
+					{
+						Abs
+						{	X	50499367,
+							Z	87389621
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CTS
+				},
+				SimpleItem	AFTAECHO_3a81=
+				{
+					Posn
+					{
+						Abs
+						{	X	50444071,
+							Z	87412968
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFTAECHO_3a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	50356827,
+							Z	87412558
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFTAECHO_3a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	50391642,
+							Z	87333915
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFTAECHO_3a84=
+				{
+					Posn
+					{
+						Abs
+						{	X	50411303,
+							Z	87329819
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				}
+		}	}
+	};

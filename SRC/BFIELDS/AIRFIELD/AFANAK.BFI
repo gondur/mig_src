@@ -1,0 +1,374 @@
+//DeadCode JIM 05May99 	SimpleItem	AFANAK_3900,
+//DeadCode JIM 05May99 	SimpleItem	AFANAK_3940,
+	SimpleItem	AFANAK_3a80,
+	SimpleItem	AFANAK_3a81,
+	SimpleItem	AFANAK_3a82,
+	SimpleItem	AFANAK_3a83,
+	SimpleItem	AFANAK_3a84,
+	SimpleItem	AFANAK_3a85,
+	SimpleItem	AFANAK_3a86,
+	SimpleItem	AFANAK_3a87,
+	SimpleItem	AFANAK_3a88,
+	SimpleItem	AFANAK_3a89,
+	SimpleItem	AFANAK_3a8a,
+	SimpleItem	AFANAK_3a8b,
+	SimpleItem	AFANAK_3a8c,
+	SimpleItem	AFANAK_3a8d,
+	SimpleItem	AFANAK_3a8e,
+	SimpleItem	AFANAK_3a8f,
+	SimpleItem	AFANAK_3a90,
+	SimpleItem	AFANAK_3b00,
+	SimpleItem	AFANAK_3b01,
+	SimpleItem	AFANAK_3b02,
+	SimpleItem	AFANAK_3b03,
+	SimpleItem	AFANAK_3b04,
+	SimpleItem	AFANAK_3b05,
+	SimpleItem	AFANAK_3b06,
+	BattleField
+	{
+		FileName	FIL_1_AFANAK=AFANAK.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdAnak,
+		ItemGroup
+		{
+//DeadCode JIM 05May99 				SimpleItem	AFANAK_3900=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	50290470,
+//DeadCode JIM 05May99 							Z	71642489
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwaySBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFANAK_3940=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	50369319,
+//DeadCode JIM 05May99 							Z	71755948
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwayEBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	50252787,
+							Z	71639212
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	50362970,
+							Z	71792403
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	AFANAK_3a80=
+				{
+					Posn
+					{
+						Abs
+						{	X	50423591,
+							Z	71755948
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3a81=
+				{
+					Posn
+					{
+						Abs
+						{	X	50295795,
+							Z	71728095
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	50324877,
+							Z	71619141
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFANAK_3a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	50239679,
+							Z	71662150
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3a84=
+				{
+					Posn
+					{
+						Abs
+						{	X	50258520,
+							Z	71649452
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3a85=
+				{
+					Posn
+					{
+						Abs
+						{	X	50265893,
+							Z	71661740
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3a86=
+				{
+					Posn
+					{
+						Abs
+						{	X	50389595,
+							Z	71777657
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFANAK_3a87=
+				{
+					Posn
+					{
+						Abs
+						{	X	50403521,
+							Z	71770694
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFANAK_3a88=
+				{
+					Posn
+					{
+						Abs
+						{	X	50406798,
+							Z	71733420
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3a89=
+				{
+					Posn
+					{
+						Abs
+						{	X	50359283,
+							Z	71780524
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFANAK_3a8a=
+				{
+					Posn
+					{
+						Abs
+						{	X	50349862,
+							Z	71776428
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFANAK_3a8b=
+				{
+					Posn
+					{
+						Abs
+						{	X	50317504,
+							Z	71791174
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3a8c=
+				{
+					Posn
+					{
+						Abs
+						{	X	50283096,
+							Z	71716217
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3a8d=
+				{
+					Posn
+					{
+						Abs
+						{	X	50272447,
+							Z	71718265
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3a8e=
+				{
+					Posn
+					{
+						Abs
+						{	X	50316275,
+							Z	71604805
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFANAK_3a8f=
+				{
+					Posn
+					{
+						Abs
+						{	X	50342080,
+							Z	71646175
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3a90=
+				{
+					Posn
+					{
+						Abs
+						{	X	50334298,
+							Z	71634297
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFANAK_3b00=
+				{
+					Posn
+					{
+						Abs
+						{	X	50352730,
+							Z	71784211
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		RTRUCK
+				},
+				SimpleItem	AFANAK_3b01=
+				{
+					Posn
+					{
+						Abs
+						{	X	50294156,
+							Z	71791174
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFANAK_3b02=
+				{
+					Posn
+					{
+						Abs
+						{	X	50334707,
+							Z	71778067
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFANAK_3b03=
+				{
+					Posn
+					{
+						Abs
+						{	X	50394509,
+							Z	71711302
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFANAK_3b04=
+				{
+					Posn
+					{
+						Abs
+						{	X	50375259,
+							Z	71681810
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFANAK_3b05=
+				{
+					Posn
+					{
+						Abs
+						{	X	50277772,
+							Z	71704747
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFANAK_3b06=
+				{
+					Posn
+					{
+						Abs
+						{	X	50274904,
+							Z	71676895
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				}
+		}	}
+	};

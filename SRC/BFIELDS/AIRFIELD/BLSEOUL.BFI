@@ -1,0 +1,215 @@
+	WayPoint	blseoul_0100,
+	SimpleItem	blseoul_1703,
+	SimpleItem	blseoul_1704,
+	GroundItem	blseoul_3c80,
+	SimpleItem	blseoul_2aff,
+	SimpleItem	blseoul_2afe,
+	SimpleItem	blseoul_2afd,
+	SimpleItem	blseoul_2afc,
+	SimpleItem	blseoul_2afb,
+	SimpleItem	blseoul_2afa,
+	SimpleItem	blseoul_2af9,
+	SimpleItem	blseoul_2af8,
+	SimpleItem	blseoul_2af7,
+	SimpleItem	blseoul_2af6,
+	BattleField
+	{
+		FileName	FIL_1_BLSEOUL=blseoul.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlSeoul,
+		ItemGroup
+		{
+				SimpleItem	blseoul_2aff=
+				{
+					Posn
+					{
+						Abs
+						{	X	62806784,
+							Z	60859904
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI2,
+					Shape		WINDSC
+				},
+				SimpleItem	blseoul_2afe=
+				{
+					Posn
+					{
+						Abs
+						{	X	62783232,
+							Z	60859904
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI1,
+					Shape		WINDSC
+				},
+				SimpleItem	blseoul_2afd=
+				{
+					Posn
+					{
+						Abs
+						{	X	62769152,
+							Z	60860672
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI0,
+					Shape		WINDSC
+				},
+				SimpleItem	blseoul_2afc=
+				{
+					Posn
+					{
+						Abs
+						{	X	62767104,
+							Z	60871936
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIE,
+					Shape		WINDSC
+				},
+				SimpleItem	blseoul_2afb=
+				{
+					Posn
+					{
+						Abs
+						{	X	62769596,
+							Z	60875088
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIL,
+					Shape		WINDSC
+				},
+				SimpleItem	blseoul_2afa=
+				{
+					Posn
+					{
+						Abs
+						{	X	62881792,
+							Z	60881152
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK0,
+					Shape		WINDSC
+				},
+				SimpleItem	blseoul_2af9=
+				{
+					Posn
+					{
+						Abs
+						{	X	62823168,
+							Z	60881408
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK1,
+					Shape		WINDSC
+				},
+				SimpleItem	blseoul_2af8=
+				{
+					Posn
+					{
+						Abs
+						{	X	62817024,
+							Z	60881408
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKL,
+					Shape		WINDSC
+				},
+				SimpleItem	blseoul_2af7=
+				{
+					Posn
+					{
+						Abs
+						{	X	62820096,
+							Z	60881408
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKW,
+					Shape		WINDSC
+				},
+				SimpleItem	blseoul_2af6=
+				{
+					Posn
+					{
+						Abs
+						{	X	62705903,
+							Z	60871606
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_LANDING,
+					Shape		WINDSC
+				},
+				SimpleItem	blseoul_1703=
+				{
+					Posn
+					{
+						Abs
+						{	X	62756284,
+							Z	60883894
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		UNSBAA
+				},
+				SimpleItem	blseoul_1704=
+				{
+					Posn
+					{
+						Abs
+						{	X	62891043,
+							Z	60856451
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		UNSBAA
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	62972160,
+						Z	60932096
+					}
+				},
+				Route
+				{
+					WayPoint	blseoul_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	62962944,
+								Z	60886528
+							}
+						},
+						Vel	200,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	SQUAD_ECHELONRIGHT_Left,
+				GroundItem	blseoul_3c80=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	BOAT,
+					Vel	200
+			}	}	}
+	};

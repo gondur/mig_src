@@ -1,0 +1,246 @@
+	SimpleItem	YULLI_1813,
+	SimpleItem	YULLI_1814,
+	SimpleItem	YULLI_204f,
+	SimpleItem	YULLI_2050,
+	SimpleItem	YULLI_2051,
+	SimpleItem	YULLI_2052,
+	SimpleItem	YULLI_2053,
+	SimpleItem	YULLI_2054,
+	SimpleItem	YULLI_2055,
+	SimpleItem	YULLI_2056,
+	SimpleItem	YULLI_2057,
+	SimpleItem	YULLI_2219,
+	SimpleItem	YULLI_221a,
+	SimpleItem	YULLI_221b,
+	SimpleItem	YULLI_221c,
+	SimpleItem	YULLI_221d,
+	SimpleItem	YULLI_221e,
+	SimpleItem	YULLI_221f,
+	BattleField
+	{
+		FileName	FIL_1_YULLI=YULLI.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StYulLi,
+		ItemGroup
+		{
+				SimpleItem	YULLI_204f=
+				{
+					Posn
+					{
+						Abs
+						{	X	57127936,
+							Z	75880448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		STEPTO
+				},
+				SimpleItem	YULLI_2050=
+				{
+					Posn
+					{
+						Abs
+						{	X	57152512,
+							Z	75936768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YULLI_2051=
+				{
+					Posn
+					{
+						Abs
+						{	X	57151488,
+							Z	75961344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	YULLI_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	57177088,
+							Z	75945984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	YULLI_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	57190400,
+							Z	75904000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	YULLI_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	57114624,
+							Z	75955200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YULLI_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	57198592,
+							Z	75926528
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	YULLI_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	57132032,
+							Z	75940864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+			SimpleItem	YULLI_1813=
+			{
+				Posn
+				{
+					Abs
+					{	X	57228288,
+						Z	75981824
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			},
+			SimpleItem	YULLI_1814=
+			{
+				Posn
+				{
+					Abs
+					{	X	57190400,
+						Z	75962368
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	YULLI_2219=
+			{
+				Posn
+				{
+					Abs
+					{	X	57205760,
+						Z	75976704
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	YULLI_221a=
+			{
+				Posn
+				{
+					Abs
+					{	X	57243648,
+						Z	75962368
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP3
+			},
+			SimpleItem	YULLI_221b=
+			{
+				Posn
+				{
+					Abs
+					{	X	57190400,
+						Z	75992064
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	YULLI_221c=
+			{
+				Posn
+				{
+					Abs
+					{	X	57233408,
+						Z	75934720
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			},
+			SimpleItem	YULLI_221d=
+			{
+				Posn
+				{
+					Abs
+					{	X	57218048,
+						Z	75958272
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP3
+			},
+			SimpleItem	YULLI_221e=
+			{
+				Posn
+				{
+					Abs
+					{	X	57179136,
+						Z	76011520
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	YULLI_221f=
+			{
+				Posn
+				{
+					Abs
+					{	X	57216000,
+						Z	76001280
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP3
+			},
+				SimpleItem	YULLI_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	57132032,
+							Z	75967488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				}
+		}	}
+	};

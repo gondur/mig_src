@@ -1,0 +1,5 @@
+SNIP	D_UID_NODE_AnTung	=	"Chinese city North of Yalu";
+SNIP	D_UID_NODE_sinuiju	=	"Korean city South of Yalu";
+SNIP	D_UID_BrRlSinanju1	=	"This secondary rail bridge is single";
+SNIP	D_UID_BrRlSinanju0	=	"This double-track steel-trestle rail";
+SNIP	D_UID_BrRdSinanju	=	"This main highway bridge spans the C";

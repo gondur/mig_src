@@ -1,0 +1,337 @@
+	SimpleItem	PYONGSAN_2004,
+	SimpleItem	PYONGSAN_2005,
+	SimpleItem	PYONGSAN_2006,
+	SimpleItem	PYONGSAN_2007,
+	SimpleItem	PYONGSAN_2008,
+	SimpleItem	PYONGSAN_2009,
+	SimpleItem	PYONGSAN_200a,
+	SimpleItem	PYONGSAN_200b,
+	SimpleItem	PYONGSAN_200c,
+	SimpleItem	PYONGSAN_200d,
+	SimpleItem	PYONGSAN_200e,
+	SimpleItem	PYONGSAN_200f,
+	SimpleItem	PYONGSAN_2010,
+	SimpleItem	PYONGSAN_2011,
+	SimpleItem	PYONGSAN_2012,
+	SimpleItem	PYONGSAN_2013,
+	SimpleItem	PYONGSAN_2014,
+	SimpleItem	PYONGSAN_2015,
+	SimpleItem	PYONGSAN_2016,
+	SimpleItem	PYONGSAN_2017,
+	SimpleItem	PYONGSAN_2018,
+	SimpleItem	PYONGSAN_2019,
+	SimpleItem	PYONGSAN_201a,
+	SimpleItem	PYONGSAN_201b,
+	SimpleItem	PYONGSAN_201c,
+	BattleField
+	{
+		FileName	FIL_1_PYONGSAN=PYONGSAN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StPyongsan,
+		ItemGroup
+		{
+			SimpleItem	PYONGSAN_2015=
+			{
+				Posn
+				{
+					Abs
+					{	X	58492928,
+						Z	69995520
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V3NESW
+			},
+			SimpleItem	PYONGSAN_2016=
+			{
+				Posn
+				{
+					Abs
+					{	X	58478592,
+						Z	69980160
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	PYONGSAN_2017=
+			{
+				Posn
+				{
+					Abs
+					{	X	58423296,
+						Z	70018048
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+				SimpleItem	PYONGSAN_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	58398720,
+							Z	70008832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	PYONGSAN_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	58520576,
+							Z	69929984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	PYONGSAN_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	58502144,
+							Z	70013952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	PYONGSAN_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	58424320,
+							Z	69978112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI01
+				},
+				SimpleItem	PYONGSAN_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	58452992,
+							Z	69957632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PYONGSAN_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	58469376,
+							Z	69942272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PYONGSAN_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	58486784,
+							Z	69922816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PYONGSAN_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	58473472,
+							Z	70035456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	PYONGSAN_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	58428416,
+							Z	69939200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	PYONGSAN_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	58451968,
+							Z	69995520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	PYONGSAN_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	58389504,
+							Z	69984256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PYONGSAN_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	58459136,
+							Z	69924864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PYONGSAN_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	58482688,
+							Z	69900288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PYONGSAN_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	58501120,
+							Z	69907456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PYONGSAN_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	58472448,
+							Z	69912576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PYONGSAN_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	58395648,
+							Z	69966848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PYONGSAN_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	58399744,
+							Z	69949440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	PYONGSAN_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	58449920,
+							Z	70034432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGSAN_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	58507264,
+							Z	69981184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGSAN_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	58457088,
+							Z	70021120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGSAN_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	58546176,
+							Z	69931008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGSAN_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	58525696,
+							Z	69953536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				}
+		}	}
+	};

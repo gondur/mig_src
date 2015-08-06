@@ -1,0 +1,90 @@
+	SimpleItem	KOKSAN_2001,
+	SimpleItem	KOKSAN_2002,
+	SimpleItem	KOKSAN_2003,
+	SimpleItem	KOKSAN_2004,
+	SimpleItem	KOKSAN_2005,
+	SimpleItem	KOKSAN_2006,
+	BattleField
+	{
+		FileName	FIL_1_KOKSAN=KOKSAN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKoksan,
+		ItemGroup
+		{
+				SimpleItem	KOKSAN_2001=
+				{
+					Posn
+					{
+						Abs
+						{	X	60537856,
+							Z	75020288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KOKSAN_2002=
+				{
+					Posn
+					{
+						Abs
+						{	X	60557312,
+							Z	75002880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KOKSAN_2003=
+				{
+					Posn
+					{
+						Abs
+						{	X	60550144,
+							Z	74960896
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KOKSAN_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	60534784,
+							Z	74982400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KOKSAN_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	60515328,
+							Z	75012096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KOKSAN_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	60539904,
+							Z	75000832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		GHANDI
+				}
+		}	}
+	};

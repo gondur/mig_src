@@ -1,0 +1,116 @@
+	SimpleItem	KIMCHON_040b,
+	SimpleItem	KIMCHON_040f,
+	SimpleItem	KIMCHON_0412,
+	SimpleItem	KIMCHON_0415,
+	SimpleItem	KIMCHON_0417,
+	SimpleItem	KIMCHON_041a,
+	SimpleItem	KIMCHON_041d,
+	SimpleItem	KIMCHON_0420,
+	BattleField
+	{
+		FileName	FIL_1_KIMCHON=KIMCHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKimchon,
+		ItemGroup
+		{
+				SimpleItem	KIMCHON_040b=
+				{
+					Posn
+					{
+						Abs
+						{	X	73067520,
+							Z	45465600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KIMCHON_040f=
+				{
+					Posn
+					{
+						Abs
+						{	X	73118720,
+							Z	45360128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KIMCHON_0412=
+				{
+					Posn
+					{
+						Abs
+						{	X	73031680,
+							Z	45490176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KIMCHON_0415=
+				{
+					Posn
+					{
+						Abs
+						{	X	73143296,
+							Z	45389824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KIMCHON_0417=
+				{
+					Posn
+					{
+						Abs
+						{	X	73140224,
+							Z	45326336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KIMCHON_041a=
+				{
+					Posn
+					{
+						Abs
+						{	X	73166848,
+							Z	45434880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KIMCHON_041d=
+				{
+					Posn
+					{
+						Abs
+						{	X	73108480,
+							Z	45450240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KIMCHON_0420=
+				{
+					Posn
+					{
+						Abs
+						{	X	73090048,
+							Z	45410304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				}
+		}	}
+	};

@@ -1,0 +1,26 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=60 Hall Zeck
+ERRORLOG=MIG.LOG
+LCID=0x809 0x0 0x0 ; English (British)
+REPORT=Yes
+CONTENTS=HIDD_THEMAP
+TITLE=MIG Alley Help
+BMROOT=.
+BMROOT=..
+ROOT=..
+ROOT=.
+HLP=MIG.HLP
+
+[FILES]
+.\mig.rtf
+
+[MAP]
+#include .\MIG.hm
+
+[WINDOWS]
+main="",(18,61,453,590),27904,(r14876671),(r12632256),f3
+
+[FONTS]
+=Arial

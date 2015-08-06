@@ -1,0 +1,103 @@
+	WayPoint	BRIDGE05_0100,
+	WayPoint	BRIDGE05_0101,
+	SimpleItem	BRIDGE05_0428,
+	SimpleItem	BRIDGE05_042b,
+	SimpleItem	BRIDGE05_042e,
+	GroundItem	BRIDGE05_3080,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE05=BRIDGE05.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRdUngig	},
+	ItemGroup
+	{	Target	UID_BrRdChosan,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE05_0428=
+				{
+					Posn
+					{
+						Abs
+						{	X	52156416,
+							Z	96221184
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE05_042b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52224000,
+							Z	96329728
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE05_042e=
+				{
+					Posn
+					{
+						Abs
+						{	X	52178944,
+							Z	96293888
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	52162048,
+						Z	96270848
+					}
+				},
+				Route
+				{
+					WayPoint	BRIDGE05_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	52091904,
+								Z	96302080
+							}
+						},
+						Vel	29,
+						Action	WP_spotterapproach
+					},
+					WayPoint	BRIDGE05_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	52055552,
+								Z	96289792
+							}
+						},
+						Vel	29,
+						Action	wpstartloopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	SQUAD_TRUCKCONVOY,
+				GroundItem	BRIDGE05_3080=
+				{
+					BlueCombatVehicleBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	SAMPAN,
+					Vel	29
+			}	}	}
+	};

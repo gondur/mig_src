@@ -1,0 +1,181 @@
+	SimpleItem	KOSAN_2001,
+	SimpleItem	KOSAN_2002,
+	SimpleItem	KOSAN_2003,
+	SimpleItem	KOSAN_2004,
+	SimpleItem	KOSAN_2005,
+	SimpleItem	KOSAN_2006,
+	SimpleItem	KOSAN_2007,
+	SimpleItem	KOSAN_2008,
+	SimpleItem	KOSAN_2009,
+	SimpleItem	KOSAN_200a,
+	SimpleItem	KOSAN_200b,
+	SimpleItem	KOSAN_200c,
+	SimpleItem	KOSAN_200d,
+	BattleField
+	{
+		FileName	FIL_1_KOSAN=KOSAN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKosan,
+		ItemGroup
+		{
+				SimpleItem	KOSAN_2001=
+				{
+					Posn
+					{
+						Abs
+						{	X	67112960,
+							Z	75858944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KOSAN_2002=
+				{
+					Posn
+					{
+						Abs
+						{	X	67084288,
+							Z	75838464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KOSAN_2003=
+				{
+					Posn
+					{
+						Abs
+						{	X	67072000,
+							Z	75804672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KOSAN_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	67102720,
+							Z	75757568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KOSAN_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	67147776,
+							Z	75728896
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KOSAN_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	67196928,
+							Z	75735040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WF3M
+				},
+				SimpleItem	KOSAN_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	67189760,
+							Z	75755520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WF4M
+				},
+				SimpleItem	KOSAN_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	67193856,
+							Z	75843584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WF5M
+				},
+				SimpleItem	KOSAN_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	67145728,
+							Z	75843584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KOSAN_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	67155968,
+							Z	75800576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KOSAN_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	67188736,
+							Z	75812864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WF5M
+				},
+				SimpleItem	KOSAN_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67186688,
+							Z	75783168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WF4M
+				},
+				SimpleItem	KOSAN_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67140608,
+							Z	75769856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				}
+		}	}
+	};

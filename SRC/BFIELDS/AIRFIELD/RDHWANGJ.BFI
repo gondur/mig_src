@@ -1,0 +1,135 @@
+	WayPoint	RDHWANGJ_0107,
+	WayPoint	RDHWANGJ_0108,
+	WayPoint	RDHWANGJ_0109,
+	WayPoint	RDHWANGJ_010a,
+	WayPoint	RDHWANGJ_010b,
+	GroundItem	RDHWANGJ_3080,
+	GroundItem	RDHWANGJ_3081,
+	BattleField
+	{
+		FileName	FIL_1_RDHWANGJ=RDHWANGJ.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdHwangju,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdHwangju, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	53054871,
+						Z	73500032
+					}
+				},
+				Route
+				{
+					WayPoint	RDHWANGJ_0107=
+					{
+						Posn
+						{
+							Abs
+							{	X	53041355,
+								Z	73476684
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDHWANGJ_0108=
+					{
+						Posn
+						{
+							Abs
+							{	X	53261720,
+								Z	73362406
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDHWANGJ_3080=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	{List CHTRCK,SFTRCK,CHTRCK},
+					Vel	112
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	53118769,
+						Z	73533619
+					}
+				},
+				Route
+				{
+					WayPoint	RDHWANGJ_0109=
+					{
+						Posn
+						{
+							Abs
+							{	X	53212568,
+								Z	73484467
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDHWANGJ_010a=
+					{
+						Posn
+						{
+							Abs
+							{	X	53223627,
+								Z	73467673
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDHWANGJ_010b=
+					{
+						Posn
+						{
+							Abs
+							{	X	53254347,
+								Z	73452518
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDHWANGJ_3081=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CH12ML,
+					Vel	98
+			}	}	}
+	};

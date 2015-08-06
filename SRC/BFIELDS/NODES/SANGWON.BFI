@@ -1,0 +1,38 @@
+	SimpleItem	SANGWON_041d,
+	SimpleItem	SANGWON_0421,
+	BattleField
+	{
+		FileName	FIL_1_SANGWON=SANGWON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StSangwon,
+		ItemGroup
+		{
+				SimpleItem	SANGWON_041d=
+				{
+					Posn
+					{
+						Abs
+						{	X	55863296,
+							Z	75680768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SANGWON_0421=
+				{
+					Posn
+					{
+						Abs
+						{	X	55800832,
+							Z	75636736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				}
+		}	}
+	};

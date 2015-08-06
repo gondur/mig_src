@@ -1,0 +1,75 @@
+	WayPoint	BRIDGE33_0100,
+	SimpleItem	BRIDGE33_0405,
+	SimpleItem	BRIDGE33_0409,
+	GroundItem	BRIDGE33_3080,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE33=BRIDGE33.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRdChuncheon0,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE33_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	69280768,
+							Z	64364544
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE33_0409=
+				{
+					Posn
+					{
+						Abs
+						{	X	69337088,
+							Z	64387584
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	69307904,
+						Z	64432640
+					}
+				},
+				Route
+				{
+					WayPoint	BRIDGE33_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	69306880,
+								Z	64351232
+							}
+						},
+						Vel	43,
+						Action	wpstartloopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	SQUAD_TRUCKCONVOY,
+				GroundItem	BRIDGE33_3080=
+				{
+					BlueCombatVehicleBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	FISHR,
+					Vel	43
+			}	}	}
+	};

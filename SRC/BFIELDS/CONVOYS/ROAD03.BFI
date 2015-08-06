@@ -1,0 +1,116 @@
+	WayPoint	Road03_010a,
+	WayPoint	Road03_010b,
+	WayPoint	Road03_010c,
+	GroundItem	Road03_2f4a,
+	GroundItem	Road03_2f4b,
+	GroundItem	Road03_2f4c,
+	BattleField
+	{
+		FileName	FIL_1_ROAD03=Road03.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_ROAD_Huichon2Kujang,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	56722432,
+						Z	88531968
+					}
+				},
+				Route
+				{
+					WayPoint	Road03_010a=
+					{
+						Posn
+						{
+							Abs
+							{	X	56773632,
+								Z	88480768
+							}
+						},
+						Action	wpdmbtrkstopno,
+						Vel 50
+					}
+				},
+				NumInForm		-3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	Road03_2f4a=
+				{
+					RedTruckBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	50
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	55796736,
+						Z	88223744
+					}
+				},
+				Route
+				{
+					WayPoint	Road03_010b=
+					{
+						Posn
+						{
+							Abs
+							{	X	55780352,
+								Z	88203264
+							}
+						},
+						Action	wpdmbtrkstopno,
+						Vel	50
+					}
+				},
+				NumInForm		-3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	Road03_2f4b=
+				{
+					RedTruckBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	50
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	56398848,
+						Z	88586240
+					}
+				},
+				Route
+				{
+					WayPoint	Road03_010c=
+					{
+						Posn
+						{
+							Abs
+							{	X	56450048,
+								Z	88535040
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		-3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	Road03_2f4c=
+				{
+					RedTruckBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	50
+			}	}	}
+	};

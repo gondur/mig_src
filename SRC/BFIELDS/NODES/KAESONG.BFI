@@ -1,0 +1,836 @@
+	SimpleItem	KAESONG_0438,
+	SimpleItem	KAESONG_043b,
+	SimpleItem	KAESONG_043e,
+	SimpleItem	KAESONG_0441,
+	SimpleItem	KAESONG_0447,
+	SimpleItem	KAESONG_044a,
+	SimpleItem	KAESONG_044d,
+	SimpleItem	KAESONG_044f,
+	SimpleItem	KAESONG_0451,
+	SimpleItem	KAESONG_0456,
+	SimpleItem	KAESONG_0459,
+	SimpleItem	KAESONG_045c,
+	SimpleItem	KAESONG_045f,
+	SimpleItem	KAESONG_0462,
+	SimpleItem	KAESONG_0465,
+	SimpleItem	KAESONG_046a,
+	SimpleItem	KAESONG_046d,
+	SimpleItem	KAESONG_0471,
+	SimpleItem	KAESONG_0474,
+	SimpleItem	KAESONG_0476,
+	SimpleItem	KAESONG_1803,
+	SimpleItem	KAESONG_1804,
+	SimpleItem	KAESONG_1805,
+	SimpleItem	KAESONG_1806,
+	SimpleItem	KAESONG_1807,
+	SimpleItem	KAESONG_1808,
+	SimpleItem	KAESONG_2004,
+	SimpleItem	KAESONG_2005,
+	SimpleItem	KAESONG_2006,
+	SimpleItem	KAESONG_2007,
+	SimpleItem	KAESONG_2008,
+	SimpleItem	KAESONG_2009,
+	SimpleItem	KAESONG_200a,
+	SimpleItem	KAESONG_200b,
+	SimpleItem	KAESONG_200c,
+	SimpleItem	KAESONG_200d,
+	SimpleItem	KAESONG_200e,
+	SimpleItem	KAESONG_200f,
+	SimpleItem	KAESONG_2010,
+	SimpleItem	KAESONG_2011,
+	SimpleItem	KAESONG_2012,
+	SimpleItem	KAESONG_2013,
+	SimpleItem	KAESONG_2014,
+	SimpleItem	KAESONG_2015,
+	SimpleItem	KAESONG_2016,
+	SimpleItem	KAESONG_2017,
+	SimpleItem	KAESONG_2018,
+	SimpleItem	KAESONG_2019,
+	SimpleItem	KAESONG_201a,
+	SimpleItem	KAESONG_201b,
+	SimpleItem	KAESONG_201c,
+	SimpleItem	KAESONG_201d,
+	SimpleItem	KAESONG_201e,
+	SimpleItem	KAESONG_2200,
+	SimpleItem	KAESONG_2201,
+	SimpleItem	KAESONG_2202,
+	SimpleItem	KAESONG_2203,
+	SimpleItem	KAESONG_2204,
+	SimpleItem	KAESONG_2206,
+	SimpleItem	KAESONG_2207,
+	SimpleItem	KAESONG_2208,
+	SimpleItem	KAESONG_220a,
+	SimpleItem	KAESONG_220b,
+	BattleField
+	{
+		FileName	FIL_1_KAESONG=KAESONG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKaesong,
+		ItemGroup
+		{
+			SimpleItem	KAESONG_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	59849728,
+						Z	65967104
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+				SimpleItem	KAESONG_0438=
+				{
+					Posn
+					{
+						Abs
+						{	X	59856896,
+							Z	66019328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KAESONG_043b=
+				{
+					Posn
+					{
+						Abs
+						{	X	59813888,
+							Z	65986560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KAESONG_043e=
+				{
+					Posn
+					{
+						Abs
+						{	X	59771904,
+							Z	66036736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KAESONG_0441=
+				{
+					Posn
+					{
+						Abs
+						{	X	59771904,
+							Z	65893376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KAESONG_0447=
+				{
+					Posn
+					{
+						Abs
+						{	X	59911168,
+							Z	65902592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KAESONG_044a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59876352,
+							Z	65845248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KAESONG_044d=
+				{
+					Posn
+					{
+						Abs
+						{	X	59842560,
+							Z	65812480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	KAESONG_044f=
+				{
+					Posn
+					{
+						Abs
+						{	X	59889664,
+							Z	65799168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	KAESONG_0451=
+				{
+					Posn
+					{
+						Abs
+						{	X	59927552,
+							Z	65817600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KAESONG_0456=
+				{
+					Posn
+					{
+						Abs
+						{	X	59919360,
+							Z	65929216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	KAESONG_0459=
+				{
+					Posn
+					{
+						Abs
+						{	X	59831296,
+							Z	65946624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KAESONG_045c=
+				{
+					Posn
+					{
+						Abs
+						{	X	59815936,
+							Z	65938432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KAESONG_045f=
+				{
+					Posn
+					{
+						Abs
+						{	X	59785216,
+							Z	65908736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KAESONG_0462=
+				{
+					Posn
+					{
+						Abs
+						{	X	59773952,
+							Z	65910784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KAESONG_0465=
+				{
+					Posn
+					{
+						Abs
+						{	X	59910144,
+							Z	65887232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KAESONG_046a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59828224,
+							Z	66017280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KAESONG_046d=
+				{
+					Posn
+					{
+						Abs
+						{	X	59827200,
+							Z	66062336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KAESONG_0471=
+				{
+					Posn
+					{
+						Abs
+						{	X	59685888,
+							Z	65853440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	KAESONG_0474=
+				{
+					Posn
+					{
+						Abs
+						{	X	59767808,
+							Z	65993728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KAESONG_0476=
+				{
+					Posn
+					{
+						Abs
+						{	X	59684864,
+							Z	65908736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	KAESONG_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	59852800,
+							Z	65948672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KAESONG_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	59863040,
+							Z	65934336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KAESONG_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	59890688,
+							Z	65974272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KAESONG_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	59909120,
+							Z	65983488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KAESONG_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59797504,
+							Z	65930240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KAESONG_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	59792384,
+							Z	65945600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KAESONG_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	59789312,
+							Z	65968128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KAESONG_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	59810816,
+							Z	65903616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KAESONG_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	59776000,
+							Z	66064384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KAESONG_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	59764736,
+							Z	66089984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KAESONG_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	59845632,
+							Z	66001920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KAESONG_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	59743232,
+							Z	65886208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KAESONG_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	59767808,
+							Z	65924096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KAESONG_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	59797504,
+							Z	66011136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KAESONG_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	59878400,
+							Z	66013184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KAESONG_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	59816960,
+							Z	66041856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KAESONG_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	59846656,
+							Z	66045952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KAESONG_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	59766784,
+							Z	65950720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KAESONG_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	59835392,
+							Z	65918976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KAESONG_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	59851776,
+							Z	65910784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KAESONG_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	59873280,
+							Z	65908736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KAESONG_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	59904000,
+							Z	65864704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KAESONG_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	59888640,
+							Z	65862656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KAESONG_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	59902976,
+							Z	65840128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_SdRdKaesong,
+		ItemGroup
+		{
+				SimpleItem	KAESONG_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59853824,
+							Z	65869824
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	KAESONG_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	59778048,
+							Z	65859584
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	KAESONG_2208=
+				{
+					Posn
+					{
+						Abs
+						{	X	59793408,
+							Z	65861632
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		FUELS
+				},
+				SimpleItem	KAESONG_220a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59718656,
+							Z	65847296
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	KAESONG_220b=
+				{
+					Posn
+					{
+						Abs
+						{	X	59742208,
+							Z	65843200
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	KAESONG_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	59686912,
+							Z	65885184
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KAESONG_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	59930624,
+							Z	65860608
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KAESONG_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	59837440,
+							Z	65839104
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KAESONG_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	59718656,
+							Z	65822720
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KAESONG_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	59890688,
+							Z	65926144
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KAESONG_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	59871232,
+							Z	65817600
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KAESONG_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	59838464,
+							Z	65889280
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	KAESONG_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	59882496,
+							Z	65893376
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	KAESONG_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	59862016,
+							Z	65889280
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	KAESONG_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	59805696,
+							Z	65883136
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	KAESONG_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	59762688,
+							Z	65860608
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	KAESONG_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	59868160,
+							Z	65867776
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	KAESONG_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	59744256,
+							Z	65861632
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				}
+		}	}
+	};

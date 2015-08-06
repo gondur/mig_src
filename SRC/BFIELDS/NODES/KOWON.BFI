@@ -1,0 +1,272 @@
+	SimpleItem	KOWON_2004,
+	SimpleItem	KOWON_2005,
+	SimpleItem	KOWON_2006,
+	SimpleItem	KOWON_2007,
+	SimpleItem	KOWON_2008,
+	SimpleItem	KOWON_2009,
+	SimpleItem	KOWON_200a,
+	SimpleItem	KOWON_200b,
+	SimpleItem	KOWON_200c,
+	SimpleItem	KOWON_200d,
+	SimpleItem	KOWON_200e,
+	SimpleItem	KOWON_200f,
+	SimpleItem	KOWON_2010,
+	SimpleItem	KOWON_2011,
+	SimpleItem	KOWON_2012,
+	SimpleItem	KOWON_2013,
+	SimpleItem	KOWON_2014,
+	SimpleItem	KOWON_2015,
+	SimpleItem	KOWON_2016,
+	SimpleItem	KOWON_2017,
+	BattleField
+	{
+		FileName	FIL_1_KOWON=KOWON.BF,
+		Title	{},
+		Comment	{},
+
+	ItemGroup
+	{	Target	UID_StKowon,
+		ItemGroup
+		{
+			SimpleItem	KOWON_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	65618944,
+						Z	82251776
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	KOWON_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	65612800,
+						Z	82191360
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V4NWSE
+			},
+			SimpleItem	KOWON_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	65617920,
+						Z	82134016
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	KOWON_2007=
+			{
+				Posn
+				{
+					Abs
+					{	X	65562624,
+						Z	82139136
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	KOWON_2008=
+			{
+				Posn
+				{
+					Abs
+					{	X	65500160,
+						Z	82238464
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem	KOWON_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	65568768,
+						Z	82317312
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST1
+			},
+			SimpleItem	KOWON_200a=
+			{
+				Posn
+				{
+					Abs
+					{	X	65659904,
+						Z	82294784
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST1
+			},
+			SimpleItem	KOWON_200b=
+			{
+				Posn
+				{
+					Abs
+					{	X	65524736,
+						Z	82322432
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST1
+			},
+			SimpleItem	KOWON_200c=
+			{
+				Posn
+				{
+					Abs
+					{	X	65581056,
+						Z	82168832
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	KOWON_200d=
+			{
+				Posn
+				{
+					Abs
+					{	X	65581056,
+						Z	82203648
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN4
+			},
+			SimpleItem	KOWON_200e=
+			{
+				Posn
+				{
+					Abs
+					{	X	65541120,
+						Z	82234368
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	KOWON_200f=
+			{
+				Posn
+				{
+					Abs
+					{	X	65615872,
+						Z	82160640
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V4NWSE
+			},
+			SimpleItem	KOWON_2010=
+			{
+				Posn
+				{
+					Abs
+					{	X	65524736,
+						Z	82293760
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	KOWON_2011=
+			{
+				Posn
+				{
+					Abs
+					{	X	65571840,
+						Z	82283520
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN4
+			},
+			SimpleItem	KOWON_2012=
+			{
+				Posn
+				{
+					Abs
+					{	X	65609728,
+						Z	82278400
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V2EW
+			},
+			SimpleItem	KOWON_2013=
+			{
+				Posn
+				{
+					Abs
+					{	X	65614848,
+						Z	82231296
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	KOWON_2014=
+			{
+				Posn
+				{
+					Abs
+					{	X	65622016,
+						Z	82178048
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	KOWON_2015=
+			{
+				Posn
+				{
+					Abs
+					{	X	65548288,
+						Z	82177024
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	KOWON_2016=
+			{
+				Posn
+				{
+					Abs
+					{	X	65581056,
+						Z	82239488
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	KOWON_2017=
+			{
+				Posn
+				{
+					Abs
+					{	X	65617920,
+						Z	82212864
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			}
+	}	}	
+	};

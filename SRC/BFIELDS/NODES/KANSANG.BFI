@@ -1,0 +1,129 @@
+	SimpleItem	KANSANG_2001,
+	SimpleItem	KANSANG_2002,
+	SimpleItem	KANSANG_2003,
+	SimpleItem	KANSANG_2004,
+	SimpleItem	KANSANG_2005,
+	SimpleItem	KANSANG_2006,
+	SimpleItem	KANSANG_2007,
+	SimpleItem	KANSANG_2008,
+	SimpleItem	KANSANG_2009,
+	BattleField
+	{
+		FileName	FIL_1_KANSANG=KANSANG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKansang,
+		ItemGroup
+		{
+				SimpleItem	KANSANG_2001=
+				{
+					Posn
+					{
+						Abs
+						{	X	76309504,
+							Z	70391808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANSANG_2002=
+				{
+					Posn
+					{
+						Abs
+						{	X	76309504,
+							Z	70434816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANSANG_2003=
+				{
+					Posn
+					{
+						Abs
+						{	X	76320768,
+							Z	70463488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANSANG_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	76304384,
+							Z	70497280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANSANG_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	76274688,
+							Z	70400000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KANSANG_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	76246016,
+							Z	70432768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KANSANG_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	76280832,
+							Z	70511616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KANSANG_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	76258304,
+							Z	70472704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KANSANG_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	76288000,
+							Z	70462464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				}
+		}	}
+	};

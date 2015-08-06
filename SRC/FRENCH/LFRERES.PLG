@@ -1,0 +1,36 @@
+--------------------Configuration: LFreCln - Win32 Release--------------------
+
+cd
+C:\mig\SRC\FRENCH
+rem if exist resource.h del resource.h
+if exist resource.h move resource.h ..\mfc\
+for %i in (res\*.*) (del %i)
+for %i in (*.cur) (del %i)
+--------------------Configuration: LFreRes - Win32 Release--------------------
+Begining build with project "C:\mig\Src\French\lFreres.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"..\..\Release\French/lFreres.pch" /YX /Fo"..\..\Release\French/" /Fd"..\..\Release\French/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"..\..\Release\French/Mig.res" /i "..\mfc" /i "..\mfc\res" /d "NDEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"..\..\release\French/lFreres.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\release\French/miglang.pdb" /machine:I386 /out:"..\..\release\French/miglang.dll" /implib:"..\..\release\French/miglang.lib" /NOENTRY "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x809 /fo"..\..\Release\French/Mig.res" /i "..\mfc" /i "..\mfc\res" /d "NDEBUG" "C:\mig\Src\French\Mig.rc"" 
+Creating command line "link.exe /nologo /subsystem:windows /dll /incremental:no /pdb:"..\..\release\French/miglang.pdb" /machine:I386 /out:"..\..\release\French/miglang.dll" /implib:"..\..\release\French/miglang.lib" /NOENTRY  \mig\Release\French\Mig.res" 
+Compiling resources...
+Linking...
+Creating temp file "e:\TEMP\RSP3082.BAT" with contents <@echo off
+copy ..\..\release\French\miglang.dll ..\..\game\French\text
+>
+Creating command line "e:\TEMP\RSP3082.BAT" 
+Copying
+C:\mig\release\French\miglang.dll => C:\mig\game\French\text\miglang.dll
+     1 file copied
+
+
+
+miglang.dll - 0 error(s), 0 warning(s)

@@ -1,0 +1,324 @@
+	SimpleItem	PUKCHONG_0430,
+	SimpleItem	PUKCHONG_0434,
+	SimpleItem	PUKCHONG_0436,
+	SimpleItem	PUKCHONG_0438,
+	SimpleItem	PUKCHONG_043a,
+	SimpleItem	PUKCHONG_043c,
+	SimpleItem	PUKCHONG_0442,
+	SimpleItem	PUKCHONG_0444,
+	SimpleItem	PUKCHONG_0448,
+	SimpleItem	PUKCHONG_201b,
+	SimpleItem	PUKCHONG_201c,
+	SimpleItem	PUKCHONG_201d,
+	SimpleItem	PUKCHONG_201e,
+	SimpleItem	PUKCHONG_201f,
+	SimpleItem	PUKCHONG_2020,
+	SimpleItem	PUKCHONG_2021,
+	SimpleItem	PUKCHONG_2022,
+	SimpleItem	PUKCHONG_2023,
+	SimpleItem	PUKCHONG_2024,
+	SimpleItem	PUKCHONG_2025,
+	SimpleItem	PUKCHONG_2026,
+	SimpleItem	PUKCHONG_2027,
+	SimpleItem	PUKCHONG_2028,
+	SimpleItem	PUKCHONG_2029,
+	BattleField
+	{
+		FileName	FIL_1_PUKCHONG=PUKCHONG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StPukchong,
+		ItemGroup
+		{
+				SimpleItem	PUKCHONG_0430=
+				{
+					Posn
+					{
+						Abs
+						{	X	74548224,
+							Z	91217920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	PUKCHONG_0434=
+				{
+					Posn
+					{
+						Abs
+						{	X	74514432,
+							Z	91161600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PUKCHONG_0436=
+				{
+					Posn
+					{
+						Abs
+						{	X	74614784,
+							Z	91132928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PUKCHONG_0438=
+				{
+					Posn
+					{
+						Abs
+						{	X	74619904,
+							Z	91116544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	PUKCHONG_043a=
+				{
+					Posn
+					{
+						Abs
+						{	X	74669056,
+							Z	91154432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	PUKCHONG_043c=
+				{
+					Posn
+					{
+						Abs
+						{	X	74575872,
+							Z	91153408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	PUKCHONG_0442=
+				{
+					Posn
+					{
+						Abs
+						{	X	74625024,
+							Z	91203584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	PUKCHONG_0444=
+				{
+					Posn
+					{
+						Abs
+						{	X	74651648,
+							Z	91194368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PUKCHONG_0448=
+				{
+					Posn
+					{
+						Abs
+						{	X	74571776,
+							Z	91127808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PUKCHONG_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	74659840,
+							Z	91139072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PUKCHONG_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	74595328,
+							Z	91108352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PUKCHONG_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	74636288,
+							Z	91142144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PUKCHONG_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	74604544,
+							Z	91173888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PUKCHONG_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	74558464,
+							Z	91169792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PUKCHONG_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	74638336,
+							Z	91165696
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	PUKCHONG_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	74539008,
+							Z	91184128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	PUKCHONG_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	74625024,
+							Z	91180032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	PUKCHONG_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	74591232,
+							Z	91140096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	PUKCHONG_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	74621952,
+							Z	91156480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	PUKCHONG_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	74580992,
+							Z	91211776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	PUKCHONG_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	74604544,
+							Z	91212800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	PUKCHONG_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	74643456,
+							Z	91125760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	PUKCHONG_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	74653696,
+							Z	91171840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	PUKCHONG_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	74591232,
+							Z	91191296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				}
+		}	}
+	};

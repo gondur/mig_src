@@ -1,0 +1,329 @@
+	SimpleItem	YANGDOK_040e,
+	SimpleItem	YANGDOK_0411,
+	SimpleItem	YANGDOK_0413,
+	SimpleItem	YANGDOK_0416,
+	SimpleItem	YANGDOK_0419,
+	SimpleItem	YANGDOK_041c,
+	SimpleItem	YANGDOK_041e,
+	SimpleItem	YANGDOK_0422,
+	SimpleItem	YANGDOK_1803,
+	SimpleItem	YANGDOK_2005,
+	SimpleItem	YANGDOK_2006,
+	SimpleItem	YANGDOK_2007,
+	SimpleItem	YANGDOK_2008,
+	SimpleItem	YANGDOK_2009,
+	SimpleItem	YANGDOK_200a,
+	SimpleItem	YANGDOK_200d,
+	SimpleItem	YANGDOK_2200,
+	SimpleItem	YANGDOK_2201,
+	SimpleItem	YANGDOK_2202,
+	SimpleItem	YANGDOK_2203,
+	SimpleItem	YANGDOK_2204,
+	SimpleItem	YANGDOK_2205,
+	SimpleItem	YANGDOK_2206,
+	SimpleItem	YANGDOK_2207,
+	BattleField
+	{
+		FileName	FIL_1_YANGDOK=YANGDOK.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SdRdYangdok,
+		ItemGroup
+		{
+			SimpleItem	YANGDOK_1803=
+			{
+				Posn
+				{
+					Abs
+					{	X	60453888,
+						Z	79717376
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	YANGDOK_2200=
+			{
+				Posn
+				{
+					Abs
+					{	X	60499968,
+						Z	79711232
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	YANGDOK_2201=
+			{
+				Posn
+				{
+					Abs
+					{	X	60439552,
+						Z	79741952
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	YANGDOK_2202=
+			{
+				Posn
+				{
+					Abs
+					{	X	60474368,
+						Z	79698944
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	YANGDOK_2203=
+			{
+				Posn
+				{
+					Abs
+					{	X	60436480,
+						Z	79717376
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP3
+			},
+			SimpleItem	YANGDOK_2204=
+			{
+				Posn
+				{
+					Abs
+					{	X	60420096,
+						Z	79752192
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			},
+			SimpleItem	YANGDOK_2205=
+			{
+				Posn
+				{
+					Abs
+					{	X	60461056,
+						Z	79729664
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	YANGDOK_2206=
+			{
+				Posn
+				{
+					Abs
+					{	X	60483584,
+						Z	79719424
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP3
+			},
+			SimpleItem	YANGDOK_2207=
+			{
+				Posn
+				{
+					Abs
+					{	X	60492800,
+						Z	79688704
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			}
+	>	},
+	ItemGroup
+	{	Target	UID_StYangdok,
+		ItemGroup
+		{
+				SimpleItem	YANGDOK_040e=
+				{
+					Posn
+					{
+						Abs
+						{	X	60531712,
+							Z	79715328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YANGDOK_0411=
+				{
+					Posn
+					{
+						Abs
+						{	X	60509184,
+							Z	79666176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YANGDOK_0413=
+				{
+					Posn
+					{
+						Abs
+						{	X	60556288,
+							Z	79695872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	YANGDOK_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	60400640,
+							Z	79769600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	YANGDOK_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	60454912,
+							Z	79673344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	YANGDOK_041c=
+				{
+					Posn
+					{
+						Abs
+						{	X	60518400,
+							Z	79839232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	YANGDOK_041e=
+				{
+					Posn
+					{
+						Abs
+						{	X	60400640,
+							Z	79838208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YANGDOK_0422=
+				{
+					Posn
+					{
+						Abs
+						{	X	60472320,
+							Z	79725568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	YANGDOK_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	60535808,
+							Z	79802368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		STEPTO
+				},
+				SimpleItem	YANGDOK_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	60469248,
+							Z	79822848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	YANGDOK_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	60533760,
+							Z	79760384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	YANGDOK_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	60486656,
+							Z	79784960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	YANGDOK_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	60435456,
+							Z	79832064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	YANGDOK_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	60493824,
+							Z	79751168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	YANGDOK_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	60463104,
+							Z	79764480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				}
+		}	}
+	};

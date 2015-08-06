@@ -1,0 +1,112 @@
+	WayPoint	Road05_0103,
+	WayPoint	Road05_0104,
+	WayPoint	Road05_0105,
+	GroundItem	Road05_2f43,
+	GroundItem	Road05_2f44,
+	GroundItem	Road05_2f45,
+	BattleField
+	{
+		FileName	FIL_1_ROAD05=Road05.BF,
+		ItemGroup
+		{	Target	UID_ROAD_Hwangju2Sariwon,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	52934656,
+					Z	72952832
+				}
+			},
+			Route
+			{
+				WayPoint	Road05_0103=
+				{
+					Posn
+					{
+						Abs
+						{	X	52897792,
+							Z	72970240
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road05_2f43=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	52620288,
+					Z	72450048
+				}
+			},
+			Route
+			{
+				WayPoint	Road05_0104=
+				{
+					Posn
+					{
+						Abs
+						{	X	52612096,
+							Z	72413184
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road05_2f44=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	52636672,
+					Z	73049088
+				}
+			},
+			Route
+			{
+				WayPoint	Road05_0105=
+				{
+					Posn
+					{
+						Abs
+						{	X	52632576,
+							Z	73023488
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road05_2f45=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK
+		}	}
+	}
+	};

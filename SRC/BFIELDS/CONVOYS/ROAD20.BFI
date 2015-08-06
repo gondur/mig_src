@@ -1,0 +1,671 @@
+	WayPoint	Road20_011b,
+	WayPoint	Road20_011c,
+	WayPoint	Road20_011d,
+	WayPoint	Road20_011e,
+	WayPoint	Road20_011f,
+	WayPoint	Road20_0120,
+	WayPoint	Road20_0121,
+	WayPoint	Road20_0122,
+	WayPoint	Road20_0123,
+	WayPoint	Road20_0124,
+	WayPoint	Road20_0125,
+	WayPoint	Road20_0126,
+	WayPoint	Road20_0127,
+	WayPoint	Road20_0128,
+	WayPoint	Road20_0129,
+	WayPoint	Road20_012a,
+	WayPoint	Road20_012b,
+	WayPoint	Road20_012c,
+	WayPoint	Road20_012d,
+	WayPoint	Road20_012e,
+	WayPoint	Road20_012f,
+	WayPoint	Road20_0130,
+	WayPoint	Road20_0131,
+	WayPoint	Road20_0132,
+	WayPoint	Road20_0133,
+	SimpleItem	Road20_1529,
+	SimpleItem	Road20_152a,
+	SimpleItem	Road20_152b,
+	SimpleItem	Road20_152c,
+	SimpleItem	Road20_1acf,
+	SimpleItem	Road20_1ad0,
+	SimpleItem	Road20_1ad1,
+	SimpleItem	Road20_1ad2,
+	SimpleItem	Road20_1ad3,
+	SimpleItem	Road20_1ad4,
+	SimpleItem	Road20_1ad5,
+	SimpleItem	Road20_1ad6,
+	SimpleItem	Road20_1ad7,
+	SimpleItem	Road20_1ad8,
+	SimpleItem	Road20_1ad9,
+	SimpleItem	Road20_1ada,
+	SimpleItem	Road20_1adb,
+	SimpleItem	Road20_1adc,
+	SimpleItem	Road20_1add,
+	SimpleItem	Road20_1ade,
+	SimpleItem	Road20_1adf,
+	SimpleItem	Road20_1ae0,
+	GroundItem	Road20_2c02,
+	GroundItem	Road20_2c03,
+	BattleField
+	{
+		FileName	FIL_1_ROAD20=Road20.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_ROAD_Osan2Pyongtaek,
+		ItemGroup
+		{
+				SimpleItem	Road20_1529=
+				{
+					Posn
+					{
+						Abs
+						{	X	64070144,
+							Z	55256064
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH12ML
+				},
+				SimpleItem	Road20_152a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64173568,
+							Z	55049728
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH12ML
+				},
+				SimpleItem	Road20_152b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63942656,
+							Z	55603712
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH12ML
+				},
+				SimpleItem	Road20_152c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64020480,
+							Z	55110144
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		FLKTRP1
+				},
+				SimpleItem	Road20_1acf=
+				{
+					Posn
+					{
+						Abs
+						{	X	64033940,
+							Z	55421694
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Road20_1ad0=
+				{
+					Posn
+					{
+						Abs
+						{	X	64016190,
+							Z	55408723
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Road20_1ad1=
+				{
+					Posn
+					{
+						Abs
+						{	X	64035988,
+							Z	55401896
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Road20_1ad2=
+				{
+					Posn
+					{
+						Abs
+						{	X	64017556,
+							Z	55384829
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Road20_1ad3=
+				{
+					Posn
+					{
+						Abs
+						{	X	64040084,
+							Z	55373224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Road20_1ad4=
+				{
+					Posn
+					{
+						Abs
+						{	X	64025748,
+							Z	55356157
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Road20_1ad5=
+				{
+					Posn
+					{
+						Abs
+						{	X	64028478,
+							Z	55336360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	Road20_1ad6=
+				{
+					Posn
+					{
+						Abs
+						{	X	64051689,
+							Z	55331581
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Road20_1ad7=
+				{
+					Posn
+					{
+						Abs
+						{	X	64036670,
+							Z	55314514
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Road20_1ad8=
+				{
+					Posn
+					{
+						Abs
+						{	X	64042132,
+							Z	55296082
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT01
+				},
+				SimpleItem	Road20_1ad9=
+				{
+					Posn
+					{
+						Abs
+						{	X	64065440,
+							Z	55286784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Road20_1ada=
+				{
+					Posn
+					{
+						Abs
+						{	X	64117908,
+							Z	55272189
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	Road20_1adb=
+				{
+					Posn
+					{
+						Abs
+						{	X	64121322,
+							Z	55257852
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Road20_1adc=
+				{
+					Posn
+					{
+						Abs
+						{	X	64134292,
+							Z	55244882
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT01
+				},
+				SimpleItem	Road20_1add=
+				{
+					Posn
+					{
+						Abs
+						{	X	64136340,
+							Z	55259218
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT01
+				},
+				SimpleItem	Road20_1ade=
+				{
+					Posn
+					{
+						Abs
+						{	X	64082944,
+							Z	55278592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Road20_1adf=
+				{
+					Posn
+					{
+						Abs
+						{	X	64104938,
+							Z	55282429
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Road20_1ae0=
+				{
+					Posn
+					{
+						Abs
+						{	X	64123392,
+							Z	55251456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOODS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	64022016,
+						Z	55420928
+					}
+				},
+				Route
+				{
+					WayPoint	Road20_011b=
+					{
+						Posn
+						{
+							Abs
+							{	X	64027136,
+								Z	55409664
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	64024576,
+								Z	55403520
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	64026112,
+								Z	55385600
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	64032768,
+								Z	55364608
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	64034304,
+								Z	55352832
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	64038400,
+								Z	55339520
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	64042496,
+								Z	55327744
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0122=
+					{
+						Posn
+						{
+							Abs
+							{	X	64045568,
+								Z	55313408
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0123=
+					{
+						Posn
+						{
+							Abs
+							{	X	64049664,
+								Z	55300608
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0124=
+					{
+						Posn
+						{
+							Abs
+							{	X	64061440,
+								Z	55286784
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0125=
+					{
+						Posn
+						{
+							Abs
+							{	X	64102912,
+								Z	55282688
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0126=
+					{
+						Posn
+						{
+							Abs
+							{	X	64129024,
+								Z	55249408
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		-2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	Road20_2c02=
+				{
+					RedTruckBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	87
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	64016896,
+						Z	55439872
+					}
+				},
+				Route
+				{
+					WayPoint	Road20_0127=
+					{
+						Posn
+						{
+							Abs
+							{	X	64022016,
+								Z	55420928
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0128=
+					{
+						Posn
+						{
+							Abs
+							{	X	64027136,
+								Z	55409664
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0129=
+					{
+						Posn
+						{
+							Abs
+							{	X	64024576,
+								Z	55403520
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_012a=
+					{
+						Posn
+						{
+							Abs
+							{	X	64026112,
+								Z	55385600
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_012b=
+					{
+						Posn
+						{
+							Abs
+							{	X	64032768,
+								Z	55364608
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_012c=
+					{
+						Posn
+						{
+							Abs
+							{	X	64034304,
+								Z	55352832
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_012d=
+					{
+						Posn
+						{
+							Abs
+							{	X	64038400,
+								Z	55339520
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_012e=
+					{
+						Posn
+						{
+							Abs
+							{	X	64042496,
+								Z	55327744
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_012f=
+					{
+						Posn
+						{
+							Abs
+							{	X	64045568,
+								Z	55313408
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0130=
+					{
+						Posn
+						{
+							Abs
+							{	X	64049664,
+								Z	55300608
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0131=
+					{
+						Posn
+						{
+							Abs
+							{	X	64061440,
+								Z	55286784
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0132=
+					{
+						Posn
+						{
+							Abs
+							{	X	64102912,
+								Z	55282688
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Road20_0133=
+					{
+						Posn
+						{
+							Abs
+							{	X	64129024,
+								Z	55249408
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		-2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	Road20_2c03=
+				{
+					RedTruckBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	87
+			}	}	}
+	};

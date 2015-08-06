@@ -1,0 +1,87 @@
+	WayPoint	RDNAMSI_0104,
+	WayPoint	RDNAMSI_0105,
+	WayPoint	RDNAMSI_0106,
+	GroundItem	RDNAMSI_3082,
+	BattleField
+	{
+		FileName	FIL_1_RDNAMSI=RDNAMSI.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdNamsi,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdNamsi, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	47982775,
+						Z	87609167
+					}
+				},
+				Route
+				{
+					WayPoint	RDNAMSI_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	48041758,
+								Z	87566978
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDNAMSI_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	48031518,
+								Z	87552642
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDNAMSI_0106=
+					{
+						Posn
+						{
+							Abs
+							{	X	48072887,
+								Z	87521103
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDNAMSI_3082=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CH12ML,
+					Vel	98
+			}	}
+		}
+	};

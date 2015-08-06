@@ -1,0 +1,324 @@
+//DeadCode JIM 05May99 	SimpleItem	AFTAEJON_3900,
+//DeadCode JIM 05May99 	SimpleItem	AFTAEJON_3940,
+	SimpleItem	AFTAEJON_3a80,
+	SimpleItem	AFTAEJON_3a81,
+	SimpleItem	AFTAEJON_3a82,
+	SimpleItem	AFTAEJON_3a83,
+	SimpleItem	AFTAEJON_3a84,
+	SimpleItem	AFTAEJON_3a85,
+	SimpleItem	AFTAEJON_3a86,
+	SimpleItem	AFTAEJON_3a87,
+	SimpleItem	AFTAEJON_3a88,
+	SimpleItem	AFTAEJON_3a89,
+	SimpleItem	AFTAEJON_3a8a,
+	SimpleItem	AFTAEJON_3a8b,
+	SimpleItem	AFTAEJON_3a8c,
+	SimpleItem	AFTAEJON_3b00,
+	SimpleItem	AFTAEJON_3b01,
+	SimpleItem	AFTAEJON_3b02,
+	SimpleItem	AFTAEJON_3b03,
+	SimpleItem	AFTAEJON_3b04,
+	SimpleItem	AFTAEJON_3b05,
+	SimpleItem	AFTAEJON_3b06,
+	SimpleItem	AFTAEJON_3b07,
+	SimpleItem	AFTAEJON_3b08,
+	BattleField
+	{
+		FileName	FIL_1_AFTAEJON=AFTAEJON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlTaejon,
+		ItemGroup
+		{
+//DeadCode JIM 05May99 				SimpleItem	AFTAEJON_3900=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	66450481,
+//DeadCode JIM 05May99 							Z	48027730
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwaySBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFTAEJON_3940=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	66359206,
+//DeadCode JIM 05May99 							Z	48074956
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwayEBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+				SimpleItem	AFTAEJON_3a80=
+				{
+					Posn
+					{
+						Abs
+						{	X	66467274,
+							Z	48001925
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		FTANK
+				},
+				SimpleItem	AFTAEJON_3a81=
+				{
+					Posn
+					{
+						Abs
+						{	X	66373066,
+							Z	48035922
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFTAEJON_3a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	66353815,
+							Z	48037560
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEJON_3a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	66477924,
+							Z	47988408
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFTAEJON_3a84=
+				{
+					Posn
+					{
+						Abs
+						{	X	66362007,
+							Z	48031007
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		FTANK
+				},
+				SimpleItem	AFTAEJON_3a85=
+				{
+					Posn
+					{
+						Abs
+						{	X	66455396,
+							Z	48008478
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAEJON_3a86=
+				{
+					Posn
+					{
+						Abs
+						{	X	66466865,
+							Z	47995781
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAEJON_3a87=
+				{
+					Posn
+					{
+						Abs
+						{	X	66457444,
+							Z	47999877
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEJON_3a88=
+				{
+					Posn
+					{
+						Abs
+						{	X	66448434,
+							Z	47999876
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFTAEJON_3a89=
+				{
+					Posn
+					{
+						Abs
+						{	X	66457034,
+							Z	47994142
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEJON_3a8a=
+				{
+					Posn
+					{
+						Abs
+						{	X	66449662,
+							Z	48008478
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFTAEJON_3a8b=
+				{
+					Posn
+					{
+						Abs
+						{	X	66445157,
+							Z	48008478
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFTAEJON_3a8c=
+				{
+					Posn
+					{
+						Abs
+						{	X	66334563,
+							Z	48074424
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFTAEJON_3b00=
+				{
+					Posn
+					{
+						Abs
+						{	X	66349056,
+							Z	48064512
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		RTRUCK
+				},
+				SimpleItem	AFTAEJON_3b01=
+				{
+					Posn
+					{
+						Abs
+						{	X	66457034,
+							Z	47987998
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEJON_3b02=
+				{
+					Posn
+					{
+						Abs
+						{	X	66370608,
+							Z	48044933
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		RMAST
+				},
+				SimpleItem	AFTAEJON_3b03=
+				{
+					Posn
+					{
+						Abs
+						{	X	66362007,
+							Z	48036741
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEJON_3b04=
+				{
+					Posn
+					{
+						Abs
+						{	X	66366922,
+							Z	48035512
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEJON_3b05=
+				{
+					Posn
+					{
+						Abs
+						{	X	66354224,
+							Z	48044523
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEJON_3b06=
+				{
+					Posn
+					{
+						Abs
+						{	X	66467684,
+							Z	47988818
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFTAEJON_3b07=
+				{
+					Posn
+					{
+						Abs
+						{	X	66334973,
+							Z	48067871
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEJON_3b08=
+				{
+					Posn
+					{
+						Abs
+						{	X	66334563,
+							Z	48061727
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				}
+		}	}
+	};

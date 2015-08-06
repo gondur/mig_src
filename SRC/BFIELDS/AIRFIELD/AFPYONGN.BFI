@@ -1,0 +1,307 @@
+//DeadCode JIM 05May99 	SimpleItem	AFPYONGN_3900,
+//DeadCode JIM 05May99 	SimpleItem	AFPYONGN_3940,
+	SimpleItem	AFPYONGN_3a41,
+	SimpleItem	AFPYONGN_3a42,
+	SimpleItem	AFPYONGN_3a43,
+	SimpleItem	AFPYONGN_3a44,
+	SimpleItem	AFPYONGN_3a45,
+	SimpleItem	AFPYONGN_3a46,
+	SimpleItem	AFPYONGN_3a47,
+	SimpleItem	AFPYONGN_3a48,
+	SimpleItem	AFPYONGN_3a49,
+	SimpleItem	AFPYONGN_3a4a,
+	SimpleItem	AFPYONGN_3a80,
+	SimpleItem	AFPYONGN_3a81,
+	SimpleItem	AFPYONGN_3a82,
+	SimpleItem	AFPYONGN_3a83,
+	SimpleItem	AFPYONGN_3a84,
+	SimpleItem	AFPYONGN_3a85,
+	SimpleItem	AFPYONGN_3a86,
+	BattleField
+	{
+		FileName	FIL_1_AFPYONGN=AFPYONGN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdPyongni,
+		ItemGroup
+		{
+//DeadCode JIM 05May99 				SimpleItem	AFPYONGN_3900=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	53929371,
+//DeadCode JIM 05May99 							Z	80838453
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwaySBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFPYONGN_3940=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	53972789,
+//DeadCode JIM 05May99 							Z	80983452
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwayEBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	54007604,
+							Z	80990825
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	53965007,
+							Z	80828213
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	54038734,
+							Z	80956419
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	54052661,
+							Z	80965839
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFPYONGN_3a41=
+				{
+					Posn
+					{
+						Abs
+						{	X	54063310,
+							Z	80965839
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFPYONGN_3a42=
+				{
+					Posn
+					{
+						Abs
+						{	X	53994088,
+							Z	80914230
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFPYONGN_3a43=
+				{
+					Posn
+					{
+						Abs
+						{	X	53992040,
+							Z	80901532
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFPYONGN_3a44=
+				{
+					Posn
+					{
+						Abs
+						{	X	53991630,
+							Z	80883100
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFPYONGN_3a45=
+				{
+					Posn
+					{
+						Abs
+						{	X	54040782,
+							Z	80965430
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFPYONGN_3a46=
+				{
+					Posn
+					{
+						Abs
+						{	X	53976884,
+							Z	80836405
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFPYONGN_3a47=
+				{
+					Posn
+					{
+						Abs
+						{	X	53995316,
+							Z	80833948
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFPYONGN_3a48=
+				{
+					Posn
+					{
+						Abs
+						{	X	54014977,
+							Z	80829032
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFPYONGN_3a49=
+				{
+					Posn
+					{
+						Abs
+						{	X	53981800,
+							Z	80866306
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFPYONGN_3a4a=
+				{
+					Posn
+					{
+						Abs
+						{	X	53975656,
+							Z	80852789
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFPYONGN_3a80=
+				{
+					Posn
+					{
+						Abs
+						{	X	54005147,
+							Z	80962563
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFPYONGN_3a81=
+				{
+					Posn
+					{
+						Abs
+						{	X	53996136,
+							Z	80931023
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFPYONGN_3a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	54002689,
+							Z	80953961
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		RTRUCK
+				},
+				SimpleItem	AFPYONGN_3a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	54009243,
+							Z	80982632
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFPYONGN_3a84=
+				{
+					Posn
+					{
+						Abs
+						{	X	53999412,
+							Z	80946179
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFPYONGN_3a85=
+				{
+					Posn
+					{
+						Abs
+						{	X	53996545,
+							Z	80870402
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFPYONGN_3a86=
+				{
+					Posn
+					{
+						Abs
+						{	X	54011291,
+							Z	80875317
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				}
+		}	}
+	};

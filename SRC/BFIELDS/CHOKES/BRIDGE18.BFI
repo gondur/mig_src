@@ -1,0 +1,38 @@
+	SimpleItem	BRIDGE18_0464,
+	SimpleItem	BRIDGE18_0468,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE18=BRIDGE18.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlHuichon,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE18_0464=
+				{
+					Posn
+					{
+						Abs
+						{	X	58972160,
+							Z	95028224
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE18_0468=
+				{
+					Posn
+					{
+						Abs
+						{	X	58937344,
+							Z	95103488
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

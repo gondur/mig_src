@@ -1,0 +1,136 @@
+	WayPoint	RDYONGYU_010b,
+	WayPoint	RDYONGYU_010c,
+	WayPoint	RDYONGYU_010d,
+	WayPoint	RDYONGYU_010e,
+	WayPoint	RDYONGYU_010f,
+	GroundItem	RDYONGYU_3084,
+	GroundItem	RDYONGYU_3085,
+	BattleField
+	{
+		FileName	FIL_1_RDYONGYU=RDYONGYU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdYongyu,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdYongyu, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	50620416,
+						Z	80744448
+					}
+				},
+				Route
+				{
+					WayPoint	RDYONGYU_010b=
+					{
+						Posn
+						{
+							Abs
+							{	X	50743080,
+								Z	80674203
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDYONGYU_010c=
+					{
+						Posn
+						{
+							Abs
+							{	X	50775552,
+								Z	80674304
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDYONGYU_3084=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CH12ML,
+					Vel	98
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	50842204,
+						Z	80750799
+					}
+				},
+				Route
+				{
+					WayPoint	RDYONGYU_010d=
+					{
+						Posn
+						{
+							Abs
+							{	X	50813531,
+								Z	80752027
+							}
+						},
+						Vel	40,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDYONGYU_010e=
+					{
+						Posn
+						{
+							Abs
+							{	X	50796328,
+								Z	80728271
+							}
+						},
+						Vel	140,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDYONGYU_010f=
+					{
+						Posn
+						{
+							Abs
+							{	X	50679592,
+								Z	80785615
+							}
+						},
+						Vel	140,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDYONGYU_3085=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	40
+			}	}	}
+	};

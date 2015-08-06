@@ -1,0 +1,104 @@
+//------------------------------------------------------------------------------
+//Filename       preload.cpp
+//System         
+//Author         Robert Slater
+//Date           Mon 2 Dec 1996
+//Description    Compile and run this program to generate a list of files that get loaded
+//------------------------------------------------------------------------------
+
+#include	"dosdefs.h"
+	#define F_BATTLE
+#include	"files.g"
+#include	<stdio.h>
+
+FileNum		loadlist[]=
+{
+	FIL_MUSIC_BASE,
+	FIL_MUSIC_DISADVANTAGE,
+	FIL_MUSIC_ADVANTAGE,
+	FIL_MUSIC_NEUTRAL,
+	FIL_MUSIC_ENEMY_RUNS,
+	FIL_MUSIC_PLAYER_RUNS,
+	FIL_MUSIC_SPOT_EFFECTS,
+ 	FIL_MUSIC_DOGFIGHT_SEEN,
+	FIL_MUSIC_SPIRALLING,
+
+	FIL_BULLET_NUM,
+	FIL_SUN_NUM,
+	FIL_WRECK_NUM,
+	FIL_PDEATH_NUM,
+	FIL_RSMOKE_NUM,
+	FIL_SMKMAPMAP_NUM,
+	FIL_CLOUDMAP_NUM,
+	FIL_SPARK_NUM,
+	FIL_DSPARK_NUM,
+	FIL_FIRE_NUM,
+	FIL_DEB1_NUM,
+	FIL_DEB2_NUM,
+	FIL_DEB3_NUM,
+	FIL_DEB4_NUM,
+	FIL_DEB5_NUM,
+	FIL_DEB6_NUM,
+	FIL_DEB7_NUM,
+	FIL_SMOKE_NUM,
+	FIL_BEXP_NUM,
+
+	FIL_SMKMAP2MAP_NUM,
+	FIL_SMKMAP3MAP_NUM,
+	FIL_VAPOURMAP_NUM,
+	FIL_SUNMAPMAP_NUM,
+	FIL_SMLFIR_NUM,
+	FIL_CRATER_NUM,
+	FIL_BSMKE_NUM,
+	FIL_BIGEXMAP_NUM,
+
+	FIL_SFX_RICOCHET_GLASS,
+	FIL_SFX_RICOCHET_HARD_SURFACE1,
+	FIL_SFX_RICOCHET_HARD_SURFACE2,
+	FIL_SFX_RICOCHET_HARD_SURFACE3,
+	FIL_SFX_RICOCHET_HARD_SURFACE4,
+	FIL_SFX_RICOCHET_SKIM1,
+	FIL_SFX_RICOCHET_SKIM2,
+	FIL_SFX_RICOCHET_CANVAS1,
+	FIL_SFX_RICOCHET_SOFT_SURFACE1,
+	FIL_SFX_RICOCHET_SOFT_SURFACE2,
+	FIL_SFX_RICOCHET_WOOD1,
+	FIL_SFX_RICOCHET_WOOD2,
+	FIL_SFX_RICOCHET_WOOD3,
+	FIL_SFX_RICOCHET_METAL_TWANG,
+	FIL_SFX_RICOCHET_METAL_SHARP,
+	FIL_SFX_RICOCHET_METAL_THICK,
+	FIL_SFX_RICOCHET_METAL_THUD,
+	FIL_SFX_WOOD_BREAK1,
+	FIL_SFX_WOOD_BREAK2,
+	FIL_SFX_YELP1,
+	FIL_SFX_YELP2,
+	FIL_SFX_YELP3,
+	FIL_SFX_EXPLOSION_OILDRUM1,
+	FIL_SFX_EXPLOSION_GROUND,
+	FIL_SFX_EXPLOSION_OILDRUM2,
+	FIL_SFX_EXPLOSION_ENGINE,	
+	FIL_SFX_EXPLOSION_AIR2,		
+	FIL_SFX_EXPLOSION_TANK,		
+	FIL_SFX_EXPLOSION_DISTANT1,
+	FIL_SFX_EXPLOSION_DISTANT2,
+	FIL_SFX_EXPLOSION_DISTANT3,
+
+	FIL_NULL
+};
+main(int	argc,char**	argv)
+{
+	FILE*	f;
+	if (argc>1)
+		f=fopen(argv[1],"wt");
+	else
+		f=fopen("..\\game\\libcode\\preload.txt","wt");
+	FileNum*	ll=loadlist;
+	while(*ll)
+	{
+		fprintf(f,"%d\n",*ll);
+		ll++;
+	}
+	fprintf(f,"0x%x\n",*ll);
+	fclose(f);
+}

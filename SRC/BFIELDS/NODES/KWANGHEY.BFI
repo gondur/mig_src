@@ -1,0 +1,88 @@
+	BattleField
+	{
+		FileName	FIL_1_Kwangheywan=Kwanghey.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_StKwangheywan,
+			ItemGroup
+			{
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StKwangheywan},
+						Rel	{Z -METRES200
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StKwangheywan},
+						Rel	{Z METRES200	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StKwangheywan},
+						Rel	{X METRES100	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StKwangheywan},
+						Rel	{X METRES200,
+							 Z METRES200	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StKwangheywan},
+						Rel	{X -METRES300,
+							 Z -METRES200
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StKwangheywan},
+						Rel	{X METRES400,
+							 Z -METRES300
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				}
+			}
+		}
+	};
+

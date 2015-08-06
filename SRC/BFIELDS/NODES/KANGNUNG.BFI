@@ -1,0 +1,389 @@
+	SimpleItem	KANGNUNG_040e,
+	SimpleItem	KANGNUNG_0412,
+	SimpleItem	KANGNUNG_0414,
+	SimpleItem	KANGNUNG_0419,
+	SimpleItem	KANGNUNG_041c,
+	SimpleItem	KANGNUNG_0420,
+	SimpleItem	KANGNUNG_0423,
+	SimpleItem	KANGNUNG_0426,
+	SimpleItem	KANGNUNG_0429,
+	SimpleItem	KANGNUNG_042f,
+	SimpleItem	KANGNUNG_0433,
+	SimpleItem	KANGNUNG_043d,
+	SimpleItem	KANGNUNG_043f,
+	SimpleItem	KANGNUNG_0443,
+	SimpleItem	KANGNUNG_0446,
+	SimpleItem	KANGNUNG_0449,
+	SimpleItem	KANGNUNG_044b,
+	SimpleItem	KANGNUNG_044d,
+	SimpleItem	KANGNUNG_044f,
+	SimpleItem	KANGNUNG_0453,
+	SimpleItem	KANGNUNG_0457,
+	SimpleItem	KANGNUNG_0459,
+	SimpleItem	KANGNUNG_045b,
+	SimpleItem	KANGNUNG_045f,
+	SimpleItem	KANGNUNG_0466,
+	SimpleItem	KANGNUNG_046b,
+	SimpleItem	KANGNUNG_046d,
+	SimpleItem	KANGNUNG_0471,
+	SimpleItem	KANGNUNG_0473,
+	BattleField
+	{
+		FileName	FIL_1_KANGNUNG=KANGNUNG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKangnung,
+		ItemGroup
+		{
+				SimpleItem	KANGNUNG_040e=
+				{
+					Posn
+					{
+						Abs
+						{	X	79965184,
+							Z	63543296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGNUNG_0412=
+				{
+					Posn
+					{
+						Abs
+						{	X	80045056,
+							Z	63551488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGNUNG_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	80089088,
+							Z	63634432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGNUNG_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	80089088,
+							Z	63551488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KANGNUNG_041c=
+				{
+					Posn
+					{
+						Abs
+						{	X	80089088,
+							Z	63587328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGNUNG_0420=
+				{
+					Posn
+					{
+						Abs
+						{	X	80052224,
+							Z	63623168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KANGNUNG_0423=
+				{
+					Posn
+					{
+						Abs
+						{	X	80034816,
+							Z	63596544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGNUNG_0426=
+				{
+					Posn
+					{
+						Abs
+						{	X	80060416,
+							Z	63513600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGNUNG_0429=
+				{
+					Posn
+					{
+						Abs
+						{	X	80013312,
+							Z	63509504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGNUNG_042f=
+				{
+					Posn
+					{
+						Abs
+						{	X	79945728,
+							Z	63499264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KANGNUNG_0433=
+				{
+					Posn
+					{
+						Abs
+						{	X	79980544,
+							Z	63492096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGNUNG_043d=
+				{
+					Posn
+					{
+						Abs
+						{	X	80007168,
+							Z	63621120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGNUNG_043f=
+				{
+					Posn
+					{
+						Abs
+						{	X	79926272,
+							Z	63555584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGNUNG_0443=
+				{
+					Posn
+					{
+						Abs
+						{	X	79974400,
+							Z	63583232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGNUNG_0446=
+				{
+					Posn
+					{
+						Abs
+						{	X	80095232,
+							Z	63679488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGNUNG_0449=
+				{
+					Posn
+					{
+						Abs
+						{	X	80124928,
+							Z	63715328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGNUNG_044b=
+				{
+					Posn
+					{
+						Abs
+						{	X	80130048,
+							Z	63674368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGNUNG_044d=
+				{
+					Posn
+					{
+						Abs
+						{	X	80109568,
+							Z	63707136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KANGNUNG_044f=
+				{
+					Posn
+					{
+						Abs
+						{	X	80143360,
+							Z	63688704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KANGNUNG_0453=
+				{
+					Posn
+					{
+						Abs
+						{	X	80089088,
+							Z	63705088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGNUNG_0457=
+				{
+					Posn
+					{
+						Abs
+						{	X	80133120,
+							Z	63588352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGNUNG_0459=
+				{
+					Posn
+					{
+						Abs
+						{	X	80120832,
+							Z	63621120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGNUNG_045b=
+				{
+					Posn
+					{
+						Abs
+						{	X	80120832,
+							Z	63642624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGNUNG_045f=
+				{
+					Posn
+					{
+						Abs
+						{	X	80121856,
+							Z	63663104
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KANGNUNG_0466=
+				{
+					Posn
+					{
+						Abs
+						{	X	80097280,
+							Z	63518720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGNUNG_046b=
+				{
+					Posn
+					{
+						Abs
+						{	X	79904768,
+							Z	63480832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGNUNG_046d=
+				{
+					Posn
+					{
+						Abs
+						{	X	79870976,
+							Z	63466496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGNUNG_0471=
+				{
+					Posn
+					{
+						Abs
+						{	X	79865856,
+							Z	63516672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGNUNG_0473=
+				{
+					Posn
+					{
+						Abs
+						{	X	79897600,
+							Z	63535104
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				}
+		}	}
+	};

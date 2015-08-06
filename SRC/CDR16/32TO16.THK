@@ -1,0 +1,15 @@
+enablemapdirect3216 = true;
+
+#include "types.def"
+
+unsigned short InitCDFS16()
+{
+}
+
+void ExitCDFS16()
+{
+}
+
+BOOL SeekToLocation16(unsigned short hFile,unsigned long seekPos)
+{
+}

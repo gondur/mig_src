@@ -1,0 +1,492 @@
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_0403,
+	SimpleItem	OSAN_040b,
+	SimpleItem	OSAN_040e,
+	SimpleItem	OSAN_0410,
+	SimpleItem	OSAN_0412,
+	SimpleItem	OSAN_0417,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_1803,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_1804,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_1805,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_1806,
+	SimpleItem	OSAN_1807,
+	SimpleItem	OSAN_1808,
+	SimpleItem	OSAN_2004,
+	SimpleItem	OSAN_2005,
+	SimpleItem	OSAN_2006,
+	SimpleItem	OSAN_2007,
+	SimpleItem	OSAN_2008,
+	SimpleItem	OSAN_2009,
+	SimpleItem	OSAN_200a,
+	SimpleItem	OSAN_200b,
+	SimpleItem	OSAN_200c,
+	SimpleItem	OSAN_200d,
+	SimpleItem	OSAN_200e,
+	SimpleItem	OSAN_200f,
+	SimpleItem	OSAN_2010,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_2800,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_2801,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_2802,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_2803,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_2804,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_2805,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_2806,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_2807,
+//DeadCode MS 25Jun99 	SimpleItem	OSAN_2808,
+	SimpleItem	OSAN_2809,
+	BattleField
+	{
+		FileName	FIL_1_OSAN=OSAN.BF,
+		Title	{},
+		Comment	{}
+,
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_0403=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63943680,
+//DeadCode MS 25Jun99 						Z	56919040
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		AmberSupplyBAND,
+//DeadCode MS 25Jun99 				Shape		SDISP1
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_1803=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63967232,
+//DeadCode MS 25Jun99 						Z	56759296
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		RedAAASiteBAND,
+//DeadCode MS 25Jun99 				Shape		SAAA2
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_1804=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63950848,
+//DeadCode MS 25Jun99 						Z	56691712
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		RedAAASiteBAND,
+//DeadCode MS 25Jun99 				Shape		SAAA2
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_1805=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63956992,
+//DeadCode MS 25Jun99 						Z	56818688
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		RedAAASiteBAND,
+//DeadCode MS 25Jun99 				Shape		SAAA2
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_1806=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63932416,
+//DeadCode MS 25Jun99 						Z	56891392
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		RedAAASiteBAND,
+//DeadCode MS 25Jun99 				Shape		SAAA2
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_2800=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63955968,
+//DeadCode MS 25Jun99 						Z	56790016
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		AmberMYardBAND,
+//DeadCode MS 25Jun99 				Shape		CIVI05
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_2801=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63938560,
+//DeadCode MS 25Jun99 						Z	56783872
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		AmberMYardBAND,
+//DeadCode MS 25Jun99 				Shape		WF4M
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_2802=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63940608,
+//DeadCode MS 25Jun99 						Z	56747008
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		AmberMYardBAND,
+//DeadCode MS 25Jun99 				Shape		WF5M
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_2803=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63954944,
+//DeadCode MS 25Jun99 						Z	56839168
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		AmberMYardBAND,
+//DeadCode MS 25Jun99 				Shape		WF3M
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_2804=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63962112,
+//DeadCode MS 25Jun99 						Z	56920064
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		AmberMYardBAND,
+//DeadCode MS 25Jun99 				Shape		SDISP1
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_2805=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63941632,
+//DeadCode MS 25Jun99 						Z	56666112
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		AmberMYardBAND,
+//DeadCode MS 25Jun99 				Shape		SDISP1
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_2806=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63921152,
+//DeadCode MS 25Jun99 						Z	56668160
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		AmberMYardBAND,
+//DeadCode MS 25Jun99 				Shape		SDISP2
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_2807=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63958016,
+//DeadCode MS 25Jun99 						Z	56779776
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		AmberMYardBAND,
+//DeadCode MS 25Jun99 				Shape		CIVI05
+//DeadCode MS 25Jun99 			},
+//DeadCode MS 25Jun99 			SimpleItem	OSAN_2808=
+//DeadCode MS 25Jun99 			{
+//DeadCode MS 25Jun99 				Posn
+//DeadCode MS 25Jun99 				{
+//DeadCode MS 25Jun99 					Abs
+//DeadCode MS 25Jun99 					{	X	63947776,
+//DeadCode MS 25Jun99 						Z	56795136
+//DeadCode MS 25Jun99 					}
+//DeadCode MS 25Jun99 				},
+//DeadCode MS 25Jun99 				UIDBand		AmberMYardBAND,
+//DeadCode MS 25Jun99 				Shape		SUPPLY
+//DeadCode MS 25Jun99 			}
+//DeadCode MS 25Jun99 		},
+	ItemGroup
+	{	Target	UID_StOsan,
+		ItemGroup
+		{
+				SimpleItem	OSAN_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	63972352,
+							Z	56939520
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	OSAN_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	63922176,
+							Z	56784896
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	63540224,
+							Z	57054208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	63557632,
+							Z	57073664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	OSAN_040b=
+				{
+					Posn
+					{
+						Abs
+						{	X	64033792,
+							Z	56853504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	OSAN_040e=
+				{
+					Posn
+					{
+						Abs
+						{	X	64020480,
+							Z	56781824
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	OSAN_0410=
+				{
+					Posn
+					{
+						Abs
+						{	X	64010240,
+							Z	56747008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	OSAN_0412=
+				{
+					Posn
+					{
+						Abs
+						{	X	64041984,
+							Z	56760320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	OSAN_0417=
+				{
+					Posn
+					{
+						Abs
+						{	X	64018432,
+							Z	56701952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	OSAN_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	63984640,
+							Z	56787968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	OSAN_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	63966208,
+							Z	56862720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	OSAN_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	63995904,
+							Z	56892416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	OSAN_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	63967232,
+							Z	56821760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	OSAN_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	64009216,
+							Z	56832000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	OSAN_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	63973376,
+							Z	56744960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	OSAN_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63912960,
+							Z	56757248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	OSAN_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63933440,
+							Z	56838144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	OSAN_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63931392,
+							Z	56820736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	OSAN_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63924224,
+							Z	56770560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	OSAN_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63925248,
+							Z	56741888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	OSAN_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63935488,
+							Z	56857600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	OSAN_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	63922176,
+							Z	56801280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	OSAN_2809=
+				{
+					Posn
+					{
+						Abs
+						{	X	63950848,
+							Z	56766464
+						}
+					},
+					UIDBand		AmberMYardBAND,
+					Shape		LAREA
+				}
+		}	}
+	};

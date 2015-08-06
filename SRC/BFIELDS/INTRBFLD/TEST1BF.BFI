@@ -1,0 +1,52 @@
+	SimpleItem	test1bf_047f,
+	SimpleItem	test1bf_047e,
+	SimpleItem	test1bf_047d,
+	BattleField
+	{
+		FileName	FIL_1_test1bf=test1bf.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	test1bf_047f=
+			{
+				Posn
+				{
+					Abs
+					{	X	39264256,
+						Z	1030569984
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_a,
+				Shape		BEXP
+			},
+			SimpleItem	test1bf_047e=
+			{
+				Posn
+				{
+					Abs
+					{	X	38752256,
+						Z	1030303744
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_b,
+				Shape		BEXP
+			},
+			SimpleItem	test1bf_047d=
+			{
+				Posn
+				{
+					Abs
+					{	X	39223296,
+						Z	1030365184
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_c,
+				Shape		BEXP
+			}
+		}
+	};

@@ -1,0 +1,109 @@
+	WayPoint	RDSAAMCH_0106,
+	WayPoint	RDSAAMCH_0107,
+	WayPoint	RDSAAMCH_0108,
+	GroundItem	RDSAAMCH_3082,
+	GroundItem	RDSAAMCH_3083,
+	BattleField
+	{
+		FileName	FIL_1_RDSAAMCH=RDSAAMCH.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdSaamcham,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdSaamcham, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+		},	
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	52098452,
+						Z	85910549
+					}
+				},
+				Route
+				{
+					WayPoint	RDSAAMCH_0106=
+					{
+						Posn
+						{
+							Abs
+							{	X	52236897,
+								Z	85773333
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDSAAMCH_3082=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CH12ML,
+					Vel	98
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	52128762,
+						Z	85940041
+					}
+				},
+				Route
+				{
+					WayPoint	RDSAAMCH_0107=
+					{
+						Posn
+						{
+							Abs
+							{	X	52197166,
+								Z	85940041
+							}
+						},
+						Vel	126,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDSAAMCH_0108=
+					{
+						Posn
+						{
+							Abs
+							{	X	52230753,
+								Z	85879829
+							}
+						},
+						Vel	126,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDSAAMCH_3083=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	126
+			}	}	}
+	};

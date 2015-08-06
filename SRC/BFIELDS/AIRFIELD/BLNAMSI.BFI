@@ -1,0 +1,6 @@
+	BattleField
+	{
+		FileName	FIL_1_BLNAMSI=BLNAMSI.BF,
+		Title	{},
+		Comment	{}
+	};

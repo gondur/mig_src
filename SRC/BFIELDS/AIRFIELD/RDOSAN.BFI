@@ -1,0 +1,39 @@
+	SimpleItem	rdosan_040c,
+	SimpleItem	rdosan_040e,
+	BattleField
+	{
+		FileName	FIL_1_RDOSAN=rdosan.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlOsan,
+		ItemGroup
+		{
+			SimpleItem	rdosan_040c=
+			{
+				Posn
+				{
+					Abs
+					{	X	63507968,
+						Z	56313856
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		GRNDD4
+			},
+			SimpleItem	rdosan_040e=
+			{
+				Posn
+				{
+					Abs
+					{	X	63735808,
+						Z	56423424
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		GRNDD4
+			}
+		}
+	}
+	};

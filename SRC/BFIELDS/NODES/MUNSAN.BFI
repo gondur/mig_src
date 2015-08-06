@@ -1,0 +1,381 @@
+	SimpleItem	Munsan_1503,
+	SimpleItem	Munsan_1504,
+	SimpleItem	Munsan_1505,
+	SimpleItem	Munsan_1506,
+	SimpleItem	Munsan_1507,
+	SimpleItem	Munsan_1508,
+	SimpleItem	Munsan_1509,
+	SimpleItem	Munsan_150a,
+	SimpleItem	Munsan_150b,
+	SimpleItem	Munsan_150c,
+	SimpleItem	Munsan_1a00,
+	SimpleItem	Munsan_1a01,
+	SimpleItem	Munsan_1a02,
+	SimpleItem	Munsan_1a03,
+	SimpleItem	Munsan_1a05,
+	SimpleItem	Munsan_1a06,
+	SimpleItem	Munsan_1a07,
+	SimpleItem	Munsan_1a08,
+	SimpleItem	Munsan_1a09,
+	SimpleItem	Munsan_1a0a,
+	SimpleItem	Munsan_1a0c,
+	SimpleItem	Munsan_1a0d,
+	SimpleItem	Munsan_1a0e,
+	SimpleItem	Munsan_2500,
+	SimpleItem	Munsan_2501,
+	SimpleItem	Munsan_2502,
+	SimpleItem	Munsan_2503,
+	SimpleItem	Munsan_2504,
+	BattleField
+	{
+		FileName	FIL_1_Munsan=Munsan.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_MyBlMunsan,
+		ItemGroup
+		{
+				SimpleItem	Munsan_1503=
+				{
+					Posn
+					{
+						Abs
+						{	X	61544960,
+							Z	64439808
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Munsan_1504=
+				{
+					Posn
+					{
+						Abs
+						{	X	61696000,
+							Z	64612864
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Munsan_1505=
+				{
+					Posn
+					{
+						Abs
+						{	X	61388288,
+							Z	64620544
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Munsan_1506=
+				{
+					Posn
+					{
+						Abs
+						{	X	61536768,
+							Z	64820224
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Munsan_1507=
+				{
+					Posn
+					{
+						Abs
+						{	X	61602816,
+							Z	64702464
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Munsan_1508=
+				{
+					Posn
+					{
+						Abs
+						{	X	61467648,
+							Z	64695808
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Munsan_1509=
+				{
+					Posn
+					{
+						Abs
+						{	X	61550080,
+							Z	64369152
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Munsan_150a=
+				{
+					Posn
+					{
+						Abs
+						{	X	61539840,
+							Z	64610816
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Munsan_150b=
+				{
+					Posn
+					{
+						Abs
+						{	X	61559296,
+							Z	64749568
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Munsan_150c=
+				{
+					Posn
+					{
+						Abs
+						{	X	61537280,
+							Z	64512512
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Munsan_2500=
+				{
+					Posn
+					{
+						Abs
+						{	X	61550592,
+							Z	64698880
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	Munsan_2501=
+				{
+					Posn
+					{
+						Abs
+						{	X	61519360,
+							Z	64714752
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Munsan_2502=
+				{
+					Posn
+					{
+						Abs
+						{	X	61518336,
+							Z	64696832
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	Munsan_2503=
+				{
+					Posn
+					{
+						Abs
+						{	X	61550592,
+							Z	64714240
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Munsan_2504=
+				{
+					Posn
+					{
+						Abs
+						{	X	61518848,
+							Z	64682496
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StMunsan,
+		ItemGroup
+		{
+				SimpleItem	Munsan_1a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	61347665,
+							Z	65022918
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	Munsan_1a01=
+				{
+					Posn
+					{
+						Abs
+						{	X	61330461,
+							Z	65045036
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Munsan_1a02=
+				{
+					Posn
+					{
+						Abs
+						{	X	61432042,
+							Z	65194132
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	Munsan_1a03=
+				{
+					Posn
+					{
+						Abs
+						{	X	61610629,
+							Z	65035206
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	Munsan_1a05=
+				{
+					Posn
+					{
+						Abs
+						{	X	61495296,
+							Z	64621568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Munsan_1a06=
+				{
+					Posn
+					{
+						Abs
+						{	X	61502464,
+							Z	64664576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Munsan_1a07=
+				{
+					Posn
+					{
+						Abs
+						{	X	61323264,
+							Z	64664576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	Munsan_1a08=
+				{
+					Posn
+					{
+						Abs
+						{	X	61555712,
+							Z	64661504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Munsan_1a09=
+				{
+					Posn
+					{
+						Abs
+						{	X	61572096,
+							Z	64637952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Munsan_1a0a=
+				{
+					Posn
+					{
+						Abs
+						{	X	61660290,
+							Z	64748356
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Munsan_1a0c=
+				{
+					Posn
+					{
+						Abs
+						{	X	61577216,
+							Z	64604672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	Munsan_1a0d=
+				{
+					Posn
+					{
+						Abs
+						{	X	61611008,
+							Z	65095680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	Munsan_1a0e=
+				{
+					Posn
+					{
+						Abs
+						{	X	61650944,
+							Z	65067008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				}
+		}	}
+	};

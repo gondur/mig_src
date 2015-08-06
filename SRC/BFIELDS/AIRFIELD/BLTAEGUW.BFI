@@ -1,0 +1,254 @@
+	WayPoint	bltaeguw_0106,
+	WayPoint	bltaeguw_0107,
+	WayPoint	bltaeguw_0108,
+	WayPoint	bltaeguw_0109,
+	GroundItem	bltaeguw_2f62,
+	SimpleItem	bltaeguw_2fb0,
+	SimpleItem	bltaeguw_2fb1,
+	SimpleItem	bltaeguw_2aff,
+	SimpleItem	bltaeguw_2afe,
+	SimpleItem	bltaeguw_2afd,
+	SimpleItem	bltaeguw_2afc,
+	SimpleItem	bltaeguw_2afb,
+	SimpleItem	bltaeguw_2afa,
+	SimpleItem	bltaeguw_2af9,
+	SimpleItem	bltaeguw_2af8,
+	SimpleItem	bltaeguw_2af7,
+	SimpleItem	bltaeguw_2af6,
+	BattleField
+	{
+		FileName	FIL_1_BLTAEGUW=bltaeguw.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlTaeguW,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	77100800,
+					Z	42464000
+				}
+			},
+			Route
+			{
+				WayPoint	bltaeguw_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	77093888,
+							Z	42470400
+						}
+					},
+					Action	wpstartloopno,
+					Vel	50
+				},
+				WayPoint	bltaeguw_0108=
+				{
+					Posn
+					{
+						Abs
+						{	X	77092608,
+							Z	42462464
+						}
+					},
+					Action	wpdmbtrknoactno,
+					Vel	50
+				},
+				WayPoint	bltaeguw_0107=
+				{
+					Posn
+					{
+						Abs
+						{	X	77100544,
+							Z	42463232
+						}
+					},
+					Action	wpstoploopchkno,
+					Vel	50
+				},
+				WayPoint	bltaeguw_0106=
+				{
+					Posn
+					{
+						Abs
+						{	X	77114368,
+							Z	42460416
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel	50
+				}
+			},
+			NumInForm		1,
+			Formation	SQUAD_ECHELONRIGHT_Left,
+			GroundItem	bltaeguw_2f62=
+			{
+				AfNoScoreBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_BLUE,
+				Shape	BULL
+	}	}	},
+	ItemGroup
+	{	Target	UID_AfBlTaeguW,
+		ItemGroup
+		{
+				SimpleItem	bltaeguw_2aff=
+				{
+					Posn
+					{
+						Abs
+						{	X	77191053,
+							Z	42530262
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI2,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaeguw_2afe=
+				{
+					Posn
+					{
+						Abs
+						{	X	77191258,
+							Z	42538659
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI1,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaeguw_2afd=
+				{
+					Posn
+					{
+						Abs
+						{	X	77184090,
+							Z	42546031
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI0,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaeguw_2afc=
+				{
+					Posn
+					{
+						Abs
+						{	X	77180608,
+							Z	42548490
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIE,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaeguw_2afb=
+				{
+					Posn
+					{
+						Abs
+						{	X	77175283,
+							Z	42548899
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIL,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaeguw_2afa=
+				{
+					Posn
+					{
+						Abs
+						{	X	77115392,
+							Z	42465792
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK0,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaeguw_2af9=
+				{
+					Posn
+					{
+						Abs
+						{	X	77147648,
+							Z	42496768
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK1,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaeguw_2af8=
+				{
+					Posn
+					{
+						Abs
+						{	X	77150976,
+							Z	42500096
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKL,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaeguw_2af7=
+				{
+					Posn
+					{
+						Abs
+						{	X	77149440,
+							Z	42498304
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKW,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaeguw_2af6=
+				{
+					Posn
+					{
+						Abs
+						{	X	77210304,
+							Z	42579209
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_LANDING,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaeguw_2fb0=
+				{
+					Posn
+					{
+						Abs
+						{	X	77172621,
+							Z	42566512
+						}
+					},
+					UIDBand		BlueArtilleryBAND,
+					Shape		SAAA
+				},
+				SimpleItem	bltaeguw_2fb1=
+				{
+					Posn
+					{
+						Abs
+						{	X	77119374,
+							Z	42456329
+						}
+					},
+					UIDBand		BlueArtilleryBAND,
+					Shape		SAAA
+				}
+		}	}
+	};

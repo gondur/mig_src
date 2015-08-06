@@ -1,0 +1,152 @@
+	SimpleItem	blosan_2aff,
+	SimpleItem	blosan_2afe,
+	SimpleItem	blosan_2afd,
+	SimpleItem	blosan_2afc,
+	SimpleItem	blosan_2afb,
+	SimpleItem	blosan_2afa,
+	SimpleItem	blosan_2af9,
+	SimpleItem	blosan_2af8,
+	SimpleItem	blosan_2af7,
+	SimpleItem	blosan_2af6,
+	BattleField
+	{
+		FileName	FIL_1_BLOSAN=blosan.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlOsan,
+		ItemGroup
+		{
+				SimpleItem	blosan_2aff=
+				{
+					Posn
+					{
+						Abs
+						{	X	63572736,
+							Z	56372992
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI2,
+					Shape		WINDSC
+				},
+				SimpleItem	blosan_2afe=
+				{
+					Posn
+					{
+						Abs
+						{	X	63674172,
+							Z	56379824
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI1,
+					Shape		WINDSC
+				},
+				SimpleItem	blosan_2afd=
+				{
+					Posn
+					{
+						Abs
+						{	X	63690790,
+							Z	56396914
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI0,
+					Shape		WINDSC
+				},
+				SimpleItem	blosan_2afc=
+				{
+					Posn
+					{
+						Abs
+						{	X	63691264,
+							Z	56400384
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIE,
+					Shape		WINDSC
+				},
+				SimpleItem	blosan_2afb=
+				{
+					Posn
+					{
+						Abs
+						{	X	63690752,
+							Z	56403840
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIL,
+					Shape		WINDSC
+				},
+				SimpleItem	blosan_2afa=
+				{
+					Posn
+					{
+						Abs
+						{	X	63468784,
+							Z	56363531
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK0,
+					Shape		WINDSC
+				},
+				SimpleItem	blosan_2af9=
+				{
+					Posn
+					{
+						Abs
+						{	X	63561970,
+							Z	56370494
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK1,
+					Shape		WINDSC
+				},
+				SimpleItem	blosan_2af8=
+				{
+					Posn
+					{
+						Abs
+						{	X	63568523,
+							Z	56371518
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKL,
+					Shape		WINDSC
+				},
+				SimpleItem	blosan_2af7=
+				{
+					Posn
+					{
+						Abs
+						{	X	63564837,
+							Z	56370904
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKW,
+					Shape		WINDSC
+				},
+				SimpleItem	blosan_2af6=
+				{
+					Posn
+					{
+						Abs
+						{	X	64213504,
+							Z	56454144
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_LANDING,
+					Shape		WINDSC
+				}
+		}	}
+	};

@@ -1,0 +1,350 @@
+	SimpleItem	SINAJU_0426,
+	SimpleItem	SINAJU_0429,
+	SimpleItem	SINAJU_042b,
+	SimpleItem	SINAJU_042e,
+	SimpleItem	SINAJU_0430,
+	SimpleItem	SINAJU_0433,
+	SimpleItem	SINAJU_0435,
+	SimpleItem	SINAJU_0437,
+	SimpleItem	SINAJU_043a,
+	SimpleItem	SINAJU_0444,
+	SimpleItem	SINAJU_204f,
+	SimpleItem	SINAJU_2051,
+	SimpleItem	SINAJU_2052,
+	SimpleItem	SINAJU_2055,
+	SimpleItem	SINAJU_2056,
+	SimpleItem	SINAJU_2057,
+	SimpleItem	SINAJU_2058,
+	SimpleItem	SINAJU_2059,
+	SimpleItem	SINAJU_205a,
+	SimpleItem	SINAJU_205b,
+	SimpleItem	SINAJU_205c,
+	SimpleItem	SINAJU_205d,
+	SimpleItem	SINAJU_205e,
+	SimpleItem	SINAJU_205f,
+	SimpleItem	SINAJU_2060,
+	SimpleItem	SINAJU_2061,
+	BattleField
+	{
+		FileName	FIL_1_SINAJU=SINAJU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StSinanju,
+		ItemGroup
+		{
+			SimpleItem	SINAJU_204f=
+			{
+				Posn
+				{
+					Abs
+					{	X	51247104,
+						Z	83848192
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	SINAJU_2052=
+			{
+				Posn
+				{
+					Abs
+					{	X	51527680,
+						Z	83987456
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN2
+			},
+				SimpleItem	SINAJU_0426=
+				{
+					Posn
+					{
+						Abs
+						{	X	51435520,
+							Z	83827712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SINAJU_0429=
+				{
+					Posn
+					{
+						Abs
+						{	X	51458048,
+							Z	83838976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SINAJU_042b=
+				{
+					Posn
+					{
+						Abs
+						{	X	51475456,
+							Z	83845120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SINAJU_042e=
+				{
+					Posn
+					{
+						Abs
+						{	X	51453952,
+							Z	83818496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SINAJU_0430=
+				{
+					Posn
+					{
+						Abs
+						{	X	51476480,
+							Z	83867648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SINAJU_0433=
+				{
+					Posn
+					{
+						Abs
+						{	X	51638272,
+							Z	83946496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SINAJU_0435=
+				{
+					Posn
+					{
+						Abs
+						{	X	51623936,
+							Z	83937280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SINAJU_0437=
+				{
+					Posn
+					{
+						Abs
+						{	X	51606528,
+							Z	83923968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	SINAJU_043a=
+				{
+					Posn
+					{
+						Abs
+						{	X	51591168,
+							Z	83910656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SINAJU_0444=
+				{
+					Posn
+					{
+						Abs
+						{	X	51560448,
+							Z	83921920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	SINAJU_2051=
+				{
+					Posn
+					{
+						Abs
+						{	X	51287040,
+							Z	83830784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SINAJU_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	51569664,
+							Z	83946496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SINAJU_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	51511296,
+							Z	83866624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI05
+				},
+				SimpleItem	SINAJU_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	51485696,
+							Z	83899392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	SINAJU_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	51202048,
+							Z	83842048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SINAJU_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	51375104,
+							Z	83900416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SINAJU_205a=
+				{
+					Posn
+					{
+						Abs
+						{	X	51301376,
+							Z	83864576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SINAJU_205b=
+				{
+					Posn
+					{
+						Abs
+						{	X	51468288,
+							Z	83982336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SINAJU_205c=
+				{
+					Posn
+					{
+						Abs
+						{	X	51538944,
+							Z	83910656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SINAJU_205d=
+				{
+					Posn
+					{
+						Abs
+						{	X	51529728,
+							Z	83944448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SINAJU_205e=
+				{
+					Posn
+					{
+						Abs
+						{	X	51276800,
+							Z	83892224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SINAJU_205f=
+				{
+					Posn
+					{
+						Abs
+						{	X	51425280,
+							Z	83960832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SINAJU_2060=
+				{
+					Posn
+					{
+						Abs
+						{	X	51341312,
+							Z	83877888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	SINAJU_2061=
+				{
+					Posn
+					{
+						Abs
+						{	X	51407872,
+							Z	83929088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				}
+		}	}
+	};

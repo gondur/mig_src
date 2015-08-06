@@ -1,0 +1,136 @@
+	SimpleItem	C4_Red_0bee,
+	SimpleItem	C4_Red_0bcb,
+	SimpleItem	C4_Red_0bca,
+	SimpleItem	C4_Red_0bc9,
+	SimpleItem	C4_Red_0bc8,
+	SimpleItem	C4_Red_0bc7,
+	SimpleItem	C4_Red_0bc6,
+	SimpleItem	C4_Red_0bc5,
+	SimpleItem	C4_Red_0bc4,
+	BattleField
+	{
+		FileName	FIL_1_C4_Red=C4_Red.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	C4_Red_0bee=
+			{
+				Posn
+				{
+					Abs
+					{	X	69660672,
+						Z	66646016
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_3a,
+				Shape		HUT
+			},
+			SimpleItem	C4_Red_0bcb=
+			{
+				Posn
+				{
+					Abs
+					{	X	69642240,
+						Z	65783808
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNC_1a,
+				Shape		HUT
+			},
+			SimpleItem	C4_Red_0bca=
+			{
+				Posn
+				{
+					Abs
+					{	X	69816320,
+						Z	65882112
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNC_1b,
+				Shape		HUT
+			},
+			SimpleItem	C4_Red_0bc9=
+			{
+				Posn
+				{
+					Abs
+					{	X	69939200,
+						Z	65927168
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNC_1c,
+				Shape		HUT
+			},
+			SimpleItem	C4_Red_0bc8=
+			{
+				Posn
+				{
+					Abs
+					{	X	70057984,
+						Z	65998848
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNC_1d,
+				Shape		HUT
+			},
+			SimpleItem	C4_Red_0bc7=
+			{
+				Posn
+				{
+					Abs
+					{	X	70221824,
+						Z	66031616
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNC_1e,
+				Shape		HUT
+			},
+			SimpleItem	C4_Red_0bc6=
+			{
+				Posn
+				{
+					Abs
+					{	X	69322752,
+						Z	66037760
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNC_2a,
+				Shape		HUT
+			},
+			SimpleItem	C4_Red_0bc5=
+			{
+				Posn
+				{
+					Abs
+					{	X	69801984,
+						Z	66230272
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNC_2b,
+				Shape		HUT
+			},
+			SimpleItem	C4_Red_0bc4=
+			{
+				Posn
+				{
+					Abs
+					{	X	69908480,
+						Z	66301952
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNC_2c,
+				Shape		HUT
+			}
+		}
+	};

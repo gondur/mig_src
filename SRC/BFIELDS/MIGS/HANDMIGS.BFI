@@ -1,0 +1,3127 @@
+////////////////////////////////////////////////////////////////////////
+//
+// Module:      handmigs.bfi
+//
+// Created:     16/02/99 by JIM
+//
+// Description: Hand built mig battlefields
+//
+////////////////////////////////////////////////////////////////////////
+
+//use GR_movecode for special movcode that can put aircraft on airfields
+//formsize00 is total number of ac as specified in event structure
+//formsize01 is minimum number as specified in event structure
+//formsize02 is remainder of formsize00 - formsize01
+
+BattleField
+{
+	FileName	FIL_MIG_HOLDING = MigHold.BF,
+	AirGroup
+	{
+		NumInWing	1,
+		NumInForm	FormSize00,
+		DUTYMIGCAP,
+		Posn	{X 0,Y METRES1000,Z 0};
+		AirItem
+		{
+			Attitude	{Heading ANGLES_0Deg,Pitch ANGLES_0Deg,Roll	ANGLES_0Deg},
+			Scram_G0_Squad,
+			NAT_RED,
+			AUTO_NOPPILOT
+		}
+	}
+},
+
+//--------------------------------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_MIG_PREPLACE = MigPre.BF,
+//DeadCode PD 29Jun99 	Setval		{FriendlyScoutType00,Scram_G0_Squad},
+//DeadCode PD 29Jun99 	Setval		{RequiredNationality,NatG0FST00},
+//DeadCode PD 29Jun99 ////	Setval		{RequiredNationality,NatG0Squad},
+//DeadCode PD 29Jun99 	Setval		{PlyrFormSize,Scram_G0_AC},
+//DeadCode PD 29Jun99 	Setval		{MainPosX,Int {List RequiredNationality,0,METRES1000,-METRES1000,0,0}},
+//DeadCode PD 29Jun99 	Setval		{MainPosZ,Int {List RequiredNationality,METRES1000,0,0,-METRES1000,0}},
+//DeadCode PD 29Jun99 	Setval		{DesHdg,Int {List RequiredNationality,ANGLES_180Deg,ANGLES_270Deg,ANGLES_90Deg,ANGLES_0Deg,ANGLES_45Deg}},
+//DeadCode PD 29Jun99 
+//DeadCode PD 29Jun99 	AirGroup
+//DeadCode PD 29Jun99 	{
+//DeadCode PD 29Jun99 		Route
+//DeadCode PD 29Jun99 		{
+//DeadCode PD 29Jun99 			WayPoint		//simple barrier patrol 10km south of target.
+//DeadCode PD 29Jun99 			{
+//DeadCode PD 29Jun99 				Posn	{Abs	{Pack_Target},
+//DeadCode PD 29Jun99 						 Abs	{Y -METRES4000},
+//DeadCode PD 29Jun99 						 Rel	{X METRES20KM,Z	{Random -METRES10KM,METRES100,30}}
+//DeadCode PD 29Jun99 						},	
+//DeadCode PD 29Jun99 				wpstartloopno
+//DeadCode PD 29Jun99 			},
+//DeadCode PD 29Jun99 			WayPoint
+//DeadCode PD 29Jun99 			{
+//DeadCode PD 29Jun99 				Posn	{Abs	{Pack_Target},
+//DeadCode PD 29Jun99 						 Abs	{Y -METRES4000},
+//DeadCode PD 29Jun99 						 Rel	{X -METRES20KM,Z {Random -METRES10KM,METRES100,30}}
+//DeadCode PD 29Jun99 						},	
+//DeadCode PD 29Jun99 				wpstoploopchkno	
+//DeadCode PD 29Jun99 			},
+//DeadCode PD 29Jun99 			WayPoint
+//DeadCode PD 29Jun99 			{
+//DeadCode PD 29Jun99 				Posn	{Abs	{Pack_Takeoff},
+//DeadCode PD 29Jun99 						 Abs	{Y METRES500}
+//DeadCode PD 29Jun99 						},	
+//DeadCode PD 29Jun99 				wpalandingno,
+//DeadCode PD 29Jun99 				Range	METRES20KM
+//DeadCode PD 29Jun99 
+//DeadCode PD 29Jun99 			}
+//DeadCode PD 29Jun99 
+//DeadCode PD 29Jun99 		},
+//DeadCode PD 29Jun99 
+//DeadCode PD 29Jun99 		NumInWing	8,
+//DeadCode PD 29Jun99 		NumInForm	FormSize00,
+//DeadCode PD 29Jun99 		DUTYMIGCAP,
+//DeadCode PD 29Jun99 		Posn	{
+//DeadCode PD 29Jun99 				
+//DeadCode PD 29Jun99 			Abs	{Pack_Takeoff},
+//DeadCode PD 29Jun99 				 Abs	{Y -METRES500},
+//DeadCode PD 29Jun99 				 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//DeadCode PD 29Jun99 						 Bearing	ANGLES_0Deg,
+//DeadCode PD 29Jun99 						 Range		{Random RangeStepSize,METRES300,60}
+//DeadCode PD 29Jun99 						}
+//DeadCode PD 29Jun99 				};
+//DeadCode PD 29Jun99 		AirItem
+//DeadCode PD 29Jun99 		{
+//DeadCode PD 29Jun99 			Scram_G0_Squad,
+//DeadCode PD 29Jun99 			NAT_RED,
+//DeadCode PD 29Jun99 			Home	Pack_Takeoff
+//DeadCode PD 29Jun99 		}
+//DeadCode PD 29Jun99 	}
+//DeadCode PD 29Jun99 },
+	Setval	{HeightSize, Y {Random FT_35000,21,FT_1000}},
+	Setval	{EncounterSize, Int {Random 4,4,4}},
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_90Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_35000}
+						},	
+				wpalandingno,
+				Range	METRES7000
+			}
+
+		},
+
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	{List {Random 2}, SQUAD_MIG_RIGHT, SQUAD_STRING},
+
+		Posn	{Abs	{Pack_Target},
+			 Abs	{Y HeightSize}
+			},
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//---------------------------------------------------------------------------
+BattleField
+{
+	FileName	FIL_MIG_SOUTHAF = MigSAF.BF,
+	AirGroup
+	{
+		Route
+		{
+			WayPoint		//simple barrier patrol 30km south of target.
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y METRES5000},
+						 Rel	{X METRES20KM,Z	{Random -METRES30KM,METRES100,50}}
+						},	
+				Range METRES1000,
+
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y METRES5000},
+						 Rel	{X -METRES20KM,Z {Random -METRES30KM,METRES100,50}}
+						},	
+				Range METRES1000,
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y METRES500}
+						},	
+				wpalandingno,
+				Range	METRES20KM
+			}
+
+		},
+
+		NumInWing	8,
+		NumInForm	FormSize00,
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff,
+			Scram_G1_Skill,
+			MORALE_HIGH
+		}
+	}
+},
+
+//------------------------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_Sanctuary_Patrol = MigRes01.BF,
+	Setval	{HeightSize, Y {Select FT_40000,6,FT_1000}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdAntung},
+					 Abs	{Y HeightSize}
+					},	
+				Range	METRES100,
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StSuihu},
+						 Abs	{Y HeightSize}
+					},	
+				Range	METRES100,
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						}, 
+				Range	METRES7000,	
+				wpalandingno
+			}
+
+		},
+
+
+		NumInWing	16,
+		NumInForm	FormSize00,
+
+		Formation	SQUAD_STRING,
+
+		DUTYMIGCAP,
+
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-----------------------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_Safe_Patrol = MigRes02.BF,
+	Setval	{HeightSize, Y {Random FT_35000,16,FT_1000}},
+//DeadCode MS 21Jun99 	Setval	{Pack_Target,UID_BrRdSinuiju},	
+	AirGroup
+	{
+		Route
+		{
+//			WayPoint
+//			{
+//				Posn	{Abs	{Pack_Target},
+//						 Abs	{Y HeightSize}
+//						}
+//			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+					 	 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+						 Bearing	ANGLES_90Deg,
+				 		 Range		METRES5000
+						}
+					},	
+				Range	METRES100,
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				Range	METRES100,
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						}, 
+				Range	METRES7000,	
+				wpalandingno
+			}
+
+		},
+
+
+		NumInWing	16,
+		NumInForm	FormSize00,
+		Formation	SQUAD_STRING,
+
+//DeadCode MS 01Jul99 		Posn	{Abs	{Pack_Takeoff},
+//DeadCode MS 01Jul99 				 Abs	{Y HeightSize}
+//DeadCode MS 01Jul99 				},
+
+		DUTYMIGCAP,
+
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-----------------------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_Careful_Crossing = MigRes03.BF,
+	Setval	{HeightSize, Y {Random FT_35000,21,FT_1000}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdAntung},
+					 Abs	{Y HeightSize}
+					},	
+				Range	METRES100,
+				wpacnoactionno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StSuihu},
+						 Abs	{Y HeightSize}
+					},	
+				Range	METRES100,
+				wpacnoactionno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdAntung},
+					 Abs	{Y HeightSize},
+					 	 Rel	{Intercept	{UID_AfRdAntung,UID_StSuihu},
+						 Bearing	ANGLES_0Deg,
+				 		 RangePercent	{Random 25,76,1}
+					}
+					},	
+				Range	METRES100,
+				wpacnoactionno	
+				
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize}
+						},	
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						}, 
+				Range	METRES7000,	
+				wpalandingno
+			}
+
+		},
+
+
+		NumInWing	16,
+		NumInForm	FormSize00,
+		Formation	{List {Random 3}, SQUAD_STRING, SQUAD_MIG_RIGHT, SQUAD_MIG_LEFT},
+
+//DeadCode MS 01Jul99 		Posn	{Abs	{Pack_Takeoff},
+//DeadCode MS 01Jul99 				 Abs	{Y HeightSize}
+//DeadCode MS 01Jul99 				},
+
+		DUTYMIGCAP,
+
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+BattleField
+{
+	FileName	FIL_Careful_Crossing2 = MigRes04.BF,
+	Setval	{HeightSize, Y {Random FT_35000,21,FT_1000}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdAntung},
+					 Abs	{Y HeightSize}
+					},	
+				Range	METRES100,
+				wpacnoactionno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StSuihu},
+						 Abs	{Y HeightSize}
+					},	
+				Range	METRES100,
+				wpacnoactionno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdAntung},
+					 Abs	{Y HeightSize},
+					 	 Rel	{Intercept	{UID_AfRdAntung,UID_StSuihu},
+						 Bearing	ANGLES_0Deg,
+				 		 RangePercent	{Random 25,76,1}
+					}
+					},	
+				Range	METRES100,
+				wpacnoactionno	
+				
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize}
+						},	
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						}, 
+				Range	METRES7000,	
+				wpalandingno
+			}
+
+		},
+
+
+		NumInWing	16,
+		NumInForm	FormSize00,
+		Formation	{List {Random 3}, SQUAD_STRING, SQUAD_MIG_RIGHT, SQUAD_MIG_LEFT},
+
+		Posn	{Abs	{Pack_Takeoff},
+				 Abs	{Y HeightSize}
+				},
+
+		DUTYMIGCAP,
+
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//----------------------------------------------------------------------------
+//Done, not checked
+BattleField
+{
+	FileName	FIL_Attack_At_Bingo_Fuel = MigRes05.BF,
+
+	Setval	{HeightSize, Y {Random FT_40000,4,FT_5000}},
+	Setval	{EncounterSize, Int {Random 4,3,4}},
+	Setval	{RangeStepSize, Int {Random 0,2,1}},
+	Setval	{AngleStepSize, Int {Random 0,180,1}},
+	Setval	{RandAngle, {Random ANGLES_350Deg,21,ANGLES_1Deg}},
+
+	Setval	{ParentRand, Int {Random 0,4,1}},
+
+	Setval	{HeightSize, FT_40000},
+
+	AirGroup
+	{
+		Route	
+		{
+//TempCode PD 06Jul99 			WayPoint
+//TempCode PD 06Jul99 			{
+//TempCode PD 06Jul99 				Posn	{Abs	{Pack_Takeoff},
+//TempCode PD 06Jul99 						 Abs	{Y HeightSize}
+//TempCode PD 06Jul99 						},
+//TempCode PD 06Jul99 				wp_threat_any
+//TempCode PD 06Jul99 			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing ANGLES_0Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES10KM
+								}
+						},
+				wpacnoactionno,
+				Range	METRES100	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize}
+						},
+				wp_threat_any,
+				Range	METRES100	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing ANGLES_180Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				wpacnoactionno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	{Select ANGLES_90Deg,AngleStepSize,ANGLES_1Deg},
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES5000
+								}
+						},
+				wpacnoactionno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing ANGLES_180Deg,
+								 Pitch ANGLES_0Deg,
+						 		 Range METRES5000
+								}
+						},
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_90Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_5000}
+						},	
+				wpalandingno
+			}
+
+		},
+
+//TempCode MS 01Jul99 		NumInWing	RangeStepSize,
+//TempCode MS 01Jul99 		NumInForm	FormSize00,
+
+		NumInWing	4,
+		NumInForm	FormSize00,
+
+		Formation	{List ParentRand, SQUAD_MIG_RIGHT, SQUAD_STRING, SQUAD_GAGGLE, SQUAD_MIG_LEFT},
+
+		DUTYMIGCAP,
+
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//----------------------------------------------------------------------------
+//Done, not checked	//MS 18Apr99
+BattleField
+{
+	FileName	FIL_Cut_Off_At_Bingo_Fuel = MigRes06.BF,
+	Setval	{HeightSize, Y {Select FT_40000,5,FT_1000}},
+	Setval	{EncounterSize, Int {Random 4,13,1}},
+	Setval	(FormType00, Formation (List {Random 3},SQUAD_MIG_LEFT,SQUAD_MIG_RIGHT,SQUAD_STRING)),
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	
+						{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing ANGLES_160Deg,
+								 Range METRES20KM
+								}
+						},
+				Range	METRES100,
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	
+						{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing ANGLES_160Deg,
+								 Range METRES20KM
+								}
+						},
+				Range	METRES100,
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_10000}
+						},	
+				wpalandingno,
+				Range	METRES10KM
+			}
+
+		},
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	FormType00,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-----------------------------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_Moving_Roundabout = MigRes07.BF,
+
+	Setval	{HeightSize, Y {Random FT_35000,15,FT_1000}},
+	Setval	{EncounterSize, Int {Random 8,9,1}},
+	Setval	{RandAngle, {Random ANGLES_90Deg,180,ANGLES_1Deg}},
+	Setval	(FormType00, Formation (List {Random 3},SQUAD_MIG_RIGHT,SQUAD_STRING,SQUAD_MIG_LEFT)),
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	{Random ANGLES_90Deg,180,ANGLES_1Deg},
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				wp_threat_any,
+				Range	METRES6000
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_135Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES3000
+								}
+						},	
+				wpstartloopno,
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES3000
+								}
+						},	
+				wpstoploopchkno,
+				Range	METRES100	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						},	
+				wpalandingno,
+				Range	METRES7000
+			}
+
+		},
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	FormType00,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-----------------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_Static_Roundabout = MigRes08.BF,
+	Setval	{HeightSize, Y {Random FT_35000,15,FT_1000}},
+	Setval	{EncounterSize, Int {Random 8,9,1}},
+	Setval	(FormType00, Formation (List {Random 3},SQUAD_MIG_RIGHT,SQUAD_STRING,SQUAD_MIG_LEFT)),
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_135Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES3000
+								}
+						},	
+				wpstartloopno,
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES3000
+								}
+						},	
+				wpstoploopchkno,
+				Range	METRES100	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						},	
+				wpalandingno,
+				Range	METRES7000
+			}
+
+		},
+
+		Posn	{Abs	{Pack_Target},
+				 Abs	{Y HeightSize}
+				},	
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	FormType00,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-----------------------------------------------------
+BattleField
+{
+	FileName	FIL_Low_Sweep = MigRes09.BF,
+//**
+	Setval	{HeightSize, Y {Random FT_5000,6,FT_1000}},
+	Setval	{EncounterSize, Int {Random 4,4,4}},
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize}
+						},
+				Range	METRES100,
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_90Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstartloopno,
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstoploopchkno,	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y -METRES500}
+						},	
+				wpalandingno,
+				Range	METRES10KM
+			}
+
+		},
+
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	SQUAD_MIG_RIGHT,
+
+		Posn	{Abs	{Pack_Takeoff},
+				 Abs	{Y HeightSize}
+				},
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//----------------------------------------------------------------------------
+BattleField
+{
+	FileName	FIL_Superior_Numbers1 = MigRes10.BF
+};
+
+BattleField
+{
+	FileName	FIL_Superior_Numbers2 = MigRes11.BF
+};
+
+//----------------------------------------------------------------------------
+//Slashing attacks	(dive and zoom)
+//Not Checked													//MS 18Apr99
+BattleField
+{
+	FileName	FIL_BigBomber1 = MigRes12.BF,
+	Setval	{HeightSize, Y {Random FT_20000,6,FT_1000}},
+	Setval	{EncounterSize, Int {Random 4,3,4}},
+	Setval	{RangeStepSize, Int {Random 0,2,1}},
+	Setval	{AngleStepSize, Int {Random 0,180,1}},
+	Setval	{RandAngle, {Random ANGLES_350Deg,21,ANGLES_1Deg}},
+
+	Setval	{ParentRand, Int {Random 0,3,1}},
+
+//TempCode MS 01Jul99 	AirGroup
+//TempCode MS 01Jul99 	{
+//TempCode MS 01Jul99 		Route
+//TempCode MS 01Jul99 		{
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Takeoff},
+//TempCode MS 01Jul99 						 Abs	{Y HeightSize},
+//TempCode MS 01Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 01Jul99 								 Bearing RandAngle,
+//TempCode MS 01Jul99 								 Pitch	ANGLES_0Deg,
+//TempCode MS 01Jul99 						 		 RangePercent 50
+//TempCode MS 01Jul99 								}
+//TempCode MS 01Jul99 						},
+//TempCode MS 01Jul99 				wpacnoactionno	
+//TempCode MS 01Jul99 			},
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 01Jul99 						 Abs	{Y HeightSize},
+//TempCode MS 01Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 01Jul99 								 Bearing	{Select ANGLES_90Deg,AngleStepSize,ANGLES_1Deg},
+//TempCode MS 01Jul99 								 Pitch	ANGLES_0Deg,
+//TempCode MS 01Jul99 						 		 Range		METRES5000
+//TempCode MS 01Jul99 								}
+//TempCode MS 01Jul99 						},
+//TempCode MS 01Jul99 				wp_threat_any
+//TempCode MS 01Jul99 			},
+//TempCode MS 01Jul99 				
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 01Jul99 						 Abs	{Y HeightSize}
+//TempCode MS 01Jul99 						},
+//TempCode MS 01Jul99 				wpacnoactionno	
+//TempCode MS 01Jul99 			},
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 01Jul99 						 Abs	{Y HeightSize},
+//TempCode MS 01Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 01Jul99 								 Bearing	ANGLES_90Deg,
+//TempCode MS 01Jul99 						 		 Range		METRES5000
+//TempCode MS 01Jul99 								}
+//TempCode MS 01Jul99 						},	
+//TempCode MS 01Jul99 				wpstartloopno
+//TempCode MS 01Jul99 //TempCode MS 01Jul99 				wpacnoactionno	
+//TempCode MS 01Jul99 			},
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 01Jul99 						 Abs	{Y HeightSize},
+//TempCode MS 01Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 01Jul99 								 Bearing	ANGLES_270Deg,
+//TempCode MS 01Jul99 						 		 Range		METRES5000
+//TempCode MS 01Jul99 								}
+//TempCode MS 01Jul99 						},	
+//TempCode MS 01Jul99 				wpstoploopchkno	
+//TempCode MS 01Jul99 //TempCode MS 01Jul99 				wpacnoactionno	
+//TempCode MS 01Jul99 			},
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Takeoff},
+//TempCode MS 01Jul99 						 Abs	{Y FT_5000}
+//TempCode MS 01Jul99 						},	
+//TempCode MS 01Jul99 				wpalandingno
+//TempCode MS 01Jul99 			}
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 		},
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 		NumInWing	EncounterSize,
+//TempCode MS 01Jul99 //TempCode MS 01Jul99 		NumInForm	FormSize01,
+//TempCode MS 01Jul99 //DANGER
+//TempCode MS 01Jul99 		NumInForm	FormSize00,
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 		Formation	{List EncounterSize, SQUAD_MIG_RIGHT, SQUAD_STRING, SQUAD_GAGGLE},
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 		DUTYMIGCAP,
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 		AirItem
+//TempCode MS 01Jul99 		{
+//TempCode MS 01Jul99 			Scram_G0_Squad,
+//TempCode MS 01Jul99 			NAT_RED,
+//TempCode MS 01Jul99 			Home	Pack_Takeoff
+//TempCode MS 01Jul99 		}
+//TempCode MS 01Jul99 	},
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 	Setval	{EncounterSize, Int {Random 0,3,1}},
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 	AirGroup
+//TempCode MS 01Jul99 	{
+//TempCode MS 01Jul99 		Route
+//TempCode MS 01Jul99 		{
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Takeoff},
+//TempCode MS 01Jul99 						 Abs	{Y {Select HeightSize,2,FT_5000}},
+//TempCode MS 01Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 01Jul99 								 Bearing RandAngle,
+//TempCode MS 01Jul99 								 Pitch	ANGLES_0Deg,
+//TempCode MS 01Jul99 						 		 RangePercent 50
+//TempCode MS 01Jul99 								}
+//TempCode MS 01Jul99 						},
+//TempCode MS 01Jul99 				wpacnoactionno	
+//TempCode MS 01Jul99 			},
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 01Jul99 						 Abs	{Y {Select HeightSize,2,FT_5000}},
+//TempCode MS 01Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 01Jul99 								 Bearing	{Select ANGLES_90Deg,AngleStepSize,ANGLES_1Deg},
+//TempCode MS 01Jul99 								 Pitch	ANGLES_0Deg,
+//TempCode MS 01Jul99 						 		 Range		METRES5000
+//TempCode MS 01Jul99 								}
+//TempCode MS 01Jul99 						},
+//TempCode MS 01Jul99 				wp_threat_any
+//TempCode MS 01Jul99 			},
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 01Jul99 						 Abs	{Y {Select HeightSize,2,FT_5000}}
+//TempCode MS 01Jul99 						},
+//TempCode MS 01Jul99 				wpacnoactionno	
+//TempCode MS 01Jul99 			},
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 01Jul99 						 Abs	{Y {Select HeightSize,2,FT_5000}},
+//TempCode MS 01Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 01Jul99 								 Bearing	ANGLES_90Deg,
+//TempCode MS 01Jul99 						 		 Range		METRES5000
+//TempCode MS 01Jul99 								}
+//TempCode MS 01Jul99 						},	
+//TempCode MS 01Jul99 				wpstartloopno
+//TempCode MS 01Jul99 			},
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 						Posn	{Abs	{Pack_Target},
+//TempCode MS 01Jul99 						 Abs	{Y {Select HeightSize,2,FT_5000}},
+//TempCode MS 01Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 01Jul99 								 Bearing	ANGLES_270Deg,
+//TempCode MS 01Jul99 						 		 Range		METRES5000
+//TempCode MS 01Jul99 								}
+//TempCode MS 01Jul99 						},	
+//TempCode MS 01Jul99 				wpstoploopchkno	
+//TempCode MS 01Jul99 			},
+//TempCode MS 01Jul99 			WayPoint
+//TempCode MS 01Jul99 			{
+//TempCode MS 01Jul99 				Posn	{Abs	{Pack_Takeoff},
+//TempCode MS 01Jul99 						 Abs	{Y FT_5000}
+//TempCode MS 01Jul99 						},	
+//TempCode MS 01Jul99 				wpalandingno
+//TempCode MS 01Jul99 			}
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 		},
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 		NumInWing	EncounterSize,
+//TempCode MS 01Jul99 //DANGER
+//TempCode MS 01Jul99 //TempCode MS 01Jul99 		NumInForm	FormSize02,
+//TempCode MS 01Jul99 		NumInForm	FormSize00,
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 		Formation	{List EncounterSize, SQUAD_MIG_RIGHT, SQUAD_STRING, SQUAD_GAGGLE},
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 		DUTYMIGCAP,
+//TempCode MS 01Jul99 
+//TempCode MS 01Jul99 		AirItem
+//TempCode MS 01Jul99 		{
+//TempCode MS 01Jul99 			Scram_G0_Squad,
+//TempCode MS 01Jul99 			NAT_RED,
+//TempCode MS 01Jul99 			Home	Pack_Takeoff
+//TempCode MS 01Jul99 		}
+//TempCode MS 01Jul99 	}
+	AirGroup
+	{
+		Route	ROUTE_BigBomber1_00 = 
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing ANGLES_0Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				wpacnoactionno	
+			},
+//TempCode MS 04Jul99 			WayPoint
+//TempCode MS 04Jul99 			{
+//TempCode MS 04Jul99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 04Jul99 						 Abs	{Y HeightSize},
+//TempCode MS 04Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 04Jul99 								 Bearing	{Select ANGLES_90Deg,AngleStepSize,ANGLES_1Deg},
+//TempCode MS 04Jul99 								 Pitch	ANGLES_0Deg,
+//TempCode MS 04Jul99 						 		 Range		METRES5000
+//TempCode MS 04Jul99 								}
+//TempCode MS 04Jul99 						},
+//TempCode MS 04Jul99 				wp_threat_any
+//TempCode MS 04Jul99 			},
+				
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize}
+						},
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_180Deg,
+							 Pitch	ANGLES_0Deg,
+						 	 Range		METRES20KM
+								}
+						}
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_90Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstartloopno
+//TempCode MS 01Jul99 				wpacnoactionno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstoploopchkno	
+//TempCode MS 01Jul99 				wpacnoactionno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_5000}
+						},	
+				wpalandingno
+			}
+
+		},
+
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize01,
+
+		Formation	SQUAD_MIG_RIGHT,
+
+		DUTYMIGCAP,
+
+		AirItem	ITEM_BigBomber1_00 =
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	},
+	AirGroup
+	{
+		Route	ROUTE_BigBomber1_00,
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize02,
+
+		Formation	SQUAD_MIG_RIGHT,
+
+		DUTYESCORT,
+
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff,
+			Leader	ITEM_BigBomber1_00
+		}
+	}
+
+};
+
+//--------------------------------------------------------------------------
+//line astern
+BattleField
+{
+	FileName	FIL_BigBomber2 = MigRes13.BF,
+	Setval	{HeightSize, Y {Random FT_30000,15,FT_1000}},
+	Setval	{EncounterSize, Int {Random 8,3,4}},
+	Setval	(FormType00, Formation (List {Random 3},SQUAD_MIG_LEFT,SQUAD_MIG_RIGHT,SQUAD_STRING)),
+	Setval	{RandAngle, {Random ANGLES_90Deg,180,ANGLES_1Deg}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	{Random ANGLES_90Deg,180,ANGLES_1Deg},
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				wp_threat_any,
+				Range	METRES6000
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_135Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstartloopno,
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstoploopchkno,
+				Range	METRES100	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						},	
+				wpalandingno,
+				Range	METRES7000
+			}
+
+		},
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	FormType00,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//--------------------------------------------------------------------------
+//line abreast
+BattleField
+{
+	FileName	FIL_BigBomber3 = MigRes14.BF,
+	Setval	{HeightSize, Y {Random FT_30000,15,FT_1000}},
+	Setval	{EncounterSize, Int {Random 8,3,4}},
+	Setval	(FormType00, SQUAD_CH_ABREAST),
+	Setval	{RandAngle, {Random ANGLES_90Deg,180,ANGLES_1Deg}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	{Random ANGLES_90Deg,180,ANGLES_1Deg},
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				wp_threat_any,
+				Range	METRES6000
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_135Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstartloopno,
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstoploopchkno,
+				Range	METRES100	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						},	
+				wpalandingno,
+				Range	METRES7000
+			}
+
+		},
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	FormType00,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//--------------------------------------------------------------------------
+//Checked //MS 18Apr99
+
+BattleField
+{
+	FileName	FIL_Intercept_Enemy1 = MigRes15.BF,
+
+//TempCode MS 02Jul99 	Setval	{HeightSize, Y {Random FT_25000,36,FT_1000}},
+//DANGER
+	Setval	{HeightSize, FT_40000},
+
+	Setval	{EncounterSize, Int {Random 4,4,4}},
+	Setval	{ParentRand, Int {Random 0,3,1}},
+	Setval	{RandAngle, {Random ANGLES_90Deg,180,ANGLES_1Deg}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_0Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES20KM
+								}
+						}
+			},
+
+//TempCode MS 04Jul99 			WayPoint
+//TempCode MS 04Jul99 			{
+//TempCode MS 04Jul99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 04Jul99 						 Abs	{Y HeightSize},
+//TempCode MS 04Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 04Jul99 								 Bearing	RandAngle,
+//TempCode MS 04Jul99 								 Pitch	ANGLES_0Deg,
+//TempCode MS 04Jul99 						 		 Range		METRES5000
+//TempCode MS 04Jul99 								}
+//TempCode MS 04Jul99 						},
+//TempCode MS 04Jul99 				Range	METRES6000,
+//TempCode MS 04Jul99 				wp_threat_any
+//TempCode MS 04Jul99 			},
+//TempCode MS 04Jul99 			WayPoint
+//TempCode MS 04Jul99 			{
+//TempCode MS 04Jul99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 04Jul99 						 Abs	{Y HeightSize},
+//TempCode MS 04Jul99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 04Jul99 								 Bearing	RandAngle,
+//TempCode MS 04Jul99 								 Pitch	ANGLES_0Deg,
+//TempCode MS 04Jul99 						 		 Range		METRES5000
+//TempCode MS 04Jul99 								}
+//TempCode MS 04Jul99 						}
+//TempCode MS 04Jul99 			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize}
+						},
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_135Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES10KM
+								}
+						}
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_90Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize}
+						},	
+				wpalandingno,
+				Range	METRES7000
+			}
+
+		},
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	{List ParentRand, SQUAD_MIG_RIGHT, SQUAD_STRING, SQUAD_GAGGLE},
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+
+//THIS FORCES THEM TO KIMPO
+//TempCode MS 30Jun99 //DANGER, MASTER ROBINSON
+//TempCode MS 30Jun99 //TempCode MS 30Jun99 	Setval	{HeightSize, Y {Random FT_35000,21,FT_1000}},
+//TempCode MS 30Jun99 	Setval	{HeightSize, Y {Select FT_30000,3,FT_1000}},
+//TempCode MS 30Jun99 
+//TempCode MS 30Jun99 	Setval	{EncounterSize, Int {Random 4,4,4}},
+//TempCode MS 30Jun99 	Setval	{EncounterSize, Int {Random 0,2,1}},
+//TempCode MS 30Jun99 
+//TempCode MS 30Jun99 	AirGroup
+//TempCode MS 30Jun99 	{
+//TempCode MS 30Jun99 		Route
+//TempCode MS 30Jun99 		{
+//TempCode MS 30Jun99 //DANGER, MASTER ROBINSON
+//TempCode MS 30Jun99 			WayPoint
+//TempCode MS 30Jun99 			{
+//TempCode MS 30Jun99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 30Jun99 						 Abs	{Y HeightSize}
+//TempCode MS 30Jun99 					}
+//TempCode MS 30Jun99 			},
+//TempCode MS 30Jun99 			WayPoint
+//TempCode MS 30Jun99 			{
+//TempCode MS 30Jun99 				Posn	{Abs	{UID_AfBlKimpo},
+//TempCode MS 30Jun99 						 Abs	{Y HeightSize}
+//TempCode MS 30Jun99 					}
+//TempCode MS 30Jun99 			},
+//TempCode MS 30Jun99 //--
+//TempCode MS 30Jun99 			WayPoint
+//TempCode MS 30Jun99 			{
+//TempCode MS 30Jun99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 30Jun99 						 Abs	{Y HeightSize},
+//TempCode MS 30Jun99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 30Jun99 								 Bearing	{Random ANGLES_270Deg,180,ANGLES_1Deg},
+//TempCode MS 30Jun99 								 Pitch	ANGLES_0Deg,
+//TempCode MS 30Jun99 						 		 Range		METRES5000
+//TempCode MS 30Jun99 								}
+//TempCode MS 30Jun99 						}
+//TempCode MS 30Jun99 //TempCode MS 30Jun99 				wp_threat_any
+//TempCode MS 30Jun99 			},
+//TempCode MS 30Jun99 			WayPoint
+//TempCode MS 30Jun99 			{
+//TempCode MS 30Jun99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 30Jun99 						 Abs	{Y HeightSize}
+//TempCode MS 30Jun99 					}
+//TempCode MS 30Jun99 			},
+//TempCode MS 30Jun99 			WayPoint
+//TempCode MS 30Jun99 			{
+//TempCode MS 30Jun99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 30Jun99 						 Abs	{Y HeightSize},
+//TempCode MS 30Jun99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 30Jun99 								 Bearing	ANGLES_90Deg,
+//TempCode MS 30Jun99 								 Pitch	ANGLES_0Deg,
+//TempCode MS 30Jun99 						 		 Range		METRES5000
+//TempCode MS 30Jun99 								}
+//TempCode MS 30Jun99 						},	
+//TempCode MS 30Jun99 				wpstartloopno
+//TempCode MS 30Jun99 			},
+//TempCode MS 30Jun99 			WayPoint
+//TempCode MS 30Jun99 			{
+//TempCode MS 30Jun99 				Posn	{Abs	{Pack_Target},
+//TempCode MS 30Jun99 						 Abs	{Y HeightSize},
+//TempCode MS 30Jun99 						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+//TempCode MS 30Jun99 								 Bearing	ANGLES_270Deg,
+//TempCode MS 30Jun99 								 Pitch	ANGLES_0Deg,
+//TempCode MS 30Jun99 						 		 Range		METRES5000
+//TempCode MS 30Jun99 								}
+//TempCode MS 30Jun99 						},	
+//TempCode MS 30Jun99 				wpstoploopchkno	
+//TempCode MS 30Jun99 			},
+//TempCode MS 30Jun99 			WayPoint
+//TempCode MS 30Jun99 			{
+//TempCode MS 30Jun99 				Posn	{Abs	{Pack_Takeoff},
+//TempCode MS 30Jun99 						 Abs	{Y HeightSize}
+//TempCode MS 30Jun99 						},	
+//TempCode MS 30Jun99 				wpalandingno,
+//TempCode MS 30Jun99 				Range	METRES7000
+//TempCode MS 30Jun99 			}
+//TempCode MS 30Jun99 
+//TempCode MS 30Jun99 		},
+//TempCode MS 30Jun99 
+//TempCode MS 30Jun99 //DANGER, MASTER ROBINSON					//MS 30Jun99
+//TempCode MS 30Jun99 
+//TempCode MS 30Jun99 //TempCode MS 30Jun99 		NumInWing	EncounterSize,
+//TempCode MS 30Jun99 //TempCode MS 30Jun99 		NumInForm	FormSize00,
+//TempCode MS 30Jun99 		NumInWing	4,
+//TempCode MS 30Jun99 		NumInForm	FormSize00,
+//TempCode MS 30Jun99 //TempCode MS 30Jun99 		Formation	{List EncounterSize, SQUAD_MIG_RIGHT, SQUAD_STRING},
+//TempCode MS 30Jun99 //DANGER, MASTER ROBINSON					//MS 30Jun99
+//TempCode MS 30Jun99 		Formation	SQUAD_STAIRCASE,
+//TempCode MS 30Jun99 
+//TempCode MS 30Jun99 //TempCode MS 30Jun99 		Posn	{Abs	{Pack_Takeoff},
+//TempCode MS 30Jun99 //TempCode MS 30Jun99 			 Abs	{Y HeightSize}
+//TempCode MS 30Jun99 //TempCode MS 30Jun99 			},
+//TempCode MS 30Jun99 
+//TempCode MS 30Jun99 		DUTYMIGCAP,
+//TempCode MS 30Jun99 		AirItem
+//TempCode MS 30Jun99 		{
+//TempCode MS 30Jun99 			Scram_G0_Squad,
+//TempCode MS 30Jun99 			NAT_RED,
+//TempCode MS 30Jun99 			Home	Pack_Takeoff
+//TempCode MS 30Jun99 //DANGER, MASTER ROBINSON					//MS 30Jun99
+//TempCode MS 30Jun99 //TempCode MS 30Jun99 			Shape	F84
+//TempCode MS 30Jun99 		}
+//TempCode MS 30Jun99 	}
+};
+//--------------------------------------------------------------------------
+BattleField
+{
+	FileName	FIL_Intercept_Enemy2 = MigRes16.BF,
+
+	Setval	{HeightSize, Y {Random FT_35000,15,FT_1000}},
+	Setval	{EncounterSize, Int {Random 4,4,4}},
+	Setval	{ParentRand, Int {Random 0,3,1}},
+	Setval	{RandAngle, {Random ANGLES_90Deg,180,ANGLES_1Deg}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	{Random ANGLES_90Deg,180,ANGLES_1Deg},
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				wp_threat_any,
+				Range	METRES6000
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_135Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstartloopno,
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstoploopchkno,
+				Range	METRES100	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						},	
+				wpalandingno,
+				Range	METRES7000
+			}
+
+		},
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	{List ParentRand, SQUAD_MIG_RIGHT, SQUAD_STRING, SQUAD_MIG_LEFT},
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-----------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_Intercept_Enemy3 = MigRes17.BF,
+	Setval	{HeightSize, Y {Random FT_20000,25,FT_1000}},
+	Setval	{EncounterSize, 6},
+	Setval	{ParentRand, Int {Random 0,3,1}},
+	Setval	{RandAngle, {Random ANGLES_90Deg,180,ANGLES_1Deg}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	{Random ANGLES_90Deg,180,ANGLES_1Deg},
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				wp_threat_any,
+				Range	METRES6000
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_135Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstartloopno,
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstoploopchkno,
+				Range	METRES100	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						},	
+				wpalandingno,
+				Range	METRES7000
+			}
+
+		},
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	{List ParentRand, SQUAD_MIG_RIGHT, SQUAD_MIG_LEFT, SQUAD_CH_ABREAST},
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-----------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_Intercept_Enemy4 = MigRes18.BF,
+	Setval	{HeightSize, Y {Random FT_10000,20,FT_1000}},
+	Setval	{EncounterSize, Int {Random 8,3,4}},
+	Setval	{ParentRand, Int {Random 0,3,1}},
+	Setval	{RandAngle, {Random ANGLES_90Deg,180,ANGLES_1Deg}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	{Random ANGLES_90Deg,180,ANGLES_1Deg},
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				wp_threat_any,
+				Range	METRES6000
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	RandAngle,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES3000
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_135Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstartloopno,
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES2000
+								}
+						},	
+				wpstoploopchkno,
+				Range	METRES100	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						},	
+				wpalandingno,
+				Range	METRES7000
+			}
+
+		},
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	{List ParentRand, SQUAD_MIG_RIGHT, SQUAD_MIG_LEFT, SQUAD_VIC},
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-----------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_EndRun = MigRes19.BF,
+	Setval	{Pack_Takeoff, UID_AfRdTaTung},
+	Setval	{FormSize00, 4},
+	
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdSinuiju},
+						 Abs	{Y {Select FT_0,30,FT_1000}}
+						},	
+				Range	METRES1000,
+			 	Action	wpacnoactionno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdSinuiju},
+						 Abs	{Y {Select FT_0,30,FT_1000}},
+						 Rel	{X {Select 0,20,METRES1000}}
+						},	
+				Range	METRES1000,
+			 	Action	wpacnoactionno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StSuihu},
+						 Abs	{Y {Select FT_0,30,FT_1000}}
+						},	
+				Range	METRES1000,
+			 	Action	wpacnoactionno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y -METRES500}
+						},	
+				Range	METRES1000,
+				Action	wpalandingno
+			}
+
+		},
+
+		NumInWing	4,
+		NumInForm	FormSize00,
+		Formation	SQUAD_STACKEDV,
+
+		Posn	{Abs	{Pack_Takeoff},
+				 Abs	{Y {Select FT_0,30,FT_1000}}
+				};
+
+		AirItem
+		{
+			SQ_MIG15,
+//			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff,
+			Scram_G1_Skill,
+			MORALE_HIGH
+		}
+	}
+//DeadCode MS 08Mar99 	AirGroup
+//DeadCode MS 08Mar99 	{
+//DeadCode MS 08Mar99 		Route
+//DeadCode MS 08Mar99 		{
+//DeadCode MS 08Mar99 			WayPoint
+//DeadCode MS 08Mar99 			{
+//DeadCode MS 08Mar99 				Posn	{Abs	{UID_AfRdAntung},
+//DeadCode MS 08Mar99 						 Abs	{Y {Select FT_0,40,FT_1000}},
+//DeadCode MS 08Mar99 						 Rel	{Bearing ANGLES_345Deg,
+//DeadCode MS 08Mar99 								 Range METRES2000
+//DeadCode MS 08Mar99 								} 
+//DeadCode MS 08Mar99 						},	
+//DeadCode MS 08Mar99 				Range	METRES1000,
+//DeadCode MS 08Mar99 			 	Action	wpacnoactionno
+//DeadCode MS 08Mar99 			},
+//DeadCode MS 08Mar99 			WayPoint
+//DeadCode MS 08Mar99 			{
+//DeadCode MS 08Mar99 				Posn	{Abs	{UID_AfRdSinuiju},
+//DeadCode MS 08Mar99 						 Abs	{Y {Select FT_0,40,FT_1000}}
+//DeadCode MS 08Mar99 						},	
+//DeadCode MS 08Mar99 				Range	METRES1000,
+//DeadCode MS 08Mar99 			 	Action	wpacnoactionno
+//DeadCode MS 08Mar99 			},
+//DeadCode MS 08Mar99 			WayPoint
+//DeadCode MS 08Mar99 			{
+//DeadCode MS 08Mar99 				Posn	{Abs	{Pack_Target},
+//DeadCode MS 08Mar99 						 Abs	{Y {Select FT_0,20,FT_1000}}
+//DeadCode MS 08Mar99 						},	
+//DeadCode MS 08Mar99 				Range	METRES1000,
+//DeadCode MS 08Mar99 			 	Action	wpacnoactionno
+//DeadCode MS 08Mar99 			},
+//DeadCode MS 08Mar99 			WayPoint
+//DeadCode MS 08Mar99 			{
+//DeadCode MS 08Mar99 				Posn	{Abs	{Pack_Takeoff},
+//DeadCode MS 08Mar99 						 Abs	{Y -METRES500}
+//DeadCode MS 08Mar99 						},	
+//DeadCode MS 08Mar99 				Range	METRES1000,
+//DeadCode MS 08Mar99 				Action	wpalandingno
+//DeadCode MS 08Mar99 			}
+//DeadCode MS 08Mar99 
+//DeadCode MS 08Mar99 		},
+//DeadCode MS 08Mar99 
+//DeadCode MS 08Mar99 		NumInWing	4,
+//DeadCode MS 08Mar99 		NumInForm	8,	//FormSize00,
+//DeadCode MS 08Mar99 		DUTYCAP,
+//DeadCode MS 08Mar99 
+//DeadCode MS 08Mar99 		Posn	{Abs	{Pack_Takeoff},
+//DeadCode MS 08Mar99 				 Abs	{Y {Select FT_0,30,FT_1000}}
+//DeadCode MS 08Mar99 				};
+//DeadCode MS 08Mar99 
+//DeadCode MS 08Mar99 		AirItem
+//DeadCode MS 08Mar99 		{
+//DeadCode MS 08Mar99 			SQ_MIG15,
+//DeadCode MS 08Mar99 //			Scram_G0_Squad,
+//DeadCode MS 08Mar99 			NAT_RED,
+//DeadCode MS 08Mar99 			Home	Pack_Takeoff,
+//DeadCode MS 08Mar99 			Scram_G1_Skill,
+//DeadCode MS 08Mar99 			MORALE_HIGH
+//DeadCode MS 08Mar99 		}
+//DeadCode MS 08Mar99 	}
+};
+
+//************************************************
+
+BattleField
+{
+	FileName	FIL_EndRunDecoy = MigRes20.BF,
+	
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdSinuiju},
+						 Abs	{Y {Select FT_0,40,FT_1000}}
+						},	
+			 	Action	wpacnoactionno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdSinuiju},
+						 Abs	{Y {Select FT_0,40,FT_1000}},
+						 Rel	{X {Select 0,25,METRES1000}}
+						},	
+			 	Action	wpacnoactionno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StSuihu},
+						 Abs	{Y {Select FT_0,33,FT_1000}}
+						},	
+			 	Action	wpacnoactionno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y -METRES500}
+						},	
+				Action	wpalandingno
+			}
+
+		},
+
+		NumInWing	4,
+		NumInForm	FormSize01,
+		Formation	SQUAD_MIG_RIGHT,
+
+		DUTYMIGCAP,
+
+//TempCode MS 27Jun99 		Posn	{
+//TempCode MS 27Jun99 			Abs	{Pack_Takeoff},
+//TempCode MS 27Jun99 				 Abs	{Y HeightSize},
+//TempCode MS 27Jun99 				 Rel	{Intercept	{Pack_Target,Pack_Takeoff},
+//TempCode MS 27Jun99 						 Bearing	ANGLES_0Deg,
+//TempCode MS 27Jun99 						 Range		{Select METRES100KM,0,METRES10KM}
+//TempCode MS 27Jun99 						}
+//TempCode MS 27Jun99 				},
+
+
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	},
+	
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdTaTung},
+						 Abs	{Y {Select FT_0,40,FT_1000}},
+						 Rel	{Bearing ANGLES_345Deg,
+								 Range METRES8000
+								} 
+						},	
+				Range	METRES1000,
+			 	Action	wpacnoactionno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdSinuiju},
+						 Abs	{Y {Select FT_0,40,FT_1000}}
+						},	
+			 	Action	wpacnoactionno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y {Select FT_0,20,FT_1000}}
+						},	
+			 	Action	wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y -METRES500}
+						},	
+				Action	wpalandingno
+			}
+
+		},
+
+		NumInWing	16,
+		NumInForm	FormSize02,
+		Formation	SQUAD_MIG_RIGHT,
+
+		DUTYMIGCAP,
+
+
+//DeadCode MS 27Jun99 		Posn	{
+//DeadCode MS 27Jun99 			Abs	{Pack_Takeoff},
+//DeadCode MS 27Jun99 				 Abs	{Y HeightSize},
+//DeadCode MS 27Jun99 				 Rel	{Intercept	{Pack_Target,Pack_Takeoff},
+//DeadCode MS 27Jun99 						 Bearing	ANGLES_0Deg,
+//DeadCode MS 27Jun99 						 Range		{Select METRES100KM,1,METRES10KM}
+//DeadCode MS 27Jun99 						}
+//DeadCode MS 27Jun99 				},
+
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+//-------------------------------------------------------------------------
+BattleField
+{
+	FileName	FIL_Contrail_Focus = MigRes21.BF,
+//**DANGER
+	Setval	{HeightSize, Y {Random FT_30000,2,FT_1000}},
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_0Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES20KM
+								}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_0Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_0Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES20KM
+								}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_10000}
+						},	
+				wpalandingno,
+				Range	METRES10KM
+			}
+
+		},
+
+
+		NumInWing	16,
+		NumInForm	FormSize01,
+		Formation	SQUAD_CH_ABREAST,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	},
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_10000},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_0Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range		METRES20KM
+								}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_10000},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_0Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y FT_10000}
+						},	
+				Range	METRES100,
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y FT_10000},
+						 Rel	{Bearing	ANGLES_180Deg,
+						 		 Range		METRES20KM
+								}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_10000}
+						},	
+				wpalandingno,
+				Range	METRES10KM
+			}
+
+		},
+
+
+		NumInWing	16,
+		NumInForm	FormSize02,
+		Formation	SQUAD_MIG_RIGHT,
+
+		Posn	{Abs	{Pack_Takeoff},
+				 Abs	{Y HeightSize}
+				},
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-------------------------------------------------------------------------
+//A decoy
+BattleField
+{
+	FileName	FIL_SledgeHammer = MigRes22.BF,
+	Setval	{HeightSize, Y {Random FT_20000,6,FT_1000}},
+	Setval	{EncounterSize, Int {Random 4,4,4}},
+	Setval	{RangeStepSize, Int {Random 0,2,1}},
+	Setval	{AngleStepSize, Int {Random 0,180,1}},
+	Setval	{RandAngle, {Random ANGLES_350Deg,21,ANGLES_1Deg}},
+
+	Setval	{ParentRand, Int {Random 0,3,1}},
+	AirGroup
+	{
+		Route	ROUTE_SledgeHammer = 
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing ANGLES_0Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				wpacnoactionno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y FT_20000},
+						 Rel	{Bearing	ANGLES_180Deg,
+							 Pitch	ANGLES_0Deg,
+						 	 Range		METRES10KM
+								}
+						}
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						},	
+				wpalandingno,
+				Range	METRES10KM
+			}
+
+		},
+
+
+		NumInWing	16,
+		NumInForm	FormSize01,
+
+		Formation	SQUAD_DECOY,
+
+		DUTYMIGCAP,
+
+		AirItem	ITEM_SledgeHammer =
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	},
+	AirGroup
+	{
+		Route	ROUTE_SledgeHammer,
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize02,
+
+		Formation	SQUAD_DECOY,
+
+		DUTYESCORT,
+
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff,
+			Leader	ITEM_SledgeHammer
+		}
+	}
+};
+
+//-------------------------------------------------------------------------
+
+
+BattleField
+{
+	FileName	FIL_Superior_Numbers = MigRes23.BF
+};
+
+BattleField
+{
+	FileName	FIL_Staggered_Sweep = MigRes24.BF
+};
+
+//--------------------------------------------------------------------------
+BattleField
+{
+	FileName	FIL_Patrol3Levels = MigRes25.BF,
+//***
+	Setval	{HeightSize, Y {Select FT_30000,1,FT_1000}},
+	Setval	{EncounterSize, Int {Random 4,3,4}},
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_270Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_0Deg,
+								 Pitch	ANGLES_0Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_0Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_135Deg,
+						 	 	 Range		METRES3000
+								}
+						},	
+				wpstartloopno,
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_225Deg,
+						 	 	 Range		METRES3000
+							}
+						},	
+				wpstoploopchkno,	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_20000}
+						},	
+				wpalandingno
+			}
+
+		},
+
+
+		NumInWing	8,
+		NumInForm	FormSize00,
+		Formation	SQUAD_3LEVELS,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//--------------------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_Staircase = MigRes26.BF,
+	Setval	{HeightSize, Y {Random FT_2000,60,FT_100}},
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_0Deg,
+						 		 Range		METRES5000
+								}
+						}
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{HeightSize},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	{Random ANGLES_270Deg,2,ANGLES_180Deg},
+						 		 Range		METRES5000
+								}
+						}	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_5000}
+						},	
+				wpalandingno,
+				Range	METRES7000
+			}
+		},
+
+
+		NumInWing	4,
+		NumInForm	FormSize00,
+		Formation	SQUAD_STAIRCASE,
+
+		DUTYMIGCAP,
+
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+BattleField
+{
+	FileName	FIL_East_Coast_Raiders = MigRes27.BF,
+//**
+	Setval	{HeightSize, Y {Random FT_10000,15,FT_1000}},
+	Setval	{EncounterSize, Int {Random 4,3,4}},
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize}
+						},
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_90Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y -METRES500}
+						},	
+				wpalandingno
+			}
+
+		},
+
+
+		NumInWing	EncounterSize,
+		NumInForm	FormSize00,
+		Formation	SQUAD_STACKEDV,
+
+		Posn	{Abs	{Pack_Takeoff},
+				 Abs	{Y HeightSize}
+				},
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-----------------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_Uppercut_Decoy = MigRes28.BF,
+	Setval	{HeightSize, Y {Random FT_20000,50,FT_100}},
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{WP1},
+						 Abs	{Y HeightSize}
+						}
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Abs	{Y HeightSize}
+						},
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_90Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Target},
+						 Rel	{Intercept	{Pack_Takeoff,Pack_Target},
+								 Bearing	ANGLES_270Deg,
+						 		 Range		METRES5000
+								}
+						},	
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y -METRES500}
+						},	
+				wpalandingno
+			}
+
+		},
+
+
+		NumInWing	2,
+		NumInForm	FormSize00,
+		Formation	SQUAD_STAIRCASE,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+//-----------------------------------------------------------
+
+BattleField
+{
+	FileName	FIL_BigTrain1 = MigRes29.BF,
+
+	Setval	{HeightSize, FT_35000},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdTaTung},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_270Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StPyongyang},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_270Deg,
+						 		 Range	METRES50KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StPyongyang},
+						 Abs	{Y FT_15000}
+						},	
+				Range	METRES100,
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StYangdok},
+						 Abs	{Y FT_15000}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StChosan},
+						 Abs	{Y FT_15000}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_10000}
+						},	
+				wpalandingno,
+				Range	METRES10KM
+			}
+
+		},
+
+		NumInWing	8,
+		NumInForm	20,
+		Formation	SQUAD_MIG_RIGHT,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	},
+
+	Setval	{HeightSize, Y {Select FT_35000,1,FT_500}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdTaTung},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_270Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StPyongyang},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_270Deg,
+						 		 Range	METRES50KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StPyongyang},
+						 Abs	{Y FT_20000}
+						},	
+				Range	METRES100,
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StSinanju},
+						 Abs	{Y FT_20000}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StYomju},
+						 Abs	{Y FT_20000}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_10000}
+						},	
+				wpalandingno,
+				Range	METRES50KM
+			}
+
+		},
+
+		NumInWing	8,
+		NumInForm	20,
+		Formation	SQUAD_MIG_RIGHT,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	},
+
+	Setval	{HeightSize, Y {Select FT_35000,2,FT_500}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdTaTung},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_270Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100,
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StPyongyang},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_270Deg,
+						 		 Range	METRES50KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_ICMPNampo},
+						 Abs	{Y HeightSize}
+						},	
+				Range	METRES100,
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StPyongyang},
+						 Abs	{Y HeightSize}
+						},
+				Range	METRES100,
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_10000}
+						},	
+				wpalandingno,
+				Range	METRES20KM
+			}
+
+		},
+
+		NumInWing	8,
+		NumInForm	8,
+		Formation	SQUAD_MIG_RIGHT,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	},
+
+	Setval	{HeightSize, Y {Select FT_35000,2,FT_500}},
+
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdTaTung},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_270Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100,
+				wp_threat_any
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StPyongyang},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_270Deg,
+						 		 Range	METRES50KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_ChoDo},
+						 Abs	{Y HeightSize}
+						},	
+				Range	METRES100,
+				wpstartloopno
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_ICMPNampo},
+						 Abs	{Y HeightSize}
+						},
+				Range	METRES100,
+				wpstoploopchkno	
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_10000}
+						},	
+				wpalandingno,
+				Range	METRES20KM
+			}
+
+		},
+
+		NumInWing	8,
+		NumInForm	8,
+		Formation	SQUAD_MIG_RIGHT,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+//--------------------------------------------------------------------------
+BattleField
+{
+	FileName	FIL_BigTrain2 = MigRes30.BF,
+	Setval	{HeightSize, Y {Select FT_40000,5,FT_1000}},
+	Setval	{EncounterSize, Int {Random 4,3,4}},
+	AirGroup
+	{
+		Route
+		{
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y HeightSize},
+						 Rel	{Bearing	ANGLES_270Deg,
+						 		 Range	METRES20KM
+								}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_AfRdAntung},
+						 Abs	{Y HeightSize}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StYomju},
+						 Abs	{Y HeightSize}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StSinanju},
+						 Abs	{Y HeightSize}
+						},
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StPyongyang},
+						 Abs	{Y FT_20000}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StYangdok},
+						 Abs	{Y FT_20000}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{UID_StChosan},
+						 Abs	{Y FT_20000}
+						},	
+				Range	METRES100
+			},
+			WayPoint
+			{
+				Posn	{Abs	{Pack_Takeoff},
+						 Abs	{Y FT_10000}
+						},	
+				wpalandingno
+			}
+
+		},
+
+
+		NumInWing	16,
+		NumInForm	FormSize00,
+		Formation	SQUAD_MIG_RIGHT,
+
+		DUTYMIGCAP,
+		AirItem
+		{
+			Scram_G0_Squad,
+			NAT_RED,
+			Home	Pack_Takeoff
+		}
+	}
+};
+
+BattleField
+{
+	FileName	FIL_BigTrain3 = MigRes31.BF
+};
+
+BattleField
+{
+	FileName	FIL_BigTrain4 = MigRes32.BF
+};
+
+BattleField
+{
+	FileName	FIL_BigTrain5 = MigRes33.BF
+};
+
+BattleField
+
+{
+	FileName	FIL_BigTrain6 = MigRes34.BF
+};

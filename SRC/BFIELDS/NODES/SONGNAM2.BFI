@@ -1,0 +1,88 @@
+	BattleField
+	{
+		FileName	FIL_1_Songnam2=Songnam2.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_StSongnam,
+			ItemGroup
+			{
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StSongnam},
+						Rel	{Z -METRES200
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StSongnam},
+						Rel	{Z METRES200	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StSongnam},
+						Rel	{X METRES100	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StSongnam},
+						Rel	{X METRES200,
+							 Z METRES200	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StSongnam},
+						Rel	{X -METRES300,
+							 Z -METRES200
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StSongnam},
+						Rel	{X METRES400,
+							 Z -METRES300
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				}
+			}
+		}
+	};
+

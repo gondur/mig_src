@@ -1,0 +1,524 @@
+	SimpleItem	YANGYANG_0403,
+	SimpleItem	YANGYANG_1803,
+	SimpleItem	YANGYANG_1804,
+	SimpleItem	YANGYANG_1805,
+	SimpleItem	YANGYANG_1806,
+	SimpleItem	YANGYANG_1807,
+	SimpleItem	YANGYANG_1808,
+	SimpleItem	YANGYANG_2004,
+	SimpleItem	YANGYANG_2005,
+	SimpleItem	YANGYANG_2006,
+	SimpleItem	YANGYANG_2007,
+	SimpleItem	YANGYANG_2009,
+	SimpleItem	YANGYANG_200a,
+	SimpleItem	YANGYANG_200b,
+	SimpleItem	YANGYANG_200c,
+	SimpleItem	YANGYANG_200d,
+	SimpleItem	YANGYANG_200e,
+	SimpleItem	YANGYANG_200f,
+	SimpleItem	YANGYANG_2010,
+	SimpleItem	YANGYANG_2011,
+	SimpleItem	YANGYANG_2012,
+	SimpleItem	YANGYANG_2013,
+	SimpleItem	YANGYANG_2014,
+	SimpleItem	YANGYANG_2016,
+	SimpleItem	YANGYANG_2017,
+	SimpleItem	YANGYANG_2200,
+	SimpleItem	YANGYANG_2201,
+	SimpleItem	YANGYANG_2202,
+	SimpleItem	YANGYANG_2203,
+	SimpleItem	YANGYANG_2204,
+	SimpleItem	YANGYANG_2205,
+	SimpleItem	YANGYANG_2206,
+	SimpleItem	YANGYANG_2207,
+	SimpleItem	YANGYANG_2208,
+	SimpleItem	YANGYANG_2209,
+	SimpleItem	YANGYANG_220a,
+	SimpleItem	YANGYANG_220b,
+	SimpleItem	YANGYANG_220c,
+	SimpleItem	YANGYANG_220d,
+	BattleField
+	{
+		FileName	FIL_1_YANGYANG=YANGYANG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StYangyang,
+		ItemGroup
+		{
+				SimpleItem	YANGYANG_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	77727744,
+							Z	67161088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YANGYANG_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	77591552,
+							Z	67093504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+			SimpleItem	YANGYANG_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	77644800,
+						Z	67115008
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	YANGYANG_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	77659136,
+						Z	67124224
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	YANGYANG_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	77579264,
+						Z	67094528
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	YANGYANG_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	77656064,
+						Z	67052544
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	YANGYANG_200a=
+			{
+				Posn
+				{
+					Abs
+					{	X	77691904,
+						Z	67062784
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST2
+			},
+			SimpleItem	YANGYANG_200e=
+			{
+				Posn
+				{
+					Abs
+					{	X	77599744,
+						Z	67139584
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem	YANGYANG_200f=
+			{
+				Posn
+				{
+					Abs
+					{	X	77596672,
+						Z	67168256
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem	YANGYANG_2010=
+			{
+				Posn
+				{
+					Abs
+					{	X	77613056,
+						Z	67192832
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+				SimpleItem	YANGYANG_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	77699072,
+							Z	67141632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	YANGYANG_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	77539328,
+							Z	67107840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YANGYANG_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	77508608,
+							Z	67104768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YANGYANG_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	77608960,
+							Z	67095552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	YANGYANG_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	77581312,
+							Z	67057664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YANGYANG_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	77577216,
+							Z	67079168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YANGYANG_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	77599744,
+							Z	67079168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	YANGYANG_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	77591552,
+							Z	67069952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	YANGYANG_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	77698048,
+							Z	67087360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_SdRdYangyang,
+		ItemGroup
+		{
+			SimpleItem	YANGYANG_1803=
+			{
+				Posn
+				{
+					Abs
+					{	X	77689856,
+						Z	67167232
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	YANGYANG_1804=
+			{
+				Posn
+				{
+					Abs
+					{	X	77663232,
+						Z	67072000
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	YANGYANG_1805=
+			{
+				Posn
+				{
+					Abs
+					{	X	77584384,
+						Z	67125248
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	YANGYANG_1806=
+			{
+				Posn
+				{
+					Abs
+					{	X	77621248,
+						Z	67159040
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	YANGYANG_1807=
+			{
+				Posn
+				{
+					Abs
+					{	X	77638656,
+						Z	67211264
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	YANGYANG_1808=
+			{
+				Posn
+				{
+					Abs
+					{	X	77684736,
+						Z	67107840
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	YANGYANG_2201=
+			{
+				Posn
+				{
+					Abs
+					{	X	77662208,
+						Z	67136512
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		WF1S
+			},
+			SimpleItem	YANGYANG_2202=
+			{
+				Posn
+				{
+					Abs
+					{	X	77641728,
+						Z	67123200
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		WF4M
+			},
+			SimpleItem	YANGYANG_2203=
+			{
+				Posn
+				{
+					Abs
+					{	X	77631488,
+						Z	67139584
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			},
+			SimpleItem	YANGYANG_2204=
+			{
+				Posn
+				{
+					Abs
+					{	X	77613056,
+						Z	67125248
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	YANGYANG_2205=
+			{
+				Posn
+				{
+					Abs
+					{	X	77656064,
+						Z	67155968
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP3
+			},
+			SimpleItem	YANGYANG_2206=
+			{
+				Posn
+				{
+					Abs
+					{	X	77662208,
+						Z	67175424
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			},
+			SimpleItem	YANGYANG_2207=
+			{
+				Posn
+				{
+					Abs
+					{	X	77652992,
+						Z	67101696
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		WF6L
+			},
+			SimpleItem	YANGYANG_2208=
+			{
+				Posn
+				{
+					Abs
+					{	X	77665280,
+						Z	67113984
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		WF5M
+			},
+			SimpleItem	YANGYANG_2209=
+			{
+				Posn
+				{
+					Abs
+					{	X	77637632,
+						Z	67091456
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		WF5M
+			},
+			SimpleItem	YANGYANG_220a=
+			{
+				Posn
+				{
+					Abs
+					{	X	77594624,
+						Z	67109888
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			},
+			SimpleItem	YANGYANG_220b=
+			{
+				Posn
+				{
+					Abs
+					{	X	77636608,
+						Z	67162112
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	YANGYANG_220c=
+			{
+				Posn
+				{
+					Abs
+					{	X	77654016,
+						Z	67192832
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			},
+			SimpleItem	YANGYANG_220d=
+			{
+				Posn
+				{
+					Abs
+					{	X	77630464,
+						Z	67186688
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			},
+				SimpleItem	YANGYANG_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	77624320,
+							Z	67109888
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF2S
+				}
+		}	}
+	};

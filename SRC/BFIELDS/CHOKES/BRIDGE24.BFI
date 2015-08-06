@@ -1,0 +1,51 @@
+	SimpleItem	BRIDGE24_0430,
+	SimpleItem	BRIDGE24_0434,
+	SimpleItem	BRIDGE24_0437,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE24=BRIDGE24.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlYesong,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE24_0430=
+				{
+					Posn
+					{
+						Abs
+						{	X	60982272,
+							Z	65059840
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE24_0434=
+				{
+					Posn
+					{
+						Abs
+						{	X	61104128,
+							Z	65076224
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE24_0437=
+				{
+					Posn
+					{
+						Abs
+						{	X	60939264,
+							Z	65083392
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

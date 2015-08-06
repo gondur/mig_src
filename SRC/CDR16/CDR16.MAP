@@ -1,0 +1,454 @@
+
+ CDR16
+
+ Start     Length     Name                   Class
+ 0001:0000 00000H     WEPSEG                 CODE
+ 0001:0000 00D97H     CDR16_TEXT             CODE
+ 0002:0000 00032H     32TO16_TEXT            CODE
+ 0003:0000 008C6H     _TEXT                  CODE
+ 0004:0000 00054H     WEP_TEXT               CODE
+ 0005:0000 00010H     NULL                   BEGDATA
+ 0005:0010 00128H     _DATA                  DATA
+ 0005:0138 0000EH     CDATA                  DATA
+ 0005:0146 00000H     XIFB                   DATA
+ 0005:0146 00000H     XIF                    DATA
+ 0005:0146 00000H     XIFE                   DATA
+ 0005:0146 00000H     XIB                    DATA
+ 0005:0146 00000H     XI                     DATA
+ 0005:0146 00000H     XIE                    DATA
+ 0005:0146 00000H     XPB                    DATA
+ 0005:0146 00000H     XP                     DATA
+ 0005:0146 00000H     XPE                    DATA
+ 0005:0146 00000H     XCB                    DATA
+ 0005:0146 00000H     XC                     DATA
+ 0005:0146 00000H     XCE                    DATA
+ 0005:0146 00000H     XCFB                   DATA
+ 0005:0146 00000H     XCFCRT                 DATA
+ 0005:0146 00000H     XCF                    DATA
+ 0005:0146 00000H     XCFE                   DATA
+ 0005:0146 00000H     XIFCB                  DATA
+ 0005:0146 00000H     XIFU                   DATA
+ 0005:0146 00000H     XIFL                   DATA
+ 0005:0146 00000H     XIFM                   DATA
+ 0005:0146 00000H     XIFCE                  DATA
+ 0005:0146 00000H     DBDATA                 DATA
+ 0005:0146 00000H     CONST                  CONST
+ 0005:0146 00008H     HDR                    MSG
+ 0005:014E 000D4H     MSG                    MSG
+ 0005:0222 00002H     PAD                    MSG
+ 0005:0224 00001H     EPAD                   MSG
+ 0005:0226 00010H     _BSS                   BSS
+ 0005:0236 00000H     XOB                    BSS
+ 0005:0236 00000H     XO                     BSS
+ 0005:0236 00000H     XOE                    BSS
+ 0005:0236 00000H     XOFB                   BSS
+ 0005:0236 00000H     XOF                    BSS
+ 0005:0236 00000H     XOFE                   BSS
+ 0005:0240 0000EH     c_common               BSS
+
+ Origin   Group
+ 0005:0   DGROUP
+
+ Address   Export                  Alias
+
+ 0001:003A DllEntryPoint           DllEntryPoint
+ 0001:0A9C ExitCDFS16              ExitCDFS16
+ 0001:09FE InitCDFS16              InitCDFS16
+ 0001:0AD4 SeekToLocation16        SeekToLocation16
+ 0005:00B2 THK_THUNKDATA16         THK_THUNKDATA16
+ 0003:0530 ___ExportedStub         ___ExportedStub
+
+  Address         Publics by Name
+
+ 0000:0000  Imp  C16ThkSL01           (KERNEL.631)
+ 0001:0C84       CDGETALLFILEBASES
+ 0001:0818       CDGETDIRECTORYENTRY
+ 0001:003A       DllEntryPoint
+ 0000:0000  Imp  DOS3CALL             (KERNEL.102)
+ 0001:0A9C       ExitCDFS16
+ 0000:0000  Imp  FATALAPPEXIT         (KERNEL.137)
+ 0000:0000  Imp  FATALEXIT            (KERNEL.1)
+ 0001:046E       GETCDROMDRIVELETTER
+ 0001:0624       GETDEVSTAT
+ 0000:0000  Imp  GETDOSENVIRONMENT    (KERNEL.131)
+ 0000:0000  Imp  GETMODULEUSAGE       (KERNEL.48)
+ 0000:0000  Imp  GETVERSION           (KERNEL.3)
+ 0000:0000  Imp  GLOBALALLOC          (KERNEL.15)
+ 0000:0000  Imp  GLOBALDOSALLOC       (KERNEL.184)
+ 0000:0000  Imp  GLOBALDOSFREE        (KERNEL.185)
+ 0000:0000  Imp  GLOBALFREE           (KERNEL.17)
+ 0000:0000  Imp  GLOBALLOCK           (KERNEL.18)
+ 0000:0000  Imp  GLOBALREALLOC        (KERNEL.16)
+ 0000:0000  Imp  GLOBALSIZE           (KERNEL.20)
+ 0000:0000  Imp  GLOBALUNLOCK         (KERNEL.19)
+ 0001:09FE       InitCDFS16
+ 0000:0000  Imp  INITTASK             (KERNEL.91)
+ 0001:0000       LIBMAIN
+ 0000:0000  Imp  LOCALINIT            (KERNEL.4)
+ 0001:0088       LOCKCD16
+ 0000:0000  Imp  LOCKSEGMENT          (KERNEL.23)
+ 0000:0008  Abs  pAtomTable
+ 0000:0006  Abs  pLocalHeap
+ 0000:000E  Abs  pStackBot
+ 0000:000C  Abs  pStackMin
+ 0000:000A  Abs  pStackTop
+ 0005:0004       rsrvptrs
+ 0001:0AD4       SeekToLocation16
+ 0001:042E       SIMULATERM_INT
+ 0002:000C       THK_THUNKCONNECT16
+ 0005:00B2       THK_THUNKDATA16
+ 0000:0000  Imp  ThunkConnect16       (KERNEL.651)
+ 0001:0254       UNLOCKCD16
+ 0000:0000  Imp  UNLOCKSEGMENT        (KERNEL.24)
+ 0004:0000       WEP
+ 0005:00D1       _aseghi
+ 0005:00CF       _aseglo
+ 0005:0226       _edata
+ 0005:024E       _end
+ 0005:00EA       _errno
+ 0005:0244       _gdaBuffer
+ 0005:0248       _ghDLLInst
+ 0005:0014       _IREQ_AUDINFO
+ 0005:001F       _IREQ_AUDSTAT
+ 0005:0016       _IREQ_DEVSTAT
+ 0005:001A       _IREQ_DISKINFO
+ 0005:0015       _IREQ_DRVBYTES
+ 0005:0013       _IREQ_ERRSTAT
+ 0005:0011       _IREQ_LOCHEAD
+ 0005:0019       _IREQ_MEDCHNG
+ 0005:001C       _IREQ_QINFO
+ 0005:0010       _IREQ_RADDR
+ 0005:0012       _IREQ_reserved
+ 0005:0017       _IREQ_SECTSIZE
+ 0005:001D       _IREQ_SUBCHANINFO
+ 0005:001B       _IREQ_TNOINFO
+ 0005:001E       _IREQ_UPCCODE
+ 0005:0018       _IREQ_VOLSIZE
+ 0005:0240       _lpProtModeBuffer
+ 0005:024A       _lpRealModeBuffer
+ 0005:0023       _OREQ_AUDIOCHANNELCONTROL
+ 0005:0025       _OREQ_CLOSETRAY
+ 0005:0020       _OREQ_EJECTDISK
+ 0005:0021       _OREQ_LOCKUNLOCKDOOR
+ 0005:0022       _OREQ_RESETDRIVE
+ 0005:0024       _OREQ_WRITECONTROLSTRING
+ 0005:00C2       _STKHQQ
+ 0005:00D8       __aaltstkovr
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0000:D6D6  Abs  __aDBdoswp
+ 0005:0120       __adbgmsg
+ 0000:D6D6  Abs  __aDBused
+ 0003:012E       __aFchkstk
+ 0003:0168       __aFlshl
+ 0003:0174       __aFuldiv
+ 0003:01D4       __aFulshr
+ 0000:0000  Imp  __AHINCR             (KERNEL.114)
+ 0005:00DC       __aintdiv
+ 0005:0124       __amblksiz
+ 0003:045C       __amsg_exit
+ 0003:010E       __aNchkstk
+ 0003:0054       __astart
+ 0003:02FA       __cexit
+ 0005:011D       __child
+ 0003:012E       __chkstk
+ 0003:02B2       __cinit
+ 0003:0452       __cintDIV
+ 0005:00F5       __cpumode
+ 0003:0359       __ctermsub
+ 0003:030B       __c_exit
+ 0005:00CE       __dllinit
+ 0005:00F6       __doserrno
+ 0005:0226       __edata
+ 0005:024E       __end
+ 0005:0114       __environ
+ 0005:011F       __exitflag
+ 0005:00E0       __fac
+ 0003:065E       __ffree
+ 0003:0396       __FF_MSGBANNER
+ 0005:012A       __fheap
+ 0003:063D       __findlast
+ 0003:067F       __fmalloc
+ 0003:01E0       __fmemcpy
+ 0003:023E       __fmemset
+ 0005:013A       __fpinit
+ 0000:9876  Abs  __fptaskdata
+ 0003:04FC       __fptrap
+ 0003:07A8       __freefarheap
+ 0003:0832       __freelist
+ 0003:049E       __GetDGROUP
+ 0003:0546       __growseg
+ 0005:00C4       __hModule
+ 0003:05D7       __incseg
+ 0003:085C       __initseg
+ 0003:0890       __linkseg
+ 0005:00CA       __lpszCmdLine
+ 0003:0502       __myalloc
+ 0003:0544       __nearstub
+ 0003:0726       __newseg
+ 0005:00F8       __nfile
+ 0003:04AE       __NMSG_TEXT
+ 0003:04E5       __NMSG_WRITE
+ 0003:00F6       __nomain
+ 0005:00F6       __oserr
+ 0005:00FA       __osfile
+ 0005:00F1       __osmajor
+ 0005:00F0       __osminor
+ 0005:00F4       __osmode
+ 0005:00F0       __osver
+ 0005:00F2       __osversion
+ 0005:0118       __pgmptr
+ 0005:0126       __pnhFarHeap
+ 0003:07B6       __searchseg
+ 0003:03BA       __setenvp
+ 0000:0001  Abs  __sizec
+ 0000:0001  Abs  __sized
+ 0003:0286       __stubmain
+ 0004:003C       __STUBWEP
+ 0005:00EC       __umaskval
+ 0005:00C6       __wDataSeg
+ 0003:0010       __wflags
+ 0005:00C8       __wHeapSize
+ 0000:0000  Imp  __WINFLAGS           (KERNEL.178)
+ 0005:00EF       __winmajor
+ 0005:00EE       __winminor
+ 0005:00EE       __winver
+ 0005:00D5       ___aDBrterr
+ 0005:00D3       ___aDBswpflg
+ 0005:010E       ___argc
+ 0005:0110       ___argv
+ 0003:0530       ___ExportedStub
+
+  Address         Publics by Value
+
+ 0000:0000  Imp  FATALAPPEXIT         (KERNEL.137)
+ 0000:0000  Imp  INITTASK             (KERNEL.91)
+ 0000:0000  Imp  GLOBALSIZE           (KERNEL.20)
+ 0000:0000  Imp  GETDOSENVIRONMENT    (KERNEL.131)
+ 0000:0000  Imp  LOCKSEGMENT          (KERNEL.23)
+ 0000:0000  Imp  GLOBALFREE           (KERNEL.17)
+ 0000:0000  Imp  GLOBALUNLOCK         (KERNEL.19)
+ 0000:0000  Imp  GETVERSION           (KERNEL.3)
+ 0000:0000  Imp  __WINFLAGS           (KERNEL.178)
+ 0000:0000  Imp  FATALEXIT            (KERNEL.1)
+ 0000:0000  Imp  __AHINCR             (KERNEL.114)
+ 0000:0000  Imp  DOS3CALL             (KERNEL.102)
+ 0000:0000  Imp  ThunkConnect16       (KERNEL.651)
+ 0000:0000  Imp  GLOBALDOSFREE        (KERNEL.185)
+ 0000:0000  Imp  GLOBALREALLOC        (KERNEL.16)
+ 0000:0000  Imp  GETMODULEUSAGE       (KERNEL.48)
+ 0000:0000  Imp  GLOBALALLOC          (KERNEL.15)
+ 0000:0000  Imp  C16ThkSL01           (KERNEL.631)
+ 0000:0000  Imp  GLOBALLOCK           (KERNEL.18)
+ 0000:0000  Imp  UNLOCKSEGMENT        (KERNEL.24)
+ 0000:0000  Imp  LOCALINIT            (KERNEL.4)
+ 0000:0000  Imp  GLOBALDOSALLOC       (KERNEL.184)
+ 0000:0001  Abs  __sized
+ 0000:0001  Abs  __sizec
+ 0000:0006  Abs  pLocalHeap
+ 0000:0008  Abs  pAtomTable
+ 0000:000A  Abs  pStackTop
+ 0000:000C  Abs  pStackMin
+ 0000:000E  Abs  pStackBot
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0000:9876  Abs  __fptaskdata
+ 0000:D6D6  Abs  __aDBused
+ 0000:D6D6  Abs  __aDBdoswp
+ 0001:0000       LIBMAIN
+ 0001:003A       DllEntryPoint
+ 0001:0088       LOCKCD16
+ 0001:0254       UNLOCKCD16
+ 0001:042E       SIMULATERM_INT
+ 0001:046E       GETCDROMDRIVELETTER
+ 0001:0624       GETDEVSTAT
+ 0001:0818       CDGETDIRECTORYENTRY
+ 0001:09FE       InitCDFS16
+ 0001:0A9C       ExitCDFS16
+ 0001:0AD4       SeekToLocation16
+ 0001:0C84       CDGETALLFILEBASES
+ 0002:000C       THK_THUNKCONNECT16
+ 0003:0010       __wflags
+ 0003:0054       __astart
+ 0003:00F6       __nomain
+ 0003:010E       __aNchkstk
+ 0003:012E       __chkstk
+ 0003:012E       __aFchkstk
+ 0003:0168       __aFlshl
+ 0003:0174       __aFuldiv
+ 0003:01D4       __aFulshr
+ 0003:01E0       __fmemcpy
+ 0003:023E       __fmemset
+ 0003:0286       __stubmain
+ 0003:02B2       __cinit
+ 0003:02FA       __cexit
+ 0003:030B       __c_exit
+ 0003:0359       __ctermsub
+ 0003:0396       __FF_MSGBANNER
+ 0003:03BA       __setenvp
+ 0003:0452       __cintDIV
+ 0003:045C       __amsg_exit
+ 0003:049E       __GetDGROUP
+ 0003:04AE       __NMSG_TEXT
+ 0003:04E5       __NMSG_WRITE
+ 0003:04FC       __fptrap
+ 0003:0502       __myalloc
+ 0003:0530       ___ExportedStub
+ 0003:0544       __nearstub
+ 0003:0546       __growseg
+ 0003:05D7       __incseg
+ 0003:063D       __findlast
+ 0003:065E       __ffree
+ 0003:067F       __fmalloc
+ 0003:0726       __newseg
+ 0003:07A8       __freefarheap
+ 0003:07B6       __searchseg
+ 0003:0832       __freelist
+ 0003:085C       __initseg
+ 0003:0890       __linkseg
+ 0004:0000       WEP
+ 0004:003C       __STUBWEP
+ 0005:0004       rsrvptrs
+ 0005:0010       _IREQ_RADDR
+ 0005:0011       _IREQ_LOCHEAD
+ 0005:0012       _IREQ_reserved
+ 0005:0013       _IREQ_ERRSTAT
+ 0005:0014       _IREQ_AUDINFO
+ 0005:0015       _IREQ_DRVBYTES
+ 0005:0016       _IREQ_DEVSTAT
+ 0005:0017       _IREQ_SECTSIZE
+ 0005:0018       _IREQ_VOLSIZE
+ 0005:0019       _IREQ_MEDCHNG
+ 0005:001A       _IREQ_DISKINFO
+ 0005:001B       _IREQ_TNOINFO
+ 0005:001C       _IREQ_QINFO
+ 0005:001D       _IREQ_SUBCHANINFO
+ 0005:001E       _IREQ_UPCCODE
+ 0005:001F       _IREQ_AUDSTAT
+ 0005:0020       _OREQ_EJECTDISK
+ 0005:0021       _OREQ_LOCKUNLOCKDOOR
+ 0005:0022       _OREQ_RESETDRIVE
+ 0005:0023       _OREQ_AUDIOCHANNELCONTROL
+ 0005:0024       _OREQ_WRITECONTROLSTRING
+ 0005:0025       _OREQ_CLOSETRAY
+ 0005:00B2       THK_THUNKDATA16
+ 0005:00C2       _STKHQQ
+ 0005:00C4       __hModule
+ 0005:00C6       __wDataSeg
+ 0005:00C8       __wHeapSize
+ 0005:00CA       __lpszCmdLine
+ 0005:00CE       __dllinit
+ 0005:00CF       _aseglo
+ 0005:00D1       _aseghi
+ 0005:00D3       ___aDBswpflg
+ 0005:00D5       ___aDBrterr
+ 0005:00D8       __aaltstkovr
+ 0005:00DC       __aintdiv
+ 0005:00E0       __fac
+ 0005:00EA       _errno
+ 0005:00EC       __umaskval
+ 0005:00EE       __winminor
+ 0005:00EE       __winver
+ 0005:00EF       __winmajor
+ 0005:00F0       __osminor
+ 0005:00F0       __osver
+ 0005:00F1       __osmajor
+ 0005:00F2       __osversion
+ 0005:00F4       __osmode
+ 0005:00F5       __cpumode
+ 0005:00F6       __doserrno
+ 0005:00F6       __oserr
+ 0005:00F8       __nfile
+ 0005:00FA       __osfile
+ 0005:010E       ___argc
+ 0005:0110       ___argv
+ 0005:0114       __environ
+ 0005:0118       __pgmptr
+ 0005:011D       __child
+ 0005:011F       __exitflag
+ 0005:0120       __adbgmsg
+ 0005:0124       __amblksiz
+ 0005:0126       __pnhFarHeap
+ 0005:012A       __fheap
+ 0005:013A       __fpinit
+ 0005:0226       __edata
+ 0005:0226       _edata
+ 0005:0240       _lpProtModeBuffer
+ 0005:0244       _gdaBuffer
+ 0005:0248       _ghDLLInst
+ 0005:024A       _lpRealModeBuffer
+ 0005:024E       _end
+ 0005:024E       __end
+
+Line numbers for CDR16.obj(cdr16.c) segment CDR16_TEXT
+
+   270 0001:0000   271 0001:0013   273 0001:0019   275 0001:0029
+   276 0001:002f     0 0001:0038   289 0001:003a   290 0001:004d
+   292 0001:0071   294 0001:0077   295 0001:007d     0 0001:0086
+   303 0001:0088   311 0001:009b   312 0001:00a8   314 0001:00b5
+   315 0001:00c8   317 0001:00db   318 0001:00ef   320 0001:0101
+   322 0001:010c   325 0001:0111   327 0001:0145   329 0001:0165
+   330 0001:017d   332 0001:0190   333 0001:0198   334 0001:01a1
+   335 0001:01b0   336 0001:01b8   337 0001:01bf   339 0001:01c7
+   341 0001:01d0   342 0001:01d9   344 0001:01e1   345 0001:01ea
+   346 0001:0205   348 0001:0212   349 0001:0217   350 0001:021d
+   354 0001:022c   357 0001:024c     0 0001:0253   365 0001:0254
+   373 0001:0267   374 0001:0274   376 0001:0281   377 0001:0294
+   379 0001:02a7   380 0001:02bb   382 0001:02cd   384 0001:02d8
+   387 0001:02dd   389 0001:0311   391 0001:0331   392 0001:0349
+   394 0001:035c   395 0001:0364   396 0001:036d   397 0001:037c
+   398 0001:0384   399 0001:038b   401 0001:0393   403 0001:039c
+   404 0001:03a5   406 0001:03ad   407 0001:03b6   408 0001:03d1
+   410 0001:03de   411 0001:03e3   412 0001:03e9   416 0001:03f8
+   418 0001:0418   421 0001:0425     0 0001:042c   436 0001:042e
+   440 0001:0441   441 0001:0442   442 0001:0445   443 0001:0448
+   444 0001:044a   445 0001:044c   446 0001:044f   447 0001:0451
+   448 0001:0454   449 0001:0456   451 0001:0459   452 0001:045a
+   454 0001:045d   455 0001:0463     0 0001:046c   463 0001:046e
+   475 0001:0481   477 0001:0487   479 0001:0490   481 0001:049e
+   484 0001:04a4   486 0001:04e6   488 0001:050c   489 0001:0525
+   491 0001:053a   492 0001:0540   494 0001:0547   496 0001:0556
+   498 0001:056b   500 0001:0579   502 0001:058e   504 0001:05b0
+   506 0001:05be   508 0001:05cb   510 0001:05e4   512 0001:05ee
+   513 0001:05f4   517 0001:05f7   519 0001:0606   520 0001:0610
+   522 0001:0616   523 0001:061c     0 0001:0623   531 0001:0624
+   539 0001:0637   540 0001:0644   542 0001:0651   543 0001:0664
+   545 0001:0677   546 0001:068b   548 0001:069d   550 0001:06a8
+   553 0001:06ad   555 0001:06e1   557 0001:0701   558 0001:0719
+   560 0001:072c   561 0001:0734   562 0001:073d   563 0001:074c
+   564 0001:0754   565 0001:075b   567 0001:0763   569 0001:076c
+   571 0001:0775   572 0001:077e   573 0001:0799   575 0001:07a6
+   576 0001:07ab   577 0001:07b1   581 0001:07c0   583 0001:07e0
+   587 0001:07ed   589 0001:0803   590 0001:080d     0 0001:0816
+   598 0001:0818   610 0001:082b   611 0001:0838   613 0001:0845
+   615 0001:084f   616 0001:0865   618 0001:087b   620 0001:0886
+   623 0001:088b   625 0001:08bf   627 0001:08df   628 0001:08f7
+   630 0001:090a   636 0001:0921   638 0001:092d   640 0001:0941
+   641 0001:0945   642 0001:0949   644 0001:094c   645 0001:0951
+   646 0001:0957   650 0001:095b   651 0001:0978   655 0001:0987
+   660 0001:0996   662 0001:09b6   666 0001:09c3   668 0001:09da
+   669 0001:09e8   671 0001:09ee   672 0001:09f4     0 0001:09fd
+   694 0001:09fe   697 0001:0a11   699 0001:0a22   701 0001:0a4f
+   703 0001:0a6e   705 0001:0a76   707 0001:0a7f   708 0001:0a84
+   709 0001:0a89   712 0001:0a8d   713 0001:0a93     0 0001:0a9a
+   725 0001:0a9c   726 0001:0aaf   727 0001:0ab9   729 0001:0abe
+   730 0001:0acb     0 0001:0ad2   746 0001:0ad4   753 0001:0ae7
+   755 0001:0af2   758 0001:0af7   760 0001:0b2b   762 0001:0b4b
+   763 0001:0b63   765 0001:0b76   766 0001:0b83   768 0001:0b90
+   772 0001:0ba2   776 0001:0bbb   778 0001:0bd9   779 0001:0be1
+   780 0001:0bea   781 0001:0bf3   782 0001:0bfb   783 0001:0c02
+   784 0001:0c0a   785 0001:0c13   786 0001:0c24   788 0001:0c2d
+   789 0001:0c32   793 0001:0c38   798 0001:0c47   800 0001:0c67
+   802 0001:0c74   803 0001:0c7a     0 0001:0c83   811 0001:0c84
+   817 0001:0c97   821 0001:0ca5   823 0001:0cb2   825 0001:0ccb
+   827 0001:0cde   829 0001:0ceb   831 0001:0d04   833 0001:0d17
+   835 0001:0d24   837 0001:0d3d   839 0001:0d50   841 0001:0d5d
+   843 0001:0d76   845 0001:0d89   846 0001:0d8f     0 0001:0d96
+
+Line numbers for 16thk.obj(32to16.asm) segment 32TO16_TEXT
+
+   257 0002:000c   258 0002:000d   259 0002:000e   260 0002:0011
+   261 0002:0014   262 0002:0017   263 0002:001a   264 0002:001b
+   265 0002:001c   266 0002:001d
+
+Program entry point at 0003:0054

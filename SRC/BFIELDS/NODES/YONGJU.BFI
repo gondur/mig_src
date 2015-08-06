@@ -1,0 +1,88 @@
+	BattleField
+	{
+		FileName	FIL_1_Yongju=Yongju.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_StYongju,
+			ItemGroup
+			{
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYongju},
+						Rel	{Z -METRES200
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYongju},
+						Rel	{Z METRES200	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYongju},
+						Rel	{X METRES100	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYongju},
+						Rel	{X METRES200,
+							 Z METRES200	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYongju},
+						Rel	{X -METRES300,
+							 Z -METRES200
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StYongju},
+						Rel	{X METRES400,
+							 Z -METRES300
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				}
+			}
+		}
+	};
+

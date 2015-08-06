@@ -1,0 +1,83 @@
+	WayPoint	RDTATUNG_0114,
+	WayPoint	RDTATUNG_0115,
+	GroundItem	RDTATUNG_3086,
+	BattleField
+	{
+		FileName	FIL_1_RDTATUNG=RDTATUNG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdTaTung,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdTaTung, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				},
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdTaTung, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	38963349,
+						Z	88050308
+					}
+				},
+				Route
+				{
+					WayPoint	RDTATUNG_0114=
+					{
+						Posn
+						{
+							Abs
+							{	X	39061243,
+								Z	88029827
+							}
+						},
+						Vel	120,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDTATUNG_0115=
+					{
+						Posn
+						{
+							Abs
+							{	X	39018645,
+								Z	87819293
+							}
+						},
+						Vel	120,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDTATUNG_3086=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	TTRUCK,
+					Vel	120
+			}	}
+		}
+	};

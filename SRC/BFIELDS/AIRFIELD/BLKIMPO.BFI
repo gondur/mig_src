@@ -1,0 +1,213 @@
+	SimpleItem	blkimpo_2aff,
+	SimpleItem	blkimpo_2afe,
+	SimpleItem	blkimpo_2afd,
+	SimpleItem	blkimpo_2afc,
+	SimpleItem	blkimpo_2afb,
+	SimpleItem	blkimpo_2afa,
+	SimpleItem	blkimpo_2af9,
+	SimpleItem	blkimpo_2af8,
+	SimpleItem	blkimpo_2af7,
+	SimpleItem	blkimpo_2af6,
+	BattleField
+	{
+		FileName	FIL_1_BLKIMPO=blkimpo.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlKimpo,
+		ItemGroup
+		{
+			SimpleItem	blkimpo_2aff=
+			{
+				Posn
+				{
+					Abs
+					{	X	61529856,
+						Z	61334016
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_TAXI2,
+				Shape		WINDSC
+			},
+			SimpleItem	blkimpo_2afe=
+			{
+				Posn
+				{
+					Abs
+					{	X	61549056,
+						Z	61335552
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_TAXI1,
+				Shape		WINDSC
+			},
+			SimpleItem	blkimpo_2afd=
+			{
+				Posn
+				{
+					Abs
+					{	X	61548779,
+						Z	61366609
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_TAXI0,
+				Shape		WINDSC
+			},
+			SimpleItem	blkimpo_2afc=
+			{
+				Posn
+				{
+					Abs
+					{	X	61559224,
+						Z	61378078
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_TAXIE,
+				Shape		WINDSC
+			},
+			SimpleItem	blkimpo_2afb=
+			{
+				Posn
+				{
+					Abs
+					{	X	61565777,
+						Z	61380945
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_TAXIL,
+				Shape		WINDSC
+			},
+			SimpleItem	blkimpo_2afa=
+			{
+				Posn
+				{
+					Abs
+					{	X	61663232,
+						Z	61261312
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_PARK0,
+				Shape		WINDSC
+			},
+			SimpleItem	blkimpo_2af9=
+			{
+				Posn
+				{
+					Abs
+					{	X	61587200,
+						Z	61335552
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_PARK1,
+				Shape		WINDSC
+			},
+			SimpleItem	blkimpo_2af8=
+			{
+				Posn
+				{
+					Abs
+					{	X	61581312,
+						Z	61340928
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_PARKL,
+				Shape		WINDSC
+			},
+			SimpleItem	blkimpo_2af7=
+			{
+				Posn
+				{
+					Abs
+					{	X	61584384,
+						Z	61338368
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_PARKW,
+				Shape		WINDSC
+			},
+			SimpleItem	blkimpo_2af6=
+			{
+				Posn
+				{
+					Abs
+					{	X	61623808,
+						Z	61298432
+					}
+				},
+				UIDBand		AmberBattleNodeBAND,
+				SetUID	UID_LANDING,
+				Shape		WINDSC
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	61516421,
+						Z	61420062
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		UNSBAA
+
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	61639424,
+						Z	61348096
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		UNSBAA
+			}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	61613568,
+						Z	61362688
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	61602304,
+								Z	61361664
+							}
+						},
+						Vel	168,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	SQUAD_ECHELONRIGHT_Left,
+				GroundItem	
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	FTRUCK,
+					Vel	168
+				}
+		}	}
+	};

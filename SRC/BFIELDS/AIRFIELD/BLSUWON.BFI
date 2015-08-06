@@ -1,0 +1,292 @@
+	WayPoint	blsuwon_0100,
+	WayPoint	blsuwon_0101,
+	WayPoint	blsuwon_0102,
+	WayPoint	blsuwon_0103,
+	SimpleItem	blsuwon_1c03,
+	SimpleItem	blsuwon_1c04,
+	GroundItem	blsuwon_2f60,
+	GroundItem	blsuwon_2f61,
+	SimpleItem	blsuwon_2aff,
+	SimpleItem	blsuwon_2afe,
+	SimpleItem	blsuwon_2afd,
+	SimpleItem	blsuwon_2afc,
+	SimpleItem	blsuwon_2afb,
+	SimpleItem	blsuwon_2afa,
+	SimpleItem	blsuwon_2af9,
+	SimpleItem	blsuwon_2af8,
+	SimpleItem	blsuwon_2af7,
+	SimpleItem	blsuwon_2af6,
+	BattleField
+	{
+		FileName	FIL_1_BLSUWON=blsuwon.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlSuwon,
+		ItemGroup
+		{
+				SimpleItem	blsuwon_2aff=
+				{
+					Posn
+					{
+						Abs
+						{	X	63424471,
+							Z	57838288
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI2,
+					Shape		WINDSC
+				},
+				SimpleItem	blsuwon_2afe=
+				{
+					Posn
+					{
+						Abs
+						{	X	63446016,
+							Z	57809152
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI1,
+					Shape		WINDSC
+				},
+				SimpleItem	blsuwon_2afd=
+				{
+					Posn
+					{
+						Abs
+						{	X	63439360,
+							Z	57800704
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI0,
+					Shape		WINDSC
+				},
+				SimpleItem	blsuwon_2afc=
+				{
+					Posn
+					{
+						Abs
+						{	X	63432448,
+							Z	57797888
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIE,
+					Shape		WINDSC
+				},
+				SimpleItem	blsuwon_2afb=
+				{
+					Posn
+					{
+						Abs
+						{	X	63427584,
+							Z	57798144
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIL,
+					Shape		WINDSC
+				},
+				SimpleItem	blsuwon_2afa=
+				{
+					Posn
+					{
+						Abs
+						{	X	63364096,
+							Z	57919744
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK0,
+					Shape		WINDSC
+				},
+				SimpleItem	blsuwon_2af9=
+				{
+					Posn
+					{
+						Abs
+						{	X	63410176,
+							Z	57858816
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK1,
+					Shape		WINDSC
+				},
+				SimpleItem	blsuwon_2af8=
+				{
+					Posn
+					{
+						Abs
+						{	X	63417856,
+							Z	57848320
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKL,
+					Shape		WINDSC
+				},
+				SimpleItem	blsuwon_2af7=
+				{
+					Posn
+					{
+						Abs
+						{	X	63415040,
+							Z	57851904
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKW,
+					Shape		WINDSC
+				},
+				SimpleItem	blsuwon_2af6=
+				{
+					Posn
+					{
+						Abs
+						{	X	63498752,
+							Z	57683968
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_LANDING,
+					Shape		WINDSC
+				},
+				SimpleItem	blsuwon_1c03=
+				{
+					Posn
+					{
+						Abs
+						{	X	63432536,
+							Z	57759044
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		SAAA
+				},
+				SimpleItem	blsuwon_1c04=
+				{
+					Posn
+					{
+						Abs
+						{	X	63300235,
+							Z	57939268
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		SAAA
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	63260094,
+							Z	57813930
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		UNSBAA
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	63407616,
+						Z	57838848
+					}
+				},
+				Route
+				{
+					WayPoint	blsuwon_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	63430912,
+								Z	57806336
+							}
+						},
+						Vel	140,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	SQUAD_ECHELONRIGHT_Left,
+				GroundItem	blsuwon_2f60=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	FTRUCK,
+					Vel	140
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	63400192,
+						Z	57814784
+					}
+				},
+				Route
+				{
+					WayPoint	blsuwon_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	63404032,
+								Z	57818112
+							}
+						},
+						Vel	168,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	blsuwon_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	63398656,
+								Z	57827840
+							}
+						},
+						Vel	168,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	blsuwon_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	63365632,
+								Z	57827840
+							}
+						},
+						Vel	168,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	SQUAD_ECHELONRIGHT_Left,
+				GroundItem	blsuwon_2f61=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	JEEP2,
+					Vel	168
+			}	}	}
+	};

@@ -1,0 +1,285 @@
+	SimpleItem	SAMDUNG_0413,
+	SimpleItem	SAMDUNG_0416,
+	SimpleItem	SAMDUNG_0419,
+	SimpleItem	SAMDUNG_041b,
+	SimpleItem	SAMDUNG_041f,
+	SimpleItem	SAMDUNG_0422,
+	SimpleItem	SAMDUNG_0424,
+	SimpleItem	SAMDUNG_0428,
+	SimpleItem	SAMDUNG_2004,
+	SimpleItem	SAMDUNG_2005,
+	SimpleItem	SAMDUNG_2006,
+	SimpleItem	SAMDUNG_2007,
+	SimpleItem	SAMDUNG_2008,
+	SimpleItem	SAMDUNG_2009,
+	SimpleItem	SAMDUNG_200a,
+	SimpleItem	SAMDUNG_200b,
+	SimpleItem	SAMDUNG_200c,
+	SimpleItem	SAMDUNG_200d,
+	SimpleItem	SAMDUNG_200e,
+	SimpleItem	SAMDUNG_200f,
+	SimpleItem	SAMDUNG_2010,
+	BattleField
+	{
+		FileName	FIL_1_SAMDUNG=SAMDUNG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StSamdung,
+		ItemGroup
+		{
+			SimpleItem	SAMDUNG_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	56683520,
+						Z	77264896
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	SAMDUNG_200a=
+			{
+				Posn
+				{
+					Abs
+					{	X	56691712,
+						Z	77266944
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	SAMDUNG_200b=
+			{
+				Posn
+				{
+					Abs
+					{	X	56665088,
+						Z	77264896
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	SAMDUNG_200c=
+			{
+				Posn
+				{
+					Abs
+					{	X	56653824,
+						Z	77268992
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	SAMDUNG_200d=
+			{
+				Posn
+				{
+					Abs
+					{	X	56637440,
+						Z	77300736
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	SAMDUNG_200e=
+			{
+				Posn
+				{
+					Abs
+					{	X	56619008,
+						Z	77296640
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	SAMDUNG_200f=
+			{
+				Posn
+				{
+					Abs
+					{	X	56625152,
+						Z	77258752
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+				SimpleItem	SAMDUNG_0413=
+				{
+					Posn
+					{
+						Abs
+						{	X	56592384,
+							Z	77334528
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SAMDUNG_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	56667136,
+							Z	77288448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	SAMDUNG_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	56651776,
+							Z	77247488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMDUNG_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	56668160,
+							Z	77245440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMDUNG_041f=
+				{
+					Posn
+					{
+						Abs
+						{	X	56617984,
+							Z	77231104
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SAMDUNG_0422=
+				{
+					Posn
+					{
+						Abs
+						{	X	56527872,
+							Z	77258752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMDUNG_0424=
+				{
+					Posn
+					{
+						Abs
+						{	X	56544256,
+							Z	77221888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SAMDUNG_0428=
+				{
+					Posn
+					{
+						Abs
+						{	X	56520704,
+							Z	77131776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	SAMDUNG_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	56617984,
+							Z	77316096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	SAMDUNG_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	56636416,
+							Z	77278208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SAMDUNG_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	56603648,
+							Z	77253632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SAMDUNG_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	56597504,
+							Z	77290496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	SAMDUNG_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	56674304,
+							Z	77265920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	SAMDUNG_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	56588288,
+							Z	77266944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				}
+		}	}
+	};

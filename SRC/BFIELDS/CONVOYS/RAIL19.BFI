@@ -1,0 +1,81 @@
+	WayPoint	Rail19_0102,
+	WayPoint	Rail19_0103,
+	GroundItem	Rail19_2f42,
+	GroundItem	Rail19_2f43,
+	BattleField
+	{
+		FileName	FIL_1_RAIL19=Rail19.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_RAIL_Kujang2Tokchon,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	56210432,
+						Z	87104512
+					}
+				},
+				Route
+				{
+					WayPoint	Rail19_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	56261632,
+								Z	87053312
+							}
+						},
+						Vel 50,
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		-2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	Rail19_2f42=
+				{
+					RedTrainBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	TrainShapeInst1,
+					Vel	50
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	55310336,
+						Z	87079936
+					}
+				},
+				Route
+				{
+					WayPoint	Rail19_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	55320576,
+								Z	87079936
+							}
+						},
+						Vel 50,
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		-2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	Rail19_2f43=
+				{
+					RedTrainBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	TrainShapeInst1,
+					Vel	50
+			}	}	}
+	};

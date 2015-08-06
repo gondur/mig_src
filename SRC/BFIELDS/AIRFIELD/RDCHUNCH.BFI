@@ -1,0 +1,33 @@
+	BattleField
+	{
+		FileName	FIL_1_RDCHUNCH=RDCHUNCH.BF,
+		Title	{},
+		Comment	{},
+	ItemGroup
+	{	Target	UID_AfBlChuncheon,
+		SimpleItem	
+		{
+			Posn
+			{
+				Abs
+				{	X	69756785,
+					Z	65002847
+				}
+			},
+			UIDBand		RedAAASiteBAND,
+			Shape		CH37ML
+		},
+		SimpleItem	
+		{
+			Posn
+			{
+				Abs
+				{	X	69683466,
+					Z	64880785
+				}
+			},
+			UIDBand		RedAAASiteBAND,
+			Shape		CH37ML
+		}
+	}
+	};

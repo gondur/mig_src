@@ -1,0 +1,490 @@
+//DeadCode JIM 05May99 	SimpleItem	AFSINMAK_3900,
+//DeadCode JIM 05May99 	SimpleItem	AFSINMAK_3940,
+	SimpleItem	AFSINMAK_3980,
+	SimpleItem	AFSINMAK_3981,
+	SimpleItem	AFSINMAK_3a00,
+	SimpleItem	AFSINMAK_3a01,
+	SimpleItem	AFSINMAK_3a80,
+	SimpleItem	AFSINMAK_3a81,
+	SimpleItem	AFSINMAK_3a82,
+	SimpleItem	AFSINMAK_3a83,
+	SimpleItem	AFSINMAK_3a84,
+	SimpleItem	AFSINMAK_3a85,
+	SimpleItem	AFSINMAK_3a86,
+	SimpleItem	AFSINMAK_3a87,
+	SimpleItem	AFSINMAK_3a88,
+	SimpleItem	AFSINMAK_3a89,
+	SimpleItem	AFSINMAK_3a8a,
+	SimpleItem	AFSINMAK_3a8b,
+	SimpleItem	AFSINMAK_3a8c,
+	SimpleItem	AFSINMAK_3a8d,
+	SimpleItem	AFSINMAK_3a8e,
+	SimpleItem	AFSINMAK_3b00,
+	SimpleItem	AFSINMAK_3b01,
+	SimpleItem	AFSINMAK_3b02,
+	SimpleItem	AFSINMAK_3b03,
+	SimpleItem	AFSINMAK_3b04,
+	SimpleItem	AFSINMAK_3b05,
+	SimpleItem	AFSINMAK_3b06,
+	SimpleItem	AFSINMAK_3b80,
+	SimpleItem	AFSINMAK_3b81,
+	SimpleItem	AFSINMAK_3b82,
+	SimpleItem	AFSINMAK_3b83,
+	SimpleItem	AFSINMAK_3b84,
+	SimpleItem	AFSINMAK_3b85,
+	BattleField
+	{
+		FileName	FIL_1_AFSINMAK=AFSINMAK.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdSinmak,
+		ItemGroup
+		{
+//DeadCode JIM 05May99 				SimpleItem	AFSINMAK_3900=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	56750501,
+//DeadCode JIM 05May99 							Z	71263198
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwaySBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFSINMAK_3940=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	56905740,
+//DeadCode JIM 05May99 							Z	71261559
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwayEBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	56760127,
+							Z	71215684
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	56971481,
+							Z	71210769
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	56759718,
+							Z	71179639
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	AFSINMAK_3980=
+				{
+					Posn
+					{
+						Abs
+						{	X	56991142,
+							Z	71211178
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HNGK14
+				},
+				SimpleItem	AFSINMAK_3981=
+				{
+					Posn
+					{
+						Abs
+						{	X	56980493,
+							Z	71211178
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HNGK14
+				},
+				SimpleItem	AFSINMAK_3a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	56811327,
+							Z	71209540
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		RREW
+				},
+				SimpleItem	AFSINMAK_3a01=
+				{
+					Posn
+					{
+						Abs
+						{	X	56754393,
+							Z	71189469
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		HREW
+				},
+				SimpleItem	AFSINMAK_3a80=
+				{
+					Posn
+					{
+						Abs
+						{	X	56940761,
+							Z	71213636
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINMAK_3a81=
+				{
+					Posn
+					{
+						Abs
+						{	X	56907584,
+							Z	71230839
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFSINMAK_3a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	56886284,
+							Z	71231249
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINMAK_3a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	56833855,
+							Z	71232478
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINMAK_3a84=
+				{
+					Posn
+					{
+						Abs
+						{	X	56817881,
+							Z	71232068
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINMAK_3a85=
+				{
+					Posn
+					{
+						Abs
+						{	X	56801088,
+							Z	71232068
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINMAK_3a86=
+				{
+					Posn
+					{
+						Abs
+						{	X	56935846,
+							Z	71213636
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINMAK_3a87=
+				{
+					Posn
+					{
+						Abs
+						{	X	56930521,
+							Z	71213636
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINMAK_3a88=
+				{
+					Posn
+					{
+						Abs
+						{	X	56708517,
+							Z	71180458
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFSINMAK_3a89=
+				{
+					Posn
+					{
+						Abs
+						{	X	56723672,
+							Z	71180048
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFSINMAK_3a8a=
+				{
+					Posn
+					{
+						Abs
+						{	X	56856793,
+							Z	71232068
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFSINMAK_3a8b=
+				{
+					Posn
+					{
+						Abs
+						{	X	56870719,
+							Z	71231658
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINMAK_3a8c=
+				{
+					Posn
+					{
+						Abs
+						{	X	56772825,
+							Z	71222237
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFSINMAK_3a8d=
+				{
+					Posn
+					{
+						Abs
+						{	X	56894067,
+							Z	71190698
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFSINMAK_3a8e=
+				{
+					Posn
+					{
+						Abs
+						{	X	56876454,
+							Z	71190698
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFSINMAK_3b00=
+				{
+					Posn
+					{
+						Abs
+						{	X	56923558,
+							Z	71230839
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CTS
+				},
+				SimpleItem	AFSINMAK_3b01=
+				{
+					Posn
+					{
+						Abs
+						{	X	56962880,
+							Z	71211588
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFSINMAK_3b02=
+				{
+					Posn
+					{
+						Abs
+						{	X	56948134,
+							Z	71211178
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFSINMAK_3b03=
+				{
+					Posn
+					{
+						Abs
+						{	X	56760127,
+							Z	71232887
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFSINMAK_3b04=
+				{
+					Posn
+					{
+						Abs
+						{	X	56771186,
+							Z	71232887
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFSINMAK_3b05=
+				{
+					Posn
+					{
+						Abs
+						{	X	56784293,
+							Z	71232887
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFSINMAK_3b06=
+				{
+					Posn
+					{
+						Abs
+						{	X	56862118,
+							Z	71191517
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFSINMAK_3b80=
+				{
+					Posn
+					{
+						Abs
+						{	X	56773645,
+							Z	71300062
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	AFSINMAK_3b81=
+				{
+					Posn
+					{
+						Abs
+						{	X	56947724,
+							Z	71338565
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	AFSINMAK_3b82=
+				{
+					Posn
+					{
+						Abs
+						{	X	56978854,
+							Z	71294738
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	AFSINMAK_3b83=
+				{
+					Posn
+					{
+						Abs
+						{	X	56812147,
+							Z	71316037
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	AFSINMAK_3b84=
+				{
+					Posn
+					{
+						Abs
+						{	X	56666739,
+							Z	71304159
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	AFSINMAK_3b85=
+				{
+					Posn
+					{
+						Abs
+						{	X	56889151,
+							Z	71302519
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				}
+		}	}
+	};

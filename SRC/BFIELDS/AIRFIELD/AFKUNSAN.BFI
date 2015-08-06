@@ -1,0 +1,532 @@
+	SimpleItem	afkunsan_3900,
+	SimpleItem	afkunsan_3901,
+	SimpleItem	afkunsan_3902,
+	SimpleItem	afkunsan_3940,
+	SimpleItem	afkunsan_3941,
+	SimpleItem	afkunsan_3942,
+	SimpleItem	afkunsan_3980,
+	SimpleItem	afkunsan_3981,
+	SimpleItem	afkunsan_3982,
+	SimpleItem	afkunsan_3983,
+	SimpleItem	afkunsan_3984,
+	SimpleItem	afkunsan_3985,
+	SimpleItem	afkunsan_3986,
+	SimpleItem	afkunsan_3987,
+	SimpleItem	afkunsan_3988,
+	SimpleItem	afkunsan_3989,
+	SimpleItem	afkunsan_398a,
+	SimpleItem	afkunsan_398b,
+	SimpleItem	afkunsan_398c,
+	SimpleItem	afkunsan_398d,
+	SimpleItem	afkunsan_398e,
+	SimpleItem	afkunsan_398f,
+	SimpleItem	afkunsan_3990,
+	SimpleItem	afkunsan_3991,
+	SimpleItem	afkunsan_3992,
+	SimpleItem	afkunsan_3b82,
+	SimpleItem	afkunsan_3b83,
+	SimpleItem	afkunsan_3b84,
+	SimpleItem	afkunsan_3b85,
+	SimpleItem	afkunsan_3b86,
+	SimpleItem	afkunsan_3b87,
+	SimpleItem	afkunsan_3b88,
+	SimpleItem	afkunsan_3b89,
+	SimpleItem	afkunsan_3b8a,
+	SimpleItem	afkunsan_3b8b,
+	SimpleItem	afkunsan_3b8c,
+	SimpleItem	afkunsan_3b8d,
+	SimpleItem	afkunsan_3b8e,
+	SimpleItem	afkunsan_3b8f,
+	SimpleItem	afkunsan_3c81,
+	BattleField
+	{
+		FileName	FIL_1_AFKUNSAN=afkunsan.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlKunsan,
+		ItemGroup
+		{
+				SimpleItem	afkunsan_3900=
+				{
+					Posn
+					{
+						Abs
+						{	X	59854257,
+							Z	43049432
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HANGER
+				},
+				SimpleItem	afkunsan_3901=
+				{
+					Posn
+					{
+						Abs
+						{	X	59799371,
+							Z	42942117
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		CIVI09
+				},
+				SimpleItem	afkunsan_3902=
+				{
+					Posn
+					{
+						Abs
+						{	X	59790359,
+							Z	42942117
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		CIVI09
+				},
+				SimpleItem	afkunsan_3940=
+				{
+					Posn
+					{
+						Abs
+						{	X	59921920,
+							Z	43051520
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BRNS
+				},
+				SimpleItem	afkunsan_3941=
+				{
+					Posn
+					{
+						Abs
+						{	X	59914240,
+							Z	43044352
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BRNS
+				},
+				SimpleItem	afkunsan_3942=
+				{
+					Posn
+					{
+						Abs
+						{	X	59907840,
+							Z	43037184
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BRNS
+				},
+				SimpleItem	afkunsan_3980=
+				{
+					Posn
+					{
+						Abs
+						{	X	59837464,
+							Z	43050252
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afkunsan_3981=
+				{
+					Posn
+					{
+						Abs
+						{	X	59882110,
+							Z	43097356
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	afkunsan_3982=
+				{
+					Posn
+					{
+						Abs
+						{	X	59855076,
+							Z	43039192
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	afkunsan_3983=
+				{
+					Posn
+					{
+						Abs
+						{	X	59837464,
+							Z	42984306
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afkunsan_3984=
+				{
+					Posn
+					{
+						Abs
+						{	X	59828043,
+							Z	42975704
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afkunsan_3985=
+				{
+					Posn
+					{
+						Abs
+						{	X	59815345,
+							Z	43059263
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	afkunsan_3986=
+				{
+					Posn
+					{
+						Abs
+						{	X	59836416,
+							Z	43019008
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afkunsan_3987=
+				{
+					Posn
+					{
+						Abs
+						{	X	59828043,
+							Z	43049842
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afkunsan_3988=
+				{
+					Posn
+					{
+						Abs
+						{	X	59874737,
+							Z	43096946
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	afkunsan_3989=
+				{
+					Posn
+					{
+						Abs
+						{	X	59888254,
+							Z	43097765
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afkunsan_398a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59866136,
+							Z	43018303
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afkunsan_398b=
+				{
+					Posn
+					{
+						Abs
+						{	X	59814526,
+							Z	43009291
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afkunsan_398c=
+				{
+					Posn
+					{
+						Abs
+						{	X	59823537,
+							Z	43009701
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afkunsan_398d=
+				{
+					Posn
+					{
+						Abs
+						{	X	59788721,
+							Z	42955224
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afkunsan_398e=
+				{
+					Posn
+					{
+						Abs
+						{	X	59788311,
+							Z	42963826
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afkunsan_398f=
+				{
+					Posn
+					{
+						Abs
+						{	X	59954200,
+							Z	43083429
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afkunsan_3990=
+				{
+					Posn
+					{
+						Abs
+						{	X	59843198,
+							Z	43007243
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	afkunsan_3991=
+				{
+					Posn
+					{
+						Abs
+						{	X	59842788,
+							Z	42997823
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	afkunsan_3992=
+				{
+					Posn
+					{
+						Abs
+						{	X	59854667,
+							Z	43081790
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	afkunsan_3b82=
+				{
+					Posn
+					{
+						Abs
+						{	X	59852288,
+							Z	43021056
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CTS
+				},
+				SimpleItem	afkunsan_3b83=
+				{
+					Posn
+					{
+						Abs
+						{	X	59854667,
+							Z	43030181
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afkunsan_3b84=
+				{
+					Posn
+					{
+						Abs
+						{	X	59826814,
+							Z	43059263
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afkunsan_3b85=
+				{
+					Posn
+					{
+						Abs
+						{	X	59837464,
+							Z	43059263
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afkunsan_3b86=
+				{
+					Posn
+					{
+						Abs
+						{	X	59815345,
+							Z	43017483
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afkunsan_3b87=
+				{
+					Posn
+					{
+						Abs
+						{	X	59829271,
+							Z	43017893
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afkunsan_3b88=
+				{
+					Posn
+					{
+						Abs
+						{	X	59815755,
+							Z	43049023
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afkunsan_3b89=
+				{
+					Posn
+					{
+						Abs
+						{	X	59866545,
+							Z	43096127
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afkunsan_3b8a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59895627,
+							Z	43096537
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afkunsan_3b8b=
+				{
+					Posn
+					{
+						Abs
+						{	X	59788311,
+							Z	42974065
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afkunsan_3b8c=
+				{
+					Posn
+					{
+						Abs
+						{	X	59939454,
+							Z	43082200
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afkunsan_3b8d=
+				{
+					Posn
+					{
+						Abs
+						{	X	59946008,
+							Z	43082610
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afkunsan_3b8e=
+				{
+					Posn
+					{
+						Abs
+						{	X	59854667,
+							Z	43059672
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afkunsan_3b8f=
+				{
+					Posn
+					{
+						Abs
+						{	X	59855076,
+							Z	43069912
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afkunsan_3c81=
+				{
+					Posn
+					{
+						Abs
+						{	X	59849472,
+							Z	43035904
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+		}	}
+	};

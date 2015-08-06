@@ -1,0 +1,233 @@
+	SimpleItem	HAEJU_0419,
+	SimpleItem	HAEJU_041b,
+	SimpleItem	HAEJU_041d,
+	SimpleItem	HAEJU_041f,
+	SimpleItem	HAEJU_0421,
+	SimpleItem	HAEJU_0423,
+	SimpleItem	HAEJU_0425,
+	SimpleItem	HAEJU_0427,
+	SimpleItem	HAEJU_0429,
+	SimpleItem	HAEJU_042b,
+	SimpleItem	HAEJU_0432,
+	SimpleItem	HAEJU_0435,
+	SimpleItem	HAEJU_043b,
+	SimpleItem	HAEJU_043d,
+	SimpleItem	HAEJU_043f,
+	SimpleItem	HAEJU_0441,
+	SimpleItem	HAEJU_0443,
+	BattleField
+	{
+		FileName	FIL_1_HAEJU=HAEJU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StHaeju,
+		ItemGroup
+		{
+				SimpleItem	HAEJU_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	52216832,
+							Z	66792448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	HAEJU_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52284416,
+							Z	66747392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	HAEJU_041d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52353024,
+							Z	66702336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	HAEJU_041f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52418560,
+							Z	66679808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAEJU_0421=
+				{
+					Posn
+					{
+						Abs
+						{	X	52433920,
+							Z	66734080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAEJU_0423=
+				{
+					Posn
+					{
+						Abs
+						{	X	52503552,
+							Z	66674688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	HAEJU_0425=
+				{
+					Posn
+					{
+						Abs
+						{	X	52586496,
+							Z	66669568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	HAEJU_0427=
+				{
+					Posn
+					{
+						Abs
+						{	X	52661248,
+							Z	66668544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAEJU_0429=
+				{
+					Posn
+					{
+						Abs
+						{	X	52638720,
+							Z	66630656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	HAEJU_042b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52697088,
+							Z	66638848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	HAEJU_0432=
+				{
+					Posn
+					{
+						Abs
+						{	X	52225024,
+							Z	66585600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HAEJU_0435=
+				{
+					Posn
+					{
+						Abs
+						{	X	52259840,
+							Z	66613248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	HAEJU_043b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52297728,
+							Z	66632704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HAEJU_043d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52616192,
+							Z	66574336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HAEJU_043f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52629504,
+							Z	66529280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HAEJU_0441=
+				{
+					Posn
+					{
+						Abs
+						{	X	52653056,
+							Z	66500608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HAEJU_0443=
+				{
+					Posn
+					{
+						Abs
+						{	X	52127744,
+							Z	66767872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				}
+		}	}
+	};

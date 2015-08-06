@@ -1,0 +1,88 @@
+	BattleField
+	{
+		FileName	FIL_1_Inje=Inje.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_StInje,
+			ItemGroup
+			{
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StInje},
+						Rel	{Z -METRES200
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StInje},
+						Rel	{Z METRES200	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StInje},
+						Rel	{X METRES100	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StInje},
+						Rel	{X METRES200,
+							 Z METRES200	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StInje},
+						Rel	{X -METRES300,
+							 Z -METRES200
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				}
+//DeadCode RDH 07Jul99 				SimpleItem	
+//DeadCode RDH 07Jul99 				{
+//DeadCode RDH 07Jul99 					Posn
+//DeadCode RDH 07Jul99 					{
+//DeadCode RDH 07Jul99 						Abs	{UID_StInje},
+//DeadCode RDH 07Jul99 						Rel	{X METRES400,
+//DeadCode RDH 07Jul99 							 Z -METRES300
+//DeadCode RDH 07Jul99 							}
+//DeadCode RDH 07Jul99 						
+//DeadCode RDH 07Jul99 					},
+//DeadCode RDH 07Jul99 					UIDBand		AmberCivilianBAND,
+//DeadCode RDH 07Jul99 					Shape		V4NWSE
+//DeadCode RDH 07Jul99 				}	  d
+			}
+		}
+	};
+

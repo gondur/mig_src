@@ -1,0 +1,174 @@
+	WayPoint	RDP_EAST_0109,
+	WayPoint	RDP_EAST_010a,
+	WayPoint	RDP_EAST_010b,
+	WayPoint	RDP_EAST_010c,
+	WayPoint	RDP_EAST_010d,
+	WayPoint	RDP_EAST_010e,
+	WayPoint	RDP_EAST_010f,
+	WayPoint	RDP_EAST_0110,
+	GroundItem	RDP_EAST_3083,
+	GroundItem	RDP_EAST_3084,
+	BattleField
+	{
+		FileName	FIL_1_RDP_EAST=RDP_EAST.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdPyongyangE,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdPyongyangE, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	53638553,
+						Z	77539522
+					}
+				},
+				Route
+				{
+					WayPoint	RDP_EAST_0109=
+					{
+						Posn
+						{
+							Abs
+							{	X	53704499,
+								Z	77473167
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDP_EAST_010a=
+					{
+						Posn
+						{
+							Abs
+							{	X	53704499,
+								Z	77453916
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDP_EAST_010b=
+					{
+						Posn
+						{
+							Abs
+							{	X	53690163,
+								Z	77453506
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDP_EAST_010c=
+					{
+						Posn
+						{
+							Abs
+							{	X	53690163,
+								Z	77467842
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDP_EAST_010d=
+					{
+						Posn
+						{
+							Abs
+							{	X	53620121,
+								Z	77541161
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDP_EAST_3083=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	98
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	53713920,
+						Z	77531740
+					}
+				},
+				Route
+				{
+					WayPoint	RDP_EAST_010e=
+					{
+						Posn
+						{
+							Abs
+							{	X	53769626,
+								Z	77531330
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDP_EAST_010f=
+					{
+						Posn
+						{
+							Abs
+							{	X	53769626,
+								Z	77489141
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDP_EAST_0110=
+					{
+						Posn
+						{
+							Abs
+							{	X	53741774,
+								Z	77489551
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDP_EAST_3084=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	{List SFTRCK,CH12ML},
+					Vel	112
+			}	}	}
+	};

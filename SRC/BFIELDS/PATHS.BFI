@@ -1,0 +1,37 @@
+	Level		138,FileName	..\game\bfields,
+	#INCLUDE	bfields\subinc.bfi,
+
+	Level		120,FileName	..\game\bfields\intrbfld,
+	#INCLUDE	bfields\intrbfld\subinc.bfi,
+
+	Level		121,FileName	..\game\bfields\chokes,
+	#INCLUDE	bfields\chokes\subinc.bfi,
+
+	Level		122,FileName	..\game\bfields\railarea,
+	#INCLUDE	bfields\railarea\subinc.bfi,
+
+	Level		123,FileName	..\game\bfields\roadarea,
+	#INCLUDE	bfields\roadarea\subinc.bfi,
+		
+	Level		124,FileName	..\game\bfields\convoys,
+	#INCLUDE	bfields\convoys\subinc.bfi,
+
+	Level		125,FileName	..\game\bfields\nodes,
+	#INCLUDE	bfields\nodes\subinc.bfi,
+
+	Level		126,FileName	..\game\bfields\airfield,
+	#INCLUDE	bfields\airfield\subinc.bfi,
+
+	Level		127,FileName	..\game\bfields\battles,
+	#INCLUDE	bfields\battles\subinc.bfi,
+
+	Level		128,FileName	..\game\bfields\events,
+	#INCLUDE	bfields\events\subinc.bfi,
+
+	Level		129,FileName	..\game\bfields\migs,
+	#INCLUDE	bfields\migs\subinc.bfi,
+
+	Level		136,FileName	..\game\bfields\gengrnd,
+	#INCLUDE	BFIELDS\generic.bfi,
+	
+//	#INCLUDE	userobj\subinc.bfi,

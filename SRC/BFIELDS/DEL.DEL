@@ -1,0 +1,812 @@
+	WayPoint	mainmig_0103,
+	SimpleItem	mainmig_1801,
+	SimpleItem	mainmig_2000,
+	SimpleItem	mainmig_2001,
+	SimpleItem	mainmig_2002,
+	SimpleItem	mainmig_2003,
+	SimpleItem	mainmig_2004,
+	SimpleItem	mainmig_2005,
+	SimpleItem	mainmig_2006,
+	SimpleItem	mainmig_2007,
+	SimpleItem	mainmig_2008,
+	SimpleItem	mainmig_2009,
+	SimpleItem	mainmig_200a,
+	SimpleItem	mainmig_200b,
+	SimpleItem	mainmig_200c,
+	SimpleItem	mainmig_200d,
+	SimpleItem	mainmig_200e,
+	SimpleItem	mainmig_200f,
+	SimpleItem	mainmig_2010,
+	SimpleItem	mainmig_2011,
+	SimpleItem	mainmig_2012,
+	SimpleItem	mainmig_2013,
+	SimpleItem	mainmig_2014,
+	SimpleItem	mainmig_2015,
+	SimpleItem	mainmig_2016,
+	SimpleItem	mainmig_2017,
+	SimpleItem	mainmig_3400,
+	SimpleItem	mainmig_3401,
+	SimpleItem	mainmig_3402,
+	SimpleItem	mainmig_3403,
+	SimpleItem	mainmig_3404,
+	SimpleItem	mainmig_3405,
+	SimpleItem	mainmig_3406,
+	SimpleItem	mainmig_3407,
+	SimpleItem	mainmig_3408,
+	SimpleItem	mainmig_3409,
+	SimpleItem	mainmig_340a,
+	SimpleItem	mainmig_340b,
+	SimpleItem	mainmig_340c,
+	GroundItem	mainmig_3f81,
+	SimpleItem	mainmig_39fd,
+	SimpleItem	mainmig_39fc,
+	SimpleItem	mainmig_39fb,
+	SimpleItem	mainmig_39fa,
+	SimpleItem	mainmig_377f,
+	SimpleItem	mainmig_377e,
+	SimpleItem	mainmig_35ff,
+	SimpleItem	mainmig_35fe,
+	SimpleItem	mainmig_27ff,
+	SimpleItem	mainmig_27fe,
+	SimpleItem	mainmig_27fd,
+	SimpleItem	mainmig_27fc,
+	SimpleItem	mainmig_27fb,
+	SimpleItem	mainmig_27fa,
+	SimpleItem	mainmig_27f9,
+	SimpleItem	mainmig_27f8,
+	SimpleItem	mainmig_27f7,
+	SimpleItem	mainmig_27f6,
+	SimpleItem	mainmig_27f5,
+	SimpleItem	mainmig_27f4,
+	SimpleItem	mainmig_27f3,
+	SimpleItem	mainmig_27f2,
+	SimpleItem	mainmig_27f1,
+	SimpleItem	mainmig_27f0,
+	SimpleItem	mainmig_27ef,
+	SimpleItem	mainmig_27ee,
+	SimpleItem	mainmig_27ed,
+	SimpleItem	mainmig_27ec,
+	SimpleItem	mainmig_27eb,
+	SimpleItem	mainmig_27ea,
+	SimpleItem	mainmig_27e9,
+	SimpleItem	mainmig_27e8,
+	SimpleItem	mainmig_27e7,
+	SimpleItem	mainmig_27e6,
+	SimpleItem	mainmig_27e5,
+	SimpleItem	mainmig_27e4,
+	SimpleItem	mainmig_27e3,
+	SimpleItem	mainmig_27e2,
+	SimpleItem	mainmig_27e1,
+	SimpleItem	mainmig_27e0,
+	SimpleItem	mainmig_27df,
+	SimpleItem	mainmig_27de,
+	SimpleItem	mainmig_27dd,
+	SimpleItem	mainmig_27dc,
+	SimpleItem	mainmig_27db,
+	SimpleItem	mainmig_27da,
+	SimpleItem	mainmig_27d9,
+	SimpleItem	mainmig_27d8,
+	SimpleItem	mainmig_27d7,
+	SimpleItem	mainmig_27d6,
+	SimpleItem	mainmig_27d5,
+	SimpleItem	mainmig_27d4,
+	SimpleItem	mainmig_27d3,
+	SimpleItem	mainmig_27d2,
+	SimpleItem	mainmig_27d1,
+	SimpleItem	mainmig_27d0,
+	SimpleItem	mainmig_27cf,
+	SimpleItem	mainmig_27ce,
+	SimpleItem	mainmig_27cd,
+	SimpleItem	mainmig_27cc,
+	SimpleItem	mainmig_27cb,
+	SimpleItem	mainmig_27ca,
+	SimpleItem	mainmig_27c9,
+	SimpleItem	mainmig_27c8,
+	SimpleItem	mainmig_27c7,
+	SimpleItem	mainmig_27c6,
+	SimpleItem	mainmig_27c5,
+	SimpleItem	mainmig_27c4,
+	SimpleItem	mainmig_23ff,
+	SimpleItem	mainmig_23fe,
+	SimpleItem	mainmig_23fd,
+	SimpleItem	mainmig_23fc,
+	SimpleItem	mainmig_23fb,
+	SimpleItem	mainmig_23fa,
+	SimpleItem	mainmig_23f9,
+	SimpleItem	mainmig_23f8,
+	SimpleItem	mainmig_23f7,
+	SimpleItem	mainmig_23f6,
+	SimpleItem	mainmig_23f5,
+	SimpleItem	mainmig_23f4,
+	SimpleItem	mainmig_23f3,
+	SimpleItem	mainmig_23f2,
+	SimpleItem	mainmig_23f1,
+	SimpleItem	mainmig_23f0,
+	SimpleItem	mainmig_23ef,
+	SimpleItem	mainmig_23ee,
+	SimpleItem	mainmig_23ed,
+	SimpleItem	mainmig_23ec,
+	SimpleItem	mainmig_23eb,
+	SimpleItem	mainmig_23ea,
+	SimpleItem	mainmig_23e9,
+	SimpleItem	mainmig_23e8,
+	SimpleItem	mainmig_23e7,
+	SimpleItem	mainmig_23e6,
+	SimpleItem	mainmig_23e5,
+	SimpleItem	mainmig_23e4,
+	SimpleItem	mainmig_23e3,
+	SimpleItem	mainmig_23e2,
+	SimpleItem	mainmig_23e1,
+	SimpleItem	mainmig_23e0,
+	SimpleItem	mainmig_23df,
+	SimpleItem	mainmig_23de,
+	SimpleItem	mainmig_23dd,
+	SimpleItem	mainmig_23dc,
+	SimpleItem	mainmig_21ff,
+	SimpleItem	mainmig_21fe,
+	SimpleItem	mainmig_21fd,
+	SimpleItem	mainmig_21fc,
+	SimpleItem	mainmig_21fb,
+	SimpleItem	mainmig_21fa,
+	SimpleItem	mainmig_21f9,
+	SimpleItem	mainmig_21f8,
+	SimpleItem	mainmig_21f7,
+	SimpleItem	mainmig_21f6,
+	SimpleItem	mainmig_21f5,
+	SimpleItem	mainmig_21f4,
+	SimpleItem	mainmig_21f3,
+	SimpleItem	mainmig_21f2,
+	SimpleItem	mainmig_21f1,
+	SimpleItem	mainmig_21f0,
+	SimpleItem	mainmig_21ef,
+	SimpleItem	mainmig_21ee,
+	SimpleItem	mainmig_21ed,
+	SimpleItem	mainmig_21ec,
+	SimpleItem	mainmig_21eb,
+	SimpleItem	mainmig_21ea,
+	SimpleItem	mainmig_21e9,
+	SimpleItem	mainmig_21e8,
+	SimpleItem	mainmig_21e7,
+	SimpleItem	mainmig_21e6,
+	SimpleItem	mainmig_21e5,
+	SimpleItem	mainmig_21e4,
+	SimpleItem	mainmig_21e3,
+	SimpleItem	mainmig_21e2,
+	SimpleItem	mainmig_21e1,
+	SimpleItem	mainmig_21e0,
+	SimpleItem	mainmig_21df,
+	SimpleItem	mainmig_21de,
+	SimpleItem	mainmig_21dd,
+	SimpleItem	mainmig_21dc,
+	SimpleItem	mainmig_21db,
+	SimpleItem	mainmig_21da,
+	SimpleItem	mainmig_21d9,
+	SimpleItem	mainmig_21d8,
+	SimpleItem	mainmig_21d7,
+	SimpleItem	mainmig_21d6,
+	SimpleItem	mainmig_21d5,
+	SimpleItem	mainmig_21d4,
+	SimpleItem	mainmig_21d3,
+	SimpleItem	mainmig_21d2,
+	SimpleItem	mainmig_21d1,
+	SimpleItem	mainmig_21d0,
+	SimpleItem	mainmig_21cf,
+	SimpleItem	mainmig_21ce,
+	SimpleItem	mainmig_21cd,
+	SimpleItem	mainmig_21cc,
+	SimpleItem	mainmig_21cb,
+	SimpleItem	mainmig_21ca,
+	SimpleItem	mainmig_21c9,
+	SimpleItem	mainmig_21c8,
+	SimpleItem	mainmig_21c7,
+	SimpleItem	mainmig_21c6,
+	SimpleItem	mainmig_21c5,
+	SimpleItem	mainmig_21c4,
+	SimpleItem	mainmig_21c3,
+	SimpleItem	mainmig_21c2,
+	SimpleItem	mainmig_21c1,
+	SimpleItem	mainmig_21c0,
+	SimpleItem	mainmig_21bf,
+	SimpleItem	mainmig_21be,
+	SimpleItem	mainmig_21bd,
+	SimpleItem	mainmig_21bc,
+	SimpleItem	mainmig_21bb,
+	SimpleItem	mainmig_21ba,
+	SimpleItem	mainmig_21b9,
+	SimpleItem	mainmig_21b8,
+	SimpleItem	mainmig_21b7,
+	SimpleItem	mainmig_21b6,
+	SimpleItem	mainmig_21b5,
+	SimpleItem	mainmig_21b4,
+	SimpleItem	mainmig_21b3,
+	SimpleItem	mainmig_21b2,
+	SimpleItem	mainmig_21b1,
+	SimpleItem	mainmig_21b0,
+	SimpleItem	mainmig_21af,
+	SimpleItem	mainmig_21ae,
+	SimpleItem	mainmig_21ad,
+	SimpleItem	mainmig_21ac,
+	SimpleItem	mainmig_21ab,
+	SimpleItem	mainmig_21aa,
+	SimpleItem	mainmig_21a9,
+	SimpleItem	mainmig_21a8,
+	SimpleItem	mainmig_21a7,
+	SimpleItem	mainmig_21a6,
+	SimpleItem	mainmig_21a5,
+	SimpleItem	mainmig_21a4,
+	SimpleItem	mainmig_21a3,
+	SimpleItem	mainmig_21a2,
+	SimpleItem	mainmig_21a1,
+	SimpleItem	mainmig_21a0,
+	SimpleItem	mainmig_219f,
+	SimpleItem	mainmig_219e,
+	SimpleItem	mainmig_219d,
+	SimpleItem	mainmig_219c,
+	SimpleItem	mainmig_219b,
+	SimpleItem	mainmig_219a,
+	SimpleItem	mainmig_2199,
+	SimpleItem	mainmig_2198,
+	SimpleItem	mainmig_2197,
+	SimpleItem	mainmig_2196,
+	SimpleItem	mainmig_2195,
+	SimpleItem	mainmig_2194,
+	SimpleItem	mainmig_2193,
+	SimpleItem	mainmig_2192,
+	SimpleItem	mainmig_2191,
+	SimpleItem	mainmig_2190,
+	SimpleItem	mainmig_218f,
+	SimpleItem	mainmig_218e,
+	SimpleItem	mainmig_218d,
+	SimpleItem	mainmig_218c,
+	SimpleItem	mainmig_218b,
+	SimpleItem	mainmig_218a,
+	SimpleItem	mainmig_2189,
+	SimpleItem	mainmig_2188,
+	SimpleItem	mainmig_2187,
+	SimpleItem	mainmig_2186,
+	SimpleItem	mainmig_2185,
+	SimpleItem	mainmig_2184,
+	SimpleItem	mainmig_2183,
+	SimpleItem	mainmig_2182,
+	SimpleItem	mainmig_2181,
+	SimpleItem	mainmig_2180,
+	SimpleItem	mainmig_217f,
+	SimpleItem	mainmig_217e,
+	SimpleItem	mainmig_217d,
+	SimpleItem	mainmig_217c,
+	SimpleItem	mainmig_217b,
+	SimpleItem	mainmig_217a,
+	SimpleItem	mainmig_2179,
+	SimpleItem	mainmig_13ff,
+	SimpleItem	mainmig_13fe,
+	SimpleItem	mainmig_13fd,
+	SimpleItem	mainmig_13fc,
+	SimpleItem	mainmig_13fb,
+	SimpleItem	mainmig_13fa,
+	SimpleItem	mainmig_13f9,
+	SimpleItem	mainmig_13f8,
+	SimpleItem	mainmig_13f7,
+	SimpleItem	mainmig_13f6,
+	SimpleItem	mainmig_13f5,
+	SimpleItem	mainmig_13f4,
+	SimpleItem	mainmig_13f3,
+	SimpleItem	mainmig_13f2,
+	SimpleItem	mainmig_13f1,
+	SimpleItem	mainmig_13f0,
+	SimpleItem	mainmig_13ef,
+	SimpleItem	mainmig_13ee,
+	SimpleItem	mainmig_13ed,
+	SimpleItem	mainmig_13ec,
+	SimpleItem	mainmig_13eb,
+	SimpleItem	mainmig_13ea,
+	SimpleItem	mainmig_13e9,
+	SimpleItem	mainmig_13e8,
+	SimpleItem	mainmig_13e7,
+	SimpleItem	mainmig_13e6,
+	SimpleItem	mainmig_13e5,
+	SimpleItem	mainmig_13e4,
+	SimpleItem	mainmig_13e3,
+	SimpleItem	mainmig_13e2,
+	SimpleItem	mainmig_13e1,
+	SimpleItem	mainmig_13e0,
+	SimpleItem	mainmig_13df,
+	BattleField
+	{
+		FileName	FIL_1_mainmig=mainmig.BF,
+		Title	{Main Mig World},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	mainmig_1801=
+			{
+				Posn
+				{
+					Abs
+					{	X	41113600,
+						Z	89522176
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		LBFLAK
+			},
+			SimpleItem	mainmig_2000=
+			{
+				Posn
+				{
+					Abs
+					{	X	64707584,
+						Z	53056512
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2001=
+			{
+				Posn
+				{
+					Abs
+					{	X	64683008,
+						Z	52910080
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2002=
+			{
+				Posn
+				{
+					Abs
+					{	X	64648192,
+						Z	52952064
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2003=
+			{
+				Posn
+				{
+					Abs
+					{	X	64435200,
+						Z	49085440
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	64410624,
+						Z	49065984
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	64432128,
+						Z	49065984
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	64454656,
+						Z	49082368
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2007=
+			{
+				Posn
+				{
+					Abs
+					{	X	64448512,
+						Z	49067008
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2008=
+			{
+				Posn
+				{
+					Abs
+					{	X	64418816,
+						Z	49050624
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	64453632,
+						Z	49050624
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_200a=
+			{
+				Posn
+				{
+					Abs
+					{	X	64434176,
+						Z	49049600
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_200b=
+			{
+				Posn
+				{
+					Abs
+					{	X	64470016,
+						Z	49077248
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_200c=
+			{
+				Posn
+				{
+					Abs
+					{	X	64487424,
+						Z	49061888
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_200d=
+			{
+				Posn
+				{
+					Abs
+					{	X	64478208,
+						Z	49043456
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_200e=
+			{
+				Posn
+				{
+					Abs
+					{	X	64460800,
+						Z	49028096
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_200f=
+			{
+				Posn
+				{
+					Abs
+					{	X	64419840,
+						Z	49030144
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2010=
+			{
+				Posn
+				{
+					Abs
+					{	X	64448512,
+						Z	49012736
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2011=
+			{
+				Posn
+				{
+					Abs
+					{	X	64425984,
+						Z	49011712
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2012=
+			{
+				Posn
+				{
+					Abs
+					{	X	64437248,
+						Z	48973824
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2013=
+			{
+				Posn
+				{
+					Abs
+					{	X	64417792,
+						Z	48967680
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2014=
+			{
+				Posn
+				{
+					Abs
+					{	X	64454656,
+						Z	48966656
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2015=
+			{
+				Posn
+				{
+					Abs
+					{	X	64433152,
+						Z	48957440
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2016=
+			{
+				Posn
+				{
+					Abs
+					{	X	64449536,
+						Z	48951296
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_2017=
+			{
+				Posn
+				{
+					Abs
+					{	X	64411648,
+						Z	48953344
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_3400=
+			{
+				Posn
+				{
+					Abs
+					{	X	64552960,
+						Z	49719296
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		TWN2
+			},
+			SimpleItem	mainmig_3401=
+			{
+				Posn
+				{
+					Abs
+					{	X	61507584,
+						Z	61332480
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		MHQ
+			},
+			SimpleItem	mainmig_3402=
+			{
+				Posn
+				{
+					Abs
+					{	X	61524992,
+						Z	61335552
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		HREW
+			},
+			SimpleItem	mainmig_3403=
+			{
+				Posn
+				{
+					Abs
+					{	X	61486080,
+						Z	61337600
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		HREW
+			},
+			SimpleItem	mainmig_3404=
+			{
+				Posn
+				{
+					Abs
+					{	X	61510656,
+						Z	61356032
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		OPPSL
+			},
+			SimpleItem	mainmig_3405=
+			{
+				Posn
+				{
+					Abs
+					{	X	61465600,
+						Z	61340672
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		CTL
+			},
+			SimpleItem	mainmig_3406=
+			{
+				Posn
+				{
+					Abs
+					{	X	61466624,
+						Z	61283328
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		BRNS
+			},
+			SimpleItem	mainmig_3407=
+			{
+				Posn
+				{
+					Abs
+					{	X	61465600,
+						Z	61267968
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		BRNS
+			},
+			SimpleItem	mainmig_3408=
+			{
+				Posn
+				{
+					Abs
+					{	X	61464576,
+						Z	61254656
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		BRNS
+			},
+			SimpleItem	mainmig_3409=
+			{
+				Posn
+				{
+					Abs
+					{	X	61463552,
+						Z	61236224
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		BRNS
+			},
+			SimpleItem	mainmig_340a=
+			{
+				Posn
+				{
+					Abs
+					{	X	61465600,
+						Z	61310976
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		AFDS
+			},
+			SimpleItem	mainmig_340b=
+			{
+				Posn
+				{
+					Abs
+					{	X	61544448,
+						Z	61332480
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		MDXL
+			},
+			SimpleItem	mainmig_340c=
+			{
+				Posn
+				{
+					Abs
+					{	X	61658112,
+						Z	60999680
+					}
+				},
+				UIDBand		GreenVetoedBAND,
+				Shape		MDXL
+			}
+		},
+		WayPoint	mainmig_0103,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	71976960,
+					Z	60655616
+				}
+			},
+			Route
+			{
+				WayPoint	mainmig_0103=
+				{
+					Posn
+					{
+						Abs
+						{	X	71981056,
+							Z	60668928
+						}
+					},
+					Action	wpdmbtrkstopno
+				}
+			},
+			NumInForm		3,
+			Formation	FORM_V,
+			GroundItem	mainmig_3f81=
+			{
+				BlueSAMBAND,
+				Type	SQ_ATruck,
+				Side	NAT_BLUE,
+				Shape	CIVI01,
+				Vel	440
+		}	}
+	};

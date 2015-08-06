@@ -1,0 +1,162 @@
+	WayPoint	RDSINANJ_0100,
+	WayPoint	RDSINANJ_0101,
+	WayPoint	RDSINANJ_0102,
+	WayPoint	RDSINANJ_0103,
+	WayPoint	RDSINANJ_0104,
+	WayPoint	RDSINANJ_0105,
+	WayPoint	RDSINANJ_0106,
+	GroundItem	RDSINANJ_3080,
+	GroundItem	RDSINANJ_3081,
+	BattleField
+	{
+		FileName	FIL_1_RDSINANJ=RDSINANJ.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdSinanju,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdSinanju, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	51294813,
+						Z	83201035
+					}
+				},
+				Route
+				{
+					WayPoint	RDSINANJ_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	51318161,
+								Z	83175230
+							}
+						},
+						Vel	70,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDSINANJ_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	51337412,
+								Z	83176459
+							}
+						},
+						Vel	70,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDSINANJ_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	51250167,
+								Z	83317772
+							}
+						},
+						Vel	70,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDSINANJ_3080=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	SHAPE_TroopMove,
+					Vel 70
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	51329629,
+						Z	83263295
+					}
+				},
+				Route
+				{
+					WayPoint	RDSINANJ_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	51401310,
+								Z	83262475
+							}
+						},
+						Vel	120,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDSINANJ_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	51401310,
+								Z	83187928
+							}
+						},
+						Vel	120,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDSINANJ_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	51379191,
+								Z	83188337
+							}
+						},
+						Vel	120,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDSINANJ_0106=
+					{
+						Posn
+						{
+							Abs
+							{	X	51353387,
+								Z	83225202
+							}
+						},
+						Vel	120,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDSINANJ_3081=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	TTRUCK,
+					Vel	120
+			}	}
+		}
+	};

@@ -1,0 +1,333 @@
+	WayPoint	RAIL09_0100,
+	WayPoint	RAIL09_0101,
+	WayPoint	RAIL09_0102,
+	WayPoint	RAIL09_0103,
+	WayPoint	RAIL09_0104,
+	WayPoint	RAIL09_0105,
+	WayPoint	RAIL09_0106,
+	WayPoint	RAIL09_0107,
+	WayPoint	RAIL09_0108,
+	WayPoint	RAIL09_0109,
+	WayPoint	RAIL09_010a,
+	WayPoint	RAIL09_010b,
+//DeadCode MS 16Jun99 	WayPoint	RAIL09_010c,
+	SimpleItem	RAIL09_0415,
+	SimpleItem	RAIL09_0417,
+	SimpleItem	RAIL09_041d,
+	SimpleItem	RAIL09_0420,
+	SimpleItem	RAIL09_0423,
+	SimpleItem	RAIL09_042a,
+	SimpleItem	RAIL09_042f,
+	SimpleItem	RAIL09_0432,
+	GroundItem	RAIL09_3080,
+//DeadCode MS 16Jun99 	GroundItem	RAIL09_3081,
+	BattleField
+	{
+		FileName	FIL_1_RAIL09=RAIL09.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target		UID_RAIL_Kumchon2Kaesong,
+		ItemGroup
+		{
+			SimpleItem	RAIL09_0415=
+			{
+				Posn
+				{
+					Abs
+					{	X	58827776,
+						Z	66375680
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem	RAIL09_0417=
+			{
+				Posn
+				{
+					Abs
+					{	X	58818048,
+						Z	66364928
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+			SimpleItem	RAIL09_041d=
+			{
+				Posn
+				{
+					Abs
+					{	X	58995200,
+						Z	66802176
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CHLBAA
+			},
+			SimpleItem	RAIL09_0420=
+			{
+				Posn
+				{
+					Abs
+					{	X	58822656,
+						Z	66394624
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CHLBAA
+			},
+			SimpleItem	RAIL09_0423=
+			{
+				Posn
+				{
+					Abs
+					{	X	58981888,
+						Z	65973248
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CHLBAA
+			},
+			SimpleItem	RAIL09_042a=
+			{
+				Posn
+				{
+					Abs
+					{	X	58866688,
+						Z	66265088
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem	RAIL09_042f=
+			{
+				Posn
+				{
+					Abs
+					{	X	58873344,
+						Z	66253824
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST2
+			},
+			SimpleItem	RAIL09_0432=
+			{
+				Posn
+				{
+					Abs
+					{	X	58896384,
+						Z	66248704
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			}
+		},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	58911232,
+					Z	66503168
+				}
+			},
+			Route
+			{
+				WayPoint	RAIL09_0101=
+				{
+					Posn
+					{
+						Abs
+						{	X	58881536,
+							Z	66481664
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_0103=
+				{
+					Posn
+					{
+						Abs
+						{	X	58859008,
+							Z	66465280
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_0105=
+				{
+					Posn
+					{
+						Abs
+						{	X	58842112,
+							Z	66443776
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_0107=
+				{
+					Posn
+					{
+						Abs
+						{	X	58825216,
+							Z	66414080
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_010b=
+				{
+					Posn
+					{
+						Abs
+						{	X	58814464,
+							Z	66394624
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_010a=
+				{
+					Posn
+					{
+						Abs
+						{	X	58822144,
+							Z	66374144
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	58825728,
+							Z	66358784
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_0108=
+				{
+					Posn
+					{
+						Abs
+						{	X	58834944,
+							Z	66322944
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_0106=
+				{
+					Posn
+					{
+						Abs
+						{	X	58847232,
+							Z	66304000
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_0104=
+				{
+					Posn
+					{
+						Abs
+						{	X	58871808,
+							Z	66271744
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_0102=
+				{
+					Posn
+					{
+						Abs
+						{	X	58887680,
+							Z	66248704
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL09_0100=
+				{
+					Posn
+					{
+						Abs
+						{	X	58927616,
+							Z	66229248
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrkstopno,
+					Range	0
+				}
+			},
+			NumInForm		-1,
+			Formation	SQUAD_DUMMY02,
+			GroundItem	RAIL09_3080=
+			{
+				RedTrainBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	TPINC,
+				Vel	87
+		}	}
+//DeadCode MS 16Jun99 		GroundGroup
+//DeadCode MS 16Jun99 		{
+//DeadCode MS 16Jun99 			Posn
+//DeadCode MS 16Jun99 			{
+//DeadCode MS 16Jun99 				Abs
+//DeadCode MS 16Jun99 				{	X	58817536,
+//DeadCode MS 16Jun99 					Z	66371072
+//DeadCode MS 16Jun99 				}
+//DeadCode MS 16Jun99 			},
+//DeadCode MS 16Jun99 			Route
+//DeadCode MS 16Jun99 			{
+//DeadCode MS 16Jun99 				WayPoint	RAIL09_010c=
+//DeadCode MS 16Jun99 				{
+//DeadCode MS 16Jun99 					Posn
+//DeadCode MS 16Jun99 					{
+//DeadCode MS 16Jun99 						Abs
+//DeadCode MS 16Jun99 						{	X	58835968,
+//DeadCode MS 16Jun99 							Z	66368000
+//DeadCode MS 16Jun99 						}
+//DeadCode MS 16Jun99 					},
+//DeadCode MS 16Jun99 					Vel	1,
+//DeadCode MS 16Jun99 					Action	wpdmbtrkstopno,
+//DeadCode MS 16Jun99 					Range	0
+//DeadCode MS 16Jun99 				}
+//DeadCode MS 16Jun99 			},
+//DeadCode MS 16Jun99 			NumInForm		3,
+//DeadCode MS 16Jun99 			Formation	SQUAD_DUMMY02,
+//DeadCode MS 16Jun99 			GroundItem	RAIL09_3081=
+//DeadCode MS 16Jun99 			{
+//DeadCode MS 16Jun99 				RedTrainBAND,
+//DeadCode MS 16Jun99 				Type	SQ_VEHICLES,
+//DeadCode MS 16Jun99 				Side	NAT_RED,
+//DeadCode MS 16Jun99 				Shape	CHTRCK,
+//DeadCode MS 16Jun99 				Vel	1
+	}	
+	};

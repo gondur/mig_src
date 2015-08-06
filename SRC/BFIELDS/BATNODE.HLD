@@ -1,0 +1,835 @@
+//
+// Battle Node Generation
+//
+//
+//
+//
+//
+//
+#include	<stdio.h>
+#include	<string.h>
+#define	F_GRAFIX
+#include	"dosdefs.h"
+#include	"files.g"
+#include	"node.h"
+#include	"..\mfc\resource.h"
+const	UniqueID
+	UID_BNE_4A=(UniqueID)	1,
+	UID_BNE_4AI=(UniqueID)	2,
+	UID_BNE_4AO=(UniqueID)	3,
+	UID_BNE_4B=(UniqueID)	4,
+	UID_BNE_4BI=(UniqueID)	5,
+	UID_BNE_4BO=(UniqueID)	6,
+	UID_BNE_5A=(UniqueID)	7,
+	UID_BNE_5AI=(UniqueID)	8,
+	UID_BNE_5AO=(UniqueID)	9,
+	UID_BNE_6A=(UniqueID)	10,
+	UID_BNE_6AI=(UniqueID)	11,
+	UID_BNE_6AO=(UniqueID)	12,
+	UID_BNW_2e=(UniqueID)	13,
+	UID_BNW_3c=(UniqueID)	14,
+	UID_BNW_4b=(UniqueID)	15;
+
+
+
+const	int
+	IDS_LEFTFLANK=1,
+	IDS_RIGHTFLANK=2,
+	IDS_MOUNTAINPASS=3,
+	IDS_LASTSTANDHILL=4,
+	IDS_FRONTLEFTFLANK=5,
+	IDS_FRONTOPEN=6,
+	IDS_FRONTHILL=7,
+	IDS_NULL=8,
+//	IDS_FRONT=9,
+	IDS_TOWN_NE=10,
+	IDS_TOWN_W=11,
+	IDS_CP=12,
+//	IDS_ROAD=13,
+	IDS_TOWN_NW=14,
+	IDS_COVERROAD=15,
+	IDS_CITYSOUTHOFRIVER=16,
+	IDS_RIVERCROSSING=17,
+	IDS_FERRY=18;
+
+const	FileNum
+	BF_ReForceOnRoad=(FileNum)	1,
+	BF_LineAttack=(FileNum)		2,
+	BF_DefendThin=(FileNum)		3,
+	BF_RetreatThrough=(FileNum)	4,
+	BF_ReinforceOpen=(FileNum)	5,
+	BF_ArcNoFlank=(FileNum)		6,
+	BF_DefendSmArc=(FileNum)	7,
+	BF_BThinRoad=(FileNum)		8,
+	BF_RThinRoad=(FileNum)		9,
+	BF_AttackRoadSide=(FileNum)	10,
+	BF_LayRoadAmbush=(FileNum)	11,
+	BF_EnterAmbush=(FileNum)	12,
+	BF_EnterAmbushRoad=(FileNum)13,
+	BF_ReForceOpen=(FileNum)	14,
+	BF_ReinforceOnRoad=(FileNum)15,
+	BF_FlatAttack=(FileNum)		16,
+	BF_DefendArc=(FileNum)		17,
+	BF_RetreatArc=(FileNum)		18;
+	
+typedef	SuperBattleNode::FlankLink	F;
+typedef	SuperBattleNode::IntraLink	L;
+
+
+#define	NODE(num)		UID_BNE_##num
+//#define	NODE(num)		UID_BNC_##num
+//#define	NODE(num)		UID_BNW_##num
+
+#define	PLACE(num,text)	NODE(num),IDS_##text
+#define OUT(num)		NODE(num)O
+#define IN(num)			NODE(num)I
+
+struct	SuperBattleDesc
+{
+
+	enum	{MAXNODES=BattleStruct::MAXNODES};
+	struct
+	{
+		char*	filename;
+		char*   equatename;
+	}	names;
+	SuperBattleNode	nodelist[MAXNODES];
+};
+			
+
+SuperBattleDesc	battledescs[]=
+{
+{	{"test.bn","FIL_BAT_TEST"},
+{
+	{	//LEVEL 4 //2 similar hill nodes
+PLACE(			4A,LEFTFLANK),
+/*flanks*/		{UID_NULL,NODE(4B),F::NOT_LEFT},
+/*in*/			{IN(4A),L::ATTACKEASY,
+				BF_ReForceOnRoad,BF_LineAttack,	BF_DefendThin,BF_RetreatThrough},
+/*out*/			{OUT(4A),L::DEFENDADV,
+				BF_ReinforceOpen,BF_ArcNoFlank,	BF_DefendSmArc,BF_RetreatThrough},
+/*inroute*/		{NODE(5A),
+				BF_BThinRoad,BF_BThinRoad,		BF_RThinRoad,BF_RThinRoad}
+	},
+	{	//LEVEL 4 //2nd node
+PLACE(			4B,RIGHTFLANK),
+/*flanks*/		{NODE(4A),UID_NULL,F::NOT_RIGHT},
+/*in*/			{IN(4B),L::ATTACKEASY,
+				BF_ReForceOnRoad,BF_LineAttack,	BF_DefendThin,BF_RetreatThrough},
+/*out*/			{OUT(4B),L::DEFENDADV,
+				BF_ReinforceOpen,BF_ArcNoFlank,	BF_DefendSmArc,BF_RetreatThrough},
+/*inroute*/		{NODE(5A),
+				BF_BThinRoad,BF_BThinRoad,		BF_RThinRoad,BF_RThinRoad}
+	},
+
+	{	//LEVEL 5 //ambush at back
+PLACE(			5A,MOUNTAINPASS),
+/*flanks*/		{UID_NULL,UID_NULL,F::NOT_LINKED},
+/*in*/			{IN(5A),L::ATTACKEASY,
+/*reinforce/attack*/	BF_ReinforceOnRoad,BF_AttackRoadSide,		
+/*defend/retreat*/		BF_LayRoadAmbush,BF_EnterAmbush},
+/*out*/			{OUT(5A),L::NOADV,
+/*reinforce/attack*/	BF_ReinforceOnRoad,BF_AttackRoadSide,		
+/*defend/retreat*/		BF_LayRoadAmbush,BF_EnterAmbushRoad},
+/*inroute*/		{NODE(6A),
+				BF_BThinRoad,BF_BThinRoad,		BF_RThinRoad,BF_RThinRoad}
+	},
+
+	{	//LEVEL 6 //root node
+PLACE(			6A,LASTSTANDHILL),
+/*flanks*/		{UID_NULL,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_NULL},
+
+/*out*/			{OUT(6A),L::DEFENDEASY,
+				BF_ReForceOpen,BF_FlatAttack,  BF_DefendArc,BF_RetreatArc},
+/*inroute*/		{UID_NULL}
+
+	},
+	}
+},
+//////////////////////////
+{	{"osan_s.bn","FIL_BAT_OSAN"},
+{
+	{	/*OPEN PLAIN, FRONT LINE 1a*/
+/*place*/		UID_BNW_1a,IDS_FRONTLEFTFLANK,
+/*flanks*/		{UID_NULL,UID_BNW_1b,F::NOT_LEFT},
+/*in*/			{UID_BNW_1a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_SE,BF_RET_Mid},
+/*out*/			{UID_BNW_1a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_NW,BF_RET_Mid},
+/*inroute*/		{UID_BNW_2a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*OPEN PLAIN, FRONT LINE 1b*/
+/*place*/		UID_BNW_1b,IDS_FRONTOPEN,
+/*flanks*/		{UID_BNW_1a,UID_BNW_1c},
+/*in*/			{UID_BNW_1b_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_SE,BF_RET_Mid},
+/*out*/			{UID_BNW_1b_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_NW,BF_RET_Mid},
+/*inroute*/		{UID_BNW_2b,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*OPEN PLAIN, FRONT LINE 1c*/
+/*place*/		UID_BNW_1c,IDS_FRONTOPEN,
+/*flanks*/		{UID_BNW_1b,UID_BNW_1d},
+/*in*/			{UID_BNW_1c_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_S,BF_RET_Mid},
+/*out*/			{UID_BNW_1c_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_N,BF_RET_Mid},
+/*inroute*/		{UID_BNW_2b,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*SMALL HILL, FRONT LINE 1D*/
+/*place*/		UID_BNW_1d,IDS_FRONTHILL,
+/*flanks*/		{UID_BNW_1c,UID_BNW_1e},
+/*in*/			{UID_BNW_1d_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_ArcSlt_S,BF_RET_Lft},
+/*out*/			{UID_BNW_1d_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_ArcSlt_NW,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2c,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*SMALL HILL, FRONT LINE 1E*/
+/*place*/		UID_BNW_1e,IDS_FRONTHILL,
+/*flanks*/		{UID_BNW_1d,UID_BNW_1f},
+/*in*/			{UID_BNW_1e_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_ArcSlt_N,BF_RET_Rgt},
+/*out*/			{UID_BNW_1d_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_ArcSlt_S,BF_RET_Rgt},
+/*inroute*/		{UID_BNW_2c,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*OPEN PLAIN, FRONTRIGHT LINE 1F*/
+/*place*/		UID_BNW_1f,IDS_FRONT,
+/*flanks*/		{UID_BNW_1e,UID_NULL,F::NOT_RIGHT},
+/*in*/			{UID_BNW_1f_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SW,BF_RET_Lft},
+/*out*/			{UID_BNW_1f_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_NE,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2d,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+//SECOND LINE, FIRE SUPPORT
+	{	/*OPEN PLAIN, FRONT LINE 2a*/
+/*place*/		UID_BNW_2_a,IDS_FRONTLEFTFLANK,
+/*flanks*/		{UID_NULL,UID_BNW_2b,F::NOT_LEFT},
+/*in*/			{UID_BNW_2a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Rgt},
+/*out*/			{UID_BNW_2a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_NW,BF_RET_Rgt},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*OPEN PLAIN, FRONT LINE 1b*/
+/*place*/		UID_BNW_2b,IDS_FRONTOPEN,
+/*flanks*/		{UID_BNW_2a,UID_BNW_2c},
+/*in*/			{UID_BNW_2b_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_SE,BF_RET_Mid},
+/*out*/			{UID_BNW_2b_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_NW,BF_RET_Mid},
+/*inroute*/		{UID_BNW_3b,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*OPEN PLAIN, FRONT LINE 1c*/
+/*place*/		UID_BNW_2c,IDS_FRONTOPEN,
+/*flanks*/		{UID_BNW_2b,UID_BNW_2d},
+/*in*/			{UID_BNW_2c_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_S,BF_RET_Mid},
+/*out*/			{UID_BNW_2c_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_N,BF_RET_Mid},
+/*inroute*/		{UID_BNW_3b,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*SMALL HILL, FRONT LINE 1D*/
+/*place*/		UID_BNW_2d,IDS_FRONTHILL,
+/*flanks*/		{UID_BNW_2c,UID_BNW_2e},
+/*in*/			{UID_BNW_2d_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_ArcSlt_S,BF_RET_Lft},
+/*out*/			{UID_BNW_2d_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_ArcSlt_NW,BF_RET_Lft},
+/*inroute*/		{UID_BNW_3c,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+}
+},
+
+//*******************************************************
+
+{	{"W5_UN.bn","FIL_BAT_W5_UN"},
+{
+	{	/*RIVER BANK, FRONT LINE 1a*/
+/*place*/		UID_BNW_1a,IDS_FERRY,
+/*flanks*/		{UID_NULL,UID_BNW_1b,F::NOT_LINKED},
+/*in*/			{UID_BNW_1a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Mid},
+/*out*/			{UID_BNW_1a_o,L::DEFENDEASY,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Mid},
+/*inroute*/		{UID_BNW_2a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER BANK, FRONT LINE 1b*/
+/*place*/		UID_BNW_1b,IDS_FERRY,
+/*flanks*/		{UID_BNW_1a,UID_BNW_1c,F::NOT_LINKED},
+/*in*/			{UID_BNW_1b_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_NW,BF_RET_Mid},
+/*out*/			{UID_BNW_1b_o,L::DEFENDEASY,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SE,BF_RET_Mid},
+/*inroute*/		{UID_BNW_2b,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER BANK, FRONT LINE 1c*/
+/*place*/		UID_BNW_1c,IDS_FERRY,
+/*flanks*/		{UID_BNW_1b,UID_BNW_1d,F::NOT_LINKED},
+/*in*/			{UID_BNW_1c_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Mid},
+/*out*/			{UID_BNW_1c_o,L::DEFENDEASY,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Mid},
+/*inroute*/		{UID_BNW_2b,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER BANK, FRONT LINE 1D*/
+/*place*/		UID_BNW_1d,IDS_FERRY,
+/*flanks*/		{UID_BNW_1c,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_1d_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_ArcSlt_SW,BF_RET_Lft},
+/*out*/			{UID_BNW_1d_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_ArcSlt_NE,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2c,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+
+//SECOND LINE, FIRE SUPPORT
+	{	/*IN TOWN, FRONT LINE 2a*/
+/*place*/		UID_BNW_2a,IDS_TOWN_NW,
+/*flanks*/		{UID_NULL,UID_BNW_2b,F::NOT_LEFT},
+/*in*/			{UID_BNW_2a_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Rgt},
+/*out*/			{UID_BNW_2a_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_NW,BF_RET_Rgt},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*IN TOWN, FRONT LINE 2b*/
+/*place*/		UID_BNW_2b,IDS_TOWN_NE,
+/*flanks*/		{UID_BNW_2a,UID_BNW_2c},
+/*in*/			{UID_BNW_2b_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Mid},
+/*out*/			{UID_BNW_2b_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Mid},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*IN TOWN, FRONT LINE 2c*/
+/*place*/		UID_BNW_2c,IDS_TOWN_W,
+/*flanks*/		{UID_BNW_2b,UID_BNW_2d,F::NOT_RIGHT},
+/*in*/			{UID_BNW_2c_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Mid},
+/*out*/			{UID_BNW_2c_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Mid},
+/*inroute*/		{UID_BNW_3b,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+//THIRD LINE, COMMAND POST AND RESERVES
+	{	/*STRADDLE ROAD, FRONT LINE 3a*/
+/*place*/		UID_BNW_3a,IDS_CP,
+/*flanks*/		{UID_NULL,UID_BNW_3b,F::NOT_LEFT},
+/*in*/			{UID_BNW_3a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Rgt},
+/*out*/			{UID_BNW_3a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Rgt},
+/*inroute*/		{UID_BNW_4a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*STRADDLE ROAD, FRONT LINE 3b*/
+/*place*/		UID_BNW_3b,IDS_ROAD,
+/*flanks*/		{UID_BNW_3a,UID_BNW_3c,F::NOT_RIGHT},
+/*in*/			{UID_BNW_3b_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Mid},
+/*out*/			{UID_BNW_3b_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Mid},
+/*inroute*/		{UID_BNW_4b,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+//FOURTH LINE, ESCAPE ROUTE
+	{	/*STRADDLE ROAD, FRONT LINE 4a*/
+/*place*/		UID_BNW_4a,IDS_ROAD,
+/*flanks*/		{UID_NULL,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_4a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_BlkSlt,BF_RET_Rgt},
+/*out*/			{UID_BNW_4a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_BlkSlt,BF_RET_Rgt},
+/*inroute*/		{UID_NULL,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+}
+},
+
+//*******************************************************
+//FRONT LINE IS SEOUL
+//A allows tanks
+
+{	{"W4_UN.bn","FIL_BAT_W4_UN"},
+{
+	{	/*SOUTH OF RIVER, FRONT LINE 1a*/
+/*place*/		UID_BNW_1a,IDS_COVERROAD,
+/*flanks*/		{UID_NULL,UID_BNW_1b},
+/*in*/			{UID_BNW_1a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_N,BF_RET_Mid},
+/*out*/			{UID_BNW_1a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Mid},
+/*inroute*/		{UID_BNW_2a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*SOUTH OF RIVER, FRONT LINE 1b*/
+/*place*/		UID_BNW_1b,IDS_COVERROAD,
+/*flanks*/		{UID_BNW_1a,UID_BNW_1c},
+/*in*/			{UID_BNW_1b_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_NW,BF_RET_Mid},
+/*out*/			{UID_BNW_1b_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SE,BF_RET_Mid},
+/*inroute*/		{UID_BNW_2b,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER ISLAND, FRONT LINE 1c*/
+/*place*/		UID_BNW_1c,IDS_CITYSOUTHOFRIVER,
+/*flanks*/		{UID_BNW_1b,UID_BNW_1d},
+/*in*/			{UID_BNW_1c_i,L::DEFENDEASY,
+				BF_HLD_Bank,BF_ATT_WtrTrp,	BF_DEF_LinSlt_SW,BF_RET_Invis},
+/*out*/			{UID_BNW_1c_o,L::DEFENDEASY,
+				BF_HLD_Bank,BF_ATT_WtrTrp,	BF_DEF_LinSlt_NE,BF_RET_Invis},
+/*inroute*/		{UID_BNW_2b,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER BANK, FRONT LINE 1D*/
+/*place*/		UID_BNW_1d,IDS_RIVERCROSSING,
+/*flanks*/		{UID_BNW_1c,UID_BNW_1d},
+/*in*/			{UID_BNW_1d_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SW,BF_RET_Lft},
+/*out*/			{UID_BNW_1d_o,L::DEFENDADV,
+				BF_HLD_Bank,BF_ATT_WtrTrp,	BF_DEF_LinSlt_NE,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2c,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER BANK, FRONT LINE 1E*/
+/*place*/		UID_BNW_1e,IDS_NEARAIRFIELD,
+/*flanks*/		{UID_BNW_1d,UID_BNW_1e,F::NOT_RIGHT},
+/*in*/			{UID_BNW_1d_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SW,BF_RET_Lft},
+/*out*/			{UID_BNW_1d_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_NE,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2c,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER BANK, FRONT LINE 1F*/
+/*place*/		UID_BNW_1f,IDS_COVERROAD,
+/*flanks*/		{UID_BNW_1e,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_1d_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_ArcSlt_SW,BF_RET_Lft},
+/*out*/			{UID_BNW_1d_o,L::NOADV,
+				BF_HLD_Bank,BF_ATT_LinTrp,	BF_DEF_ArcSlt_NE,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2d,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+
+//SECOND LINE, FIRE SUPPORT
+	{	/*IN TOWN, FRONT LINE 2a*/
+/*place*/		UID_BNW_2a,IDS_COVERROAD,
+/*flanks*/		{UID_NULL,UID_BNW_2b,F::NOT_LINKED},
+/*in*/			{UID_BNW_2a_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SW,BF_RET_Rgt},
+/*out*/			{UID_BNW_2a_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_NE,BF_RET_Invis},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*IN TOWN, FRONT LINE 2b*/
+/*place*/		UID_BNW_2b,IDS_CITYSOUTHOFRIVER,
+/*flanks*/		{UID_BNW_2a,UID_BNW_2c,F::NOT_LEFT},
+/*in*/			{UID_BNW_2b_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SW,BF_RET_Mid},
+/*out*/			{UID_BNW_2b_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_NE,BF_RET_Mid},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*IN TOWN, FRONT LINE 2c*/
+/*place*/		UID_BNW_2c,IDS_CITYSOUTHOFRIVER,
+/*flanks*/		{UID_BNW_2b,UID_BNW_2d,F::NOT_RIGHT},
+/*in*/			{UID_BNW_2c_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SW,BF_RET_Lft},
+/*out*/			{UID_BNW_2c_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_NE,BF_RET_Lft},
+/*inroute*/		{UID_BNW_3b,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+	{	/*IN TOWN, FRONT LINE 2d*/
+/*place*/		UID_BNW_2c,IDS_CITYSOUTHOFRIVER,
+/*flanks*/		{UID_BNW_2c,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_2c_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_BlkSlt,BF_RET_Mid},
+/*out*/			{UID_BNW_2c_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_BlkSlt,BF_RET_Mid},
+/*inroute*/		{UID_BNW_3b,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+//THIRD LINE, COMMAND POST AND RESERVES
+	{	/*STRADDLE ROAD, FRONT LINE 3a*/
+/*place*/		UID_BNW_3a,IDS_CP,
+/*flanks*/		{UID_NULL,UID_BNW_3b,F::NOT_LEFT},
+/*in*/			{UID_BNW_3a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Rgt},
+/*out*/			{UID_BNW_3a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Rgt},
+/*inroute*/		{UID_BNW_4a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/*STRADDLE ROAD, FRONT LINE 3b*/
+/*place*/		UID_BNW_3b,IDS_ROAD,
+/*flanks*/		{UID_BNW_3a,UID_BNW_3c,F::NOT_RIGHT},
+/*in*/			{UID_BNW_3b_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Mid},
+/*out*/			{UID_BNW_3b_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Mid},
+/*inroute*/		{UID_BNW_4a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+//FOURTH LINE, ESCAPE ROUTE
+	{	/*STRADDLE ROAD, FRONT LINE 4a*/
+/*place*/		UID_BNW_4a,IDS_ROAD,
+/*flanks*/		{UID_NULL,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_4a_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_BlkSlt,BF_RET_Rgt},
+/*out*/			{UID_BNW_4a_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_BlkSlt,BF_RET_Rgt},
+/*inroute*/		{UID_NULL,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+}
+},
+
+
+//*******************************************************
+//FRONT LINE IS CHONAN
+//d and e allow tanks
+
+{	{"W2_UN.bn","FIL_BAT_W2_UN"},
+{
+	{	/*WEST OF TOWN, 1a*/
+/*place*/		UID_BNW_1a,IDS_WESTOFTOWN,
+/*flanks*/		{UID_NULL,UID_BNW_1b,F::NOT_LEFT},
+/*in*/			{UID_BNW_1a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_W,BF_RET_Mid},
+/*out*/			{UID_BNW_1a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTnk,	BF_DEF_LinSlt_E,BF_RET_Mid},
+/*inroute*/		{UID_BNW_2a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*WEST OF TOWN, 1b*/
+/*place*/		UID_BNW_1b,IDS_WESTOFTOWN,
+/*flanks*/		{UID_BNW_1a,UID_BNW_1c},
+/*in*/			{UID_BNW_1b_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_W,BF_RET_Mid},
+/*out*/			{UID_BNW_1b_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_E,BF_RET_Mid},
+/*inroute*/		{UID_BNW_2b,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER ISLAND, FRONT LINE 1c*/
+/*place*/		UID_BNW_1c,IDS_WESTOFTOWN,
+/*flanks*/		{UID_BNW_1b,UID_BNW_1d},
+/*in*/			{UID_BNW_1c_i,L::DEFENDEASY,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_W,BF_RET_Invis},
+/*out*/			{UID_BNW_1c_o,L::DEFENDEASY,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_E,BF_RET_Invis},
+/*inroute*/		{UID_BNW_2b,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER BANK, FRONT LINE 1D*/
+/*place*/		UID_BNW_1d,IDS_NORTHOFTOWN,
+/*flanks*/		{UID_BNW_1c,UID_BNW_1d},
+/*in*/			{UID_BNW_1d_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Lft},
+/*out*/			{UID_BNW_1d_o,L::DEFENDADV,
+				BF_HLD_Bank,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2c,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER BANK, FRONT LINE 1E*/
+/*place*/		UID_BNW_1e,IDS_NORTHOFTOWN,
+/*flanks*/		{UID_BNW_1d,UID_BNW_1e,F::NOT_RIGHT},
+/*in*/			{UID_BNW_1d_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Lft},
+/*out*/			{UID_BNW_1d_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2c,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+
+//SECOND LINE, FIRE SUPPORT
+	{	/* 2a*/
+/*place*/		UID_BNW_2a,IDS_COVERROAD,
+/*flanks*/		{UID_NULL,UID_BNW_2b,F::NOT_LINKED},
+/*in*/			{UID_BNW_2a_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Rgt},
+/*out*/			{UID_BNW_2a_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Invis},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/* 2b*/
+/*place*/		UID_BNW_2b,IDS_COVERROAD,
+/*flanks*/		{UID_BNW_2a,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_2b_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SW,BF_RET_Mid},
+/*out*/			{UID_BNW_2b_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_NE,BF_RET_Mid},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+//THIRD LINE, COMMAND POST AND RESERVES
+	{	/*STRADDLE ROAD, FRONT LINE 3a*/
+/*place*/		UID_BNW_3a,IDS_ROAD,
+/*flanks*/		{UID_NULL,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_3a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_Pass,BF_RET_Rgt},
+/*out*/			{UID_BNW_3a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_Pass,BF_RET_Rgt},
+/*inroute*/		{UID_NULL,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+}
+},
+
+
+
+//*******************************************************
+//FRONT LINE IS KONGJU, UN SIDE OF LINE
+//
+
+{	{"W1_UN.bn","FIL_BAT_W1_UN"},
+{
+	{	/*1a*/
+/*place*/		UID_BNW_1a,IDS_RIVER_SOUTHWESTOFTOWN,
+/*flanks*/		{UID_NULL,UID_BNW_1b,F::NOT_LEFT},
+/*in*/			{UID_BNW_1a_i,L::DEFENDERADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SE,BF_RET_Invis},
+/*out*/			{UID_BNW_1a_o,L::DEFENDERADV,
+				BF_HLD_Open,BF_ATT_StandOff,	BF_DEF_LinSlt_NW,BF_RET_Invis},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*1b*/
+/*place*/		UID_BNW_1b,IDS_RIVER_WESTOFTOWN,
+/*flanks*/		{UID_BNW_1a,UID_BNW_1c},
+/*in*/			{UID_BNW_1b_i,L::DEFENDERADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SE,BF_RET_Invis},
+/*out*/			{UID_BNW_1b_o,L::DEFENDERADV,
+				BF_HLD_Open,BF_ATT_Standoff,	BF_DEF_LinSlt_NW,BF_RET_Invis},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*FRONT LINE 1c*/
+/*place*/		UID_BNW_1c,IDS_RIVER_NORTHWESTOFTOWN,
+/*flanks*/		{UID_BNW_1b,UID_BNW_1d},
+/*in*/			{UID_BNW_1c_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Invis},
+/*out*/			{UID_BNW_1c_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_StandOff,	BF_DEF_LinSlt_N,BF_RET_Invis},
+/*inroute*/		{UID_BNW_2a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*1d*/
+/*place*/		UID_BNW_1d,IDS_RIVER_NORTHOFTOWN,
+/*flanks*/		{UID_BNW_1c,UID_BNW_1e},
+/*in*/			{UID_BNW_1d_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Lft},
+/*out*/			{UID_BNW_1d_o,L::DEFENDADV,
+				BF_HLD_Bank,BF_ATT_StandOff,	BF_DEF_LinSlt_N,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*RIVER BANK, FRONT LINE 1E*/
+/*place*/		UID_BNW_1e,IDS_RIVER_EASTOFTOWN,
+/*flanks*/		{UID_BNW_1d,UID_BNW_1e,F::NOT_RIGHT},
+/*in*/			{UID_BNW_1d_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Lft},
+/*out*/			{UID_BNW_1d_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_StandOff,	BF_DEF_LinSlt_N,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2b,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+
+//SECOND LINE, SECONDARY AND REGROUP
+	{	/* 2a*/
+/*place*/		UID_BNW_2a,IDS_COVERROAD,
+/*flanks*/		{UID_NULL,UID_BNW_2b,F::NOT_LEFT},
+/*in*/			{UID_BNW_2a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Rgt},
+/*out*/			{UID_BNW_2a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Lft},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	{	/* 2b*/
+/*place*/		UID_BNW_2b,IDS_COVERROAD,
+/*flanks*/		{UID_BNW_2a,UID_NULL,F::NOT_RIGHT},
+/*in*/			{UID_BNW_2b_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_SW,BF_RET_Mid},
+/*out*/			{UID_BNW_2b_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Mid},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+//THIRD LINE, FIRESUPPORT
+	{	/*STRADDLE ROAD, FRONT LINE 3a*/
+/*place*/		UID_BNW_3a,IDS_SMALLHAMLETONROAD,
+/*flanks*/		{UID_NULL,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_3a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_Pass,BF_RET_Rgt},
+/*out*/			{UID_BNW_3a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_Pass,BF_RET_Rgt},
+/*inroute*/		{UID_NULL,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+//FOURTH LINE, CP AND RESERVE
+	{	/*STRADDLE ROAD, FRONT LINE 4a*/
+/*place*/		UID_BNW_4a,IDS_RESERVE,
+/*flanks*/		{UID_NULL,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_4a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_Pass,BF_RET_Rgt},
+/*out*/			{UID_BNW_4a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_Pass,BF_RET_Rgt},
+/*inroute*/		{UID_NULL,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+}
+},
+
+//*******************************************************
+//FRONT LINE IS KONGJU, RED SIDE OF LINE
+//
+
+{	{"W1_Red.bn","FIL_BAT_W1_RED"},
+{
+	{	/*1a*/
+/*place*/		UID_BNW_1a,IDS_RIVER_WESTOFTOWN,
+/*flanks*/		{UID_NULL,UID_BNW_1b,F::NOT_LEFT},
+/*in*/			{UID_BNW_1a_i,L::DEFENDERADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Invis},
+/*out*/			{UID_BNW_1a_o,L::DEFENDERADV,
+				BF_HLD_Open,BF_ATT_StandOff,	BF_DEF_LinSlt_S,BF_RET_Invis},
+/*inroute*/		{UID_BNW_2a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*1b*/
+/*place*/		UID_BNW_1b,IDS_RIVER_NORTHWESTOFTOWN,
+/*flanks*/		{UID_BNW_1a,UID_BNW_1c},
+/*in*/			{UID_BNW_1b_i,L::DEFENDERADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Invis},
+/*out*/			{UID_BNW_1b_o,L::DEFENDERADV,
+				BF_HLD_Open,BF_ATT_Standoff,	BF_DEF_LinSlt_S,BF_RET_Invis},
+/*inroute*/		{UID_BNW_2a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*FRONT LINE 1c*/
+/*place*/		UID_BNW_1c,IDS_RIVER_NORTHOFTOWN,
+/*flanks*/		{UID_BNW_1b,UID_BNW_1d},
+/*in*/			{UID_BNW_1c_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_N,BF_RET_Invis},
+/*out*/			{UID_BNW_1c_o,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_StandOff,	BF_DEF_LinSlt_S,BF_RET_Invis},
+/*inroute*/		{UID_BNW_2a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+	{	/*1d*/
+/*place*/		UID_BNW_1d,IDS_MAINEASTHIGHWAY,
+/*flanks*/		{UID_BNW_1c,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_1d_i,L::DEFENDADV,
+				BF_HLD_Open,BF_ATT_LinTrp,	BF_DEF_LinSlt_S,BF_RET_Lft},
+/*out*/			{UID_BNW_1d_o,L::DEFENDADV,
+				BF_HLD_Bank,BF_ATT_StandOff,	BF_DEF_LinSlt_N,BF_RET_Lft},
+/*inroute*/		{UID_BNW_2a,
+				BF_MOV_ColTrp,BF_MOV_ColTrp,		BF_MOV_ColTrp,BF_MOV_ColTrp}
+	},
+
+//SECOND LINE, FIRE SUPPORT
+	{	/* 2a*/
+/*place*/		UID_BNW_2a,IDS_COVERROAD,
+/*flanks*/		{UID_NULL,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_2a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_Pass,BF_RET_Mid},
+/*out*/			{UID_BNW_2a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_Pass,BF_RET_Mid},
+/*inroute*/		{UID_BNW_3a,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+	},
+//THIRD LINE, ESCAPE ROUTE
+	{	/*STRADDLE ROAD, 3a*/
+/*place*/		UID_BNW_3a,IDS_COVERROAD,
+/*flanks*/		{UID_NULL,UID_NULL,F::NOT_LINKED},
+/*in*/			{UID_BNW_3a_i,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_Pass,BF_RET_Rgt},
+/*out*/			{UID_BNW_3a_o,L::NOADV,
+				BF_HLD_Open,BF_ATT_PassTrp,	BF_DEF_Pass,BF_RET_Rgt},
+/*inroute*/		{UID_NULL,
+				BF_MOV_LinTrp,BF_MOV_LinTrp,		BF_MOV_LinTrp,BF_MOV_LinTrp}
+	},
+
+}
+},
+
+
+
+////////////////// END OF LIST ///////////////////////////
+{{NULL}}
+};
+
+
+
+
+
+int main()
+{
+	FILE* d=fopen("\\mig\\src\\batnode.fil","wt");
+	fputs("[files]\n135\tdir.dir\n",d);
+	int errors=0,writes=0;
+	for (int i=0;battledescs[i].names.filename;i++)
+	{
+		int j=0;
+		while (battledescs[i].nodelist[j].mainuid)
+			j++;
+		char buffer[100];
+		strcpy(buffer,"\\mig\\game\\bfields\\batnode\\");
+		strcat(buffer,battledescs[i].names.filename);
+		FILE* f=fopen(buffer,"wb");
+		if (!f)
+		{
+			printf("Error... couldn't write file %i called \"%s\"\n",i,buffer);
+			errors++;
+		}
+		else
+		{
+			writes++;
+			fprintf(d,"\t%s\t%s\n",battledescs[i].names.filename,battledescs[i].names.equatename);
+			fwrite(battledescs[i].nodelist,j,sizeof(SuperBattleNode),f);
+			fclose(f);
+		}
+	}
+	printf("%i files written. %i problems\n",writes,errors);
+	fclose(d);
+	return errors;
+
+}

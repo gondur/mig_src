@@ -1,0 +1,38 @@
+	SimpleItem	BRIDGE08_0414,
+	SimpleItem	BRIDGE08_0418,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE08=BRIDGE08.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlSinanju0,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE08_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	51613696,
+							Z	84183040
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE08_0418=
+				{
+					Posn
+					{
+						Abs
+						{	X	51529728,
+							Z	84319232
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

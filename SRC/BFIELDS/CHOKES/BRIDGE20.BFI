@@ -1,0 +1,38 @@
+	SimpleItem	BRIDGE20_0405,
+	SimpleItem	BRIDGE20_0409,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE20=BRIDGE20.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlPyongyang,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE20_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	52762624,
+							Z	77201408
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE20_0409=
+				{
+					Posn
+					{
+						Abs
+						{	X	52682752,
+							Z	77299200
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

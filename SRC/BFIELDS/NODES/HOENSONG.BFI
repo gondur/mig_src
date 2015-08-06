@@ -1,0 +1,103 @@
+	SimpleItem	Hoensong_0403,
+	SimpleItem	Hoensong_0404,
+	SimpleItem	Hoensong_0405,
+	SimpleItem	Hoensong_0406,
+	SimpleItem	Hoensong_0407,
+	SimpleItem	Hoensong_2008,
+	SimpleItem	Hoensong_2009,
+	BattleField
+	{
+		FileName	FIL_1_HOENSONG=HOENSONG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StHoensong,
+		ItemGroup
+		{
+				SimpleItem	Hoensong_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	71998464,
+							Z	60647424
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	Hoensong_0404=
+				{
+					Posn
+					{
+						Abs
+						{	X	72054652,
+							Z	60619557
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	Hoensong_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	72020992,
+							Z	60649472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Hoensong_0406=
+				{
+					Posn
+					{
+						Abs
+						{	X	72019968,
+							Z	60617728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Hoensong_0407=
+				{
+					Posn
+					{
+						Abs
+						{	X	72080384,
+							Z	60606464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Hoensong_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	71961600,
+							Z	60652544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Hoensong_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	71950336,
+							Z	60618752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				}
+		}	}
+	};

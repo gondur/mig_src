@@ -1,0 +1,24 @@
+	SimpleItem	W7_UN_08a3,
+	BattleField
+	{
+		FileName	FIL_1_W7_UN=W7_UN.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	W7_UN_08a3=
+			{
+				Posn
+				{
+					Abs
+					{	X	52672512,
+						Z	77049856
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1a,
+				Shape		HUT
+			}
+		}
+	};

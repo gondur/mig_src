@@ -1,0 +1,2123 @@
+	SimpleItem	Seoul_1505,
+	SimpleItem	Seoul_1506,
+	SimpleItem	Seoul_1507,
+	SimpleItem	Seoul_1508,
+	SimpleItem	Seoul_1509,
+	SimpleItem	Seoul_150a,
+	SimpleItem	Seoul_150b,
+	SimpleItem	Seoul_150c,
+	SimpleItem	Seoul_150d,
+	SimpleItem	Seoul_150e,
+	SimpleItem	Seoul_150f,
+	SimpleItem	Seoul_1510,
+	SimpleItem	Seoul_1511,
+	SimpleItem	Seoul_1512,
+	SimpleItem	Seoul_1513,
+	SimpleItem	Seoul_1514,
+	SimpleItem	Seoul_1515,
+	SimpleItem	Seoul_1a00,
+	SimpleItem	Seoul_1a01,
+	SimpleItem	Seoul_1a02,
+	SimpleItem	Seoul_1a03,
+	SimpleItem	Seoul_1a04,
+	SimpleItem	Seoul_1a05,
+	SimpleItem	Seoul_1a06,
+	SimpleItem	Seoul_1a07,
+	SimpleItem	Seoul_1a08,
+	SimpleItem	Seoul_1a09,
+	SimpleItem	Seoul_1a0a,
+	SimpleItem	Seoul_1a0b,
+	SimpleItem	Seoul_1a0c,
+	SimpleItem	Seoul_1a0d,
+	SimpleItem	Seoul_1a0e,
+	SimpleItem	Seoul_1a0f,
+	SimpleItem	Seoul_1a10,
+	SimpleItem	Seoul_1a11,
+	SimpleItem	Seoul_1a12,
+	SimpleItem	Seoul_1a13,
+	SimpleItem	Seoul_1a14,
+	SimpleItem	Seoul_1a15,
+	SimpleItem	Seoul_1a16,
+	SimpleItem	Seoul_1a17,
+	SimpleItem	Seoul_1a18,
+	SimpleItem	Seoul_1a19,
+	SimpleItem	Seoul_1a1a,
+	SimpleItem	Seoul_1a1b,
+	SimpleItem	Seoul_1a1c,
+	SimpleItem	Seoul_1a1d,
+	SimpleItem	Seoul_1a1e,
+	SimpleItem	Seoul_1a1f,
+	SimpleItem	Seoul_1a20,
+	SimpleItem	Seoul_1a21,
+	SimpleItem	Seoul_1a22,
+	SimpleItem	Seoul_1a23,
+	SimpleItem	Seoul_1a24,
+	SimpleItem	Seoul_1a25,
+	SimpleItem	Seoul_1a26,
+	SimpleItem	Seoul_1a27,
+	SimpleItem	Seoul_1a28,
+	SimpleItem	Seoul_1a29,
+	SimpleItem	Seoul_1a2a,
+	SimpleItem	Seoul_1a2b,
+	SimpleItem	Seoul_1a2c,
+	SimpleItem	Seoul_1a2d,
+	SimpleItem	Seoul_1a2e,
+	SimpleItem	Seoul_1a2f,
+	SimpleItem	Seoul_1a30,
+	SimpleItem	Seoul_1a31,
+	SimpleItem	Seoul_1a32,
+	SimpleItem	Seoul_1a33,
+	SimpleItem	Seoul_1a34,
+	SimpleItem	Seoul_1a35,
+	SimpleItem	Seoul_1a36,
+	SimpleItem	Seoul_1a37,
+	SimpleItem	Seoul_1a38,
+	SimpleItem	Seoul_1a39,
+	SimpleItem	Seoul_1a3a,
+	SimpleItem	Seoul_1a3b,
+	SimpleItem	Seoul_1a3c,
+	SimpleItem	Seoul_1a3d,
+	SimpleItem	Seoul_1a3e,
+	SimpleItem	Seoul_1a3f,
+	SimpleItem	Seoul_1a40,
+	SimpleItem	Seoul_1a41,
+	SimpleItem	Seoul_1a42,
+	SimpleItem	Seoul_1a43,
+	SimpleItem	Seoul_1a44,
+	SimpleItem	Seoul_1a45,
+	SimpleItem	Seoul_1a46,
+	SimpleItem	Seoul_1a47,
+	SimpleItem	Seoul_1a48,
+	SimpleItem	Seoul_1a49,
+	SimpleItem	Seoul_1a4a,
+	SimpleItem	Seoul_1a4b,
+	SimpleItem	Seoul_1a4c,
+	SimpleItem	Seoul_1a4d,
+	SimpleItem	Seoul_1a4e,
+	SimpleItem	Seoul_1a4f,
+	SimpleItem	Seoul_1a50,
+	SimpleItem	Seoul_1a51,
+	SimpleItem	Seoul_1a52,
+	SimpleItem	Seoul_1a53,
+	SimpleItem	Seoul_1a54,
+	SimpleItem	Seoul_1a55,
+	SimpleItem	Seoul_1a56,
+	SimpleItem	Seoul_1a57,
+	SimpleItem	Seoul_1a58,
+	SimpleItem	Seoul_1a59,
+	SimpleItem	Seoul_1a5a,
+	SimpleItem	Seoul_1a5b,
+	SimpleItem	Seoul_1a5c,
+	SimpleItem	Seoul_1a5d,
+	SimpleItem	Seoul_1a5e,
+	SimpleItem	Seoul_1a5f,
+	SimpleItem	Seoul_1a60,
+	SimpleItem	Seoul_1a61,
+	SimpleItem	Seoul_1a62,
+	SimpleItem	Seoul_1a63,
+	SimpleItem	Seoul_1a64,
+	SimpleItem	Seoul_1a65,
+	SimpleItem	Seoul_1a66,
+	SimpleItem	Seoul_1a67,
+	SimpleItem	Seoul_1a68,
+	SimpleItem	Seoul_1a69,
+	SimpleItem	Seoul_1a6a,
+	SimpleItem	Seoul_1a6b,
+	SimpleItem	Seoul_1a6c,
+	SimpleItem	Seoul_1a6d,
+	SimpleItem	Seoul_1a6e,
+	SimpleItem	Seoul_1a6f,
+	SimpleItem	Seoul_1a70,
+	SimpleItem	Seoul_1a71,
+	SimpleItem	Seoul_1a72,
+	SimpleItem	Seoul_1a73,
+	SimpleItem	Seoul_1a74,
+	SimpleItem	Seoul_1a75,
+	SimpleItem	Seoul_1a76,
+	SimpleItem	Seoul_1a77,
+	SimpleItem	Seoul_1a78,
+	SimpleItem	Seoul_1a79,
+	SimpleItem	Seoul_1a7a,
+	SimpleItem	Seoul_1a7b,
+	SimpleItem	Seoul_1a7c,
+	SimpleItem	Seoul_1a7d,
+	SimpleItem	Seoul_1a7e,
+	SimpleItem	Seoul_1a7f,
+	SimpleItem	Seoul_1a80,
+	SimpleItem	Seoul_1a81,
+	SimpleItem	Seoul_1a82,
+	SimpleItem	Seoul_1a83,
+	SimpleItem	Seoul_1a84,
+	SimpleItem	Seoul_1a85,
+	SimpleItem	Seoul_1a86,
+	SimpleItem	Seoul_1a87,
+	SimpleItem	Seoul_1a88,
+	SimpleItem	Seoul_1a89,
+	SimpleItem	Seoul_1a8a,
+	SimpleItem	Seoul_2500,
+	SimpleItem	Seoul_2501,
+	SimpleItem	Seoul_2502,
+	SimpleItem	Seoul_2503,
+	SimpleItem	Seoul_2504,
+	SimpleItem	Seoul_2505,
+	BattleField
+	{
+		FileName	FIL_1_Seoul=Seoul.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_MyBlSeoul,
+		ItemGroup
+		{
+				SimpleItem	Seoul_1505=
+				{
+					Posn
+					{
+						Abs
+						{	X	63222784,
+							Z	61243392
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CHLBAA
+				},
+				SimpleItem	Seoul_1506=
+				{
+					Posn
+					{
+						Abs
+						{	X	63179776,
+							Z	61430784
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	Seoul_1507=
+				{
+					Posn
+					{
+						Abs
+						{	X	63238144,
+							Z	61499392
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_1508=
+				{
+					Posn
+					{
+						Abs
+						{	X	63297536,
+							Z	61455360
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_1509=
+				{
+					Posn
+					{
+						Abs
+						{	X	63228928,
+							Z	61281280
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_150a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63381504,
+							Z	61456384
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_150b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63135744,
+							Z	61456384
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_150c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63197184,
+							Z	61165568
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_150d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63232000,
+							Z	61337600
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_150e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63156224,
+							Z	61376512
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_150f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63084544,
+							Z	61345792
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_1510=
+				{
+					Posn
+					{
+						Abs
+						{	X	63153152,
+							Z	61543424
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_1511=
+				{
+					Posn
+					{
+						Abs
+						{	X	63109120,
+							Z	61284352
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_1512=
+				{
+					Posn
+					{
+						Abs
+						{	X	63218688,
+							Z	61384704
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_1513=
+				{
+					Posn
+					{
+						Abs
+						{	X	63175680,
+							Z	61284352
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_1514=
+				{
+					Posn
+					{
+						Abs
+						{	X	62343168,
+							Z	61609984
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_1515=
+				{
+					Posn
+					{
+						Abs
+						{	X	62290944,
+							Z	61694976
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Seoul_2500=
+				{
+					Posn
+					{
+						Abs
+						{	X	62313472,
+							Z	61637632
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		LAREA
+				},
+				SimpleItem	Seoul_2501=
+				{
+					Posn
+					{
+						Abs
+						{	X	62296064,
+							Z	61661184
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SYARD
+				},
+				SimpleItem	Seoul_2502=
+				{
+					Posn
+					{
+						Abs
+						{	X	63211520,
+							Z	61418496
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Seoul_2503=
+				{
+					Posn
+					{
+						Abs
+						{	X	63235072,
+							Z	61469696
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SYARD
+				},
+				SimpleItem	Seoul_2504=
+				{
+					Posn
+					{
+						Abs
+						{	X	63211520,
+							Z	61444096
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Seoul_2505=
+				{
+					Posn
+					{
+						Abs
+						{	X	63190016,
+							Z	61333504
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		LAREA
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StSeoul,
+		ItemGroup
+		{
+				SimpleItem	Seoul_1a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	61333504,
+							Z	63325184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a01=
+				{
+					Posn
+					{
+						Abs
+						{	X	61360597,
+							Z	63307918
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Seoul_1a02=
+				{
+					Posn
+					{
+						Abs
+						{	X	61338624,
+							Z	63275008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT01
+				},
+				SimpleItem	Seoul_1a03=
+				{
+					Posn
+					{
+						Abs
+						{	X	61301887,
+							Z	63255353
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a04=
+				{
+					Posn
+					{
+						Abs
+						{	X	61323732,
+							Z	63233508
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT01
+				},
+				SimpleItem	Seoul_1a05=
+				{
+					Posn
+					{
+						Abs
+						{	X	61249536,
+							Z	63080448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a06=
+				{
+					Posn
+					{
+						Abs
+						{	X	61277311,
+							Z	63071715
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a07=
+				{
+					Posn
+					{
+						Abs
+						{	X	61328511,
+							Z	63211662
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT01
+				},
+				SimpleItem	Seoul_1a08=
+				{
+					Posn
+					{
+						Abs
+						{	X	61284137,
+							Z	63215758
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	Seoul_1a09=
+				{
+					Posn
+					{
+						Abs
+						{	X	61313024,
+							Z	63192064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Seoul_1a0a=
+				{
+					Posn
+					{
+						Abs
+						{	X	61345792,
+							Z	63404032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	Seoul_1a0b=
+				{
+					Posn
+					{
+						Abs
+						{	X	61342720,
+							Z	63368192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a0c=
+				{
+					Posn
+					{
+						Abs
+						{	X	61366272,
+							Z	63334400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT01
+				},
+				SimpleItem	Seoul_1a0d=
+				{
+					Posn
+					{
+						Abs
+						{	X	61340672,
+							Z	63342592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a0e=
+				{
+					Posn
+					{
+						Abs
+						{	X	61284137,
+							Z	63120867
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Seoul_1a0f=
+				{
+					Posn
+					{
+						Abs
+						{	X	61319168,
+							Z	63300608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT01
+				},
+				SimpleItem	Seoul_1a10=
+				{
+					Posn
+					{
+						Abs
+						{	X	61306880,
+							Z	63278080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	Seoul_1a11=
+				{
+					Posn
+					{
+						Abs
+						{	X	61281280,
+							Z	63196160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	Seoul_1a12=
+				{
+					Posn
+					{
+						Abs
+						{	X	61280256,
+							Z	63035392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a13=
+				{
+					Posn
+					{
+						Abs
+						{	X	61270016,
+							Z	63172608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a14=
+				{
+					Posn
+					{
+						Abs
+						{	X	61293568,
+							Z	63149056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	Seoul_1a15=
+				{
+					Posn
+					{
+						Abs
+						{	X	61358549,
+							Z	63446501
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT01
+				},
+				SimpleItem	Seoul_1a16=
+				{
+					Posn
+					{
+						Abs
+						{	X	61296425,
+							Z	63238287
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Seoul_1a17=
+				{
+					Posn
+					{
+						Abs
+						{	X	61284352,
+							Z	62795264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Seoul_1a18=
+				{
+					Posn
+					{
+						Abs
+						{	X	63070208,
+							Z	61393920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a19=
+				{
+					Posn
+					{
+						Abs
+						{	X	62396416,
+							Z	61619200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	Seoul_1a1a=
+				{
+					Posn
+					{
+						Abs
+						{	X	62989312,
+							Z	61150208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a1b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63004672,
+							Z	61041664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a1c=
+				{
+					Posn
+					{
+						Abs
+						{	X	62980096,
+							Z	61097984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a1d=
+				{
+					Posn
+					{
+						Abs
+						{	X	62269440,
+							Z	61717504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Seoul_1a1e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63028224,
+							Z	61093888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a1f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63174656,
+							Z	61060096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a20=
+				{
+					Posn
+					{
+						Abs
+						{	X	63129600,
+							Z	61028352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a21=
+				{
+					Posn
+					{
+						Abs
+						{	X	63177728,
+							Z	60982272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a22=
+				{
+					Posn
+					{
+						Abs
+						{	X	63122432,
+							Z	60985344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a23=
+				{
+					Posn
+					{
+						Abs
+						{	X	63471616,
+							Z	61369344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a24=
+				{
+					Posn
+					{
+						Abs
+						{	X	63506432,
+							Z	61293568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a25=
+				{
+					Posn
+					{
+						Abs
+						{	X	63324160,
+							Z	60998656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a26=
+				{
+					Posn
+					{
+						Abs
+						{	X	63304704,
+							Z	61058048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a27=
+				{
+					Posn
+					{
+						Abs
+						{	X	63311872,
+							Z	61121536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a28=
+				{
+					Posn
+					{
+						Abs
+						{	X	62913536,
+							Z	61498368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a29=
+				{
+					Posn
+					{
+						Abs
+						{	X	62960640,
+							Z	61496320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a2a=
+				{
+					Posn
+					{
+						Abs
+						{	X	62957568,
+							Z	61538304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a2b=
+				{
+					Posn
+					{
+						Abs
+						{	X	62972928,
+							Z	61585408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a2c=
+				{
+					Posn
+					{
+						Abs
+						{	X	62792704,
+							Z	61190144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a2d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63054848,
+							Z	60986368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a2e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63088640,
+							Z	61535232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a2f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63058944,
+							Z	61533184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a30=
+				{
+					Posn
+					{
+						Abs
+						{	X	63127552,
+							Z	61613056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a31=
+				{
+					Posn
+					{
+						Abs
+						{	X	63090688,
+							Z	61613056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a32=
+				{
+					Posn
+					{
+						Abs
+						{	X	63403008,
+							Z	61385728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a33=
+				{
+					Posn
+					{
+						Abs
+						{	X	63420416,
+							Z	61357056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a34=
+				{
+					Posn
+					{
+						Abs
+						{	X	63406080,
+							Z	61267968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	Seoul_1a35=
+				{
+					Posn
+					{
+						Abs
+						{	X	63417344,
+							Z	61267968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	Seoul_1a36=
+				{
+					Posn
+					{
+						Abs
+						{	X	63429632,
+							Z	61267968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	Seoul_1a37=
+				{
+					Posn
+					{
+						Abs
+						{	X	63441920,
+							Z	61267968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	Seoul_1a38=
+				{
+					Posn
+					{
+						Abs
+						{	X	63419392,
+							Z	61286400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	Seoul_1a39=
+				{
+					Posn
+					{
+						Abs
+						{	X	63446016,
+							Z	61286400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	Seoul_1a3a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63558656,
+							Z	61280256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	Seoul_1a3b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63583232,
+							Z	61282304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	Seoul_1a3c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63601664,
+							Z	61210624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	Seoul_1a3d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63628288,
+							Z	61217792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	Seoul_1a3e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63724544,
+							Z	61234176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a3f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63807488,
+							Z	61282304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a40=
+				{
+					Posn
+					{
+						Abs
+						{	X	63717376,
+							Z	61408256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a41=
+				{
+					Posn
+					{
+						Abs
+						{	X	63691776,
+							Z	61497344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a42=
+				{
+					Posn
+					{
+						Abs
+						{	X	63168512,
+							Z	61314048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a43=
+				{
+					Posn
+					{
+						Abs
+						{	X	62894080,
+							Z	61335552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a44=
+				{
+					Posn
+					{
+						Abs
+						{	X	63450112,
+							Z	61025280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	Seoul_1a45=
+				{
+					Posn
+					{
+						Abs
+						{	X	63912960,
+							Z	60972032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	Seoul_1a46=
+				{
+					Posn
+					{
+						Abs
+						{	X	63394816,
+							Z	61266944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	Seoul_1a47=
+				{
+					Posn
+					{
+						Abs
+						{	X	63397888,
+							Z	61286400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	Seoul_1a48=
+				{
+					Posn
+					{
+						Abs
+						{	X	63711232,
+							Z	61199360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a49=
+				{
+					Posn
+					{
+						Abs
+						{	X	63669248,
+							Z	61232128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	Seoul_1a4a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63736832,
+							Z	61440000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a4b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63717376,
+							Z	61377536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a4c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63724544,
+							Z	61500416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a4d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63420416,
+							Z	61488128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a4e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63452160,
+							Z	61489152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a4f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63436800,
+							Z	61450240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Seoul_1a50=
+				{
+					Posn
+					{
+						Abs
+						{	X	63151104,
+							Z	61337600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Seoul_1a51=
+				{
+					Posn
+					{
+						Abs
+						{	X	63602688,
+							Z	61280256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	Seoul_1a52=
+				{
+					Posn
+					{
+						Abs
+						{	X	63616000,
+							Z	61279232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	Seoul_1a53=
+				{
+					Posn
+					{
+						Abs
+						{	X	63236096,
+							Z	61187072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a54=
+				{
+					Posn
+					{
+						Abs
+						{	X	62973952,
+							Z	61669376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a55=
+				{
+					Posn
+					{
+						Abs
+						{	X	62891008,
+							Z	61748224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a56=
+				{
+					Posn
+					{
+						Abs
+						{	X	62870528,
+							Z	61177856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a57=
+				{
+					Posn
+					{
+						Abs
+						{	X	62908416,
+							Z	61147136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a58=
+				{
+					Posn
+					{
+						Abs
+						{	X	62750720,
+							Z	61244416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a59=
+				{
+					Posn
+					{
+						Abs
+						{	X	63431680,
+							Z	61320192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a5a=
+				{
+					Posn
+					{
+						Abs
+						{	X	62963712,
+							Z	61292544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI01
+				},
+				SimpleItem	Seoul_1a5b=
+				{
+					Posn
+					{
+						Abs
+						{	X	62755840,
+							Z	61618176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a5c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63368192,
+							Z	61355008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Seoul_1a5d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63229952,
+							Z	61555712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a5e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63172608,
+							Z	61590528
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a5f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63266816,
+							Z	61615104
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a60=
+				{
+					Posn
+					{
+						Abs
+						{	X	63230976,
+							Z	61706240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a61=
+				{
+					Posn
+					{
+						Abs
+						{	X	63319040,
+							Z	61702144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a62=
+				{
+					Posn
+					{
+						Abs
+						{	X	63315968,
+							Z	61492224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a63=
+				{
+					Posn
+					{
+						Abs
+						{	X	63384576,
+							Z	61493248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a64=
+				{
+					Posn
+					{
+						Abs
+						{	X	63453184,
+							Z	61524992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a65=
+				{
+					Posn
+					{
+						Abs
+						{	X	63491072,
+							Z	61494272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a66=
+				{
+					Posn
+					{
+						Abs
+						{	X	63538176,
+							Z	61536256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a67=
+				{
+					Posn
+					{
+						Abs
+						{	X	63543296,
+							Z	61603840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a68=
+				{
+					Posn
+					{
+						Abs
+						{	X	63610880,
+							Z	61636608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a69=
+				{
+					Posn
+					{
+						Abs
+						{	X	63623168,
+							Z	61583360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a6a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63677440,
+							Z	61600768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a6b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63718400,
+							Z	61533184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a6c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63637504,
+							Z	61494272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a6d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63686656,
+							Z	61436928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a6e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63603712,
+							Z	61435904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a6f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63677440,
+							Z	61368320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a70=
+				{
+					Posn
+					{
+						Abs
+						{	X	63756288,
+							Z	61389824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a71=
+				{
+					Posn
+					{
+						Abs
+						{	X	63607808,
+							Z	61342720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a72=
+				{
+					Posn
+					{
+						Abs
+						{	X	63756288,
+							Z	61295616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a73=
+				{
+					Posn
+					{
+						Abs
+						{	X	63309824,
+							Z	61422592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a74=
+				{
+					Posn
+					{
+						Abs
+						{	X	63053824,
+							Z	61565952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a75=
+				{
+					Posn
+					{
+						Abs
+						{	X	63024128,
+							Z	61479936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a76=
+				{
+					Posn
+					{
+						Abs
+						{	X	63090688,
+							Z	61497344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a77=
+				{
+					Posn
+					{
+						Abs
+						{	X	62939136,
+							Z	61437952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a78=
+				{
+					Posn
+					{
+						Abs
+						{	X	63012864,
+							Z	61342720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a79=
+				{
+					Posn
+					{
+						Abs
+						{	X	63019008,
+							Z	61230080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a7a=
+				{
+					Posn
+					{
+						Abs
+						{	X	62840832,
+							Z	61402112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	Seoul_1a7b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63475712,
+							Z	61441024
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a7c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63195136,
+							Z	61498368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a7d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63242240,
+							Z	61421568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a7e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63269888,
+							Z	61339648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a7f=
+				{
+					Posn
+					{
+						Abs
+						{	X	62641152,
+							Z	61239296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Seoul_1a80=
+				{
+					Posn
+					{
+						Abs
+						{	X	63388672,
+							Z	61415424
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a81=
+				{
+					Posn
+					{
+						Abs
+						{	X	63538176,
+							Z	61440000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	63605760,
+							Z	61549568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	63749120,
+							Z	61601792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a84=
+				{
+					Posn
+					{
+						Abs
+						{	X	63738880,
+							Z	61639680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a85=
+				{
+					Posn
+					{
+						Abs
+						{	X	63672320,
+							Z	61656064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a86=
+				{
+					Posn
+					{
+						Abs
+						{	X	63377408,
+							Z	61547520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Seoul_1a87=
+				{
+					Posn
+					{
+						Abs
+						{	X	63278080,
+							Z	61554688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a88=
+				{
+					Posn
+					{
+						Abs
+						{	X	63316992,
+							Z	61553664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a89=
+				{
+					Posn
+					{
+						Abs
+						{	X	63342592,
+							Z	61331456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Seoul_1a8a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63347712,
+							Z	61289472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				}
+		}	}
+	};

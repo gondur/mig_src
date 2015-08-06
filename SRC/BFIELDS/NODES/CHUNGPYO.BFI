@@ -1,0 +1,88 @@
+	BattleField
+	{
+		FileName	FIL_1_Chungpyong=Chungpyo.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_StChungpyong,
+			ItemGroup
+			{
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StChungpyong},
+						Rel	{Z -METRES200
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StChungpyong},
+						Rel	{Z METRES200	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StChungpyong},
+						Rel	{X METRES100	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StChungpyong},
+						Rel	{X METRES200,
+							 Z METRES200	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StChungpyong},
+						Rel	{X -METRES300,
+							 Z -METRES200
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StChungpyong},
+						Rel	{X METRES400,
+							 Z -METRES300
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				}
+			}
+		}
+	};
+

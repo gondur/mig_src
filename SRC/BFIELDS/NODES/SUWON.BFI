@@ -1,0 +1,1005 @@
+	SimpleItem	SUWON_1803,
+	SimpleItem	SUWON_1804,
+	SimpleItem	SUWON_1805,
+	SimpleItem	SUWON_1806,
+	SimpleItem	SUWON_1807,
+	SimpleItem	SUWON_1808,
+	SimpleItem	SUWON_2004,
+	SimpleItem	SUWON_2005,
+	SimpleItem	SUWON_2006,
+	SimpleItem	SUWON_2007,
+	SimpleItem	SUWON_2008,
+	SimpleItem	SUWON_2009,
+	SimpleItem	SUWON_200a,
+	SimpleItem	SUWON_200b,
+	SimpleItem	SUWON_200c,
+	SimpleItem	SUWON_200d,
+	SimpleItem	SUWON_200e,
+	SimpleItem	SUWON_200f,
+	SimpleItem	SUWON_2010,
+	SimpleItem	SUWON_2011,
+	SimpleItem	SUWON_2012,
+	SimpleItem	SUWON_2013,
+	SimpleItem	SUWON_2014,
+	SimpleItem	SUWON_2015,
+	SimpleItem	SUWON_2016,
+	SimpleItem	SUWON_2017,
+	SimpleItem	SUWON_2018,
+	SimpleItem	SUWON_2019,
+	SimpleItem	SUWON_201a,
+	SimpleItem	SUWON_201b,
+	SimpleItem	SUWON_201c,
+	SimpleItem	SUWON_201d,
+	SimpleItem	SUWON_201e,
+	SimpleItem	SUWON_201f,
+	SimpleItem	SUWON_2020,
+	SimpleItem	SUWON_2021,
+	SimpleItem	SUWON_2022,
+	SimpleItem	SUWON_2023,
+	SimpleItem	SUWON_2024,
+	SimpleItem	SUWON_2025,
+	SimpleItem	SUWON_2026,
+	SimpleItem	SUWON_2027,
+	SimpleItem	SUWON_2028,
+	SimpleItem	SUWON_2029,
+	SimpleItem	SUWON_202a,
+	SimpleItem	SUWON_202b,
+	SimpleItem	SUWON_202c,
+	SimpleItem	SUWON_202d,
+	SimpleItem	SUWON_202e,
+	SimpleItem	SUWON_202f,
+	SimpleItem	SUWON_2030,
+	SimpleItem	SUWON_2031,
+	SimpleItem	SUWON_2032,
+	SimpleItem	SUWON_2033,
+	SimpleItem	SUWON_2034,
+	SimpleItem	SUWON_2035,
+	SimpleItem	SUWON_2036,
+	SimpleItem	SUWON_2037,
+	SimpleItem	SUWON_2038,
+	SimpleItem	SUWON_2039,
+	SimpleItem	SUWON_203a,
+	SimpleItem	SUWON_203b,
+	SimpleItem	SUWON_203c,
+	SimpleItem	SUWON_203d,
+	SimpleItem	SUWON_2200,
+	SimpleItem	SUWON_2201,
+	SimpleItem	SUWON_2202,
+	SimpleItem	SUWON_2203,
+	SimpleItem	SUWON_2204,
+	SimpleItem	SUWON_2205,
+	SimpleItem	SUWON_2206,
+	SimpleItem	SUWON_2207,
+	SimpleItem	SUWON_2208,
+	SimpleItem	SUWON_2209,
+	SimpleItem	SUWON_220a,
+	SimpleItem	SUWON_220b,
+	BattleField
+	{
+		FileName	FIL_1_SUWON=SUWON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SdBlSuwon,
+		ItemGroup
+		{
+				SimpleItem	SUWON_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	63305728,
+							Z	58067968
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SUWON_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	63340544,
+							Z	58189824
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SUWON_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	63608832,
+							Z	58126336
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SUWON_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	63418368,
+							Z	57984000
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SUWON_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	63570944,
+							Z	58060800
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SUWON_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	63457280,
+							Z	58120192
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SUWON_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	63523840,
+							Z	58120192
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	SUWON_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	63551488,
+							Z	58137600
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	SUWON_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	63571968,
+							Z	58121216
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	SUWON_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	63515648,
+							Z	58094592
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	SUWON_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	63339520,
+							Z	58089472
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	SUWON_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	63365120,
+							Z	58098688
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	SUWON_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	63357952,
+							Z	58129408
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	SUWON_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	63318016,
+							Z	58142720
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	SUWON_2208=
+				{
+					Posn
+					{
+						Abs
+						{	X	63309824,
+							Z	57962496
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	SUWON_2209=
+				{
+					Posn
+					{
+						Abs
+						{	X	63338496,
+							Z	57967616
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	SUWON_220a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63386624,
+							Z	57969664
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	SUWON_220b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63361024,
+							Z	57967616
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StSuwon,
+		ItemGroup
+		{
+				SimpleItem	SUWON_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63501312,
+							Z	58145792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SUWON_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63671296,
+							Z	58175488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63296512,
+							Z	58169344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SUWON_203c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63657984,
+							Z	58123264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_203d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63677440,
+							Z	58149888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	SUWON_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63473664,
+							Z	58105856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63495168,
+							Z	58400768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SUWON_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63502336,
+							Z	58334208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+			SimpleItem	SUWON_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	63432704,
+						Z	57975808
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	SUWON_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	63621120,
+						Z	58151936
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	SUWON_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	63622144,
+						Z	58177536
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	SUWON_2007=
+			{
+				Posn
+				{
+					Abs
+					{	X	63622144,
+						Z	58161152
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	SUWON_2008=
+			{
+				Posn
+				{
+					Abs
+					{	X	63504384,
+						Z	58080256
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	SUWON_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	63501312,
+						Z	58093568
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	SUWON_200a=
+			{
+				Posn
+				{
+					Abs
+					{	X	63541248,
+						Z	58090496
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	SUWON_200b=
+			{
+				Posn
+				{
+					Abs
+					{	X	63535104,
+						Z	58106880
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+				SimpleItem	SUWON_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	63514624,
+							Z	58388480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	63491072,
+							Z	58237952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SUWON_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	63555584,
+							Z	58194944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SUWON_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	63500288,
+							Z	58295296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SUWON_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	63534080,
+							Z	58252288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	SUWON_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	63485952,
+							Z	58177536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SUWON_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	63584256,
+							Z	58162176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SUWON_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	63574016,
+							Z	58235904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SUWON_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	63513600,
+							Z	58360832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	SUWON_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	63524864,
+							Z	58338304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SUWON_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63448064,
+							Z	58376192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	SUWON_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63471616,
+							Z	58388480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63463424,
+							Z	58060800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SUWON_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63484928,
+							Z	58077184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63440896,
+							Z	58055680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63311872,
+							Z	57998336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	63335424,
+							Z	58007552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SUWON_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	63540224,
+							Z	58298368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SUWON_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	63481856,
+							Z	58328064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	63513600,
+							Z	58424320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SUWON_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	63479808,
+							Z	58427392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SUWON_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	63495168,
+							Z	58451968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SUWON_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	63556608,
+							Z	58270720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SUWON_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	63518720,
+							Z	58216448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SUWON_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	63423488,
+							Z	58003456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	SUWON_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	63336448,
+							Z	58051584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	SUWON_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63523840,
+							Z	58055680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SUWON_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63321088,
+							Z	58109952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SUWON_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63388672,
+							Z	58083328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	SUWON_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63525888,
+							Z	58172416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SUWON_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63464448,
+							Z	58207232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SUWON_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63439872,
+							Z	58285056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SUWON_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	63570944,
+							Z	58343424
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SUWON_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	63596544,
+							Z	58206208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SUWON_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	63629312,
+							Z	58103808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SUWON_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	63438848,
+							Z	58182656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	SUWON_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	63571968,
+							Z	57967616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	SUWON_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	63613952,
+							Z	58268672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	SUWON_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	63604736,
+							Z	58354688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	63608832,
+							Z	58305536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SUWON_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	63602688,
+							Z	58330112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SUWON_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	63633408,
+							Z	58330112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				}
+		}	}
+	};

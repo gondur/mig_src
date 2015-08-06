@@ -1,0 +1,7102 @@
+//------------------------------------------------------------------------------
+//Filename       generic.inc
+//System         
+//Author         M. Shaw 
+//Date           01Oct98
+//Description    Generic ground battle events 
+//------------------------------------------------------------------------------
+
+//DO!!!
+
+// BF_DEF_ArcSlt_N
+// BF_ATT_ArcTrp
+// BF_ATT_LinTrp
+// BF_DEF_BlkSlt
+// BF_ATT_Standoff	(copy ATT_LinTrp)
+// BF_ATT_Astern	do it
+// BF_MOV_ColTrp
+// BF_MOV_LinTrp
+// BF_MOV_LinFst	75% of way there, put GRNDD4 in
+// BF_MOV_ColFst	75% of way there, put GRNDD4 in
+// BF_RET_Mid
+// BF_RET_Rgt		Scatter them to right, no moving.
+// BF_RET_Lft		copy but to left
+// BF_HLD_Open		copy ATT_LinTrp but scatter
+// BF_FAST		at destination
+
+
+//replace passtrp with ATT_Astern
+//replace wtrtrp with a specific bfield
+//increase battle formation bollocks
+
+//NOTE T34 has been replaced with DUMY16
+//
+
+//SubObjective = Defend UID
+//MainObjective = Attacker UID
+//
+//Defend:-
+//
+//Bnk = Hard defences, like bunkers and other prepared positions
+//Slt = Easy, slit trenches or exposed troops
+//Arc = An arc
+//Lin = a line
+//Tnk = Armour leads an assault with troops following
+//Trp = Troops make assault, tanks hold back and give support fire
+//Blk = a pass or roadblockable position
+//
+//BF_DEF_ArcBnk_N
+//BF_DEF_ArcBnk_NW
+//BF_DEF_ArcBnk_NE
+//BF_DEF_ArcBnk_S
+//BF_DEF_ArcBnk_SW
+//BF_DEF_ArcBnk_SE
+//
+//BF_DEF_ArcSlt_N
+//BF_DEF_ArcSlt_NW
+//BF_DEF_ArcSlt_NE
+//BF_DEF_ArcSlt_S
+//BF_DEF_ArcSlt_SW
+//BF_DEF_ArcSlt_SE
+//
+//BF_DEF_LinSlt_N
+//BF_DEF_LinSlt_NW
+//BF_DEF_LinSlt_NE
+//BF_DEF_LinSlt_S
+//BF_DEF_LinSlt_SW
+//BF_DEF_LinSlt_SE
+//
+//BF_DEF_BlkSlt
+//
+//wait for reinforcement:-
+//
+//BF_HLD_OpnSlt	
+//BF_HLD_Open
+//BF_HLD_Bank		get boats and shit ready
+//
+//assault:-
+//
+//BF_ATT_ArcTrp		troops lead the assault, tanks hang back and lob
+//BF_ATT_LinTrp
+//BF_ATT_ArcTnk		
+//BF_ATT_LinTnk		tanks lead the assault
+//BF_ATT_PassTrp	armour is always in support, never leads
+//BF_ATT_WtrTrp		across water
+//BF_ATT_StandOff	troops attack at long range, just sit at start point
+
+
+//movement:-
+//
+//BF_MOV_ColTrp
+//BF_MOV_ColTrk	troops get onto trucks and jeeps
+//BF_MOV_LinTrp
+//
+//Retreat
+//
+//BF_RET_Mid	Go through (i.e roadblock)
+//BF_RET_Lft	Go around to left
+//BF_RET_Rgt Fo around to right
+//BF_RET_Invis	can't be seen (teleports to other side)
+//
+////SubObjective = Defend UID
+////MainObjective = Attacker UID
+//
+//NORTH		NW,NW,N,N,NE,NE
+//NORTH-EAST	N,N,NE,NE,SE,SE,
+//NORTH-WEST	SW,SW,NW,NW,N,N,
+//SOUTH		SE,SE,S,S,SW,SW,
+//SOUTH-WEST	S,S,SW,SW,NW,NW,
+//SOUTH_EAST	NE,NE,SE,SE,S,S,
+///
+//BF_MOV_LinFst		line abreast, arriving at destination
+//BF_MOV_ColFst		file column, arriving at destination
+//
+
+//FORM00 is the main force and can never be more than 10
+//FORM01 is an additional flanking force that cannot exceed 6
+
+//TroopShape leads the assault
+//TankShape is support type, can be troops, mortars etc... sit at the back and give support
+
+//Order is Troops, Mortar, Mixed, Tanks and Artillery
+
+//UNINFT is a troop column
+//CHINFT is attacking troops
+//TRAM is defending troop
+//BARAGL is barragelauncher (used with artillery)
+
+//THESE ARE NEWER BATTLEFIELDS :-
+
+// BF_DEF_Trench	slit trenches (only use in flat areas)
+// 
+// BF_DEF_Skirmish=GENBAT01.BF, skirmish line.
+// 
+// BF_DEF_Deep	defenders are lined deep in small area
+// 
+// BF_DEF_House	House to house fighting - cool
+// 
+// BF_ATT_Weave	zig-zag to target
+// 
+// BF_ATT_Skirmish=GENATT07	move forward in skirmish line	
+// 
+// BF_ATT_StandOff=GENATT06.BF
+// 
+// BF_ATT_Astern=GENATT08.BF,	single file advance
+// 
+// BF_ATT_Punch	one element (tank) will rush defense
+// 
+// BF_ATT_Close	attackers are almost on top of defenders (use for reds only)			 
+// 
+// BF_ATT_Flank	surrounds defenders - only use against close or arc defense,
+// 	
+// BF_MOV_Jeep	Troops and Jeeps in column
+// 					   
+// BF_MOV_Truck	Jeeps and trucks in column
+// 	
+// Notes - copy nodes into the town that drives the battle -
+// 	put buildings and bunkers in these positions. retain damage.
+// 	Put UN command posts into rear nodes - with trucks for evac - maybe
+// 	
+// 	As a rule, roadblocks main node and inner and outer nodes should all
+// 	be on a straight line.
+// 
+// 	Try putting trees along edge of roadblock area.
+// 	
+// 	Be nice to have a few more flak guns in some regions of ground battles
+// 	, maybe randomly chose between designated shape and a flak truck.
+// 
+// 	Alternatively, flak traps around dummy troops in some regions.
+// 
+
+//**************************************************************************
+//DEFENDERS
+
+
+//*********************
+//This is used for arc defense
+
+BattleField
+{
+ 	FileName	BF_DEF_ArcSlt_N=GENDEF06.BF,
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//DeadCode MS 23Jun99 //	Divide by 2
+//DeadCode MS 23Jun99 	Setval	(FormSize00,(List FormSize00,0,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend},	//red
+						Shape{List GroundForceType, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, CHMORT, TTRUCK, T34, CHART},	//red
+						Shape{List GroundForceType, SHAPE_TroopDefend, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{GunShape,Shape(List RequiredNationality,
+						EMPTY,			//green
+						Shape{List GroundForceType, EMPTY, EMPTY, EMPTY, BARAGL, BARAGL},	//red//MS 03Sep99
+						Shape{List GroundForceType, EMPTY, EMPTY, EMPTY, BARAGL, BARAGL},	//blue//MS 03Sep99
+						EMPTY										//amber
+						}
+			},
+
+	ItemGroup
+	{	Target	MainObjective,
+	ItemGroup
+	{
+		NumInForm	FormSize00,	
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,3,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES50
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,3,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,4,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES50
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,4,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,2,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES50
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,2,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,5,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES50
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,5,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,1,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES50
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,1,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,6,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES50
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,6,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,0,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES50
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,0,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,7,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES50
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Select ANGLES_255Deg,7,ANGLES_30Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		}
+	}
+	},
+//V1.1															//MS 03Sep99
+	SimpleItem												//MS 03Sep99
+	{														//MS 03Sep99
+		Posn	{Abs	SubObjective},						//MS 03Sep99
+		UIDBand		BlueCombatVehicleBAND,					//MS 03Sep99
+		Shape		GunShape
+	}														//MS 03Sep99
+};
+
+
+//*******************************------------------*******************
+//HALF-DECENT BFIELDS START HERE!!!!!!!!
+
+//*********************
+//RangeStepSize is used to set the distance from the road - this way mortar and
+//tank teams won't blow themselves up
+//Positions have been worked out correctly, but troop types and numbers have not
+//(FIX TYPE AND NUMBER)										//MS 18May99
+//(Road will be blocked by retreating forces themselves!)
+//
+
+BattleField
+{
+	FileName	BF_DEF_BlkSlt=GENDEF20.BF,
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+
+	Setval	(RangeStepSize, (List GroundForceType, 25, 150, 75, 100, 200)},
+
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, CHMORT, CHMORT, T34, CHART},	//red
+						Shape{List GroundForceType, SHAPE_TroopDefend, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+	ItemGroup
+	{
+		Target	MainObjective,
+		NumInForm	FormSize00,	
+		SimpleItem	
+		{
+			Posn	POS_RoadBlock00 =
+					{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing ANGLES_90Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,RangeStepSize,METRES01}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	POS_RoadBlock01 =
+					{Abs	MainObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing ANGLES_270Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,RangeStepSize,METRES01}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_350Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES150
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock01,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_350Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES150
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_350Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES300
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock01,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_350Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES300
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_350Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES450
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock01,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_350Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES450
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_170Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES150
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_170Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES150
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_170Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES300
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_170Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES300
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_170Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES450
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_170Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES450
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_170Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES600
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_RoadBlock00,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_170Deg,20,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES600
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		}
+	}
+};
+
+//********************************************************************
+//ATTACKER BATTLEFIELDS
+
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_ATT_ArcTrp=GENATT01.BF,
+
+//formsize 00 is whole force
+//formsize 01 is force that will be static
+//formsize 02 is force that will move
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+
+	Setval	(FormSize01,(List GroundForceType,0,FormSize00,FormSize00,0,FormSize00)),
+	Setval	(FormSize02,(List GroundForceType,FormSize00,0,0,FormSize00,0)),
+	
+	Setval	(EncounterSize, (List GroundForceType, 3, 4, 5, 6, 10 	
+							)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//red
+						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, CHMORT, TTRUCK, T34, CHART},	//red
+ 						Shape{List GroundForceType, SHAPE_TroopAttack, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+//V1.1								//MS 03Sep99
+	Setval	{RequiredNationality,NAT_BLUE},			//MS 03Sep99
+								//MS 03Sep99
+
+//-- attacker
+	ItemGroup
+	{	Target	MainObjective,
+
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	
+						{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_0Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 Range	METRES200
+								}
+						},
+				Vel		25,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize02,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	
+				{Abs	SubObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+		 		 		 Bearing ANGLES_0Deg,
+		 		 		 Pitch	ANGLES_0Deg,
+	 	 		 		 Range	{Select METRES200,EncounterSize,METRES100}
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+			Vel			25
+		}
+	},
+
+	ItemGroup
+	{
+		NumInForm	FormSize01,
+		SimpleItem	
+		{
+			Posn	POS_ATT_ArcTrp = 
+					{Abs	SubObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_0Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select METRES200,EncounterSize,METRES100}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES25
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES25
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+		    	Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 			 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,2,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,2,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,3,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,3,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,4,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,4,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+/////
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 			 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,5,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,5,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,6,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,6,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,7,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,7,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,8,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_ArcTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,8,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		}
+	}
+	}
+
+//TempCode MS 23Jun99 //formsize 01 is quarter of whole force
+//TempCode MS 23Jun99 //formsize 00 is half of whole force
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	Setval	(FormSize01,(List FormSize00,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,4,4)),
+//TempCode MS 23Jun99 	Setval	(FormSize00,(List FormSize00,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	Setval	(EncounterSize, (List GroundForceType, 	
+//TempCode MS 23Jun99 								VEL_AttackTroop, 
+//TempCode MS 23Jun99 								VEL_AttackMortar,
+//TempCode MS 23Jun99 								VEL_AttackVehicle,
+//TempCode MS 23Jun99 								VEL_AttackTank,
+//TempCode MS 23Jun99 								VEL_AttackArtillery
+//TempCode MS 23Jun99 							)),
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	Setval	(RangeStepSize, (List GroundForceType, 0,2,2,1,4)),
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	Setval	{TroopShape,Shape(List RequiredNationality,
+//TempCode MS 23Jun99 						EMPTY2,			//green
+//TempCode MS 23Jun99 						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//red
+//TempCode MS 23Jun99 						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//blue
+//TempCode MS 23Jun99 						EMPTY2										//amber
+//TempCode MS 23Jun99 						}
+//TempCode MS 23Jun99 			},
+//TempCode MS 23Jun99 	Setval	{TankShape,Shape(List RequiredNationality,
+//TempCode MS 23Jun99 						EMPTY2,			//green
+//TempCode MS 23Jun99 						Shape{List GroundForceType, SHAPE_TroopAttack, CHMORT, TTRUCK, T34, CHART},	//red
+//TempCode MS 23Jun99  						Shape{List GroundForceType, SHAPE_TroopAttack, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+//TempCode MS 23Jun99 						EMPTY2										//amber
+//TempCode MS 23Jun99 						}
+//TempCode MS 23Jun99 			},
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 //-- attacker
+//TempCode MS 23Jun99 	ItemGroup
+//TempCode MS 23Jun99 	{	Target	MainObjective,
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	GroundGroup	
+//TempCode MS 23Jun99 	{
+//TempCode MS 23Jun99 		Route		
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			WayPoint
+//TempCode MS 23Jun99 			{
+//TempCode MS 23Jun99 				Posn	
+//TempCode MS 23Jun99 						{Abs	SubObjective
+//TempCode MS 23Jun99 						},
+//TempCode MS 23Jun99 				Vel		EncounterSize,
+//TempCode MS 23Jun99 				Range	METRES150,
+//TempCode MS 23Jun99 				Action	wpdmbtrkstopno
+//TempCode MS 23Jun99 			}
+//TempCode MS 23Jun99 		},
+//TempCode MS 23Jun99 		
+//TempCode MS 23Jun99 		NumInForm	FormSize01,
+//TempCode MS 23Jun99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 		Posn	{Abs	SubObjective,
+//TempCode MS 23Jun99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 23Jun99 				 		 Bearing ANGLES_0Deg,
+//TempCode MS 23Jun99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 23Jun99 						 Range {Select METRES200,RangeStepSize,METRES50}
+//TempCode MS 23Jun99 						}
+//TempCode MS 23Jun99 				},
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	   	GroundItem	
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			Type		SQ_VEHICLES,
+//TempCode MS 23Jun99 			Side		RequiredNationality,
+//TempCode MS 23Jun99 			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+//TempCode MS 23Jun99 			Vel			EncounterSize
+//TempCode MS 23Jun99 		}
+//TempCode MS 23Jun99 	},
+//TempCode MS 23Jun99 	GroundGroup	
+//TempCode MS 23Jun99 	{
+//TempCode MS 23Jun99 		Route		
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			WayPoint
+//TempCode MS 23Jun99 			{
+//TempCode MS 23Jun99 				Posn	
+//TempCode MS 23Jun99 						{Abs	SubObjective
+//TempCode MS 23Jun99 						},
+//TempCode MS 23Jun99 				Vel		EncounterSize,
+//TempCode MS 23Jun99 				Range	METRES150,
+//TempCode MS 23Jun99 				Action	wpdmbtrkstopno
+//TempCode MS 23Jun99 			}
+//TempCode MS 23Jun99 		},
+//TempCode MS 23Jun99 		
+//TempCode MS 23Jun99 		NumInForm	FormSize00,
+//TempCode MS 23Jun99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 		Posn	{Abs	SubObjective,
+//TempCode MS 23Jun99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 23Jun99 				 		 Bearing ANGLES_45Deg,
+//TempCode MS 23Jun99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 23Jun99 						 Range {Select METRES200,RangeStepSize,METRES50}
+//TempCode MS 23Jun99 						}
+//TempCode MS 23Jun99 				},
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	   	GroundItem	
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			Type		SQ_VEHICLES,
+//TempCode MS 23Jun99 			Side		RequiredNationality,
+//TempCode MS 23Jun99 			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+//TempCode MS 23Jun99 			Vel			EncounterSize
+//TempCode MS 23Jun99 		}
+//TempCode MS 23Jun99 	},
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	GroundGroup	
+//TempCode MS 23Jun99 	{
+//TempCode MS 23Jun99 		Route		
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			WayPoint
+//TempCode MS 23Jun99 			{
+//TempCode MS 23Jun99 				Posn	
+//TempCode MS 23Jun99 						{Abs	SubObjective
+//TempCode MS 23Jun99 						},
+//TempCode MS 23Jun99 				Vel		EncounterSize,
+//TempCode MS 23Jun99 				Range	METRES150,
+//TempCode MS 23Jun99 				Action	wpdmbtrkstopno
+//TempCode MS 23Jun99 			}
+//TempCode MS 23Jun99 		},
+//TempCode MS 23Jun99 		
+//TempCode MS 23Jun99 		NumInForm	FormSize00,
+//TempCode MS 23Jun99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 		Posn	{Abs	SubObjective,
+//TempCode MS 23Jun99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 23Jun99 				 		 Bearing ANGLES_315Deg,
+//TempCode MS 23Jun99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 23Jun99 						 Range {Select METRES200,RangeStepSize,METRES50}
+//TempCode MS 23Jun99 						}
+//TempCode MS 23Jun99 				},
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	   	GroundItem	
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			Type		SQ_VEHICLES,
+//TempCode MS 23Jun99 			Side		RequiredNationality,
+//TempCode MS 23Jun99 			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+//TempCode MS 23Jun99 			Vel			EncounterSize
+//TempCode MS 23Jun99 		}
+//TempCode MS 23Jun99 	}
+//TempCode MS 23Jun99 	}
+};
+
+//--------------------------------
+
+//--------------------------------
+//DO THIS PROPERLEY
+
+//LIST = TROOPS, MORTAR, MORTARTRUCK, TANKS, ARTILLERY
+
+BattleField
+{
+	FileName	BF_ATT_LinTrp=GENATT03.BF,
+
+//formsize 00 is whole force
+//formsize 01 is force that will be static
+//formsize 02 is force that will move
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+
+	Setval	(FormSize01,(List GroundForceType,0,FormSize00,FormSize00,0,FormSize00)),
+	Setval	(FormSize02,(List GroundForceType,FormSize00,0,0,FormSize00,0)),
+	
+	Setval	(EncounterSize, (List GroundForceType, 3, 4, 5, 6, 10 	
+							)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//red
+						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, CHMORT, TTRUCK, T34, CHART},	//red
+ 						Shape{List GroundForceType, SHAPE_TroopAttack, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+
+
+//V1.1								//MS 03Sep99
+	Setval	(RequiredNationality, NAT_BLUE),		//MS 03Sep99
+//!!!!!!!!!!!!!!!!!!!!!!!					//MS 03Sep99
+
+//-- attacker
+	ItemGroup
+	{	Target	MainObjective,
+
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	
+						{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_0Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 Range	METRES200
+								}
+						},
+				Vel		25,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize02,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	
+				{Abs	SubObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+		 		 		 Bearing ANGLES_0Deg,
+		 		 		 Pitch	ANGLES_0Deg,
+	 	 		 		 Range	{Select METRES200,EncounterSize,METRES100}
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+			Vel			25
+		}
+	},
+
+	ItemGroup
+	{
+		NumInForm	FormSize01,
+		SimpleItem	
+		{
+			Posn	POS_ATT_LinTrp = 
+					{Abs	SubObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_0Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select METRES200,EncounterSize,METRES100}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES25
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES25
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+		    	Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 			 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,2,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,2,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,3,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,3,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,4,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,4,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+/////
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 			 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,5,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,5,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,6,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,6,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,7,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,7,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,8,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	POS_ATT_LinTrp,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,8,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		}
+	}
+	}
+
+//DeadCode MS 23Jun99 //formsize 01 is quarter of whole force
+//DeadCode MS 23Jun99 //formsize 00 is half of whole force
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 	Setval	(FormSize01,(List FormSize00,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,4,4)),
+//DeadCode MS 23Jun99 	Setval	(FormSize00,(List FormSize00,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 	Setval	(EncounterSize, (List GroundForceType, 	
+//DeadCode MS 23Jun99 								VEL_AttackTroop, 
+//DeadCode MS 23Jun99 								VEL_AttackMortar,
+//DeadCode MS 23Jun99 								VEL_AttackVehicle,
+//DeadCode MS 23Jun99 								VEL_AttackTank,
+//DeadCode MS 23Jun99 								VEL_AttackArtillery
+//DeadCode MS 23Jun99 							)),
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 	Setval	{TroopShape,Shape(List RequiredNationality,
+//DeadCode MS 23Jun99 						EMPTY2,			//green
+//DeadCode MS 23Jun99 						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//red
+//DeadCode MS 23Jun99 						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//blue
+//DeadCode MS 23Jun99 						EMPTY2										//amber
+//DeadCode MS 23Jun99 						}
+//DeadCode MS 23Jun99 			},
+//DeadCode MS 23Jun99 	Setval	{TankShape,Shape(List RequiredNationality,
+//DeadCode MS 23Jun99 						EMPTY2,			//green
+//DeadCode MS 23Jun99 						Shape{List GroundForceType, SHAPE_TroopAttack, CHMORT, TTRUCK, T34, CHART},	//red
+//DeadCode MS 23Jun99  						Shape{List GroundForceType, SHAPE_TroopAttack, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+//DeadCode MS 23Jun99 						EMPTY2										//amber
+//DeadCode MS 23Jun99 						}
+//DeadCode MS 23Jun99 			},
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 //-- attacker
+//DeadCode MS 23Jun99 	ItemGroup
+//DeadCode MS 23Jun99 	{	Target	MainObjective,
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 	GroundGroup	
+//DeadCode MS 23Jun99 	{
+//DeadCode MS 23Jun99 		Route		
+//DeadCode MS 23Jun99 		{
+//DeadCode MS 23Jun99 			WayPoint
+//DeadCode MS 23Jun99 			{
+//DeadCode MS 23Jun99 				Posn	POS_AttLin_Trp =	
+//DeadCode MS 23Jun99 						{Abs	SubObjective,
+//DeadCode MS 23Jun99 						 Rel	{Intercept {SubObjective,MainObjective},
+//DeadCode MS 23Jun99 				 		 		 Bearing ANGLES_0Deg,
+//DeadCode MS 23Jun99 				 		 		 Pitch	ANGLES_0Deg,
+//DeadCode MS 23Jun99 			 	 		 		 RangePercent	{Select 0,EncounterSize,1}
+//DeadCode MS 23Jun99 								}
+//DeadCode MS 23Jun99 						},
+//DeadCode MS 23Jun99 				Vel		25,
+//DeadCode MS 23Jun99 				Action	wpdmbtrkstopno
+//DeadCode MS 23Jun99 			}
+//DeadCode MS 23Jun99 		},
+//DeadCode MS 23Jun99 		
+//DeadCode MS 23Jun99 		NumInForm	FormSize01,
+//DeadCode MS 23Jun99 		Formation	SQUAD_BATTLELINE,
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 		Posn	{Abs	MainObjective},
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 	   	GroundItem	
+//DeadCode MS 23Jun99 		{
+//DeadCode MS 23Jun99 			Type		SQ_VEHICLES,
+//DeadCode MS 23Jun99 			Side		RequiredNationality,
+//DeadCode MS 23Jun99 			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+//DeadCode MS 23Jun99 			Vel			25
+//DeadCode MS 23Jun99 		}
+//DeadCode MS 23Jun99 	},
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 	GroundGroup	
+//DeadCode MS 23Jun99 	{
+//DeadCode MS 23Jun99 		Route		
+//DeadCode MS 23Jun99 		{
+//DeadCode MS 23Jun99 			WayPoint
+//DeadCode MS 23Jun99 			{
+//DeadCode MS 23Jun99 				Posn		
+//DeadCode MS 23Jun99 						{Abs	POS_AttLin_Trp,
+//DeadCode MS 23Jun99 						 Rel	{Intercept {MainObjective,SubObjective},
+//DeadCode MS 23Jun99 				 		 		 Bearing ANGLES_90Deg,
+//DeadCode MS 23Jun99 				 		 		 Pitch	ANGLES_0Deg,
+//DeadCode MS 23Jun99 			 	 		 		 Range METRES150
+//DeadCode MS 23Jun99 								}
+//DeadCode MS 23Jun99 						},
+//DeadCode MS 23Jun99 				Vel		25,
+//DeadCode MS 23Jun99 				Action	wpdmbtrkstopno
+//DeadCode MS 23Jun99 			}
+//DeadCode MS 23Jun99 		},
+//DeadCode MS 23Jun99 		
+//DeadCode MS 23Jun99 		NumInForm	FormSize00,
+//DeadCode MS 23Jun99 		Formation	SQUAD_BATTLELINE,
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 		Posn	{Abs	MainObjective,
+//DeadCode MS 23Jun99 				 Rel	{Intercept {SubObjective,MainObjective},
+//DeadCode MS 23Jun99 				 		 Bearing ANGLES_90Deg,
+//DeadCode MS 23Jun99 				 		 Pitch	ANGLES_0Deg,
+//DeadCode MS 23Jun99 						 Range METRES150
+//DeadCode MS 23Jun99 						}
+//DeadCode MS 23Jun99 				},
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 	   	GroundItem	
+//DeadCode MS 23Jun99 		{
+//DeadCode MS 23Jun99 			Type		SQ_VEHICLES,
+//DeadCode MS 23Jun99 			Side		RequiredNationality,
+//DeadCode MS 23Jun99 			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+//DeadCode MS 23Jun99 			Vel			EncounterSize
+//DeadCode MS 23Jun99 		}
+//DeadCode MS 23Jun99 	},
+//DeadCode MS 23Jun99 	GroundGroup	
+//DeadCode MS 23Jun99 	{
+//DeadCode MS 23Jun99 		Route		
+//DeadCode MS 23Jun99 		{
+//DeadCode MS 23Jun99 			WayPoint
+//DeadCode MS 23Jun99 			{
+//DeadCode MS 23Jun99 				Posn
+//DeadCode MS 23Jun99 						{Abs	POS_AttLin_Trp,
+//DeadCode MS 23Jun99 						 Rel	{Intercept {SubObjective,MainObjective},
+//DeadCode MS 23Jun99 				 		 		 Bearing ANGLES_270Deg,
+//DeadCode MS 23Jun99 				 		 		 Pitch	ANGLES_0Deg,
+//DeadCode MS 23Jun99 			 	 		 		 Range METRES150
+//DeadCode MS 23Jun99 								}
+//DeadCode MS 23Jun99 						},
+//DeadCode MS 23Jun99 				Vel		25,
+//DeadCode MS 23Jun99 				Action	wpdmbtrkstopno
+//DeadCode MS 23Jun99 			}
+//DeadCode MS 23Jun99 		},
+//DeadCode MS 23Jun99 		
+//DeadCode MS 23Jun99 		NumInForm	FormSize00,
+//DeadCode MS 23Jun99 		Formation	SQUAD_BATTLELINE,
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 		Posn	{Abs	MainObjective,
+//DeadCode MS 23Jun99 				 Rel	{Intercept {SubObjective,MainObjective},
+//DeadCode MS 23Jun99 				 		 Bearing ANGLES_270Deg,
+//DeadCode MS 23Jun99 				 		 Pitch	ANGLES_0Deg,
+//DeadCode MS 23Jun99 						 Range METRES150
+//DeadCode MS 23Jun99 						}
+//DeadCode MS 23Jun99 				},
+//DeadCode MS 23Jun99 
+//DeadCode MS 23Jun99 	   	GroundItem	
+//DeadCode MS 23Jun99 		{
+//DeadCode MS 23Jun99 			Type		SQ_VEHICLES,
+//DeadCode MS 23Jun99 			Side		RequiredNationality,
+//DeadCode MS 23Jun99 			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+//DeadCode MS 23Jun99 			Vel			25
+//DeadCode MS 23Jun99 		}
+//DeadCode MS 23Jun99 	}
+//DeadCode MS 23Jun99 //These are the supporters who do not move
+//DeadCode MS 23Jun99 	}
+
+//even older
+
+//TempCode MS 23Jun99 //formsize 01 is quarter of whole force
+//TempCode MS 23Jun99 //formsize 00 is half of whole force
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	Setval	(FormSize01,(List FormSize00,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,4,4)),
+//TempCode MS 23Jun99 	Setval	(FormSize00,(List FormSize00,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	Setval	(EncounterSize, (List GroundForceType, 	
+//TempCode MS 23Jun99 								VEL_AttackTroop, 
+//TempCode MS 23Jun99 								VEL_AttackMortar,
+//TempCode MS 23Jun99 								VEL_AttackVehicle,
+//TempCode MS 23Jun99 								VEL_AttackTank,
+//TempCode MS 23Jun99 								VEL_AttackArtillery
+//TempCode MS 23Jun99 							)),
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	Setval	{TroopShape,Shape(List RequiredNationality,
+//TempCode MS 23Jun99 						EMPTY2,			//green
+//TempCode MS 23Jun99 						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//red
+//TempCode MS 23Jun99 						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//blue
+//TempCode MS 23Jun99 						EMPTY2										//amber
+//TempCode MS 23Jun99 						}
+//TempCode MS 23Jun99 			},
+//TempCode MS 23Jun99 	Setval	{TankShape,Shape(List RequiredNationality,
+//TempCode MS 23Jun99 						EMPTY2,			//green
+//TempCode MS 23Jun99 						Shape{List GroundForceType, SHAPE_TroopAttack, CHMORT, TTRUCK, T34, CHART},	//red
+//TempCode MS 23Jun99  						Shape{List GroundForceType, SHAPE_TroopAttack, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+//TempCode MS 23Jun99 						EMPTY2										//amber
+//TempCode MS 23Jun99 						}
+//TempCode MS 23Jun99 			},
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 //-- attacker
+//TempCode MS 23Jun99 	ItemGroup
+//TempCode MS 23Jun99 	{	Target	MainObjective,
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	GroundGroup	
+//TempCode MS 23Jun99 	{
+//TempCode MS 23Jun99 		Route		
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			WayPoint
+//TempCode MS 23Jun99 			{
+//TempCode MS 23Jun99 				Posn	
+//TempCode MS 23Jun99 						{Abs	SubObjective,
+//TempCode MS 23Jun99 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 23Jun99 				 		 		 Bearing ANGLES_90Deg,
+//TempCode MS 23Jun99 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode MS 23Jun99 			 	 		 		 Range METRES150
+//TempCode MS 23Jun99 								}
+//TempCode MS 23Jun99 						},
+//TempCode MS 23Jun99 				Vel		EncounterSize,
+//TempCode MS 23Jun99 				Range	METRES100,
+//TempCode MS 23Jun99 				Action	wpdmbtrkstopno
+//TempCode MS 23Jun99 			}
+//TempCode MS 23Jun99 		},
+//TempCode MS 23Jun99 		
+//TempCode MS 23Jun99 		NumInForm	FormSize00,
+//TempCode MS 23Jun99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 		Posn	{Abs	MainObjective,
+//TempCode MS 23Jun99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 23Jun99 				 		 Bearing ANGLES_90Deg,
+//TempCode MS 23Jun99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 23Jun99 						 Range METRES150
+//TempCode MS 23Jun99 						}
+//TempCode MS 23Jun99 				},
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	   	GroundItem	
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			Type		SQ_VEHICLES,
+//TempCode MS 23Jun99 			Side		RequiredNationality,
+//TempCode MS 23Jun99 			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+//TempCode MS 23Jun99 			Vel			EncounterSize
+//TempCode MS 23Jun99 		}
+//TempCode MS 23Jun99 	},
+//TempCode MS 23Jun99 	GroundGroup	
+//TempCode MS 23Jun99 	{
+//TempCode MS 23Jun99 		Route		
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			WayPoint
+//TempCode MS 23Jun99 			{
+//TempCode MS 23Jun99 				Posn	{Abs	SubObjective,
+//TempCode MS 23Jun99 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 23Jun99 				 		 		 Bearing ANGLES_270Deg,
+//TempCode MS 23Jun99 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode MS 23Jun99 			 	 		 		 Range METRES150
+//TempCode MS 23Jun99 								}
+//TempCode MS 23Jun99 						},
+//TempCode MS 23Jun99 				Vel		EncounterSize,
+//TempCode MS 23Jun99 				Range	METRES100,
+//TempCode MS 23Jun99 				Action	wpdmbtrkstopno
+//TempCode MS 23Jun99 			}
+//TempCode MS 23Jun99 		},
+//TempCode MS 23Jun99 		
+//TempCode MS 23Jun99 		NumInForm	FormSize00,
+//TempCode MS 23Jun99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 		Posn	{Abs	MainObjective,
+//TempCode MS 23Jun99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 23Jun99 				 		 Bearing ANGLES_270Deg,
+//TempCode MS 23Jun99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 23Jun99 						 Range METRES150
+//TempCode MS 23Jun99 						}
+//TempCode MS 23Jun99 				},
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	   	GroundItem	
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			Type		SQ_VEHICLES,
+//TempCode MS 23Jun99 			Side		RequiredNationality,
+//TempCode MS 23Jun99 			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+//TempCode MS 23Jun99 			Vel			EncounterSize
+//TempCode MS 23Jun99 		}
+//TempCode MS 23Jun99 	},
+//TempCode MS 23Jun99 //These are the supporters who do not move
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	GroundGroup	
+//TempCode MS 23Jun99 	{
+//TempCode MS 23Jun99 		Route		
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			WayPoint
+//TempCode MS 23Jun99 			{
+//TempCode MS 23Jun99 				Posn	{Abs	SubObjective},
+//TempCode MS 23Jun99 				Vel		EncounterSize,
+//TempCode MS 23Jun99 				Range	METRES100,
+//TempCode MS 23Jun99 				Action	wpdmbtrkstopno
+//TempCode MS 23Jun99 			}
+//TempCode MS 23Jun99 		},
+//TempCode MS 23Jun99 		
+//TempCode MS 23Jun99 		NumInForm	FormSize01,
+//TempCode MS 23Jun99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 		Posn	{Abs	MainObjective},
+//TempCode MS 23Jun99 
+//TempCode MS 23Jun99 	   	GroundItem	
+//TempCode MS 23Jun99 		{
+//TempCode MS 23Jun99 			Type		SQ_VEHICLES,
+//TempCode MS 23Jun99 			Side		RequiredNationality,
+//TempCode MS 23Jun99 			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+//TempCode MS 23Jun99 			Vel			EncounterSize
+//TempCode MS 23Jun99 		}
+//TempCode MS 23Jun99 	}
+//TempCode MS 23Jun99 	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_ATT_PassTrp=GENATT04.BF,
+	
+//formsize 01 is quarter of whole force
+//formsize 00 is half of whole force
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+
+	Setval	(FormSize01,(List FormSize00,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,4,4)),
+	Setval	(FormSize00,(List FormSize00,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+
+	Setval	(EncounterSize, (List GroundForceType, 	
+								VEL_AttackTroop, 
+								VEL_AttackMortar,
+								VEL_AttackVehicle,
+								VEL_AttackTank,
+								VEL_AttackArtillery
+							)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//red
+						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, CHMORT, TTRUCK, T34, CHART},	//red
+ 						Shape{List GroundForceType, SHAPE_TroopAttack, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+//-- attacker
+	ItemGroup
+	{	Target	MainObjective,
+
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	
+						{Abs	SubObjective
+						},
+				Vel		EncounterSize,
+				Range	METRES100,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize00,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	{Abs	MainObjective
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		TroopShape,
+			Vel			EncounterSize
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective
+						},
+				Vel		EncounterSize,
+				Range	METRES100,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize00,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	{Abs	MainObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing ANGLES_5Deg,
+				 		 Pitch	ANGLES_0Deg,
+						 Range METRES50
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		TroopShape,
+			Vel			EncounterSize
+		}
+	},
+//These are the supporters who do not move
+
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective},
+				Vel		EncounterSize,
+				Range	METRES100,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize01,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	{Abs	MainObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing ANGLES_355Deg,
+				 		 Pitch	ANGLES_0Deg,
+						 Range METRES50
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		TankShape,
+			Vel			EncounterSize
+		}
+	}
+	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_ATT_WtrTrp=GENATT05.BF,
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	MainObjective,
+						 Rel	{Intercept {MainObjective,SubObjective},
+				 		 		 Bearing ANGLES_0Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 RangePercent 90
+								}
+						},
+				Vel		300,
+				Action	wpdmbtrkstopno,
+				Range	METRES100
+			}
+		},
+		
+		NumInForm	1,
+
+		Posn	{Abs	MainObjective},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		NAT_BLUE,
+			Shape		BARGE,		//BARGE,FISHR,BOAT
+			Vel			300
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	MainObjective,
+						 Rel	{Intercept {MainObjective,SubObjective},
+				 		 		 Bearing ANGLES_0Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 RangePercent 90
+								}
+						},
+				Vel		300,
+				Action	wpdmbtrkstopno,
+				Range	METRES100
+			}
+		},
+		
+		NumInForm	1,
+
+		Posn	{Abs	MainObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing ANGLES_270Deg,
+				 		 Pitch	ANGLES_0Deg,
+						 Range METRES200
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		NAT_BLUE,
+			Shape		BARGE,		//BARGE,FISHR,BOAT
+			Vel			300
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	MainObjective,
+						 Rel	{Intercept {MainObjective,SubObjective},
+				 		 		 Bearing ANGLES_0Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 RangePercent 90
+								}
+						},
+				Vel		300,
+				Action	wpdmbtrkstopno,
+				Range	METRES100
+			}
+		},
+		
+		NumInForm	1,
+
+		Posn	{Abs	MainObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing ANGLES_90Deg,
+				 		 Pitch	ANGLES_0Deg,
+						 Range METRES200
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		NAT_BLUE,
+			Shape		FISHR,		//BARGE,FISHR,BOAT
+			Vel			300
+		}
+	}
+//TempCode PD 07Dec98 	GroundGroup	
+//TempCode PD 07Dec98 	{
+//TempCode PD 07Dec98 		Route		
+//TempCode PD 07Dec98 		{
+//TempCode PD 07Dec98 			WayPoint
+//TempCode PD 07Dec98 			{
+//TempCode PD 07Dec98 				Posn	{Abs	SubObjective,
+//TempCode PD 07Dec98 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode PD 07Dec98 				 		 		 Bearing ANGLES_270Deg,
+//TempCode PD 07Dec98 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode PD 07Dec98 			 	 		 		 Range METRES100
+//TempCode PD 07Dec98 								}
+//TempCode PD 07Dec98 						},
+//TempCode PD 07Dec98 				Vel		10,
+//TempCode PD 07Dec98 				Range	METRES300,
+//TempCode PD 07Dec98 				Action	wpdmbtrkstopno
+//TempCode PD 07Dec98 			}
+//TempCode PD 07Dec98 		},
+//TempCode PD 07Dec98 		
+//TempCode PD 07Dec98 		NumInForm	6,
+//TempCode PD 07Dec98 
+//TempCode PD 07Dec98 		Posn	{Abs	MainObjective,
+//TempCode PD 07Dec98 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode PD 07Dec98 				 		 Bearing ANGLES_270Deg,
+//TempCode PD 07Dec98 				 		 Pitch	ANGLES_0Deg,
+//TempCode PD 07Dec98 						 Range METRES100
+//TempCode PD 07Dec98 						}
+//TempCode PD 07Dec98 				},
+//TempCode PD 07Dec98 
+//TempCode PD 07Dec98 	   	GroundItem	
+//TempCode PD 07Dec98 		{
+//TempCode PD 07Dec98 			Type		SQ_VEHICLES,
+//TempCode PD 07Dec98 			Side		NAT_FRIEND,
+//TempCode PD 07Dec98 			Shape		DUMY16,
+//TempCode PD 07Dec98 			Vel			10
+//TempCode PD 07Dec98 		}
+//TempCode PD 07Dec98 	},
+//TempCode PD 07Dec98 	GroundGroup	
+//TempCode PD 07Dec98 	{
+//TempCode PD 07Dec98 		Route		
+//TempCode PD 07Dec98 		{
+//TempCode PD 07Dec98 			WayPoint
+//TempCode PD 07Dec98 			{
+//TempCode PD 07Dec98 				Posn	{Abs	SubObjective,
+//TempCode PD 07Dec98 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode PD 07Dec98 				 		 		 Bearing ANGLES_90Deg,
+//TempCode PD 07Dec98 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode PD 07Dec98 			 	 		 		 Range METRES300
+//TempCode PD 07Dec98 								}
+//TempCode PD 07Dec98 						},
+//TempCode PD 07Dec98 				Vel		10,
+//TempCode PD 07Dec98 				Range	METRES300,
+//TempCode PD 07Dec98 				Action	wpdmbtrkstopno
+//TempCode PD 07Dec98 			}
+//TempCode PD 07Dec98 		},
+//TempCode PD 07Dec98 		
+//TempCode PD 07Dec98 		NumInForm	1,
+//TempCode PD 07Dec98 
+//TempCode PD 07Dec98 		Posn	{Abs	MainObjective,
+//TempCode PD 07Dec98 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode PD 07Dec98 				 		 Bearing ANGLES_90Deg,
+//TempCode PD 07Dec98 				 		 Pitch	ANGLES_0Deg,
+//TempCode PD 07Dec98 						 Range METRES300
+//TempCode PD 07Dec98 						}
+//TempCode PD 07Dec98 				},
+//TempCode PD 07Dec98 
+//TempCode PD 07Dec98 	   	GroundItem	
+//TempCode PD 07Dec98 		{
+//TempCode PD 07Dec98 			Type		SQ_VEHICLES,
+//TempCode PD 07Dec98 			Side		NAT_FRIEND,
+//TempCode PD 07Dec98 			Shape		DUMY16,
+//TempCode PD 07Dec98 			Vel			10
+//TempCode PD 07Dec98 		}
+//TempCode PD 07Dec98 	},
+//TempCode PD 07Dec98 	GroundGroup	
+//TempCode PD 07Dec98 	{
+//TempCode PD 07Dec98 		Route		
+//TempCode PD 07Dec98 		{
+//TempCode PD 07Dec98 			WayPoint
+//TempCode PD 07Dec98 			{
+//TempCode PD 07Dec98 				Posn	{Abs	SubObjective,
+//TempCode PD 07Dec98 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode PD 07Dec98 				 		 		 Bearing ANGLES_270Deg,
+//TempCode PD 07Dec98 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode PD 07Dec98 			 	 		 		 Range METRES300
+//TempCode PD 07Dec98 								}
+//TempCode PD 07Dec98 						},
+//TempCode PD 07Dec98 				Vel		10,
+//TempCode PD 07Dec98 				Range	METRES300,
+//TempCode PD 07Dec98 				Action	wpdmbtrkstopno
+//TempCode PD 07Dec98 			}
+//TempCode PD 07Dec98 		},
+//TempCode PD 07Dec98 		
+//TempCode PD 07Dec98 		NumInForm	1,
+//TempCode PD 07Dec98 
+//TempCode PD 07Dec98 		Posn	{Abs	MainObjective,
+//TempCode PD 07Dec98 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode PD 07Dec98 				 		 Bearing ANGLES_270Deg,
+//TempCode PD 07Dec98 				 		 Pitch	ANGLES_0Deg,
+//TempCode PD 07Dec98 						 Range METRES300
+//TempCode PD 07Dec98 						}
+//TempCode PD 07Dec98 				},
+//TempCode PD 07Dec98 
+//TempCode PD 07Dec98 	   	GroundItem	
+//TempCode PD 07Dec98 		{
+//TempCode PD 07Dec98 			Type		SQ_VEHICLES,
+//TempCode PD 07Dec98 			Side		NAT_FRIEND,
+//TempCode PD 07Dec98 			Shape		DUMY16,
+//TempCode PD 07Dec98 			Vel			10
+//TempCode PD 07Dec98 		}
+//TempCode PD 07Dec98 	},
+//TempCode PD 07Dec98 	GroundGroup	
+//TempCode PD 07Dec98 	{
+//TempCode PD 07Dec98 		Route		
+//TempCode PD 07Dec98 		{
+//TempCode PD 07Dec98 			WayPoint
+//TempCode PD 07Dec98 			{
+//TempCode PD 07Dec98 				Posn	{Abs	SubObjective,
+//TempCode PD 07Dec98 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode PD 07Dec98 				 		 		 Bearing ANGLES_90Deg,
+//TempCode PD 07Dec98 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode PD 07Dec98 			 	 		 		 Range METRES500
+//TempCode PD 07Dec98 								}
+//TempCode PD 07Dec98 						},
+//TempCode PD 07Dec98 				Vel		10,
+//TempCode PD 07Dec98 				Range	METRES300,
+//TempCode PD 07Dec98 				Action	wpdmbtrkstopno
+//TempCode PD 07Dec98 			}
+//TempCode PD 07Dec98 		},
+//TempCode PD 07Dec98 		
+//TempCode PD 07Dec98 		NumInForm	1,
+//TempCode PD 07Dec98 
+//TempCode PD 07Dec98 		Posn	{Abs	MainObjective,
+//TempCode PD 07Dec98 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode PD 07Dec98 				 		 Bearing ANGLES_90Deg,
+//TempCode PD 07Dec98 				 		 Pitch	ANGLES_0Deg,
+//TempCode PD 07Dec98 						 Range METRES500
+//TempCode PD 07Dec98 						}
+//TempCode PD 07Dec98 				},
+//TempCode PD 07Dec98 
+//TempCode PD 07Dec98 	   	GroundItem	
+//TempCode PD 07Dec98 		{
+//TempCode PD 07Dec98 			Type		SQ_VEHICLES,
+//TempCode PD 07Dec98 			Side		NAT_FRIEND,
+//TempCode PD 07Dec98 			Shape		DUMY16,
+//TempCode PD 07Dec98 			Vel			10
+//TempCode PD 07Dec98 		}
+//TempCode PD 07Dec98 	},
+//TempCode PD 07Dec98 	GroundGroup	
+//TempCode PD 07Dec98 	{
+//TempCode PD 07Dec98 		Route		
+//TempCode PD 07Dec98 		{
+//TempCode PD 07Dec98 			WayPoint
+//TempCode PD 07Dec98 			{
+//TempCode PD 07Dec98 				Posn	{Abs	SubObjective,
+//TempCode PD 07Dec98 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode PD 07Dec98 				 		 		 Bearing ANGLES_270Deg,
+//TempCode PD 07Dec98 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode PD 07Dec98 			 	 		 		 Range METRES500
+//TempCode PD 07Dec98 								}
+//TempCode PD 07Dec98 						},
+//TempCode PD 07Dec98 				Vel		10,
+//TempCode PD 07Dec98 				Range	METRES300,
+//TempCode PD 07Dec98 				Action	wpdmbtrkstopno
+//TempCode PD 07Dec98 			}
+//TempCode PD 07Dec98 		},
+//TempCode PD 07Dec98 		
+//TempCode PD 07Dec98 		NumInForm	1,
+//TempCode PD 07Dec98 
+//TempCode PD 07Dec98 		Posn	{Abs	MainObjective,
+//TempCode PD 07Dec98 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode PD 07Dec98 				 		 Bearing ANGLES_270Deg,
+//TempCode PD 07Dec98 				 		 Pitch	ANGLES_0Deg,
+//TempCode PD 07Dec98 						 Range METRES500
+//TempCode PD 07Dec98 						}
+//TempCode PD 07Dec98 				},
+//TempCode PD 07Dec98 
+//TempCode PD 07Dec98 	   	GroundItem	
+//TempCode PD 07Dec98 		{
+//TempCode PD 07Dec98 			Type		SQ_VEHICLES,
+//TempCode PD 07Dec98 			Side		NAT_FRIEND,
+//TempCode PD 07Dec98 			Shape		DUMY16,
+//TempCode PD 07Dec98 			Vel			10
+//TempCode PD 07Dec98 		}
+//TempCode PD 07Dec98 	}
+};
+
+//-------------------------------------------------------------------------
+BattleField
+{
+	FileName	BF_ATT_StandOff=GENATT06.BF,
+//formsize 01 is quarter of whole force
+//formsize 00 is half of whole force
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+
+	Setval	(FormSize01,(List FormSize00,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,4,4)),
+	Setval	(FormSize00,(List FormSize00,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+
+	Setval	(EncounterSize, 0},
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//red
+						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, CHMORT, TTRUCK, T34, CHART},	//red
+ 						Shape{List GroundForceType, SHAPE_TroopAttack, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+//-- attacker
+	ItemGroup
+	{	Target	MainObjective,
+
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	
+						{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_90Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES150
+								}
+						},
+				Vel		EncounterSize,
+				Range	METRES100,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize00,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	{Abs	MainObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing ANGLES_90Deg,
+				 		 Pitch	ANGLES_0Deg,
+						 Range METRES150
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+			Vel			EncounterSize
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_270Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES150
+								}
+						},
+				Vel		EncounterSize,
+				Range	METRES100,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize00,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	{Abs	MainObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing ANGLES_270Deg,
+				 		 Pitch	ANGLES_0Deg,
+						 Range METRES150
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+			Vel			EncounterSize
+		}
+	},
+//These are the supporters who do not move
+
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective},
+				Vel		EncounterSize,
+				Range	METRES100,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize01,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	{Abs	MainObjective},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		{List TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape,TankShape,TroopShape},
+			Vel			EncounterSize
+		}
+	}
+	}
+};
+
+//-------------------------------------------------------------------------
+BattleField
+{
+	FileName	BF_ATT_Skirmish=GENATT07.BF
+};
+
+//-------------------------------------------------------------------------
+BattleField
+{
+	FileName	BF_ATT_Astern=GENATT08.BF,
+//formsize 01 is quarter of whole force
+//formsize 00 is 3/8s of whole force
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+
+	Setval	(FormSize01,(List FormSize00,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,4,4)),
+	Setval	(FormSize00,(List FormSize00,0,1,1,2,2,2,3,3,4,4,4,5,5,6,6,6,6,6,6)),
+
+	Setval	(EncounterSize, (List GroundForceType, 15, 0, 0, 25, 0)},
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//red
+						Shape{List GroundForceType, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack, SHAPE_TroopAttack},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, CHMORT, CHMORT, T34, CHART},	//red
+						Shape{List GroundForceType, SHAPE_TroopAttack, UNMORT, UNMORT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+//-- attacker
+	ItemGroup
+	{
+	Target	MainObjective,
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_90Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES150
+								}
+						},
+				Vel		EncounterSize,
+				Range	METRES300,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize00,
+		Formation	SQUAD_TRUCKCONVOY,
+
+		Posn	{Abs	MainObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing ANGLES_90Deg,
+				 		 Pitch	ANGLES_0Deg,
+						 Range METRES150
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		TroopShape,
+			Vel			EncounterSize
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_270Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES150
+								}
+						},
+				Vel		EncounterSize,
+				Range	METRES300,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize00,
+		Formation	SQUAD_TRUCKCONVOY,
+
+		Posn	{Abs	MainObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing ANGLES_270Deg,
+				 		 Pitch	ANGLES_0Deg,
+						 Range METRES150
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		TroopShape,
+			Vel			EncounterSize
+		}
+	},
+//These are the supporters who do not move
+
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective},
+				Vel		EncounterSize,
+				Range	METRES300,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize01,
+		Formation	SQUAD_TRUCKCONVOY,
+
+		Posn	{Abs	MainObjective},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		TankShape,
+			Vel			EncounterSize
+		}
+	}
+	}
+};
+
+
+//********************************************************************
+//MOVEMENT BATTLEFIELDS
+
+BattleField
+{
+	FileName	BF_MOV_ColTrp=GENMOV00.BF,
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+	Setval	(FormSize00,(List FormSize00,1,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopMove, CHMORT, TTRUCK, T34, CHART},	//red
+ 						Shape{List GroundForceType, SHAPE_TroopMove, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+	Setval	(EncounterSize, (List GroundForceType, 	
+								VEL_MoveTroop, 
+								VEL_MoveMortar,
+								VEL_MoveVehicle,
+								VEL_MoveTank,
+								VEL_MoveArtillery
+							)),
+
+	ItemGroup
+	{
+		Target	MainObjective,
+
+		GroundGroup	
+		{
+			Route		
+			{
+				WayPoint
+				{
+					Posn	{Abs	SubObjective},
+					Vel		EncounterSize,
+					Range	METRES200,
+					Action	wpdmbtrkstopno
+				}
+			},
+			
+			NumInForm	FormSize00,
+
+			Posn	{Abs	MainObjective,
+					 Rel	{Intercept {MainObjective,SubObjective},
+							 Bearing	ANGLES_0Deg,
+				 			 Pitch	ANGLES_0Deg,
+							 RangePercent 50
+							}
+					},
+
+	   		GroundItem	
+			{
+				Type		SQ_VEHICLES,
+				Side		RequiredNationality,
+				Shape		TankShape,
+				Vel			EncounterSize
+			}
+		}
+	}
+};
+
+
+//-------------------------------------------------------------------------
+//not checked, just duped
+BattleField
+{
+	FileName	BF_MOV_LinTrp=GENMOV02.BF,
+//formsize 01 is quarter of whole force
+//formsize 00 is half of whole force
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+	Setval	(FormSize00,(List FormSize00,1,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+
+//TempCode MS 22Jun99 	Setval	(FormSize01,(List FormSize00,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,4,4)),
+//TempCode MS 22Jun99 	Setval	(FormSize00,(List FormSize00,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+
+	Setval	(EncounterSize, (List GroundForceType, 	
+								VEL_MoveTroop, 
+								VEL_MoveMortar,
+								VEL_MoveVehicle,
+								VEL_MoveTank,
+								VEL_MoveArtillery
+							)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, SHAPE_TroopMove, SHAPE_TroopMove, SHAPE_TroopMove},	//red
+						Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, SHAPE_TroopMove, SHAPE_TroopMove, SHAPE_TroopMove},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopMove, CHMORT, TTRUCK, T34, CHART},	//red
+ 						Shape{List GroundForceType, SHAPE_TroopMove, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+//-- attacker
+	ItemGroup
+	{	Target	MainObjective,
+
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective},
+				Vel		EncounterSize,
+				Range	METRES200,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize00,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	
+				{Abs	SubObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+		 		 		 Bearing ANGLES_0Deg,
+		 		 		 Pitch	ANGLES_0Deg,
+	 	 		 		 RangePercent 50
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		TankShape,
+			Vel			EncounterSize
+		}
+	}
+}
+};
+
+
+
+//**************************************************************************
+//RETREAT
+
+//This is the roadblock run.
+//A truck, jeep (random) is disabled at the subobjective. Some troops will be
+//stood around it trying to get it moving. Others are placed defensively nearby
+//Rest of convoy will slowly get around the block.
+//Troopshape is the blockage shape.
+//Reds should never really go through UN roadblocks.
+//Formsize00 gets split, 3/4 to formsize01 and 1/4 to formsize00
+
+BattleField
+{
+	FileName	BF_RET_Mid=GENRET00.BF,
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//test template							 0,1,2,3,4,5,6,7,8,9,101112131415
+	Setval	(FormSize01,(List FormSize00,0,0,1,2,3,3,4,5,6,6,7,8,9,9,10,11,12)),
+	Setval	(FormSize00,(List FormSize00,0,1,1,1,1,1,2,2,2,3,3,3,3,4,4,4,4)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List (Random 5), CHTRCK, CHTRCK, CHTRCK, CHTRCK, CHTRCK},	//red
+						Shape{List (Random 5), UNTRCK, UNTRCK, JEEP1, JEEP2, HALFT},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopAttack, CHMORT, CHMORT, T34, CHART},	//red
+						Shape{List GroundForceType, SHAPE_TroopAttack, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+	ItemGroup
+	{
+		Target	MainObjective,
+		NumInForm	FormSize00,	
+		SimpleItem	
+		{
+			Posn	{Abs	SubObjective},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	SubObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_0Deg,85,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES10,10,METRES01}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		SHAPE_TroopMove
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	SubObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_0Deg,85,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES10,10,METRES01}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		SHAPE_TroopMove
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	SubObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_90Deg,85,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES10,10,METRES01}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		SHAPE_TroopDefend
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	SubObjective,
+				 	 Rel	{Intercept {MainObjective,SubObjective},
+				 		 	 Bearing {Random ANGLES_270Deg,85,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES10,10,METRES01}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		SHAPE_TroopDefend
+		}
+	},
+//Convoy tries to move around block.
+
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_0Deg,
+				 		 	  	 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES50
+								}
+						},
+				Vel		40,
+				Action	wpdmbtrknoactno
+			},
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing {Random	ANGLES_270Deg,2,ANGLES_180Deg},
+				 		 	  	 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES50
+								}
+						},
+				Vel		40,
+				Action	wpdmbtrknoactno
+			},
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_180Deg,
+				 		 	  	 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES50
+								}
+						},
+				Vel		40,
+				Action	wpdmbtrknoactno
+			},
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_180Deg,
+				 		 	  	 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES2000
+								}
+						},
+				Vel		40,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize01,
+
+		Posn	{Abs	SubObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing {Select	ANGLES_330Deg,0,ANGLES_10Deg},
+				 Pitch	ANGLES_0Deg,
+						 RangePercent	100
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		NAT_FRIEND,
+			Shape		TankShape,
+			Vel			40
+		}
+	}
+};
+
+//--------------------------------------------------------------------------
+
+BattleField
+{
+	FileName	BF_RET_Lft=GENRET01.BF
+};
+
+BattleField
+{
+	FileName	BF_RET_Rgt=GENRET02.BF
+};
+
+BattleField
+{
+	FileName	BF_RET_Invis=GENRET03.BF
+};
+
+//**************************************************************************
+//WAIT, HOLD & REINFORCE
+
+BattleField
+{
+	FileName	BF_HLD_Open=GENHLD00.BF,
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//TempCode MS 22Jun99 //	Divide by 2
+//TempCode MS 22Jun99 	Setval	(FormSize00,(List FormSize00,0,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend},	//red
+						Shape{List GroundForceType, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, CHMORT, CHMORT, T34, CHART},	//red
+						Shape{List GroundForceType, SHAPE_TroopDefend, UNMORT, UNMORT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+	ItemGroup
+	{	Target	MainObjective,
+	ItemGroup
+	{
+		NumInForm	FormSize00,	
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+		    	Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+/////
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		}
+	}
+	}
+};
+
+BattleField
+{
+	FileName	BF_HLD_Bank=GENHLD01.BF,
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//TempCode MS 22Jun99 //	Divide by 2
+//TempCode MS 22Jun99 	Setval	(FormSize00,(List FormSize00,0,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend},	//red
+						Shape{List GroundForceType, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, CHMORT, CHMORT, T34, CHART},	//red
+						Shape{List GroundForceType, SHAPE_TroopDefend, UNMORT, UNMORT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+	ItemGroup
+	{	Target	MainObjective,
+	ItemGroup
+	{
+		NumInForm	FormSize00,	
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+		    	Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+/////
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Random  ANGLES_270Deg,180,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Random METRES25,11,METRES25}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		}
+	}
+}
+};
+
+//**************************************************************************
+//Appear very close to destination, have arrived
+BattleField
+{
+	FileName	BF_FAST=GENSKIP.BF,
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+	Setval	(FormSize00,(List FormSize00,1,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopMove, CHMORT, TTRUCK, T34, CHART},	//red
+ 						Shape{List GroundForceType, SHAPE_TroopMove, UNMORT, HALFT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+	Setval	(EncounterSize, (List GroundForceType, 	
+								VEL_MoveTroop, 
+								VEL_MoveMortar,
+								VEL_MoveVehicle,
+								VEL_MoveTank,
+								VEL_MoveArtillery
+							)),
+
+	ItemGroup
+	{
+		Target	MainObjective,
+
+		GroundGroup	
+		{
+			Route		
+			{
+				WayPoint
+				{
+					Posn	{Abs	SubObjective},
+					Vel		EncounterSize,
+					Range	METRES200,
+					Action	wpdmbtrkstopno
+				}
+			},
+			
+			NumInForm	FormSize00,
+
+			Posn	{Abs	SubObjective,
+					 Rel	{Intercept {SubObjective,MainObjective},
+							 Bearing	ANGLES_0Deg,
+				 			 Pitch	ANGLES_0Deg,
+							 RangePercent METRES300
+							}
+					},
+
+	   		GroundItem	
+			{
+				Type		SQ_VEHICLES,
+				Side		RequiredNationality,
+				Shape		TankShape,
+				Vel			EncounterSize
+			}
+		}
+	}
+};
+
+//**************************************************************************
+
+
+
+
+//--------------------------------
+//TROOPS, line across to enemy, troops are exposed
+
+BattleField
+{
+	FileName	BF_DEF_LinTrp=GENBAT00.BF,
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//TempCode MS 22Jun99 //	Divide by 2
+//TempCode MS 22Jun99 	Setval	(FormSize00,(List FormSize00,0,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend},	//red
+						Shape{List GroundForceType, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, CHMORT, TTRUCK, T34, CHART},	//red//MS 03Sep99
+						Shape{List GroundForceType, SHAPE_TroopDefend, UNMORT, HALFT, UNTANK, UNHOW},	//blue//MS 03Sep99
+						EMPTY2										//amber
+						}
+			},
+
+	Setval	{GunShape,Shape(List RequiredNationality,
+						EMPTY,			//green
+						Shape{List GroundForceType, EMPTY, EMPTY, EMPTY, BARAGL, BARAGL},	//red//MS 03Sep99
+						Shape{List GroundForceType, EMPTY, EMPTY, EMPTY, BARAGL, BARAGL},	//blue//MS 03Sep99
+						EMPTY										//amber
+						}
+			},
+
+	ItemGroup
+	{	Target	MainObjective,
+	ItemGroup
+	{
+		NumInForm	FormSize00,	
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES25
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES25
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+		    	Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 			 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,2,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,2,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,3,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,3,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,4,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,4,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+/////
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 			 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,5,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,5,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,6,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,6,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,7,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,7,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,8,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,8,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		}
+	}
+	},
+//V1.1															//MS 03Sep99
+		SimpleItem												//MS 03Sep99
+		{														//MS 03Sep99
+			Posn	{Abs	SubObjective},						//MS 03Sep99
+			UIDBand		BlueCombatVehicleBAND,					//MS 03Sep99
+			Shape		GunShape		//MS 03Sep99
+		}														//MS 03Sep99
+};
+
+//--------------------------------
+//TROOPS, line across to enemy, skirmish formation
+
+BattleField
+{
+	FileName	BF_DEF_Skirmish=GENBAT01.BF,
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//	Divide by 2
+	Setval	(FormSize00,(List FormSize00,0,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend},	//red
+						Shape{List GroundForceType, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend, SHAPE_TroopDefend},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopDefend, CHMORT, CHMORT, T34, CHART},	//red
+						Shape{List GroundForceType, SHAPE_TroopDefend, UNMORT, UNMORT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+	ItemGroup
+	{	Target	MainObjective,
+	ItemGroup
+	{
+		NumInForm	FormSize00,	
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES25
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES25
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+		    	Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 			 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,2,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,2,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,3,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,3,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,4,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,4,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+/////
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 			 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,5,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,5,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,6,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,6,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,7,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,7,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,8,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,8,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TankShape
+		}
+	}
+	}
+};
+
+//SPECIFIC -------------------------------------------------
+
+//**************************************************************************
+
+
+
+BattleField
+{
+	FileName	BF_C2R_0A1A=C2R_0A1A.BF,
+
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01)),
+	Setval	(FormSize01,(List GroundForceType, 3, 3, 1, 3, 3)),
+
+//	Setval	(FormSize00,(List FormSize00,0,1,1,2,2,2,3,3,4,4,4,5,5,6,6,6,6,6,6)),
+	
+	Setval	(EncounterSize, (List GroundForceType, 	
+								VEL_MoveTroop, 
+								VEL_MoveMortar,
+								VEL_MoveVehicle,
+								VEL_MoveTank,
+								VEL_MoveArtillery
+							)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, TTRUCK, T34, TTRUCK},	//red
+						Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, UNTRCK, UNTANK, UNTRCK},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, TTRUCK, T34, TTRUCK},	//red
+						Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, UNTRCK, UNTANK, UNTRCK},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+	ItemGroup
+	{	Target	MainObjective,
+	GroundGroup
+	{
+		Posn
+		{
+			Abs
+			{	X	71069184,
+				Z	57147392
+			}
+		},
+		Route
+		{
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71069696,
+						Z	57190912
+					}
+				},
+				Action	wpdmbtrknoactno,
+				Vel	EncounterSize
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71075072,
+						Z	57224000
+					}
+				},
+				Action	wpdmbtrknoactno,
+				Vel	EncounterSize
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71078400,
+						Z	57272320
+					}
+				},
+				Action	wpdmbtrknoactno,
+				Vel	EncounterSize
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71089664,
+						Z	57329664
+					}
+				},
+				Action	wpdmbtrknoactno,
+				Vel	EncounterSize
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71117568,
+						Z	57420288
+					}
+				},
+				Action	wpdmbtrknoactno,
+				Vel	EncounterSize
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71134720,
+						Z	57454080
+					}
+				},
+				Action	wpdmbtrknoactno,
+				Vel	EncounterSize
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71135232,
+						Z	57494016
+					}
+				},
+				Action	wpdmbtrknoactno,
+				Vel	EncounterSize
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71143424,
+						Z	57505280
+					}
+				},
+				Action	wpdmbtrknoactno,
+				Vel	EncounterSize
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71155712,
+						Z	57574400
+					}
+				},
+				Action	wpdmbtrkstopno,
+				Vel	EncounterSize
+			}
+		},
+		NumInForm		FormSize00,
+		Formation	SQUAD_TRUCKCONVOY,
+		GroundItem	
+		{
+			BlueCombatVehicleBAND,
+			Type	SQ_VEHICLES,
+			Side	RequiredNationality,
+			Shape	TankShape,
+			Vel		EncounterSize
+	}	}
+	}
+};
+
+///-----------------------------------------------------------------------
+
+BattleField
+{
+	FileName	BF_C2R_1A2A=C2R_1A2A.BF,
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01)),
+	Setval	(FormSize01,(List GroundForceType, 3, 3, 1, 3, 3)),
+
+	Setval	(EncounterSize, (List GroundForceType, 	
+								VEL_MoveTroop, 
+								VEL_MoveMortar,
+								VEL_MoveVehicle,
+								VEL_MoveTank,
+								VEL_MoveArtillery
+							)),
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, TTRUCK, T34, TTRUCK},	//red
+						Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, UNTRCK, UNTANK, UNTRCK},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, TTRUCK, T34, TTRUCK},	//red
+						Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, UNTRCK, UNTANK, UNTRCK},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+	ItemGroup
+	{	Target	MainObjective,
+
+	GroundGroup
+	{
+		Posn
+		{
+			Abs
+			{	X	71232512,
+				Z	57883648
+			}
+		},
+		Route
+		{
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71233536,
+						Z	57996288
+					}
+				},
+				Vel	EncounterSize,
+				Action	wpdmbtrknoactno
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71248896,
+						Z	58096640
+					}
+				},
+				Vel	EncounterSize,
+				Action	wpdmbtrknoactno
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71306240,
+						Z	58168320
+					}
+				},
+				Vel	EncounterSize,
+				Action	wpdmbtrknoactno
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71333888,
+						Z	58321920
+					}
+				},
+				Vel	EncounterSize,
+				Action	wpdmbtrknoactno
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	71418880,
+						Z	58477568
+					}
+				},
+				Vel	EncounterSize,
+				Action	wpdmbtrkstopno
+			}
+		},
+		NumInForm		FormSize00,
+		Formation	SQUAD_TRUCKCONVOY,
+		GroundItem	
+		{
+			BlueCombatVehicleBAND,
+			Type	SQ_VEHICLES,
+			Side	RequiredNationality,
+			Shape	TankShape,
+			Vel		EncounterSize
+	}	}
+	}
+};
+
+//-------------------------------------------------------------------------
+//CHECKED							//MS 10Jun99
+
+BattleField
+{
+	FileName	BF_C1U_0A1A=C1U_0A1A.BF,
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01)),
+
+	Setval	{TankShape,	Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, TTRUCK, T34, CHART}},
+
+	ItemGroup
+	{	Target	MainObjective,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	76433408,
+					Z	45514752
+				}
+			},
+			Route
+			{
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	76434432,
+							Z	45437952
+						}
+					},
+					Action	wpdmbtrknoactno,
+					Vel 75
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	76447744,
+							Z	45346816
+						}
+					},
+					Action	wpdmbtrknoactno,
+					Vel 75
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	76477440,
+							Z	45254656
+						}
+					},
+					Action	wpdmbtrknoactno,
+					Vel 75
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	76413952,
+							Z	45207552
+						}
+					},
+					Action	wpdmbtrknoactno,
+					Vel 75
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	76412928,
+							Z	45074432
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 75
+				}
+			},
+			NumInForm		FormSize00,
+			Formation	SQUAD_TRUCKCONVOY,
+			GroundItem	
+			{
+				RedArmourBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	TankShape,
+				Vel	150
+		}	}
+	}
+};
+
+//-------------------------------------------------------------------------
+//CHECKED							//MS 10Jun99
+BattleField
+{
+	FileName	BF_C1U_0B1B=C1U_0B1B.BF,
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01)),
+
+	Setval	{TankShape,	Shape{List GroundForceType, SHAPE_TroopMove, SHAPE_TroopMove, TTRUCK, T34, CHART}},
+	
+	ItemGroup
+	{	Target	MainObjective,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	76556288,
+					Z	45398016
+				}
+			},
+			Route
+			{
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	76636160,
+							Z	45256704
+						}
+					},
+					Action	wpdmbtrknoactno,
+					Vel 75
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	76775424,
+							Z	45191168
+						}
+					},
+					Action	wpdmbtrknoactno,
+					Vel 75
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	76862464,
+							Z	45100032
+						}
+					},
+					Action	wpdmbtrknoactno,
+					Vel 75
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	76898304,
+							Z	45087744
+						}
+					},
+					Action	wpdmbtrknoactno,
+					Vel 75
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	76925952,
+							Z	44944384
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 75
+				}
+			},
+			NumInForm		FormSize00,
+			Formation	SQUAD_TRUCKCONVOY,
+			GroundItem	
+			{
+				BlueCombatVehicleBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	TankShape,
+				Vel	150
+		}	}
+	}
+};
+
+
+
+//***************************************************************************
+//COMPLETE BOLLOX THAT SHOULDN'T BE USED ANYWHERE
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_ArcSlt_NE=GENDEF07.BF,
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+			 	Bearing {Select	ANGLES_255Deg,3,ANGLES_30Deg},
+				 Pitch	ANGLES_0Deg,
+		 	 	Range METRES300
+				}
+		
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKN
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+			 	Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+		 	 	Range METRES300
+				}
+		
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKN	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+			 	Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+		 	 	Range METRES300
+				}
+		
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSE
+	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_ArcSlt_NW=GENDEF08.BF,
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,0,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKN
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKN
+	}
+};
+
+//--------------------------------
+//SOUTH FACING DEFENDERS
+
+BattleField
+{
+	FileName	BF_DEF_ArcSlt_S=GENDEF09.BF
+
+//TempCode MS 26Mar99 	ItemGroup
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Target	MainObjective,
+//TempCode MS 26Mar99 		NumInForm	16,	
+
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,0,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,1,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,2,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,3,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,4,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,5,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 /////
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,6,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,7,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,8,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,9,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,10,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,11,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,12,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,13,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,14,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Abs	SubObjective,
+//TempCode MS 26Mar99 				Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 	Bearing {Select	ANGLES_285Deg,15,ANGLES_10Deg},
+//TempCode MS 26Mar99 				 	Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 	Range METRES200
+//TempCode MS 26Mar99 					}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 			},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 			UIDBand		MissileBAND,
+//TempCode MS 26Mar99 			Shape		UNINFT
+//TempCode MS 26Mar99 		}
+
+
+//TempCode MS 26Mar99 	}
+/////////
+//TempCode MS 26Mar99 	SimpleItem	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Posn	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Abs	SubObjective,
+//TempCode MS 26Mar99 			Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 Bearing {Select	ANGLES_260Deg,0,ANGLES_40Deg},
+//TempCode MS 26Mar99 				 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 Range METRES300
+//TempCode MS 26Mar99 				}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 		},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 		UIDBand		MissileBAND,
+//TempCode MS 26Mar99 		Shape		BUNKSE	
+//TempCode MS 26Mar99 	},
+//TempCode MS 26Mar99 	SimpleItem	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Posn	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Abs	SubObjective,
+//TempCode MS 26Mar99 			Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+//TempCode MS 26Mar99 				 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 Range METRES300
+//TempCode MS 26Mar99 				}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 		},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 		UIDBand		MissileBAND,
+//TempCode MS 26Mar99 		Shape		BUNKSE	
+//TempCode MS 26Mar99 	},
+//TempCode MS 26Mar99 	SimpleItem	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Posn	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Abs	SubObjective,
+//TempCode MS 26Mar99 			Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+//TempCode MS 26Mar99 				 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 Range METRES300
+//TempCode MS 26Mar99 				}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 		},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 		UIDBand		MissileBAND,
+//TempCode MS 26Mar99 		Shape		BUNKS
+//TempCode MS 26Mar99 	},
+//TempCode MS 26Mar99 	SimpleItem	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Posn	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Abs	SubObjective,
+//TempCode MS 26Mar99 			Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+//TempCode MS 26Mar99 				 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 Range METRES300
+//TempCode MS 26Mar99 				}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 		},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 		UIDBand		MissileBAND,
+//TempCode MS 26Mar99 		Shape		BUNKS
+//TempCode MS 26Mar99 	},
+//TempCode MS 26Mar99 	SimpleItem	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Posn	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Abs	SubObjective,
+//TempCode MS 26Mar99 			Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+//TempCode MS 26Mar99 				 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 Range METRES300
+//TempCode MS 26Mar99 				}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 		},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 		UIDBand		MissileBAND,
+//TempCode MS 26Mar99 		Shape		BUNKSW
+//TempCode MS 26Mar99 	},
+//TempCode MS 26Mar99 	SimpleItem	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Posn	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Abs	SubObjective,
+//TempCode MS 26Mar99 			Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+//TempCode MS 26Mar99 				 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 Range METRES300
+//TempCode MS 26Mar99 				}
+//TempCode MS 26Mar99 			
+//TempCode MS 26Mar99 		},
+//DeadCode MS 14May99 //TempCode MS 26Mar99 		UIDBand		MissileBAND,
+//TempCode MS 26Mar99 		Shape		BUNKSW
+//TempCode MS 26Mar99 	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_ArcSlt_SW=GENDEF10.BF,
+	SimpleItem	
+	{
+		Posn
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,0,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW
+	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_ArcSlt_SE=GENDEF11.BF,
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,0,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNE	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS
+	}
+};
+
+//---------------------
+BattleField
+{
+	FileName	BF_DEF_LinSlt_N=GENDEF12.BF,
+	ItemGroup
+	{
+		Target	MainObjective,
+		NumInForm	6,	
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_90Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKN
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_270Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKN	
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_90Deg,
+				 			 Pitch	ANGLES_0Deg,
+							 Range METRES300
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKN
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_270Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES300
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKN
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_90Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES500
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKN
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_270Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES500
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKN
+		}
+	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_LinSlt_NE=GENDEF13.BF,
+	ItemGroup
+	{
+		Target	MainObjective,
+		NumInForm	6,	
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_90Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKN
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_270Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKNE	
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_90Deg,
+				 			 Pitch	ANGLES_0Deg,
+							 Range METRES300
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKN
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_270Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES300
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKNE
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_90Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES500
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKN
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_270Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES500
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKNE
+		}
+	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_LinSlt_NW=GENDEF14.BF,
+	ItemGroup
+	{
+		Target	MainObjective,
+		NumInForm	6,	
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_90Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKNW,
+			Heading		ANGLES_0Deg
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_270Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES100
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKNW
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_90Deg,
+				 			 Pitch	ANGLES_0Deg,
+							 Range METRES300
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKNW
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_270Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES300
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKNW
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_90Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES500
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKNW
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing ANGLES_270Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES500
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNKNW
+		}
+	}
+};
+
+//--------------------------------
+//SOUTH FACING DEFENDERS
+
+BattleField
+{
+	FileName	BF_DEF_LinSlt_S=GENDEF15.BF,
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//	Divide by 2
+	Setval	(FormSize00,(List FormSize00,0,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8)),
+
+//shape should be TRAM
+
+	ItemGroup
+	{
+		Target	MainObjective,
+		NumInForm	16,	
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES25
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range METRES25
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 			 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,2,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,2,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,3,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,3,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,4,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,4,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+/////
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 			 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,5,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,5,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,6,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,6,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,7,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,7,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,8,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Intercept {SubObjective,MainObjective},
+				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+				 		 	 Pitch	ANGLES_0Deg,
+							 Range {Select METRES25,8,METRES50}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		UNINFT
+		}
+
+	}
+
+//TempCode MS 26Mar99 	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//TempCode MS 26Mar99 //	Divide by 2
+//TempCode MS 26Mar99 	Setval	(FormSize00,(List FormSize00,0,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8)),
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 	ItemGroup
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Target	MainObjective,
+//TempCode MS 26Mar99 		NumInForm	6,	
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 	 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 	 Bearing {Select ANGLES_90Deg,5,ANGLES_1Deg},
+//TempCode MS 26Mar99 				 		 	 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 						 	 Range METRES50
+//TempCode MS 26Mar99 							}
+//TempCode MS 26Mar99 					},
+//TempCode MS 26Mar99 			UIDBand		BlueCombatVehicleBAND,
+//TempCode MS 26Mar99 			Shape		SLITS
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 	 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+//TempCode MS 26Mar99 				 		 	 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 						 	 Range METRES50
+//TempCode MS 26Mar99 							}
+//TempCode MS 26Mar99 					},
+//TempCode MS 26Mar99 			UIDBand		BlueCombatVehicleBAND,
+//TempCode MS 26Mar99 			Shape		SLITS	
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 	 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+//TempCode MS 26Mar99 				 			 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 							 Range {Select 0,3,METRES50}
+//TempCode MS 26Mar99 							}
+//TempCode MS 26Mar99 					},
+//TempCode MS 26Mar99 			UIDBand		BlueCombatVehicleBAND,
+//TempCode MS 26Mar99 			Shape		SLITS
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 	 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 	 Bearing {Select ANGLES_260Deg,6,ANGLES_1Deg},
+//TempCode MS 26Mar99 				 		 	 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 							 Range {Select 0,3,METRES50}
+//TempCode MS 26Mar99 							}
+//TempCode MS 26Mar99 					},
+//TempCode MS 26Mar99 			UIDBand		BlueCombatVehicleBAND,
+//TempCode MS 26Mar99 			Shape		SLITS
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 	 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 	 Bearing {Select ANGLES_80Deg,5,ANGLES_1Deg},
+//TempCode MS 26Mar99 				 		 	 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 							 Range {Select 0,5,METRES50}
+//TempCode MS 26Mar99 							}
+//TempCode MS 26Mar99 					},
+//TempCode MS 26Mar99 			UIDBand		BlueCombatVehicleBAND,
+//TempCode MS 26Mar99 			Shape		SLITS
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 	 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 	 Bearing {Select ANGLES_270Deg,0,ANGLES_1Deg},
+//TempCode MS 26Mar99 				 		 	 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 							 Range {Select 0,5,METRES50}
+//TempCode MS 26Mar99 							}
+//TempCode MS 26Mar99 					},
+//TempCode MS 26Mar99 			UIDBand		BlueCombatVehicleBAND,
+//TempCode MS 26Mar99 			Shape		SLITS
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 	 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 	 Bearing {Select ANGLES_90Deg,0,ANGLES_1Deg},
+//TempCode MS 26Mar99 				 		 	 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 							 Range {Select 0,7,METRES50}
+//TempCode MS 26Mar99 							}
+//TempCode MS 26Mar99 					},
+//TempCode MS 26Mar99 			UIDBand		BlueCombatVehicleBAND,
+//TempCode MS 26Mar99 			Shape		SLITS
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		SimpleItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 	 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 	 Bearing {Select ANGLES_270Deg,2,ANGLES_1Deg},
+//TempCode MS 26Mar99 				 		 	 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 							 Range {Select 0,7,METRES50}
+//TempCode MS 26Mar99 							}
+//TempCode MS 26Mar99 					},
+//TempCode MS 26Mar99 			UIDBand		BlueCombatVehicleBAND,
+//TempCode MS 26Mar99 			Shape		SLITS
+//TempCode MS 26Mar99 		}
+//TempCode MS 26Mar99 	}
+
+};
+
+
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_LinSlt_SW=GENDEF16.BF,
+	SimpleItem	
+	{
+		Posn
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,0,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW
+	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_LinSlt_SE=GENDEF17.BF,
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,0,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNE	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS
+	}
+};
+
+
+BattleField
+{
+	FileName	BF_DEF_ArcBnk_N=GENDEF00.BF,
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {MainObjective,SubObjective},
+				 Bearing ANGLES_45Deg,
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES500
+				}
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {MainObjective,SubObjective},
+				 Bearing ANGLES_60Deg,
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES250
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKN
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {MainObjective,SubObjective},
+				 Bearing ANGLES_90Deg,
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES100
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKN
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNE
+	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_ArcBnk_NE=GENDEF01.BF,
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,0,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKN
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKN	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSE
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSE
+	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_ArcBnk_NW=GENDEF02.BF,
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,0,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKN
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKN
+	}
+};
+
+//******SOUTH FACING DEFENDERS
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_ArcBnk_S=GENDEF03.BF,
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,0,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSE	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSE	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW
+	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_ArcBnk_SW=GENDEF04.BF,
+	SimpleItem	
+	{
+		Posn
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,0,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,1,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKS	
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,2,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,3,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKSW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,4,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW
+	},
+	SimpleItem	
+	{
+		Posn	
+		{
+			Abs	SubObjective,
+			Rel	{Intercept {SubObjective,MainObjective},
+				 Bearing {Select	ANGLES_260Deg,5,ANGLES_40Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 Range METRES300
+				}
+			
+		},
+//DeadCode MS 14May99 		UIDBand		MissileBAND,
+		Shape		BUNKNW
+	}
+};
+
+//--------------------------------
+BattleField
+{
+	FileName	BF_DEF_ArcBnk_SE=GENDEF05.BF,
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+	Setval	{TroopShape,SHAPE_TroopDefend},
+
+	ItemGroup
+	{	Target	MainObjective,
+	ItemGroup
+	{
+		NumInForm	FormSize00,	
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_45Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,0,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNK
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_45Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,1,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_45Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,2,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNK
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_45Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,3,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_45Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,4,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNK
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_225Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,1,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_225Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,2,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNK
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_225Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,3,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_45Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,0,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		BUNK
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_45Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,1,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_45Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,2,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_45Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,3,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_45Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,4,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_225Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,1,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_225Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,2,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		},
+		SimpleItem	
+		{
+			Posn	{Abs	MainObjective,
+				 	 Rel	{Bearing ANGLES_225Deg,
+				 		 	 Pitch	ANGLES_0Deg,
+						 	 Range {Select 0,3,METRES40}
+							}
+					},
+			UIDBand		BlueCombatVehicleBAND,
+			Shape		TroopShape
+		}
+	}
+	}
+};
+
+
+BattleField
+{
+	FileName	BF_ATT_ArcTnk=GENATT00.BF,
+//TempCode MS 04Dec98 	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//TempCode MS 04Dec98 	Setval	(FormSize01,(List FormSize00,1,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+//TempCode MS 04Dec98 	Setval	(FormSize00,(List FormSize00,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+//TempCode MS 04Dec98 	Setval	{TroopShape,Shape(List RequiredNationality,
+//TempCode MS 04Dec98 						EMPTY2,			//green
+//TempCode MS 04Dec98 						Shape{List GroundForceType, DUMY16, DUMY16, DUMY16, DUMY16, DUMY16},	//red
+//TempCode MS 04Dec98 						Shape{List GroundForceType, DUMY16, DUMY16, DUMY16, DUMY16, DUMY16},	//blue
+//TempCode MS 04Dec98 						EMPTY2										//amber
+//TempCode MS 04Dec98 						}
+//TempCode MS 04Dec98 			},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing {Select	ANGLES_260Deg,0,ANGLES_20Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES300
+								}
+						},
+				Vel		10,
+				Range	METRES20,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	6,
+
+		Posn	{Abs	SubObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing {Select	ANGLES_330Deg,0,ANGLES_10Deg},
+				 Pitch	ANGLES_0Deg,
+						 RangePercent	100
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		NAT_FRIEND,
+			Shape		DUMY16,
+			Vel			10
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing {Select	ANGLES_260Deg,1,ANGLES_20Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES300
+								}
+						},
+				Vel		10,
+				Range	METRES20,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	6,
+
+		Posn	{Abs	SubObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing {Select	ANGLES_330Deg,1,ANGLES_10Deg},
+				 Pitch	ANGLES_0Deg,
+						 RangePercent	100
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		NAT_FRIEND,
+			Shape		DUMY16,
+			Vel			10
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing {Select	ANGLES_260Deg,2,ANGLES_20Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES300
+								}
+						},
+				Vel		10,
+				Range	METRES20,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	6,
+
+		Posn	{Abs	SubObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing {Select	ANGLES_330Deg,2,ANGLES_10Deg},
+				 Pitch	ANGLES_0Deg,
+						 RangePercent	100
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		NAT_FRIEND,
+			Shape		DUMY16,
+			Vel			10
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing {Select	ANGLES_260Deg,3,ANGLES_20Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES300
+								}
+						},
+				Range	METRES20,
+				Vel		10,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	6,
+
+		Posn	{Abs	SubObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing {Select	ANGLES_330Deg,3,ANGLES_10Deg},
+				 Pitch	ANGLES_0Deg,
+						 RangePercent	100
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		NAT_FRIEND,
+			Shape		DUMY16,
+			Vel			10
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing {Select	ANGLES_260Deg,4,ANGLES_20Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES300
+								}
+						},
+				Vel		10,
+				Range	METRES20,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	6,
+
+		Posn	{Abs	SubObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing {Select	ANGLES_330Deg,4,ANGLES_10Deg},
+				 Pitch	ANGLES_0Deg,
+						 RangePercent	100
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		NAT_FRIEND,
+			Shape		DUMY16,
+			Vel			10
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing {Select	ANGLES_260Deg,5,ANGLES_20Deg},
+				 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES300
+								}
+						},
+				Vel		10,
+				Range	METRES20,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	6,
+
+		Posn	{Abs	SubObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing {Select	ANGLES_330Deg,5,ANGLES_10Deg},
+				 Pitch	ANGLES_0Deg,
+						 RangePercent	100
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		NAT_FRIEND,
+			Shape		DUMY16,
+			Vel			10
+		}
+	}
+};
+
+BattleField							
+{
+
+//NEEDS DOING PROPERLEY
+
+
+	FileName	BF_ATT_LinTnk=GENATT02.BF,
+
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+
+
+//This is horrible
+
+	Setval	(FormSize00, (List FormSize00,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8)),
+	Setval	(FormSize01, (List FormSize00,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4)),
+	Setval	(FormSize00, (List GroundForceType,FormSize00,FormSize01,FormSize01,FormSize01,FormSize01)),
+
+	Setval	(EncounterSize, (List GroundForceType, 15, 0, 0, 25, 0)},
+
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, UNINFT, UNINFT, UNINFT, UNINFT, UNINFT},	//red
+						Shape{List GroundForceType, UNINFT, UNINFT, UNINFT, UNINFT, UNINFT},	//blue
+						EMPTY2										//amber
+						}
+			},
+	Setval	{TankShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, UNINFT, CHMORT, CHMORT, T34, CHART},	//red
+						Shape{List GroundForceType, UNINFT, UNMORT, UNMORT, UNTANK, UNHOW},	//blue
+						EMPTY2										//amber
+						}
+			},
+
+//-- attacker
+
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_90Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES150
+								}
+						},
+				Vel		EncounterSize,
+				Range	METRES300,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize00,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	{Abs	MainObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing ANGLES_90Deg,
+				 		 Pitch	ANGLES_0Deg,
+						 Range METRES150
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		(List TankShape,TankShape,TroopShape,TankShape,
+							  TroopShape,TankShape,TankShape,TroopShape
+						),
+			Vel			EncounterSize
+		}
+	},
+	GroundGroup	
+	{
+		Route		
+		{
+			WayPoint
+			{
+				Posn	{Abs	SubObjective,
+						 Rel	{Intercept {SubObjective,MainObjective},
+				 		 		 Bearing ANGLES_270Deg,
+				 		 		 Pitch	ANGLES_0Deg,
+			 	 		 		 Range METRES150
+								}
+						},
+				Vel		EncounterSize,
+				Range	METRES300,
+				Action	wpdmbtrkstopno
+			}
+		},
+		
+		NumInForm	FormSize00,
+		Formation	SQUAD_BATTLELINE,
+
+		Posn	{Abs	MainObjective,
+				 Rel	{Intercept {SubObjective,MainObjective},
+				 		 Bearing ANGLES_270Deg,
+				 		 Pitch	ANGLES_0Deg,
+						 Range METRES150
+						}
+				},
+
+	   	GroundItem	
+		{
+			Type		SQ_VEHICLES,
+			Side		RequiredNationality,
+			Shape		(List TankShape,TankShape,TroopShape,TankShape,
+							  TroopShape,TankShape,TankShape,TroopShape
+						),
+			Vel			EncounterSize
+		}
+	}
+//These are the supporters who do not move
+//DeadCode MS 26Mar99 
+//DeadCode MS 26Mar99 	GroundGroup	
+//DeadCode MS 26Mar99 	{
+//DeadCode MS 26Mar99 		Route		
+//DeadCode MS 26Mar99 		{
+//DeadCode MS 26Mar99 			WayPoint
+//DeadCode MS 26Mar99 			{
+//DeadCode MS 26Mar99 				Posn	{Abs	SubObjective},
+//DeadCode MS 26Mar99 				Vel		EncounterSize,
+//DeadCode MS 26Mar99 				Range	METRES300,
+//DeadCode MS 26Mar99 				Action	wpdmbtrkstopno
+//DeadCode MS 26Mar99 			}
+//DeadCode MS 26Mar99 		},
+//DeadCode MS 26Mar99 		
+//DeadCode MS 26Mar99 		NumInForm	FormSize01,
+//DeadCode MS 26Mar99 		Formation	SQUAD_BATTLELINE,
+//DeadCode MS 26Mar99 
+//DeadCode MS 26Mar99 		Posn	{Abs	MainObjective},
+//DeadCode MS 26Mar99 
+//DeadCode MS 26Mar99 	   	GroundItem	
+//DeadCode MS 26Mar99 		{
+//DeadCode MS 26Mar99 			Type		SQ_VEHICLES,
+//DeadCode MS 26Mar99 			Side		RequiredNationality,
+//DeadCode MS 26Mar99 			Shape		TankShape,
+//DeadCode MS 26Mar99 			Vel			EncounterSize
+//DeadCode MS 26Mar99 		}
+//DeadCode MS 26Mar99 	}
+
+//TempCode MS 26Mar99 	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+//TempCode MS 26Mar99 	Setval	(FormSize01,(List FormSize00,1,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+//TempCode MS 26Mar99 //	Setval	(FormSize00,(List FormSize00,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+//TempCode MS 26Mar99 	Setval	{TroopShape,Shape(List RequiredNationality,
+//TempCode MS 26Mar99 						EMPTY2,			//green
+//TempCode MS 26Mar99 						Shape{List GroundForceType, UNINFT, UNINFT, UNINFT, UNINFT, UNINFT},	//red
+//TempCode MS 26Mar99 						Shape{List GroundForceType, UNINFT, UNINFT, UNINFT, UNINFT, UNINFT},	//blue
+//TempCode MS 26Mar99 						EMPTY2										//amber
+//TempCode MS 26Mar99 						}
+//TempCode MS 26Mar99 			},
+//TempCode MS 26Mar99 	Setval	{TankShape,Shape(List RequiredNationality,
+//TempCode MS 26Mar99 						EMPTY2,			//green
+//TempCode MS 26Mar99 						Shape{List GroundForceType, T34, T34, T34, T34, T34},	//red
+//TempCode MS 26Mar99 						Shape{List GroundForceType, UNTANK, UNTANK, UNTANK, UNTANK, UNTANK},	//blue
+//TempCode MS 26Mar99 						EMPTY2										//amber
+//TempCode MS 26Mar99 						}
+//TempCode MS 26Mar99 			},
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 	GroundGroup	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Route		
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			WayPoint
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Posn	{Abs	SubObjective,
+//TempCode MS 26Mar99 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 		 Bearing ANGLES_90Deg,
+//TempCode MS 26Mar99 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 		 		 Range METRES100
+//TempCode MS 26Mar99 								}
+//TempCode MS 26Mar99 						},
+//TempCode MS 26Mar99 				Vel		10,
+//TempCode MS 26Mar99 				Range	METRES300,
+//TempCode MS 26Mar99 				Action	wpdmbtrkstopno
+//TempCode MS 26Mar99 			}
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		
+//TempCode MS 26Mar99 		NumInForm	FormSize01,
+//TempCode MS 26Mar99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 		Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 Bearing ANGLES_90Deg,
+//TempCode MS 26Mar99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 						 Range METRES100
+//TempCode MS 26Mar99 						}
+//TempCode MS 26Mar99 				},
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 	   	GroundItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Type		SQ_VEHICLES,
+//TempCode MS 26Mar99 			Side		NAT_FRIEND,
+//TempCode MS 26Mar99 			Shape		{List TankShape,TroopShape,TroopShape,TankShape,TankShape,TroopShape},
+//TempCode MS 26Mar99 			Vel			10
+//TempCode MS 26Mar99 		}
+//TempCode MS 26Mar99 	},
+//TempCode MS 26Mar99 	GroundGroup	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Route		
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			WayPoint
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Posn	{Abs	SubObjective,
+//TempCode MS 26Mar99 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 		 Bearing ANGLES_270Deg,
+//TempCode MS 26Mar99 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 		 		 Range METRES100
+//TempCode MS 26Mar99 								}
+//TempCode MS 26Mar99 						},
+//TempCode MS 26Mar99 				Vel		10,
+//TempCode MS 26Mar99 				Range	METRES300,
+//TempCode MS 26Mar99 				Action	wpdmbtrkstopno
+//TempCode MS 26Mar99 			}
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		
+//TempCode MS 26Mar99 		NumInForm	FormSize01,
+//TempCode MS 26Mar99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 		Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 Bearing ANGLES_270Deg,
+//TempCode MS 26Mar99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 						 Range METRES100
+//TempCode MS 26Mar99 						}
+//TempCode MS 26Mar99 				},
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 	   	GroundItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Type		SQ_VEHICLES,
+//TempCode MS 26Mar99 			Side		NAT_FRIEND,
+//TempCode MS 26Mar99 			Shape		{List TankShape,TroopShape,TroopShape,TankShape,TankShape,TroopShape},
+//TempCode MS 26Mar99 			Vel			10
+//TempCode MS 26Mar99 		}
+//TempCode MS 26Mar99 	},
+//TempCode MS 26Mar99 	GroundGroup	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Route		
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			WayPoint
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Posn	{Abs	SubObjective,
+//TempCode MS 26Mar99 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 		 Bearing ANGLES_90Deg,
+//TempCode MS 26Mar99 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 		 		 Range METRES100
+//TempCode MS 26Mar99 								}
+//TempCode MS 26Mar99 						},
+//TempCode MS 26Mar99 				Vel		10,
+//TempCode MS 26Mar99 				Range	METRES300,
+//TempCode MS 26Mar99 				Action	wpdmbtrkstopno
+//TempCode MS 26Mar99 			}
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		
+//TempCode MS 26Mar99 		NumInForm	FormSize01,
+//TempCode MS 26Mar99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 		Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 Bearing ANGLES_90Deg,
+//TempCode MS 26Mar99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 						 Range METRES300
+//TempCode MS 26Mar99 						}
+//TempCode MS 26Mar99 				},
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 	   	GroundItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Type		SQ_VEHICLES,
+//TempCode MS 26Mar99 			Side		NAT_FRIEND,
+//TempCode MS 26Mar99 			Shape		{List TankShape,TroopShape,TroopShape,TankShape,TankShape,TroopShape},
+//TempCode MS 26Mar99 			Vel			10
+//TempCode MS 26Mar99 		}
+//TempCode MS 26Mar99 	},
+//TempCode MS 26Mar99 	GroundGroup	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Route		
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			WayPoint
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Posn	{Abs	SubObjective,
+//TempCode MS 26Mar99 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 		 Bearing ANGLES_270Deg,
+//TempCode MS 26Mar99 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 		 		 Range METRES300
+//TempCode MS 26Mar99 								}
+//TempCode MS 26Mar99 						},
+//TempCode MS 26Mar99 				Vel		10,
+//TempCode MS 26Mar99 				Range	METRES300,
+//TempCode MS 26Mar99 				Action	wpdmbtrkstopno
+//TempCode MS 26Mar99 			}
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		
+//TempCode MS 26Mar99 		NumInForm	FormSize01,
+//TempCode MS 26Mar99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 		Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 Bearing ANGLES_270Deg,
+//TempCode MS 26Mar99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 						 Range METRES300
+//TempCode MS 26Mar99 						}
+//TempCode MS 26Mar99 				},
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 	   	GroundItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Type		SQ_VEHICLES,
+//TempCode MS 26Mar99 			Side		NAT_FRIEND,
+//TempCode MS 26Mar99 			Shape		{List TankShape,TroopShape,TroopShape,TankShape,TankShape,TroopShape},
+//TempCode MS 26Mar99 			Vel			10
+//TempCode MS 26Mar99 		}
+//TempCode MS 26Mar99 	},
+//TempCode MS 26Mar99 	GroundGroup	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Route		
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			WayPoint
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Posn	{Abs	SubObjective,
+//TempCode MS 26Mar99 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 		 Bearing ANGLES_90Deg,
+//TempCode MS 26Mar99 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 		 		 Range METRES500
+//TempCode MS 26Mar99 								}
+//TempCode MS 26Mar99 						},
+//TempCode MS 26Mar99 				Vel		10,
+//TempCode MS 26Mar99 				Range	METRES300,
+//TempCode MS 26Mar99 				Action	wpdmbtrkstopno
+//TempCode MS 26Mar99 			}
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		
+//TempCode MS 26Mar99 		NumInForm	FormSize01,
+//TempCode MS 26Mar99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 		Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 Bearing ANGLES_90Deg,
+//TempCode MS 26Mar99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 						 Range METRES500
+//TempCode MS 26Mar99 						}
+//TempCode MS 26Mar99 				},
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 	   	GroundItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Type		SQ_VEHICLES,
+//TempCode MS 26Mar99 			Side		NAT_FRIEND,
+//TempCode MS 26Mar99 			Shape		{List TankShape,TroopShape,TroopShape,TankShape,TankShape,TroopShape},
+//TempCode MS 26Mar99 			Vel			10
+//TempCode MS 26Mar99 		}
+//TempCode MS 26Mar99 	},
+//TempCode MS 26Mar99 	GroundGroup	
+//TempCode MS 26Mar99 	{
+//TempCode MS 26Mar99 		Route		
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			WayPoint
+//TempCode MS 26Mar99 			{
+//TempCode MS 26Mar99 				Posn	{Abs	SubObjective,
+//TempCode MS 26Mar99 						 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 		 Bearing ANGLES_270Deg,
+//TempCode MS 26Mar99 				 		 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 			 	 		 		 Range METRES500
+//TempCode MS 26Mar99 								}
+//TempCode MS 26Mar99 						},
+//TempCode MS 26Mar99 				Vel		10,
+//TempCode MS 26Mar99 				Range	METRES300,
+//TempCode MS 26Mar99 				Action	wpdmbtrkstopno
+//TempCode MS 26Mar99 			}
+//TempCode MS 26Mar99 		},
+//TempCode MS 26Mar99 		
+//TempCode MS 26Mar99 		NumInForm	FormSize01,
+//TempCode MS 26Mar99 		Formation	SQUAD_BATTLELINE,
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 		Posn	{Abs	MainObjective,
+//TempCode MS 26Mar99 				 Rel	{Intercept {SubObjective,MainObjective},
+//TempCode MS 26Mar99 				 		 Bearing ANGLES_270Deg,
+//TempCode MS 26Mar99 				 		 Pitch	ANGLES_0Deg,
+//TempCode MS 26Mar99 						 Range METRES500
+//TempCode MS 26Mar99 						}
+//TempCode MS 26Mar99 				},
+//TempCode MS 26Mar99 
+//TempCode MS 26Mar99 	   	GroundItem	
+//TempCode MS 26Mar99 		{
+//TempCode MS 26Mar99 			Type		SQ_VEHICLES,
+//TempCode MS 26Mar99 			Side		NAT_FRIEND,
+//TempCode MS 26Mar99 			Shape		{List TankShape,TroopShape,TroopShape,TankShape,TankShape,TroopShape},
+//TempCode MS 26Mar99 			Vel			10
+//TempCode MS 26Mar99 		}
+//TempCode MS 26Mar99 	}
+};
+
+BattleField
+{
+	FileName	BF_MOV_ColTrk=GENMOV01.BF
+};
+
+//-------------------------------------------------------------------------
+BattleField
+{
+	FileName	BF_MOV_LinFst=GENMOV03.BF,
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+	Setval	(FormSize01,(List FormSize00,1,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+	Setval	(FormSize00,(List FormSize00,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, TTRUCK, TTRUCK, TTRUCK, TTRUCK, TTRUCK},	//red
+						Shape{List GroundForceType, UNTRCK, UNTRCK, UNTRCK, UNTRCK, UNTRCK},	//blue
+						EMPTY2										//amber
+						}
+			},
+	ItemGroup
+	{
+		Target	MainObjective,
+
+		GroundGroup	
+		{
+			Route		
+			{
+				WayPoint
+				{
+					Posn	{Abs	SubObjective},
+					Vel		15,
+					Range	METRES50,
+					Action	wpdmbtrkstopno
+				}
+			},
+			
+			NumInForm	FormSize00,
+
+			Posn	{Abs	SubObjective,
+					 Rel	{Intercept {SubObjective,MainObjective},
+							 Bearing	ANGLES_0Deg,
+				 			 Pitch	ANGLES_0Deg,
+							 Range METRES500
+							}
+					},
+
+	   		GroundItem	
+			{
+				Type		SQ_VEHICLES,
+				Side		RequiredNationality,
+				Shape		TroopShape,
+				Vel			15
+			}
+		}
+	}
+};
+
+//-------------------------------------------------------------------------
+BattleField
+{
+	FileName	BF_MOV_ColFst=GENMOV04.BF,
+	Setval	(FormSize00,(Select FormSize00,FormSize01,1)),
+	Setval	(FormSize01,(List FormSize00,1,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+	Setval	(FormSize00,(List FormSize00,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9)),
+	Setval	{TroopShape,Shape(List RequiredNationality,
+						EMPTY2,			//green
+						Shape{List GroundForceType, TTRUCK, TTRUCK, TTRUCK, TTRUCK, TTRUCK},	//red
+						Shape{List GroundForceType, UNTRCK, UNTRCK, UNTRCK, UNTRCK, UNTRCK},	//blue
+						EMPTY2										//amber
+						}
+			},
+	ItemGroup
+	{
+		Target	MainObjective,
+
+		GroundGroup	
+		{
+			Route		
+			{
+				WayPoint
+				{
+					Posn	{Abs	SubObjective},
+					Vel		15,
+					Range	METRES50,
+					Action	wpdmbtrkstopno
+				}
+			},
+			
+			NumInForm	FormSize00,
+
+			Posn	{Abs	SubObjective,
+					 Rel	{Intercept {SubObjective,MainObjective},
+							 Bearing	ANGLES_0Deg,
+				 			 Pitch	ANGLES_0Deg,
+							 Range METRES500
+							}
+					},
+
+	   		GroundItem	
+			{
+				Type		SQ_VEHICLES,
+				Side		RequiredNationality,
+				Shape		TroopShape,
+				Vel			15
+			}
+		}
+	}
+};

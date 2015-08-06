@@ -1,0 +1,558 @@
+	SimpleItem	SAMCHOK_0413,
+	SimpleItem	SAMCHOK_0416,
+	SimpleItem	SAMCHOK_0419,
+	SimpleItem	SAMCHOK_041c,
+	SimpleItem	SAMCHOK_041e,
+	SimpleItem	SAMCHOK_0420,
+	SimpleItem	SAMCHOK_0423,
+	SimpleItem	SAMCHOK_0425,
+	SimpleItem	SAMCHOK_0427,
+	SimpleItem	SAMCHOK_0429,
+	SimpleItem	SAMCHOK_042b,
+	SimpleItem	SAMCHOK_042d,
+	SimpleItem	SAMCHOK_042f,
+	SimpleItem	SAMCHOK_0440,
+	SimpleItem	SAMCHOK_0442,
+	SimpleItem	SAMCHOK_0447,
+	SimpleItem	SAMCHOK_0449,
+	SimpleItem	SAMCHOK_044d,
+	SimpleItem	SAMCHOK_0450,
+	SimpleItem	SAMCHOK_0453,
+	SimpleItem	SAMCHOK_0456,
+	SimpleItem	SAMCHOK_0459,
+	SimpleItem	SAMCHOK_045b,
+	SimpleItem	SAMCHOK_045f,
+	SimpleItem	SAMCHOK_2004,
+	SimpleItem	SAMCHOK_2005,
+	SimpleItem	SAMCHOK_2006,
+	SimpleItem	SAMCHOK_2007,
+	SimpleItem	SAMCHOK_2008,
+	SimpleItem	SAMCHOK_2009,
+	SimpleItem	SAMCHOK_200a,
+	SimpleItem	SAMCHOK_200b,
+	SimpleItem	SAMCHOK_200c,
+	SimpleItem	SAMCHOK_200d,
+	SimpleItem	SAMCHOK_200e,
+	SimpleItem	SAMCHOK_200f,
+	SimpleItem	SAMCHOK_2010,
+	SimpleItem	SAMCHOK_2011,
+	SimpleItem	SAMCHOK_2012,
+	SimpleItem	SAMCHOK_2013,
+	SimpleItem	SAMCHOK_2014,
+	SimpleItem	SAMCHOK_2015,
+	BattleField
+	{
+		FileName	FIL_1_SAMCHOK=SAMCHOK.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StSamchok,
+		ItemGroup
+		{
+				SimpleItem	SAMCHOK_0413=
+				{
+					Posn
+					{
+						Abs
+						{	X	82435072,
+							Z	59987968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	SAMCHOK_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	82395136,
+							Z	60071936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	SAMCHOK_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	82419712,
+							Z	60017664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMCHOK_041c=
+				{
+					Posn
+					{
+						Abs
+						{	X	82622464,
+							Z	60078080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SAMCHOK_041e=
+				{
+					Posn
+					{
+						Abs
+						{	X	82623488,
+							Z	60051456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SAMCHOK_0420=
+				{
+					Posn
+					{
+						Abs
+						{	X	82617344,
+							Z	60026880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMCHOK_0423=
+				{
+					Posn
+					{
+						Abs
+						{	X	82617344,
+							Z	60105728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SAMCHOK_0425=
+				{
+					Posn
+					{
+						Abs
+						{	X	82613248,
+							Z	60136448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SAMCHOK_0427=
+				{
+					Posn
+					{
+						Abs
+						{	X	82599936,
+							Z	60211200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SAMCHOK_0429=
+				{
+					Posn
+					{
+						Abs
+						{	X	82610176,
+							Z	60174336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMCHOK_042b=
+				{
+					Posn
+					{
+						Abs
+						{	X	82561024,
+							Z	60160000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMCHOK_042d=
+				{
+					Posn
+					{
+						Abs
+						{	X	82387968,
+							Z	60126208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMCHOK_042f=
+				{
+					Posn
+					{
+						Abs
+						{	X	82383872,
+							Z	60103680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SAMCHOK_0440=
+				{
+					Posn
+					{
+						Abs
+						{	X	82478080,
+							Z	60022784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SAMCHOK_0442=
+				{
+					Posn
+					{
+						Abs
+						{	X	82494464,
+							Z	60012544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMCHOK_0447=
+				{
+					Posn
+					{
+						Abs
+						{	X	82362368,
+							Z	60150784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMCHOK_0449=
+				{
+					Posn
+					{
+						Abs
+						{	X	82540544,
+							Z	59922432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SAMCHOK_044d=
+				{
+					Posn
+					{
+						Abs
+						{	X	82354176,
+							Z	60118016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SAMCHOK_0450=
+				{
+					Posn
+					{
+						Abs
+						{	X	82574336,
+							Z	59954176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	SAMCHOK_0453=
+				{
+					Posn
+					{
+						Abs
+						{	X	82383872,
+							Z	60032000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	SAMCHOK_0456=
+				{
+					Posn
+					{
+						Abs
+						{	X	82574336,
+							Z	60096512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SAMCHOK_0459=
+				{
+					Posn
+					{
+						Abs
+						{	X	82571264,
+							Z	60235776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SAMCHOK_045b=
+				{
+					Posn
+					{
+						Abs
+						{	X	82540544,
+							Z	60246016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SAMCHOK_045f=
+				{
+					Posn
+					{
+						Abs
+						{	X	82588672,
+							Z	59904000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	SAMCHOK_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	82647040,
+							Z	60142592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	SAMCHOK_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	82684928,
+							Z	60221440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	SAMCHOK_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	82561024,
+							Z	60374016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARGO
+				},
+				SimpleItem	SAMCHOK_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	82448384,
+							Z	60037120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SAMCHOK_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	82597888,
+							Z	60036096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SAMCHOK_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	82527232,
+							Z	60004352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	SAMCHOK_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	82552832,
+							Z	60128256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	SAMCHOK_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	82415616,
+							Z	60055552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SAMCHOK_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	82570240,
+							Z	59998208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SAMCHOK_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	82582528,
+							Z	60185600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SAMCHOK_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	82495488,
+							Z	59976704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SAMCHOK_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	82434048,
+							Z	60107776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SAMCHOK_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	82586624,
+							Z	60137472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SAMCHOK_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	82598912,
+							Z	60088320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SAMCHOK_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	82563072,
+							Z	60037120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SAMCHOK_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	82546688,
+							Z	59957248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SAMCHOK_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	82461696,
+							Z	59994112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SAMCHOK_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	82371584,
+							Z	60068864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				}
+		}	}
+	};

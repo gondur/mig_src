@@ -1,0 +1,285 @@
+	SimpleItem	KANGDONG_0403,
+	SimpleItem	KANGDONG_2051,
+	SimpleItem	KANGDONG_2052,
+	SimpleItem	KANGDONG_2053,
+	SimpleItem	KANGDONG_2054,
+	SimpleItem	KANGDONG_2055,
+	SimpleItem	KANGDONG_2056,
+	SimpleItem	KANGDONG_2057,
+	SimpleItem	KANGDONG_2058,
+	SimpleItem	KANGDONG_2059,
+	SimpleItem	KANGDONG_205a,
+	SimpleItem	KANGDONG_205b,
+	SimpleItem	KANGDONG_205c,
+	SimpleItem	KANGDONG_205d,
+	SimpleItem	KANGDONG_205e,
+	SimpleItem	KANGDONG_205f,
+	SimpleItem	KANGDONG_2060,
+	SimpleItem	KANGDONG_2061,
+	SimpleItem	KANGDONG_2062,
+	SimpleItem	KANGDONG_2063,
+	SimpleItem	KANGDONG_2064,
+	BattleField
+	{
+		FileName	FIL_1_KANGDONG=KANGDONG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKangdong,
+		ItemGroup
+		{
+				SimpleItem	KANGDONG_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	55324672,
+							Z	79204352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	KANGDONG_2051=
+				{
+					Posn
+					{
+						Abs
+						{	X	55865344,
+							Z	78976000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KANGDONG_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	55896064,
+							Z	78972928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGDONG_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	55786496,
+							Z	79030272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KANGDONG_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	55783424,
+							Z	78994432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGDONG_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	55855104,
+							Z	78921728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGDONG_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	55755776,
+							Z	78955520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGDONG_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	55780352,
+							Z	79062016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGDONG_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	55827456,
+							Z	78956544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGDONG_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	55725056,
+							Z	79045632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGDONG_205a=
+				{
+					Posn
+					{
+						Abs
+						{	X	55723008,
+							Z	78988288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGDONG_205b=
+				{
+					Posn
+					{
+						Abs
+						{	X	55735296,
+							Z	79028224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGDONG_205c=
+				{
+					Posn
+					{
+						Abs
+						{	X	55714816,
+							Z	79030272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KANGDONG_205d=
+				{
+					Posn
+					{
+						Abs
+						{	X	55733248,
+							Z	79065088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KANGDONG_205e=
+				{
+					Posn
+					{
+						Abs
+						{	X	55759872,
+							Z	78918656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KANGDONG_205f=
+				{
+					Posn
+					{
+						Abs
+						{	X	55795712,
+							Z	78914560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KANGDONG_2060=
+				{
+					Posn
+					{
+						Abs
+						{	X	55732224,
+							Z	79008768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGDONG_2061=
+				{
+					Posn
+					{
+						Abs
+						{	X	55726080,
+							Z	78964736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KANGDONG_2062=
+				{
+					Posn
+					{
+						Abs
+						{	X	55732224,
+							Z	78946304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KANGDONG_2063=
+				{
+					Posn
+					{
+						Abs
+						{	X	55778304,
+							Z	78937088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI01
+				},
+				SimpleItem	KANGDONG_2064=
+				{
+					Posn
+					{
+						Abs
+						{	X	55824384,
+							Z	78911488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HARLEY
+				}
+		}	}
+	};

@@ -1,0 +1,266 @@
+	WayPoint	rdantung_0100,
+	WayPoint	rdantung_0101,
+	WayPoint	rdantung_0102,
+	WayPoint	rdantung_0103,
+	WayPoint	rdantung_0104,
+	WayPoint	rdantung_0105,
+	SimpleItem	rdantung_0409,
+	SimpleItem	rdantung_040c,
+	SimpleItem	rdantung_040e,
+	SimpleItem	rdantung_0410,
+	SimpleItem	rdantung_0412,
+	SimpleItem	rdantung_0414,
+	SimpleItem	rdantung_0416,
+	SimpleItem	rdantung_0418,
+	SimpleItem	rdantung_3c80,
+	SimpleItem	rdantung_3c81,
+	GroundItem	rdantung_3c82,
+	GroundItem	rdantung_3c83,
+	BattleField
+	{
+		FileName	FIL_1_RDANTUNG=rdantung.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdAntung,
+		ItemGroup
+		{
+				SimpleItem	rdantung_3c80=
+				{
+  					Posn	{Abs	UID_AfRdAntung, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				},
+				SimpleItem	rdantung_3c81=
+				{
+  					Posn	{Abs	UID_AfRdAntung, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				},
+			SimpleItem	rdantung_0409=
+			{
+				Posn
+				{
+					Abs
+					{	X	40109056,
+						Z	88320512
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		IL10
+			},
+			SimpleItem	rdantung_040c=
+			{
+				Posn
+				{
+					Abs
+					{	X	40117248,
+						Z	88321536
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		IL10
+			},
+			SimpleItem	rdantung_040e=
+			{
+				Posn
+				{
+					Abs
+					{	X	40125952,
+						Z	88321536
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		IL10
+			},
+			SimpleItem	rdantung_0410=
+			{
+				Posn
+				{
+					Abs
+					{	X	40136192,
+						Z	88321536
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		IL10
+			},
+			SimpleItem	rdantung_0412=
+			{
+				Posn
+				{
+					Abs
+					{	X	40142336,
+						Z	88322048
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		IL10
+			},
+			SimpleItem	rdantung_0414=
+			{
+				Posn
+				{
+					Abs
+					{	X	40150016,
+						Z	88321536
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		IL10
+			},
+			SimpleItem	rdantung_0416=
+			{
+				Posn
+				{
+					Abs
+					{	X	40160256,
+						Z	88321536
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		IL10
+			},
+			SimpleItem	rdantung_0418=
+			{
+				Posn
+				{
+					Abs
+					{	X	40168448,
+						Z	88321536
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		IL10
+			}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	40110233,
+						Z	88554528
+					}
+				},
+				Route
+				{
+					WayPoint	rdantung_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	40110233,
+								Z	88451718
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	rdantung_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	40130713,
+								Z	88451718
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	rdantung_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	40131123,
+								Z	88553299
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	rdantung_3c82=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	98
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	40057394,
+						Z	88378398
+					}
+				},
+				Route
+				{
+					WayPoint	rdantung_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	40038962,
+								Z	88377989
+							}
+						},
+						Vel	115,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	rdantung_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	40020940,
+								Z	88432876
+							}
+						},
+						Vel	115,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	rdantung_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	40000460,
+								Z	88453356
+							}
+						},
+						Vel	115,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		4,
+				Formation	SQUAD_FLATV_Right,
+				GroundItem	rdantung_3c83=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	115
+			}	}	}
+	};

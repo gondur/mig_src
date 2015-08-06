@@ -1,0 +1,62 @@
+	SimpleItem	fred2_0b01,
+	SimpleItem	fred2_0b03,
+	SimpleItem	fred2_0b05,
+	SimpleItem	fred2_0b07,
+	BattleField
+	{
+		FileName	FIL_1_fred2=fred2.BF,
+		Title	{},
+		Comment	{},
+
+		ItemGroup
+		{
+			SimpleItem	fred2_0b01=
+			{
+				Posn
+				{
+					Abs
+					{	X	29167616,
+						Z	1065181184
+					}
+				},
+				UIDBand		BlueMilitaryBAND,
+				Shape		CRANE
+			},
+			SimpleItem	fred2_0b03=
+			{
+				Posn
+				{
+					Abs
+					{	X	29024256,
+						Z	1064054784
+					}
+				},
+				UIDBand		BlueMilitaryBAND,
+				Shape		CRANE
+			},
+			SimpleItem	fred2_0b05=
+			{
+				Posn
+				{
+					Abs
+					{	X	29167616,
+						Z	1062703104
+					}
+				},
+				UIDBand		BlueMilitaryBAND,
+				Shape		CRANE
+			},
+			SimpleItem	fred2_0b07=
+			{
+				Posn
+				{
+					Abs
+					{	X	27815936,
+						Z	1061699584
+					}
+				},
+				UIDBand		BlueMilitaryBAND,
+				Shape		CRANE
+			}
+		}
+	};

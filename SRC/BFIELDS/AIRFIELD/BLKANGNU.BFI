@@ -1,0 +1,229 @@
+	WayPoint	blkangnu_0100,
+	WayPoint	blkangnu_0101,
+	SimpleItem	blkangnu_1703,
+	SimpleItem	blkangnu_1704,
+	GroundItem	blkangnu_2f60,
+	SimpleItem	blkangnu_2aff,
+	SimpleItem	blkangnu_2afe,
+	SimpleItem	blkangnu_2afd,
+	SimpleItem	blkangnu_2afc,
+	SimpleItem	blkangnu_2afb,
+	SimpleItem	blkangnu_2afa,
+	SimpleItem	blkangnu_2af9,
+	SimpleItem	blkangnu_2af8,
+	SimpleItem	blkangnu_2af7,
+	SimpleItem	blkangnu_2af6,
+	BattleField
+	{
+		FileName	FIL_1_BLKANGNU=blkangnu.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlKangnung,
+		ItemGroup
+		{
+				SimpleItem	blkangnu_2aff=
+				{
+					Posn
+					{
+						Abs
+						{	X	80364032,
+							Z	63646042
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI2,
+					Shape		WINDSC
+				},
+				SimpleItem	blkangnu_2afe=
+				{
+					Posn
+					{
+						Abs
+						{	X	80374886,
+							Z	63646042
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI1,
+					Shape		WINDSC
+				},
+				SimpleItem	blkangnu_2afd=
+				{
+					Posn
+					{
+						Abs
+						{	X	80379392,
+							Z	63641536
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI0,
+					Shape		WINDSC
+				},
+				SimpleItem	blkangnu_2afc=
+				{
+					Posn
+					{
+						Abs
+						{	X	80381644,
+							Z	63638464
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIE,
+					Shape		WINDSC
+				},
+				SimpleItem	blkangnu_2afb=
+				{
+					Posn
+					{
+						Abs
+						{	X	80382668,
+							Z	63634368
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIL,
+					Shape		WINDSC
+				},
+				SimpleItem	blkangnu_2afa=
+				{
+					Posn
+					{
+						Abs
+						{	X	80286976,
+							Z	63554304
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK0,
+					Shape		WINDSC
+				},
+				SimpleItem	blkangnu_2af9=
+				{
+					Posn
+					{
+						Abs
+						{	X	80329216,
+							Z	63596288
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK1,
+					Shape		WINDSC
+				},
+				SimpleItem	blkangnu_2af8=
+				{
+					Posn
+					{
+						Abs
+						{	X	80333312,
+							Z	63600128
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKL,
+					Shape		WINDSC
+				},
+				SimpleItem	blkangnu_2af7=
+				{
+					Posn
+					{
+						Abs
+						{	X	80331264,
+							Z	63598592
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKW,
+					Shape		WINDSC
+				},
+				SimpleItem	blkangnu_2af6=
+				{
+					Posn
+					{
+						Abs
+						{	X	80419942,
+							Z	63670004
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_LANDING,
+					Shape		WINDSC
+				},
+				SimpleItem	blkangnu_1703=
+				{
+					Posn
+					{
+						Abs
+						{	X	80386764,
+							Z	63660993
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		SAAA
+				},
+				SimpleItem	blkangnu_1704=
+				{
+					Posn
+					{
+						Abs
+						{	X	80238899,
+							Z	63513536
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		SAAA
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	80258559,
+						Z	63529510
+					}
+				},
+				Route
+				{
+					WayPoint	blkangnu_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	80277401,
+								Z	63510259
+							}
+						},
+						Vel	126,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	blkangnu_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	80397824,
+								Z	63631092
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	blkangnu_2f60=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	JEEP1,
+					Vel	126
+			}	}	}
+	};

@@ -1,0 +1,35 @@
+; -----------------------------------------------------------------
+; File name:  DLL16.DEF
+;
+; This is the module definition file for a multiple-segment DLL.
+; It demonstrates how to use the SEGMENTS statement to specify the
+; attributes of a code segment.
+;
+; Copyright (C) 1991 - 1996 Microsoft Corporation.  All rights reserved.
+; -----------------------------------------------------------------
+
+
+LIBRARY  CDR16
+
+DESCRIPTION  'DLL for 16-bit side of thunking layer.'
+EXETYPE  WINDOWS
+
+SEGMENTS
+        WEPSEG      PRELOAD FIXED
+
+CODE    PRELOAD MOVEABLE DISCARDABLE
+DATA    PRELOAD MOVEABLE SINGLE
+
+HEAPSIZE 5120
+
+IMPORTS
+        C16ThkSL01      = KERNEL.631
+        ThunkConnect16  = KERNEL.651
+
+EXPORTS
+        THK_THUNKDATA16 @1  RESIDENTNAME
+        DllEntryPoint   @2  RESIDENTNAME
+	InitCDFS16	@3  RESIDENTNAME
+	ExitCDFS16	@4  RESIDENTNAME
+	SeekToLocation16 @5 RESIDENTNAME
+

@@ -1,0 +1,218 @@
+//DeadCode JIM 05May99 	SimpleItem	AFP_DOWN_3900,
+//DeadCode JIM 05May99 	SimpleItem	AFP_DOWN_3940,
+	SimpleItem	AFP_DOWN_3a40,
+	SimpleItem	AFP_DOWN_3a41,
+	SimpleItem	AFP_DOWN_3a42,
+	SimpleItem	AFP_DOWN_3a43,
+	SimpleItem	AFP_DOWN_3a44,
+	SimpleItem	AFP_DOWN_3a45,
+	SimpleItem	AFP_DOWN_3a46,
+	SimpleItem	AFP_DOWN_3a47,
+	SimpleItem	AFP_DOWN_3a80,
+	SimpleItem	AFP_DOWN_3ac0,
+	SimpleItem	AFP_DOWN_3ac1,
+	SimpleItem	AFP_DOWN_3ac2,
+	BattleField
+	{
+		FileName	FIL_1_AFP_DOWN=AFP_DOWN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdPyongyangD,
+		ItemGroup
+		{
+//DeadCode JIM 05May99 				SimpleItem	AFP_DOWN_3900=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	52923799,
+//DeadCode JIM 05May99 							Z	77145076
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwaySBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFP_DOWN_3940=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	52923800,
+//DeadCode JIM 05May99 							Z	77315470
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwayEBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	52917655,
+							Z	77311374
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	52920932,
+							Z	77134426
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	AFP_DOWN_3a40=
+				{
+					Posn
+					{
+						Abs
+						{	X	52925848,
+							Z	77334722
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_DOWN_3a41=
+				{
+					Posn
+					{
+						Abs
+						{	X	52933629,
+							Z	77240104
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFP_DOWN_3a42=
+				{
+					Posn
+					{
+						Abs
+						{	X	52921341,
+							Z	77334722
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_DOWN_3a43=
+				{
+					Posn
+					{
+						Abs
+						{	X	52913149,
+							Z	77310965
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFP_DOWN_3a44=
+				{
+					Posn
+					{
+						Abs
+						{	X	52942231,
+							Z	77239694
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFP_DOWN_3a45=
+				{
+					Posn
+					{
+						Abs
+						{	X	52937725,
+							Z	77239694
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_DOWN_3a46=
+				{
+					Posn
+					{
+						Abs
+						{	X	52920932,
+							Z	77329806
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFP_DOWN_3a47=
+				{
+					Posn
+					{
+						Abs
+						{	X	52925438,
+							Z	77330215
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFP_DOWN_3a80=
+				{
+					Posn
+					{
+						Abs
+						{	X	52906186,
+							Z	77312603
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		RTRUCK
+				},
+				SimpleItem	AFP_DOWN_3ac0=
+				{
+					Posn
+					{
+						Abs
+						{	X	52868503,
+							Z	77249934
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	AFP_DOWN_3ac1=
+				{
+					Posn
+					{
+						Abs
+						{	X	52979914,
+							Z	77352334
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	AFP_DOWN_3ac2=
+				{
+					Posn
+					{
+						Abs
+						{	X	53049956,
+							Z	77161050
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		TWN3EW
+				}
+		}	}
+	};

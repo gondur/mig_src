@@ -1,0 +1,662 @@
+	WayPoint	ROAD14_0100,
+	WayPoint	ROAD14_0101,
+	WayPoint	ROAD14_0102,
+	WayPoint	ROAD14_0103,
+	WayPoint	ROAD14_0104,
+	WayPoint	ROAD14_0105,
+	WayPoint	ROAD14_0106,
+	WayPoint	ROAD14_0107,
+	WayPoint	ROAD14_0108,
+	WayPoint	ROAD14_0109,
+	WayPoint	ROAD14_010a,
+	WayPoint	ROAD14_010b,
+	WayPoint	ROAD14_010c,
+	WayPoint	ROAD14_010d,
+	SimpleItem	ROAD14_0418,
+	SimpleItem	ROAD14_041b,
+	SimpleItem	ROAD14_041e,
+	SimpleItem	ROAD14_0421,
+	SimpleItem	ROAD14_0424,
+	SimpleItem	ROAD14_0428,
+	SimpleItem	ROAD14_042b,
+	GroundItem	ROAD14_3080,
+	BattleField
+	{
+		FileName	FIL_1_ROAD14=ROAD14.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target		UID_ROAD_Yangyang2Kangnung,
+		ItemGroup
+		{
+//=====
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79212752,
+						Z	65416064
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79222368,
+						Z	65408512
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79237024,
+						Z	65404928
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79241312,
+						Z	65391104
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79254944,
+						Z	65378304
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79254624,
+						Z	65375232
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79268256,
+						Z	65365504
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79273056,
+						Z	65357312
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79280224,
+						Z	65348608
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79294880,
+						Z	65338880
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79294048,
+						Z	65335296
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79325088,
+						Z	65314816
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79355808,
+						Z	65290240
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	79366048,
+						Z	65284096
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+
+//=====
+			SimpleItem	ROAD14_0418=
+			{
+				Posn
+				{
+					Abs
+					{	X	79433216,
+						Z	65192960
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		SFTRCK
+			},
+			SimpleItem	ROAD14_041b=
+			{
+				Posn
+				{
+					Abs
+					{	X	79435264,
+						Z	65185280
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem	ROAD14_041e=
+			{
+				Posn
+				{
+					Abs
+					{	X	79407616,
+						Z	65247744
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CH12ML
+			},
+			SimpleItem	ROAD14_0421=
+			{
+				Posn
+				{
+					Abs
+					{	X	79010816,
+						Z	65692160
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CH12ML
+			},
+			SimpleItem	ROAD14_0424=
+			{
+				Posn
+				{
+					Abs
+					{	X	78841344,
+						Z	65926656
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CH12ML
+			},
+			SimpleItem	ROAD14_0428=
+			{
+				Posn
+				{
+					Abs
+					{	X	79438336,
+						Z	65198080
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+			SimpleItem	ROAD14_042b=
+			{
+				Posn
+				{
+					Abs
+					{	X	79441408,
+						Z	65189888
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			}
+		},
+//==
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+		  		{	X	79216752,
+		  			Z	65416064
+				}
+			},
+			Route
+			{
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79226368,
+							Z	65408512
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79233024,
+							Z	65404928
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79245312,
+							Z	65391104
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79250944,
+							Z	65378304
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79258624,
+							Z	65375232
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79264256,
+							Z	65365504
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79277056,
+							Z	65357312
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79284224,
+							Z	65348608
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79290880,
+							Z	65338880
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79298048,
+							Z	65335296
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79321088,
+							Z	65314816
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79351808,
+							Z	65290240
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn
+					{
+						Abs
+						{	X	79362048,
+							Z	65284096
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrkstopno,
+					Range	0
+				}
+			},
+			NumInForm		-2,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	75
+			}
+		},
+//==
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	79209472,
+					Z	65423872
+				}
+			},
+			Route
+			{
+				WayPoint	ROAD14_0105=
+				{
+					Posn
+					{
+						Abs
+						{	X	79216752,
+							Z	65416064
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_0106=
+				{
+					Posn
+					{
+						Abs
+						{	X	79226368,
+							Z	65408512
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_0107=
+				{
+					Posn
+					{
+						Abs
+						{	X	79233024,
+							Z	65404928
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_0108=
+				{
+					Posn
+					{
+						Abs
+						{	X	79245312,
+							Z	65391104
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_010a=
+				{
+					Posn
+					{
+						Abs
+						{	X	79250944,
+							Z	65378304
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_010c=
+				{
+					Posn
+					{
+						Abs
+						{	X	79258624,
+							Z	65375232
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_010d=
+				{
+					Posn
+					{
+						Abs
+						{	X	79264256,
+							Z	65365504
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_010b=
+				{
+					Posn
+					{
+						Abs
+						{	X	79277056,
+							Z	65357312
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	79284224,
+							Z	65348608
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_0104=
+				{
+					Posn
+					{
+						Abs
+						{	X	79290880,
+							Z	65338880
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_0103=
+				{
+					Posn
+					{
+						Abs
+						{	X	79298048,
+							Z	65335296
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_0102=
+				{
+					Posn
+					{
+						Abs
+						{	X	79321088,
+							Z	65314816
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_0101=
+				{
+					Posn
+					{
+						Abs
+						{	X	79351808,
+							Z	65290240
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD14_0100=
+				{
+					Posn
+					{
+						Abs
+						{	X	79362048,
+							Z	65284096
+						}
+					},
+					Vel	75,
+					Action	wpdmbtrkstopno,
+					Range	0
+				}
+			},
+			NumInForm		-2,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	ROAD14_3080=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	75
+	}	}	}
+	};

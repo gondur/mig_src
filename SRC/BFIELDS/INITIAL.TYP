@@ -1,0 +1,30 @@
+{
+		Angle		Angles,
+		UIDBand		UniqueIDBand,
+		Shape		ShapeNum,
+		Action		BFieldWaypointActions,
+		Side		Nationality,
+		Type		SquadSelect,
+		Duty		DutyType,
+		MoveCode	AutoMoveCodeTypeSelect,
+		Skill		SkillType,
+		Morale		MoraleType,
+		Character	CharacterType,
+//DeadCode DAW 08Apr96 		Event		BFieldEvents,
+		Int		ranges,
+		Int		QuitGameConditions,		//RDH 09Sep96
+		Int		ViewTarg,		
+		Int		ViewMode,	
+		Int		ViewSpec,
+		Int		ZmRtFlags,
+		Int		ViewPanRate,
+		Int		ViewCutType,
+		Int		DeathType,
+		Int		FileNum,
+		Int		ForceType,
+//DEADCODE JIM 04/03/99 		PaintScheme	PaintSchemes,
+//DEADCODE JIM 04/03/99 		Squadron	SquadNames,
+		Squadron	CallNames,
+		Formation	FormationTypeIndex,		//MS 16Aug96
+		Formation	SquadronTypeIndex		//MS 16Aug96
+}

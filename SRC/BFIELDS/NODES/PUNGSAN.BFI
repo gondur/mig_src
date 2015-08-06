@@ -1,0 +1,213 @@
+	SimpleItem	PUNGSAN_1819,
+	SimpleItem	PUNGSAN_2012,
+	SimpleItem	PUNGSAN_2013,
+	SimpleItem	PUNGSAN_2014,
+	SimpleItem	PUNGSAN_2015,
+	SimpleItem	PUNGSAN_2017,
+	SimpleItem	PUNGSAN_2018,
+	SimpleItem	PUNGSAN_2019,
+	SimpleItem	PUNGSAN_2200,
+	SimpleItem	PUNGSAN_2201,
+	SimpleItem	PUNGSAN_2202,
+	SimpleItem	PUNGSAN_2203,
+	SimpleItem	PUNGSAN_2204,
+	SimpleItem	PUNGSAN_2206,
+	SimpleItem	PUNGSAN_2207,
+	BattleField
+	{
+		FileName	FIL_1_PUNGSAN=PUNGSAN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SdRdPungsan,
+		ItemGroup
+		{
+			SimpleItem	PUNGSAN_1819=
+			{
+				Posn
+				{
+					Abs
+					{	X	73500672,
+						Z	97338368
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	PUNGSAN_2200=
+			{
+				Posn
+				{
+					Abs
+					{	X	73487360,
+						Z	97367040
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			},
+			SimpleItem	PUNGSAN_2201=
+			{
+				Posn
+				{
+					Abs
+					{	X	73468928,
+						Z	97368064
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	PUNGSAN_2202=
+			{
+				Posn
+				{
+					Abs
+					{	X	73500672,
+						Z	97358848
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP3
+			},
+			SimpleItem	PUNGSAN_2203=
+			{
+				Posn
+				{
+					Abs
+					{	X	73516032,
+						Z	97348608
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	PUNGSAN_2204=
+			{
+				Posn
+				{
+					Abs
+					{	X	73540608,
+						Z	97364992
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			},
+			SimpleItem	PUNGSAN_2206=
+			{
+				Posn
+				{
+					Abs
+					{	X	73561088,
+						Z	97354752
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	PUNGSAN_2207=
+			{
+				Posn
+				{
+					Abs
+					{	X	73543680,
+						Z	97343488
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP1
+			}
+		}
+	},
+	ItemGroup
+	{	Target	UID_StPungsan,
+		ItemGroup
+		{
+				SimpleItem	PUNGSAN_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	73397248,
+							Z	97451008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	PUNGSAN_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	73404416,
+							Z	97408000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	PUNGSAN_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	73475072,
+							Z	97443840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	PUNGSAN_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	73441280,
+							Z	97394688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	PUNGSAN_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	73426944,
+							Z	97477632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	PUNGSAN_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	73476096,
+							Z	97406976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	PUNGSAN_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	73464832,
+							Z	97478656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				}
+		}	}
+	};

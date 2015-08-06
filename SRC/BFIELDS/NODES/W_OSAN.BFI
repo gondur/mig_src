@@ -1,0 +1,234 @@
+	SimpleItem	w_osan_0884,
+	SimpleItem	w_osan_0886,
+	SimpleItem	w_osan_0888,
+	SimpleItem	w_osan_088d,
+	SimpleItem	w_osan_0bff,
+	SimpleItem	w_osan_0bfe,
+	SimpleItem	w_osan_0bfd,
+	SimpleItem	w_osan_0bfc,
+	SimpleItem	w_osan_0bfb,
+	SimpleItem	w_osan_0bfa,
+	SimpleItem	w_osan_0bf9,
+	SimpleItem	w_osan_0bf8,
+	SimpleItem	w_osan_0bf7,
+	SimpleItem	w_osan_0bf6,
+	SimpleItem	w_osan_0bf5,
+	SimpleItem	w_osan_0bf4,
+	BattleField
+	{
+		FileName	FIL_1_w_osan=w_osan.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	w_osan_0bff=
+			{
+				Posn
+				{
+					Abs
+					{	X	64035840,
+						Z	57264128
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1e_o,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0bfe=
+			{
+				Posn
+				{
+					Abs
+					{	X	63699968,
+						Z	57256960
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1c_o,
+				Shape		HUT
+			},
+			SimpleItem	w_osan_0bfd=
+			{
+				Posn
+				{
+					Abs
+					{	X	63606784,
+						Z	57229312
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1b_o,
+				Shape		HUT
+			},
+			SimpleItem	w_osan_0bfc=
+			{
+				Posn
+				{
+					Abs
+					{	X	63517696,
+						Z	57148416
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1a_o,
+				Shape		HUT
+			},
+			SimpleItem	w_osan_0bfb=
+			{
+				Posn
+				{
+					Abs
+					{	X	63850496,
+						Z	57212928
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1d,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0bfa=
+			{
+				Posn
+				{
+					Abs
+					{	X	63987712,
+						Z	57199616
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1e,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0bf9=
+			{
+				Posn
+				{
+					Abs
+					{	X	64019456,
+						Z	57057280
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1f,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0bf8=
+			{
+				Posn
+				{
+					Abs
+					{	X	63584256,
+						Z	57104384
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1a,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0bf7=
+			{
+				Posn
+				{
+					Abs
+					{	X	63666176,
+						Z	57174016
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1b,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0bf6=
+			{
+				Posn
+				{
+					Abs
+					{	X	63749120,
+						Z	57179136
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1c,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0bf5=
+			{
+				Posn
+				{
+					Abs
+					{	X	63807488,
+						Z	57283584
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1d_o,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0bf4=
+			{
+				Posn
+				{
+					Abs
+					{	X	64076800,
+						Z	57105408
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1f_o,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0884=
+			{
+				Posn
+				{
+					Abs
+					{	X	63537152,
+						Z	57528320
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_WP1,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0886=
+			{
+				Posn
+				{
+					Abs
+					{	X	63610880,
+						Z	57473024
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_WP2,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_0888=
+			{
+				Posn
+				{
+					Abs
+					{	X	63652864,
+						Z	57353216
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_WP3,
+				Shape		EMPTY2
+			},
+			SimpleItem	w_osan_088d=
+			{
+				Posn
+				{
+					Abs
+					{	X	63721472,
+						Z	57275392
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_WP4,
+				Shape		EMPTY2
+			}
+		}
+	};

@@ -1,0 +1,82 @@
+	WayPoint	RDP_MAIN_0107,
+	WayPoint	RDP_MAIN_0108,
+	GroundItem	RDP_MAIN_3082,
+	BattleField
+	{
+		FileName	FIL_1_RDP_MAIN=RDP_MAIN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdPyongyangM,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdPyongyangM, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				},
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdPyongyangM, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	53102795,
+						Z	77751696
+					}
+				},
+				Route
+				{
+					WayPoint	RDP_MAIN_0107=
+					{
+						Posn
+						{
+							Abs
+							{	X	53058558,
+								Z	77701315
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDP_MAIN_0108=
+					{
+						Posn
+						{
+							Abs
+							{	X	53037258,
+								Z	77701315
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDP_MAIN_3082=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CHTRCK,
+					Vel	112
+			}	}	}
+	};

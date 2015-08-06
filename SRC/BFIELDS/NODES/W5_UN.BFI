@@ -1,0 +1,429 @@
+	SimpleItem	W5_UN_0880,
+	SimpleItem	W5_UN_0883,
+	SimpleItem	W5_UN_0886,
+	SimpleItem	W5_UN_088a,
+	SimpleItem	W5_UN_088d,
+	SimpleItem	W5_UN_0890,
+	SimpleItem	W5_UN_0893,
+	SimpleItem	W5_UN_0896,
+	SimpleItem	W5_UN_089a,
+	SimpleItem	W5_UN_089d,
+	SimpleItem	W5_UN_08a0,
+	SimpleItem	W5_UN_08a4,
+	SimpleItem	W5_UN_08a6,
+	SimpleItem	W5_UN_08a9,
+	SimpleItem	W5_UN_08b5,
+	SimpleItem	W5_UN_08b8,
+	SimpleItem	W5_UN_08bb,
+	SimpleItem	W5_UN_08be,
+	SimpleItem	W5_UN_08c2,
+	SimpleItem	W5_UN_08c5,
+	SimpleItem	W5_UN_08c8,
+	SimpleItem	W5_UN_08ca,
+	SimpleItem	W5_UN_08cd,
+	SimpleItem	W5_UN_08cf,
+	SimpleItem	W5_UN_08d3,
+	SimpleItem	W5_UN_08d5,
+	SimpleItem	W5_UN_08d9,
+	SimpleItem	W5_UN_08dc,
+	SimpleItem	W5_UN_08df,
+	SimpleItem	W5_UN_0bee,
+	BattleField
+	{
+		FileName	FIL_1_W5_UN=W5_UN.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	W5_UN_0bee=
+			{
+				Posn
+				{
+					Abs
+					{	X	61221888,
+						Z	64566272
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1a,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_0880=
+			{
+				Posn
+				{
+					Abs
+					{	X	61177856,
+						Z	64628736
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1a_o,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_0883=
+			{
+				Posn
+				{
+					Abs
+					{	X	61113344,
+						Z	65069056
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1b,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_0886=
+			{
+				Posn
+				{
+					Abs
+					{	X	61018112,
+						Z	65082368
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1b_o,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_088a=
+			{
+				Posn
+				{
+					Abs
+					{	X	61159424,
+						Z	65060864
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1b_i,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_088d=
+			{
+				Posn
+				{
+					Abs
+					{	X	61233152,
+						Z	64523264
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1a_i,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_0890=
+			{
+				Posn
+				{
+					Abs
+					{	X	61368320,
+						Z	65235968
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1c,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_0893=
+			{
+				Posn
+				{
+					Abs
+					{	X	61345792,
+						Z	65328128
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1c_o,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_0896=
+			{
+				Posn
+				{
+					Abs
+					{	X	61375488,
+						Z	65204224
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1c_i,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_089a=
+			{
+				Posn
+				{
+					Abs
+					{	X	61608960,
+						Z	65012736
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1d,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_089d=
+			{
+				Posn
+				{
+					Abs
+					{	X	61632512,
+						Z	65105920
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1d_o,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_08a0=
+			{
+				Posn
+				{
+					Abs
+					{	X	61624320,
+						Z	64964608
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1d_i,
+				Shape		HUT
+			},
+			SimpleItem	W5_UN_08a4=
+			{
+				Posn
+				{
+					Abs
+					{	X	61416448,
+						Z	64523264
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_2_a,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08a6=
+			{
+				Posn
+				{
+					Abs
+					{	X	61573120,
+						Z	64691200
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_2c,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08a9=
+			{
+				Posn
+				{
+					Abs
+					{	X	61456384,
+						Z	64670720
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_2b,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08b5=
+			{
+				Posn
+				{
+					Abs
+					{	X	61455360,
+						Z	64711680
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_2b_o,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08b8=
+			{
+				Posn
+				{
+					Abs
+					{	X	61481984,
+						Z	64612352
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_2b_i,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08bb=
+			{
+				Posn
+				{
+					Abs
+					{	X	61573120,
+						Z	64729088
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_2c_o,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08be=
+			{
+				Posn
+				{
+					Abs
+					{	X	61571072,
+						Z	64650240
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_2c_i,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08c2=
+			{
+				Posn
+				{
+					Abs
+					{	X	61367296,
+						Z	64529408
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_2a_o,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08c5=
+			{
+				Posn
+				{
+					Abs
+					{	X	61420544,
+						Z	64479232
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_2a_i,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08c8=
+			{
+				Posn
+				{
+					Abs
+					{	X	61505536,
+						Z	64126976
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_3a,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08ca=
+			{
+				Posn
+				{
+					Abs
+					{	X	61589504,
+						Z	64123904
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08cd=
+			{
+				Posn
+				{
+					Abs
+					{	X	61500416,
+						Z	64167936
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_3a_o,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08cf=
+			{
+				Posn
+				{
+					Abs
+					{	X	61480960,
+						Z	64094208
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_3a_i,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08d3=
+			{
+				Posn
+				{
+					Abs
+					{	X	61585408,
+						Z	64173056
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_3b_o,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08d5=
+			{
+				Posn
+				{
+					Abs
+					{	X	61581312,
+						Z	64088064
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_3b_i,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08d9=
+			{
+				Posn
+				{
+					Abs
+					{	X	61569024,
+						Z	63757312
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_4a,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08dc=
+			{
+				Posn
+				{
+					Abs
+					{	X	61575168,
+						Z	63793152
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_4a_o,
+				Shape		BEXP
+			},
+			SimpleItem	W5_UN_08df=
+			{
+				Posn
+				{
+					Abs
+					{	X	61559808,
+						Z	63722496
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_4a_i,
+				Shape		BEXP
+			}
+		}
+	};

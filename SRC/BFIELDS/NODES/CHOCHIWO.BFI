@@ -1,0 +1,485 @@
+	SimpleItem	CHOCHIWO_040c,
+	SimpleItem	CHOCHIWO_040f,
+	SimpleItem	CHOCHIWO_0412,
+	SimpleItem	CHOCHIWO_0415,
+	SimpleItem	CHOCHIWO_0417,
+	SimpleItem	CHOCHIWO_041b,
+	SimpleItem	CHOCHIWO_041e,
+	SimpleItem	CHOCHIWO_0423,
+	SimpleItem	CHOCHIWO_0426,
+	SimpleItem	CHOCHIWO_0429,
+	SimpleItem	CHOCHIWO_042b,
+	SimpleItem	CHOCHIWO_042d,
+	SimpleItem	CHOCHIWO_042f,
+	SimpleItem	CHOCHIWO_0436,
+	SimpleItem	CHOCHIWO_1803,
+	SimpleItem	CHOCHIWO_1804,
+	SimpleItem	CHOCHIWO_1805,
+	SimpleItem	CHOCHIWO_1806,
+	SimpleItem	CHOCHIWO_1807,
+	SimpleItem	CHOCHIWO_1808,
+	SimpleItem	CHOCHIWO_2004,
+	SimpleItem	CHOCHIWO_2005,
+	SimpleItem	CHOCHIWO_2007,
+	SimpleItem	CHOCHIWO_2008,
+	SimpleItem	CHOCHIWO_2009,
+	SimpleItem	CHOCHIWO_200a,
+	SimpleItem	CHOCHIWO_200b,
+	SimpleItem	CHOCHIWO_2800,
+	SimpleItem	CHOCHIWO_2801,
+	SimpleItem	CHOCHIWO_2802,
+	SimpleItem	CHOCHIWO_2803,
+	SimpleItem	CHOCHIWO_2804,
+	SimpleItem	CHOCHIWO_2805,
+	SimpleItem	CHOCHIWO_2806,
+	SimpleItem	CHOCHIWO_2807,
+	SimpleItem	CHOCHIWO_2808,
+	BattleField
+	{
+		FileName	FIL_1_CHOCHIWO=CHOCHIWO.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StChochiwon,
+		ItemGroup
+		{
+				SimpleItem	CHOCHIWO_040c=
+				{
+					Posn
+					{
+						Abs
+						{	X	66006016,
+							Z	50797568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	CHOCHIWO_040f=
+				{
+					Posn
+					{
+						Abs
+						{	X	66001920,
+							Z	50979840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHOCHIWO_0412=
+				{
+					Posn
+					{
+						Abs
+						{	X	66020352,
+							Z	50999296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHOCHIWO_0415=
+				{
+					Posn
+					{
+						Abs
+						{	X	65926144,
+							Z	50933760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHOCHIWO_0417=
+				{
+					Posn
+					{
+						Abs
+						{	X	65907712,
+							Z	50971648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHOCHIWO_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	65913856,
+							Z	50897920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHOCHIWO_041e=
+				{
+					Posn
+					{
+						Abs
+						{	X	65975296,
+							Z	50809856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHOCHIWO_0423=
+				{
+					Posn
+					{
+						Abs
+						{	X	65944576,
+							Z	50886656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHOCHIWO_0426=
+				{
+					Posn
+					{
+						Abs
+						{	X	65950720,
+							Z	50889728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHOCHIWO_0429=
+				{
+					Posn
+					{
+						Abs
+						{	X	65931264,
+							Z	51021824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHOCHIWO_042b=
+				{
+					Posn
+					{
+						Abs
+						{	X	65963008,
+							Z	51067904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHOCHIWO_042d=
+				{
+					Posn
+					{
+						Abs
+						{	X	65961984,
+							Z	50999296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHOCHIWO_042f=
+				{
+					Posn
+					{
+						Abs
+						{	X	66588672,
+							Z	51130368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	CHOCHIWO_0436=
+				{
+					Posn
+					{
+						Abs
+						{	X	66009088,
+							Z	50941952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHOCHIWO_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	65949696,
+							Z	50872320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHOCHIWO_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	65954816,
+							Z	50857984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHOCHIWO_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	66026496,
+							Z	50962432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHOCHIWO_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	66032640,
+							Z	50892800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHOCHIWO_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	65984512,
+							Z	50954240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHOCHIWO_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	65936384,
+							Z	50907136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHOCHIWO_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	66039808,
+							Z	50924544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHOCHIWO_2808=
+				{
+					Posn
+					{
+						Abs
+						{	X	65983488,
+							Z	50884608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_MyBlChochiwon,
+		ItemGroup
+		{
+				SimpleItem	CHOCHIWO_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	65995776,
+							Z	50852864
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOCHIWO_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	65935360,
+							Z	50868224
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOCHIWO_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	65980416,
+							Z	50834432
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOCHIWO_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	66024448,
+							Z	50853888
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOCHIWO_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	66006016,
+							Z	50892800
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOCHIWO_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	65993728,
+							Z	50914304
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOCHIWO_2800=
+				{
+					Posn
+					{
+						Abs
+						{	X	66012160,
+							Z	50870272
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	CHOCHIWO_2801=
+				{
+					Posn
+					{
+						Abs
+						{	X	65966080,
+							Z	50886656
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	CHOCHIWO_2802=
+				{
+					Posn
+					{
+						Abs
+						{	X	65975296,
+							Z	50863104
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	CHOCHIWO_2803=
+				{
+					Posn
+					{
+						Abs
+						{	X	65990656,
+							Z	50864128
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	CHOCHIWO_2804=
+				{
+					Posn
+					{
+						Abs
+						{	X	65965056,
+							Z	50922496
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		FUELS
+				},
+				SimpleItem	CHOCHIWO_2805=
+				{
+					Posn
+					{
+						Abs
+						{	X	65965056,
+							Z	50908160
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				},
+				SimpleItem	CHOCHIWO_2806=
+				{
+					Posn
+					{
+						Abs
+						{	X	65999872,
+							Z	50869248
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	CHOCHIWO_2807=
+				{
+					Posn
+					{
+						Abs
+						{	X	65949696,
+							Z	50946048
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		CIVI05
+				}
+		}	}
+	};

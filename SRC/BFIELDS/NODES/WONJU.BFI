@@ -1,0 +1,456 @@
+	WayPoint	Wonju_0100,
+	WayPoint	Wonju_0101,
+	SimpleItem	Wonju_150e,
+	SimpleItem	Wonju_150f,
+	SimpleItem	Wonju_1510,
+	SimpleItem	Wonju_1511,
+	SimpleItem	Wonju_1512,
+	SimpleItem	Wonju_1513,
+	SimpleItem	Wonju_1514,
+	SimpleItem	Wonju_1515,
+	SimpleItem	Wonju_1516,
+	SimpleItem	Wonju_1517,
+	SimpleItem	Wonju_1a17,
+	SimpleItem	Wonju_1a18,
+	SimpleItem	Wonju_1a19,
+	SimpleItem	Wonju_1a1a,
+	SimpleItem	Wonju_1a1b,
+	SimpleItem	Wonju_1a1c,
+	SimpleItem	Wonju_1a1d,
+	SimpleItem	Wonju_1a1e,
+	SimpleItem	Wonju_1a1f,
+	SimpleItem	Wonju_1a20,
+	SimpleItem	Wonju_1a21,
+	SimpleItem	Wonju_1a22,
+	SimpleItem	Wonju_1a23,
+	SimpleItem	Wonju_250b,
+	SimpleItem	Wonju_250c,
+	SimpleItem	Wonju_250d,
+	SimpleItem	Wonju_250e,
+	SimpleItem	Wonju_250f,
+	SimpleItem	Wonju_2510,
+	SimpleItem	Wonju_2511,
+	GroundItem	Wonju_2f40,
+	BattleField
+	{
+		FileName	FIL_1_Wonju=Wonju.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SdRdWonju,
+		ItemGroup
+		{
+				SimpleItem	Wonju_150e=
+				{
+					Posn
+					{
+						Abs
+						{	X	71825408,
+							Z	59018240
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Wonju_150f=
+				{
+					Posn
+					{
+						Abs
+						{	X	71579648,
+							Z	59282432
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Wonju_1510=
+				{
+					Posn
+					{
+						Abs
+						{	X	71551488,
+							Z	59234816
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Wonju_1511=
+				{
+					Posn
+					{
+						Abs
+						{	X	71598592,
+							Z	59233280
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Wonju_1512=
+				{
+					Posn
+					{
+						Abs
+						{	X	71570944,
+							Z	59207168
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Wonju_1513=
+				{
+					Posn
+					{
+						Abs
+						{	X	71525376,
+							Z	59127296
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Wonju_1514=
+				{
+					Posn
+					{
+						Abs
+						{	X	71570944,
+							Z	59122688
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Wonju_1515=
+				{
+					Posn
+					{
+						Abs
+						{	X	71624704,
+							Z	59095552
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Wonju_1516=
+				{
+					Posn
+					{
+						Abs
+						{	X	71631360,
+							Z	59150336
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Wonju_1517=
+				{
+					Posn
+					{
+						Abs
+						{	X	71360512,
+							Z	59254272
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Wonju_250b=
+				{
+					Posn
+					{
+						Abs
+						{	X	71581184,
+							Z	59243520
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Wonju_250c=
+				{
+					Posn
+					{
+						Abs
+						{	X	71581696,
+							Z	59226624
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Wonju_250d=
+				{
+					Posn
+					{
+						Abs
+						{	X	71567872,
+							Z	59245056
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Wonju_250e=
+				{
+					Posn
+					{
+						Abs
+						{	X	71672832,
+							Z	59130368
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	Wonju_250f=
+				{
+					Posn
+					{
+						Abs
+						{	X	71632384,
+							Z	59112448
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	Wonju_2510=
+				{
+					Posn
+					{
+						Abs
+						{	X	71523328,
+							Z	59141120
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	Wonju_2511=
+				{
+					Posn
+					{
+						Abs
+						{	X	71579648,
+							Z	59136512
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StWonju,
+		ItemGroup
+		{
+				SimpleItem	Wonju_1a17=
+				{
+					Posn
+					{
+						Abs
+						{	X	71538176,
+							Z	59260416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Wonju_1a18=
+				{
+					Posn
+					{
+						Abs
+						{	X	71536640,
+							Z	59174400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI03
+				},
+				SimpleItem	Wonju_1a19=
+				{
+					Posn
+					{
+						Abs
+						{	X	71550464,
+							Z	59279360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Wonju_1a1a=
+				{
+					Posn
+					{
+						Abs
+						{	X	71602688,
+							Z	59142144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	Wonju_1a1b=
+				{
+					Posn
+					{
+						Abs
+						{	X	71619584,
+							Z	59218944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Wonju_1a1c=
+				{
+					Posn
+					{
+						Abs
+						{	X	71627776,
+							Z	59196416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	Wonju_1a1d=
+				{
+					Posn
+					{
+						Abs
+						{	X	71567872,
+							Z	59090944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	Wonju_1a1e=
+				{
+					Posn
+					{
+						Abs
+						{	X	71528448,
+							Z	59104768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	Wonju_1a1f=
+				{
+					Posn
+					{
+						Abs
+						{	X	71382016,
+							Z	59241472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	Wonju_1a20=
+				{
+					Posn
+					{
+						Abs
+						{	X	71514624,
+							Z	59198976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	Wonju_1a21=
+				{
+					Posn
+					{
+						Abs
+						{	X	71651328,
+							Z	59124736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	Wonju_1a22=
+				{
+					Posn
+					{
+						Abs
+						{	X	71547392,
+							Z	59198464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Wonju_1a23=
+				{
+					Posn
+					{
+						Abs
+						{	X	71548416,
+							Z	59160064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	71574945,
+						Z	59291893
+					}
+				},
+				Route
+				{
+					WayPoint	Wonju_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	71577239,
+								Z	59210628
+							}
+						},
+						Vel	80,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	Wonju_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	71576256,
+								Z	59143780
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		1,
+				Formation	SQUAD_FLATV_Right,
+				GroundItem	Wonju_2f40=
+				{
+					BlueCombatVehicleBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	STEPTO,
+					Vel	79
+			}	}	}
+	};

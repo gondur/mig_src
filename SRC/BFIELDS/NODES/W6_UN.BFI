@@ -1,0 +1,37 @@
+	SimpleItem	W6_UN_089b,
+	SimpleItem	W6_UN_08a1,
+	BattleField
+	{
+		FileName	FIL_1_W6_UN=W6_UN.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	W6_UN_089b=
+			{
+				Posn
+				{
+					Abs
+					{	X	58458112,
+						Z	69898240
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_1a,
+				Shape		HUT
+			},
+			SimpleItem	W6_UN_08a1=
+			{
+				Posn
+				{
+					Abs
+					{	X	52819968,
+						Z	77391872
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		HUT
+			}
+		}
+	};

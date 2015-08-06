@@ -1,0 +1,77 @@
+	SimpleItem	KAPSAN_2007,
+//DeadCode MS 16Jun99 	SimpleItem	KAPSAN_2008,
+//DeadCode MS 16Jun99 	SimpleItem	KAPSAN_2009,
+//DeadCode MS 16Jun99 	SimpleItem	KAPSAN_200a,
+//DeadCode MS 16Jun99 	SimpleItem	KAPSAN_200b,
+	BattleField
+	{
+		FileName	FIL_1_KAPSAN=KAPSAN.BF,
+		Title	{},
+		Comment	{},
+	ItemGroup
+	{	Target	UID_StKapsan,
+		ItemGroup
+		{
+			SimpleItem	KAPSAN_2007=
+			{
+				Posn
+				{
+					Abs
+					{	X	74285056,
+						Z	100583424
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3	//V1NS
+			}
+//DeadCode MS 16Jun99 			SimpleItem	KAPSAN_2008=
+//DeadCode MS 16Jun99 			{
+//DeadCode MS 16Jun99 				Posn
+//DeadCode MS 16Jun99 				{
+//DeadCode MS 16Jun99 					Abs
+//DeadCode MS 16Jun99 					{	X	74274816,
+//DeadCode MS 16Jun99 						Z	100604928
+//DeadCode MS 16Jun99 					}
+//DeadCode MS 16Jun99 				},
+//DeadCode MS 16Jun99 				UIDBand		AmberCivilianBAND,
+//DeadCode MS 16Jun99 				Shape		EMPTY2	//V2EW
+//DeadCode MS 16Jun99 			},
+//DeadCode MS 16Jun99 			SimpleItem	KAPSAN_2009=
+//DeadCode MS 16Jun99 			{
+//DeadCode MS 16Jun99 				Posn
+//DeadCode MS 16Jun99 				{
+//DeadCode MS 16Jun99 					Abs
+//DeadCode MS 16Jun99 					{	X	74263552,
+//DeadCode MS 16Jun99 						Z	100579328
+//DeadCode MS 16Jun99 					}
+//DeadCode MS 16Jun99 				},
+//DeadCode MS 16Jun99 				UIDBand		AmberCivilianBAND,
+//DeadCode MS 16Jun99 				Shape		EMPTY2	//V4NWSE
+//DeadCode MS 16Jun99 			},
+//DeadCode MS 16Jun99 			SimpleItem	KAPSAN_200a=
+//DeadCode MS 16Jun99 			{
+//DeadCode MS 16Jun99 				Posn
+//DeadCode MS 16Jun99 				{
+//DeadCode MS 16Jun99 					Abs
+//DeadCode MS 16Jun99 					{	X	74252288,
+//DeadCode MS 16Jun99 						Z	100552704
+//DeadCode MS 16Jun99 					}
+//DeadCode MS 16Jun99 				},
+//DeadCode MS 16Jun99 				UIDBand		AmberCivilianBAND,
+//DeadCode MS 16Jun99 				Shape		EMPTY2	//V2EW
+//DeadCode MS 16Jun99 			},
+//DeadCode MS 16Jun99 			SimpleItem	KAPSAN_200b=
+//DeadCode MS 16Jun99 			{
+//DeadCode MS 16Jun99 				Posn
+//DeadCode MS 16Jun99 				{
+//DeadCode MS 16Jun99 					Abs
+//DeadCode MS 16Jun99 					{	X	74242048,
+//DeadCode MS 16Jun99 						Z	100592640
+//DeadCode MS 16Jun99 					}
+//DeadCode MS 16Jun99 				},
+//DeadCode MS 16Jun99 				UIDBand		AmberCivilianBAND,
+//DeadCode MS 16Jun99 				Shape		EMPTY2	//V2EW
+//DeadCode MS 16Jun99 			}
+		}
+	}
+	};

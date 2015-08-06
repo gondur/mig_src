@@ -1,0 +1,431 @@
+	WayPoint	RAIL20_0100,
+	WayPoint	RAIL20_0101,
+	WayPoint	RAIL20_0102,
+	WayPoint	RAIL20_0103,
+	WayPoint	RAIL20_0104,
+	WayPoint	RAIL20_0105,
+	WayPoint	RAIL20_0106,
+	WayPoint	RAIL20_0107,
+	SimpleItem	RAIL20_0416,
+	SimpleItem	RAIL20_0419,
+	SimpleItem	RAIL20_041c,
+	SimpleItem	RAIL20_041f,
+	SimpleItem	RAIL20_0422,
+	SimpleItem	RAIL20_0425,
+	SimpleItem	RAIL20_0428,
+	SimpleItem	RAIL20_042b,
+	SimpleItem	RAIL20_042e,
+	SimpleItem	RAIL20_0431,
+	SimpleItem	RAIL20_0434,
+	SimpleItem	RAIL20_0437,
+	SimpleItem	RAIL20_043a,
+	GroundItem	RAIL20_3080,
+	GroundItem	RAIL20_3081,
+	BattleField
+	{
+		FileName	FIL_1_RAIL20=RAIL20.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target		UID_RAIL_Kowon2Yangdok,
+		ItemGroup
+		{
+//====
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	61784480,
+						Z	80866304
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	61765536,
+						Z	80718848
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	61752416,
+						Z	80698368
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	61732960,
+						Z	80652800
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	61665696,
+						Z	81526784
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	61644896,
+						Z	81474560
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	61666720,
+						Z	81427968
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	61705824,
+						Z	81267200
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+//====
+			SimpleItem	RAIL20_0416=
+			{
+				Posn
+				{
+					Abs
+					{	X	61612544,
+						Z	80163328
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CHLBAA
+			},
+			SimpleItem	RAIL20_0419=
+			{
+				Posn
+				{
+					Abs
+					{	X	61723648,
+						Z	80557056
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CHLBAA
+			},
+			SimpleItem	RAIL20_041c=
+			{
+				Posn
+				{
+					Abs
+					{	X	61667840,
+						Z	80293376
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem	RAIL20_041f=
+			{
+				Posn
+				{
+					Abs
+					{	X	61665280,
+						Z	80274944
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+			SimpleItem	RAIL20_0422=
+			{
+				Posn
+				{
+					Abs
+					{	X	61666816,
+						Z	80284672
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+			SimpleItem	RAIL20_0425=
+			{
+				Posn
+				{
+					Abs
+					{	X	61727232,
+						Z	80615936
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CHLBAA
+			},
+			SimpleItem	RAIL20_0428=
+			{
+				Posn
+				{
+					Abs
+					{	X	61783040,
+						Z	81003520
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CHLBAA
+			},
+			SimpleItem	RAIL20_042b=
+			{
+				Posn
+				{
+					Abs
+					{	X	61742080,
+						Z	81137664
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem	RAIL20_042e=
+			{
+				Posn
+				{
+					Abs
+					{	X	61739008,
+						Z	81149440
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	RAIL20_0431=
+			{
+				Posn
+				{
+					Abs
+					{	X	61745152,
+						Z	81128960
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem	RAIL20_0434=
+			{
+				Posn
+				{
+					Abs
+					{	X	61655040,
+						Z	81471488
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		CHLBAA
+			},
+			SimpleItem	RAIL20_0437=
+			{
+				Posn
+				{
+					Abs
+					{	X	61688832,
+						Z	81319424
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+			SimpleItem	RAIL20_043a=
+			{
+				Posn
+				{
+					Abs
+					{	X	61698560,
+						Z	81652736
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHLBAA
+			}
+		},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	61792256,
+					Z	80951808
+				}
+			},
+			Route
+			{
+				WayPoint	RAIL20_0102=
+				{
+					Posn
+					{
+						Abs
+						{	X	61780480,
+							Z	80866304
+						}
+					},
+					Vel	93,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL20_0103=
+				{
+					Posn
+					{
+						Abs
+						{	X	61761536,
+							Z	80718848
+						}
+					},
+					Vel	93,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL20_0101=
+				{
+					Posn
+					{
+						Abs
+						{	X	61756416,
+							Z	80698368
+						}
+					},
+					Vel	93,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL20_0100=
+				{
+					Posn
+					{
+						Abs
+						{	X	61736960,
+							Z	80652800
+						}
+					},
+					Vel	93,
+					Action	wpdmbtrkstopno,
+					Range	0
+				}
+			},
+			NumInForm		-2,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	RAIL20_3080=
+			{
+				RedTrainBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	TrainShapeInst1,
+				Vel	84
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	61669888,
+					Z	81552896
+				}
+			},
+			Route
+			{
+				WayPoint	RAIL20_0107=
+				{
+					Posn
+					{
+						Abs
+						{	X	61661696,
+							Z	81526784
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL20_0106=
+				{
+					Posn
+					{
+						Abs
+						{	X	61648896,
+							Z	81474560
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL20_0105=
+				{
+					Posn
+					{
+						Abs
+						{	X	61662720,
+							Z	81427968
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RAIL20_0104=
+				{
+					Posn
+					{
+						Abs
+						{	X	61709824,
+							Z	81267200
+						}
+					},
+					Vel	84,
+					Action	wpdmbtrkstopno,
+					Range	0
+				}
+			},
+			NumInForm		-2,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	RAIL20_3081=
+			{
+				RedTrainBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	TrainShapeInst1,
+				Vel	87
+	}	}	}
+	};

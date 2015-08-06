@@ -1,0 +1,439 @@
+	WayPoint	ROAD29_0100,
+	WayPoint	ROAD29_0101,
+	WayPoint	ROAD29_0102,
+	WayPoint	ROAD29_0103,
+	WayPoint	ROAD29_0104,
+	WayPoint	ROAD29_0105,
+	WayPoint	ROAD29_0106,
+	WayPoint	ROAD29_0107,
+	WayPoint	ROAD29_0108,
+	WayPoint	ROAD29_0109,
+	WayPoint	ROAD29_010a,
+	WayPoint	ROAD29_010b,
+	WayPoint	ROAD29_010c,
+	SimpleItem	ROAD29_041d,
+	SimpleItem	ROAD29_0420,
+	GroundItem	ROAD29_3080,
+	GroundItem	ROAD29_3081,
+	GroundItem	ROAD29_3082,
+	BattleField
+	{
+		FileName	FIL_1_ROAD29=ROAD29.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_ROAD_Seoul2Suwon,
+		ItemGroup
+		{
+
+//---
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62672896,
+						Z	59545088
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62705152,
+						Z	59545088
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62717952,
+						Z	59556864
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62727680,
+						Z	59570688
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62705664,
+						Z	59545600
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62718464,
+						Z	59538432
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62739456,
+						Z	59505664
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62785024,
+						Z	59430912
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62798336,
+						Z	59397120
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62931968,
+						Z	59462144
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62929408,
+						Z	59446272
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62924800,
+						Z	59438592
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem
+			{
+				Posn
+				{
+					Abs
+					{	X	62923776,
+						Z	59421184
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+
+//---
+			SimpleItem	ROAD29_041d=
+			{
+				Posn
+				{
+					Abs
+					{	X	62711808,
+						Z	59545600
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			},
+			SimpleItem	ROAD29_0420=
+			{
+				Posn
+				{
+					Abs
+					{	X	62938624,
+						Z	59160064
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT01
+			}
+		},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	62663168,
+					Z	59548160
+				}
+			},
+			Route
+			{
+				WayPoint	ROAD29_0106=
+				{
+					Posn
+					{
+						Abs
+						{	X	62672896,
+							Z	59545088
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD29_0107=
+				{
+					Posn
+					{
+						Abs
+						{	X	62705152,
+							Z	59545088
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD29_0108=
+				{
+					Posn
+					{
+						Abs
+						{	X	62717952,
+							Z	59556864
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD29_0100=
+				{
+					Posn
+					{
+						Abs
+						{	X	62727680,
+							Z	59570688
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrkstopno,
+					Range	0
+				}
+			},
+			NumInForm		-3,
+			Formation	SQUAD_TRUCKCONVOY,
+			GroundItem	ROAD29_3080=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	84
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	62673920,
+					Z	59546112
+				}
+			},
+			Route
+			{
+				WayPoint	ROAD29_0105=
+				{
+					Posn
+					{
+						Abs
+						{	X	62705664,
+							Z	59545600
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD29_0104=
+				{
+					Posn
+					{
+						Abs
+						{	X	62718464,
+							Z	59538432
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD29_0103=
+				{
+					Posn
+					{
+						Abs
+						{	X	62739456,
+							Z	59505664
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD29_0102=
+				{
+					Posn
+					{
+						Abs
+						{	X	62785024,
+							Z	59430912
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD29_0101=
+				{
+					Posn
+					{
+						Abs
+						{	X	62798336,
+							Z	59397120
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrkstopno,
+					Range	0
+				}
+			},
+			NumInForm	-3,
+			Formation	SQUAD_TRUCKCONVOY,
+			GroundItem	ROAD29_3081=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	98
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	62950912,
+					Z	59501568
+				}
+			},
+			Route
+			{
+				WayPoint	ROAD29_010b=
+				{
+					Posn
+					{
+						Abs
+						{	X	62931968,
+							Z	59462144
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD29_010c=
+				{
+					Posn
+					{
+						Abs
+						{	X	62929408,
+							Z	59446272
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD29_010a=
+				{
+					Posn
+					{
+						Abs
+						{	X	62924800,
+							Z	59438592
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	ROAD29_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	62923776,
+							Z	59421184
+						}
+					},
+					Vel	100,
+					Action	wpdmbtrkstopno,
+					Range	0
+				}
+			},
+			NumInForm	-3,
+			Formation	SQUAD_TRUCKCONVOY,
+			GroundItem	ROAD29_3082=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	95
+	}	}	}
+	};

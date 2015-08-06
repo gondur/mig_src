@@ -1,0 +1,1435 @@
+	SimpleItem	HAMHUNG_0403,
+	SimpleItem	HAMHUNG_1803,
+	SimpleItem	HAMHUNG_1804,
+	SimpleItem	HAMHUNG_1805,
+	SimpleItem	HAMHUNG_1806,
+	SimpleItem	HAMHUNG_1807,
+	SimpleItem	HAMHUNG_1808,
+	SimpleItem	HAMHUNG_1809,
+	SimpleItem	HAMHUNG_180a,
+	SimpleItem	HAMHUNG_180b,
+	SimpleItem	HAMHUNG_180c,
+	SimpleItem	HAMHUNG_2004,
+	SimpleItem	HAMHUNG_2005,
+	SimpleItem	HAMHUNG_2006,
+	SimpleItem	HAMHUNG_2007,
+	SimpleItem	HAMHUNG_2008,
+	SimpleItem	HAMHUNG_2009,
+	SimpleItem	HAMHUNG_200a,
+	SimpleItem	HAMHUNG_200b,
+	SimpleItem	HAMHUNG_200c,
+	SimpleItem	HAMHUNG_200d,
+	SimpleItem	HAMHUNG_200e,
+	SimpleItem	HAMHUNG_200f,
+	SimpleItem	HAMHUNG_2010,
+	SimpleItem	HAMHUNG_2011,
+	SimpleItem	HAMHUNG_2012,
+	SimpleItem	HAMHUNG_2013,
+	SimpleItem	HAMHUNG_2014,
+	SimpleItem	HAMHUNG_2015,
+	SimpleItem	HAMHUNG_2016,
+	SimpleItem	HAMHUNG_2017,
+	SimpleItem	HAMHUNG_2018,
+	SimpleItem	HAMHUNG_2019,
+	SimpleItem	HAMHUNG_201a,
+	SimpleItem	HAMHUNG_201b,
+	SimpleItem	HAMHUNG_201c,
+	SimpleItem	HAMHUNG_201d,
+	SimpleItem	HAMHUNG_201e,
+	SimpleItem	HAMHUNG_201f,
+	SimpleItem	HAMHUNG_2020,
+	SimpleItem	HAMHUNG_2021,
+	SimpleItem	HAMHUNG_2022,
+	SimpleItem	HAMHUNG_2023,
+	SimpleItem	HAMHUNG_2024,
+	SimpleItem	HAMHUNG_2025,
+	SimpleItem	HAMHUNG_2026,
+	SimpleItem	HAMHUNG_2027,
+	SimpleItem	HAMHUNG_2028,
+	SimpleItem	HAMHUNG_2029,
+	SimpleItem	HAMHUNG_202a,
+	SimpleItem	HAMHUNG_202b,
+	SimpleItem	HAMHUNG_202c,
+	SimpleItem	HAMHUNG_202d,
+	SimpleItem	HAMHUNG_202e,
+	SimpleItem	HAMHUNG_202f,
+	SimpleItem	HAMHUNG_2030,
+	SimpleItem	HAMHUNG_2031,
+	SimpleItem	HAMHUNG_2032,
+	SimpleItem	HAMHUNG_2033,
+	SimpleItem	HAMHUNG_2034,
+	SimpleItem	HAMHUNG_2035,
+	SimpleItem	HAMHUNG_2036,
+	SimpleItem	HAMHUNG_2037,
+	SimpleItem	HAMHUNG_2038,
+	SimpleItem	HAMHUNG_2039,
+	SimpleItem	HAMHUNG_203a,
+	SimpleItem	HAMHUNG_203b,
+	SimpleItem	HAMHUNG_203c,
+	SimpleItem	HAMHUNG_203d,
+	SimpleItem	HAMHUNG_203e,
+	SimpleItem	HAMHUNG_203f,
+	SimpleItem	HAMHUNG_2040,
+	SimpleItem	HAMHUNG_2041,
+	SimpleItem	HAMHUNG_2042,
+	SimpleItem	HAMHUNG_2043,
+	SimpleItem	HAMHUNG_2044,
+	SimpleItem	HAMHUNG_2045,
+	SimpleItem	HAMHUNG_2046,
+	SimpleItem	HAMHUNG_2047,
+	SimpleItem	HAMHUNG_2048,
+	SimpleItem	HAMHUNG_2049,
+	SimpleItem	HAMHUNG_204a,
+	SimpleItem	HAMHUNG_204b,
+	SimpleItem	HAMHUNG_204c,
+	SimpleItem	HAMHUNG_204d,
+	SimpleItem	HAMHUNG_204e,
+	SimpleItem	HAMHUNG_204f,
+	SimpleItem	HAMHUNG_2050,
+	SimpleItem	HAMHUNG_2051,
+	SimpleItem	HAMHUNG_2052,
+	SimpleItem	HAMHUNG_2053,
+	SimpleItem	HAMHUNG_2054,
+	SimpleItem	HAMHUNG_2055,
+	SimpleItem	HAMHUNG_2056,
+	SimpleItem	HAMHUNG_2057,
+	SimpleItem	HAMHUNG_2058,
+	SimpleItem	HAMHUNG_2059,
+	SimpleItem	HAMHUNG_205a,
+	SimpleItem	HAMHUNG_205b,
+	SimpleItem	HAMHUNG_205c,
+	SimpleItem	HAMHUNG_205d,
+	SimpleItem	HAMHUNG_205e,
+	SimpleItem	HAMHUNG_205f,
+	SimpleItem	HAMHUNG_2800,
+	SimpleItem	HAMHUNG_2801,
+	SimpleItem	HAMHUNG_2802,
+	SimpleItem	HAMHUNG_2803,
+	SimpleItem	HAMHUNG_2804,
+	SimpleItem	HAMHUNG_2805,
+	BattleField
+	{
+		FileName	FIL_1_HAMHUNG=HAMHUNG.BF,
+		Title	{},
+		Comment	{}
+,
+		
+	ItemGroup
+	{	Target	UID_StHamhung,
+		ItemGroup
+		{
+				SimpleItem	HAMHUNG_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	68251648,
+							Z	87211008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+			SimpleItem	HAMHUNG_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	68108288,
+						Z	87379968
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	HAMHUNG_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	68036608,
+						Z	87490560
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	HAMHUNG_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	68086784,
+						Z	87680000
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	HAMHUNG_2007=
+			{
+				Posn
+				{
+					Abs
+					{	X	68036608,
+						Z	87582720
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	HAMHUNG_2008=
+			{
+				Posn
+				{
+					Abs
+					{	X	68041728,
+						Z	87428096
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CIVI02
+			},
+			SimpleItem	HAMHUNG_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	68157440,
+						Z	87577600
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	HAMHUNG_200a=
+			{
+				Posn
+				{
+					Abs
+					{	X	68036608,
+						Z	87350272
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	HAMHUNG_200b=
+			{
+				Posn
+				{
+					Abs
+					{	X	68001792,
+						Z	87364608
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	HAMHUNG_200c=
+			{
+				Posn
+				{
+					Abs
+					{	X	68009984,
+						Z	87363584
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	HAMHUNG_200d=
+			{
+				Posn
+				{
+					Abs
+					{	X	68018176,
+						Z	87363584
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CHTRCK
+		        },
+				SimpleItem	HAMHUNG_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	67832832,
+							Z	87566336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	HAMHUNG_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	67798016,
+							Z	87629824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	HAMHUNG_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	67864576,
+							Z	87627776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HAMHUNG_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	68120576,
+							Z	87406592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HAMHUNG_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	68109312,
+							Z	87413760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HAMHUNG_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	68098048,
+							Z	87412736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HAMHUNG_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	67975168,
+							Z	87396352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	HAMHUNG_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	67980288,
+							Z	87391232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	HAMHUNG_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	68014080,
+							Z	87315456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	HAMHUNG_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	67993600,
+							Z	87383040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	HAMHUNG_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	68212736,
+							Z	87642112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HAMHUNG_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	68241408,
+							Z	87653376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HAMHUNG_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	68240384,
+							Z	87689216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HAMHUNG_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	68164608,
+							Z	87716864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	68196352,
+							Z	87717888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HAMHUNG_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67947520,
+							Z	87543808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HAMHUNG_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	67905536,
+							Z	87590912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	HAMHUNG_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	68185088,
+							Z	87432192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HAMHUNG_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	68237312,
+							Z	87383040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	68230144,
+							Z	87512064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HAMHUNG_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	68270080,
+							Z	87591936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	68137984,
+							Z	87438336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HAMHUNG_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	68140032,
+							Z	87365632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HAMHUNG_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	68173824,
+							Z	87284736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HAMHUNG_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	68222976,
+							Z	87165952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HAMHUNG_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	68067328,
+							Z	87657472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HAMHUNG_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	68015104,
+							Z	87429120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	68013056,
+							Z	87245824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HAMHUNG_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	67973120,
+							Z	87310336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HAMHUNG_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	67852288,
+							Z	87453696
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HAMHUNG_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67879936,
+							Z	87383040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67784704,
+							Z	87584768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HAMHUNG_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	68159488,
+							Z	87221248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	68352000,
+							Z	87203840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	68388864,
+							Z	87211008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HAMHUNG_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	68377600,
+							Z	87235584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HAMHUNG_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	67881984,
+							Z	87511040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HAMHUNG_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	68109312,
+							Z	87489536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	68103168,
+							Z	87632896
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	68106240,
+							Z	87660544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	68104192,
+							Z	87689216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	68127744,
+							Z	87635968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	68126720,
+							Z	87666688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	68128768,
+							Z	87691264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HAMHUNG_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	68061184,
+							Z	87327744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HAMHUNG_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	67933184,
+							Z	87489536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		BOAT
+				},
+				SimpleItem	HAMHUNG_203c=
+				{
+					Posn
+					{
+						Abs
+						{	X	68122624,
+							Z	87421952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HAMHUNG_203d=
+				{
+					Posn
+					{
+						Abs
+						{	X	68104192,
+							Z	87548928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HAMHUNG_203e=
+				{
+					Posn
+					{
+						Abs
+						{	X	68097024,
+							Z	87587840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HAMHUNG_203f=
+				{
+					Posn
+					{
+						Abs
+						{	X	68234240,
+							Z	87726080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2040=
+				{
+					Posn
+					{
+						Abs
+						{	X	67903488,
+							Z	87366656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI02
+				},
+				SimpleItem	HAMHUNG_2041=
+				{
+					Posn
+					{
+						Abs
+						{	X	67998720,
+							Z	87489536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2042=
+				{
+					Posn
+					{
+						Abs
+						{	X	68201472,
+							Z	87617536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2043=
+				{
+					Posn
+					{
+						Abs
+						{	X	68081664,
+							Z	87625728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2044=
+				{
+					Posn
+					{
+						Abs
+						{	X	68166656,
+							Z	87632896
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2045=
+				{
+					Posn
+					{
+						Abs
+						{	X	68207616,
+							Z	87672832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2046=
+				{
+					Posn
+					{
+						Abs
+						{	X	68153344,
+							Z	87531520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2047=
+				{
+					Posn
+					{
+						Abs
+						{	X	68109312,
+							Z	87436288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2048=
+				{
+					Posn
+					{
+						Abs
+						{	X	68149248,
+							Z	87489536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2049=
+				{
+					Posn
+					{
+						Abs
+						{	X	67886080,
+							Z	87459840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_204a=
+				{
+					Posn
+					{
+						Abs
+						{	X	67889152,
+							Z	87426048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_204b=
+				{
+					Posn
+					{
+						Abs
+						{	X	68005888,
+							Z	87569408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_204c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67976192,
+							Z	87427072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_204d=
+				{
+					Posn
+					{
+						Abs
+						{	X	68106240,
+							Z	87333888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_204e=
+				{
+					Posn
+					{
+						Abs
+						{	X	68033536,
+							Z	87385088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_204f=
+				{
+					Posn
+					{
+						Abs
+						{	X	68003840,
+							Z	87448576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI02
+				},
+				SimpleItem	HAMHUNG_2050=
+				{
+					Posn
+					{
+						Abs
+						{	X	68013056,
+							Z	87532544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI03
+				},
+				SimpleItem	HAMHUNG_2051=
+				{
+					Posn
+					{
+						Abs
+						{	X	68143104,
+							Z	87747584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	67917824,
+							Z	87387136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	68079616,
+							Z	87576576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	HAMHUNG_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	67961856,
+							Z	87451648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HAMHUNG_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	67900416,
+							Z	87330816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HAMHUNG_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	67866624,
+							Z	87257088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HAMHUNG_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	67979264,
+							Z	87269376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HAMHUNG_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	68043776,
+							Z	87451648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI01
+				},
+				SimpleItem	HAMHUNG_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	68161536,
+							Z	87678976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_205a=
+				{
+					Posn
+					{
+						Abs
+						{	X	68311040,
+							Z	87221248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_205b=
+				{
+					Posn
+					{
+						Abs
+						{	X	68311040,
+							Z	87255040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_205c=
+				{
+					Posn
+					{
+						Abs
+						{	X	68308992,
+							Z	87291904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_205d=
+				{
+					Posn
+					{
+						Abs
+						{	X	68354048,
+							Z	87235584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_205e=
+				{
+					Posn
+					{
+						Abs
+						{	X	68345856,
+							Z	87275520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HAMHUNG_205f=
+				{
+					Posn
+					{
+						Abs
+						{	X	68285440,
+							Z	87202816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_MyRdHamhung,
+		ItemGroup
+		{
+				SimpleItem	HAMHUNG_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	68117504,
+							Z	87302144
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HAMHUNG_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	68097024,
+							Z	87275520
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HAMHUNG_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	68041728,
+							Z	87615488
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HAMHUNG_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	68175872,
+							Z	87590912
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HAMHUNG_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	68124672,
+							Z	87710720
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HAMHUNG_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	68050944,
+							Z	87703552
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HAMHUNG_1809=
+				{
+					Posn
+					{
+						Abs
+						{	X	68172800,
+							Z	87481344
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HAMHUNG_180a=
+				{
+					Posn
+					{
+						Abs
+						{	X	68238336,
+							Z	87232512
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HAMHUNG_180b=
+				{
+					Posn
+					{
+						Abs
+						{	X	68141056,
+							Z	87397376
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HAMHUNG_180c=
+				{
+					Posn
+					{
+						Abs
+						{	X	68043776,
+							Z	87537664
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HAMHUNG_2800=
+				{
+					Posn
+					{
+						Abs
+						{	X	68078592,
+							Z	87428096
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	HAMHUNG_2801=
+				{
+					Posn
+					{
+						Abs
+						{	X	68079616,
+							Z	87393280
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	HAMHUNG_2802=
+				{
+					Posn
+					{
+						Abs
+						{	X	68100096,
+							Z	87569408
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SYARD
+				},
+				SimpleItem	HAMHUNG_2803=
+				{
+					Posn
+					{
+						Abs
+						{	X	68079616,
+							Z	87549952
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	HAMHUNG_2804=
+				{
+					Posn
+					{
+						Abs
+						{	X	68113408,
+							Z	87606272
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF2S
+				},
+				SimpleItem	HAMHUNG_2805=
+				{
+					Posn
+					{
+						Abs
+						{	X	68079616,
+							Z	87488512
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF1S
+				}
+		}	}	
+	};

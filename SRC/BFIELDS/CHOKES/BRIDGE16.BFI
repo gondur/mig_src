@@ -1,0 +1,38 @@
+	SimpleItem	BRIDGE16_0455,
+	SimpleItem	BRIDGE16_0459,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE16=BRIDGE16.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlKumjinchon,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE16_0455=
+				{
+					Posn
+					{
+						Abs
+						{	X	67199488,
+							Z	84321280
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE16_0459=
+				{
+					Posn
+					{
+						Abs
+						{	X	67187712,
+							Z	84382208
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

@@ -1,0 +1,884 @@
+	SimpleItem	test1_0301,
+	SimpleItem	test1_0302,
+	SimpleItem	test1_0304,
+	SimpleItem	test1_0308,
+	SimpleItem	test1_030b,
+	SimpleItem	test1_0d3f,
+	SimpleItem	test1_0cff,
+	SimpleItem	test1_0c7f,
+	SimpleItem	test1_0c7e,
+	SimpleItem	test1_0c7c,
+	SimpleItem	test1_0c7b,
+	SimpleItem	test1_0bbf,
+	SimpleItem	test1_0bbe,
+	SimpleItem	test1_0bbd,
+	SimpleItem	test1_0bbc,
+	SimpleItem	test1_0bb9,
+	SimpleItem	test1_0bb8,
+	SimpleItem	test1_0bb7,
+	SimpleItem	test1_0aff,
+	SimpleItem	test1_0afe,
+	SimpleItem	test1_0afd,
+	SimpleItem	test1_0afc,
+	SimpleItem	test1_0afb,
+	SimpleItem	test1_0afa,
+	SimpleItem	test1_0af9,
+	SimpleItem	test1_0af8,
+	SimpleItem	test1_0af7,
+	SimpleItem	test1_0a1f,
+	SimpleItem	test1_0a1e,
+	SimpleItem	test1_0a1d,
+	SimpleItem	test1_0a1c,
+	SimpleItem	test1_0a1a,
+	SimpleItem	test1_0a19,
+	SimpleItem	test1_0a18,
+	SimpleItem	test1_0a17,
+	SimpleItem	test1_0a16,
+	SimpleItem	test1_09bf,
+	SimpleItem	test1_09be,
+	SimpleItem	test1_09bd,
+	SimpleItem	test1_09bc,
+	SimpleItem	test1_09b9,
+	SimpleItem	test1_09b8,
+	SimpleItem	test1_09b7,
+	SimpleItem	test1_09b6,
+	SimpleItem	test1_09b5,
+	SimpleItem	test1_09b4,
+	SimpleItem	test1_09b3,
+	SimpleItem	test1_09b2,
+	SimpleItem	test1_09b1,
+	SimpleItem	test1_09b0,
+	SimpleItem	test1_09af,
+	SimpleItem	test1_05ff,
+	SimpleItem	test1_05fe,
+	SimpleItem	test1_057f,
+	SimpleItem	test1_057e,
+	BattleField
+	{
+		FileName	FIL_1_test1=test1.BF,
+		Title	{Main World},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	test1_0d3f=
+			{
+				Posn
+				{
+					Abs
+					{	X	24728100,
+						Z	27312100
+					}
+				},
+				UIDBand		RedCCCBAND,
+				SetUID	UID_ChNtFlesquieres,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0cff=
+			{
+				Posn
+				{
+					Abs
+					{	X	24387100,
+						Z	26995200
+					}
+				},
+				UIDBand		BLuePortBAND,
+				SetUID	UID_AlTdHavrincourtWd,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0c7f=
+			{
+				Posn
+				{
+					Abs
+					{	X	19106600,
+						Z	26628200
+					}
+				},
+				UIDBand		BlueAirfieldBAND,
+				SetUID	UID_AfAlVertGaland,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0c7e=
+			{
+				Posn
+				{
+					Abs
+					{	X	19183000,
+						Z	28097600
+					}
+				},
+				UIDBand		BlueAirfieldBAND,
+				SetUID	UID_AfAlHauteVisee,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0c7c=
+			{
+				Posn
+				{
+					Abs
+					{	X	22255900,
+						Z	28242400
+					}
+				},
+				UIDBand		BlueAirfieldBAND,
+				SetUID	UID_AfAlBoiryStMartin,
+				Shape		KIMPO
+			},
+			SimpleItem	test1_0c7b=
+			{
+				Posn
+				{
+					Abs
+					{	X	24367000,
+						Z	27216900
+					}
+				},
+				UIDBand		BlueAirfieldBAND,
+				SetUID	UID_AlAfHermies,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0bbf=
+			{
+				Posn
+				{
+					Abs
+					{	X	24916500,
+						Z	29651300
+					}
+				},
+				UIDBand		RedAirfieldBAND,
+				SetUID	UID_AfCpRoucourt,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0bbe=
+			{
+				Posn
+				{
+					Abs
+					{	X	24130700,
+						Z	29835500
+					}
+				},
+				UIDBand		RedAirfieldBAND,
+				SetUID	UID_AfCpDouai,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0bbd=
+			{
+				Posn
+				{
+					Abs
+					{	X	27580900,
+						Z	29834400
+					}
+				},
+				UIDBand		RedAirfieldBAND,
+				SetUID	UID_AfCpAulnoy,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0bbc=
+			{
+				Posn
+				{
+					Abs
+					{	X	25601000,
+						Z	29728900
+					}
+				},
+				UIDBand		RedAirfieldBAND,
+				SetUID	UID_AfCpAniche,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0bb9=
+			{
+				Posn
+				{
+					Abs
+					{	X	26752700,
+						Z	27817700
+					}
+				},
+				UIDBand		RedAirfieldBAND,
+				SetUID	UID_AfCpBevillers,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0bb8=
+			{
+				Posn
+				{
+					Abs
+					{	X	23480400,
+						Z	28026400
+					}
+				},
+				UIDBand		RedAirfieldBAND,
+				SetUID	UID_AfCpRiencourt,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0bb7=
+			{
+				Posn
+				{
+					Abs
+					{	X	24686400,
+						Z	22482400
+					}
+				},
+				UIDBand		RedAirfieldBAND,
+				SetUID	UID_AfCpVilleselve,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0aff=
+			{
+				Posn
+				{
+					Abs
+					{	X	24647700,
+						Z	27338800
+					}
+				},
+				UIDBand		RedMilitaryBAND,
+				SetUID	UID_AtNWFlesquieres,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0afe=
+			{
+				Posn
+				{
+					Abs
+					{	X	24725500,
+						Z	27369000
+					}
+				},
+				UIDBand		RedMilitaryBAND,
+				SetUID	UID_AtNFlesquieres,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0afd=
+			{
+				Posn
+				{
+					Abs
+					{	X	24839400,
+						Z	27436500
+					}
+				},
+				UIDBand		RedMilitaryBAND,
+				SetUID	UID_AtOrival,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0afc=
+			{
+				Posn
+				{
+					Abs
+					{	X	24990400,
+						Z	27459600
+					}
+				},
+				UIDBand		RedMilitaryBAND,
+				SetUID	UID_AtEOrival,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0afb=
+			{
+				Posn
+				{
+					Abs
+					{	X	25070100,
+						Z	27562000
+					}
+				},
+				UIDBand		RedMilitaryBAND,
+				SetUID	UID_AtSCantaing,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0afa=
+			{
+				Posn
+				{
+					Abs
+					{	X	25021700,
+						Z	27524800
+					}
+				},
+				UIDBand		RedMilitaryBAND,
+				SetUID	UID_AtSWCantaing,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0af9=
+			{
+				Posn
+				{
+					Abs
+					{	X	25267700,
+						Z	27677700
+					}
+				},
+				UIDBand		RedMilitaryBAND,
+				SetUID	UID_AtEECantaing,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0af8=
+			{
+				Posn
+				{
+					Abs
+					{	X	25164800,
+						Z	27639200
+					}
+				},
+				UIDBand		RedMilitaryBAND,
+				SetUID	UID_AtECantaing,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0af7=
+			{
+				Posn
+				{
+					Abs
+					{	X	25188300,
+						Z	27687800
+					}
+				},
+				UIDBand		RedMilitaryBAND,
+				SetUID	UID_AtNECantaing,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0a1f=
+			{
+				Posn
+				{
+					Posn
+					{
+						Abs
+						{	X	18214600,
+							Z	28132400
+						}
+					},
+					Rel
+					{	X	10000,
+						Z	10000
+					}
+				},
+				UIDBand		RedVetoedBAND,
+				SetUID	UID_ToAlCandas,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0a1e=
+			{
+				Posn
+				{
+					Posn
+					{
+						Abs
+						{	X	27580900,
+							Z	29834400
+						}
+					},
+					Rel
+					{	X	10000,
+						Z	10000
+					}
+				},
+				UIDBand		RedVetoedBAND,
+				SetUID	UID_ToCpAulnoy,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0a1d=
+			{
+				Posn
+				{
+					Posn
+					{
+						Abs
+						{	X	25601000,
+							Z	29728900
+						}
+					},
+					Rel
+					{	X	10000,
+						Z	10000
+					}
+				},
+				UIDBand		RedVetoedBAND,
+				SetUID	UID_ToCpAniche,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0a1c=
+			{
+				Posn
+				{
+					Posn
+					{
+						Abs
+						{	X	25368500,
+							Z	29313600
+						}
+					},
+					Rel
+					{	X	10000,
+						Z	10000
+					}
+				},
+				UIDBand		RedVetoedBAND,
+				SetUID	UID_ToCpEmerchicourt,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0a1a=
+			{
+				Posn
+				{
+					Posn
+					{
+						Abs
+						{	X	26752700,
+							Z	27817700
+						}
+					},
+					Rel
+					{	X	10000,
+						Z	10000
+					}
+				},
+				UIDBand		RedVetoedBAND,
+				SetUID	UID_ToCpBevillers,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0a19=
+			{
+				Posn
+				{
+					Posn
+					{
+						Abs
+						{	X	25949400,
+							Z	27860100
+						}
+					},
+					Rel
+					{	X	-30000,
+						Z	30000
+					}
+				},
+				UIDBand		RedVetoedBAND,
+				SetUID	UID_ToCpAwoignt,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0a18=
+			{
+				Posn
+				{
+					Posn
+					{
+						Abs
+						{	X	21010400,
+							Z	31444400
+						}
+					},
+					Rel
+					{	X	10000,
+						Z	10000
+					}
+				},
+				UIDBand		RedVetoedBAND,
+				SetUID	UID_ToAlHesdigneul,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0a17=
+			{
+				Posn
+				{
+					Posn
+					{
+						Abs
+						{	X	24927900,
+							Z	28752000
+						}
+					},
+					Rel
+					{	X	10000,
+						Z	10000
+					}
+				},
+				UIDBand		RedVetoedBAND,
+				SetUID	UID_ToCpGuise,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0a16=
+			{
+				Posn
+				{
+					Posn
+					{
+						Abs
+						{	X	22255900,
+							Z	28242400
+						}
+					},
+					Rel
+					{	X	24000,
+						Z	19000
+					}
+				},
+				UIDBand		RedVetoedBAND,
+				SetUID	UID_ToAlBoiryStMartin,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09bf=
+			{
+				Posn
+				{
+					Abs
+					{	X	23443500,
+						Z	29694500
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtFresnes,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09be=
+			{
+				Posn
+				{
+					Abs
+					{	X	23195600,
+						Z	29292000
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtRoeux,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09bd=
+			{
+				Posn
+				{
+					Abs
+					{	X	23108100,
+						Z	30257200
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtAcheville,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09bc=
+			{
+				Posn
+				{
+					Abs
+					{	X	23140900,
+						Z	29676000
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtGavrelle,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09b9=
+			{
+				Posn
+				{
+					Abs
+					{	X	21420500,
+						Z	26048000
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtAlbert,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09b8=
+			{
+				Posn
+				{
+					Abs
+					{	X	19245100,
+						Z	27842600
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtDoullens,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09b7=
+			{
+				Posn
+				{
+					Abs
+					{	X	24757200,
+						Z	27329500
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtFlesquieres,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09b6=
+			{
+				Posn
+				{
+					Abs
+					{	X	24518700,
+						Z	27206700
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtHavrincourt,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09b5=
+			{
+				Posn
+				{
+					Abs
+					{	X	25563600,
+						Z	27984400
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtCambrai,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09b4=
+			{
+				Posn
+				{
+					Abs
+					{	X	22872600,
+						Z	29740500
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtBailleul,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09b3=
+			{
+				Posn
+				{
+					Abs
+					{	X	23780400,
+						Z	26928100
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_WdNtBertincourt,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09b2=
+			{
+				Posn
+				{
+					Abs
+					{	X	22854100,
+						Z	27150800
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtBapaume,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09b1=
+			{
+				Posn
+				{
+					Abs
+					{	X	22694900,
+						Z	30771700
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtLens,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09b0=
+			{
+				Posn
+				{
+					Abs
+					{	X	24116700,
+						Z	27521500
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtBoursies,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_09af=
+			{
+				Posn
+				{
+					Abs
+					{	X	22370300,
+						Z	29258200
+					}
+				},
+				UIDBand		GreenCivilianBAND,
+				SetUID	UID_CvNtArras,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_05ff=
+			{
+				Posn
+				{
+					Abs
+					{	X	23460900,
+						Z	28219400
+					}
+				},
+				UIDBand		BlueCivilianBAND,
+				SetUID	UID_BnCpHendecourt,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_05fe=
+			{
+				Posn
+				{
+					Abs
+					{	X	24813100,
+						Z	27351600
+					}
+				},
+				UIDBand		BlueCivilianBAND,
+				SetUID	UID_BnCpFlesquieres,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_057f=
+			{
+				Posn
+				{
+					Abs
+					{	X	25227700,
+						Z	27679700
+					}
+				},
+				UIDBand		RedCivilianBAND,
+				SetUID	UID_BrNtCantaing,
+				Shape		EMPTY,
+				Heading		0
+			},
+			SimpleItem	test1_057e=
+			{
+				Posn
+				{
+					Abs
+					{	X	458988,
+						Z	458828
+					}
+				},
+				UIDBand		RedCivilianBAND,
+				SetUID	USUNPOS,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0301=
+			{
+				Posn
+				{
+					Abs
+					{	X	22361600,
+						Z	28246500
+					},
+					Rel
+					{
+						Intercept
+						{	Posn
+							{
+								Abs
+								{	X	22361600,
+									Z	28246500
+								}
+							},
+							Posn
+							{
+								Abs
+								{	X	22343200,
+									Z	28268500
+								}
+							}
+						},
+						Heading	0,
+						RangePercent	100
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0302=
+			{
+				Posn
+				{
+					Abs
+					{	X	18996200,
+						Z	25749500
+					},
+					Rel
+					{
+						Intercept
+						{	Posn
+							{
+								Abs
+								{	X	18996200,
+									Z	25749500
+								}
+							},
+							Posn
+							{
+								Abs
+								{	X	18962400,
+									Z	25826300
+								}
+							}
+						},
+						Heading	0,
+						RangePercent	100
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		EMPTY
+			},
+			SimpleItem	test1_0304=
+			{
+				Posn
+				{
+					Abs
+					{	X	38055936,
+						Z	1031204864
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_a,
+				Shape		BEXP
+			},
+			SimpleItem	test1_0308=
+			{
+				Posn
+				{
+					Abs
+					{	X	37728256,
+						Z	1031798784
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_b,
+				Shape		BEXP
+			},
+			SimpleItem	test1_030b=
+			{
+				Posn
+				{
+					Abs
+					{	X	37564416,
+						Z	1032290304
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_c,
+				Shape		BEXP
+			}
+		}
+	};

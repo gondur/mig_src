@@ -1,0 +1,1707 @@
+	SimpleItem	PYONGYAN_0403,
+	SimpleItem	PYONGYAN_0404,
+	SimpleItem	PYONGYAN_0405,
+	SimpleItem	PYONGYAN_1803,
+	SimpleItem	PYONGYAN_1804,
+	SimpleItem	PYONGYAN_1805,
+	SimpleItem	PYONGYAN_1806,
+	SimpleItem	PYONGYAN_1807,
+	SimpleItem	PYONGYAN_1808,
+	SimpleItem	PYONGYAN_1809,
+	SimpleItem	PYONGYAN_180a,
+	SimpleItem	PYONGYAN_180b,
+	SimpleItem	PYONGYAN_180c,
+	SimpleItem	PYONGYAN_180d,
+	SimpleItem	PYONGYAN_180e,
+	SimpleItem	PYONGYAN_180f,
+	SimpleItem	PYONGYAN_1810,
+	SimpleItem	PYONGYAN_2004,
+	SimpleItem	PYONGYAN_2005,
+	SimpleItem	PYONGYAN_2006,
+	SimpleItem	PYONGYAN_2007,
+	SimpleItem	PYONGYAN_2008,
+	SimpleItem	PYONGYAN_2009,
+	SimpleItem	PYONGYAN_200a,
+	SimpleItem	PYONGYAN_200b,
+	SimpleItem	PYONGYAN_200c,
+	SimpleItem	PYONGYAN_200d,
+	SimpleItem	PYONGYAN_200e,
+	SimpleItem	PYONGYAN_200f,
+	SimpleItem	PYONGYAN_2010,
+	SimpleItem	PYONGYAN_2011,
+	SimpleItem	PYONGYAN_2012,
+	SimpleItem	PYONGYAN_2013,
+	SimpleItem	PYONGYAN_2014,
+	SimpleItem	PYONGYAN_2015,
+	SimpleItem	PYONGYAN_2016,
+	SimpleItem	PYONGYAN_2017,
+	SimpleItem	PYONGYAN_2018,
+	SimpleItem	PYONGYAN_2019,
+	SimpleItem	PYONGYAN_201a,
+	SimpleItem	PYONGYAN_201b,
+	SimpleItem	PYONGYAN_201c,
+	SimpleItem	PYONGYAN_201d,
+	SimpleItem	PYONGYAN_201e,
+	SimpleItem	PYONGYAN_201f,
+	SimpleItem	PYONGYAN_2020,
+	SimpleItem	PYONGYAN_2021,
+	SimpleItem	PYONGYAN_2022,
+	SimpleItem	PYONGYAN_2023,
+	SimpleItem	PYONGYAN_2024,
+	SimpleItem	PYONGYAN_2025,
+	SimpleItem	PYONGYAN_2026,
+	SimpleItem	PYONGYAN_2027,
+	SimpleItem	PYONGYAN_2028,
+	SimpleItem	PYONGYAN_2029,
+	SimpleItem	PYONGYAN_202a,
+	SimpleItem	PYONGYAN_202b,
+	SimpleItem	PYONGYAN_202c,
+	SimpleItem	PYONGYAN_202d,
+	SimpleItem	PYONGYAN_202e,
+	SimpleItem	PYONGYAN_202f,
+	SimpleItem	PYONGYAN_2030,
+	SimpleItem	PYONGYAN_2031,
+	SimpleItem	PYONGYAN_2032,
+	SimpleItem	PYONGYAN_2033,
+	SimpleItem	PYONGYAN_2034,
+	SimpleItem	PYONGYAN_2035,
+	SimpleItem	PYONGYAN_2036,
+	SimpleItem	PYONGYAN_2037,
+	SimpleItem	PYONGYAN_2038,
+	SimpleItem	PYONGYAN_2039,
+	SimpleItem	PYONGYAN_203a,
+	SimpleItem	PYONGYAN_203b,
+	SimpleItem	PYONGYAN_203c,
+	SimpleItem	PYONGYAN_203d,
+	SimpleItem	PYONGYAN_203e,
+	SimpleItem	PYONGYAN_203f,
+	SimpleItem	PYONGYAN_2040,
+	SimpleItem	PYONGYAN_2041,
+	SimpleItem	PYONGYAN_2042,
+	SimpleItem	PYONGYAN_2043,
+	SimpleItem	PYONGYAN_2044,
+	SimpleItem	PYONGYAN_2045,
+	SimpleItem	PYONGYAN_2046,
+	SimpleItem	PYONGYAN_2047,
+	SimpleItem	PYONGYAN_2048,
+	SimpleItem	PYONGYAN_2049,
+	SimpleItem	PYONGYAN_204a,
+	SimpleItem	PYONGYAN_204b,
+	SimpleItem	PYONGYAN_204c,
+	SimpleItem	PYONGYAN_204d,
+	SimpleItem	PYONGYAN_204e,
+	SimpleItem	PYONGYAN_204f,
+	SimpleItem	PYONGYAN_2050,
+	SimpleItem	PYONGYAN_2051,
+	SimpleItem	PYONGYAN_2052,
+	SimpleItem	PYONGYAN_2053,
+	SimpleItem	PYONGYAN_2054,
+	SimpleItem	PYONGYAN_2055,
+	SimpleItem	PYONGYAN_2056,
+	SimpleItem	PYONGYAN_2057,
+	SimpleItem	PYONGYAN_2058,
+	SimpleItem	PYONGYAN_2059,
+	SimpleItem	PYONGYAN_205a,
+	SimpleItem	PYONGYAN_205b,
+	SimpleItem	PYONGYAN_205c,
+	SimpleItem	PYONGYAN_205d,
+	SimpleItem	PYONGYAN_205e,
+	SimpleItem	PYONGYAN_205f,
+	SimpleItem	PYONGYAN_2060,
+	SimpleItem	PYONGYAN_2061,
+	SimpleItem	PYONGYAN_2062,
+	SimpleItem	PYONGYAN_2063,
+	SimpleItem	PYONGYAN_2064,
+	SimpleItem	PYONGYAN_2200,
+	SimpleItem	PYONGYAN_2201,
+	SimpleItem	PYONGYAN_2202,
+	SimpleItem	PYONGYAN_2203,
+	SimpleItem	PYONGYAN_2204,
+	SimpleItem	PYONGYAN_2205,
+	SimpleItem	PYONGYAN_2206,
+	SimpleItem	PYONGYAN_2207,
+	SimpleItem	PYONGYAN_2208,
+	SimpleItem	PYONGYAN_2209,
+	SimpleItem	PYONGYAN_220a,
+	SimpleItem	PYONGYAN_220b,
+	SimpleItem	PYONGYAN_220c,
+	SimpleItem	PYONGYAN_220d,
+	SimpleItem	PYONGYAN_220e,
+	SimpleItem	PYONGYAN_220f,
+	BattleField
+	{
+		FileName	FIL_1_PYONGYAN=PYONGYAN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StPyongyang,
+		ItemGroup
+		{
+			SimpleItem	PYONGYAN_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	52712448,
+						Z	77352960
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CITY2
+			},
+			SimpleItem	PYONGYAN_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	52707328,
+						Z	77432832
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CITY2
+			},
+			SimpleItem	PYONGYAN_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	52711424,
+						Z	77538304
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CITY2
+			},
+			SimpleItem	PYONGYAN_2007=
+			{
+				Posn
+				{
+					Abs
+					{	X	52660224,
+						Z	77715456
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CITY2
+			},
+			SimpleItem	PYONGYAN_2008=
+			{
+				Posn
+				{
+					Abs
+					{	X	52608000,
+						Z	77883392
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CITY2
+			},
+			SimpleItem	PYONGYAN_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	52683776,
+						Z	77807616
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CITY2
+			},
+			SimpleItem	PYONGYAN_200a=
+			{
+				Posn
+				{
+					Abs
+					{	X	52765696,
+						Z	77934592
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CITY2
+			},
+			SimpleItem	PYONGYAN_200c=
+			{
+				Posn
+				{
+					Abs
+					{	X	52326400,
+						Z	77677568
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	PYONGYAN_200d=
+			{
+				Posn
+				{
+					Abs
+					{	X	52387840,
+						Z	77533184
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	PYONGYAN_200e=
+			{
+				Posn
+				{
+					Abs
+					{	X	52963328,
+						Z	77597696
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	PYONGYAN_200f=
+			{
+				Posn
+				{
+					Abs
+					{	X	52902912,
+						Z	77498368
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+				SimpleItem	PYONGYAN_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	53050368,
+							Z	77189120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_0404=
+				{
+					Posn
+					{
+						Abs
+						{	X	52334592,
+							Z	77286400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	PYONGYAN_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52444160,
+							Z	77426688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	52890624,
+							Z	77401088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	PYONGYAN_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	52902912,
+							Z	77402112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	PYONGYAN_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	52916224,
+							Z	77401088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	PYONGYAN_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	52648960,
+							Z	77528064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	PYONGYAN_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	52663296,
+							Z	77522944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	PYONGYAN_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	52432896,
+							Z	77372416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	52923392,
+							Z	77855744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	PYONGYAN_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	53440512,
+							Z	77639680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		BOAT
+				},
+				SimpleItem	PYONGYAN_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	52561920,
+							Z	77514752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	52705280,
+							Z	77883392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	PYONGYAN_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	52837376,
+							Z	77887488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	PYONGYAN_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	53068800,
+							Z	77356032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	52445184,
+							Z	77626368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI02
+				},
+				SimpleItem	PYONGYAN_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52788224,
+							Z	77509632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	PYONGYAN_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	52702208,
+							Z	77621248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		GRNDD1
+				},
+				SimpleItem	PYONGYAN_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52635648,
+							Z	77642752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		GRNDD3
+				},
+				SimpleItem	PYONGYAN_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	52385792,
+							Z	77600768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		GRNDD4
+				},
+				SimpleItem	PYONGYAN_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	52530176,
+							Z	77358080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		GRNDD2
+				},
+				SimpleItem	PYONGYAN_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	52789248,
+							Z	77843456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		GRNDD2
+				},
+				SimpleItem	PYONGYAN_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	53099520,
+							Z	77521920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		GRNDD2
+				},
+				SimpleItem	PYONGYAN_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	53189632,
+							Z	77634560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		GRNDD4
+				},
+				SimpleItem	PYONGYAN_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	53312512,
+							Z	77588480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		GRNDD3
+				},
+				SimpleItem	PYONGYAN_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	52406272,
+							Z	77702144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	52486144,
+							Z	77584384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	52478976,
+							Z	77500416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	52532224,
+							Z	77413376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	52596736,
+							Z	77376512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52624384,
+							Z	77320192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	52537344,
+							Z	77290496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52438016,
+							Z	77318144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	52534272,
+							Z	77624320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52667392,
+							Z	77568000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	52741120,
+							Z	77633536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	52333568,
+							Z	77588480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	52465664,
+							Z	77733888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	52520960,
+							Z	77852672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	52723712,
+							Z	77753344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	PYONGYAN_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	53062656,
+							Z	77447168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	53128192,
+							Z	77580288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	53057536,
+							Z	77581312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	53113856,
+							Z	77319168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	53272576,
+							Z	77623296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	52968448,
+							Z	77373440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52876288,
+							Z	77174784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2040=
+				{
+					Posn
+					{
+						Abs
+						{	X	52371456,
+							Z	77425664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2041=
+				{
+					Posn
+					{
+						Abs
+						{	X	52743168,
+							Z	77119488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2042=
+				{
+					Posn
+					{
+						Abs
+						{	X	52779008,
+							Z	77087744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2043=
+				{
+					Posn
+					{
+						Abs
+						{	X	52801536,
+							Z	77598720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2044=
+				{
+					Posn
+					{
+						Abs
+						{	X	52828160,
+							Z	77769728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2045=
+				{
+					Posn
+					{
+						Abs
+						{	X	52853760,
+							Z	77813760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2046=
+				{
+					Posn
+					{
+						Abs
+						{	X	52817920,
+							Z	77714432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2047=
+				{
+					Posn
+					{
+						Abs
+						{	X	53218304,
+							Z	77747200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2048=
+				{
+					Posn
+					{
+						Abs
+						{	X	53266432,
+							Z	77440000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2049=
+				{
+					Posn
+					{
+						Abs
+						{	X	53342208,
+							Z	77416448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_204a=
+				{
+					Posn
+					{
+						Abs
+						{	X	53357568,
+							Z	77466624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_204b=
+				{
+					Posn
+					{
+						Abs
+						{	X	53294080,
+							Z	77394944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_204c=
+				{
+					Posn
+					{
+						Abs
+						{	X	53423104,
+							Z	77433856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_204d=
+				{
+					Posn
+					{
+						Abs
+						{	X	53214208,
+							Z	77456384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_204e=
+				{
+					Posn
+					{
+						Abs
+						{	X	53200896,
+							Z	77507584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_204f=
+				{
+					Posn
+					{
+						Abs
+						{	X	53021696,
+							Z	77531136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	PYONGYAN_2050=
+				{
+					Posn
+					{
+						Abs
+						{	X	53021696,
+							Z	77503488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	PYONGYAN_2051=
+				{
+					Posn
+					{
+						Abs
+						{	X	53021696,
+							Z	77470720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	PYONGYAN_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	53022720,
+							Z	77437952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	PYONGYAN_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	53023744,
+							Z	77402112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	PYONGYAN_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	53023744,
+							Z	77361152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	PYONGYAN_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	53065728,
+							Z	77275136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	52525056,
+							Z	77485056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	52526080,
+							Z	77449216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	52555776,
+							Z	77447168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	52590592,
+							Z	77447168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_205a=
+				{
+					Posn
+					{
+						Abs
+						{	X	52525056,
+							Z	77522944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_205b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52444160,
+							Z	77555712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_205c=
+				{
+					Posn
+					{
+						Abs
+						{	X	52444160,
+							Z	77513728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_205d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52443136,
+							Z	77473792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	PYONGYAN_205e=
+				{
+					Posn
+					{
+						Abs
+						{	X	52520960,
+							Z	77745152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_205f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52550656,
+							Z	77745152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_2060=
+				{
+					Posn
+					{
+						Abs
+						{	X	52368384,
+							Z	77761536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_2061=
+				{
+					Posn
+					{
+						Abs
+						{	X	52325376,
+							Z	77539328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_2062=
+				{
+					Posn
+					{
+						Abs
+						{	X	52365312,
+							Z	77479936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	PYONGYAN_203c=
+				{
+					Posn
+					{
+						Abs
+						{	X	52667392,
+							Z	77453312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	PYONGYAN_203d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52719616,
+							Z	77394944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	PYONGYAN_203e=
+				{
+					Posn
+					{
+						Abs
+						{	X	52972544,
+							Z	77527040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_203f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52966400,
+							Z	77446144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	PYONGYAN_2063=
+				{
+					Posn
+					{
+						Abs
+						{	X	52354048,
+							Z	77353984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	PYONGYAN_2064=
+				{
+					Posn
+					{
+						Abs
+						{	X	53145600,
+							Z	77217792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_MyRdPyongyang,
+		ItemGroup
+		{
+				SimpleItem	PYONGYAN_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	52582400,
+							Z	77644800
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	PYONGYAN_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	52563968,
+							Z	77898752
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+			SimpleItem	PYONGYAN_1803=
+			{
+				Posn
+				{
+					Abs
+					{	X	52593664,
+						Z	77484032
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+				SimpleItem	PYONGYAN_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	52552704,
+							Z	77836288
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	52655104,
+							Z	77756416
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	52615168,
+							Z	77723648
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	52614144,
+							Z	77679616
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_1809=
+				{
+					Posn
+					{
+						Abs
+						{	X	52554752,
+							Z	77674496
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_180a=
+				{
+					Posn
+					{
+						Abs
+						{	X	52425728,
+							Z	77669376
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_180b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52533248,
+							Z	77571072
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_180c=
+				{
+					Posn
+					{
+						Abs
+						{	X	52619264,
+							Z	77531136
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_180d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52513792,
+							Z	77710336
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_180e=
+				{
+					Posn
+					{
+						Abs
+						{	X	52608000,
+							Z	77845504
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_180f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52638720,
+							Z	77816832
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_1810=
+				{
+					Posn
+					{
+						Abs
+						{	X	52516864,
+							Z	77798400
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	PYONGYAN_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	52582400,
+							Z	77739008
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	PYONGYAN_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	52579328,
+							Z	77789184
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	PYONGYAN_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	52577280,
+							Z	77810688
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	PYONGYAN_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	52585472,
+							Z	77773824
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	PYONGYAN_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	52580352,
+							Z	77698048
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	PYONGYAN_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	52579328,
+							Z	77716480
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	PYONGYAN_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	52573184,
+							Z	77831168
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	PYONGYAN_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	52599808,
+							Z	77789184
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	PYONGYAN_2208=
+				{
+					Posn
+					{
+						Abs
+						{	X	52594688,
+							Z	77612032
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		CRANE
+				},
+				SimpleItem	PYONGYAN_2209=
+				{
+					Posn
+					{
+						Abs
+						{	X	52602880,
+							Z	77579264
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		FUELS
+				},
+				SimpleItem	PYONGYAN_220a=
+				{
+					Posn
+					{
+						Abs
+						{	X	52585472,
+							Z	77627392
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				},
+				SimpleItem	PYONGYAN_220b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52583424,
+							Z	77568000
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				},
+				SimpleItem	PYONGYAN_220c=
+				{
+					Posn
+					{
+						Abs
+						{	X	52589568,
+							Z	77544448
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		CIVI05
+				},
+				SimpleItem	PYONGYAN_220d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52590592,
+							Z	77806592
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	PYONGYAN_220e=
+				{
+					Posn
+					{
+						Abs
+						{	X	52582400,
+							Z	77681664
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				},
+				SimpleItem	PYONGYAN_220f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52582400,
+							Z	77663232
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				}
+		}	}
+	};

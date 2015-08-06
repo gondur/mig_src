@@ -1,0 +1,148 @@
+	WayPoint	RDPYONGN_010a,
+	WayPoint	RDPYONGN_010b,
+	WayPoint	RDPYONGN_010c,
+	WayPoint	RDPYONGN_010d,
+	WayPoint	RDPYONGN_010e,
+	WayPoint	RDPYONGN_010f,
+	GroundItem	RDPYONGN_3083,
+	GroundItem	RDPYONGN_3084,
+	BattleField
+	{
+		FileName	FIL_1_RDPYONGN=RDPYONGN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdPyongni,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdPyongni, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	53988353,
+						Z	80982223
+					}
+				},
+				Route
+				{
+					WayPoint	RDPYONGN_010a=
+					{
+						Posn
+						{
+							Abs
+							{	X	53999003,
+								Z	80975670
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDPYONGN_010b=
+					{
+						Posn
+						{
+							Abs
+							{	X	53983438,
+								Z	80927337
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDPYONGN_010c=
+					{
+						Posn
+						{
+							Abs
+							{	X	53980161,
+								Z	80878594
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDPYONGN_3083=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	CH12ML
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	54040782,
+						Z	80946179
+					}
+				},
+				Route
+				{
+					WayPoint	RDPYONGN_010d=
+					{
+						Posn
+						{
+							Abs
+							{	X	54031771,
+								Z	80918326
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDPYONGN_010e=
+					{
+						Posn
+						{
+							Abs
+							{	X	54019073,
+								Z	80863439
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDPYONGN_010f=
+					{
+						Posn
+						{
+							Abs
+							{	X	53986715,
+								Z	80856885
+							}
+						},
+						Vel	98,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDPYONGN_3084=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	SFTRCK,
+					Vel	98
+			}	}	}
+	};

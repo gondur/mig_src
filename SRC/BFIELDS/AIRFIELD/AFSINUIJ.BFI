@@ -1,0 +1,259 @@
+	SimpleItem	AFSINUIJ_1804,
+	SimpleItem	AFSINUIJ_1805,
+	SimpleItem	AFSINUIJ_1806,
+	SimpleItem	AFSINUIJ_180d,
+	SimpleItem	AFSINUIJ_1811,
+	SimpleItem	AFSINUIJ_3a00,
+	SimpleItem	AFSINUIJ_3a01,
+	SimpleItem	AFSINUIJ_3a02,
+	SimpleItem	AFSINUIJ_3a03,
+	SimpleItem	AFSINUIJ_3a82,
+	SimpleItem	AFSINUIJ_3a83,
+	SimpleItem	AFSINUIJ_3a84,
+	SimpleItem	AFSINUIJ_3a85,
+	SimpleItem	AFSINUIJ_3a86,
+	SimpleItem	AFSINUIJ_3a87,
+	SimpleItem	AFSINUIJ_3b02,
+	SimpleItem	AFSINUIJ_3b03,
+	SimpleItem	AFSINUIJ_3b04,
+	SimpleItem	AFSINUIJ_3b05,
+	BattleField
+	{
+		FileName	FIL_1_AFSINUIJ=AFSINUIJ.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdSinuiju,
+		ItemGroup
+		{
+				SimpleItem	AFSINUIJ_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	41463966,
+							Z	89390934
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	AFSINUIJ_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	41365251,
+							Z	89217672
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	AFSINUIJ_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	41460278,
+							Z	89300002
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	AFSINUIJ_180d=
+				{
+					Posn
+					{
+						Abs
+						{	X	41493591,
+							Z	89245123
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	AFSINUIJ_1811=
+				{
+					Posn
+					{
+						Abs
+						{	X	41363174,
+							Z	89339167
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	AFSINUIJ_3a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	41451267,
+							Z	89340963
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		RRNESW
+				},
+				SimpleItem	AFSINUIJ_3a01=
+				{
+					Posn
+					{
+						Abs
+						{	X	41428329,
+							Z	89277474
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		RRNESW
+				},
+				SimpleItem	AFSINUIJ_3a02=
+				{
+					Posn
+					{
+						Abs
+						{	X	41404162,
+							Z	89349974
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		RRNESW
+				},
+				SimpleItem	AFSINUIJ_3a03=
+				{
+					Posn
+					{
+						Abs
+						{	X	41383274,
+							Z	89288124
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		RRNESW
+				},
+				SimpleItem	AFSINUIJ_3a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	41423003,
+							Z	89235695
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	AFSINUIJ_3a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	41340264,
+							Z	89268463
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINUIJ_3a84=
+				{
+					Posn
+					{
+						Abs
+						{	X	41488130,
+							Z	89291810
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINUIJ_3a85=
+				{
+					Posn
+					{
+						Abs
+						{	X	41367710,
+							Z	89236105
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFSINUIJ_3a86=
+				{
+					Posn
+					{
+						Abs
+						{	X	41351323,
+							Z	89306146
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFSINUIJ_3a87=
+				{
+					Posn
+					{
+						Abs
+						{	X	41360334,
+							Z	89365948
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFSINUIJ_3b02=
+				{
+					Posn
+					{
+						Abs
+						{	X	41380406,
+							Z	89348335
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		RTRUCK
+				},
+				SimpleItem	AFSINUIJ_3b03=
+				{
+					Posn
+					{
+						Abs
+						{	X	41351323,
+							Z	89341372
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFSINUIJ_3b04=
+				{
+					Posn
+					{
+						Abs
+						{	X	41377130,
+							Z	89391753
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFSINUIJ_3b05=
+				{
+					Posn
+					{
+						Abs
+						{	X	41367707,
+							Z	89277884
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				}
+		}	}
+	};

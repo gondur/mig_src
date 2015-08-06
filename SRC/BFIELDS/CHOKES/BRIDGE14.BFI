@@ -1,0 +1,38 @@
+	SimpleItem	BRIDGE14_0442,
+	SimpleItem	BRIDGE14_0446,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE14=BRIDGE14.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRdTanchon1,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE14_0442=
+				{
+					Posn
+					{
+						Abs
+						{	X	79816192,
+							Z	93231616
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE14_0446=
+				{
+					Posn
+					{
+						Abs
+						{	X	79819264,
+							Z	93302272
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

@@ -1,0 +1,88 @@
+	WayPoint	BRIDGE11_0100,
+	SimpleItem	BRIDGE11_042e,
+	SimpleItem	BRIDGE11_0431,
+	SimpleItem	BRIDGE11_0437,
+	GroundItem	BRIDGE11_3080,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE11=BRIDGE11.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRdKilchu,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE11_042e=
+				{
+					Posn
+					{
+						Abs
+						{	X	83813888,
+							Z	97029632
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE11_0431=
+				{
+					Posn
+					{
+						Abs
+						{	X	83713536,
+							Z	96927232
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE11_0437=
+				{
+					Posn
+					{
+						Abs
+						{	X	79225344,
+							Z	93701632
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		HUT
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	83684864,
+						Z	96911360
+					}
+				},
+				Route
+				{
+					WayPoint	BRIDGE11_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	83721216,
+								Z	96949248
+							}
+						},
+						Vel	15,
+						Action	WP_waitfriendly,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	SQUAD_TRUCKCONVOY,
+				GroundItem	BRIDGE11_3080=
+				{
+					BlueCombatVehicleBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	STEPTO,
+					Vel	15
+			}	}	}
+	};

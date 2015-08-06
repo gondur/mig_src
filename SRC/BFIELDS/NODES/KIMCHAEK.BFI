@@ -1,0 +1,1356 @@
+	SimpleItem	KIMCHAEK_1803,
+	SimpleItem	KIMCHAEK_1804,
+	SimpleItem	KIMCHAEK_1805,
+	SimpleItem	KIMCHAEK_1806,
+	SimpleItem	KIMCHAEK_1807,
+	SimpleItem	KIMCHAEK_1808,
+	SimpleItem	KIMCHAEK_2004,
+	SimpleItem	KIMCHAEK_2005,
+	SimpleItem	KIMCHAEK_2008,
+	SimpleItem	KIMCHAEK_2009,
+	SimpleItem	KIMCHAEK_200a,
+	SimpleItem	KIMCHAEK_200b,
+	SimpleItem	KIMCHAEK_200c,
+	SimpleItem	KIMCHAEK_200d,
+	SimpleItem	KIMCHAEK_200e,
+	SimpleItem	KIMCHAEK_200f,
+	SimpleItem	KIMCHAEK_2010,
+	SimpleItem	KIMCHAEK_2011,
+	SimpleItem	KIMCHAEK_2012,
+	SimpleItem	KIMCHAEK_2013,
+	SimpleItem	KIMCHAEK_2014,
+	SimpleItem	KIMCHAEK_2015,
+	SimpleItem	KIMCHAEK_2016,
+	SimpleItem	KIMCHAEK_2017,
+	SimpleItem	KIMCHAEK_2018,
+	SimpleItem	KIMCHAEK_2019,
+	SimpleItem	KIMCHAEK_201a,
+	SimpleItem	KIMCHAEK_201b,
+	SimpleItem	KIMCHAEK_201c,
+	SimpleItem	KIMCHAEK_201d,
+	SimpleItem	KIMCHAEK_201e,
+	SimpleItem	KIMCHAEK_201f,
+	SimpleItem	KIMCHAEK_2020,
+	SimpleItem	KIMCHAEK_2021,
+	SimpleItem	KIMCHAEK_2022,
+	SimpleItem	KIMCHAEK_2023,
+	SimpleItem	KIMCHAEK_2024,
+	SimpleItem	KIMCHAEK_2025,
+	SimpleItem	KIMCHAEK_2026,
+	SimpleItem	KIMCHAEK_2027,
+	SimpleItem	KIMCHAEK_2028,
+	SimpleItem	KIMCHAEK_2029,
+	SimpleItem	KIMCHAEK_202a,
+	SimpleItem	KIMCHAEK_202b,
+	SimpleItem	KIMCHAEK_202c,
+	SimpleItem	KIMCHAEK_202d,
+	SimpleItem	KIMCHAEK_202e,
+	SimpleItem	KIMCHAEK_202f,
+	SimpleItem	KIMCHAEK_2030,
+	SimpleItem	KIMCHAEK_2031,
+	SimpleItem	KIMCHAEK_2032,
+	SimpleItem	KIMCHAEK_2033,
+	SimpleItem	KIMCHAEK_2034,
+	SimpleItem	KIMCHAEK_2035,
+	SimpleItem	KIMCHAEK_2036,
+	SimpleItem	KIMCHAEK_2037,
+	SimpleItem	KIMCHAEK_2038,
+	SimpleItem	KIMCHAEK_2039,
+	SimpleItem	KIMCHAEK_203a,
+	SimpleItem	KIMCHAEK_203b,
+	SimpleItem	KIMCHAEK_203c,
+	SimpleItem	KIMCHAEK_203d,
+	SimpleItem	KIMCHAEK_203f,
+	SimpleItem	KIMCHAEK_2040,
+	SimpleItem	KIMCHAEK_2041,
+	SimpleItem	KIMCHAEK_2042,
+	SimpleItem	KIMCHAEK_2043,
+	SimpleItem	KIMCHAEK_2044,
+	SimpleItem	KIMCHAEK_2049,
+	SimpleItem	KIMCHAEK_204a,
+	SimpleItem	KIMCHAEK_204b,
+	SimpleItem	KIMCHAEK_204c,
+	SimpleItem	KIMCHAEK_204d,
+	SimpleItem	KIMCHAEK_204e,
+	SimpleItem	KIMCHAEK_204f,
+	SimpleItem	KIMCHAEK_2050,
+	SimpleItem	KIMCHAEK_2052,
+	SimpleItem	KIMCHAEK_2056,
+	SimpleItem	KIMCHAEK_2057,
+	SimpleItem	KIMCHAEK_2058,
+	SimpleItem	KIMCHAEK_2059,
+	SimpleItem	KIMCHAEK_205a,
+	SimpleItem	KIMCHAEK_205b,
+	SimpleItem	KIMCHAEK_205c,
+	SimpleItem	KIMCHAEK_205d,
+	SimpleItem	KIMCHAEK_205e,
+	SimpleItem	KIMCHAEK_205f,
+	SimpleItem	KIMCHAEK_2060,
+	SimpleItem	KIMCHAEK_2061,
+	SimpleItem	KIMCHAEK_2062,
+	SimpleItem	KIMCHAEK_2063,
+	SimpleItem	KIMCHAEK_2064,
+	SimpleItem	KIMCHAEK_2065,
+	SimpleItem	KIMCHAEK_2066,
+	SimpleItem	KIMCHAEK_2067,
+	SimpleItem	KIMCHAEK_2068,
+	SimpleItem	KIMCHAEK_2069,
+	SimpleItem	KIMCHAEK_2200,
+	SimpleItem	KIMCHAEK_2201,
+	SimpleItem	KIMCHAEK_2202,
+	SimpleItem	KIMCHAEK_2203,
+	SimpleItem	KIMCHAEK_2204,
+	SimpleItem	KIMCHAEK_2205,
+	BattleField
+	{
+		FileName	FIL_1_KIMCHAEK=KIMCHAEK.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_MSPKimchaek,
+		ItemGroup
+		{
+				SimpleItem	KIMCHAEK_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	82267136,
+							Z	95735808
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KIMCHAEK_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	82318336,
+							Z	95782912
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KIMCHAEK_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	82304000,
+							Z	95839232
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KIMCHAEK_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	82318336,
+							Z	95947776
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KIMCHAEK_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	82232320,
+							Z	95963136
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KIMCHAEK_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	82322432,
+							Z	96079872
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KIMCHAEK_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	82279424,
+							Z	95991808
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	KIMCHAEK_205a=
+				{
+					Posn
+					{
+						Abs
+						{	X	82272256,
+							Z	95950848
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		FUELS
+				},
+				SimpleItem	KIMCHAEK_205b=
+				{
+					Posn
+					{
+						Abs
+						{	X	82314240,
+							Z	95992832
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				},
+				SimpleItem	KIMCHAEK_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	82262016,
+							Z	95937536
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	KIMCHAEK_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	82281472,
+							Z	95812608
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	KIMCHAEK_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	82253824,
+							Z	95794176
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	KIMCHAEK_205e=
+				{
+					Posn
+					{
+						Abs
+						{	X	82290688,
+							Z	96036864
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	KIMCHAEK_205f=
+				{
+					Posn
+					{
+						Abs
+						{	X	82313216,
+							Z	95985664
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	KIMCHAEK_2064=
+				{
+					Posn
+					{
+						Abs
+						{	X	82323456,
+							Z	96047104
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	KIMCHAEK_2060=
+				{
+					Posn
+					{
+						Abs
+						{	X	82324480,
+							Z	96028672
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		FOODS
+				},
+				SimpleItem	KIMCHAEK_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	82253824,
+							Z	95832064
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	KIMCHAEK_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	82285568,
+							Z	95876096
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StKimchaek,
+		ItemGroup
+		{
+				SimpleItem	KIMCHAEK_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	82262016,
+							Z	95805440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	82307072,
+							Z	96228352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	82277376,
+							Z	96115712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KIMCHAEK_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	82359296,
+							Z	95945728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	KIMCHAEK_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	82358272,
+							Z	95921152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	KIMCHAEK_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	82328576,
+							Z	95893504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	KIMCHAEK_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	82236416,
+							Z	95991808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KIMCHAEK_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	82170880,
+							Z	95853568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KIMCHAEK_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	82207744,
+							Z	95951872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	82259968,
+							Z	95883264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	82280448,
+							Z	95752192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KIMCHAEK_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	82298880,
+							Z	95770624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KIMCHAEK_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	82309120,
+							Z	95749120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KIMCHAEK_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	82135040,
+							Z	95848448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KIMCHAEK_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	82161664,
+							Z	95777792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	82140160,
+							Z	95693824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KIMCHAEK_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	82132992,
+							Z	95742976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KIMCHAEK_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	82227200,
+							Z	95708160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	KIMCHAEK_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	82191360,
+							Z	95689728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	KIMCHAEK_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	82246656,
+							Z	95733760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	KIMCHAEK_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	82153472,
+							Z	95926272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KIMCHAEK_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	82110464,
+							Z	95884288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KIMCHAEK_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	82263040,
+							Z	96019456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KIMCHAEK_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	82289664,
+							Z	95940608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KIMCHAEK_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	82290688,
+							Z	95890432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	82293760,
+							Z	95900672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	82296832,
+							Z	95913984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	82293760,
+							Z	95883264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	82251776,
+							Z	95811584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	82268160,
+							Z	95818752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	82278400,
+							Z	95794176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	82252800,
+							Z	95776768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	82249728,
+							Z	95768576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	82198528,
+							Z	95774720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	82201600,
+							Z	95788032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	82208768,
+							Z	95801344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	82209792,
+							Z	95860736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	82195456,
+							Z	95861760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	82207744,
+							Z	95878144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	82179072,
+							Z	95874048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	KIMCHAEK_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	82235392,
+							Z	95937536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KIMCHAEK_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	82144256,
+							Z	95899648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	82285568,
+							Z	96168960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KIMCHAEK_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	82264064,
+							Z	96198656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KIMCHAEK_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	82364416,
+							Z	96192512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	82348032,
+							Z	96172032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KIMCHAEK_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	82330624,
+							Z	96144384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	82320384,
+							Z	96116736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	82348032,
+							Z	96263168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	82356224,
+							Z	96305152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	82399232,
+							Z	96318464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	KIMCHAEK_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	82306048,
+							Z	96280576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KIMCHAEK_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	82180096,
+							Z	95932416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KIMCHAEK_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	82205696,
+							Z	95816704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KIMCHAEK_203c=
+				{
+					Posn
+					{
+						Abs
+						{	X	82132992,
+							Z	95811584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		STEPTO
+				},
+				SimpleItem	KIMCHAEK_203d=
+				{
+					Posn
+					{
+						Abs
+						{	X	82067456,
+							Z	95767552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		STEPTO
+				},
+				SimpleItem	KIMCHAEK_203f=
+				{
+					Posn
+					{
+						Abs
+						{	X	82280448,
+							Z	96233472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KIMCHAEK_2040=
+				{
+					Posn
+					{
+						Abs
+						{	X	82259968,
+							Z	96148480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KIMCHAEK_2041=
+				{
+					Posn
+					{
+						Abs
+						{	X	82336768,
+							Z	96224256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KIMCHAEK_2042=
+				{
+					Posn
+					{
+						Abs
+						{	X	82387968,
+							Z	96279552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KIMCHAEK_2043=
+				{
+					Posn
+					{
+						Abs
+						{	X	82380800,
+							Z	96250880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KIMCHAEK_2044=
+				{
+					Posn
+					{
+						Abs
+						{	X	82411520,
+							Z	96266240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KIMCHAEK_2049=
+				{
+					Posn
+					{
+						Abs
+						{	X	82160640,
+							Z	95730688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KIMCHAEK_204a=
+				{
+					Posn
+					{
+						Abs
+						{	X	82413568,
+							Z	95885312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARGO
+				},
+				SimpleItem	KIMCHAEK_204b=
+				{
+					Posn
+					{
+						Abs
+						{	X	82185216,
+							Z	95759360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KIMCHAEK_204c=
+				{
+					Posn
+					{
+						Abs
+						{	X	82129920,
+							Z	95774720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KIMCHAEK_204d=
+				{
+					Posn
+					{
+						Abs
+						{	X	82420736,
+							Z	96119808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	KIMCHAEK_204e=
+				{
+					Posn
+					{
+						Abs
+						{	X	82460672,
+							Z	96183296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	KIMCHAEK_204f=
+				{
+					Posn
+					{
+						Abs
+						{	X	82466816,
+							Z	96155648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	KIMCHAEK_2050=
+				{
+					Posn
+					{
+						Abs
+						{	X	82328576,
+							Z	96191488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KIMCHAEK_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	82302976,
+							Z	96153600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KIMCHAEK_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	82273280,
+							Z	95777792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KIMCHAEK_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	82275328,
+							Z	95848448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KIMCHAEK_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	82178048,
+							Z	95894528
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KIMCHAEK_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	82299904,
+							Z	96199680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KIMCHAEK_205c=
+				{
+					Posn
+					{
+						Abs
+						{	X	82276352,
+							Z	95965184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	KIMCHAEK_205d=
+				{
+					Posn
+					{
+						Abs
+						{	X	82312192,
+							Z	96006144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		LCRANE
+				},
+				SimpleItem	KIMCHAEK_2061=
+				{
+					Posn
+					{
+						Abs
+						{	X	82310144,
+							Z	95975424
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		LCRANE
+				},
+				SimpleItem	KIMCHAEK_2062=
+				{
+					Posn
+					{
+						Abs
+						{	X	82253824,
+							Z	95856640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI05
+				},
+				SimpleItem	KIMCHAEK_2063=
+				{
+					Posn
+					{
+						Abs
+						{	X	82273280,
+							Z	95902720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	KIMCHAEK_2065=
+				{
+					Posn
+					{
+						Abs
+						{	X	82297856,
+							Z	95961088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	KIMCHAEK_2066=
+				{
+					Posn
+					{
+						Abs
+						{	X	82304000,
+							Z	96016384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	KIMCHAEK_2067=
+				{
+					Posn
+					{
+						Abs
+						{	X	82334720,
+							Z	95989760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	KIMCHAEK_2068=
+				{
+					Posn
+					{
+						Abs
+						{	X	82285568,
+							Z	96010240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	KIMCHAEK_2069=
+				{
+					Posn
+					{
+						Abs
+						{	X	82219008,
+							Z	95893504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				}
+		}	}
+	};

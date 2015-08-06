@@ -1,0 +1,5532 @@
+	SimpleItem	mainmig_0801,
+	SimpleItem	mainmig_0802,
+	SimpleItem	mainmig_0803,
+	SimpleItem	mainmig_0804,
+	SimpleItem	mainmig_0805,
+	SimpleItem	mainmig_0806,
+	SimpleItem	mainmig_0807,
+	SimpleItem	mainmig_0808,
+	SimpleItem	mainmig_0809,
+	SimpleItem	mainmig_080a,
+	SimpleItem	mainmig_080b,
+	SimpleItem	mainmig_080c,
+	SimpleItem	mainmig_080d,
+	SimpleItem	mainmig_080e,
+	SimpleItem	mainmig_080f,
+	SimpleItem	mainmig_0810,
+	SimpleItem	mainmig_0811,
+	SimpleItem	mainmig_0812,
+	SimpleItem	mainmig_0813,
+	SimpleItem	mainmig_0814,
+	SimpleItem	mainmig_0815,
+	SimpleItem	mainmig_0816,
+	SimpleItem	mainmig_0817,
+	SimpleItem	mainmig_0818,
+	SimpleItem	mainmig_0819,
+	SimpleItem	mainmig_081a,
+	SimpleItem	mainmig_081b,
+	SimpleItem	mainmig_081c,
+	SimpleItem	mainmig_081d,
+	SimpleItem	mainmig_081e,
+	SimpleItem	mainmig_081f,
+	SimpleItem	mainmig_0820,
+	SimpleItem	mainmig_0821,
+	SimpleItem	mainmig_0822,
+	SimpleItem	mainmig_0823,
+	SimpleItem	mainmig_0824,
+	SimpleItem	mainmig_0825,
+	SimpleItem	mainmig_0826,
+	SimpleItem	mainmig_0827,
+	SimpleItem	mainmig_0828,
+	SimpleItem	mainmig_0829,
+	SimpleItem	mainmig_082a,
+	SimpleItem	mainmig_082b,
+	SimpleItem	mainmig_082c,
+	SimpleItem	mainmig_082d,
+	SimpleItem	mainmig_082e,
+	SimpleItem	mainmig_082f,
+	SimpleItem	mainmig_0830,
+	SimpleItem	mainmig_0831,
+	SimpleItem	mainmig_0832,
+	SimpleItem	mainmig_0833,
+	SimpleItem	mainmig_0834,
+	SimpleItem	mainmig_0835,
+	SimpleItem	mainmig_0836,
+	SimpleItem	mainmig_0837,
+	SimpleItem	mainmig_0838,
+	SimpleItem	mainmig_0839,
+	SimpleItem	mainmig_083a,
+	SimpleItem	mainmig_083b,
+	SimpleItem	mainmig_083c,
+	SimpleItem	mainmig_083d,
+	SimpleItem	mainmig_083e,
+	SimpleItem	mainmig_083f,
+	SimpleItem	mainmig_0840,
+	SimpleItem	mainmig_0841,
+	SimpleItem	mainmig_0842,
+	SimpleItem	mainmig_0843,
+	SimpleItem	mainmig_0844,
+	SimpleItem	mainmig_0845,
+	SimpleItem	mainmig_0846,
+	SimpleItem	mainmig_0847,
+	SimpleItem	mainmig_0848,
+	SimpleItem	mainmig_0849,
+	SimpleItem	mainmig_084a,
+	SimpleItem	mainmig_084b,
+	SimpleItem	mainmig_084c,
+	SimpleItem	mainmig_084d,
+	SimpleItem	mainmig_084e,
+	SimpleItem	mainmig_084f,
+	SimpleItem	mainmig_0850,
+	SimpleItem	mainmig_0851,
+	SimpleItem	mainmig_0852,
+	SimpleItem	mainmig_0853,
+	SimpleItem	mainmig_0854,
+	SimpleItem	mainmig_0855,
+	SimpleItem	mainmig_0856,
+	SimpleItem	mainmig_0857,
+	SimpleItem	mainmig_0858,
+	SimpleItem	mainmig_0859,
+	SimpleItem	mainmig_085a,
+	SimpleItem	mainmig_085b,
+	SimpleItem	mainmig_085c,
+	SimpleItem	mainmig_085d,
+	SimpleItem	mainmig_085e,
+	SimpleItem	mainmig_085f,
+	SimpleItem	mainmig_0860,
+	SimpleItem	mainmig_0861,
+	SimpleItem	mainmig_0862,
+	SimpleItem	mainmig_0863,
+	SimpleItem	mainmig_0864,
+	SimpleItem	mainmig_0865,
+	SimpleItem	mainmig_0866,
+	SimpleItem	mainmig_0867,
+	SimpleItem	mainmig_0868,
+	SimpleItem	mainmig_0869,
+	SimpleItem	mainmig_086a,
+	SimpleItem	mainmig_086b,
+	SimpleItem	mainmig_086c,
+	SimpleItem	mainmig_086d,
+	SimpleItem	mainmig_086e,
+	SimpleItem	mainmig_086f,
+	SimpleItem	mainmig_0870,
+	SimpleItem	mainmig_0871,
+	SimpleItem	mainmig_0872,
+	SimpleItem	mainmig_0873,
+	SimpleItem	mainmig_0874,
+	SimpleItem	mainmig_0875,
+	SimpleItem	mainmig_0876,
+	SimpleItem	mainmig_0877,
+	SimpleItem	mainmig_0878,
+	SimpleItem	mainmig_0879,
+	SimpleItem	mainmig_087a,
+	SimpleItem	mainmig_087b,
+	SimpleItem	mainmig_087c,
+	SimpleItem	mainmig_087d,
+	SimpleItem	mainmig_087e,
+	SimpleItem	mainmig_087f,
+	SimpleItem	mainmig_0880,
+	SimpleItem	mainmig_0881,
+	SimpleItem	mainmig_0882,
+	SimpleItem	mainmig_0883,
+	SimpleItem	mainmig_0884,
+	SimpleItem	mainmig_0885,
+	SimpleItem	mainmig_0886,
+	SimpleItem	mainmig_0887,
+	SimpleItem	mainmig_0888,
+	SimpleItem	mainmig_0889,
+	SimpleItem	mainmig_088a,
+	SimpleItem	mainmig_088b,
+	SimpleItem	mainmig_088c,
+	SimpleItem	mainmig_088d,
+	SimpleItem	mainmig_0bc9,
+	SimpleItem	mainmig_0bc8,
+	SimpleItem	mainmig_0bc7,
+	SimpleItem	mainmig_0bc6,
+	SimpleItem	mainmig_0bc5,
+	SimpleItem	mainmig_0bc4,
+	SimpleItem	mainmig_0bc3,
+	SimpleItem	mainmig_0bc2,
+	SimpleItem	mainmig_0bc1,
+	SimpleItem	mainmig_0bc0,
+	SimpleItem	mainmig_0bbf,
+	SimpleItem	mainmig_0bbe,
+	SimpleItem	mainmig_0bbd,
+	SimpleItem	mainmig_0bbc,
+	SimpleItem	mainmig_0bbb,
+	SimpleItem	mainmig_0bba,
+	SimpleItem	mainmig_0bb9,
+	SimpleItem	mainmig_0bb8,
+	SimpleItem	mainmig_0bb7,
+	SimpleItem	mainmig_0bb6,
+	SimpleItem	mainmig_0bb5,
+	SimpleItem	mainmig_0bb4,
+	SimpleItem	mainmig_0bb3,
+	SimpleItem	mainmig_0bb2,
+	SimpleItem	mainmig_0bb1,
+	SimpleItem	mainmig_0bb0,
+	SimpleItem	mainmig_0baf,
+	SimpleItem	mainmig_0bae,
+	SimpleItem	mainmig_0bad,
+	SimpleItem	mainmig_0bac,
+	SimpleItem	mainmig_0bab,
+	SimpleItem	mainmig_0baa,
+	SimpleItem	mainmig_0ba9,
+	SimpleItem	mainmig_0ba8,
+	SimpleItem	mainmig_0ba7,
+	SimpleItem	mainmig_0ba6,
+	SimpleItem	mainmig_0ba5,
+	SimpleItem	mainmig_0ba4,
+	SimpleItem	mainmig_0ba3,
+	SimpleItem	mainmig_0ba2,
+	SimpleItem	mainmig_0ba1,
+	SimpleItem	mainmig_0ba0,
+	SimpleItem	mainmig_0b9f,
+	SimpleItem	mainmig_0b9e,
+	SimpleItem	mainmig_0b9d,
+	SimpleItem	mainmig_0b9c,
+	SimpleItem	mainmig_0b9b,
+	SimpleItem	mainmig_0b9a,
+	SimpleItem	mainmig_0b99,
+	SimpleItem	mainmig_0b98,
+	SimpleItem	mainmig_0b97,
+	SimpleItem	mainmig_0b96,
+	SimpleItem	mainmig_0b95,
+	SimpleItem	mainmig_0b94,
+	SimpleItem	mainmig_0b93,
+	SimpleItem	mainmig_0b92,
+	SimpleItem	mainmig_0b91,
+	SimpleItem	mainmig_0b90,
+	SimpleItem	mainmig_0b8f,
+	SimpleItem	mainmig_0b8e,
+	SimpleItem	mainmig_0b8d,
+	SimpleItem	mainmig_0b8c,
+	SimpleItem	mainmig_0b8b,
+	SimpleItem	mainmig_0b8a,
+	SimpleItem	mainmig_0b89,
+	SimpleItem	mainmig_0b88,
+	SimpleItem	mainmig_0b87,
+	SimpleItem	mainmig_0b86,
+	SimpleItem	mainmig_0b85,
+	SimpleItem	mainmig_0b84,
+	SimpleItem	mainmig_0b83,
+	SimpleItem	mainmig_0b82,
+	SimpleItem	mainmig_0b81,
+	SimpleItem	mainmig_0b80,
+	SimpleItem	mainmig_0b7f,
+	SimpleItem	mainmig_0b7e,
+	SimpleItem	mainmig_0b7d,
+	SimpleItem	mainmig_0b7c,
+	SimpleItem	mainmig_0b7b,
+	SimpleItem	mainmig_0b7a,
+	SimpleItem	mainmig_0b79,
+	SimpleItem	mainmig_0b78,
+	SimpleItem	mainmig_0b77,
+	SimpleItem	mainmig_0b76,
+	SimpleItem	mainmig_0b75,
+	SimpleItem	mainmig_0b74,
+	SimpleItem	mainmig_0b73,
+	SimpleItem	mainmig_0b72,
+	SimpleItem	mainmig_0b71,
+	SimpleItem	mainmig_0b70,
+	SimpleItem	mainmig_0b6f,
+	SimpleItem	mainmig_0b6e,
+	SimpleItem	mainmig_0b6d,
+	SimpleItem	mainmig_0b6c,
+	SimpleItem	mainmig_0b6b,
+	SimpleItem	mainmig_0b6a,
+	SimpleItem	mainmig_0b69,
+	SimpleItem	mainmig_0b68,
+	SimpleItem	mainmig_0b67,
+	SimpleItem	mainmig_0b66,
+	SimpleItem	mainmig_0b65,
+	SimpleItem	mainmig_0b64,
+	SimpleItem	mainmig_0b63,
+	SimpleItem	mainmig_0b62,
+	SimpleItem	mainmig_0b61,
+	SimpleItem	mainmig_0b60,
+	SimpleItem	mainmig_0b5f,
+	SimpleItem	mainmig_0b5e,
+	SimpleItem	mainmig_0b5d,
+	SimpleItem	mainmig_0b5c,
+	SimpleItem	mainmig_0b5b,
+	SimpleItem	mainmig_0b5a,
+	SimpleItem	mainmig_0b59,
+	SimpleItem	mainmig_0b58,
+	SimpleItem	mainmig_0b57,
+	SimpleItem	mainmig_0b56,
+	SimpleItem	mainmig_0b55,
+	SimpleItem	mainmig_0b54,
+	SimpleItem	mainmig_0b53,
+	SimpleItem	mainmig_0b52,
+	SimpleItem	mainmig_0b51,
+	SimpleItem	mainmig_0b50,
+	SimpleItem	mainmig_0b4f,
+	SimpleItem	mainmig_0b4e,
+	SimpleItem	mainmig_0b4d,
+	SimpleItem	mainmig_0b4c,
+	SimpleItem	mainmig_0b4b,
+	SimpleItem	mainmig_0b4a,
+	SimpleItem	mainmig_0b49,
+	SimpleItem	mainmig_0b48,
+	SimpleItem	mainmig_0b47,
+	SimpleItem	mainmig_0b46,
+	SimpleItem	mainmig_0b45,
+	SimpleItem	mainmig_0b44,
+	SimpleItem	mainmig_0b43,
+	SimpleItem	mainmig_0b42,
+	SimpleItem	mainmig_0b41,
+	SimpleItem	mainmig_0b40,
+	SimpleItem	mainmig_0b3f,
+	SimpleItem	mainmig_0b3e,
+	SimpleItem	mainmig_0b3d,
+	SimpleItem	mainmig_0b3c,
+	SimpleItem	mainmig_0b3b,
+	SimpleItem	mainmig_0b3a,
+	SimpleItem	mainmig_0b39,
+	SimpleItem	mainmig_0b38,
+	SimpleItem	mainmig_0b37,
+	SimpleItem	mainmig_0b36,
+	SimpleItem	mainmig_0b35,
+	SimpleItem	mainmig_0b34,
+	SimpleItem	mainmig_0b33,
+	SimpleItem	mainmig_0b32,
+	SimpleItem	mainmig_0b31,
+	SimpleItem	mainmig_0b30,
+	SimpleItem	mainmig_0b2f,
+	SimpleItem	mainmig_0b2e,
+	SimpleItem	mainmig_0b2d,
+	SimpleItem	mainmig_0b2c,
+	SimpleItem	mainmig_0b2b,
+	SimpleItem	mainmig_0b2a,
+	SimpleItem	mainmig_0b29,
+	SimpleItem	mainmig_0b28,
+	SimpleItem	mainmig_0b27,
+	SimpleItem	mainmig_0b26,
+	SimpleItem	mainmig_0b25,
+	SimpleItem	mainmig_0b24,
+	SimpleItem	mainmig_0b23,
+	SimpleItem	mainmig_0b22,
+	SimpleItem	mainmig_0b21,
+	SimpleItem	mainmig_0b20,
+	SimpleItem	mainmig_0b1f,
+	SimpleItem	mainmig_0b1e,
+	SimpleItem	mainmig_0b1d,
+	SimpleItem	mainmig_0b1c,
+	SimpleItem	mainmig_0b1b,
+	SimpleItem	mainmig_0b1a,
+	SimpleItem	mainmig_0b19,
+	SimpleItem	mainmig_0b18,
+	SimpleItem	mainmig_0b17,
+	SimpleItem	mainmig_0b16,
+	SimpleItem	mainmig_0b15,
+	SimpleItem	mainmig_0b14,
+	SimpleItem	mainmig_0b13,
+	SimpleItem	mainmig_0b12,
+	SimpleItem	mainmig_0b11,
+	SimpleItem	mainmig_0b10,
+	SimpleItem	mainmig_0b0f,
+	SimpleItem	mainmig_0b0e,
+	SimpleItem	mainmig_0b0d,
+	SimpleItem	mainmig_0b0c,
+	SimpleItem	mainmig_0b0b,
+	SimpleItem	mainmig_0b0a,
+	SimpleItem	mainmig_0b09,
+	SimpleItem	mainmig_0b08,
+	SimpleItem	mainmig_0b07,
+	SimpleItem	mainmig_0b06,
+	SimpleItem	mainmig_0b05,
+	SimpleItem	mainmig_0b04,
+	SimpleItem	mainmig_0b03,
+	SimpleItem	mainmig_0b02,
+	SimpleItem	mainmig_0b01,
+	SimpleItem	mainmig_0b00,
+	SimpleItem	mainmig_0aff,
+	SimpleItem	mainmig_0afe,
+	SimpleItem	mainmig_0afd,
+	SimpleItem	mainmig_0afc,
+	SimpleItem	mainmig_0afb,
+	SimpleItem	mainmig_0afa,
+	SimpleItem	mainmig_0af9,
+	SimpleItem	mainmig_0af8,
+	SimpleItem	mainmig_0af7,
+	SimpleItem	mainmig_0af6,
+	SimpleItem	mainmig_0af5,
+	SimpleItem	mainmig_0af4,
+	SimpleItem	mainmig_0af3,
+	SimpleItem	mainmig_0af2,
+	SimpleItem	mainmig_0af1,
+	SimpleItem	mainmig_0af0,
+	SimpleItem	mainmig_0aef,
+	SimpleItem	mainmig_0aee,
+	SimpleItem	mainmig_0aed,
+	SimpleItem	mainmig_0aec,
+	SimpleItem	mainmig_0aeb,
+	SimpleItem	mainmig_0aea,
+	SimpleItem	mainmig_0ae9,
+	SimpleItem	mainmig_0ae8,
+	SimpleItem	mainmig_0ae7,
+	SimpleItem	mainmig_0ae6,
+	SimpleItem	mainmig_0ae5,
+	SimpleItem	mainmig_0ae4,
+	SimpleItem	mainmig_0ae3,
+	SimpleItem	mainmig_0ae2,
+	SimpleItem	mainmig_0ae1,
+	SimpleItem	mainmig_0ae0,
+	SimpleItem	mainmig_0adf,
+	SimpleItem	mainmig_0ade,
+	SimpleItem	mainmig_0add,
+	SimpleItem	mainmig_0adc,
+	SimpleItem	mainmig_0adb,
+	SimpleItem	mainmig_0ada,
+	SimpleItem	mainmig_0ad9,
+	SimpleItem	mainmig_0ad8,
+	SimpleItem	mainmig_0ad7,
+	SimpleItem	mainmig_0ad6,
+	SimpleItem	mainmig_0ad5,
+	SimpleItem	mainmig_0ad4,
+	SimpleItem	mainmig_0ad3,
+	SimpleItem	mainmig_0ad2,
+	SimpleItem	mainmig_0ad1,
+	SimpleItem	mainmig_0ad0,
+	SimpleItem	mainmig_0acf,
+	SimpleItem	mainmig_0ace,
+	SimpleItem	mainmig_0acd,
+	SimpleItem	mainmig_0acc,
+	SimpleItem	mainmig_0acb,
+	SimpleItem	mainmig_0aca,
+	SimpleItem	mainmig_0ac9,
+	SimpleItem	mainmig_0ac8,
+	SimpleItem	mainmig_0ac7,
+	BattleField
+	{
+		FileName	FIL_1_mainmig=mainmig.BF,
+		Title	{Main Mig World},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	mainmig_0bc9=
+			{
+				Posn
+				{
+					Abs
+					{	X	69662720,
+						Z	70275072
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_deleteme,
+				Shape		HUT
+			},
+			SimpleItem	mainmig_0bc8=
+			{
+				Posn
+				{
+					Abs
+					{	X	69664768,
+						Z	70213632
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_deleteme2,
+				Shape		HUT
+			},
+			SimpleItem	mainmig_0bc7=
+			{
+				Posn
+				{
+					Abs
+					{	X	84295680,
+						Z	48631808
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYongdok,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0bc6=
+			{
+				Posn
+				{
+					Abs
+					{	X	53227520,
+						Z	97665024
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SCCChosan,
+				Shape		WF1S
+			},
+			SimpleItem	mainmig_0bc5=
+			{
+				Posn
+				{
+					Abs
+					{	X	40054784,
+						Z	88399872
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdAntung,
+				Shape		CTS
+			},
+			SimpleItem	mainmig_0bc4=
+			{
+				Posn
+				{
+					Abs
+					{	X	42213538,
+						Z	90036466
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdUiju,
+				Shape		HRNS
+			},
+			SimpleItem	mainmig_0bc3=
+			{
+				Posn
+				{
+					Abs
+					{	X	38846464,
+						Z	88539136
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdSaamcham,
+				Shape		CTS
+			},
+			SimpleItem	mainmig_0bc2=
+			{
+				Posn
+				{
+					Abs
+					{	X	46260224,
+						Z	94437376
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StNamsanni,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0bc1=
+			{
+				Posn
+				{
+					Abs
+					{	X	45297664,
+						Z	93372416
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChongsongup,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0bc0=
+			{
+				Posn
+				{
+					Abs
+					{	X	79745024,
+						Z	93421568
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MSPTanchon,
+				Shape		DEB6
+			},
+			SimpleItem	mainmig_0bbf=
+			{
+				Posn
+				{
+					Abs
+					{	X	79675392,
+						Z	93507584
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdTanchon0,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0bbe=
+			{
+				Posn
+				{
+					Abs
+					{	X	79781888,
+						Z	93523968
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdTanchon1,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0bbd=
+			{
+				Posn
+				{
+					Abs
+					{	X	53317632,
+						Z	97587200
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdChosan,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0bbc=
+			{
+				Posn
+				{
+					Abs
+					{	X	53231616,
+						Z	97615872
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChosan,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0bbb=
+			{
+				Posn
+				{
+					Abs
+					{	X	59928576,
+						Z	99176448
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKangye,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0bba=
+			{
+				Posn
+				{
+					Abs
+					{	X	59977728,
+						Z	99168256
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SCCKangye,
+				Shape		WF1S
+			},
+			SimpleItem	mainmig_0bb9=
+			{
+				Posn
+				{
+					Abs
+					{	X	57409536,
+						Z	101277696
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SCCManpo,
+				Shape		WF1S
+			},
+			SimpleItem	mainmig_0bb8=
+			{
+				Posn
+				{
+					Abs
+					{	X	57491456,
+						Z	101347328
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StManpo,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0bb7=
+			{
+				Posn
+				{
+					Abs
+					{	X	57491456,
+						Z	101306368
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlManpo,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0bb6=
+			{
+				Posn
+				{
+					Abs
+					{	X	58392576,
+						Z	76701696
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_CPWaDong,
+				Shape		DEB7
+			},
+			SimpleItem	mainmig_0bb5=
+			{
+				Posn
+				{
+					Abs
+					{	X	60862464,
+						Z	65150976
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPanmunjom,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0bb4=
+			{
+				Posn
+				{
+					Abs
+					{	X	60616704,
+						Z	65069056
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyRdPanmunjom,
+				Shape		DEB2
+			},
+			SimpleItem	mainmig_0bb3=
+			{
+				Posn
+				{
+					Abs
+					{	X	60248064,
+						Z	65519616
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlYesong,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0bb2=
+			{
+				Posn
+				{
+					Abs
+					{	X	58114048,
+						Z	74072064
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSuan,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0bb1=
+			{
+				Posn
+				{
+					Abs
+					{	X	46870528,
+						Z	92688384
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_Sakchu,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0bb0=
+			{
+				Posn
+				{
+					Abs
+					{	X	44695749,
+						Z	94528952
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_HEPSuihu,
+				Shape		BULL
+			},
+			SimpleItem	mainmig_0baf=
+			{
+				Posn
+				{
+					Abs
+					{	X	44145244,
+						Z	94397880
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSuihu,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0bae=
+			{
+				Posn
+				{
+					Abs
+					{	X	46945980,
+						Z	92558361
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SCCSakchu,
+				Shape		WF1S
+			},
+			SimpleItem	mainmig_0bad=
+			{
+				Posn
+				{
+					Abs
+					{	X	52060160,
+						Z	79491072
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdSunan,
+				Shape		CTS
+			},
+			SimpleItem	mainmig_0bac=
+			{
+				Posn
+				{
+					Abs
+					{	X	66794586,
+						Z	46661247
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlTaegu,
+				Shape		CTS
+			},
+			SimpleItem	mainmig_0bab=
+			{
+				Posn
+				{
+					Abs
+					{	X	67161589,
+						Z	46661247
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlTaeguW,
+				Shape		CTS
+			},
+			SimpleItem	mainmig_0baa=
+			{
+				Posn
+				{
+					Abs
+					{	X	77988184,
+						Z	56281974
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StTaepaek,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0ba9=
+			{
+				Posn
+				{
+					Abs
+					{	X	74633216,
+						Z	64439475
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSangnam,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0ba8=
+			{
+				Posn
+				{
+					Abs
+					{	X	74932224,
+						Z	54484992
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StTanyang,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0ba7=
+			{
+				Posn
+				{
+					Abs
+					{	X	51753037,
+						Z	83859315
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdSinanju,
+				Shape		CTS
+			},
+			SimpleItem	mainmig_0ba6=
+			{
+				Posn
+				{
+					Abs
+					{	X	38338560,
+						Z	88506368
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdTaTung,
+				Shape		CTS
+			},
+			SimpleItem	mainmig_0ba5=
+			{
+				Posn
+				{
+					Abs
+					{	X	45314710,
+						Z	83460852
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_FCSinmiDo,
+				Shape		WINDSC
+			},
+			SimpleItem	mainmig_0ba4=
+			{
+				Posn
+				{
+					Abs
+					{	X	65544192,
+						Z	82849792
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlTokohig,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0ba3=
+			{
+				Posn
+				{
+					Abs
+					{	X	39612416,
+						Z	90349568
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdYalu,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0ba2=
+			{
+				Posn
+				{
+					Abs
+					{	X	39690240,
+						Z	90415104
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlYalu0,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0ba1=
+			{
+				Posn
+				{
+					Abs
+					{	X	39747584,
+						Z	90505216
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlYalu1,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0ba0=
+			{
+				Posn
+				{
+					Abs
+					{	X	41277440,
+						Z	89612288
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdSinuiju,
+				Shape		RLL4NS
+			},
+			SimpleItem	mainmig_0b9f=
+			{
+				Posn
+				{
+					Abs
+					{	X	41593856,
+						Z	89304064
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_RpRdSinuiju,
+				Shape		SCAFF
+			},
+			SimpleItem	mainmig_0b9e=
+			{
+				Posn
+				{
+					Abs
+					{	X	41463808,
+						Z	89451520
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_WhRdSinuiju,
+				Shape		WF7L
+			},
+			SimpleItem	mainmig_0b9d=
+			{
+				Posn
+				{
+					Abs
+					{	X	51761152,
+						Z	81719296
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdYongyu,
+				Shape		CTS
+			},
+			SimpleItem	mainmig_0b9c=
+			{
+				Posn
+				{
+					Abs
+					{	X	41289728,
+						Z	89626624
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlSinuiju0,
+				Shape		EMPTY2
+			},
+			SimpleItem	mainmig_0b9b=
+			{
+				Posn
+				{
+					Abs
+					{	X	41320448,
+						Z	89657344
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlSinuiju1,
+				Shape		EMPTY2
+			},
+			SimpleItem	mainmig_0b9a=
+			{
+				Posn
+				{
+					Abs
+					{	X	42147840,
+						Z	89577472
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdSinuijuNE,
+				Shape		HRNS
+			},
+			SimpleItem	mainmig_0b99=
+			{
+				Posn
+				{
+					Abs
+					{	X	74265723,
+						Z	62599672
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYulchon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b98=
+			{
+				Posn
+				{
+					Abs
+					{	X	65191936,
+						Z	62373888
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyBlKuri,
+				Shape		DEB5
+			},
+			SimpleItem	mainmig_0b97=
+			{
+				Posn
+				{
+					Abs
+					{	X	84783104,
+						Z	105922560
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKyongsong,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b96=
+			{
+				Posn
+				{
+					Abs
+					{	X	84803584,
+						Z	105984000
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdKyongsong,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b95=
+			{
+				Posn
+				{
+					Abs
+					{	X	67084288,
+						Z	55947264
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StMaesan,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b94=
+			{
+				Posn
+				{
+					Abs
+					{	X	71118848,
+						Z	56078336
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StMokkye,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b93=
+			{
+				Posn
+				{
+					Abs
+					{	X	73027584,
+						Z	52264960
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StMungyong,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b92=
+			{
+				Posn
+				{
+					Abs
+					{	X	61689856,
+						Z	99266560
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdChangig,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b91=
+			{
+				Posn
+				{
+					Abs
+					{	X	71854115,
+						Z	89036931
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlNamdaechon,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b90=
+			{
+				Posn
+				{
+					Abs
+					{	X	61579264,
+						Z	99332096
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdUngig,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b8f=
+			{
+				Posn
+				{
+					Abs
+					{	X	49770496,
+						Z	74412032
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StNampo,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0b8e=
+			{
+				Posn
+				{
+					Abs
+					{	X	65310720,
+						Z	68612096
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChorwon,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b8d=
+			{
+				Posn
+				{
+					Abs
+					{	X	49709056,
+						Z	74301440
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_ICMPNampo,
+				Shape		WRECK
+			},
+			SimpleItem	mainmig_0b8c=
+			{
+				Posn
+				{
+					Abs
+					{	X	64057344,
+						Z	67317760
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYonchon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b8b=
+			{
+				Posn
+				{
+					Abs
+					{	X	42783744,
+						Z	87264256
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdNamsi,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b8a=
+			{
+				Posn
+				{
+					Abs
+					{	X	56610816,
+						Z	77279232
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSamdung,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b89=
+			{
+				Posn
+				{
+					Abs
+					{	X	56115161,
+						Z	78092084
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlNan,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b88=
+			{
+				Posn
+				{
+					Abs
+					{	X	81354752,
+						Z	55914496
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StNoktong,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b87=
+			{
+				Posn
+				{
+					Abs
+					{	X	67719168,
+						Z	60600320
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYangpyong,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b86=
+			{
+				Posn
+				{
+					Abs
+					{	X	66138112,
+						Z	61263872
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlHan,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b85=
+			{
+				Posn
+				{
+					Abs
+					{	X	54857728,
+						Z	73129984
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StNuang,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b84=
+			{
+				Posn
+				{
+					Abs
+					{	X	69623808,
+						Z	67436544
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StHwachon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b83=
+			{
+				Posn
+				{
+					Abs
+					{	X	65134592,
+						Z	65130496
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPochon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b82=
+			{
+				Posn
+				{
+					Abs
+					{	X	73744384,
+						Z	66977792
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdInje,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b81=
+			{
+				Posn
+				{
+					Abs
+					{	X	68009984,
+						Z	64331776
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlPukhan0,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b80=
+			{
+				Posn
+				{
+					Abs
+					{	X	63975424,
+						Z	66093056
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlImjin,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b7f=
+			{
+				Posn
+				{
+					Abs
+					{	X	65339392,
+						Z	66371584
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYongpyong,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b7e=
+			{
+				Posn
+				{
+					Abs
+					{	X	76275712,
+						Z	70443008
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKansang,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b7d=
+			{
+				Posn
+				{
+					Abs
+					{	X	82300928,
+						Z	95801344
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKimchaek,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b7c=
+			{
+				Posn
+				{
+					Abs
+					{	X	82239488,
+						Z	95768576
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MSPKimchaek,
+				Shape		DEB6
+			},
+			SimpleItem	mainmig_0b7b=
+			{
+				Posn
+				{
+					Abs
+					{	X	68067328,
+						Z	64299008
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdPukhan1,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b7a=
+			{
+				Posn
+				{
+					Abs
+					{	X	82276352,
+						Z	95870976
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdKimchaek,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b79=
+			{
+				Posn
+				{
+					Abs
+					{	X	72915675,
+						Z	88892832
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlPuktaechon,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b78=
+			{
+				Posn
+				{
+					Abs
+					{	X	73097216,
+						Z	96038912
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPungsan,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b77=
+			{
+				Posn
+				{
+					Abs
+					{	X	59973963,
+						Z	95582523
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChosin,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b76=
+			{
+				Posn
+				{
+					Abs
+					{	X	59952991,
+						Z	95226004
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_HEPChosin,
+				Shape		BULL
+			},
+			SimpleItem	mainmig_0b75=
+			{
+				Posn
+				{
+					Abs
+					{	X	54063104,
+						Z	80936960
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdPyongni,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b74=
+			{
+				Posn
+				{
+					Abs
+					{	X	39322032,
+						Z	90701349
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_WhRdDangDong,
+				Shape		MHQ
+			},
+			SimpleItem	mainmig_0b73=
+			{
+				Posn
+				{
+					Abs
+					{	X	39311546,
+						Z	90622705
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StDangDong,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b72=
+			{
+				Posn
+				{
+					Abs
+					{	X	58310656,
+						Z	76763136
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StWaDong,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b71=
+			{
+				Posn
+				{
+					Abs
+					{	X	60503102,
+						Z	43725221
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKunsan,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0b70=
+			{
+				Posn
+				{
+					Abs
+					{	X	60791462,
+						Z	43751436
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlKunsan,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b6f=
+			{
+				Posn
+				{
+					Abs
+					{	X	60411460,
+						Z	50291807
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StHannae,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b6e=
+			{
+				Posn
+				{
+					Abs
+					{	X	60398352,
+						Z	50055876
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StTaechon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b6d=
+			{
+				Posn
+				{
+					Abs
+					{	X	64618496,
+						Z	78528512
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKanda,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b6c=
+			{
+				Posn
+				{
+					Abs
+					{	X	59949056,
+						Z	61882368
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKimpo,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b6b=
+			{
+				Posn
+				{
+					Abs
+					{	X	60178432,
+						Z	61816832
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlKimpo,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b6a=
+			{
+				Posn
+				{
+					Abs
+					{	X	74711611,
+						Z	73312475
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKojin,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b69=
+			{
+				Posn
+				{
+					Abs
+					{	X	65835008,
+						Z	67031040
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKalmal,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b68=
+			{
+				Posn
+				{
+					Abs
+					{	X	66379776,
+						Z	50978816
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlKum0,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b67=
+			{
+				Posn
+				{
+					Abs
+					{	X	66453504,
+						Z	50941952
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdKum1,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b66=
+			{
+				Posn
+				{
+					Abs
+					{	X	67108864,
+						Z	84574208
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlKumjinchon,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b65=
+			{
+				Posn
+				{
+					Abs
+					{	X	65224704,
+						Z	51511296
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlChonui,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b64=
+			{
+				Posn
+				{
+					Abs
+					{	X	64978944,
+						Z	62357504
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKuri,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b63=
+			{
+				Posn
+				{
+					Abs
+					{	X	61054976,
+						Z	65073152
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlMunsan,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b62=
+			{
+				Posn
+				{
+					Abs
+					{	X	61535262,
+						Z	64619051
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyBlMunsan,
+				Shape		LAREA
+			},
+			SimpleItem	mainmig_0b61=
+			{
+				Posn
+				{
+					Abs
+					{	X	61051904,
+						Z	65063936
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdMunsan0,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b60=
+			{
+				Posn
+				{
+					Abs
+					{	X	61070336,
+						Z	65071104
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdMunsan1,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b5f=
+			{
+				Posn
+				{
+					Abs
+					{	X	61066240,
+						Z	65055744
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdMunsan2,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b5e=
+			{
+				Posn
+				{
+					Abs
+					{	X	61511506,
+						Z	64665745
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StMunsan,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b5d=
+			{
+				Posn
+				{
+					Abs
+					{	X	69697536,
+						Z	64954368
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlChuncheon,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b5c=
+			{
+				Posn
+				{
+					Abs
+					{	X	69926912,
+						Z	64978944
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChuncheon,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b5b=
+			{
+				Posn
+				{
+					Abs
+					{	X	69918720,
+						Z	64851968
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdChuncheon0,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b5a=
+			{
+				Posn
+				{
+					Abs
+					{	X	69836800,
+						Z	64843776
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdChuncheon1,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b59=
+			{
+				Posn
+				{
+					Abs
+					{	X	71192576,
+						Z	62910464
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdRdHongchon,
+				Shape		SDISP1
+			},
+			SimpleItem	mainmig_0b58=
+			{
+				Posn
+				{
+					Abs
+					{	X	71135232,
+						Z	62869504
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StHongchon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b57=
+			{
+				Posn
+				{
+					Abs
+					{	X	71999488,
+						Z	60657664
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StHoensong,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b56=
+			{
+				Posn
+				{
+					Abs
+					{	X	80003072,
+						Z	63561728
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKangnung,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b55=
+			{
+				Posn
+				{
+					Abs
+					{	X	80392192,
+						Z	63553536
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlKangnung,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b54=
+			{
+				Posn
+				{
+					Abs
+					{	X	82358272,
+						Z	60129280
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSamchok,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b53=
+			{
+				Posn
+				{
+					Abs
+					{	X	77959168,
+						Z	59392000
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChongson,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b52=
+			{
+				Posn
+				{
+					Abs
+					{	X	75591680,
+						Z	59281408
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPyongchang,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b51=
+			{
+				Posn
+				{
+					Abs
+					{	X	71589888,
+						Z	59170816
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StWonju,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b50=
+			{
+				Posn
+				{
+					Abs
+					{	X	84500480,
+						Z	55091200
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StUlhin,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b4f=
+			{
+				Posn
+				{
+					Abs
+					{	X	73891840,
+						Z	56614912
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChechon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b4e=
+			{
+				Posn
+				{
+					Abs
+					{	X	71454720,
+						Z	54886400
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChungju,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b4d=
+			{
+				Posn
+				{
+					Abs
+					{	X	71512064,
+						Z	54849536
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdChungju,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b4c=
+			{
+				Posn
+				{
+					Abs
+					{	X	64163840,
+						Z	54968320
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlPyongtaek,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b4b=
+			{
+				Posn
+				{
+					Abs
+					{	X	64151552,
+						Z	54919168
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdBlPyongtaek,
+				Shape		SDISP1
+			},
+			SimpleItem	mainmig_0b4a=
+			{
+				Posn
+				{
+					Abs
+					{	X	63987712,
+						Z	55050240
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPyongtaek,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b49=
+			{
+				Posn
+				{
+					Abs
+					{	X	64712704,
+						Z	53018624
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdBlChonan,
+				Shape		TWN2
+			},
+			SimpleItem	mainmig_0b48=
+			{
+				Posn
+				{
+					Abs
+					{	X	64724992,
+						Z	52940800
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChonan,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b47=
+			{
+				Posn
+				{
+					Abs
+					{	X	67301376,
+						Z	55054336
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKwangheywan,
+				Shape		DEB4
+			},
+			SimpleItem	mainmig_0b46=
+			{
+				Posn
+				{
+					Abs
+					{	X	67260416,
+						Z	53526528
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChinchon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b45=
+			{
+				Posn
+				{
+					Abs
+					{	X	68554752,
+						Z	52736000
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChungpyong,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b44=
+			{
+				Posn
+				{
+					Abs
+					{	X	60379136,
+						Z	50688000
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdBlHongsong,
+				Shape		SDISP1
+			},
+			SimpleItem	mainmig_0b43=
+			{
+				Posn
+				{
+					Abs
+					{	X	60444672,
+						Z	50704384
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StHongsong,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b42=
+			{
+				Posn
+				{
+					Abs
+					{	X	70365184,
+						Z	53026816
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKoesan,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b41=
+			{
+				Posn
+				{
+					Abs
+					{	X	66002944,
+						Z	50909184
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlChochiwon,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0b40=
+			{
+				Posn
+				{
+					Abs
+					{	X	66027520,
+						Z	50958336
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyBlChochiwon,
+				Shape		DEB5
+			},
+			SimpleItem	mainmig_0b3f=
+			{
+				Posn
+				{
+					Abs
+					{	X	66023424,
+						Z	50872320
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChochiwon,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b3e=
+			{
+				Posn
+				{
+					Abs
+					{	X	63873024,
+						Z	46198784
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StNonsan,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b3d=
+			{
+				Posn
+				{
+					Abs
+					{	X	64450560,
+						Z	49053696
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKongju,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b3c=
+			{
+				Posn
+				{
+					Abs
+					{	X	67084288,
+						Z	47677440
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlTaejon,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b3b=
+			{
+				Posn
+				{
+					Abs
+					{	X	67067904,
+						Z	47587328
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdBlTaejon,
+				Shape		SDISP1
+			},
+			SimpleItem	mainmig_0b3a=
+			{
+				Posn
+				{
+					Abs
+					{	X	67137536,
+						Z	47616000
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StTaejon,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0b39=
+			{
+				Posn
+				{
+					Abs
+					{	X	70250496,
+						Z	46039040
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdBlYongdong,
+				Shape		SDISP1
+			},
+			SimpleItem	mainmig_0b38=
+			{
+				Posn
+				{
+					Abs
+					{	X	70291456,
+						Z	46088192
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYongdong,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b37=
+			{
+				Posn
+				{
+					Abs
+					{	X	73121792,
+						Z	45420544
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKimchon,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0b36=
+			{
+				Posn
+				{
+					Abs
+					{	X	74739712,
+						Z	45580288
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyBlKumi,
+				Shape		DEB5
+			},
+			SimpleItem	mainmig_0b35=
+			{
+				Posn
+				{
+					Abs
+					{	X	74678272,
+						Z	45535232
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKumi,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b34=
+			{
+				Posn
+				{
+					Abs
+					{	X	78286848,
+						Z	47988736
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StUisong,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b33=
+			{
+				Posn
+				{
+					Abs
+					{	X	78495744,
+						Z	50409472
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StAndong,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b32=
+			{
+				Posn
+				{
+					Abs
+					{	X	77651968,
+						Z	53239808
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYongju,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b31=
+			{
+				Posn
+				{
+					Abs
+					{	X	76775424,
+						Z	53747712
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPunggi,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b30=
+			{
+				Posn
+				{
+					Abs
+					{	X	73457664,
+						Z	48721920
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSangju,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b2f=
+			{
+				Posn
+				{
+					Abs
+					{	X	73822208,
+						Z	50728960
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChomchon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b2e=
+			{
+				Posn
+				{
+					Abs
+					{	X	76070912,
+						Z	51359744
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYechon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b2d=
+			{
+				Posn
+				{
+					Abs
+					{	X	84606976,
+						Z	50036736
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyBlYonghae,
+				Shape		DEB5
+			},
+			SimpleItem	mainmig_0b2c=
+			{
+				Posn
+				{
+					Abs
+					{	X	84660224,
+						Z	50044928
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYonghae,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b2b=
+			{
+				Posn
+				{
+					Abs
+					{	X	60428288,
+						Z	79798272
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYangdok,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b2a=
+			{
+				Posn
+				{
+					Abs
+					{	X	84414464,
+						Z	44564480
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlPohang,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b29=
+			{
+				Posn
+				{
+					Abs
+					{	X	84353024,
+						Z	44544000
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPohang,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b28=
+			{
+				Posn
+				{
+					Abs
+					{	X	86269952,
+						Z	108052480
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyRlChongjin,
+				Shape		DEB3
+			},
+			SimpleItem	mainmig_0b27=
+			{
+				Posn
+				{
+					Abs
+					{	X	86212608,
+						Z	108023808
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChongjin,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0b26=
+			{
+				Posn
+				{
+					Abs
+					{	X	83271680,
+						Z	99086336
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdKilchu,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b25=
+			{
+				Posn
+				{
+					Abs
+					{	X	83271680,
+						Z	99151872
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKilchu,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b24=
+			{
+				Posn
+				{
+					Abs
+					{	X	73191424,
+						Z	104001536
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StHyesan,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0b23=
+			{
+				Posn
+				{
+					Abs
+					{	X	74264576,
+						Z	100589568
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKapsan,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b22=
+			{
+				Posn
+				{
+					Abs
+					{	X	73703424,
+						Z	67014656
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StInje,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b21=
+			{
+				Posn
+				{
+					Abs
+					{	X	62722048,
+						Z	60989440
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlSeoul,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b20=
+			{
+				Posn
+				{
+					Abs
+					{	X	62644224,
+						Z	61542400
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSeoul,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0b1f=
+			{
+				Posn
+				{
+					Abs
+					{	X	62543701,
+						Z	61171024
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlSeoul,
+				Shape		RLL4NS
+			},
+			SimpleItem	mainmig_0b1e=
+			{
+				Posn
+				{
+					Abs
+					{	X	62251008,
+						Z	61235200
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyBlSeoul,
+				Shape		DEB5
+			},
+			SimpleItem	mainmig_0b1d=
+			{
+				Posn
+				{
+					Abs
+					{	X	62567459,
+						Z	61161194
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdSeoul0,
+				Shape		RLL4NS
+			},
+			SimpleItem	mainmig_0b1c=
+			{
+				Posn
+				{
+					Abs
+					{	X	62557626,
+						Z	61165289
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdSeoul1,
+				Shape		RLL4NS
+			},
+			SimpleItem	mainmig_0b1b=
+			{
+				Posn
+				{
+					Abs
+					{	X	63479231,
+						Z	61060431
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdSeoul2,
+				Shape		RLL4NS
+			},
+			SimpleItem	mainmig_0b1a=
+			{
+				Posn
+				{
+					Abs
+					{	X	62287872,
+						Z	61353984
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdSeoul3,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b19=
+			{
+				Posn
+				{
+					Abs
+					{	X	63193088,
+						Z	61603840
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdSeoul4,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b18=
+			{
+				Posn
+				{
+					Abs
+					{	X	63291392,
+						Z	61620224
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdSeoul5,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b17=
+			{
+				Posn
+				{
+					Abs
+					{	X	63184896,
+						Z	61526016
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdSeoul6,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0b16=
+			{
+				Posn
+				{
+					Abs
+					{	X	63791104,
+						Z	63369216
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StUijongbu,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b15=
+			{
+				Posn
+				{
+					Abs
+					{	X	64557056,
+						Z	60022784
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSongnam,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b14=
+			{
+				Posn
+				{
+					Abs
+					{	X	63541248,
+						Z	58200064
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlSuwon,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b13=
+			{
+				Posn
+				{
+					Abs
+					{	X	63537152,
+						Z	58122240
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdBlSuwon,
+				Shape		SDISP1
+			},
+			SimpleItem	mainmig_0b12=
+			{
+				Posn
+				{
+					Abs
+					{	X	63459328,
+						Z	58261504
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSuwon,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b11=
+			{
+				Posn
+				{
+					Abs
+					{	X	60198912,
+						Z	60440576
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StInchon,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0b10=
+			{
+				Posn
+				{
+					Abs
+					{	X	63767552,
+						Z	56561664
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfBlOsan,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0b0f=
+			{
+				Posn
+				{
+					Abs
+					{	X	63923200,
+						Z	56612864
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyBlOsan,
+				Shape		SYARD
+			},
+			SimpleItem	mainmig_0b0e=
+			{
+				Posn
+				{
+					Abs
+					{	X	63979520,
+						Z	56705024
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StOsan,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b0d=
+			{
+				Posn
+				{
+					Abs
+					{	X	68943872,
+						Z	56496128
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChanghowon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b0c=
+			{
+				Posn
+				{
+					Abs
+					{	X	59826176,
+						Z	65994752
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdRdKaesong,
+				Shape		SDISP1
+			},
+			SimpleItem	mainmig_0b0b=
+			{
+				Posn
+				{
+					Abs
+					{	X	59817984,
+						Z	65912832
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKaesong,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b0a=
+			{
+				Posn
+				{
+					Abs
+					{	X	59154432,
+						Z	68050944
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdRdKumchon,
+				Shape		SDISP1
+			},
+			SimpleItem	mainmig_0b09=
+			{
+				Posn
+				{
+					Abs
+					{	X	59215872,
+						Z	68059136
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKumchon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b08=
+			{
+				Posn
+				{
+					Abs
+					{	X	62459904,
+						Z	71725056
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdRdIchon,
+				Shape		SDISP1
+			},
+			SimpleItem	mainmig_0b07=
+			{
+				Posn
+				{
+					Abs
+					{	X	62504960,
+						Z	71729152
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StIchon,
+				Shape		DEB4
+			},
+			SimpleItem	mainmig_0b06=
+			{
+				Posn
+				{
+					Abs
+					{	X	66019328,
+						Z	70836224
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPyonggang,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b05=
+			{
+				Posn
+				{
+					Abs
+					{	X	66588672,
+						Z	73363456
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSepo,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b04=
+			{
+				Posn
+				{
+					Abs
+					{	X	67137536,
+						Z	75788288
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKosan,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b03=
+			{
+				Posn
+				{
+					Abs
+					{	X	71049216,
+						Z	75542528
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKojo,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0b02=
+			{
+				Posn
+				{
+					Abs
+					{	X	77664256,
+						Z	67112960
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYangyang,
+				Shape		TWN1
+			}
+		},
+		ItemGroup
+		{
+			SimpleItem	mainmig_0b01=
+			{
+				Posn
+				{
+					Abs
+					{	X	68710400,
+						Z	74076160
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StHoeyang,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0b00=
+			{
+				Posn
+				{
+					Abs
+					{	X	69279744,
+						Z	71856128
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChangdo,
+				Shape		DEB4
+			},
+			SimpleItem	mainmig_0aff=
+			{
+				Posn
+				{
+					Abs
+					{	X	67465216,
+						Z	69468160
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKumhwa,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0afe=
+			{
+				Posn
+				{
+					Abs
+					{	X	56401920,
+						Z	65212416
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYonan,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0afd=
+			{
+				Posn
+				{
+					Abs
+					{	X	57167872,
+						Z	75923456
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYulLi,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0afc=
+			{
+				Posn
+				{
+					Abs
+					{	X	55824384,
+						Z	75640832
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSangwon,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0afb=
+			{
+				Posn
+				{
+					Abs
+					{	X	59588608,
+						Z	71888896
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSingye,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0afa=
+			{
+				Posn
+				{
+					Abs
+					{	X	51646464,
+						Z	70684672
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChaeryong,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0af9=
+			{
+				Posn
+				{
+					Abs
+					{	X	50532352,
+						Z	71876608
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdAnak,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0af8=
+			{
+				Posn
+				{
+					Abs
+					{	X	47050752,
+						Z	69009408
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChangyon,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0af7=
+			{
+				Posn
+				{
+					Abs
+					{	X	52391936,
+						Z	66654208
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StHaeju,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0af6=
+			{
+				Posn
+				{
+					Abs
+					{	X	60542976,
+						Z	74997760
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKoksan,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0af5=
+			{
+				Posn
+				{
+					Abs
+					{	X	58474496,
+						Z	69963776
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPyongsan,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0af4=
+			{
+				Posn
+				{
+					Abs
+					{	X	57049088,
+						Z	70873088
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdSinmak,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0af3=
+			{
+				Posn
+				{
+					Abs
+					{	X	67051520,
+						Z	79073280
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyRlWonsan,
+				Shape		DEB3
+			},
+			SimpleItem	mainmig_0af2=
+			{
+				Posn
+				{
+					Abs
+					{	X	67031040,
+						Z	78999552
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StWonsan,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0af1=
+			{
+				Posn
+				{
+					Abs
+					{	X	48164864,
+						Z	88326144
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKusong,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0af0=
+			{
+				Posn
+				{
+					Abs
+					{	X	50438144,
+						Z	87363584
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdTaechon,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0aef=
+			{
+				Posn
+				{
+					Abs
+					{	X	57167872,
+						Z	90234880
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SCCHuichon,
+				Shape		WF1S
+			},
+			SimpleItem	mainmig_0aee=
+			{
+				Posn
+				{
+					Abs
+					{	X	57225216,
+						Z	90238976
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlHuichon,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0aed=
+			{
+				Posn
+				{
+					Abs
+					{	X	65572864,
+						Z	82243584
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKowon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0aec=
+			{
+				Posn
+				{
+					Abs
+					{	X	65511424,
+						Z	82329600
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlKowon,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0aeb=
+			{
+				Posn
+				{
+					Abs
+					{	X	65597440,
+						Z	83435520
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYonghung,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0aea=
+			{
+				Posn
+				{
+					Abs
+					{	X	68079616,
+						Z	87535616
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StHamhung,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0ae9=
+			{
+				Posn
+				{
+					Abs
+					{	X	68071424,
+						Z	87449600
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyRdHamhung,
+				Shape		DEB2
+			},
+			SimpleItem	mainmig_0ae8=
+			{
+				Posn
+				{
+					Abs
+					{	X	74567680,
+						Z	91193344
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPukchong,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0ae7=
+			{
+				Posn
+				{
+					Abs
+					{	X	52736000,
+						Z	71909376
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSariwon,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0ae6=
+			{
+				Posn
+				{
+					Abs
+					{	X	52736000,
+						Z	71835648
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdSariwon,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0ae5=
+			{
+				Posn
+				{
+					Abs
+					{	X	55136256,
+						Z	86958080
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKujang,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0ae4=
+			{
+				Posn
+				{
+					Abs
+					{	X	57479168,
+						Z	85725184
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StTokchon,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0ae3=
+			{
+				Posn
+				{
+					Abs
+					{	X	54321152,
+						Z	82042880
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSunchon,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0ae2=
+			{
+				Posn
+				{
+					Abs
+					{	X	55783424,
+						Z	78966784
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StKangdong,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0ae1=
+			{
+				Posn
+				{
+					Abs
+					{	X	55767040,
+						Z	78893056
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdKangdong,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0ae0=
+			{
+				Posn
+				{
+					Abs
+					{	X	51494912,
+						Z	83959808
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSinanju,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0adf=
+			{
+				Posn
+				{
+					Abs
+					{	X	51748864,
+						Z	81870848
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_WhRdSukchon,
+				Shape		WF4M
+			},
+			SimpleItem	mainmig_0ade=
+			{
+				Posn
+				{
+					Abs
+					{	X	51675136,
+						Z	81735680
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyRdSukchon,
+				Shape		SYARD
+			},
+			SimpleItem	mainmig_0add=
+			{
+				Posn
+				{
+					Abs
+					{	X	51650560,
+						Z	81891328
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSukchon,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0adc=
+			{
+				Posn
+				{
+					Abs
+					{	X	54005760,
+						Z	85397504
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlChongchon0,
+				Shape		CRANE
+			},
+			SimpleItem	mainmig_0adb=
+			{
+				Posn
+				{
+					Abs
+					{	X	54054912,
+						Z	85352448
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlChongchon1,
+				Shape		CRANE
+			},
+			SimpleItem	mainmig_0ada=
+			{
+				Posn
+				{
+					Abs
+					{	X	41418240,
+						Z	89347584
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdSinuiju,
+				Shape		BRNS
+			},
+			SimpleItem	mainmig_0ad9=
+			{
+				Posn
+				{
+					Abs
+					{	X	45611008,
+						Z	86159360
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SdRdSonchon,
+				Shape		WF3M
+			},
+			SimpleItem	mainmig_0ad8=
+			{
+				Posn
+				{
+					Abs
+					{	X	41288704,
+						Z	89333760
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_NODE_sinuiju,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0ad7=
+			{
+				Posn
+				{
+					Abs
+					{	X	41179136,
+						Z	89716736
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_NODE_AnTung,
+				Shape		CHINFT
+			},
+			SimpleItem	mainmig_0ad6=
+			{
+				Posn
+				{
+					Abs
+					{	X	41368576,
+						Z	89415680
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_Takeoff,
+				Shape		DEB6
+			},
+			SimpleItem	mainmig_0ad5=
+			{
+				Posn
+				{
+					Abs
+					{	X	51154944,
+						Z	85344256
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlTaeryong,
+				Shape		CRANE
+			},
+			SimpleItem	mainmig_0ad4=
+			{
+				Posn
+				{
+					Abs
+					{	X	42874880,
+						Z	87297024
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StYomju,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0ad3=
+			{
+				Posn
+				{
+					Abs
+					{	X	42897408,
+						Z	87313408
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_SCCYomju,
+				Shape		WF7L
+			},
+			SimpleItem	mainmig_0ad2=
+			{
+				Posn
+				{
+					Abs
+					{	X	48142336,
+						Z	84955136
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StChongju,
+				Shape		TWN3EW
+			},
+			SimpleItem	mainmig_0ad1=
+			{
+				Posn
+				{
+					Abs
+					{	X	45545472,
+						Z	86161408
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StSonchon,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0ad0=
+			{
+				Posn
+				{
+					Abs
+					{	X	53002240,
+						Z	73678848
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdHwangju,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0acf=
+			{
+				Posn
+				{
+					Abs
+					{	X	52961280,
+						Z	73801728
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StHwangju,
+				Shape		V1NS
+			},
+			SimpleItem	mainmig_0ace=
+			{
+				Posn
+				{
+					Abs
+					{	X	52662272,
+						Z	77828096
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdPyongyangE,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0acd=
+			{
+				Posn
+				{
+					Abs
+					{	X	52768768,
+						Z	77832192
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdPyongyangD,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0acc=
+			{
+				Posn
+				{
+					Abs
+					{	X	52768768,
+						Z	77729792
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_AfRdPyongyangM,
+				Shape		CTWR2
+			},
+			SimpleItem	mainmig_0acb=
+			{
+				Posn
+				{
+					Abs
+					{	X	52703232,
+						Z	77418496
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRlPyongyang,
+				Shape		BEXP
+			},
+			SimpleItem	mainmig_0aca=
+			{
+				Posn
+				{
+					Abs
+					{	X	52486144,
+						Z	77451264
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_MyRdPyongyang,
+				Shape		SYARD
+			},
+			SimpleItem	mainmig_0ac9=
+			{
+				Posn
+				{
+					Abs
+					{	X	52592640,
+						Z	77377536
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdPyongyang1,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0ac8=
+			{
+				Posn
+				{
+					Abs
+					{	X	52494336,
+						Z	77357056
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BrRdPyongyang0,
+				Shape		DEB1
+			},
+			SimpleItem	mainmig_0ac7=
+			{
+				Posn
+				{
+					Abs
+					{	X	52670464,
+						Z	77676544
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_StPyongyang,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0801=
+			{
+				Posn
+				{
+					Abs
+					{	X	41113600,
+						Z	89522176
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		LBFLAK
+			},
+			SimpleItem	mainmig_0802=
+			{
+				Posn
+				{
+					Abs
+					{	X	41145344,
+						Z	89544704
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		LBFLAK
+			},
+			SimpleItem	mainmig_0803=
+			{
+				Posn
+				{
+					Abs
+					{	X	41303040,
+						Z	89753600
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		LBFLAK
+			},
+			SimpleItem	mainmig_0804=
+			{
+				Posn
+				{
+					Abs
+					{	X	41253888,
+						Z	89698304
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		LBFLAK
+			},
+			SimpleItem	mainmig_0805=
+			{
+				Posn
+				{
+					Abs
+					{	X	41228288,
+						Z	89620480
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CHSBAA
+			},
+			SimpleItem	mainmig_0806=
+			{
+				Posn
+				{
+					Abs
+					{	X	41241600,
+						Z	89672704
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		SAAA
+			},
+			SimpleItem	mainmig_0807=
+			{
+				Posn
+				{
+					Abs
+					{	X	41322496,
+						Z	89823232
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0808=
+			{
+				Posn
+				{
+					Abs
+					{	X	40666112,
+						Z	89157632
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0809=
+			{
+				Posn
+				{
+					Abs
+					{	X	40645632,
+						Z	89143296
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		HUT
+			},
+			SimpleItem	mainmig_080a=
+			{
+				Posn
+				{
+					Abs
+					{	X	41214976,
+						Z	89305088
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_080b=
+			{
+				Posn
+				{
+					Abs
+					{	X	41183232,
+						Z	89304064
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_080c=
+			{
+				Posn
+				{
+					Abs
+					{	X	41207808,
+						Z	89338880
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_080d=
+			{
+				Posn
+				{
+					Abs
+					{	X	40721408,
+						Z	89190400
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_080e=
+			{
+				Posn
+				{
+					Abs
+					{	X	41208832,
+						Z	89269248
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_080f=
+			{
+				Posn
+				{
+					Abs
+					{	X	40741888,
+						Z	89181184
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		HUT
+			},
+			SimpleItem	mainmig_0810=
+			{
+				Posn
+				{
+					Abs
+					{	X	40740864,
+						Z	89196544
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0811=
+			{
+				Posn
+				{
+					Abs
+					{	X	40692736,
+						Z	89157632
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0812=
+			{
+				Posn
+				{
+					Abs
+					{	X	41261056,
+						Z	89314304
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0813=
+			{
+				Posn
+				{
+					Abs
+					{	X	40690688,
+						Z	89174016
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		HUT
+			},
+			SimpleItem	mainmig_0814=
+			{
+				Posn
+				{
+					Abs
+					{	X	41435136,
+						Z	89170944
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		V3NESW
+			},
+			SimpleItem	mainmig_0815=
+			{
+				Posn
+				{
+					Abs
+					{	X	41422848,
+						Z	89181184
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		V4NWSE
+			},
+			SimpleItem	mainmig_0816=
+			{
+				Posn
+				{
+					Abs
+					{	X	40726528,
+						Z	89170944
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0817=
+			{
+				Posn
+				{
+					Abs
+					{	X	41248768,
+						Z	89284608
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0818=
+			{
+				Posn
+				{
+					Abs
+					{	X	41195520,
+						Z	89468928
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		SAAA
+			},
+			SimpleItem	mainmig_0819=
+			{
+				Posn
+				{
+					Abs
+					{	X	41235456,
+						Z	89520128
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		SAAA
+			},
+			SimpleItem	mainmig_081a=
+			{
+				Posn
+				{
+					Abs
+					{	X	41140224,
+						Z	89392128
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		SAAA
+			},
+			SimpleItem	mainmig_081b=
+			{
+				Posn
+				{
+					Abs
+					{	X	41216000,
+						Z	89785344
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_081c=
+			{
+				Posn
+				{
+					Abs
+					{	X	41018368,
+						Z	89482240
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_081d=
+			{
+				Posn
+				{
+					Abs
+					{	X	41289444,
+						Z	89782524
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_081e=
+			{
+				Posn
+				{
+					Abs
+					{	X	40939520,
+						Z	89416704
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_081f=
+			{
+				Posn
+				{
+					Abs
+					{	X	41290755,
+						Z	89905733
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0820=
+			{
+				Posn
+				{
+					Abs
+					{	X	41251840,
+						Z	89818112
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0821=
+			{
+				Posn
+				{
+					Abs
+					{	X	40967168,
+						Z	89451520
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0822=
+			{
+				Posn
+				{
+					Abs
+					{	X	40897536,
+						Z	89449472
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0823=
+			{
+				Posn
+				{
+					Abs
+					{	X	41090048,
+						Z	89532416
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0824=
+			{
+				Posn
+				{
+					Abs
+					{	X	41288704,
+						Z	89848832
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0825=
+			{
+				Posn
+				{
+					Abs
+					{	X	41188352,
+						Z	89819136
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0826=
+			{
+				Posn
+				{
+					Abs
+					{	X	41216000,
+						Z	89723904
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0827=
+			{
+				Posn
+				{
+					Abs
+					{	X	41250816,
+						Z	89875456
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_0828=
+			{
+				Posn
+				{
+					Abs
+					{	X	41250816,
+						Z	89749504
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_0829=
+			{
+				Posn
+				{
+					Abs
+					{	X	41179136,
+						Z	89666560
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_082a=
+			{
+				Posn
+				{
+					Abs
+					{	X	41219976,
+						Z	89846750
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY1
+			},
+			SimpleItem	mainmig_082b=
+			{
+				Posn
+				{
+					Abs
+					{	X	41179136,
+						Z	89627648
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_082c=
+			{
+				Posn
+				{
+					Abs
+					{	X	41013248,
+						Z	89531392
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_082d=
+			{
+				Posn
+				{
+					Abs
+					{	X	41145344,
+						Z	89629696
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_082e=
+			{
+				Posn
+				{
+					Abs
+					{	X	41323520,
+						Z	89878528
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CITY2
+			},
+			SimpleItem	mainmig_082f=
+			{
+				Posn
+				{
+					Abs
+					{	X	45565952,
+						Z	86124544
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		TWN2
+			},
+			SimpleItem	mainmig_0830=
+			{
+				Posn
+				{
+					Abs
+					{	X	48220160,
+						Z	84903936
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		SAAA
+			},
+			SimpleItem	mainmig_0831=
+			{
+				Posn
+				{
+					Abs
+					{	X	47998976,
+						Z	84994048
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		SAAA
+			},
+			SimpleItem	mainmig_0832=
+			{
+				Posn
+				{
+					Abs
+					{	X	48310272,
+						Z	84977664
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		SAAA
+			},
+			SimpleItem	mainmig_0833=
+			{
+				Posn
+				{
+					Abs
+					{	X	48166912,
+						Z	85051392
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		SAAA
+			},
+			SimpleItem	mainmig_0834=
+			{
+				Posn
+				{
+					Abs
+					{	X	41169920,
+						Z	89586688
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		LAREA
+			},
+			SimpleItem	mainmig_0835=
+			{
+				Posn
+				{
+					Abs
+					{	X	63917056,
+						Z	56597504
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		SYARD
+			},
+			SimpleItem	mainmig_0836=
+			{
+				Posn
+				{
+					Abs
+					{	X	71586816,
+						Z	59194368
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		UNTANK
+			},
+			SimpleItem	mainmig_0837=
+			{
+				Posn
+				{
+					Abs
+					{	X	71568384,
+						Z	59174912
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		TANKC
+			},
+			SimpleItem	mainmig_0838=
+			{
+				Posn
+				{
+					Abs
+					{	X	71604224,
+						Z	59166720
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		TENT5
+			},
+			SimpleItem	mainmig_0839=
+			{
+				Posn
+				{
+					Abs
+					{	X	71574528,
+						Z	59162624
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		BUNK
+			},
+			SimpleItem	mainmig_083a=
+			{
+				Posn
+				{
+					Abs
+					{	X	71579648,
+						Z	59184128
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		UNHOW
+			},
+			SimpleItem	mainmig_083b=
+			{
+				Posn
+				{
+					Abs
+					{	X	71598080,
+						Z	59184128
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		SLIT
+			},
+			SimpleItem	mainmig_083c=
+			{
+				Posn
+				{
+					Abs
+					{	X	71585792,
+						Z	59157504
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		TROOP1
+			},
+			SimpleItem	mainmig_083d=
+			{
+				Posn
+				{
+					Abs
+					{	X	71562240,
+						Z	59189248
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		DUMMY7
+			},
+			SimpleItem	mainmig_083e=
+			{
+				Posn
+				{
+					Abs
+					{	X	71600128,
+						Z	59156480
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CHINFT
+			},
+			SimpleItem	mainmig_083f=
+			{
+				Posn
+				{
+					Abs
+					{	X	71568384,
+						Z	59203584
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CHART
+			},
+			SimpleItem	mainmig_0840=
+			{
+				Posn
+				{
+					Abs
+					{	X	71609344,
+						Z	59177984
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		T34
+			},
+			SimpleItem	mainmig_0841=
+			{
+				Posn
+				{
+					Abs
+					{	X	71555072,
+						Z	59175936
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		CHTRCK
+			},
+			SimpleItem	mainmig_0842=
+			{
+				Posn
+				{
+					Abs
+					{	X	71576576,
+						Z	59149312
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		UNTRCK
+			},
+			SimpleItem	mainmig_0843=
+			{
+				Posn
+				{
+					Abs
+					{	X	64707584,
+						Z	53056512
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		TWN1
+			},
+			SimpleItem	mainmig_0844=
+			{
+				Posn
+				{
+					Abs
+					{	X	64683008,
+						Z	52910080
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	mainmig_0845=
+			{
+				Posn
+				{
+					Abs
+					{	X	64648192,
+						Z	52952064
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		TWN1
+			}
+		},
+	ItemGroup
+	{	Target	UID_StMunsan,
+		ItemGroup
+		{
+				SimpleItem	mainmig_0846=
+				{
+					Posn
+					{
+						Abs
+						{	X	61493248,
+							Z	64671744
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_0847=
+				{
+					Posn
+					{
+						Abs
+						{	X	61533624,
+							Z	64689502
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN2
+				},
+				SimpleItem	mainmig_0848=
+				{
+					Posn
+					{
+						Abs
+						{	X	61549189,
+							Z	64663288
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_0849=
+				{
+					Posn
+					{
+						Abs
+						{	X	61529528,
+							Z	64666564
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_084a=
+				{
+					Posn
+					{
+						Abs
+						{	X	61518059,
+							Z	64647723
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN2
+				},
+				SimpleItem	mainmig_084b=
+				{
+					Posn
+					{
+						Abs
+						{	X	61347665,
+							Z	65022918
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	mainmig_084c=
+				{
+					Posn
+					{
+						Abs
+						{	X	61330461,
+							Z	65045036
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	mainmig_084d=
+				{
+					Posn
+					{
+						Abs
+						{	X	61432042,
+							Z	65194132
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V2EW
+				},
+				SimpleItem	mainmig_084e=
+				{
+					Posn
+					{
+						Abs
+						{	X	61610629,
+							Z	65035206
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V2EW
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_MyBlOsan,
+		ItemGroup
+		{
+				SimpleItem	mainmig_084f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63932416,
+							Z	56630272
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		LAREA
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_WhRdSinuiju,
+		ItemGroup
+		{
+				SimpleItem	mainmig_0850=
+				{
+					Posn
+					{
+						Abs
+						{	X	41408512,
+							Z	89459712
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		SAAA
+				},
+				SimpleItem	mainmig_0851=
+				{
+					Posn
+					{
+						Abs
+						{	X	41452544,
+							Z	89499648
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		WF6L
+				},
+				SimpleItem	mainmig_0852=
+				{
+					Posn
+					{
+						Abs
+						{	X	41444352,
+							Z	89476096
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		WF6L
+				},
+				SimpleItem	mainmig_0853=
+				{
+					Posn
+					{
+						Abs
+						{	X	41476096,
+							Z	89512960
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		SAAA
+				},
+				SimpleItem	mainmig_0854=
+				{
+					Posn
+					{
+						Abs
+						{	X	41408512,
+							Z	89503744
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		WF6L
+				},
+				SimpleItem	mainmig_0855=
+				{
+					Posn
+					{
+						Abs
+						{	X	41383936,
+							Z	89517056
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		SAAA
+				},
+				SimpleItem	mainmig_0856=
+				{
+					Posn
+					{
+						Abs
+						{	X	41430016,
+							Z	89513984
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		SAAA
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_AfRdSinuiju,
+		ItemGroup
+		{
+				SimpleItem	mainmig_0857=
+				{
+					Posn
+					{
+						Abs
+						{	X	41434112,
+							Z	89373184
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		FOX
+				},
+				SimpleItem	mainmig_0858=
+				{
+					Posn
+					{
+						Abs
+						{	X	41393664,
+							Z	89309696
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	mainmig_0859=
+				{
+					Posn
+					{
+						Abs
+						{	X	41448448,
+							Z	89316352
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		FOX
+				},
+				SimpleItem	mainmig_085a=
+				{
+					Posn
+					{
+						Abs
+						{	X	41400320,
+							Z	89321984
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		FOX
+				},
+				SimpleItem	mainmig_085b=
+				{
+					Posn
+					{
+						Abs
+						{	X	41384960,
+							Z	89296384
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		FOX
+				},
+				SimpleItem	mainmig_085c=
+				{
+					Posn
+					{
+						Abs
+						{	X	41376256,
+							Z	89283584
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		FOX
+				},
+				SimpleItem	mainmig_085d=
+				{
+					Posn
+					{
+						Abs
+						{	X	41437184,
+							Z	89303040
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		AFDS
+				},
+				SimpleItem	mainmig_085e=
+				{
+					Posn
+					{
+						Abs
+						{	X	41486336,
+							Z	89317376
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		SAAA
+				},
+				SimpleItem	mainmig_085f=
+				{
+					Posn
+					{
+						Abs
+						{	X	41454592,
+							Z	89329664
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		FOX
+				},
+				SimpleItem	mainmig_0860=
+				{
+					Posn
+					{
+						Abs
+						{	X	41414947,
+							Z	89274942
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		FOX
+				},
+				SimpleItem	mainmig_0861=
+				{
+					Posn
+					{
+						Abs
+						{	X	41406976,
+							Z	89333760
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		CTS
+				},
+				SimpleItem	mainmig_0862=
+				{
+					Posn
+					{
+						Abs
+						{	X	41427968,
+							Z	89361920
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		MDM
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StYomju,
+		ItemGroup
+		{
+				SimpleItem	mainmig_0863=
+				{
+					Posn
+					{
+						Abs
+						{	X	42851328,
+							Z	87315456
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_0864=
+				{
+					Posn
+					{
+						Abs
+						{	X	42874880,
+							Z	87331840
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_0865=
+				{
+					Posn
+					{
+						Abs
+						{	X	42827776,
+							Z	87318528
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_0866=
+				{
+					Posn
+					{
+						Abs
+						{	X	42852352,
+							Z	87293952
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN2
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_SCCYomju,
+		ItemGroup
+		{
+				SimpleItem	mainmig_0867=
+				{
+					Posn
+					{
+						Abs
+						{	X	42895360,
+							Z	87345152
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		WF6L
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StSonchon,
+		ItemGroup
+		{
+				SimpleItem	mainmig_0868=
+				{
+					Posn
+					{
+						Abs
+						{	X	45527040,
+							Z	86198272
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		HUT
+				},
+				SimpleItem	mainmig_0869=
+				{
+					Posn
+					{
+						Abs
+						{	X	45559808,
+							Z	86212608
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN2
+				},
+				SimpleItem	mainmig_086a=
+				{
+					Posn
+					{
+						Abs
+						{	X	45572096,
+							Z	86183936
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN2
+				},
+				SimpleItem	mainmig_086b=
+				{
+					Posn
+					{
+						Abs
+						{	X	45582336,
+							Z	86151168
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_086c=
+				{
+					Posn
+					{
+						Abs
+						{	X	45596672,
+							Z	86194176
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN2
+				},
+				SimpleItem	mainmig_086d=
+				{
+					Posn
+					{
+						Abs
+						{	X	45600768,
+							Z	86233088
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN2
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StChongju,
+		ItemGroup
+		{
+				SimpleItem	mainmig_086e=
+				{
+					Posn
+					{
+						Abs
+						{	X	48197632,
+							Z	84951040
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_086f=
+				{
+					Posn
+					{
+						Abs
+						{	X	48312320,
+							Z	84914176
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	mainmig_0870=
+				{
+					Posn
+					{
+						Abs
+						{	X	48064512,
+							Z	84905984
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	mainmig_0871=
+				{
+					Posn
+					{
+						Abs
+						{	X	48078848,
+							Z	84957184
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_0872=
+				{
+					Posn
+					{
+						Abs
+						{	X	48023552,
+							Z	84944896
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_0873=
+				{
+					Posn
+					{
+						Abs
+						{	X	48140288,
+							Z	84916224
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_0874=
+				{
+					Posn
+					{
+						Abs
+						{	X	48179200,
+							Z	84912128
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_0875=
+				{
+					Posn
+					{
+						Abs
+						{	X	48076800,
+							Z	85002240
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_0876=
+				{
+					Posn
+					{
+						Abs
+						{	X	48130048,
+							Z	84998144
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN2
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_NODE_sinuiju,
+		ItemGroup
+		{
+				SimpleItem	mainmig_0877=
+				{
+					Posn
+					{
+						Abs
+						{	X	40982528,
+							Z	89165824
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	mainmig_0878=
+				{
+					Posn
+					{
+						Abs
+						{	X	40951808,
+							Z	88989696
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V1NS
+				},
+				SimpleItem	mainmig_0879=
+				{
+					Posn
+					{
+						Abs
+						{	X	41211904,
+							Z	89169920
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V2EW
+				},
+				SimpleItem	mainmig_087a=
+				{
+					Posn
+					{
+						Abs
+						{	X	41205760,
+							Z	88936448
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V3NESW
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_NODE_AnTung,
+		ItemGroup
+		{
+				SimpleItem	mainmig_087b=
+				{
+					Posn
+					{
+						Abs
+						{	X	40866816,
+							Z	89319424
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	mainmig_087c=
+				{
+					Posn
+					{
+						Abs
+						{	X	41062400,
+							Z	89485312
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	mainmig_087d=
+				{
+					Posn
+					{
+						Abs
+						{	X	41149440,
+							Z	89584640
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		SYARD
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StOsan,
+		ItemGroup
+		{
+				SimpleItem	mainmig_087e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63967232,
+							Z	56817664
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_087f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63966208,
+							Z	56770560
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_0880=
+				{
+					Posn
+					{
+						Abs
+						{	X	63989760,
+							Z	56794112
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_0881=
+				{
+					Posn
+					{
+						Abs
+						{	X	63975424,
+							Z	56741888
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		HUT
+				},
+				SimpleItem	mainmig_0882=
+				{
+					Posn
+					{
+						Abs
+						{	X	63926272,
+							Z	56761344
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		HUT
+				},
+				SimpleItem	mainmig_0883=
+				{
+					Posn
+					{
+						Abs
+						{	X	63997952,
+							Z	56842240
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN2
+				},
+				SimpleItem	mainmig_0884=
+				{
+					Posn
+					{
+						Abs
+						{	X	63966208,
+							Z	56885248
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_0885=
+				{
+					Posn
+					{
+						Abs
+						{	X	64000000,
+							Z	56882176
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StChonan,
+		ItemGroup
+		{
+				SimpleItem	mainmig_0886=
+				{
+					Posn
+					{
+						Abs
+						{	X	64688128,
+							Z	53101568
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	mainmig_0887=
+				{
+					Posn
+					{
+						Abs
+						{	X	64714752,
+							Z	53108736
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_0888=
+				{
+					Posn
+					{
+						Abs
+						{	X	64710656,
+							Z	52984832
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN2
+				},
+				SimpleItem	mainmig_0889=
+				{
+					Posn
+					{
+						Abs
+						{	X	64698368,
+							Z	52943872
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_088a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64648192,
+							Z	52914176
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_088b=
+				{
+					Posn
+					{
+						Abs
+						{	X	64651264,
+							Z	52994048
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_088c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64660480,
+							Z	53030912
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				},
+				SimpleItem	mainmig_088d=
+				{
+					Posn
+					{
+						Abs
+						{	X	64666624,
+							Z	53069824
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TWN1
+				}
+		}	}
+	};

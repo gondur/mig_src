@@ -1,0 +1,269 @@
+	SimpleItem	main1_0b01,
+	SimpleItem	main1_0b03,
+	SimpleItem	main1_0b05,
+	SimpleItem	main1_0b0b,
+	SimpleItem	main1_0b0d,
+	SimpleItem	main1_0b1f,
+	SimpleItem	main1_0b4e,
+	SimpleItem	main1_0b52,
+	SimpleItem	main1_0b54,
+	SimpleItem	main1_0e5f,
+	SimpleItem	main1_0e61,
+	SimpleItem	main1_0e63,
+	SimpleItem	main1_0e65,
+	SimpleItem	main1_0e67,
+	SimpleItem	main1_0e69,
+	SimpleItem	main1_0e80,
+	SimpleItem	main1_0e82,
+	SimpleItem	main1_0e84,
+	SimpleItem	main1_0e8b,
+	BattleField
+	{
+		FileName	FIL_1_main1=main1.BF,
+		Title	{Main World},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	main1_0b1f=
+			{
+				Posn
+				{
+					Abs
+					{	X	30539776,
+						Z	1063297024
+					}
+				},
+				UIDBand		BlueMilitaryBAND,
+				SetUID	UID_g1;
+				Shape		BEXP
+			},
+			SimpleItem	main1_0e5f=
+			{
+				Posn
+				{
+					Abs
+					{	X	30744576,
+						Z	1065938944
+					}
+				},
+				UIDBand		BlueAAASiteBAND,
+				SetUID	UID_g2;
+				Shape		BEXP
+			}
+		},
+	ItemGroup
+	{	Target	UID_g1,
+		ItemGroup
+		{
+				SimpleItem	main1_0b01=
+				{
+					Posn
+					{
+						Abs
+						{	X	28368896,
+							Z	1064914944
+						}
+					},
+					UIDBand		BlueMilitaryBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0b03=
+				{
+					Posn
+					{
+						Abs
+						{	X	28758016,
+							Z	1064198144
+						}
+					},
+					UIDBand		BlueMilitaryBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0b05=
+				{
+					Posn
+					{
+						Abs
+						{	X	29167616,
+							Z	1063337984
+						}
+					},
+					UIDBand		BlueMilitaryBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0b0b=
+				{
+					Posn
+					{
+						Abs
+						{	X	27795456,
+							Z	1063337984
+						}
+					},
+					UIDBand		BlueMilitaryBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0b0d=
+				{
+					Posn
+					{
+						Abs
+						{	X	27713536,
+							Z	1064443904
+						}
+					},
+					UIDBand		BlueMilitaryBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0b4e=
+				{
+					Posn
+					{
+						Abs
+						{	X	29331456,
+							Z	1064689664
+						}
+					},
+					UIDBand		BlueMilitaryBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0b52=
+				{
+					Posn
+					{
+						Abs
+						{	X	29618176,
+							Z	1064382464
+						}
+					},
+					UIDBand		BlueMilitaryBAND,
+					Shape		CRANE
+				},
+				SimpleItem	main1_0b54=
+				{
+					Posn
+					{
+						Abs
+						{	X	29679616,
+							Z	1063747584
+						}
+					},
+					UIDBand		BlueMilitaryBAND,
+					Shape		CRANE
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_g2,
+		ItemGroup
+		{
+				SimpleItem	main1_0e61=
+				{
+					Posn
+					{
+						Abs
+						{	X	29208576,
+							Z	1066000384
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0e63=
+				{
+					Posn
+					{
+						Abs
+						{	X	28696576,
+							Z	1066573824
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0e65=
+				{
+					Posn
+					{
+						Abs
+						{	X	28000256,
+							Z	1067270144
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0e67=
+				{
+					Posn
+					{
+						Abs
+						{	X	27447296,
+							Z	1066369024
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0e69=
+				{
+					Posn
+					{
+						Abs
+						{	X	27570176,
+							Z	1065816064
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		BEXP
+				},
+				SimpleItem	main1_0e80=
+				{
+					Posn
+					{
+						Abs
+						{	X	29454336,
+							Z	1067331584
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		CRANE
+				},
+				SimpleItem	main1_0e82=
+				{
+					Posn
+					{
+						Abs
+						{	X	30109696,
+							Z	1067331584
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		CRANE
+				},
+				SimpleItem	main1_0e84=
+				{
+					Posn
+					{
+						Abs
+						{	X	29372416,
+							Z	1066655744
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		CRANE
+				},
+				SimpleItem	main1_0e8b=
+				{
+					Posn
+					{
+						Abs
+						{	X	29843456,
+							Z	1066450944
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		BEXP
+				}
+		}	}
+	};

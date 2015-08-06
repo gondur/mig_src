@@ -1,0 +1,592 @@
+	SimpleItem	afsuwon_3980,
+	SimpleItem	afsuwon_3981,
+	SimpleItem	afsuwon_3982,
+	SimpleItem	afsuwon_3983,
+	SimpleItem	afsuwon_3a00,
+	SimpleItem	afsuwon_3a01,
+	SimpleItem	afsuwon_3a02,
+	SimpleItem	afsuwon_3a03,
+	SimpleItem	afsuwon_3a82,
+	SimpleItem	afsuwon_3a83,
+	SimpleItem	afsuwon_3a84,
+	SimpleItem	afsuwon_3a85,
+	SimpleItem	afsuwon_3a86,
+	SimpleItem	afsuwon_3a87,
+	SimpleItem	afsuwon_3a88,
+	SimpleItem	afsuwon_3a89,
+	SimpleItem	afsuwon_3a8a,
+	SimpleItem	afsuwon_3a8b,
+	SimpleItem	afsuwon_3b02,
+	SimpleItem	afsuwon_3b03,
+	SimpleItem	afsuwon_3b04,
+	SimpleItem	afsuwon_3b05,
+	SimpleItem	afsuwon_3b06,
+	SimpleItem	afsuwon_3b07,
+	SimpleItem	afsuwon_3b08,
+	SimpleItem	afsuwon_3b09,
+	SimpleItem	afsuwon_3b0a,
+	SimpleItem	afsuwon_3b0b,
+	SimpleItem	afsuwon_3b0c,
+	SimpleItem	afsuwon_3b0d,
+	SimpleItem	afsuwon_3b0e,
+	SimpleItem	afsuwon_3b0f,
+	SimpleItem	afsuwon_3b10,
+	SimpleItem	afsuwon_3b11,
+	SimpleItem	afsuwon_3b12,
+	SimpleItem	afsuwon_3b82,
+	SimpleItem	afsuwon_3b83,
+	SimpleItem	afsuwon_3b84,
+	SimpleItem	afsuwon_3b85,
+	SimpleItem	afsuwon_3b86,
+	BattleField
+	{
+		FileName	FIL_1_AFSUWON=afsuwon.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlSuwon,
+		ItemGroup
+		{
+				SimpleItem	afsuwon_3980=
+				{
+					Posn
+					{
+						Abs
+						{	X	63351026,
+							Z	57819255
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HREW
+				},
+				SimpleItem	afsuwon_3981=
+				{
+					Posn
+					{
+						Abs
+						{	X	63312932,
+							Z	57819665
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HREW
+				},
+				SimpleItem	afsuwon_3982=
+				{
+					Posn
+					{
+						Abs
+						{	X	63440896,
+							Z	57741824
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HNGK14
+				},
+				SimpleItem	afsuwon_3983=
+				{
+					Posn
+					{
+						Abs
+						{	X	63429120,
+							Z	57745920
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HNGK14
+				},
+				SimpleItem	afsuwon_3a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	63379200,
+							Z	57886464
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BREW
+				},
+				SimpleItem	afsuwon_3a01=
+				{
+					Posn
+					{
+						Abs
+						{	X	63385088,
+							Z	57878784
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BREW
+				},
+				SimpleItem	afsuwon_3a02=
+				{
+					Posn
+					{
+						Abs
+						{	X	63390720,
+							Z	57871616
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BREW
+				},
+				SimpleItem	afsuwon_3a03=
+				{
+					Posn
+					{
+						Abs
+						{	X	63396096,
+							Z	57864704
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BREW
+				},
+				SimpleItem	afsuwon_3a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	63450968,
+							Z	57852023
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	afsuwon_3a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	63442776,
+							Z	57852023
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afsuwon_3a84=
+				{
+					Posn
+					{
+						Abs
+						{	X	63435404,
+							Z	57852023
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	afsuwon_3a85=
+				{
+					Posn
+					{
+						Abs
+						{	X	63372325,
+							Z	57772151
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	afsuwon_3a86=
+				{
+					Posn
+					{
+						Abs
+						{	X	63415743,
+							Z	57755766
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afsuwon_3a87=
+				{
+					Posn
+					{
+						Abs
+						{	X	63342424,
+							Z	57818846
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	afsuwon_3a88=
+				{
+					Posn
+					{
+						Abs
+						{	X	63333822,
+							Z	57818846
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	afsuwon_3a89=
+				{
+					Posn
+					{
+						Abs
+						{	X	63325221,
+							Z	57819255
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afsuwon_3a8a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63374783,
+							Z	57894622
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDL
+				},
+				SimpleItem	afsuwon_3a8b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63342014,
+							Z	57839326
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afsuwon_3b02=
+				{
+					Posn
+					{
+						Abs
+						{	X	63340376,
+							Z	57775428
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CIVI08
+				},
+				SimpleItem	afsuwon_3b03=
+				{
+					Posn
+					{
+						Abs
+						{	X	63319077,
+							Z	57775428
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CIVI08
+				},
+				SimpleItem	afsuwon_3b04=
+				{
+					Posn
+					{
+						Abs
+						{	X	63393215,
+							Z	57818436
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CTL
+				},
+				SimpleItem	afsuwon_3b05=
+				{
+					Posn
+					{
+						Abs
+						{	X	63334642,
+							Z	57775428
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CIVI08
+				},
+				SimpleItem	afsuwon_3b06=
+				{
+					Posn
+					{
+						Abs
+						{	X	63329726,
+							Z	57775428
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CIVI08
+				},
+				SimpleItem	afsuwon_3b07=
+				{
+					Posn
+					{
+						Abs
+						{	X	63324811,
+							Z	57775428
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CIVI08
+				},
+				SimpleItem	afsuwon_3b08=
+				{
+					Posn
+					{
+						Abs
+						{	X	63435776,
+							Z	57757696
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CIVI08
+				},
+				SimpleItem	afsuwon_3b09=
+				{
+					Posn
+					{
+						Abs
+						{	X	63495168,
+							Z	57743360
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CIVI08
+				},
+				SimpleItem	afsuwon_3b0a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63495168,
+							Z	57755136
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CIVI08
+				},
+				SimpleItem	afsuwon_3b0b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63402636,
+							Z	57856938
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afsuwon_3b0c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63376011,
+							Z	57818436
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afsuwon_3b0d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63363723,
+							Z	57818846
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afsuwon_3b0e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63363314,
+							Z	57838916
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afsuwon_3b0f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63352254,
+							Z	57839326
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afsuwon_3b10=
+				{
+					Posn
+					{
+						Abs
+						{	X	63412876,
+							Z	57733648
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		SHDK14
+				},
+				SimpleItem	afsuwon_3b11=
+				{
+					Posn
+					{
+						Abs
+						{	X	63389938,
+							Z	57736516
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		SHDK14
+				},
+				SimpleItem	afsuwon_3b12=
+				{
+					Posn
+					{
+						Abs
+						{	X	63401407,
+							Z	57732829
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		SHDK14
+				},
+//DeadCode MS 14Jun99 				SimpleItem	afsuwon_3b13=
+//DeadCode MS 14Jun99 				{
+//DeadCode MS 14Jun99 					Posn
+//DeadCode MS 14Jun99 					{
+//DeadCode MS 14Jun99 						Abs
+//DeadCode MS 14Jun99 						{	X	63305151,
+//DeadCode MS 14Jun99 							Z	57775017
+//DeadCode MS 14Jun99 						}
+//DeadCode MS 14Jun99 					},
+//DeadCode MS 14Jun99 					UIDBand		AfRunwayBAND,
+//DeadCode MS 14Jun99 					Shape		TENT1
+//DeadCode MS 14Jun99 				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	63425164,
+							Z	57852433
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		UNTRCK
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	63305559,
+							Z	57718084
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	afsuwon_3b82=
+				{
+					Posn
+					{
+						Abs
+						{	X	63339556,
+							Z	57720541
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	afsuwon_3b83=
+				{
+					Posn
+					{
+						Abs
+						{	X	63317438,
+							Z	57748394
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	afsuwon_3b84=
+				{
+					Posn
+					{
+						Abs
+						{	X	63358399,
+							Z	57775837
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		UNTRCK
+				},
+				SimpleItem	afsuwon_3b85=
+				{
+					Posn
+					{
+						Abs
+						{	X	63476364,
+							Z	57702109
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	afsuwon_3b86=
+				{
+					Posn
+					{
+						Abs
+						{	X	63412876,
+							Z	57708663
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V3NESW
+				}
+//DeadCode MS 14Jun99 				SimpleItem	afsuwon_3b87=
+//DeadCode MS 14Jun99 				{
+//DeadCode MS 14Jun99 					Posn
+//DeadCode MS 14Jun99 					{
+//DeadCode MS 14Jun99 						Abs
+//DeadCode MS 14Jun99 						{	X	63345701,
+//DeadCode MS 14Jun99 							Z	57775428
+//DeadCode MS 14Jun99 						}
+//DeadCode MS 14Jun99 					},
+//DeadCode MS 14Jun99 					UIDBand		AfNoScoreBAND,
+//DeadCode MS 14Jun99 					Shape		TANKC
+//DeadCode MS 14Jun99 				},
+//DeadCode MS 14Jun99 				SimpleItem	afsuwon_3b88=
+//DeadCode MS 14Jun99 				{
+//DeadCode MS 14Jun99 					Posn
+//DeadCode MS 14Jun99 					{
+//DeadCode MS 14Jun99 						Abs
+//DeadCode MS 14Jun99 						{	X	63312933,
+//DeadCode MS 14Jun99 							Z	57775428
+//DeadCode MS 14Jun99 						}
+//DeadCode MS 14Jun99 					},
+//DeadCode MS 14Jun99 					UIDBand		AfNoScoreBAND,
+//DeadCode MS 14Jun99 					Shape		TANKC
+//DeadCode MS 14Jun99 				}
+		}	}
+	};

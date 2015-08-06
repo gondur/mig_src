@@ -1,0 +1,6 @@
+	BattleField
+	{
+		FileName	FIL_1_BLP_MAIN=BLP_MAIN.BF,
+		Title	{},
+		Comment	{}
+	};

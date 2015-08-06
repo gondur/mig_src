@@ -1,0 +1,389 @@
+	SimpleItem	CHUNGJU_2004,
+	SimpleItem	CHUNGJU_2005,
+	SimpleItem	CHUNGJU_2006,
+	SimpleItem	CHUNGJU_2007,
+	SimpleItem	CHUNGJU_2008,
+	SimpleItem	CHUNGJU_2009,
+	SimpleItem	CHUNGJU_200a,
+	SimpleItem	CHUNGJU_200b,
+	SimpleItem	CHUNGJU_200c,
+	SimpleItem	CHUNGJU_200d,
+	SimpleItem	CHUNGJU_200e,
+	SimpleItem	CHUNGJU_200f,
+	SimpleItem	CHUNGJU_2010,
+	SimpleItem	CHUNGJU_2011,
+	SimpleItem	CHUNGJU_2012,
+	SimpleItem	CHUNGJU_2013,
+	SimpleItem	CHUNGJU_2014,
+	SimpleItem	CHUNGJU_2015,
+	SimpleItem	CHUNGJU_2016,
+	SimpleItem	CHUNGJU_2017,
+	SimpleItem	CHUNGJU_2018,
+	SimpleItem	CHUNGJU_2019,
+	SimpleItem	CHUNGJU_201a,
+	SimpleItem	CHUNGJU_201b,
+	SimpleItem	CHUNGJU_201c,
+	SimpleItem	CHUNGJU_201d,
+	SimpleItem	CHUNGJU_201e,
+	SimpleItem	CHUNGJU_201f,
+	SimpleItem	CHUNGJU_2020,
+	BattleField
+	{
+		FileName	FIL_1_CHUNGJU=CHUNGJU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StChungju,
+		ItemGroup
+		{
+			SimpleItem	CHUNGJU_201b=
+			{
+				Posn
+				{
+					Abs
+					{	X	71432192,
+						Z	54872064
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	CHUNGJU_201c=
+			{
+				Posn
+				{
+					Abs
+					{	X	71451648,
+						Z	54920192
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V2EW
+			},
+			SimpleItem	CHUNGJU_201d=
+			{
+				Posn
+				{
+					Abs
+					{	X	71417856,
+						Z	54974464
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V4NWSE
+			},
+				SimpleItem	CHUNGJU_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	71401472,
+							Z	54912000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHUNGJU_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	71421952,
+							Z	54927360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHUNGJU_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	71541760,
+							Z	54812672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHUNGJU_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	71558144,
+							Z	54883328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHUNGJU_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	71470080,
+							Z	54975488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHUNGJU_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	71405568,
+							Z	54886400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHUNGJU_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	71510016,
+							Z	54866944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHUNGJU_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	71513088,
+							Z	54866944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHUNGJU_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	71505920,
+							Z	54920192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHUNGJU_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	71444480,
+							Z	54991872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHUNGJU_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	71442432,
+							Z	54950912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	CHUNGJU_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	71528448,
+							Z	54929408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	CHUNGJU_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	71519232,
+							Z	54786048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHUNGJU_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	71400448,
+							Z	54950912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHUNGJU_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	71530496,
+							Z	54885376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	CHUNGJU_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	71484416,
+							Z	54891520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHUNGJU_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	71500800,
+							Z	54843392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHUNGJU_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	71453696,
+							Z	54854656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHUNGJU_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	71445504,
+							Z	54896640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHUNGJU_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	71539712,
+							Z	54840320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	CHUNGJU_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	71556096,
+							Z	54847488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHUNGJU_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	71488512,
+							Z	54805504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	CHUNGJU_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	71489536,
+							Z	54786048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHUNGJU_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	71525376,
+							Z	54824960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	CHUNGJU_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	71463936,
+							Z	54818816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHUNGJU_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	71461888,
+							Z	54833152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				}
+		}	}
+	};

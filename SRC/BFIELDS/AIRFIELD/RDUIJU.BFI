@@ -1,0 +1,74 @@
+	WayPoint	RDUIJU_0100,
+	WayPoint	RDUIJU_0101,
+	GroundItem	RDUIJU_3080,
+	BattleField
+	{
+		FileName	FIL_1_RDUIJU=RDUIJU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdUiju,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdUiju, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+
+		},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	42310203,
+					Z	90117158
+				}
+			},
+			Route
+			{
+				WayPoint	RDUIJU_0100=
+				{
+					Posn
+					{
+						Abs
+						{	X	42279893,
+							Z	90141734
+						}
+					},
+					Vel	126,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	RDUIJU_0101=
+				{
+					Posn
+					{
+						Abs
+						{	X	42157422,
+							Z	90009432
+						}
+					},
+					Vel	126,
+					Action	wpdmbtrkstopno,
+					Range	0
+				}
+			},
+			NumInForm		2,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	RDUIJU_3080=
+			{
+				AfNoScoreBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	126
+		}	}
+	}
+	};

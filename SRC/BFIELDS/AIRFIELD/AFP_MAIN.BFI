@@ -1,0 +1,389 @@
+	SimpleItem	afp_main_1503,
+	SimpleItem	afp_main_1504,
+	SimpleItem	afp_main_1505,
+	SimpleItem	afp_main_1506,
+	SimpleItem	afp_main_3900,
+	SimpleItem	afp_main_3901,
+	SimpleItem	afp_main_3902,
+	SimpleItem	afp_main_3940,
+	SimpleItem	afp_main_3941,
+	SimpleItem	afp_main_3980,
+	SimpleItem	afp_main_3981,
+	SimpleItem	afp_main_3982,
+	SimpleItem	afp_main_3983,
+	SimpleItem	afp_main_3984,
+	SimpleItem	afp_main_3985,
+	SimpleItem	afp_main_3986,
+	SimpleItem	afp_main_3987,
+	SimpleItem	afp_main_3988,
+	SimpleItem	afp_main_3989,
+	SimpleItem	afp_main_398a,
+	SimpleItem	afp_main_398b,
+	SimpleItem	afp_main_398c,
+	SimpleItem	afp_main_3b82,
+	SimpleItem	afp_main_3b83,
+	SimpleItem	afp_main_3b84,
+	SimpleItem	afp_main_3b85,
+	SimpleItem	afp_main_3b86,
+	SimpleItem	afp_main_3b87,
+	SimpleItem	afp_main_3b88,
+	BattleField
+	{
+		FileName	FIL_1_AFP_MAIN=afp_main.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdPyongyangM,
+		ItemGroup
+		{
+				SimpleItem	afp_main_1503=
+				{
+					Posn
+					{
+						Abs
+						{	X	53021694,
+							Z	77623900
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	afp_main_1504=
+				{
+					Posn
+					{
+						Abs
+						{	X	53090916,
+							Z	77795933
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	afp_main_1505=
+				{
+					Posn
+					{
+						Abs
+						{	X	53013912,
+							Z	77786102
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	afp_main_1506=
+				{
+					Posn
+					{
+						Abs
+						{	X	53080267,
+							Z	77708688
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	afp_main_3900=
+				{
+					Posn
+					{
+						Abs
+						{	X	53127371,
+							Z	77805763
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		CIVI09
+				},
+				SimpleItem	afp_main_3901=
+				{
+					Posn
+					{
+						Abs
+						{	X	53117131,
+							Z	77804535
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		CIVI09
+				},
+				SimpleItem	afp_main_3902=
+				{
+					Posn
+					{
+						Abs
+						{	X	53113035,
+							Z	77671824
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HANGER
+				},
+				SimpleItem	afp_main_3940=
+				{
+					Posn
+					{
+						Abs
+						{	X	53048320,
+							Z	77784064
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		RRNESW
+				},
+				SimpleItem	afp_main_3941=
+				{
+					Posn
+					{
+						Abs
+						{	X	53068388,
+							Z	77775453
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		RRNESW
+				},
+				SimpleItem	afp_main_3980=
+				{
+					Posn
+					{
+						Abs
+						{	X	53087635,
+							Z	77786922
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afp_main_3981=
+				{
+					Posn
+					{
+						Abs
+						{	X	53024561,
+							Z	77702953
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afp_main_3982=
+				{
+					Posn
+					{
+						Abs
+						{	X	53023742,
+							Z	77688617
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afp_main_3983=
+				{
+					Posn
+					{
+						Abs
+						{	X	53069207,
+							Z	77698448
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afp_main_3984=
+				{
+					Posn
+					{
+						Abs
+						{	X	53044222,
+							Z	77671824
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afp_main_3985=
+				{
+					Posn
+					{
+						Abs
+						{	X	53056100,
+							Z	77683701
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afp_main_3986=
+				{
+					Posn
+					{
+						Abs
+						{	X	53114263,
+							Z	77709507
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afp_main_3987=
+				{
+					Posn
+					{
+						Abs
+						{	X	53104843,
+							Z	77709097
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afp_main_3988=
+				{
+					Posn
+					{
+						Abs
+						{	X	53090916,
+							Z	77709507
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afp_main_3989=
+				{
+					Posn
+					{
+						Abs
+						{	X	53114673,
+							Z	77684112
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afp_main_398a=
+				{
+					Posn
+					{
+						Abs
+						{	X	53084772,
+							Z	77684521
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afp_main_398b=
+				{
+					Posn
+					{
+						Abs
+						{	X	53086001,
+							Z	77673461
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afp_main_398c=
+				{
+					Posn
+					{
+						Abs
+						{	X	53066340,
+							Z	77727120
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afp_main_3b82=
+				{
+					Posn
+					{
+						Abs
+						{	X	53022720,
+							Z	77718528
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CTL
+				},
+				SimpleItem	afp_main_3b83=
+				{
+					Posn
+					{
+						Abs
+						{	X	53099927,
+							Z	77684931
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afp_main_3b84=
+				{
+					Posn
+					{
+						Abs
+						{	X	53087639,
+							Z	77769309
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afp_main_3b85=
+				{
+					Posn
+					{
+						Abs
+						{	X	53100337,
+							Z	77769718
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afp_main_3b86=
+				{
+					Posn
+					{
+						Abs
+						{	X	53055281,
+							Z	77716470
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afp_main_3b87=
+				{
+					Posn
+					{
+						Abs
+						{	X	53085182,
+							Z	77748829
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afp_main_3b88=
+				{
+					Posn
+					{
+						Abs
+						{	X	53075761,
+							Z	77737770
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				}
+		}	}
+	};

@@ -1,0 +1,51 @@
+	SimpleItem	BRIDGE12_0405,
+	SimpleItem	BRIDGE12_0409,
+	SimpleItem	BRIDGE12_040c,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE12=BRIDGE12.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlPuktaechon,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE12_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	79566848,
+							Z	93203456
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE12_0409=
+				{
+					Posn
+					{
+						Abs
+						{	X	79518720,
+							Z	93312000
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE12_040c=
+				{
+					Posn
+					{
+						Abs
+						{	X	79586816,
+							Z	93171712
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

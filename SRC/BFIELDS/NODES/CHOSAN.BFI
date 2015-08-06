@@ -1,0 +1,1057 @@
+	SimpleItem	CHOSAN_1803,
+	SimpleItem	CHOSAN_1804,
+	SimpleItem	CHOSAN_1805,
+	SimpleItem	CHOSAN_1806,
+	SimpleItem	CHOSAN_1807,
+	SimpleItem	CHOSAN_1808,
+	SimpleItem	CHOSAN_1809,
+	SimpleItem	CHOSAN_180a,
+	SimpleItem	CHOSAN_180b,
+	SimpleItem	CHOSAN_180c,
+	SimpleItem	CHOSAN_2004,
+	SimpleItem	CHOSAN_2005,
+	SimpleItem	CHOSAN_2006,
+	SimpleItem	CHOSAN_2007,
+	SimpleItem	CHOSAN_2008,
+	SimpleItem	CHOSAN_2009,
+	SimpleItem	CHOSAN_200a,
+	SimpleItem	CHOSAN_200b,
+	SimpleItem	CHOSAN_200c,
+	SimpleItem	CHOSAN_200d,
+	SimpleItem	CHOSAN_200e,
+	SimpleItem	CHOSAN_200f,
+	SimpleItem	CHOSAN_2010,
+	SimpleItem	CHOSAN_2011,
+	SimpleItem	CHOSAN_2012,
+	SimpleItem	CHOSAN_2013,
+	SimpleItem	CHOSAN_2014,
+	SimpleItem	CHOSAN_2015,
+	SimpleItem	CHOSAN_2016,
+	SimpleItem	CHOSAN_2017,
+	SimpleItem	CHOSAN_2018,
+	SimpleItem	CHOSAN_2019,
+	SimpleItem	CHOSAN_201a,
+	SimpleItem	CHOSAN_201b,
+	SimpleItem	CHOSAN_201c,
+	SimpleItem	CHOSAN_201d,
+	SimpleItem	CHOSAN_201e,
+	SimpleItem	CHOSAN_201f,
+	SimpleItem	CHOSAN_2020,
+	SimpleItem	CHOSAN_2021,
+	SimpleItem	CHOSAN_2022,
+	SimpleItem	CHOSAN_2023,
+	SimpleItem	CHOSAN_2024,
+	SimpleItem	CHOSAN_2025,
+	SimpleItem	CHOSAN_2026,
+	SimpleItem	CHOSAN_2027,
+	SimpleItem	CHOSAN_2028,
+	SimpleItem	CHOSAN_2029,
+	SimpleItem	CHOSAN_202a,
+	SimpleItem	CHOSAN_202b,
+	SimpleItem	CHOSAN_202c,
+	SimpleItem	CHOSAN_202d,
+	SimpleItem	CHOSAN_202e,
+	SimpleItem	CHOSAN_202f,
+	SimpleItem	CHOSAN_2030,
+	SimpleItem	CHOSAN_2031,
+	SimpleItem	CHOSAN_2032,
+	SimpleItem	CHOSAN_2033,
+	SimpleItem	CHOSAN_2034,
+	SimpleItem	CHOSAN_2035,
+	SimpleItem	CHOSAN_2036,
+	SimpleItem	CHOSAN_2037,
+	SimpleItem	CHOSAN_2038,
+	SimpleItem	CHOSAN_2039,
+	SimpleItem	CHOSAN_203a,
+	SimpleItem	CHOSAN_203b,
+	SimpleItem	CHOSAN_2200,
+	SimpleItem	CHOSAN_2201,
+	SimpleItem	CHOSAN_2202,
+	SimpleItem	CHOSAN_2203,
+	SimpleItem	CHOSAN_2204,
+	SimpleItem	CHOSAN_2205,
+	SimpleItem	CHOSAN_2206,
+	SimpleItem	CHOSAN_2207,
+	SimpleItem	CHOSAN_2208,
+	SimpleItem	CHOSAN_2209,
+	SimpleItem	CHOSAN_220a,
+	SimpleItem	CHOSAN_220b,
+	SimpleItem	CHOSAN_220c,
+	SimpleItem	CHOSAN_220d,
+	BattleField
+	{
+		FileName	FIL_1_CHOSAN=CHOSAN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SCCChosan,
+		ItemGroup
+		{
+			SimpleItem	CHOSAN_1803=
+			{
+				Posn
+				{
+					Abs
+					{	X	53326848,
+						Z	97694720
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+				SimpleItem	CHOSAN_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	53331968,
+							Z	97747968
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOSAN_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	53252096,
+							Z	97681408
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	CHOSAN_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	53244928,
+							Z	97743872
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOSAN_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	53276672,
+							Z	97554432
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOSAN_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	53337088,
+							Z	97581056
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOSAN_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	53294080,
+							Z	97760256
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOSAN_1809=
+				{
+					Posn
+					{
+						Abs
+						{	X	53306368,
+							Z	97719296
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOSAN_180a=
+				{
+					Posn
+					{
+						Abs
+						{	X	53327872,
+							Z	97656832
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOSAN_180b=
+				{
+					Posn
+					{
+						Abs
+						{	X	53305344,
+							Z	97597440
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOSAN_180c=
+				{
+					Posn
+					{
+						Abs
+						{	X	53248000,
+							Z	97599488
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHOSAN_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	53283840,
+							Z	97652736
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	CHOSAN_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	53284864,
+							Z	97635328
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	CHOSAN_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	53294080,
+							Z	97644544
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	CHOSAN_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	53296128,
+							Z	97627136
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	CHOSAN_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	53273600,
+							Z	97698816
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	CHOSAN_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	53250048,
+							Z	97714176
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	CHOSAN_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	53275648,
+							Z	97682432
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	CHOSAN_2208=
+				{
+					Posn
+					{
+						Abs
+						{	X	53249024,
+							Z	97699840
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	CHOSAN_2209=
+				{
+					Posn
+					{
+						Abs
+						{	X	53263360,
+							Z	97635328
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	CHOSAN_220a=
+				{
+					Posn
+					{
+						Abs
+						{	X	53266432,
+							Z	97617920
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	CHOSAN_220b=
+				{
+					Posn
+					{
+						Abs
+						{	X	53271552,
+							Z	97599488
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	CHOSAN_220c=
+				{
+					Posn
+					{
+						Abs
+						{	X	53278720,
+							Z	97665024
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	CHOSAN_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	53243904,
+							Z	97688576
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				},
+				SimpleItem	CHOSAN_220d=
+				{
+					Posn
+					{
+						Abs
+						{	X	53270528,
+							Z	97722368
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StChosan,
+		ItemGroup
+		{
+			SimpleItem	CHOSAN_2014=
+			{
+				Posn
+				{
+					Abs
+					{	X	53221376,
+						Z	97653760
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2015=
+			{
+				Posn
+				{
+					Abs
+					{	X	53238784,
+						Z	97659904
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_2016=
+			{
+				Posn
+				{
+					Abs
+					{	X	53220352,
+						Z	97741824
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_2017=
+			{
+				Posn
+				{
+					Abs
+					{	X	53260288,
+						Z	97766400
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_2018=
+			{
+				Posn
+				{
+					Abs
+					{	X	53283840,
+						Z	97742848
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_2019=
+			{
+				Posn
+				{
+					Abs
+					{	X	53299200,
+						Z	97699840
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_201a=
+			{
+				Posn
+				{
+					Abs
+					{	X	53309440,
+						Z	97667072
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_201b=
+			{
+				Posn
+				{
+					Abs
+					{	X	53355520,
+						Z	97755136
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_201c=
+			{
+				Posn
+				{
+					Abs
+					{	X	53324800,
+						Z	97773568
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_201d=
+			{
+				Posn
+				{
+					Abs
+					{	X	53370880,
+						Z	97573888
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_201e=
+			{
+				Posn
+				{
+					Abs
+					{	X	53337088,
+						Z	97720320
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem	CHOSAN_201f=
+			{
+				Posn
+				{
+					Abs
+					{	X	53396480,
+						Z	98055168
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2020=
+			{
+				Posn
+				{
+					Abs
+					{	X	53276672,
+						Z	98012160
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2021=
+			{
+				Posn
+				{
+					Abs
+					{	X	53145600,
+						Z	98163712
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2022=
+			{
+				Posn
+				{
+					Abs
+					{	X	53259264,
+						Z	98131968
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2023=
+			{
+				Posn
+				{
+					Abs
+					{	X	53208064,
+						Z	98285568
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2024=
+			{
+				Posn
+				{
+					Abs
+					{	X	53068800,
+						Z	98377728
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem	CHOSAN_2025=
+			{
+				Posn
+				{
+					Abs
+					{	X	52952064,
+						Z	98280448
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_2026=
+			{
+				Posn
+				{
+					Abs
+					{	X	53012480,
+						Z	98289664
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2027=
+			{
+				Posn
+				{
+					Abs
+					{	X	52784128,
+						Z	98290688
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2028=
+			{
+				Posn
+				{
+					Abs
+					{	X	52876288,
+						Z	98340864
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2029=
+			{
+				Posn
+				{
+					Abs
+					{	X	52685824,
+						Z	98199552
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_202a=
+			{
+				Posn
+				{
+					Abs
+					{	X	53107712,
+						Z	98237440
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_202b=
+			{
+				Posn
+				{
+					Abs
+					{	X	53507072,
+						Z	98228224
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_202c=
+			{
+				Posn
+				{
+					Abs
+					{	X	53167104,
+						Z	97711104
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_202d=
+			{
+				Posn
+				{
+					Abs
+					{	X	53689344,
+						Z	98199552
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_202e=
+			{
+				Posn
+				{
+					Abs
+					{	X	53571584,
+						Z	98148352
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_202f=
+			{
+				Posn
+				{
+					Abs
+					{	X	53774336,
+						Z	98313216
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_2030=
+			{
+				Posn
+				{
+					Abs
+					{	X	53820416,
+						Z	98429952
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2031=
+			{
+				Posn
+				{
+					Abs
+					{	X	53716992,
+						Z	98456576
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2032=
+			{
+				Posn
+				{
+					Abs
+					{	X	52951040,
+						Z	98463744
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_2033=
+			{
+				Posn
+				{
+					Abs
+					{	X	52975616,
+						Z	98583552
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_2034=
+			{
+				Posn
+				{
+					Abs
+					{	X	53050368,
+						Z	98254848
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2035=
+			{
+				Posn
+				{
+					Abs
+					{	X	53129216,
+						Z	98341888
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2036=
+			{
+				Posn
+				{
+					Abs
+					{	X	53104640,
+						Z	98383872
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+			SimpleItem	CHOSAN_2037=
+			{
+				Posn
+				{
+					Abs
+					{	X	52944896,
+						Z	98427904
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem	CHOSAN_2038=
+			{
+				Posn
+				{
+					Abs
+					{	X	52371456,
+						Z	97874944
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_2039=
+			{
+				Posn
+				{
+					Abs
+					{	X	52556800,
+						Z	98016256
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	CHOSAN_203a=
+			{
+				Posn
+				{
+					Abs
+					{	X	52268032,
+						Z	97899520
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		BOAT
+			},
+			SimpleItem	CHOSAN_203b=
+			{
+				Posn
+				{
+					Abs
+					{	X	52355072,
+						Z	98224128
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+				SimpleItem	CHOSAN_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	53160960,
+							Z	97644544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHOSAN_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	53280768,
+							Z	98063360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	CHOSAN_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	53194752,
+							Z	97682432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	CHOSAN_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	53198848,
+							Z	97654784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	CHOSAN_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	53213184,
+							Z	97620992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHOSAN_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	53202944,
+							Z	97636352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHOSAN_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	53189632,
+							Z	97618944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHOSAN_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	53256192,
+							Z	97666048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI05
+				},
+				SimpleItem	CHOSAN_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	53250048,
+							Z	97643520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PMAST
+				},
+				SimpleItem	CHOSAN_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	52838400,
+							Z	98225152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	CHOSAN_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	53219328,
+							Z	97674240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHOSAN_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	53226496,
+							Z	97719296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHOSAN_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	53228544,
+							Z	97634304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHOSAN_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	53216256,
+							Z	97697792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHOSAN_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	53202944,
+							Z	97711104
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				}
+		}	}
+	};

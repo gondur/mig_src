@@ -1,0 +1,706 @@
+	SimpleItem	YOMJU_1811,
+	SimpleItem	YOMJU_1812,
+	SimpleItem	YOMJU_1813,
+	SimpleItem	YOMJU_1814,
+	SimpleItem	YOMJU_1815,
+	SimpleItem	YOMJU_1816,
+	SimpleItem	YOMJU_2027,
+	SimpleItem	YOMJU_2028,
+	SimpleItem	YOMJU_2029,
+	SimpleItem	YOMJU_202a,
+	SimpleItem	YOMJU_202b,
+	SimpleItem	YOMJU_202c,
+	SimpleItem	YOMJU_202d,
+	SimpleItem	YOMJU_202e,
+	SimpleItem	YOMJU_202f,
+	SimpleItem	YOMJU_2030,
+	SimpleItem	YOMJU_2031,
+	SimpleItem	YOMJU_2032,
+	SimpleItem	YOMJU_2033,
+	SimpleItem	YOMJU_2034,
+	SimpleItem	YOMJU_2035,
+	SimpleItem	YOMJU_2036,
+	SimpleItem	YOMJU_2037,
+	SimpleItem	YOMJU_2038,
+	SimpleItem	YOMJU_2039,
+	SimpleItem	YOMJU_203a,
+	SimpleItem	YOMJU_203b,
+	SimpleItem	YOMJU_203c,
+	SimpleItem	YOMJU_203d,
+	SimpleItem	YOMJU_203e,
+	SimpleItem	YOMJU_203f,
+	SimpleItem	YOMJU_2040,
+	SimpleItem	YOMJU_2041,
+	SimpleItem	YOMJU_2042,
+	SimpleItem	YOMJU_2043,
+	SimpleItem	YOMJU_2044,
+	SimpleItem	YOMJU_2045,
+	SimpleItem	YOMJU_2046,
+	SimpleItem	YOMJU_2047,
+	SimpleItem	YOMJU_2048,
+	SimpleItem	YOMJU_2207,
+	SimpleItem	YOMJU_2208,
+	SimpleItem	YOMJU_2209,
+	SimpleItem	YOMJU_220a,
+	SimpleItem	YOMJU_220b,
+	SimpleItem	YOMJU_220c,
+	SimpleItem	YOMJU_220d,
+	SimpleItem	YOMJU_220e,
+	SimpleItem	YOMJU_220f,
+	SimpleItem	YOMJU_2210,
+	SimpleItem	YOMJU_2211,
+	SimpleItem	YOMJU_2212,
+	SimpleItem	YOMJU_2213,
+	BattleField
+	{
+		FileName	FIL_1_YOMJU=YOMJU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SCCYomju,
+		ItemGroup
+		{
+				SimpleItem	YOMJU_1811=
+				{
+					Posn
+					{
+						Abs
+						{	X	42875904,
+							Z	87328768
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	YOMJU_1812=
+				{
+					Posn
+					{
+						Abs
+						{	X	42921984,
+							Z	87356416
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	YOMJU_1813=
+				{
+					Posn
+					{
+						Abs
+						{	X	42962944,
+							Z	87388160
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	YOMJU_1814=
+				{
+					Posn
+					{
+						Abs
+						{	X	43034624,
+							Z	87367680
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	YOMJU_1815=
+				{
+					Posn
+					{
+						Abs
+						{	X	43025408,
+							Z	87293952
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	YOMJU_1816=
+				{
+					Posn
+					{
+						Abs
+						{	X	43001856,
+							Z	87274496
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	YOMJU_220a=
+				{
+					Posn
+					{
+						Abs
+						{	X	42993664,
+							Z	87344128
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF2S
+				},
+				SimpleItem	YOMJU_220f=
+				{
+					Posn
+					{
+						Abs
+						{	X	42921984,
+							Z	87330816
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	YOMJU_2210=
+				{
+					Posn
+					{
+						Abs
+						{	X	42915840,
+							Z	87305216
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	YOMJU_2211=
+				{
+					Posn
+					{
+						Abs
+						{	X	42959872,
+							Z	87339008
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	YOMJU_2212=
+				{
+					Posn
+					{
+						Abs
+						{	X	43014144,
+							Z	87326720
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	YOMJU_2213=
+				{
+					Posn
+					{
+						Abs
+						{	X	43001856,
+							Z	87313408
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	YOMJU_220b=
+				{
+					Posn
+					{
+						Abs
+						{	X	42986496,
+							Z	87300096
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF1S
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StYomju,
+		ItemGroup
+		{
+				SimpleItem	YOMJU_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	42905600,
+							Z	87289856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	YOMJU_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	42940416,
+							Z	87310336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	YOMJU_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	42954752,
+							Z	87277568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI04
+				},
+				SimpleItem	YOMJU_2208=
+				{
+					Posn
+					{
+						Abs
+						{	X	42937344,
+							Z	87278592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PMAST
+				},
+				SimpleItem	YOMJU_2209=
+				{
+					Posn
+					{
+						Abs
+						{	X	42924032,
+							Z	87290880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI01
+				},
+			SimpleItem	YOMJU_2027=
+			{
+				Posn
+				{
+					Abs
+					{	X	43000832,
+						Z	87419904
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+				SimpleItem	YOMJU_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	42955776,
+							Z	87320576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	YOMJU_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	42981376,
+							Z	87323648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	YOMJU_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	42964992,
+							Z	87305216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	YOMJU_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	42867712,
+							Z	87202816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	YOMJU_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	42973184,
+							Z	87256064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	YOMJU_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	42677248,
+							Z	87318528
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	YOMJU_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	42716160,
+							Z	87282688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YOMJU_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	42689536,
+							Z	87252992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	YOMJU_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	42740736,
+							Z	87202816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	YOMJU_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	42914816,
+							Z	87206912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	YOMJU_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	43010048,
+							Z	87220224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	YOMJU_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	42812416,
+							Z	87364608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YOMJU_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	42944512,
+							Z	87265280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	YOMJU_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	43029504,
+							Z	87323648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	YOMJU_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	42948608,
+							Z	87286784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	YOMJU_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	42925056,
+							Z	87275520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	YOMJU_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	42800128,
+							Z	87240704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YOMJU_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	42899456,
+							Z	87248896
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	YOMJU_203c=
+				{
+					Posn
+					{
+						Abs
+						{	X	42784768,
+							Z	87336960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		STEPTO
+				},
+				SimpleItem	YOMJU_203d=
+				{
+					Posn
+					{
+						Abs
+						{	X	42830848,
+							Z	87317504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YOMJU_203e=
+				{
+					Posn
+					{
+						Abs
+						{	X	42830848,
+							Z	87274496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	YOMJU_203f=
+				{
+					Posn
+					{
+						Abs
+						{	X	42754048,
+							Z	87257088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	YOMJU_2040=
+				{
+					Posn
+					{
+						Abs
+						{	X	42785792,
+							Z	87281664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	YOMJU_2041=
+				{
+					Posn
+					{
+						Abs
+						{	X	42801152,
+							Z	87321600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YOMJU_2042=
+				{
+					Posn
+					{
+						Abs
+						{	X	42748928,
+							Z	87304192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	YOMJU_2043=
+				{
+					Posn
+					{
+						Abs
+						{	X	42835968,
+							Z	87237632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	YOMJU_2044=
+				{
+					Posn
+					{
+						Abs
+						{	X	42851328,
+							Z	87344128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	YOMJU_2045=
+				{
+					Posn
+					{
+						Abs
+						{	X	42886144,
+							Z	87354368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	YOMJU_2046=
+				{
+					Posn
+					{
+						Abs
+						{	X	42934272,
+							Z	87386112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	YOMJU_2047=
+				{
+					Posn
+					{
+						Abs
+						{	X	43051008,
+							Z	87287808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YOMJU_2048=
+				{
+					Posn
+					{
+						Abs
+						{	X	43032576,
+							Z	87268352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	YOMJU_220c=
+				{
+					Posn
+					{
+						Abs
+						{	X	42972160,
+							Z	87287808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		RMAST
+				},
+				SimpleItem	YOMJU_220d=
+				{
+					Posn
+					{
+						Abs
+						{	X	42909696,
+							Z	87323648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI05
+				},
+				SimpleItem	YOMJU_220e=
+				{
+					Posn
+					{
+						Abs
+						{	X	42938368,
+							Z	87339008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI05
+				}
+		}	}
+	};

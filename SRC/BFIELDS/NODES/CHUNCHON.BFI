@@ -1,0 +1,375 @@
+	SimpleItem	CHUNCHON_0414,
+	SimpleItem	CHUNCHON_0418,
+	SimpleItem	CHUNCHON_041b,
+	SimpleItem	CHUNCHON_041d,
+	SimpleItem	CHUNCHON_0422,
+	SimpleItem	CHUNCHON_0424,
+	SimpleItem	CHUNCHON_0426,
+	SimpleItem	CHUNCHON_0428,
+	SimpleItem	CHUNCHON_2051,
+	SimpleItem	CHUNCHON_2052,
+	SimpleItem	CHUNCHON_2053,
+	SimpleItem	CHUNCHON_2054,
+	SimpleItem	CHUNCHON_2055,
+	SimpleItem	CHUNCHON_2056,
+	SimpleItem	CHUNCHON_2057,
+	SimpleItem	CHUNCHON_2058,
+	SimpleItem	CHUNCHON_2059,
+	SimpleItem	CHUNCHON_205a,
+	SimpleItem	CHUNCHON_205b,
+	SimpleItem	CHUNCHON_205c,
+	SimpleItem	CHUNCHON_205d,
+	SimpleItem	CHUNCHON_205e,
+	SimpleItem	CHUNCHON_205f,
+	SimpleItem	CHUNCHON_2060,
+	SimpleItem	CHUNCHON_2061,
+	SimpleItem	CHUNCHON_2062,
+	SimpleItem	CHUNCHON_2063,
+	BattleField
+	{
+		FileName	FIL_1_CHUNCHON=CHUNCHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StChuncheon,
+		ItemGroup
+		{
+			SimpleItem	CHUNCHON_2051=
+			{
+				Posn
+				{
+					Abs
+					{	X	69923840,
+						Z	64778240
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN4
+			},
+			SimpleItem	CHUNCHON_205f=
+			{
+				Posn
+				{
+					Abs
+					{	X	69872640,
+						Z	64707584
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN4
+			},
+			SimpleItem	CHUNCHON_2060=
+			{
+				Posn
+				{
+					Abs
+					{	X	69870592,
+						Z	64738304
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	CHUNCHON_2061=
+			{
+				Posn
+				{
+					Abs
+					{	X	69830656,
+						Z	64743424
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN4
+			},
+			SimpleItem	CHUNCHON_2062=
+			{
+				Posn
+				{
+					Abs
+					{	X	69831680,
+						Z	64788480
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	CHUNCHON_2063=
+			{
+				Posn
+				{
+					Abs
+					{	X	69799936,
+						Z	64800768
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	69967872,
+							Z	64778240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHUNCHON_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	69996544,
+							Z	64961536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHUNCHON_0418=
+				{
+					Posn
+					{
+						Abs
+						{	X	69915648,
+							Z	64926720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHUNCHON_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	69896192,
+							Z	64746496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHUNCHON_041d=
+				{
+					Posn
+					{
+						Abs
+						{	X	69918720,
+							Z	64734208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	CHUNCHON_0422=
+				{
+					Posn
+					{
+						Abs
+						{	X	69753856,
+							Z	64791552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHUNCHON_0424=
+				{
+					Posn
+					{
+						Abs
+						{	X	69959680,
+							Z	65098752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHUNCHON_0426=
+				{
+					Posn
+					{
+						Abs
+						{	X	69964800,
+							Z	65080320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHUNCHON_0428=
+				{
+					Posn
+					{
+						Abs
+						{	X	69909504,
+							Z	65097728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	CHUNCHON_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	70017024,
+							Z	65041408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHUNCHON_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	69937152,
+							Z	65019904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHUNCHON_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	69870592,
+							Z	64862208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHUNCHON_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	69903360,
+							Z	65244160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHUNCHON_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	69894144,
+							Z	65204224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHUNCHON_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	69915648,
+							Z	64896000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHUNCHON_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	69946368,
+							Z	64935936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHUNCHON_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	69946368,
+							Z	64840704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHUNCHON_205a=
+				{
+					Posn
+					{
+						Abs
+						{	X	69915648,
+							Z	64846848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	CHUNCHON_205b=
+				{
+					Posn
+					{
+						Abs
+						{	X	69979136,
+							Z	65055744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHUNCHON_205c=
+				{
+					Posn
+					{
+						Abs
+						{	X	70000640,
+							Z	64914432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHUNCHON_205d=
+				{
+					Posn
+					{
+						Abs
+						{	X	69958656,
+							Z	64901120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	CHUNCHON_205e=
+				{
+					Posn
+					{
+						Abs
+						{	X	70001664,
+							Z	65004544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				}
+		}	}
+	};

@@ -1,0 +1,836 @@
+	SimpleItem	convoy_0dff,
+	SimpleItem	convoy_0dfe,
+	SimpleItem	convoy_0dfd,
+	SimpleItem	convoy_0dfc,
+	SimpleItem	convoy_0dfb,
+	SimpleItem	convoy_0dfa,
+	SimpleItem	convoy_0df9,
+	SimpleItem	convoy_0df8,
+	SimpleItem	convoy_0df7,
+	SimpleItem	convoy_0df6,
+	SimpleItem	convoy_0df5,
+	SimpleItem	convoy_0df4,
+	SimpleItem	convoy_0df3,
+	SimpleItem	convoy_0df2,
+	SimpleItem	convoy_0df1,
+	SimpleItem	convoy_0df0,
+	SimpleItem	convoy_0def,
+	SimpleItem	convoy_0dee,
+	SimpleItem	convoy_0ded,
+	SimpleItem	convoy_0dec,
+	SimpleItem	convoy_0deb,
+	SimpleItem	convoy_0dea,
+	SimpleItem	convoy_0de9,
+	SimpleItem	convoy_0de8,
+	SimpleItem	convoy_0de7,
+	SimpleItem	convoy_0de6,
+	SimpleItem	convoy_0de5,
+	SimpleItem	convoy_0de4,
+	SimpleItem	convoy_0de3,
+	SimpleItem	convoy_0de2,
+	SimpleItem	convoy_0de1,
+	SimpleItem	convoy_0de0,
+	SimpleItem	convoy_0ddf,
+	SimpleItem	convoy_0bff,
+	SimpleItem	convoy_0bfe,
+	SimpleItem	convoy_0bfd,
+	SimpleItem	convoy_0bfc,
+	SimpleItem	convoy_0bfb,
+	SimpleItem	convoy_0bfa,
+	SimpleItem	convoy_0bf9,
+	SimpleItem	convoy_0bf8,
+	SimpleItem	convoy_0bf7,
+	SimpleItem	convoy_0bf6,
+	SimpleItem	convoy_0bf5,
+	SimpleItem	convoy_0bf4,
+	SimpleItem	convoy_0bf3,
+	SimpleItem	convoy_0bf2,
+	SimpleItem	convoy_0bf1,
+	SimpleItem	convoy_0bf0,
+	SimpleItem	convoy_0bef,
+	SimpleItem	convoy_0bee,
+	SimpleItem	convoy_0bed,
+	SimpleItem	convoy_0bec,
+	SimpleItem	convoy_0beb,
+	SimpleItem	convoy_0bea,
+	SimpleItem	convoy_0be9,
+	SimpleItem	convoy_0be8,
+	SimpleItem	convoy_0be7,
+	SimpleItem	convoy_0be6,
+	BattleField
+	{
+		FileName	FIL_1_convoy=convoy.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	convoy_0dff=
+			{
+				Posn
+				{
+					Abs
+					{	X	48359315,
+						Z	86618637
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Kusong2Chongju,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0dfe=
+			{
+				Posn
+				{
+					Abs
+					{	X	44664586,
+						Z	86795360
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Yomju2Sonchon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0dfd=
+			{
+				Posn
+				{
+					Abs
+					{	X	46698845,
+						Z	84886931
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Sonchon2Chongju,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0dfc=
+			{
+				Posn
+				{
+					Abs
+					{	X	56261963,
+						Z	88473100
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Huichon2Kujang,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0dfb=
+			{
+				Posn
+				{
+					Abs
+					{	X	52150272,
+						Z	79724544
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Sukchon2Pyongyang,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0dfa=
+			{
+				Posn
+				{
+					Abs
+					{	X	52696766,
+						Z	72723316
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Hwangju2Sariwon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0df9=
+			{
+				Posn
+				{
+					Abs
+					{	X	58463998,
+						Z	71905417
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Suan2Pyongsan,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0df8=
+			{
+				Posn
+				{
+					Abs
+					{	X	50809308,
+						Z	72199022
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Nampo2Chaeryong,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0df7=
+			{
+				Posn
+				{
+					Abs
+					{	X	66202573,
+						Z	77840423
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Kanda2Wonsan,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0df6=
+			{
+				Posn
+				{
+					Abs
+					{	X	68194889,
+						Z	67983700
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Kumhwa2Hwachon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0df5=
+			{
+				Posn
+				{
+					Abs
+					{	X	75283341,
+						Z	66389847
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Inje2Yangyang,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0df4=
+			{
+				Posn
+				{
+					Abs
+					{	X	64482889,
+						Z	71255293
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Ichon2Pyonggang,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0df3=
+			{
+				Posn
+				{
+					Abs
+					{	X	55926416,
+						Z	71108490
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Sariwon2Pyongsan,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0df2=
+			{
+				Posn
+				{
+					Abs
+					{	X	59512585,
+						Z	66557621
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Kumchon2Kaesong,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0df1=
+			{
+				Posn
+				{
+					Abs
+					{	X	79372832,
+						Z	65299316
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Yangyang2Kangnung,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0df0=
+			{
+				Posn
+				{
+					Abs
+					{	X	59701330,
+						Z	79958570
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Wadong2Yangdok,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0def=
+			{
+				Posn
+				{
+					Abs
+					{	X	69851657,
+						Z	66033328
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Hwachon2Chuncheon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0dee=
+			{
+				Posn
+				{
+					Abs
+					{	X	68949872,
+						Z	70835858
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Changdo2Kumhwa,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0ded=
+			{
+				Posn
+				{
+					Abs
+					{	X	62008223,
+						Z	63181170
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Munsan2Seoul,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0dec=
+			{
+				Posn
+				{
+					Abs
+					{	X	63769850,
+						Z	57288108
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Suwon2Osan,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0deb=
+			{
+				Posn
+				{
+					Abs
+					{	X	63937624,
+						Z	55631340
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Osan2Pyongtaek,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0dea=
+			{
+				Posn
+				{
+					Abs
+					{	X	63098754,
+						Z	62740763
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Uijongbu2Seoul,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0de9=
+			{
+				Posn
+				{
+					Abs
+					{	X	64589824,
+						Z	62320640
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Kuri2Seoul,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0de8=
+			{
+				Posn
+				{
+					Abs
+					{	X	70208177,
+						Z	63663520
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Chuncheon2Hongchon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0de7=
+			{
+				Posn
+				{
+					Abs
+					{	X	72053691,
+						Z	61671204
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Hongchon2Hoensong,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0de6=
+			{
+				Posn
+				{
+					Abs
+					{	X	71747072,
+						Z	59924992
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Hoensong2Wonju,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0de5=
+			{
+				Posn
+				{
+					Abs
+					{	X	73453568,
+						Z	61792256
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Yulchon2Hoensong,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0de4=
+			{
+				Posn
+				{
+					Abs
+					{	X	74786304,
+						Z	63677952
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Sangnam2Yulchon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0de3=
+			{
+				Posn
+				{
+					Abs
+					{	X	77447168,
+						Z	62652416
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Kangnung2Yulchon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0de2=
+			{
+				Posn
+				{
+					Abs
+					{	X	62783765,
+						Z	59506360
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Seoul2Suwon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0de1=
+			{
+				Posn
+				{
+					Abs
+					{	X	64618782,
+						Z	64120114
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Pochon2Uijongbu,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0de0=
+			{
+				Posn
+				{
+					Abs
+					{	X	74501653,
+						Z	94004662
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Pungsan2Pukchong,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0ddf=
+			{
+				Posn
+				{
+					Abs
+					{	X	74187079,
+						Z	102393306
+					}
+				},
+				UIDBand		RedRoadBAND,
+				SetUID	UID_ROAD_Hyesan2Kapsan,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bff=
+			{
+				Posn
+				{
+					Abs
+					{	X	44577792,
+						Z	86872576
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Yomju2Sonchon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bfe=
+			{
+				Posn
+				{
+					Abs
+					{	X	46782732,
+						Z	84803044
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Sonchon2Chongju,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bfd=
+			{
+				Posn
+				{
+					Abs
+					{	X	56157105,
+						Z	88347269
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Huichon2Kujang,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bfc=
+			{
+				Posn
+				{
+					Abs
+					{	X	48355614,
+						Z	86711473
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Kusong2Chongju,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bfb=
+			{
+				Posn
+				{
+					Abs
+					{	X	52277331,
+						Z	79539135
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Sukchon2Pyongyang,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bfa=
+			{
+				Posn
+				{
+					Abs
+					{	X	52549964,
+						Z	72807203
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Hwangju2Sariwon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bf9=
+			{
+				Posn
+				{
+					Abs
+					{	X	53882880,
+						Z	80584704
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Sunchon2Pyongyang,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bf8=
+			{
+				Posn
+				{
+					Abs
+					{	X	54731026,
+						Z	65634864
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Haeju2Yonan,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bf7=
+			{
+				Posn
+				{
+					Abs
+					{	X	55705846,
+						Z	71217693
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Sariwon2Pyongsan,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bf6=
+			{
+				Posn
+				{
+					Abs
+					{	X	58883433,
+						Z	66347904
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Kumchon2Kaesong,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bf5=
+			{
+				Posn
+				{
+					Abs
+					{	X	77149826,
+						Z	69116175
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Kansang2Yangyang,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bf4=
+			{
+				Posn
+				{
+					Abs
+					{	X	65961984,
+						Z	71942144
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Sepo2Pyonggang,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bf3=
+			{
+				Posn
+				{
+					Abs
+					{	X	64692607,
+						Z	67920785
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Chorwon2Yonchon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bf2=
+			{
+				Posn
+				{
+					Abs
+					{	X	61379070,
+						Z	62656876
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Munsan2Seoul,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bf1=
+			{
+				Posn
+				{
+					Abs
+					{	X	63895681,
+						Z	62174525
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Uijongbu2Seoul,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bf0=
+			{
+				Posn
+				{
+					Abs
+					{	X	64231228,
+						Z	61734119
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Kuri2Seoul,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bef=
+			{
+				Posn
+				{
+					Abs
+					{	X	51459095,
+						Z	82601347
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Sinaju2Sukchon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bee=
+			{
+				Posn
+				{
+					Abs
+					{	X	54028117,
+						Z	85380085
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Kujang2Sinaju,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bed=
+			{
+				Posn
+				{
+					Abs
+					{	X	53844615,
+						Z	82758635
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Kujang2Sunchon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bec=
+			{
+				Posn
+				{
+					Abs
+					{	X	56675783,
+						Z	86402453
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Kujang2Tokchon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0beb=
+			{
+				Posn
+				{
+					Abs
+					{	X	61761400,
+						Z	81788697
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Kowon2Yangdok,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0bea=
+			{
+				Posn
+				{
+					Abs
+					{	X	66008151,
+						Z	80635258
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Kowon2Wonsan,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0be9=
+			{
+				Posn
+				{
+					Abs
+					{	X	67187804,
+						Z	76912798
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Wonsan2Kosan,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0be8=
+			{
+				Posn
+				{
+					Abs
+					{	X	69232536,
+						Z	78459454
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Wonsan2Kojo,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0be7=
+			{
+				Posn
+				{
+					Abs
+					{	X	77437679,
+						Z	95918321
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Pungsan2Tanchon,
+				Shape		EMPTY
+			},
+			SimpleItem	convoy_0be6=
+			{
+				Posn
+				{
+					Abs
+					{	X	85485536,
+						Z	107295421
+					}
+				},
+				UIDBand		RedRailBand,
+				SetUID	UID_RAIL_Chongjin2Kyongsong,
+				Shape		EMPTY
+			}
+		}
+	};

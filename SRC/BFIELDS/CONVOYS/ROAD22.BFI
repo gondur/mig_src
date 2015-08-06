@@ -1,0 +1,115 @@
+	WayPoint	Road22_0109,
+	WayPoint	Road22_010a,
+	WayPoint	Road22_010b,
+	GroundItem	Road22_2f46,
+	GroundItem	Road22_2f47,
+	GroundItem	Road22_2f48,
+	BattleField
+	{
+		FileName	FIL_1_ROAD22=Road22.BF,
+		ItemGroup
+		{	Target	UID_ROAD_Kuri2Seoul,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	64356352,
+					Z	62136320
+				}
+			},
+			Route
+			{
+				WayPoint	Road22_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	64323584,
+							Z	62095360
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel	50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road22_2f46=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	50
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	64544768,
+					Z	62308352
+				}
+			},
+			Route
+			{
+				WayPoint	Road22_010a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64491520,
+							Z	62238720
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel	50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road22_2f47=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	50
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	64606208,
+					Z	62042112
+				}
+			},
+			Route
+			{
+				WayPoint	Road22_010b=
+				{
+					Posn
+					{
+						Abs
+						{	X	64606208,
+							Z	61980672
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel	50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road22_2f48=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	50
+		}	}
+	}
+	};

@@ -1,0 +1,25 @@
+	SimpleItem	BRIDGE17_045e,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE17=BRIDGE17.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlManpo,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE17_045e=
+				{
+					Posn
+					{
+						Abs
+						{	X	59940352,
+							Z	99088896
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		HUT
+				}
+		}	}
+	};

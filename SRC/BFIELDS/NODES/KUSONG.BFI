@@ -1,0 +1,324 @@
+	SimpleItem	KUSONG_2004,
+	SimpleItem	KUSONG_2005,
+	SimpleItem	KUSONG_2006,
+	SimpleItem	KUSONG_2007,
+	SimpleItem	KUSONG_2008,
+	SimpleItem	KUSONG_2009,
+	SimpleItem	KUSONG_200a,
+	SimpleItem	KUSONG_200b,
+	SimpleItem	KUSONG_200c,
+	SimpleItem	KUSONG_200d,
+	SimpleItem	KUSONG_200e,
+	SimpleItem	KUSONG_200f,
+	SimpleItem	KUSONG_2010,
+	SimpleItem	KUSONG_2011,
+	SimpleItem	KUSONG_2012,
+	SimpleItem	KUSONG_2013,
+	SimpleItem	KUSONG_2014,
+	SimpleItem	KUSONG_2015,
+	SimpleItem	KUSONG_2016,
+	SimpleItem	KUSONG_2017,
+	SimpleItem	KUSONG_2018,
+	SimpleItem	KUSONG_2019,
+	SimpleItem	KUSONG_201a,
+	SimpleItem	KUSONG_201b,
+	BattleField
+	{
+		FileName	FIL_1_KUSONG=KUSONG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKusong,
+		ItemGroup
+		{
+			SimpleItem	KUSONG_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	48389120,
+						Z	88182784
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN4
+			},
+			SimpleItem	KUSONG_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	48518144,
+						Z	88058880
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST2
+			},
+			SimpleItem	KUSONG_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	48470016,
+						Z	88053760
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST2
+			},
+			SimpleItem	KUSONG_2007=
+			{
+				Posn
+				{
+					Abs
+					{	X	48546816,
+						Z	88026112
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST1
+			},
+			SimpleItem	KUSONG_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	48536576,
+						Z	88270848
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem	KUSONG_200a=
+			{
+				Posn
+				{
+					Abs
+					{	X	48326656,
+						Z	88079360
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST2
+			},
+			SimpleItem	KUSONG_200b=
+			{
+				Posn
+				{
+					Abs
+					{	X	48589824,
+						Z	87999488
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	KUSONG_200c=
+			{
+				Posn
+				{
+					Abs
+					{	X	48647168,
+						Z	88041472
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST1
+			},
+				SimpleItem	KUSONG_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	48560128,
+							Z	88209408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KUSONG_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	48425984,
+							Z	88146944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUSONG_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	48414720,
+							Z	88087552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUSONG_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	48425984,
+							Z	88235008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KUSONG_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	48429056,
+							Z	88187904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KUSONG_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	48474112,
+							Z	88263680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUSONG_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	48493568,
+							Z	88207360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KUSONG_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	48458752,
+							Z	88163328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUSONG_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	48350208,
+							Z	88126464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	KUSONG_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	48463872,
+							Z	88095744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KUSONG_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	48521216,
+							Z	88120320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KUSONG_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	48562176,
+							Z	88099840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KUSONG_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	48591872,
+							Z	88068096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KUSONG_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	48410624,
+							Z	88118272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KUSONG_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	48462848,
+							Z	88227840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUSONG_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	48492544,
+							Z	88148992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				}
+		}	}
+	};

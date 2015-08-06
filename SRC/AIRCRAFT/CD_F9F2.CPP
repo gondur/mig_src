@@ -1,0 +1,296 @@
+/*
+	 MiG Alley
+	 Copyright (C) 1998, 1999, 2000, 2001 Empire Interactive (Europe) Ltd,
+	 677 High Road, North Finchley, London N12 0DA
+
+	 Please see the document licence.doc for the full licence agreement
+
+2. LICENCE
+ 2.1 	
+ 	Subject to the provisions of this Agreement we now grant to you the 
+ 	following rights in respect of the Source Code:
+  2.1.1 
+  	the non-exclusive right to Exploit  the Source Code and Executable 
+  	Code on any medium; and 
+  2.1.2 
+  	the non-exclusive right to create and distribute Derivative Works.
+ 2.2 	
+ 	Subject to the provisions of this Agreement we now grant you the
+	following rights in respect of the Object Code:
+  2.2.1 
+	the non-exclusive right to Exploit the Object Code on the same
+	terms and conditions set out in clause 3, provided that any
+	distribution is done so on the terms of this Agreement and is
+	accompanied by the Source Code and Executable Code (as
+	applicable).
+
+3. GENERAL OBLIGATIONS
+ 3.1 
+ 	In consideration of the licence granted in clause 2.1 you now agree:
+  3.1.1 
+	that when you distribute the Source Code or Executable Code or
+	any Derivative Works to Recipients you will also include the
+	terms of this Agreement;
+  3.1.2 
+	that when you make the Source Code, Executable Code or any
+	Derivative Works ("Materials") available to download, you will
+	ensure that Recipients must accept the terms of this Agreement
+	before being allowed to download such Materials;
+  3.1.3 
+	that by Exploiting the Source Code or Executable Code you may
+	not impose any further restrictions on a Recipient's subsequent
+	Exploitation of the Source Code or Executable Code other than
+	those contained in the terms and conditions of this Agreement;
+  3.1.4 
+	not (and not to allow any third party) to profit or make any
+	charge for the Source Code, or Executable Code, any
+	Exploitation of the Source Code or Executable Code, or for any
+	Derivative Works;
+  3.1.5 
+	not to place any restrictions on the operability of the Source 
+	Code;
+  3.1.6 
+	to attach prominent notices to any Derivative Works stating
+	that you have changed the Source Code or Executable Code and to
+	include the details anddate of such change; and
+  3.1.7 
+  	not to Exploit the Source Code or Executable Code otherwise than
+	as expressly permitted by  this Agreement.
+
+questions about this file may be asked at http://www.simhq.com/
+*/
+
+// Curves.cpp
+// Produced by ceditor.exe
+// Andrew McRae 10Feb97
+
+#include "dosdefs.h"
+#include "modvec.h"
+#include "curves.h"
+
+void LoadCurvesF9F2 ()
+{
+
+
+
+// ****  F9F2  Cl  **** //
+
+CURVEPNT F9F2_Cl [16] = {
+	0.226892802771,1.250000000000,
+	0.259154952197,1.260409000000,
+	0.343776979185,1.249528000000,
+	0.423110134941,1.204190000000,
+	0.507732144475,1.102112000000,
+	0.772175967905,0.598915000000,
+	1.570796361786,0.000000000000,
+	2.813682323178,-0.116774000000,
+	2.961770770051,-0.864131000000,
+	3.321414712000,0.864131000000,
+	3.469502931980,0.116774000000,
+	4.712388998091,0.000000000000,
+	5.384076587110,-0.463386000000,
+	5.680253533215,-1.052723000000,
+	5.786031080040,-1.129007000000,
+	5.875941978261,-1.120614000000
+};
+
+new CURVE ("F9F2",
+			"Cl",
+			16,
+			0.000000000000,
+			6.283185482051,
+			1,
+			F9F2_Cl);
+
+
+// ****  F9F2  Cd  **** //
+
+CURVEPNT F9F2_Cd [23] = {
+	0.000000000000,0.012708000000,
+	0.044294344570,0.025579000000,
+	0.107099755907,0.050765000000,
+	0.173871811941,0.092872000000,
+	0.256510516581,0.179448000000,
+	0.355676948185,0.360470000000,
+	0.655820730974,1.266886000000,
+	0.782753762730,1.570939000000,
+	0.973153301637,1.843320000000,
+	1.269330387368,1.970008000000,
+	1.570796361786,2.000000000000,
+	2.443460935470,1.600000000000,
+	2.855993502478,0.059889000000,
+	3.141592741025,0.012000000000,
+	3.416614289467,0.047911000000,
+	3.839724302234,1.600000000000,
+	4.712388998091,2.000000000000,
+	5.585053449603,1.600000000000,
+	5.891808609412,0.289664000000,
+	6.010808334319,0.104285000000,
+	6.086174827923,0.040927000000,
+	6.171457968179,0.014560000000,
+	6.230792547952,0.009309000000
+};
+
+new CURVE ("F9F2",
+			"Cd",
+			23,
+			0.000000000000,
+			6.283185482051,
+			1,
+			F9F2_Cd);
+
+
+// ****  F9F2  CompCd  **** //
+
+CURVEPNT F9F2_CompCd [21] = {
+	0.000000000000,1.000000000000,
+	0.700000000000,1.000000000000,
+	0.735690000000,1.045589000000,
+	0.765993000000,1.124667000000,
+	0.794613000000,1.291610000000,
+	0.816498000000,1.572777000000,
+	0.833333000000,1.994527000000,
+	0.848485000000,2.609580000000,
+	0.861953000000,3.356429000000,
+	0.882155000000,4.516242000000,
+	0.895623000000,5.254305000000,
+	0.915825000000,5.939650000000,
+	0.952862000000,6.343827000000,
+	0.986532000000,6.554702000000,
+	1.033670000000,6.589848000000,
+	1.097643000000,6.343827000000,
+	1.168350000000,5.658483000000,
+	1.259259000000,4.498670000000,
+	1.430976000000,3.304562000000,
+	1.707071000000,2.775832000000,
+	2.000000000000,2.610000000000
+};
+
+new CURVE ("F9F2",
+			"CompCd",
+			21,
+			0.000000000000,
+			2.000000000000,
+			2,
+			F9F2_CompCd);
+
+
+// ****  F9F2  Cm  **** //
+
+CURVEPNT F9F2_Cm [23] = {
+	0.000000000000,0.010000000000,
+	0.349065832964,0.010000000000,
+	0.523598793080,0.090000000000,
+	0.698131683382,0.100000000000,
+	1.047197586160,0.100000000000,
+	1.221730476462,0.090000000000,
+	1.570796361786,0.000000000000,
+	1.919862159844,0.090000000000,
+	2.094395154866,0.100000000000,
+	2.443460935470,0.100000000000,
+	2.617993825772,0.090000000000,
+	2.792526716075,0.010000000000,
+	3.490658521630,0.010000000000,
+	3.665191411932,0.090000000000,
+	3.839724302234,0.100000000000,
+	4.188790327185,0.100000000000,
+	4.363323217487,0.090000000000,
+	4.712388998091,0.000000000000,
+	5.061454778696,0.090000000000,
+	5.235987668998,0.100000000000,
+	5.585053449603,0.100000000000,
+	5.759586339905,0.090000000000,
+	5.934119230207,0.010000000000
+};
+
+new CURVE ("F9F2",
+			"Cm",
+			23,
+			0.000000000000,
+			6.283185482051,
+			1,
+			F9F2_Cm);
+
+
+// ****  F9F2  TailCl  **** //
+
+CURVEPNT F9F2_TailCl [10] = {
+	0.380799112720,0.687227000000,
+	0.592354171463,0.834490000000,
+	0.877953532183,0.764365000000,
+	1.570796361786,0.000000000000,
+	2.940615407294,-0.610089000000,
+	3.342570074757,0.610089000000,
+	4.712388998091,0.000000000000,
+	5.405231478628,-0.764365000000,
+	5.690831188414,-0.834490000000,
+	5.902386194798,-0.687227000000
+};
+
+new CURVE ("F9F2",
+			"TailCl",
+			10,
+			0.000000000000,
+			6.283185482051,
+			1,
+			F9F2_TailCl);
+
+
+// ****  F9F2  FinCl  **** //
+
+CURVEPNT F9F2_FinCl [16] = {
+	0.179821813895,0.864660000000,
+	0.243288321046,1.037580000000,
+	0.338488107952,1.135130000000,
+	0.460132268475,1.139564000000,
+	0.565909797847,1.068619000000,
+	1.570796361786,0.000000000000,
+	2.253061536190,-0.700588000000,
+	2.951193097399,-0.904557000000,
+	3.331992157759,0.904557000000,
+	4.030123718968,0.700588000000,
+	4.712388998091,0.000000000000,
+	5.717275143151,-1.068619000000,
+	5.823052881963,-1.139564000000,
+	5.944696902859,-1.135130000000,
+	6.039896969018,-1.037580000000,
+	6.103363511076,-0.864660000000
+};
+
+new CURVE ("F9F2",
+			"FinCl",
+			16,
+			0.000000000000,
+			6.283185482051,
+			1,
+			F9F2_FinCl);
+
+
+// ****  F9F2  JetCr  **** //
+
+CURVEPNT F9F2_JetCr [11] = {
+	0.000000000000,0.000000000000,
+	3200.000000000000,0.000000000000,
+	4067.340067000000,148.225713000000,
+	4565.656566000000,312.920949000000,
+	5050.505051000000,576.433327000000,
+	5360.269360000000,839.945705000000,
+	5710.437710000000,1317.561890000000,
+	6383.838384000000,2602.184733000000,
+	7000.000000000000,3700.000000000000,
+	7630.000000000000,4730.000000000000,
+	7950.000000000000,5200.000000000000
+};
+
+new CURVE ("F9F2",
+			"JetCr",
+			11,
+			0.000000000000,
+			8000.000000000000,
+			2,
+			F9F2_JetCr);
+
+
+}
+
+// End.

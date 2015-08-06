@@ -1,0 +1,155 @@
+	SimpleItem	NAMSANNI_0433,
+	SimpleItem	NAMSANNI_0438,
+	SimpleItem	NAMSANNI_043b,
+	SimpleItem	NAMSANNI_043e,
+	SimpleItem	NAMSANNI_0441,
+	SimpleItem	NAMSANNI_0444,
+	SimpleItem	NAMSANNI_0447,
+	SimpleItem	NAMSANNI_0449,
+	SimpleItem	NAMSANNI_044b,
+	SimpleItem	NAMSANNI_044d,
+	SimpleItem	NAMSANNI_044f,
+	BattleField
+	{
+		FileName	FIL_1_NAMSANNI=NAMSANNI.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StNamsanni,
+		ItemGroup
+		{
+				SimpleItem	NAMSANNI_0433=
+				{
+					Posn
+					{
+						Abs
+						{	X	45475840,
+							Z	93368320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	NAMSANNI_0438=
+				{
+					Posn
+					{
+						Abs
+						{	X	45483008,
+							Z	93385728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	NAMSANNI_043b=
+				{
+					Posn
+					{
+						Abs
+						{	X	45472768,
+							Z	93352960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	NAMSANNI_043e=
+				{
+					Posn
+					{
+						Abs
+						{	X	45463552,
+							Z	93336576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	NAMSANNI_0441=
+				{
+					Posn
+					{
+						Abs
+						{	X	45473792,
+							Z	93262848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	NAMSANNI_0444=
+				{
+					Posn
+					{
+						Abs
+						{	X	45487104,
+							Z	93249536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	NAMSANNI_0447=
+				{
+					Posn
+					{
+						Abs
+						{	X	45405184,
+							Z	93250560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	NAMSANNI_0449=
+				{
+					Posn
+					{
+						Abs
+						{	X	45415424,
+							Z	93275136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	NAMSANNI_044b=
+				{
+					Posn
+					{
+						Abs
+						{	X	45434880,
+							Z	93298688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	NAMSANNI_044d=
+				{
+					Posn
+					{
+						Abs
+						{	X	45451264,
+							Z	93315072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	NAMSANNI_044f=
+				{
+					Posn
+					{
+						Abs
+						{	X	45422592,
+							Z	93243392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				}
+		}	}
+	};

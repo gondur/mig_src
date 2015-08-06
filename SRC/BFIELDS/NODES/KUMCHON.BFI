@@ -1,0 +1,290 @@
+	SimpleItem	KUMCHON_1817,
+	SimpleItem	KUMCHON_1818,
+	SimpleItem	KUMCHON_1819,
+	SimpleItem	KUMCHON_2062,
+	SimpleItem	KUMCHON_2063,
+	SimpleItem	KUMCHON_2064,
+	SimpleItem	KUMCHON_2066,
+	SimpleItem	KUMCHON_2067,
+	SimpleItem	KUMCHON_2068,
+	SimpleItem	KUMCHON_2069,
+	SimpleItem	KUMCHON_206a,
+	SimpleItem	KUMCHON_2219,
+	SimpleItem	KUMCHON_221a,
+	SimpleItem	KUMCHON_221b,
+	SimpleItem	KUMCHON_221c,
+	SimpleItem	KUMCHON_221d,
+	SimpleItem	KUMCHON_221e,
+	SimpleItem	KUMCHON_221f,
+	SimpleItem	KUMCHON_2220,
+	SimpleItem	KUMCHON_2221,
+	SimpleItem	KUMCHON_2222,
+	BattleField
+	{
+		FileName	FIL_1_KUMCHON=KUMCHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SdRdKumchon,
+		ItemGroup
+		{
+				SimpleItem	KUMCHON_1817=
+				{
+					Posn
+					{
+						Abs
+						{	X	59131904,
+							Z	68006912
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KUMCHON_1818=
+				{
+					Posn
+					{
+						Abs
+						{	X	59180032,
+							Z	68014080
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KUMCHON_1819=
+				{
+					Posn
+					{
+						Abs
+						{	X	59186176,
+							Z	68113408
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	KUMCHON_221a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59152384,
+							Z	68016128
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	KUMCHON_221b=
+				{
+					Posn
+					{
+						Abs
+						{	X	59174912,
+							Z	68065280
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF1S
+				},
+				SimpleItem	KUMCHON_221c=
+				{
+					Posn
+					{
+						Abs
+						{	X	59176960,
+							Z	68039680
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF2S
+				},
+				SimpleItem	KUMCHON_221d=
+				{
+					Posn
+					{
+						Abs
+						{	X	59156480,
+							Z	68067328
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF2S
+				},
+				SimpleItem	KUMCHON_221e=
+				{
+					Posn
+					{
+						Abs
+						{	X	59171840,
+							Z	67991552
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	KUMCHON_221f=
+				{
+					Posn
+					{
+						Abs
+						{	X	59156480,
+							Z	68054016
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF1S
+				},
+				SimpleItem	KUMCHON_2220=
+				{
+					Posn
+					{
+						Abs
+						{	X	59184128,
+							Z	68051968
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF2S
+				},
+				SimpleItem	KUMCHON_2222=
+				{
+					Posn
+					{
+						Abs
+						{	X	59168768,
+							Z	68052992
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	KUMCHON_2219=
+				{
+					Posn
+					{
+						Abs
+						{	X	59150336,
+							Z	67993600
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	KUMCHON_2221=
+				{
+					Posn
+					{
+						Abs
+						{	X	59154432,
+							Z	68043776
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF2S
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StKumchon,
+		ItemGroup
+		{
+			SimpleItem	KUMCHON_2062=
+			{
+				Posn
+				{
+					Abs
+					{	X	59114496,
+						Z	68049920
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+				SimpleItem	KUMCHON_2063=
+				{
+					Posn
+					{
+						Abs
+						{	X	59108352,
+							Z	68068352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KUMCHON_2064=
+				{
+					Posn
+					{
+						Abs
+						{	X	59078656,
+							Z	68063232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUMCHON_2066=
+				{
+					Posn
+					{
+						Abs
+						{	X	59089920,
+							Z	68082688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUMCHON_2067=
+				{
+					Posn
+					{
+						Abs
+						{	X	59137024,
+							Z	68050944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KUMCHON_2068=
+				{
+					Posn
+					{
+						Abs
+						{	X	59095040,
+							Z	68048896
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUMCHON_2069=
+				{
+					Posn
+					{
+						Abs
+						{	X	59117568,
+							Z	68086784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUMCHON_206a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59142144,
+							Z	68064256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				}
+		}	}
+	};

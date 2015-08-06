@@ -1,0 +1,115 @@
+	WayPoint	Road21_0103,
+	WayPoint	Road21_0104,
+	WayPoint	Road21_0105,
+	GroundItem	Road21_2f43,
+	GroundItem	Road21_2f44,
+	GroundItem	Road21_2f45,
+	BattleField
+	{
+		FileName	FIL_1_ROAD21=Road21.BF,
+		ItemGroup	
+		{	Target	UID_ROAD_Uijongbu2Seoul,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	63901696,
+					Z	63090688
+				}
+			},
+			Route
+			{
+				WayPoint	Road21_0103=
+				{
+					Posn
+					{
+						Abs
+						{	X	63983616,
+							Z	63070208
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel	50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road21_2f43=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	50
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	63852544,
+					Z	62275584
+				}
+			},
+			Route
+			{
+				WayPoint	Road21_0104=
+				{
+					Posn
+					{
+						Abs
+						{	X	63873024,
+							Z	62230528
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel	50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road21_2f44=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	50
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	63803392,
+					Z	62681088
+				}
+			},
+			Route
+			{
+				WayPoint	Road21_0105=
+				{
+					Posn
+					{
+						Abs
+						{	X	63807488,
+							Z	62619648
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel	50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road21_2f45=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	50
+		}	}
+	}
+	};

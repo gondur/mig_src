@@ -1,0 +1,25 @@
+	SimpleItem	BRIDGE13_043b,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE13=BRIDGE13.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRdTanchon0,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE13_043b=
+				{
+					Posn
+					{
+						Abs
+						{	X	79299584,
+							Z	93659136
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

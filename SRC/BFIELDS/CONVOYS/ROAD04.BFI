@@ -1,0 +1,115 @@
+	WayPoint	Road04_0100,
+	WayPoint	Road04_0101,
+	WayPoint	Road04_0102,
+	GroundItem	Road04_2f40,
+	GroundItem	Road04_2f41,
+	GroundItem	Road04_2f42,
+	BattleField
+	{
+		FileName	FIL_1_ROAD04=Road04.BF,
+		ItemGroup
+		{	Target	UID_ROAD_Sukchon2Pyongyang,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	52094976,
+					Z	80036864
+				}
+			},
+			Route
+			{
+				WayPoint	Road04_0100=
+				{
+					Posn
+					{
+						Abs
+						{	X	52093952,
+							Z	79987712
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road04_2f40=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	50
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	51783680,
+					Z	79901696
+				}
+			},
+			Route
+			{
+				WayPoint	Road04_0101=
+				{
+					Posn
+					{
+						Abs
+						{	X	51807232,
+							Z	79882240
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road04_2f41=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	50
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	52371456,
+					Z	79586304
+				}
+			},
+			Route
+			{
+				WayPoint	Road04_0102=
+				{
+					Posn
+					{
+						Abs
+						{	X	52383744,
+							Z	79571968
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road04_2f42=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK,
+				Vel	50
+		}	}
+	}
+	};

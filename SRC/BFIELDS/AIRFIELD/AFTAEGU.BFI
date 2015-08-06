@@ -1,0 +1,701 @@
+//DeadCode JIM 05May99 	SimpleItem	AFTAEGU_3900,
+//DeadCode JIM 05May99 	SimpleItem	AFTAEGU_3940,
+	SimpleItem	AFTAEGU_3980,
+	SimpleItem	AFTAEGU_3981,
+	SimpleItem	AFTAEGU_3a00,
+	SimpleItem	AFTAEGU_3a01,
+	SimpleItem	AFTAEGU_3a02,
+	SimpleItem	AFTAEGU_3a03,
+	SimpleItem	AFTAEGU_3a81,
+	SimpleItem	AFTAEGU_3a82,
+	SimpleItem	AFTAEGU_3a83,
+	SimpleItem	AFTAEGU_3a84,
+	SimpleItem	AFTAEGU_3a85,
+	SimpleItem	AFTAEGU_3a86,
+	SimpleItem	AFTAEGU_3a87,
+	SimpleItem	AFTAEGU_3a88,
+	SimpleItem	AFTAEGU_3a89,
+	SimpleItem	AFTAEGU_3a8a,
+	SimpleItem	AFTAEGU_3a8b,
+	SimpleItem	AFTAEGU_3a8c,
+	SimpleItem	AFTAEGU_3a8d,
+	SimpleItem	AFTAEGU_3a8e,
+	SimpleItem	AFTAEGU_3a8f,
+	SimpleItem	AFTAEGU_3a90,
+	SimpleItem	AFTAEGU_3a91,
+	SimpleItem	AFTAEGU_3a92,
+	SimpleItem	AFTAEGU_3a93,
+	SimpleItem	AFTAEGU_3b00,
+	SimpleItem	AFTAEGU_3b01,
+	SimpleItem	AFTAEGU_3b02,
+	SimpleItem	AFTAEGU_3b03,
+	SimpleItem	AFTAEGU_3b04,
+	SimpleItem	AFTAEGU_3b05,
+	SimpleItem	AFTAEGU_3b06,
+	SimpleItem	AFTAEGU_3b07,
+	SimpleItem	AFTAEGU_3b08,
+	SimpleItem	AFTAEGU_3b09,
+	SimpleItem	AFTAEGU_3b0a,
+	SimpleItem	AFTAEGU_3b0b,
+	SimpleItem	AFTAEGU_3b0c,
+	SimpleItem	AFTAEGU_3b0d,
+	SimpleItem	AFTAEGU_3b80,
+	SimpleItem	AFTAEGU_3b81,
+	SimpleItem	AFTAEGU_3b82,
+	SimpleItem	AFTAEGU_3b83,
+	SimpleItem	AFTAEGU_3b84,
+	SimpleItem	AFTAEGU_3b85,
+	SimpleItem	AFTAEGU_3b86,
+	SimpleItem	AFTAEGU_3b87,
+	SimpleItem	AFTAEGU_3b88,
+	SimpleItem	AFTAEGU_3b89,
+	SimpleItem	AFTAEGU_3b8a,
+	SimpleItem	AFTAEGU_3b8b,
+	BattleField
+	{
+		FileName	FIL_1_AFTAEGU=AFTAEGU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlTaegu,
+		ItemGroup
+		{
+//DeadCode JIM 05May99 				SimpleItem	AFTAEGU_3900=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	78018653,
+//DeadCode JIM 05May99 							Z	42864292
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwaySBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+//DeadCode JIM 05May99 				SimpleItem	AFTAEGU_3940=
+//DeadCode JIM 05May99 				{
+//DeadCode JIM 05May99 					Posn
+//DeadCode JIM 05May99 					{
+//DeadCode JIM 05May99 						Abs
+//DeadCode JIM 05May99 						{	X	77887376,
+//DeadCode JIM 05May99 							Z	42944779
+//DeadCode JIM 05May99 						}
+//DeadCode JIM 05May99 					},
+//DeadCode JIM 05May99 					UIDBand		RunwayEBAND,
+//DeadCode JIM 05May99 					Shape		WINDSC
+//DeadCode JIM 05May99 				},
+				SimpleItem	AFTAEGU_3980=
+				{
+					Posn
+					{
+						Abs
+						{	X	78052035,
+							Z	42897061
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HRNS
+				},
+				SimpleItem	AFTAEGU_3981=
+				{
+					Posn
+					{
+						Abs
+						{	X	77906944,
+							Z	42877440
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HRNS
+				},
+				SimpleItem	AFTAEGU_3a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	77990912,
+							Z	42845696
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BREW
+				},
+				SimpleItem	AFTAEGU_3a01=
+				{
+					Posn
+					{
+						Abs
+						{	X	77976064,
+							Z	42851840
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BREW
+				},
+				SimpleItem	AFTAEGU_3a02=
+				{
+					Posn
+					{
+						Abs
+						{	X	77959168,
+							Z	42861056
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BREW
+				},
+				SimpleItem	AFTAEGU_3a03=
+				{
+					Posn
+					{
+						Abs
+						{	X	77942784,
+							Z	42869248
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BREW
+				},
+				SimpleItem	AFTAEGU_3a81=
+				{
+					Posn
+					{
+						Abs
+						{	X	77903760,
+							Z	42970788
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFTAEGU_3a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	77909494,
+							Z	42965463
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	AFTAEGU_3a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	77940527,
+							Z	42944742
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEGU_3a84=
+				{
+					Posn
+					{
+						Abs
+						{	X	77946097,
+							Z	42963747
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAEGU_3a85=
+				{
+					Posn
+					{
+						Abs
+						{	X	77896387,
+							Z	42970379
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	AFTAEGU_3a86=
+				{
+					Posn
+					{
+						Abs
+						{	X	77987728,
+							Z	42945394
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDL
+				},
+				SimpleItem	AFTAEGU_3a87=
+				{
+					Posn
+					{
+						Abs
+						{	X	77886966,
+							Z	42887640
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDL
+				},
+				SimpleItem	AFTAEGU_3a88=
+				{
+					Posn
+					{
+						Abs
+						{	X	77893110,
+							Z	42958091
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEGU_3a89=
+				{
+					Posn
+					{
+						Abs
+						{	X	77963776,
+							Z	42834432
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEGU_3a8a=
+				{
+					Posn
+					{
+						Abs
+						{	X	77991936,
+							Z	42823680
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEGU_3a8b=
+				{
+					Posn
+					{
+						Abs
+						{	X	77982208,
+							Z	42828288
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEGU_3a8c=
+				{
+					Posn
+					{
+						Abs
+						{	X	77842729,
+							Z	42975704
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	AFTAEGU_3a8d=
+				{
+					Posn
+					{
+						Abs
+						{	X	77957632,
+							Z	42937856
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	AFTAEGU_3a8e=
+				{
+					Posn
+					{
+						Abs
+						{	X	77998378,
+							Z	42846270
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		FTRUCK
+				},
+				SimpleItem	AFTAEGU_3a8f=
+				{
+					Posn
+					{
+						Abs
+						{	X	78004112,
+							Z	42846270
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		FTANK
+				},
+				SimpleItem	AFTAEGU_3a90=
+				{
+					Posn
+					{
+						Abs
+						{	X	78004112,
+							Z	42840536
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		FTANK
+				},
+				SimpleItem	AFTAEGU_3a91=
+				{
+					Posn
+					{
+						Abs
+						{	X	77935939,
+							Z	42951623
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEGU_3a92=
+				{
+					Posn
+					{
+						Abs
+						{	X	77836175,
+							Z	42975704
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEGU_3a93=
+				{
+					Posn
+					{
+						Abs
+						{	X	77836175,
+							Z	42970379
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	AFTAEGU_3b00=
+				{
+					Posn
+					{
+						Abs
+						{	X	78052035,
+							Z	42889278
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFTAEGU_3b01=
+				{
+					Posn
+					{
+						Abs
+						{	X	78052445,
+							Z	42881496
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b02=
+				{
+					Posn
+					{
+						Abs
+						{	X	77945344,
+							Z	42937856
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b03=
+				{
+					Posn
+					{
+						Abs
+						{	X	77967872,
+							Z	42957312
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b04=
+				{
+					Posn
+					{
+						Abs
+						{	X	77879594,
+							Z	42910987
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b05=
+				{
+					Posn
+					{
+						Abs
+						{	X	77886966,
+							Z	42907710
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b06=
+				{
+					Posn
+					{
+						Abs
+						{	X	77954141,
+							Z	42951128
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CTWR2
+				},
+				SimpleItem	AFTAEGU_3b07=
+				{
+					Posn
+					{
+						Abs
+						{	X	77967872,
+							Z	42948096
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b08=
+				{
+					Posn
+					{
+						Abs
+						{	X	77872640,
+							Z	42914816
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b09=
+				{
+					Posn
+					{
+						Abs
+						{	X	77861161,
+							Z	42975294
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	AFTAEGU_3b0a=
+				{
+					Posn
+					{
+						Abs
+						{	X	77849692,
+							Z	42975294
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b0b=
+				{
+					Posn
+					{
+						Abs
+						{	X	77918915,
+							Z	42888869
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b0c=
+				{
+					Posn
+					{
+						Abs
+						{	X	77909084,
+							Z	42893784
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b0d=
+				{
+					Posn
+					{
+						Abs
+						{	X	77900073,
+							Z	42899928
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	AFTAEGU_3b80=
+				{
+					Posn
+					{
+						Abs
+						{	X	77997310,
+							Z	42991604
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V2EW
+				},
+				SimpleItem	AFTAEGU_3b81=
+				{
+					Posn
+					{
+						Abs
+						{	X	78024192,
+							Z	42952704
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V2EW
+				},
+				SimpleItem	AFTAEGU_3b82=
+				{
+					Posn
+					{
+						Abs
+						{	X	78038953,
+							Z	42935625
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	AFTAEGU_3b83=
+				{
+					Posn
+					{
+						Abs
+						{	X	78008916,
+							Z	42971807
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V1NS
+				},
+				SimpleItem	AFTAEGU_3b84=
+				{
+					Posn
+					{
+						Abs
+						{	X	78059433,
+							Z	42919924
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V1NS
+				},
+				SimpleItem	AFTAEGU_3b85=
+				{
+					Posn
+					{
+						Abs
+						{	X	77938576,
+							Z	43017893
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	AFTAEGU_3b86=
+				{
+					Posn
+					{
+						Abs
+						{	X	77847644,
+							Z	43006424
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V1NS
+				},
+				SimpleItem	AFTAEGU_3b87=
+				{
+					Posn
+					{
+						Abs
+						{	X	77865257,
+							Z	43006834
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V1NS
+				},
+				SimpleItem	AFTAEGU_3b88=
+				{
+					Posn
+					{
+						Abs
+						{	X	77883280,
+							Z	43007243
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V1NS
+				},
+				SimpleItem	AFTAEGU_3b89=
+				{
+					Posn
+					{
+						Abs
+						{	X	77862390,
+							Z	43030181
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	AFTAEGU_3b8a=
+				{
+					Posn
+					{
+						Abs
+						{	X	77962742,
+							Z	43004786
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V1NS
+				},
+				SimpleItem	AFTAEGU_3b8b=
+				{
+					Posn
+					{
+						Abs
+						{	X	77929565,
+							Z	42990859
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				}
+		}	}
+	};

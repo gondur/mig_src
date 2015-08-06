@@ -1,0 +1,37 @@
+	BattleField
+	{
+		FileName	FIL_1_RDPYONGT=rdpyongt.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlPyongtaek,
+		ItemGroup
+		{
+			SimpleItem	rdpyongt_0419=
+			{
+				Posn
+				{
+					Abs
+					{	X	63548672,
+						Z	54765056
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		GRNDD4
+			},
+			SimpleItem	rdpyongt_041b=
+			{
+				Posn
+				{
+					Abs
+					{	X	63629568,
+						Z	54710016
+					}
+				},
+				UIDBand		AfNoScoreBAND,
+				Shape		GRNDD4
+			}
+		}
+	}
+	};

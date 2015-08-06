@@ -1,0 +1,227 @@
+	WayPoint	bltaejon_0105,
+	WayPoint	bltaejon_0106,
+	SimpleItem	bltaejon_1703,
+	SimpleItem	bltaejon_1704,
+	GroundItem	bltaejon_2f62,
+	SimpleItem	bltaejon_2aff,
+	SimpleItem	bltaejon_2afe,
+	SimpleItem	bltaejon_2afd,
+	SimpleItem	bltaejon_2afc,
+	SimpleItem	bltaejon_2afb,
+	SimpleItem	bltaejon_2afa,
+	SimpleItem	bltaejon_2af9,
+	SimpleItem	bltaejon_2af8,
+	SimpleItem	bltaejon_2af7,
+	SimpleItem	bltaejon_2af6,
+	BattleField
+	{
+		FileName	FIL_1_BLTAEJON=bltaejon.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlTaejon,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	66359552,
+					Z	48099584
+				}
+			},
+			Route
+			{
+				WayPoint	bltaejon_0106=
+				{
+					Posn
+					{
+						Abs
+						{	X	66488576,
+							Z	48036608
+						}
+					},
+					Action	wpdmbtrknoactno,
+					Vel 80
+				},
+				WayPoint	bltaejon_0105=
+				{
+					Posn
+					{
+						Abs
+						{	X	66489088,
+							Z	47983872
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 80
+				}
+			},
+			NumInForm		1,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	bltaejon_2f62=
+			{
+				AfNoScoreBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_BLUE,
+				Shape	ETRUCK,
+				Vel	80
+		}	},
+		ItemGroup
+		{
+				SimpleItem	bltaejon_2aff=
+				{
+					Posn
+					{
+						Abs
+						{	X	66414641,
+							Z	48060293
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI2,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaejon_2afe=
+				{
+					Posn
+					{
+						Abs
+						{	X	66434098,
+							Z	48050258
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI1,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaejon_2afd=
+				{
+					Posn
+					{
+						Abs
+						{	X	66458263,
+							Z	48038379
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI0,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaejon_2afc=
+				{
+					Posn
+					{
+						Abs
+						{	X	66461130,
+							Z	48028959
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIE,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaejon_2afb=
+				{
+					Posn
+					{
+						Abs
+						{	X	66456420,
+							Z	48025887
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIL,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaejon_2afa=
+				{
+					Posn
+					{
+						Abs
+						{	X	66363392,
+							Z	48083456
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK0,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaejon_2af9=
+				{
+					Posn
+					{
+						Abs
+						{	X	66402816,
+							Z	48066304
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK1,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaejon_2af8=
+				{
+					Posn
+					{
+						Abs
+						{	X	66409984,
+							Z	48062720
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKL,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaejon_2af7=
+				{
+					Posn
+					{
+						Abs
+						{	X	66407424,
+							Z	48064000
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKW,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaejon_2af6=
+				{
+					Posn
+					{
+						Abs
+						{	X	66541725,
+							Z	47989103
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_LANDING,
+					Shape		WINDSC
+				},
+				SimpleItem	bltaejon_1703=
+				{
+					Posn
+					{
+						Abs
+						{	X	66362826,
+							Z	48102687
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		SAAA
+				},
+				SimpleItem	bltaejon_1704=
+				{
+					Posn
+					{
+						Abs
+						{	X	66467684,
+							Z	47978987
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		SAAA
+				}
+		}	}
+	};

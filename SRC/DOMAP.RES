@@ -1,0 +1,4 @@
+-es -r ..\GAME\LANDMAPS\palclust.x8
+-r s:\projects\mig\artsrc\IMAGE16\FONT.PCX -cw128h128
+-ept -r s:\projects\mig\artsrc\TRANS16\FONT.PCX
+-w ..\GAME\mskmap16\FONT.x8

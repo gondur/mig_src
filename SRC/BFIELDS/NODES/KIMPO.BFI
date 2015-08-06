@@ -1,0 +1,88 @@
+	BattleField
+	{
+		FileName	FIL_1_Kimpo=Kimpo.BF
+//DeadCode MS 02May99 		Title	{},
+//DeadCode MS 02May99 		Comment	{},
+//DeadCode MS 02May99 		ItemGroup
+//DeadCode MS 02May99 		{	Target	UID_StKimpo,
+//DeadCode MS 02May99 			ItemGroup
+//DeadCode MS 02May99 			{
+//DeadCode MS 02May99 				SimpleItem	
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs	{UID_StKimpo},
+//DeadCode MS 02May99 						Rel	{Z -METRES200
+//DeadCode MS 02May99 							}
+//DeadCode MS 02May99 						
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		V2EW
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs	{UID_StKimpo},
+//DeadCode MS 02May99 						Rel	{Z METRES200	 
+//DeadCode MS 02May99 							}
+//DeadCode MS 02May99 						
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		V1NS
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs	{UID_StKimpo},
+//DeadCode MS 02May99 						Rel	{X METRES100	 
+//DeadCode MS 02May99 							}
+//DeadCode MS 02May99 						
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		V1NS
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs	{UID_StKimpo},
+//DeadCode MS 02May99 						Rel	{X METRES200,
+//DeadCode MS 02May99 							 Z METRES200	 
+//DeadCode MS 02May99 							}
+//DeadCode MS 02May99 						
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		V3NESW
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs	{UID_StKimpo},
+//DeadCode MS 02May99 						Rel	{X -METRES300,
+//DeadCode MS 02May99 							 Z -METRES200
+//DeadCode MS 02May99 							}
+//DeadCode MS 02May99 						
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		V2EW
+//DeadCode MS 02May99 				},
+//DeadCode MS 02May99 				SimpleItem	
+//DeadCode MS 02May99 				{
+//DeadCode MS 02May99 					Posn
+//DeadCode MS 02May99 					{
+//DeadCode MS 02May99 						Abs	{UID_StKimpo},
+//DeadCode MS 02May99 						Rel	{X METRES400,
+//DeadCode MS 02May99 							 Z -METRES300
+//DeadCode MS 02May99 							}
+//DeadCode MS 02May99 						
+//DeadCode MS 02May99 					},
+//DeadCode MS 02May99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 02May99 					Shape		V4NWSE
+//DeadCode MS 02May99 				}
+//DeadCode MS 02May99 			}
+//DeadCode MS 02May99 		}
+	};
+

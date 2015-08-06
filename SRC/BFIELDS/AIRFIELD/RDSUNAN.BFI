@@ -1,0 +1,86 @@
+	WayPoint	RDSUNAN_0100,
+	WayPoint	RDSUNAN_0101,
+	WayPoint	RDSUNAN_0102,
+	GroundItem	RDSUNAN_3080,
+	BattleField
+	{
+		FileName	FIL_1_RDSUNAN=RDSUNAN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdSunan,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdSunan, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	51971475,
+						Z	79617841
+					}
+				},
+				Route
+				{
+					WayPoint	RDSUNAN_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	52024314,
+								Z	79619069
+							}
+						},
+						Vel	80,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDSUNAN_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	52026771,
+								Z	79579338
+							}
+						},
+						Vel	80,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDSUNAN_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	51978849,
+								Z	79579338
+							}
+						},
+						Vel	80,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDSUNAN_3080=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	STEPTO,
+					Vel	80
+			}	}
+		}
+	};

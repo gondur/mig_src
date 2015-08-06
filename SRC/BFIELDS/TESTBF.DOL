@@ -1,0 +1,58 @@
+;------------------------------------------------------------------------------
+;Filename
+;System		Rowan Software
+;Author		Bfield.exe
+;Date		15:19:14 Thu 6 Oct 1995
+;Description	BattleFiled
+;
+;------------------------------------------------------------------------------
+
+	IDEAL
+	include	"DOSDEFS.eol"
+	include	"MACLIB.mol"
+	include	"MSGINC.Mol"
+	include	"STRUCM.mol"
+	include	"ShapeNum.eol"
+	include	"Worldinc.sol"
+	include	"UISpec.eol"
+	include	"mastfile.eol"
+	include	"VIEWSEL.Sol"
+	include	"BField.eol"
+	include	"general.eol"
+	include	"angles.eol"
+	include	"gamedat\game.eol"
+	include	"textequ.eol"
+	include	"autopilot.eol"
+	include	"brfid.eol"
+	include	"uniqueid.eol"
+
+segment cseg para public 'CODE'
+	ORG 100h
+
+StartHere:
+	_BFieldVersion				; NON functional check
+
+
+;------------------------------------------------------------------------------
+	_BFForeground	NOARTWORK
+	_BFBackground	NOARTWORK
+
+;;TempCode PD 01Nov95 	_BFStartItem	SimpleItemNo
+;;TempCode PD 01Nov95 		_BFShape 	NPRTNO
+;;TempCode PD 01Nov95 		_BFWxyz	 	0104fb0h,00h,017ad41h,0
+;;TempCode PD 01Nov95 		_BFUniqueBand 	REDAIRFLDBANDNO
+;;TempCode PD 01Nov95 	_BFEndItem
+
+	_BFStartItem	SimpleItemNo
+		_BFShape 	CHTEAUNO		;;cloudNO	//PD 26Jan96
+		_BFWxyz	 	0104fbAh,64,017ad41h,0
+;;Old_Code PD 29Jan96 		_BFWxyz	 	0104fbAh,208h,017ad41h,0
+		_BFUniqueBand 	REDAIRFLDBANDNO
+	_BFEndItem
+
+	_BFieldDone
+ShapeList:
+	_BFListShapes
+
+ends	cseg
+	end	Starthere

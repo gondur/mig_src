@@ -1,0 +1,1221 @@
+	SimpleItem	INCHON_0407,
+	SimpleItem	INCHON_040a,
+	SimpleItem	INCHON_040c,
+	SimpleItem	INCHON_040e,
+	SimpleItem	INCHON_0410,
+	SimpleItem	INCHON_0412,
+	SimpleItem	INCHON_0414,
+	SimpleItem	INCHON_0421,
+	SimpleItem	INCHON_0424,
+	SimpleItem	INCHON_0426,
+	SimpleItem	INCHON_0428,
+	SimpleItem	INCHON_042a,
+	SimpleItem	INCHON_042c,
+	SimpleItem	INCHON_042e,
+	SimpleItem	INCHON_0430,
+	SimpleItem	INCHON_0432,
+	SimpleItem	INCHON_0434,
+	SimpleItem	INCHON_0436,
+	SimpleItem	INCHON_0438,
+	SimpleItem	INCHON_043a,
+	SimpleItem	INCHON_043c,
+	SimpleItem	INCHON_043e,
+	SimpleItem	INCHON_0440,
+	SimpleItem	INCHON_0442,
+	SimpleItem	INCHON_0444,
+	SimpleItem	INCHON_0446,
+	SimpleItem	INCHON_0461,
+	SimpleItem	INCHON_0463,
+	SimpleItem	INCHON_0465,
+	SimpleItem	INCHON_0467,
+	SimpleItem	INCHON_046b,
+	SimpleItem	INCHON_046e,
+	SimpleItem	INCHON_0470,
+	SimpleItem	INCHON_0472,
+	SimpleItem	INCHON_0474,
+	SimpleItem	INCHON_047a,
+	SimpleItem	INCHON_047d,
+	SimpleItem	INCHON_047f,
+	SimpleItem	INCHON_0481,
+	SimpleItem	INCHON_0483,
+	SimpleItem	INCHON_0485,
+	SimpleItem	INCHON_0490,
+	SimpleItem	INCHON_0492,
+	SimpleItem	INCHON_0494,
+	SimpleItem	INCHON_0496,
+	SimpleItem	INCHON_049c,
+	SimpleItem	INCHON_04a1,
+	SimpleItem	INCHON_04a3,
+	SimpleItem	INCHON_04a5,
+	SimpleItem	INCHON_2004,
+//TempCode RC 28Apr99 	SimpleItem	INCHON_2005,
+	SimpleItem	INCHON_2006,
+	SimpleItem	INCHON_2007,
+	SimpleItem	INCHON_2008,
+	SimpleItem	INCHON_2009,
+	SimpleItem	INCHON_200a,
+	SimpleItem	INCHON_200b,
+	SimpleItem	INCHON_200c,
+	SimpleItem	INCHON_200d,
+	SimpleItem	INCHON_200e,
+	SimpleItem	INCHON_200f,
+	SimpleItem	INCHON_2010,
+	SimpleItem	INCHON_2011,
+	SimpleItem	INCHON_2012,
+	SimpleItem	INCHON_2013,
+	SimpleItem	INCHON_2014,
+	SimpleItem	INCHON_2015,
+	SimpleItem	INCHON_2016,
+	SimpleItem	INCHON_2017,
+	SimpleItem	INCHON_2018,
+	SimpleItem	INCHON_2019,
+	SimpleItem	INCHON_201a,
+	SimpleItem	INCHON_201b,
+	SimpleItem	INCHON_201c,
+	SimpleItem	INCHON_201d,
+	SimpleItem	INCHON_201e,
+	SimpleItem	INCHON_201f,
+	SimpleItem	INCHON_2020,
+	SimpleItem	INCHON_2021,
+	SimpleItem	INCHON_2022,
+	SimpleItem	INCHON_2023,
+	SimpleItem	INCHON_2024,
+	SimpleItem	INCHON_2026,
+	SimpleItem	INCHON_2027,
+	SimpleItem	INCHON_2028,
+	SimpleItem	INCHON_2029,
+	SimpleItem	INCHON_202a,
+//TempCode RC 28Apr99 	SimpleItem	INCHON_202b,
+//TempCode RC 28Apr99 	SimpleItem	INCHON_202c,
+	SimpleItem	INCHON_202d,
+	SimpleItem	INCHON_202e,
+	SimpleItem	INCHON_202f,
+//TempCode RC 28Apr99 	SimpleItem	INCHON_2030,
+	BattleField
+	{
+		FileName	FIL_1_INCHON=INCHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StInchon,
+		ItemGroup
+		{
+			SimpleItem	INCHON_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	60312576,
+						Z	60008448
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+				SimpleItem	INCHON_0407=
+				{
+					Posn
+					{
+						Abs
+						{	X	60467200,
+							Z	60291072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	INCHON_040a=
+				{
+					Posn
+					{
+						Abs
+						{	X	60457984,
+							Z	60290048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	INCHON_040c=
+				{
+					Posn
+					{
+						Abs
+						{	X	60446720,
+							Z	60291072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	INCHON_040e=
+				{
+					Posn
+					{
+						Abs
+						{	X	60431360,
+							Z	60290048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	INCHON_0410=
+				{
+					Posn
+					{
+						Abs
+						{	X	60430336,
+							Z	60313600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	INCHON_0412=
+				{
+					Posn
+					{
+						Abs
+						{	X	60443648,
+							Z	60314624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	INCHON_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	60409856,
+							Z	60315648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI05
+				},
+				SimpleItem	INCHON_0421=
+				{
+					Posn
+					{
+						Abs
+						{	X	60105728,
+							Z	60398592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	INCHON_0424=
+				{
+					Posn
+					{
+						Abs
+						{	X	60132352,
+							Z	60397568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	INCHON_0426=
+				{
+					Posn
+					{
+						Abs
+						{	X	60118016,
+							Z	60374016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	INCHON_0428=
+				{
+					Posn
+					{
+						Abs
+						{	X	60162048,
+							Z	60398592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	INCHON_042a=
+				{
+					Posn
+					{
+						Abs
+						{	X	60193792,
+							Z	60399616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	INCHON_042c=
+				{
+					Posn
+					{
+						Abs
+						{	X	60150784,
+							Z	60375040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	INCHON_042e=
+				{
+					Posn
+					{
+						Abs
+						{	X	60323840,
+							Z	60277760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	INCHON_0430=
+				{
+					Posn
+					{
+						Abs
+						{	X	60323840,
+							Z	60246016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	INCHON_0432=
+				{
+					Posn
+					{
+						Abs
+						{	X	60325888,
+							Z	60214272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	INCHON_0434=
+				{
+					Posn
+					{
+						Abs
+						{	X	60360704,
+							Z	60215296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	INCHON_0436=
+				{
+					Posn
+					{
+						Abs
+						{	X	60361728,
+							Z	60254208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	INCHON_0438=
+				{
+					Posn
+					{
+						Abs
+						{	X	60362752,
+							Z	60281856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	INCHON_043a=
+				{
+					Posn
+					{
+						Abs
+						{	X	60361728,
+							Z	60387328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	INCHON_043c=
+				{
+					Posn
+					{
+						Abs
+						{	X	60360704,
+							Z	60356608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	INCHON_043e=
+				{
+					Posn
+					{
+						Abs
+						{	X	60359680,
+							Z	60327936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	INCHON_0440=
+				{
+					Posn
+					{
+						Abs
+						{	X	60206080,
+							Z	60228608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	INCHON_0442=
+				{
+					Posn
+					{
+						Abs
+						{	X	60233728,
+							Z	60229632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	INCHON_0444=
+				{
+					Posn
+					{
+						Abs
+						{	X	59921408,
+							Z	60545024
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	INCHON_0446=
+				{
+					Posn
+					{
+						Abs
+						{	X	59947008,
+							Z	60546048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	INCHON_0461=
+				{
+					Posn
+					{
+						Abs
+						{	X	60267520,
+							Z	60412928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	INCHON_0463=
+				{
+					Posn
+					{
+						Abs
+						{	X	60268544,
+							Z	60381184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	INCHON_0465=
+				{
+					Posn
+					{
+						Abs
+						{	X	60421120,
+							Z	60070912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	INCHON_0467=
+				{
+					Posn
+					{
+						Abs
+						{	X	60394496,
+							Z	60068864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	INCHON_046b=
+				{
+					Posn
+					{
+						Abs
+						{	X	60252160,
+							Z	60026880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	INCHON_046e=
+				{
+					Posn
+					{
+						Abs
+						{	X	60484608,
+							Z	60033024
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	INCHON_0470=
+				{
+					Posn
+					{
+						Abs
+						{	X	60055552,
+							Z	60266496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	INCHON_0472=
+				{
+					Posn
+					{
+						Abs
+						{	X	59980800,
+							Z	60435456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	INCHON_0474=
+				{
+					Posn
+					{
+						Abs
+						{	X	60136448,
+							Z	60596224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	INCHON_047a=
+				{
+					Posn
+					{
+						Abs
+						{	X	60540928,
+							Z	60259328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	INCHON_047d=
+				{
+					Posn
+					{
+						Abs
+						{	X	60280832,
+							Z	60497920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	INCHON_047f=
+				{
+					Posn
+					{
+						Abs
+						{	X	60182528,
+							Z	60583936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	INCHON_0481=
+				{
+					Posn
+					{
+						Abs
+						{	X	59845632,
+							Z	60548096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	INCHON_0483=
+				{
+					Posn
+					{
+						Abs
+						{	X	59846656,
+							Z	60504064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	INCHON_0485=
+				{
+					Posn
+					{
+						Abs
+						{	X	59866112,
+							Z	60572672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	INCHON_0490=
+				{
+					Posn
+					{
+						Abs
+						{	X	60168192,
+							Z	60186624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	INCHON_0492=
+				{
+					Posn
+					{
+						Abs
+						{	X	60263424,
+							Z	60058624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	INCHON_0494=
+				{
+					Posn
+					{
+						Abs
+						{	X	60227584,
+							Z	60100608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	INCHON_0496=
+				{
+					Posn
+					{
+						Abs
+						{	X	60131328,
+							Z	60199936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	INCHON_049c=
+				{
+					Posn
+					{
+						Abs
+						{	X	59958272,
+							Z	60465152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	INCHON_04a1=
+				{
+					Posn
+					{
+						Abs
+						{	X	60198912,
+							Z	60316672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	INCHON_04a3=
+				{
+					Posn
+					{
+						Abs
+						{	X	60207104,
+							Z	60316672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	INCHON_04a5=
+				{
+					Posn
+					{
+						Abs
+						{	X	60219392,
+							Z	60316672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+//TempCode RC 28Apr99 				SimpleItem	INCHON_2005=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	60390400,
+//TempCode RC 28Apr99 							Z	60297216
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberCivilianBAND,
+//TempCode RC 28Apr99 					Shape		AMMOS
+//TempCode RC 28Apr99 				},
+				SimpleItem	INCHON_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	60242944,
+							Z	60545024
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	60053504,
+							Z	60376064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	60115968,
+							Z	60268544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	60295168,
+							Z	60219392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	60223488,
+							Z	60281856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	60164096,
+							Z	60354560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	59885568,
+							Z	60542976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	59930624,
+							Z	60506112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	59987968,
+							Z	60546048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	60051456,
+							Z	60588032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	60052480,
+							Z	60527616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	60040192,
+							Z	60451840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	60089344,
+							Z	60319744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	60155904,
+							Z	60227584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	60231680,
+							Z	60173312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	60311552,
+							Z	60120064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	60127232,
+							Z	60457984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	60142592,
+							Z	60547072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	60302336,
+							Z	60452864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	60420096,
+							Z	60493824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	60387328,
+							Z	60429312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	60465152,
+							Z	60410880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	60420096,
+							Z	60361728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	60481536,
+							Z	60321792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	60315648,
+							Z	60384256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	60241920,
+							Z	60360704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	60311552,
+							Z	60314624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	60424192,
+							Z	60218368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	60482560,
+							Z	60250112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	60416000,
+							Z	60137472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	INCHON_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	60326912,
+							Z	60566528
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	INCHON_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	59879424,
+							Z	60636160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARGO
+				},
+				SimpleItem	INCHON_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	59821056,
+							Z	60069888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	INCHON_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	59870208,
+							Z	60113920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	INCHON_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	59924480,
+							Z	60077056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	INCHON_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	60347392,
+							Z	60177408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CRANE
+				},
+//TempCode RC 28Apr99 				SimpleItem	INCHON_202b=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	60350464,
+//TempCode RC 28Apr99 							Z	60122112
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberCivilianBAND,
+//TempCode RC 28Apr99 					Shape		AMMOS
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				SimpleItem	INCHON_202c=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	60348416,
+//TempCode RC 28Apr99 							Z	60112896
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberCivilianBAND,
+//TempCode RC 28Apr99 					Shape		FUELS
+//TempCode RC 28Apr99 				},
+				SimpleItem	INCHON_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	60112896,
+							Z	60516352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PUFF
+				},
+				SimpleItem	INCHON_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	60142592,
+							Z	60517376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PUFF
+				},
+				SimpleItem	INCHON_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	60126208,
+							Z	60498944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PUFF
+				}
+//TempCode RC 28Apr99 				SimpleItem	INCHON_2030=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	60457984,
+//TempCode RC 28Apr99 							Z	60307456
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberCivilianBAND,
+//TempCode RC 28Apr99 					Shape		AMMOS
+//TempCode RC 28Apr99 				}
+		}	}
+	};

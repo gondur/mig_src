@@ -1,0 +1,2337 @@
+//------------------------------------------------------------------------------
+//Filename       demoscpt.src
+//System         
+//Author         Mark 'I hate battlefields more than pain' Shaw
+//Date        	 15Mar96
+//Description    Source data to generate battlefields
+//------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------
+//TempCode JIM 08May96Event	{	Setval	{Sample_Play,0x7401},
+//TempCode JIM 08May96			Setval	{Sample_Volume,70},
+//TempCode JIM 08May96			Setval	{Sample_Pan,0}
+//TempCode JIM 08May96		}
+//MAIN SUBJECT BFIELD
+
+	BattleField
+	{
+		FileName	BFDEMO00=BFdemo00.BF,
+
+//INITIAL VIEW SET
+
+Setval	{Cam_CamItem,	AirItem	CAM1_00},
+Setval	{Cam_TrgtItem,	AirItem DemoSubject_Item},
+Setval	{Cam_ViewMode,	VM_OutPadlock},
+Setval	{Cam_CutType,	Instant},
+Setval	{Cam_PanRate,	PR_FastPan},
+Setval  {Cam_Zoom,		1},
+Setval	{Cam_Heading,	ANGLES_0Deg},
+Setval	{Cam_Pitch,		ANGLES_0Deg},
+Setval	{Cam_RollRate,	0},
+Setval	{Cam_RotateRate,0},
+Setval  {Cam_PitchRate,	0},
+
+//-------------------------------------------
+
+		SimpleItem	EnemyAirfld =	 
+		{
+		Shape		AIRFLD,
+		UIDBand		RedAirfieldBAND,
+		SetUID		UID_AFEnemy,
+		Posn		{Abs  {EnemyBase},
+					 Abs  {Y FT_96}
+					}
+		},
+
+//This is the line of victims at the airbase
+
+		AirGroup	
+		{
+			Route
+			{
+				WayPoint			
+				{
+					Posn	{Abs {DEMOWP10}}
+			 	}
+			},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,//DUMBBASTARDDUTY
+
+			Posn	{Abs EnemyAirfld,
+					 Rel	{Y FT_2}
+					},
+
+		   	AirItem		DemoVictim_Item =		     	
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		DIII,
+				Attitude	{Heading	ANGLES_0Deg, Pitch	ANGLES_15Deg, Roll	ANGLES_0Deg},
+				MoveCode	AUTO_NOPPILOT,
+				Skill		SKILL_ACE
+			}
+		},
+
+		AirGroup	
+		{
+
+			Route
+			{
+				WayPoint			
+				{
+					Posn	{Abs {DEMOWP10}}
+			 	}
+			},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,//DUMBBASTARDDUTY
+
+			Posn	{Abs EnemyAirfld,
+					 Rel	{Y FT_2,
+//						 	 Bearing	ANGLES_225Deg,
+						 	 Bearing	ANGLES_240Deg,
+			 			 	 Range	METRES15
+						}
+					},
+
+
+		   	AirItem		
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		DIII,
+				MoveCode	AUTO_NOPPILOT,
+				Attitude	{Heading	ANGLES_0Deg, Pitch	ANGLES_15Deg, Roll	ANGLES_0Deg},
+				Skill		SKILL_ACE
+			}
+		},
+
+		AirGroup	
+		{
+
+			Route
+			{
+				WayPoint			
+				{
+					Posn	{Abs {DEMOWP10}}
+			 	}
+			},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,//DUMBBASTARDDUTY
+
+			Posn	{Abs EnemyAirfld,
+					 Rel	{Y FT_2,
+//						 	 Bearing	ANGLES_225Deg,
+						 	 Bearing	ANGLES_240Deg,
+				 			 Range	METRES30
+							}
+					},
+
+		   	AirItem		
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		DIII,
+				Attitude	{Heading	ANGLES_0Deg, Pitch	ANGLES_15Deg, Roll	ANGLES_0Deg},
+				MoveCode	AUTO_NOPPILOT,
+				Skill		SKILL_ACE
+			}
+		},
+
+		AirGroup	
+		{
+			Route
+			{
+				WayPoint			
+				{
+					Posn	{Abs {DEMOWP10}}
+			 	}
+			},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,//DUMBBASTARDDUTY
+
+			Posn	{Abs EnemyAirfld,
+					 Rel	{Y	FT_2,
+//							 Bearing	ANGLES_45Deg,
+							 Bearing	ANGLES_60Deg,
+				 			 Range	METRES15
+							}
+					},
+
+		   	AirItem		     	
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		DIII,
+				Attitude	{Heading	ANGLES_0Deg, Pitch	ANGLES_15Deg, Roll	ANGLES_0Deg},
+				MoveCode	AUTO_NOPPILOT,
+				Skill		SKILL_ACE
+			}
+		},
+//	also need some oildrums placed 200 METRESs from demovictim_item at 90 Degs
+
+			SimpleItem	DemoDrums_Item=
+			{
+				Posn	{Abs EnemyAirfld,
+						 Abs	{Y FT_96},
+						 Rel	{Bearing	ANGLES_240Deg,
+					 			 Range	METRES50
+								}
+						},
+				SetUID		UID_Drums,
+				Shape	FUEL					//PD 09Apr96
+			},
+
+//MAIN ROUTE
+
+			Route		Subject_Route =
+			{
+				WayPoint	
+				{
+					Posn	{Abs {DEMOWP02},
+							 Abs	{Y	FT_3000}
+							},
+					Range 	METRES700,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+//					Vel		{List {Random 5},100,200,300,400,500},
+ 					Vel		500,
+					Event	{Setval	{Sample_Play,FIL_SFX_ROTARY_FLYBY4},
+							 Setval	{Sample_Volume,70},
+							 Setval	{Sample_Pan,0}
+							}
+				},
+				WayPoint	
+				{
+					Posn	Poo =
+							{Abs {DEMOWP02},
+							 Abs	{Y	FT_3000}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500
+				},
+
+//Next view change in CAM1_00 waypoint list
+
+//1.2
+//Moving camera locked to subject, to the front, side and slightly above
+//subject aircraft, travelling slower than subject, drifts across to other side.
+
+				WayPoint			
+				{
+					Posn	WPTrig1_1 =
+							{Abs Poo,
+							 Rel	{Intercept	{Posn Poo,Posn WP06Pos},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Range		METRES500
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+
+					Vel		500,
+					Event	{Event BFDEMOEVENT00,
+							 Setval	{Cam_CamItem,	AirItem	CAM1_10},
+							 Setval	{Cam_TrgtItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},//DAW 03Apr96
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		1},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+
+//1.3	
+//Inside cockpit, look around at instruments and wings.
+//Look down
+
+				WayPoint			
+				{
+					Posn	WPTrig1_3A =
+							{Abs WPTrig1_1,
+							 Rel	{Intercept	{Posn Poo,Posn WP06Pos},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Range	METRES800
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500
+				},
+				WayPoint			
+				{
+					Posn	
+							{Abs WPTrig1_3A,
+							 Rel	{Intercept	{Posn WPTrig1_3A,Posn WP06Pos},
+						 			 Bearing	ANGLES_0Deg,
+									 Pitch	ANGLES_0Deg,
+						 			 Range	METRES50
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_Inside},//DAW 03Apr96
+							 Setval	{Cam_PanRate,	8},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+//							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_5Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+				 			}
+				},
+//Front view, qtr view
+				WayPoint			
+				{
+					Posn	
+							{Abs WPTrig1_3A,
+							 Rel	{Intercept	{Posn WPTrig1_3A,Posn WP06Pos},
+						 			 Bearing	ANGLES_0Deg,
+									 Pitch	ANGLES_0Deg,
+						 			 Range	METRES70
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Gradual},
+							 Setval	{Cam_ViewMode,	VM_Inside},//DAW 03Apr96
+							 Setval	{Cam_PanRate,	8},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_20Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+				 			}
+				},
+
+//Front view, 
+				WayPoint			
+				{
+					Posn	
+							{Abs WPTrig1_3A,
+							 Rel	{Intercept	{Posn WPTrig1_3A,Posn WP06Pos},
+						 			 Bearing	ANGLES_0Deg,
+									 Pitch	ANGLES_0Deg,
+						 			 Range	METRES200
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Gradual},
+							 Setval	{Cam_ViewMode,	VM_Inside},//DAW 03Apr96
+							 Setval	{Cam_PanRate,	8},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+				 			}
+				},
+
+
+
+//Combat view to airfield
+
+				WayPoint	
+				{
+					Posn	WPTrig1_3B =		
+							{Abs WPTrig1_3A,
+							 Rel	{Intercept	{Posn WPTrig1_3A,Posn WP06Pos},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range	METRES350
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_TrgtItem,	SimpleItem	EnemyAirfld},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_SlowPan},
+							 Setval {Cam_Zoom,		100},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+
+//COMBAT VIEW TO BOTTOM OF DIVE
+
+				WayPoint	
+				{
+					Posn	WPTrig1_3C =		
+							{Abs WPTrig1_3B,
+							 Rel	{Intercept	{Posn WPTrig1_3B,Posn WP06Pos},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range	METRES400
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_TrgtItem,	WayPoint WPStaffAttack00},
+							 Setval	{Cam_CutType,	Gradual},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},//DAW 03Apr96
+							 Setval	{Cam_PanRate,	12},
+							 Setval {Cam_Zoom,		100},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+
+//LOOK TO THE FRONTAGAIN!!!!!
+
+				WayPoint	
+				{
+					Posn	WPTrig1_3D =		
+							{Abs WPTrig1_3C,
+							 Rel	{Intercept	{Posn WPTrig1_3C,Posn WP06Pos},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range	METRES500
+									}
+							},
+					Range 	CAMERATRIGGER,
+ 					Action	wpteleportnext,
+					Vel		500
+				},
+
+//Track Camera near bottom of dive
+
+				WayPoint	
+				{
+					Posn	 
+							{Abs WP06Pos,
+							 Rel	{Intercept	{Posn WP06Pos,Posn WPTrig1_3D},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range	METRES200
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500,
+					Event	{Event BFSTAFF00,
+							 Setval	{Cam_CamItem,	AirItem	CAMTrig1_3C},
+							 Setval	{Cam_TrgtItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},//DAW 03Apr96
+							 Setval	{Cam_PanRate,	PR_FastPan},
+							 Setval {Cam_Zoom,		10},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},	
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}
+							}
+				},
+				WayPoint	
+				{
+					Posn	
+							{Abs {DEMOWP06},
+							 Abs	{Y	FT_1000}
+							},
+					Range 	METRES75,
+					Action	wpacnoactionno,
+					Vel		500,
+					Event	{
+							 Setval	{Sample_Play,FIL_SFX_ROTARY_FLYBY4},
+							 Setval	{Sample_Volume,70},
+ 							 Setval	{Sample_Pan,0}
+							}
+				},
+
+				WayPoint	WP06 =
+				{
+					Posn	WP06Pos =
+							{Abs {DEMOWP06},
+							 Abs	{Y	FT_1000}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP06Pos,
+							 Abs	{Y FT_1000},
+							 Rel	{Intercept	{WP06Pos, StaffRoute_A},
+									 Bearing	ANGLES_345Deg,
+									 RangePercent	50
+									} 
+							},
+					Range 	MARGIN,
+ 					Action	wpteleportnext,
+  					Vel		500
+				},
+
+////1.4	NOT FEATURED
+//Aircraft banks around corner, view looks to the side of cockpit to take in more
+//of the ground, then looks up to take in the horizon.
+  
+//We should jump to this next bit
+//*******************************************************************
+//NEW STUFF, The Subject now flies over to meet up with the staff car.
+
+				WayPoint	
+				{
+					Posn	{Abs	{StaffRoute_A},
+							 Abs	{Y FT_750},
+							 Rel	{Intercept	{StaffRoute_A, StaffRoute_D},
+									 Bearing	ANGLES_270Deg,
+									 Range	METRES400
+									} 
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+//  					Action	wpteleportnext,
+					Vel		500,
+					Event	{Event	BFSTAFF01,
+							 Setval	{Cam_CamItem,	AirItem	StaffCam00_Item},
+							 Setval	{Cam_TrgtItem,	GroundItem StaffCar_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		0},
+//This hides the tear
+							 Setval	{Cam_Heading,	ANGLES_30Deg},
+//							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}
+							}
+				},
+
+				WayPoint	WPStaffAttack00 =	
+				{
+					Posn	{Abs	{StaffRoute_A},
+							 Abs	{Y FT_750}
+							},
+					Range 	METRES200,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+//  					Action	wpteleportnext,
+					Vel		500
+				},
+				WayPoint	
+				{
+					Posn	{Abs	{StaffRoute_D},
+							 Abs	{Y FT_600},
+							 Rel	{Intercept	{StaffRoute_E, StaffRoute_D},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	100
+									}
+							},
+					Range 	METRES200,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+//  					Action	wpteleportnext,
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	SimpleItem StaffCam01_Item},
+							 Setval	{Cam_TrgtItem,	GroundItem StaffCar_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	{StaffRoute_D},
+							 Abs	{Y FT_500},
+							 Rel	{Intercept	{StaffRoute_E, StaffRoute_D},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	100
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+//  					Action	wpteleportnext,
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_Inside},
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	{StaffRoute_D},
+							 Abs	{Y FT_400},
+							 Rel	{Intercept	{StaffRoute_D, StaffRoute_E},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	20
+									}
+							},
+					Range	MARGIN,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+//  					Action	wpteleportnext,
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,  VM_Track},
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		200},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_15Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0x00222},
+							 Setval {Cam_PitchRate,	0}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	{StaffRoute_E},
+							 Abs	{Y FT_500}
+							},
+					Range	MARGIN,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+//  					Action	wpteleportnext,
+					Vel		500
+				},
+				WayPoint	WPStaffCam02 =
+				{
+					Posn	{Abs	{StaffRoute_E},
+							 Abs	{Y FT_900},
+							 Rel	{Intercept	{StaffRoute_D, StaffRoute_E},
+						 			 Bearing	ANGLES_350Deg,
+						 			 Range	METRES250
+									}
+							},
+					Range	METRES150,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	SimpleItem StaffCam02_Item},
+							 Setval	{Cam_TrgtItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0},
+							 Setval	{Sample_Play,FIL_SFX_ROTARY_FLYBY4},
+							 Setval	{Sample_Volume,50},
+							 Setval	{Sample_Pan,0}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WPStaffCam02,
+							 Abs	{Y FT_600},
+							 Rel	{Intercept	{StaffRoute_E, StaffRoute_D},
+						 			 Bearing	ANGLES_45Deg,
+						 			 Range	METRES300
+									}
+							},
+					Range	MARGIN,
+ 					Action	wpteleportnext,
+					Vel		500
+				},
+
+
+//END OF STAFF CAR ENCOUNTER
+//**********************************************************************************
+
+//1.5
+//Combat view to AF
+									
+				WayPoint	WP1_5a =			
+				{
+					Posn	{Abs {DEMOWP08},
+							 Abs	{Y	FT_750},
+							 Rel	{Intercept	{DEMOWP08, WP06Pos},
+									 Bearing	ANGLES_0Deg,
+									 Range	METRES550
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		600,
+					Event	{Event BFEV1_5,
+							 Setval	{Cam_CamItem,	AirItem	EV1_5Cam00},
+							 Setval	{Cam_TrgtItem,	SimpleItem EnemyAirfld},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+
+//View to front again, seeing the ridge
+
+				WayPoint	WPRidge =			
+				{
+					Posn	{Abs {DEMOWP08},
+							 Abs	{Y	FT_750},//1000
+							 Rel	{Intercept	{Posn DEMOWP08,Posn EnemyBase},
+						 			 Bearing	ANGLES_270Deg,
+						 			 Range		METRES500
+									}
+							},
+					Range 	METRES500,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		600,
+					Event	{Setval	{Cam_CamItem,	AirItem	EV1_5Cam00},
+							 Setval	{Cam_TrgtItem,	AirItem DemoSubject_Item},
+							 Setval	{Cam_CutType,	Gradual},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_SlowPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}					 
+							}
+				},	
+//				WayPoint
+//				{
+//					Posn	{Abs WPRidge},
+//					Range 	METRES300,
+//					Action	wpacnoactionno,
+//					Event	{
+//							 Setval	{Sample_Play,FIL_SFX_TANK_LOOP1},
+//							 Setval	{Sample_Volume,70},
+//							 Setval	{Sample_Pan,50}
+//							}
+//				},
+//2.0
+//Static VM_Track camera at airfield, pan around looking at different aircraft.
+
+				WayPoint	WP2_0 =			
+				{
+					Posn	{Abs {DEMOWP08},
+							 Abs	{Y	FT_750},
+							 Rel	{Intercept	{Posn DEMOWP08,Posn EnemyBase},
+						 			 Bearing	ANGLES_270Deg,
+						 			 Range		METRES500
+									}
+							},
+
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		600,
+					Event	{Event	BFDEMOVICTIMS,
+							 Setval	{Cam_CamItem,	GroundItem	CAM2_00},
+							 Setval	{Cam_TrgtItem,	GroundItem	TruckEscape},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},	
+							 Setval	{Cam_PanRate,	PR_SlowPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0x00020},
+							 Setval {Cam_PitchRate,	0},
+							 Setval	{Sample_Play,FIL_SFX_TANK_LOOP1},
+							 Setval	{Sample_Volume,70},
+							 Setval	{Sample_Pan,50}
+							}
+	
+				},
+//Timer waypoint
+				WayPoint			
+				{
+					Posn	{Abs WP2_0,
+							 Abs	{Y	FT_750},
+							 Rel	{Intercept	{WP1_5a, WP2_0},
+									 Bearing	ANGLES_0Deg,
+						 			 Range		METRES800
+									}
+							},
+					Range 	CAMERATRIGGER,
+ 					Action	wpteleportnext,
+					Vel		600
+				},
+
+//Now on the otherside of the ridge, getting ready for our sneak attack
+				WayPoint			
+				{
+					Posn	{Abs DemoVictim_Item,
+							 Abs	{Y	FT_600},
+							 Rel	{Bearing	ANGLES_60Deg,
+						 			 Range		METRES1100
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_TrgtItem,	SimpleItem EnemyAirfld},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_SlowPan},
+							 Setval {Cam_Zoom,		70},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_10Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+
+//2.1
+
+				WayPoint			
+				{
+					Posn	{Abs DemoVictim_Item,
+							 Abs	{Y	FT_600}
+							},
+					Range 	METRES700,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500
+				},
+//View from ridge tracking AC across AF
+				WayPoint			
+				{
+					Posn	{Abs DemoVictim_Item},
+					Range	METRES650,
+					Vel		500,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Event	{Setval	{Cam_CamItem,	AirItem	CAM2_03},
+							 Setval	{Cam_TrgtItem,	AirItem DemoSubject_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_FastPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+
+//2.2
+//Cockpit view to airbase as we go into attack. Dagga Dagga. Picks out a line of
+//aircraft. The first one takes a few hits, the second one goes up in flames.
+
+				WayPoint			
+				{
+					Posn	{Abs DemoVictim_Item},
+					Range 	METRES500,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_Inside},
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0},
+							 Setval	{AutoBulletCount, 800}//startshooting
+							}
+  				},
+
+//2.3
+//Low static camera is looking up at the attacking fighter and VM_Tracking it. The
+//last enemy fighter from the line is in the near foreground and is moving out of
+//shot to the right as the bullets just miss its tail. The view then follows the
+//bullet hits on the ground (kicking up dirt, animated map?) as they pass the
+//camera and hit some fuel drums near a hut, causing them to explode.
+
+				WayPoint			
+				{
+					Posn	{Abs DemoVictim_Item},
+					Range 	METRES400,
+					Action	wpacnoactionno,
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500,
+					Event	{Event	BFDOEV00,	
+							 Setval	{Cam_CamItem,	SimpleItem	CAM07_A},
+							 Setval	{Cam_TrgtItem,	GroundItem SPRAY},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_FastPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+  				},
+
+//2.4
+//Qtr circle from front to rear of camera node, as AC flashes low
+//across airbase. Camera is pitched high and VM_Tracking subject. 
+
+				WayPoint			
+				{
+					Posn	{Abs DemoDrums_Item,
+							 Rel	{Bearing ANGLES_240Deg,
+									 Range	METRES200
+									}
+							},
+					Range 	METRES200,
+					Action	wpacnoactionno,	
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_TrgtItem,	SimpleItem DemoDrums_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},	
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		700},
+							 Setval	{Cam_Heading,	ANGLES_5Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0},
+							 Setval	{AutoBulletCount, -1}//stopshooting
+							}
+ 				},
+//TORATORATORA!!!!!
+//Start to follow the road
+				WayPoint			
+				{
+					Posn	{Abs {TruckRoute_D},
+							 Abs	{Y FT_200}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,	
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Gradual},
+							 Setval	{Cam_ViewMode,	VM_Chase},	
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		700},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+				WayPoint			
+				{
+					Posn	{Abs {TruckRoute_E},
+							 Abs	{Y FT_200}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,	
+//					TELEBOTCH
+// 					Action	wpteleportnext,
+					Vel		500
+				},
+				WayPoint			
+				{
+					Posn	{Abs {TruckRoute_H},
+							 Abs	{Y FT_200},
+							 Rel	{Intercept	{TruckRoute_I,TruckRoute_H},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	50
+									}
+							},
+					Range 	MARGIN,
+ 					Action	wpteleportnext,
+					Vel		500
+				},
+				WayPoint			
+				{
+					Posn	{Abs {TruckRoute_H},
+							 Abs	{Y FT_200},
+							 Rel	{Intercept	{TruckRoute_I,TruckRoute_H},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	50
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,	
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	GroundItem	TruckEscape},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_Track},	
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		4000},
+							 Setval	{Cam_Heading,	ANGLES_195Deg},
+							 Setval	{Cam_Pitch,		ANGLES_10Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+				WayPoint			
+				{
+					Posn	{Abs {TruckRoute_H},
+							 Abs	{Y FT_96},
+							 Rel	{Intercept	{TruckRoute_H,TruckRoute_I},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	35
+									}
+							},
+					Range 	METRES200,
+					Action	wpacnoactionno,
+					Event	{Setval	{Cam_CamItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_Inside},
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+				 			}
+				},
+				WayPoint			
+				{
+					Posn	{Abs {TruckRoute_H},
+							 Abs	{Y FT_96},
+							 Rel	{Intercept	{TruckRoute_H,TruckRoute_I},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	35
+									}
+							},
+					Range 	METRES15,
+					Action	wpacnoactionno,	
+					Vel		500
+				},
+				WayPoint			
+				{
+					Posn	{Abs {TruckRoute_I},
+							 Abs	{Y FT_100}
+							},
+					Range 	METRES200,
+					Action	wpacnoactionno,	
+					Vel		500,
+					Event	{Setval	{Cam_CamItem,	SimpleItem	CamToraEnd},
+							 Setval	{Cam_TrgtItem,	GroundItem	TruckEscape},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_SlowPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+
+				WayPoint	
+				{
+					Posn	{Abs {TruckRoute_I},
+							 Abs	{Y FT_300},
+							 Rel	{Intercept	{TruckRoute_H,TruckRoute_I},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Range	METRES150
+									}
+							},
+					Range 	METRES150,
+					Action	wpacnoactionno,	
+					Vel		500,	
+					Event	{
+							 Setval	{Sample_Play,FIL_SFX_ROTARY_FLYBY4},
+							 Setval	{Sample_Volume,50},
+							 Setval	{Sample_Pan,0}
+							}
+				},
+//Escape climb
+
+				WayPoint	WPToraEnd =			
+				{
+					Posn	{Abs {TruckRoute_I},
+							 Abs	{Y FT_300},
+							 Rel	{Intercept	{TruckRoute_H,TruckRoute_I},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Range	METRES150
+									}
+							},
+					Range 	MARGIN,
+ 					Action	wpteleportnext,
+					Vel		500,
+					Event	{Event	BFDEMOPURSUIT00,
+							 Setval	{Cam_CamItem,	AirItem	Cam_A},
+							 Setval	{Cam_TrgtItem,	SimpleItem	EnemyAirfld},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},
+							 Setval	{Cam_PanRate,	PR_SlowPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+						 	 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0},							 
+							 Setval	{Sample_Play,FIL_SFX_AIRCRAFT_DRONE_LOOP},
+							 Setval	{Sample_Volume,50},
+							 Setval	{Sample_Pan,0}
+							}
+				},
+
+				WayPoint	
+				{
+					Posn	{Abs WPToraEnd,
+							 Abs {Y	FT_1000}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,	
+					Vel		500
+				},
+//Subject has now become a timer while reinforcements turn up.
+
+				WayPoint	WPToraEnd00 =
+				{
+					Posn	{Abs WPToraEnd,
+							 Abs {Y	FT_1000},
+							 Rel	{Bearing	ANGLES_180Deg,
+									 Range	METRES900
+									}
+							},
+ 					Action	wpteleportnext,
+					Range	MARGIN,
+					Vel	500
+				},
+
+				WayPoint	WPDogFight =
+				{
+					Posn	{Abs WPToraEnd,
+							 Abs {Y	FT_2000},
+							 Rel	{Bearing	ANGLES_180Deg,
+									 Range	METRES1000
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,
+					Vel	500,
+					Event	{Event BFDEMOPURSUIT01,
+							 Setval	{Cam_CamItem,	AirItem	Cam_B},
+							 Setval	{Cam_TrgtItem,	AirItem	DemoSubject_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},//DAW 03Apr96
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0},
+							 Setval	{Sample_Play,FIL_SFX_AIRCRAFT_DRONE_LOOP},
+							 Setval	{Sample_Volume,70},
+							 Setval	{Sample_Pan,0}
+							}
+				},
+				WayPoint	WPOhDear =
+				{
+					Posn	{Abs WPDogFight,
+							 Abs {Y	FT_2000},
+							 Rel	{Bearing	ANGLES_180Deg,
+									 Range	METRES400
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,
+					Vel	500,
+					Event	{Event BFDOEV01,
+							 Setval	{Cam_CamItem,	AirItem	Cam_C},
+							 Setval	{Cam_TrgtItem,	AirItem	PursuitB_Item},
+							 Setval	{Cam_CutType,	Instant},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},//DAW 03Apr96
+							 Setval	{Cam_PanRate,	PR_MediumPan},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+				WayPoint	WPDeath =	
+				{
+					Posn	{Abs WPOhDear,
+							 Abs {Y	FT_2000},
+							 Rel	{Bearing	ANGLES_180Deg,
+									 Range	METRES200
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno,
+					Vel	500,
+					Event	{Setval	{UIDDeathItem,	SetUID DemoSubjectUID},
+							 Setval	{deathtype,	DT_AirInstant}
+							}
+				}
+			};
+
+//CAMERAS
+
+		SimpleItem	CamToraEnd	 =
+		{
+		Shape		EMPTY,
+		UIDBand		RedAirfieldBAND,
+		Posn		{Abs  WPToraEnd,
+					 Rel	{Intercept	{WPToraEnd,TruckRoute_I},
+						 	 Bearing	ANGLES_10Deg,
+							 Pitch		ANGLES_0Deg,
+						 	 Range		METRES30
+							}
+					}
+		},
+
+		AirGroup	
+		{
+			Route
+			{
+				WayPoint			
+				{
+					Posn	{Abs {EnemyBase}}
+			 	}
+			},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,//DUMBBASTARDDUTY
+
+			Posn	{Abs WP06Pos,
+					 Rel	{Bearing	ANGLES_240Deg,//240
+				 			 Range	METRES40
+							}//20
+					},
+
+		   	AirItem		CAMTrig1_3C =		     	
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		EMPTY,
+				Attitude	{Heading	ANGLES_0Deg, Pitch	ANGLES_0Deg, Roll	ANGLES_0Deg},
+				MoveCode	AUTO_NOPPILOT,
+				Skill		SKILL_ACE
+			}
+		},
+
+		AirGroup	
+		{
+
+			Route
+			{
+				WayPoint			
+				{
+					Posn	{Abs {DEMOWP10}}
+			 	}
+			},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,//DUMBBASTARDDUTY
+
+//			Posn	{Abs EnemyAirfld,
+//					 Rel	{Y FT_5,
+//							 Bearing	ANGLES_225Deg,
+//				 			 Range	METRES50
+//							}
+//					},
+
+//			Posn	{Abs EnemyAirfld,
+//					 Rel	{Y FT_200,
+//							 Bearing	ANGLES_70Deg,
+//				 			 Range	METRES300
+//							}
+//					},
+
+			Posn	{Abs EnemyAirfld,
+					 Rel	{Y FT_50,
+							 Bearing	ANGLES_270Deg,
+				 			 Range	METRES150
+							}
+					},
+
+		   	AirItem		CAM2_03 =		     	
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Attitude	{Heading	ANGLES_0Deg, Pitch	ANGLES_0Deg, Roll	ANGLES_0Deg},
+				Shape		EMPTY,
+				MoveCode	AUTO_NOPPILOT,
+				Skill		SKILL_ACE
+			}
+		},
+
+		AirGroup	
+		{
+			Route
+			{
+				WayPoint	
+				{
+					Posn	CAM1_00PosA=
+							{Abs {DEMOWP02},
+							 Abs {Y FT_3000},
+					 		 Rel	{Intercept	{Posn DEMOWP06,Posn DEMOWP02},
+				 			 		 Bearing	ANGLES_270Deg,
+				 			 		 Pitch		ANGLES_0Deg,
+				 			 		 Range		METRES09
+									}
+							},
+					Range 	METRES200,
+					Action	wpacnoactionno,
+					Vel			450,
+					Event	{Setval	{Cam_CamItem,	AirItem	CAM1_00},
+							 Setval	{Cam_ViewMode,	VM_Track},	//DAW 03Apr96
+							 Setval	{Cam_CutType,	Gradual},
+							 Setval	{Cam_PanRate,	8},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_90Deg},
+							 Setval	{Cam_Pitch,		ANGLES_345Deg},
+	 						 Setval	{Cam_RotateRate,0},//0x0005B},
+							 Setval {Cam_PitchRate,	0}							 
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs {DEMOWP02},
+							 Abs {Y FT_3000},
+					 		 Rel	{Intercept	{Posn DEMOWP06,Posn DEMOWP02},
+				 			 		 Bearing	ANGLES_270Deg,
+				 			 		 Pitch		ANGLES_0Deg,
+				 			 		 Range		METRES09
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+					Vel			450
+				},
+				WayPoint	
+				{
+					Posn	{Abs CAM1_00PosA,
+					 		 Rel	{Intercept	{Posn CAM1_00PosB,Posn CAM1_00PosA},
+				 			 		 Bearing	ANGLES_0Deg,
+				 			 		 Pitch		ANGLES_0Deg,
+				 			 		 RangePercent	100
+									}
+							},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,
+					Vel			450
+				}
+			},
+
+			Posn	CAM1_00PosB =
+					{Abs	CAM1_00PosA,
+					 Abs	{Y FT_3950},
+					 Rel	{Intercept	{Posn DEMOWP06,Posn DEMOWP02},
+				 			 Bearing	ANGLES_0Deg,
+				 			 Pitch		ANGLES_0Deg,
+				 			 Range		METRES950
+							}
+					},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,//DUMBBASTARDDUTY
+
+		   	AirItem		CAM1_00 =		     	
+			{
+				SetUID		UICAM1_00,
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+			Shape		EMPTY,
+			MoveCode	AUTO_FOLLOWWP,
+			Vel			450,
+			Skill		SKILL_ACE
+		}
+	},
+
+//THIS IS THE MAIN ONE
+		
+		AirGroup	
+		{
+			Route Subject_Route, 
+
+			Duty		DUTYCAP,
+
+			Posn		DemoSubject_Start=
+						{Abs	{DEMOWP02}, 
+					 	 Abs	{Y FT_4000},
+						 Rel	{Intercept	{Posn DEMOWP06,Posn DEMOWP02},
+								 Bearing	ANGLES_0Deg,
+								 Pitch		ANGLES_0Deg,
+						 		 Range		METRES1000
+								}
+						},
+
+		   	AirItem		DemoSubject_Item =		     	
+			{
+				PS_AUTOPLAYER,
+				SetUID		DemoSubjectUID,
+				Side		NAT_FRIEND,
+				Type		FriendlyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Vel			500,
+				Morale		MORALE_HIGH
+			}
+		}
+
+	};
+
+//EVENTS
+//----------------------------------------------------------------------------
+//This victim is actually trying to escape
+
+	BattleField
+	{
+		FileName	BFDEMOVICTIMS=EVdemo02.BF,
+
+		AirGroup	
+		{
+			Route	
+			{
+				WayPoint	WPVictimTakeOff =		
+				{
+					Posn	{Abs  EnemyAirfld,
+							 Rel	{Y FT_2,	
+									 Bearing	ANGLES_60Deg,
+							 		 Range	METRES30
+									}
+							},
+					Vel		4,
+					Range	METRES01,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs  WPVictimTakeOff,
+							 Rel	{Bearing	ANGLES_0Deg,
+							 		 Range	METRES400
+									}
+							},
+					Range 	CAMERATRIGGER2,
+					Vel		100,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs WPVictimTakeOff,
+							 Rel	{Y FT_100,
+									 Bearing	ANGLES_0Deg,
+							 		 Range	METRES800
+									}
+							},
+					Range 	CAMERATRIGGER2,
+					Vel		200,
+					Action	wpacnoactionno
+				}
+			},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,//DUMBBASTARDDUTY
+
+			Posn	{Abs WPVictimTakeOff,
+					 Rel	{Bearing	ANGLES_180Deg,
+				 			 Range	METRES06
+							}
+					},
+			
+		   	AirItem		DemoTakeOff_Item = 
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		DIII,
+				Attitude	{Heading	ANGLES_0Deg, Pitch	ANGLES_15Deg, Roll	ANGLES_0Deg},
+				MoveCode	AUTO_FOLLOWWP,
+				Vel			4,
+				Skill		SKILL_ACE
+			}
+		},
+//This is the camera that looks at the airfield and sees the truck go
+		GroundGroup	
+		{
+
+			Route
+			{
+				WayPoint			
+				{
+					Posn	{Abs EnemyAirfld,
+			 				 Rel	{Y FT_20,
+					 				Bearing	ANGLES_112Deg,
+		 			 				Range	METRES100
+									}
+							},
+					Action	wpacnoactionno,
+					Vel	35
+			 	}
+			},
+
+			NumInForm	1,
+
+			Posn	{Abs EnemyAirfld,
+					 Rel	{Y FT_80,
+							 Bearing	ANGLES_70Deg,
+				 			 Range	METRES100
+							}
+					},
+
+		   	GroundItem		CAM2_00 =		     	
+			{
+				Type		PT_ATruck,
+				Side		NAT_FRIEND,
+				Shape		EMPTY,
+				Vel			35,
+				MoveCode	GROUND_TAXI
+			}
+		},
+//This is the truck that's just leaving
+		GroundGroup	
+		{
+			Route		
+			{
+				WayPoint		
+				{
+					Posn	{Abs {TruckRoute_A}},
+					Action	wpacnoactionno,
+					Vel		150
+				},
+				WayPoint		
+				{
+					Posn	{Abs {TruckRoute_B}},
+					Action	wpacnoactionno,
+					Vel		400
+				},
+				WayPoint		
+				{
+					Posn	{Abs {TruckRoute_C}},
+					Action	wpacnoactionno,
+					Vel		400
+				},
+				WayPoint		
+				{
+					Posn	{Abs {TruckRoute_D}},
+					Action	wpacnoactionno,
+					Vel		400
+				},
+				WayPoint		
+				{
+					Posn	{Abs {TruckRoute_E}},
+					Action	wpacnoactionno,
+					Vel		400
+				},
+				WayPoint		
+				{
+					Posn	{Abs {TruckRoute_F}},
+					Action	wpacnoactionno,
+					Vel		200
+				},
+				WayPoint		
+				{
+					Posn	{Abs {TruckRoute_G}},
+					Action	wpacnoactionno,
+					Vel		200
+				},
+				WayPoint		
+				{
+					Posn	{Abs {TruckRoute_H}},
+					Action	wpacnoactionno,
+					Vel		150
+				},
+				WayPoint	WPDonkey =
+				{
+					Posn	{Abs {TruckRoute_H},
+							 Rel	{Intercept	{TruckRoute_H,TruckRoute_I},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	50
+									}
+							},
+					Action	wpacnoactionno,
+					Vel		125
+				},
+				WayPoint		
+				{
+					Posn	{Abs WPDonkey,
+							 Rel	{Intercept	{TruckRoute_H,TruckRoute_I},
+						 			 Bearing	ANGLES_345Deg,
+						 			 Range	METRES20
+									}
+							},
+					Action	wpacnoactionno,
+					Vel		120
+				}
+			},	
+
+			NumInForm	1,
+
+			Posn	{Abs	CAM2_00,
+					 Abs	{Y	FT_96},
+					 Rel	{Bearing ANGLES_10Deg,
+		 			 		 Range	METRES20
+							}
+					},
+
+		    GroundItem	TruckEscape =
+			{
+				Type		PT_ATruck,
+				Side		NAT_FRIEND,
+				Shape		TRUCK,
+				Vel			150,
+				MoveCode	GROUND_TAXI
+			}
+		}
+	};
+
+//-----------------------------------------------
+
+	BattleField
+	{
+		FileName	BFSTAFF00=EVStaff0.BF,
+		GroundGroup	
+		{
+			Route		
+			{
+				WayPoint		
+				{
+					Posn	{Abs {StaffRoute_B},
+							 Rel	{Intercept	{StaffRoute_B, StaffRoute_C},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	50
+									}
+							},
+					Action	wpacnoactionno
+				},
+				WayPoint		
+				{
+					Posn	{Abs {StaffRoute_C}},
+					Action	wpacnoactionno
+				},
+				WayPoint		
+				{
+					Posn	{Abs {StaffRoute_C},
+							 Rel	{Intercept	{StaffRoute_C, StaffRoute_D},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	50
+									}
+							},
+					Action	wpacnoactionno
+				},
+				WayPoint		
+				{
+					Posn	{Abs {StaffRoute_D}},
+					Action	wpacnoactionno
+				},
+				WayPoint		
+				{
+					Posn	{Abs {StaffRoute_D},
+							 Rel	{Intercept	{StaffRoute_D, StaffRoute_E},
+						 			 Bearing	ANGLES_0Deg,
+						 			 RangePercent	50
+									}
+							},
+					Action	wpacnoactionno
+				},
+				WayPoint		
+				{
+					Posn	{Abs {StaffRoute_D},
+							 Rel	{Intercept	{StaffRoute_D, StaffRoute_E},
+						 			 Bearing	ANGLES_350Deg,
+						 			 RangePercent	100
+									}
+							},
+					Action	wpacnoactionno
+				}
+			},	
+
+			NumInForm	1,
+
+			Posn	{Abs	{StaffRoute_B},
+					 Abs	{Y FT_0}
+					},
+
+		   	GroundItem	StaffCar_Item =		     	
+			{
+				Type		PT_ATruck,
+				Side		NAT_FRIEND,
+				Shape		STAFF,
+				SetUID		UID_StaffCar,
+				Vel			100,
+				MoveCode	GROUND_TAXI
+			}
+		}
+	};
+
+//-------------------------------------------
+	BattleField
+	{
+		FileName	BFSTAFF01=EVStaff1.BF,
+//Camera that is at top of ridge
+		SimpleItem	StaffCam01_Item =	 
+		{
+		Shape		EMPTY,
+		UIDBand		RedAirfieldBAND,
+		Posn		{Abs  {StaffRoute_E},
+					 Abs	{Y FT_600}
+					}
+		},
+//Camera above escape climb
+		SimpleItem	StaffCam02_Item =	 
+		{
+		Shape		EMPTY,
+		UIDBand		RedAirfieldBAND,
+		Posn		{Abs  WPStaffCam02,
+					 Abs	{Y FT_820}
+					}
+		},
+//Camera that flies alongside subject
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint		
+				{
+					Posn	{Abs DemoSubject_Item,
+							 Rel	{Y FT_30,
+									 Intercept	{DemoSubject_Item, WPStaffAttack00},
+									 Bearing	ANGLES_1Deg,
+									 Range	METRES600 	
+									}
+							},
+					Vel		505,
+					Range	MARGIN,
+					Action	wpacnoactionno
+				}
+			},	
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,	//DUMBASSBASTARDDUTY
+
+			Posn	{Abs DemoSubject_Item,
+					 Rel	{Y FT_10,
+							 Intercept	{StaffCar_Item, DemoSubject_Item},
+							 Bearing	ANGLES_0Deg,
+							 Range	METRES10
+							}
+					},
+
+		   	AirItem	StaffCam00_Item =		     	
+			{
+				Side		NAT_FRIEND,
+				Type		PT_F86E,
+				Shape		EMPTY,
+				Vel			505,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+//-------------------------------------------
+
+	BattleField
+	{
+		FileName	BFDEMOEVENT00=EVdemo00.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint		
+				{
+					Posn	WPEV00A =
+							{Abs WPTrig1_3A,
+ 							 Abs {Y FT_3015},
+ 							 Rel	{Intercept	{Posn Poo, Posn WPTrig1_3A},
+ 						 			 Bearing	ANGLES_90Deg,
+ 						 			 Range		METRES09
+ 									}
+							},
+					Vel	488,
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno
+				}
+			},	
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,	//DUMBASSBASTARDDUTY
+
+			Posn		{Abs	WPEV00A,
+						 Abs	{Y FT_3015},
+						 Rel	{Intercept	{Posn WPTrig1_3A, Posn DemoSubject_Item},
+								 Bearing ANGLES_0Deg,
+						 		 RangePercent	99
+								}
+						},	 
+
+		   	AirItem	CAM1_10 =		     	
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Vel			488,
+				Shape		EMPTY,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE
+			}
+		}
+	};
+//-------------------------------------------
+	BattleField
+	{
+		FileName	BFDOEV00=EVdemo07.BF,
+		GroundGroup	
+		{
+			Route		
+			{
+				WayPoint		
+				{
+					Posn	{Abs DemoDrums_Item},
+					Vel		190,
+					Action	wpacnoactionno,
+					Event	{Setval	{UIDDeathItem,	SetUID UID_Drums},
+							 Setval	{deathtype,	DT_BigGround},
+							 Setval	{Sample_Play,FIL_SFX_EXPLOSION_OILDRUM2},
+							 Setval	{Sample_Volume,127},
+							 Setval	{Sample_Pan,0}
+							}
+				},
+				WayPoint		
+				{
+					Posn	{Abs DemoDrums_Item,
+							 Rel	{Bearing	ANGLES_240Deg,
+									 Range	METRES100
+									}
+							},
+					Vel		1,
+					Action	wpacnoactionno
+				}
+			},	
+
+			NumInForm	1,
+
+			Posn	{Abs	DemoVictim_Item,
+					 Rel	{Bearing	ANGLES_60Deg,
+							 Range	METRES60
+							}
+					},
+
+		   	GroundItem	SPRAY =     	
+			{
+				Type		PT_ATruck,
+				Side		NAT_FRIEND,
+				Shape		EMPTY,
+				Vel			190,
+				MoveCode	GROUND_TAXI
+			}
+		},
+
+		SimpleItem	CAM07_A =
+		{
+		Shape		EMPTY,
+		UIDBand		RedAirfieldBAND,
+		Posn		{Abs  DemoVictim_Item,
+					 Rel	{Intercept	{DemoVictim_Item, DemoDrums_Item},
+							 Bearing	ANGLES_315Deg,
+							 RangePercent	100
+							}
+					}
+		}
+	};
+
+	BattleField
+	{
+		FileName	BFDOEV01=EVdemo08.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint		
+				{
+					Posn		{Abs WPDeath,
+					 	 		 Rel	{Y	FT_40,
+										 Bearing	ANGLES_180Deg,
+										 Range	METRES550
+										}
+								},
+					Range 	MARGIN,
+					Action	wpacnoactionno,	
+					Vel		480,
+					Event	{Setval {Quit3DNow,1}}
+				}
+			},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,
+
+			Posn		{Abs  WPOhDear,
+						 Rel	{Y	FT_40,
+								 Bearing	ANGLES_210Deg,
+								 Range	METRES30
+								}
+						},	
+
+		   	AirItem		Cam_C =
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		EMPTY,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Vel			480
+			}
+		}
+	};
+
+	BattleField
+	{
+		FileName	BFDOEV02=EVdemo09.BF
+	};
+
+//-------------------------------------------
+//Looks at the airfield as the subject drifts into view
+
+	BattleField
+	{
+		FileName	BFEV1_5=EVdemo06.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint		
+				{
+					Posn	{Abs WPRidge,
+						 	 Rel	{Y FT_10,
+// 							 Rel	{Y FT_3, 
+									 Intercept	{WP1_5a, WPRidge},
+ 						 			 Bearing	ANGLES_280Deg,
+ 						 			 Range		METRES30
+ 									}
+							},
+					Vel	570,
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno
+				}
+			},	
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,	
+
+			Posn		{Abs	WP1_5a,
+//						 Rel	{Y FT_3,
+						 Rel	{Y FT_10,
+								 Intercept	{WP1_5a, WPRidge},
+								 Bearing ANGLES_280Deg,
+						 		 Range	METRES30
+								}
+						},	 
+
+		   	AirItem EV1_5Cam00 =		     	
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Vel			570,
+				Shape		EMPTY,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+//-------------------------------------------
+//GROUND MOBILE
+
+	BattleField
+	{
+		FileName	BFDEMOTRUCKS00=EVdemo01.BF
+	};
+
+//-------------------------------------------
+//This is the first time we see the pursuers
+
+	BattleField
+	{
+		FileName	BFDEMOPURSUIT00=EVdemo03.BF,
+
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	WPPursuit_A=	
+				{
+					Posn		{Abs  EnemyAirfld,
+					 		 	 Abs	{Y FT_2000},
+					 	 		 Rel	{Bearing	ANGLES_30Deg,
+						 	 	 		 Range		METRES1000
+										}
+								},
+					Range 	METRES150,
+					Action	wpacnoactionno,	
+					Vel		500,
+					Event	{Setval	{Sample_Play,FIL_SFX_ROTARY_FLYBY4},
+							 Setval	{Sample_Volume,70},
+							 Setval	{Sample_Pan,0}
+							}
+				},
+//				WayPoint	
+//				{
+//					Posn	{Abs	WPPursuit_A},
+//					Range	METRES110,
+//					Action	wpacnoactionno,	
+//					Vel		500
+///					Event	{Setval	{Sample_Play,FIL_SFX_ROTARY_FLYBY4},
+//							 Setval	{Sample_Volume,100},
+//							 Setval	{Sample_Pan,0}
+//							}
+//				},
+				WayPoint	WPPursuit_B=	
+				{
+					Posn	{Abs {EnemyBase},
+							 Abs	{Y	FT_2000}
+							},
+					Range 	METRES750,
+					Vel		500,
+					Action	wpacnoactionno,
+					Event	{Setval	{Cam_CamItem,	AirItem	Cam_A},
+							 Setval	{Cam_TrgtItem,	AirItem DemoSubject_Item},
+							 Setval	{Cam_CutType,	Gradual},
+							 Setval	{Cam_ViewMode,	VM_OutPadlock},	
+							 Setval	{Cam_PanRate,	8},
+							 Setval {Cam_Zoom,		0},
+							 Setval	{Cam_Heading,	ANGLES_0Deg},
+							 Setval	{Cam_Pitch,		ANGLES_0Deg},
+							 Setval	{Cam_RollRate,	0},
+							 Setval	{Cam_RotateRate,0},
+							 Setval {Cam_PitchRate,	0}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs {EnemyBase},
+							 Abs	{Y	FT_2000}
+							},
+					Range 	MARGIN,
+					Vel		500
+				}
+			},
+
+			NumInWing	4,
+			NumInForm	4,
+			Duty		DUTYCAP,
+
+			Posn		{Abs  WPPursuit_A,
+					 	 Rel	{Intercept	{WPPursuit_B, WPPursuit_A},
+								 Bearing	ANGLES_0Deg,
+								 Pitch		ANGLES_0Deg,
+						 	 	 Range		METRES350
+								}
+						},
+
+		   	AirItem		DemoPursuit_Item =		     	
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		DIII,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Vel			500
+			}
+		},
+
+//--
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn		{Abs  WPPursuit_B,
+					 	 		 Rel	{Y	FT_100}
+								},
+					Range 	MARGIN,
+					Action	wpacnoactionno,	
+					Vel		300
+				}
+			},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,
+
+			Posn		{Abs  WPPursuit_A,
+				 	 	 Rel	{Y FT_100,
+							 	 Intercept	{WPPursuit_B, WPPursuit_A},
+							 	 Bearing	ANGLES_350Deg,
+					 	 	 	 Range		METRES300
+								}
+						},
+
+		   	AirItem		Cam_A =
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		EMPTY,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Vel			300
+			}
+		}
+
+//		SimpleItem	Cam_A	 =
+//		{
+//		Shape		EMPTY,
+//		UIDBand		RedAirfieldBAND,
+//		Posn		{Abs  WPPursuit_A,
+//				 	 Rel	{Y FT_200,
+//							 Intercept	{WPPursuit_B, WPPursuit_A},
+//							 Bearing	ANGLES_0Deg,
+//					 	 	 Range		METRES200
+//							}
+//					}
+//		}
+	};
+
+//-------------------------------------------
+//This is the ace who bounces the player.
+
+	BattleField
+	{
+		FileName	BFDEMOACE=EVdemo04.BF
+	};
+
+//MORE EVENTS
+//-------------------------------------------
+//This is the second time we see the pursuers
+
+	BattleField
+	{
+		FileName	BFDEMOPURSUIT01=EVdemo05.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	WPDogFightB =	
+				{
+					Posn		{Abs  WPDogFight,
+					 	 		 Rel	{Y FT_400,
+										 Bearing	ANGLES_270Deg,
+						 	 	 		 Range		METRES100
+										}
+								},
+					Range 	CAMERATRIGGER,
+					Action	wpacnoactionno,	
+					Vel		600,
+					Event	{Setval	{Sample_Play,FIL_SFX_STATIONARY_FLYBY3},
+							 Setval	{Sample_Volume,70},
+							 Setval	{Sample_Pan,0}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs WPDogFight,
+							 Abs	{Y	FT_2000},
+					 	 	 Rel	{Bearing	ANGLES_180Deg,
+						 	 	 		 Range		METRES300
+							 		}
+							},
+					Range 	MARGIN,
+					Vel		600,
+					Action	wpacnoactionno,
+					Event	{Setval	{Sample_Play,FIL_SFX_GUN_SPANDAU_MAXIM_LOOP},
+							 Setval	{Sample_Volume,70},
+							 Setval	{Sample_Pan,0}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs WPDeath,
+							 Abs	{Y	FT_2000}
+							},
+					Range 	METRES110,
+					Vel		550,
+					Action	wpacnoactionno,
+					Event	{Setval	{Sample_Play,FIL_SFX_GUN_SPANDAU_MAXIM_LOOP},
+							 Setval	{Sample_Volume,70},
+							 Setval	{Sample_Pan,0}
+							}
+				},
+				WayPoint	WPFinal =	
+				{
+					Posn	{Abs WPDeath,
+							 Abs	{Y	FT_2000},
+					 	 		 Rel	{Bearing	ANGLES_180Deg,
+										 Range	METRES500
+										}
+							},
+					Range 	MARGIN,
+					Vel		500,
+					Action	wpacnoactionno
+				}
+			},
+
+			NumInWing	4,
+			NumInForm	4,
+			Duty		DUTYCAP,
+
+			Posn		{Abs  WPDogFightB,
+					 	 Rel	{Bearing	ANGLES_0Deg,
+						 	 	 Range		METRES50
+								}
+						},
+
+		   	AirItem		PursuitB_Item =		     	
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		DIII,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Vel			600
+			}
+		},
+
+//--
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	WPDogFightC =	
+				{
+					Posn		{Abs WPDogFightB,
+					 	 		 Rel	{Y	FT_75,
+										 Bearing	ANGLES_260Deg,
+										 Range	METRES20
+										}
+								},
+					Range 	MARGIN,
+					Action	wpacnoactionno,	
+					Vel		510
+				},
+				WayPoint	
+				{
+					Posn		{Abs WPDogFightC,
+								 Abs {Y FT_2200},
+					 	 		 Rel	{Bearing	ANGLES_180Deg,
+										 Range	METRES500
+										}
+								},
+					Range 	MARGIN,
+					Action	wpacnoactionno,	
+					Vel		510
+				}
+			},
+
+			NumInWing	1,
+			NumInForm	1,
+			Duty		DUTYCAP,
+
+			Posn		{Abs  PursuitB_Item,
+				 	 	 Rel	{Y FT_75,
+							 	 Bearing	ANGLES_260Deg,
+					 	 	 	 Range		METRES20
+								}
+						},
+
+		   	AirItem		Cam_B =
+			{
+				Side		NAT_GREEN,
+				Type		PT_F86E,
+				Shape		EMPTY,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Vel			520
+			}
+		}
+	};
+
+//--------------------------------------
+	//end of File!

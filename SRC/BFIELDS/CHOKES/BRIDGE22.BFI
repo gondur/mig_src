@@ -1,0 +1,75 @@
+	WayPoint	BRIDGE22_0100,
+	SimpleItem	BRIDGE22_0419,
+	SimpleItem	BRIDGE22_041d,
+	GroundItem	BRIDGE22_3080,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE22=BRIDGE22.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRdPyongyang1,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE22_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	52752384,
+							Z	77474304
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE22_041d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52877824,
+							Z	77412352
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	52729856,
+						Z	77478912
+					}
+				},
+				Route
+				{
+					WayPoint	BRIDGE22_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	52763136,
+								Z	77461504
+							}
+						},
+						Vel	15,
+						Action	wpstartloopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	SQUAD_TRUCKCONVOY,
+				GroundItem	BRIDGE22_3080=
+				{
+					BlueCombatVehicleBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	STEPTO,
+					Vel	15
+			}	}	}
+	};

@@ -1,0 +1,277 @@
+	SimpleItem	Kumhwa_1803,
+	SimpleItem	Kumhwa_2000,
+	SimpleItem	Kumhwa_2001,
+	SimpleItem	Kumhwa_2002,
+	SimpleItem	Kumhwa_2003,
+	SimpleItem	Kumhwa_2004,
+	SimpleItem	Kumhwa_2005,
+	SimpleItem	Kumhwa_2006,
+	SimpleItem	Kumhwa_2007,
+	SimpleItem	Kumhwa_2008,
+	SimpleItem	Kumhwa_2009,
+	SimpleItem	Kumhwa_200a,
+	SimpleItem	Kumhwa_2200,
+	SimpleItem	Kumhwa_2201,
+	SimpleItem	Kumhwa_2202,
+	SimpleItem	Kumhwa_2203,
+	SimpleItem	Kumhwa_2204,
+	SimpleItem	Kumhwa_2205,
+	SimpleItem	Kumhwa_2206,
+	SimpleItem	Kumhwa_2207,
+	BattleField
+	{
+		FileName	FIL_1_KUMHWA=Kumhwa.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SdRdKumhwa,
+		ItemGroup
+		{
+				SimpleItem	Kumhwa_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	67325952,
+							Z	69367808
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Kumhwa_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	67293184,
+							Z	69226496
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	Kumhwa_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	67324928,
+							Z	69530624
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	Kumhwa_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	67239936,
+							Z	69244928
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	Kumhwa_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	67220480,
+							Z	69649408
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	Kumhwa_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	67133440,
+							Z	69565440
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	Kumhwa_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	67197952,
+							Z	69386240
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	Kumhwa_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	67298304,
+							Z	69384192
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	Kumhwa_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	67262464,
+							Z	69483520
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StKumhwa,
+		ItemGroup
+		{
+				SimpleItem	Kumhwa_2000=
+				{
+					Posn
+					{
+						Abs
+						{	X	67378176,
+							Z	69433344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Kumhwa_2001=
+				{
+					Posn
+					{
+						Abs
+						{	X	67357696,
+							Z	69481472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Kumhwa_2002=
+				{
+					Posn
+					{
+						Abs
+						{	X	67354624,
+							Z	69454848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Kumhwa_2003=
+				{
+					Posn
+					{
+						Abs
+						{	X	67367936,
+							Z	69317632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Kumhwa_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	67330048,
+							Z	69463040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	Kumhwa_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	67319808,
+							Z	69315584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Kumhwa_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	67332096,
+							Z	69431296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Kumhwa_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	67368960,
+							Z	69368832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Kumhwa_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	67410944,
+							Z	69457920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Kumhwa_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	67334144,
+							Z	69502976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Kumhwa_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	67392512,
+							Z	69445632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				}
+		}	}
+	};

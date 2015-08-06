@@ -1,0 +1,246 @@
+	SimpleItem	HYESAN_0405,
+	SimpleItem	HYESAN_0406,
+	SimpleItem	HYESAN_0407,
+	SimpleItem	HYESAN_0408,
+	SimpleItem	HYESAN_0409,
+	SimpleItem	HYESAN_040a,
+	SimpleItem	HYESAN_040b,
+	SimpleItem	HYESAN_2001,
+	SimpleItem	HYESAN_2002,
+	SimpleItem	HYESAN_2003,
+	SimpleItem	HYESAN_2005,
+//TempCode RC 28Apr99 	SimpleItem	HYESAN_2200,
+//TempCode RC 28Apr99 	SimpleItem	HYESAN_2201,
+//TempCode RC 28Apr99 	SimpleItem	HYESAN_2202,
+//TempCode RC 28Apr99 	SimpleItem	HYESAN_2203,
+//TempCode RC 28Apr99 	SimpleItem	HYESAN_2204,
+//TempCode RC 28Apr99 	SimpleItem	HYESAN_2205,
+//TempCode RC 28Apr99 	SimpleItem	HYESAN_2206,
+	BattleField
+	{
+		FileName	FIL_1_HYESAN=HYESAN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StHyesan,
+		ItemGroup
+		{
+//TempCode RC 28Apr99 			SimpleItem	HYESAN_2205=
+//TempCode RC 28Apr99 			{
+//TempCode RC 28Apr99 				Posn
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Abs
+//TempCode RC 28Apr99 					{	X	73145344,
+//TempCode RC 28Apr99 						Z	103844864
+//TempCode RC 28Apr99 					}
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				UIDBand		AmberSupplyBAND,
+//TempCode RC 28Apr99 				Shape		WF1S
+//TempCode RC 28Apr99 			},
+//TempCode RC 28Apr99 			SimpleItem	HYESAN_2206=
+//TempCode RC 28Apr99 			{
+//TempCode RC 28Apr99 				Posn
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Abs
+//TempCode RC 28Apr99 					{	X	73135104,
+//TempCode RC 28Apr99 						Z	103869440
+//TempCode RC 28Apr99 					}
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				UIDBand		AmberSupplyBAND,
+//TempCode RC 28Apr99 				Shape		WF1S
+//TempCode RC 28Apr99 			},
+				SimpleItem	HYESAN_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	73160704,
+							Z	104027136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HYESAN_0406=
+				{
+					Posn
+					{
+						Abs
+						{	X	73181184,
+							Z	104004608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HYESAN_0407=
+				{
+					Posn
+					{
+						Abs
+						{	X	73209856,
+							Z	104035328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HYESAN_0408=
+				{
+					Posn
+					{
+						Abs
+						{	X	73249792,
+							Z	104051712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HYESAN_0409=
+				{
+					Posn
+					{
+						Abs
+						{	X	73289728,
+							Z	104051712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HYESAN_040a=
+				{
+					Posn
+					{
+						Abs
+						{	X	73266176,
+							Z	104070144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HYESAN_040b=
+				{
+					Posn
+					{
+						Abs
+						{	X	73222144,
+							Z	104064000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HYESAN_2001=
+				{
+					Posn
+					{
+						Abs
+						{	X	73150464,
+							Z	103987200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HYESAN_2002=
+				{
+					Posn
+					{
+						Abs
+						{	X	73150464,
+							Z	103895040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HYESAN_2003=
+				{
+					Posn
+					{
+						Abs
+						{	X	73170944,
+							Z	103872512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HYESAN_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	73182208,
+							Z	103845888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				}
+//TempCode RC 28Apr99 				SimpleItem	HYESAN_2200=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	73163776,
+//TempCode RC 28Apr99 							Z	103801856
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberSupplyBAND,
+//TempCode RC 28Apr99 					Shape		WF1S
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				SimpleItem	HYESAN_2201=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	73163776,
+//TempCode RC 28Apr99 							Z	103777280
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberSupplyBAND,
+//TempCode RC 28Apr99 					Shape		WF2S
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				SimpleItem	HYESAN_2202=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	73187328,
+//TempCode RC 28Apr99 							Z	103777280
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberSupplyBAND,
+//TempCode RC 28Apr99 					Shape		WF1S
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				SimpleItem	HYESAN_2203=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	73186304,
+//TempCode RC 28Apr99 							Z	103800832
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberSupplyBAND,
+//TempCode RC 28Apr99 					Shape		WF1S
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				SimpleItem	HYESAN_2204=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	73163776,
+//TempCode RC 28Apr99 							Z	103825408
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberSupplyBAND,
+//TempCode RC 28Apr99 					Shape		WF1S
+//TempCode RC 28Apr99 			       	}
+		}	}
+	};

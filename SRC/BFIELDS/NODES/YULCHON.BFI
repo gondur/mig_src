@@ -1,0 +1,116 @@
+	SimpleItem	YULCHON_0408,
+	SimpleItem	YULCHON_204f,
+	SimpleItem	YULCHON_2050,
+	SimpleItem	YULCHON_2051,
+	SimpleItem	YULCHON_2052,
+	SimpleItem	YULCHON_2053,
+	SimpleItem	YULCHON_2054,
+	SimpleItem	YULCHON_2055,
+	BattleField
+	{
+		FileName	FIL_1_YULCHON=YULCHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StYulchon,
+		ItemGroup
+		{
+				SimpleItem	YULCHON_0408=
+				{
+					Posn
+					{
+						Abs
+						{	X	74252288,
+							Z	62581760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YULCHON_204f=
+				{
+					Posn
+					{
+						Abs
+						{	X	74252288,
+							Z	62611456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YULCHON_2050=
+				{
+					Posn
+					{
+						Abs
+						{	X	74246144,
+							Z	62595072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YULCHON_2051=
+				{
+					Posn
+					{
+						Abs
+						{	X	74266624,
+							Z	62579712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YULCHON_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	74231808,
+							Z	62589952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	YULCHON_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	74242048,
+							Z	62571520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	YULCHON_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	74256384,
+							Z	62564352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YULCHON_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	74244096,
+							Z	62555136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				}
+		}	}
+	};

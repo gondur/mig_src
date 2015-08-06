@@ -1,0 +1,150 @@
+	WayPoint	Road26_0109,
+	WayPoint	Road26_010a,
+	WayPoint	Road26_010b,
+	SimpleItem	Road26_1503,
+	SimpleItem	Road26_1504,
+	SimpleItem	Road26_1505,
+	GroundItem	Road26_2f40,
+	GroundItem	Road26_2f41,
+	GroundItem	Road26_2f42,
+	BattleField
+	{
+		FileName	FIL_1_ROAD26=Road26.BF,
+	ItemGroup
+	{	Target	UID_ROAD_Hoensong2Wonju,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	71906304,
+					Z	60240896
+				}
+			},
+			Route
+			{
+				WayPoint	Road26_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	71872512,
+							Z	60197888
+						}
+					},
+					Action	wpdmbtrkstopno
+				}
+			},
+			NumInForm		-3,
+			Formation	SQUAD_TRUCKCONVOY,
+			GroundItem	Road26_2f40=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	71828480,
+					Z	60105728
+				}
+			},
+			Route
+			{
+				WayPoint	Road26_010a=
+				{
+					Posn
+					{
+						Abs
+						{	X	71839744,
+							Z	60093440
+						}
+					},
+					Action	wpdmbtrkstopno
+				}
+			},
+			NumInForm		-3,
+			Formation	SQUAD_TRUCKCONVOY,
+			GroundItem	Road26_2f41=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	71929856,
+					Z	60443648
+				}
+			},
+			Route
+			{
+				WayPoint	Road26_010b=
+				{
+					Posn
+					{
+						Abs
+						{	X	71931904,
+							Z	60336128
+						}
+					},
+					Action	wpdmbtrkstopno
+				}
+			},
+			NumInForm		-3,
+			Formation	SQUAD_TRUCKCONVOY,
+			GroundItem	Road26_2f42=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK
+		}	},
+		ItemGroup
+		{
+				SimpleItem	Road26_1503=
+				{
+					Posn
+					{
+						Abs
+						{	X	71954432,
+							Z	60264960
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	Road26_1504=
+				{
+					Posn
+					{
+						Abs
+						{	X	71874560,
+							Z	60160000
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH12ML
+				},
+				SimpleItem	Road26_1505=
+				{
+					Posn
+					{
+						Abs
+						{	X	71742464,
+							Z	60034048
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

@@ -1,0 +1,529 @@
+	SimpleItem	Sinuiju_0404,
+	SimpleItem	Sinuiju_0405,
+//DeadCode MS 29Jun99 	SimpleItem	Sinuiju_0406,
+	SimpleItem	Sinuiju_0407,
+	SimpleItem	Sinuiju_0408,
+	SimpleItem	Sinuiju_0409,
+	SimpleItem	Sinuiju_040a,
+	SimpleItem	Sinuiju_1804,
+	SimpleItem	Sinuiju_1805,
+	SimpleItem	Sinuiju_1806,
+	SimpleItem	Sinuiju_1807,
+	SimpleItem	Sinuiju_2000,
+	SimpleItem	Sinuiju_2001,
+	SimpleItem	Sinuiju_2002,
+	SimpleItem	Sinuiju_2003,
+	SimpleItem	Sinuiju_2004,
+	SimpleItem	Sinuiju_2005,
+	SimpleItem	Sinuiju_2006,
+	SimpleItem	Sinuiju_2007,
+	SimpleItem	Sinuiju_2008,
+	SimpleItem	Sinuiju_2009,
+	SimpleItem	Sinuiju_200a,
+	SimpleItem	Sinuiju_200b,
+	SimpleItem	Sinuiju_200c,
+	SimpleItem	Sinuiju_200d,
+//DeadCode MS 29Jun99 	SimpleItem	Sinuiju_200e,
+	SimpleItem	Sinuiju_200f,
+	SimpleItem	Sinuiju_2010,
+	SimpleItem	Sinuiju_2011,
+	SimpleItem	Sinuiju_2012,
+	SimpleItem	Sinuiju_2013,
+	SimpleItem	Sinuiju_2200,
+	SimpleItem	Sinuiju_2201,
+	SimpleItem	Sinuiju_2202,
+	SimpleItem	Sinuiju_2203,
+	SimpleItem	Sinuiju_2204,
+	SimpleItem	Sinuiju_2205,
+	SimpleItem	Sinuiju_2206,
+	SimpleItem	Sinuiju_2207,
+	BattleField
+	{
+		FileName	FIL_1_Sinuiju=Sinuiju.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_NODE_sinuiju,
+		ItemGroup
+		{
+//DeadCode MS 29Jun99 				SimpleItem	Sinuiju_0406=
+//DeadCode MS 29Jun99 				{
+//DeadCode MS 29Jun99 					Posn
+//DeadCode MS 29Jun99 					{
+//DeadCode MS 29Jun99 						Abs
+//DeadCode MS 29Jun99 						{	X	45565952,
+//DeadCode MS 29Jun99 							Z	86124544
+//DeadCode MS 29Jun99 						}
+//DeadCode MS 29Jun99 					},
+//DeadCode MS 29Jun99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 29Jun99 					Shape		TWN2
+//DeadCode MS 29Jun99 				},
+				SimpleItem	Sinuiju_0404=
+				{
+					Posn
+					{
+						Abs
+						{	X	41435136,
+							Z	89170944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Sinuiju_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	41422848,
+							Z	89181184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	Sinuiju_0407=
+				{
+					Posn
+					{
+						Abs
+						{	X	41334272,
+							Z	89283328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Sinuiju_0408=
+				{
+					Posn
+					{
+						Abs
+						{	X	41494016,
+							Z	89283840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Sinuiju_0409=
+				{
+					Posn
+					{
+						Abs
+						{	X	40982528,
+							Z	89165824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Sinuiju_040a=
+				{
+					Posn
+					{
+						Abs
+						{	X	40951808,
+							Z	88989696
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Sinuiju_2002=
+				{
+					Posn
+					{
+						Abs
+						{	X	41232384,
+							Z	89409536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Sinuiju_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	41260689,
+							Z	89453569
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	Sinuiju_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	41190400,
+							Z	89314304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	41181184,
+							Z	89232384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	41211904,
+							Z	89169920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	Sinuiju_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	41205760,
+							Z	88936448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Sinuiju_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	41186304,
+							Z	89278464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_WhRdSinuiju,
+		ItemGroup
+		{
+				SimpleItem	Sinuiju_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	41614313,
+							Z	89519788
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	Sinuiju_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	41560382,
+							Z	89523885
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Sinuiju_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	41575400,
+							Z	89523201
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Sinuiju_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	41436818,
+							Z	89487703
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	Sinuiju_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	41387008,
+							Z	89453568
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Sinuiju_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	41482557,
+							Z	89436503
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Sinuiju_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	41577448,
+							Z	89576449
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Sinuiju_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	41447742,
+							Z	89576450
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Sinuiju_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	41599977,
+							Z	89521836
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	Sinuiju_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	41470269,
+							Z	89507500
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Sinuiju_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	41455250,
+							Z	89499991
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Sinuiju_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	41415655,
+							Z	89506818
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_NODE_AnTung,
+		ItemGroup
+		{
+				SimpleItem	Sinuiju_2000=
+				{
+					Posn
+					{
+						Abs
+						{	X	41441280,
+							Z	90009600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_2001=
+				{
+					Posn
+					{
+						Abs
+						{	X	41500672,
+							Z	89990144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_2003=
+				{
+					Posn
+					{
+						Abs
+						{	X	41050426,
+							Z	89608536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	41295505,
+							Z	89858394
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	41347072,
+							Z	89917440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	41263104,
+							Z	89916416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	41225216,
+							Z	89873408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+//DeadCode MS 29Jun99 				SimpleItem	Sinuiju_200e=
+//DeadCode MS 29Jun99 				{
+//DeadCode MS 29Jun99 					Posn
+//DeadCode MS 29Jun99 					{
+//DeadCode MS 29Jun99 						Abs
+//DeadCode MS 29Jun99 						{	X	40739840,
+//DeadCode MS 29Jun99 							Z	89244672
+//DeadCode MS 29Jun99 						}
+//DeadCode MS 29Jun99 					},
+//DeadCode MS 29Jun99 					UIDBand		AmberCivilianBAND,
+//DeadCode MS 29Jun99 					Shape		TWN1
+//DeadCode MS 29Jun99 				},
+				SimpleItem	Sinuiju_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	41004032,
+							Z	89519104
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	40934400,
+							Z	89413632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	40961024,
+							Z	89462784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	40897536,
+							Z	89449472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	Sinuiju_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	40867840,
+							Z	89326592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				}
+		}	}
+	};

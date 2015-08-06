@@ -1,0 +1,259 @@
+	SimpleItem	HWACHON_040c,
+	SimpleItem	HWACHON_040f,
+	SimpleItem	HWACHON_0412,
+	SimpleItem	HWACHON_0415,
+	SimpleItem	HWACHON_0417,
+	SimpleItem	HWACHON_041c,
+	SimpleItem	HWACHON_2004,
+	SimpleItem	HWACHON_2005,
+	SimpleItem	HWACHON_2006,
+	SimpleItem	HWACHON_2007,
+	SimpleItem	HWACHON_2008,
+	SimpleItem	HWACHON_2009,
+	SimpleItem	HWACHON_200a,
+	SimpleItem	HWACHON_200b,
+	SimpleItem	HWACHON_200c,
+	SimpleItem	HWACHON_200d,
+	SimpleItem	HWACHON_200e,
+	SimpleItem	HWACHON_200f,
+	SimpleItem	HWACHON_2010,
+	BattleField
+	{
+		FileName	FIL_1_HWACHON=HWACHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StHwachon,
+		ItemGroup
+		{
+				SimpleItem	HWACHON_040c=
+				{
+					Posn
+					{
+						Abs
+						{	X	69593088,
+							Z	67509248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	HWACHON_040f=
+				{
+					Posn
+					{
+						Abs
+						{	X	69615616,
+							Z	67509248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HWACHON_0412=
+				{
+					Posn
+					{
+						Abs
+						{	X	69556224,
+							Z	67476480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HWACHON_0415=
+				{
+					Posn
+					{
+						Abs
+						{	X	69685248,
+							Z	67442688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HWACHON_0417=
+				{
+					Posn
+					{
+						Abs
+						{	X	69671936,
+							Z	67487744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	HWACHON_041c=
+				{
+					Posn
+					{
+						Abs
+						{	X	69584896,
+							Z	67462144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HWACHON_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	69632000,
+							Z	67453952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HWACHON_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	69618688,
+							Z	67475456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HWACHON_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	69599232,
+							Z	67483648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HWACHON_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	69658624,
+							Z	67417088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HWACHON_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	69633024,
+							Z	67410944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HWACHON_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	69649408,
+							Z	67452928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HWACHON_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	69612544,
+							Z	67457024
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	HWACHON_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	69578752,
+							Z	67488768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	HWACHON_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	69639168,
+							Z	67473408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	HWACHON_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	69650432,
+							Z	67400704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	HWACHON_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	69644288,
+							Z	67436544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	HWACHON_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	69641216,
+							Z	67422208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HWACHON_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	69620736,
+							Z	67494912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				}
+		}	}
+	};

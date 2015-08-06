@@ -1,0 +1,127 @@
+//Filename       battle.src
+//System
+//Author         Mark 'I hate battlefields more than pain' Shaw
+//Date           Thu 30 Nov 1995
+//Description    Source data to generate battlefields
+//------------------------------------------------------------------------------
+{
+	#INCLUDE	BFIELDS\BATTLE.INC ,
+
+	#INCLUDE	bfields\paths.bfi,
+	
+
+	Level		120,
+//	#INCLUDE	BFIELDS\statics.bfi,
+	#INCLUDE	BFIELDS\INTROBF.INC,
+	#INCLUDE	BFIELDS\SCRAMBLE.INC,
+//TempCode MS 08Mar99 	#INCLUDE	BFIELDS\H2H.INC,
+//TempCode MS 08Mar99 	#INCLUDE	BFIELDS\EVENT.INC,
+
+
+
+	BattleField
+	{
+		FileName	SUBPLOT0=subplot0.BF
+	};
+
+	BattleField
+	{
+		FileName	SUBPLOT1=subplot1.BF
+	};
+
+	BattleField
+	{
+		FileName	SUBPLOT2=subplot2.BF
+	};
+
+	BattleField
+	{
+		FileName	SUBPLOT3=subplot3.BF
+	};
+
+	BattleField
+	{
+		FileName	MAINEVENT=mainevnt.BF
+	};
+
+	BattleField
+	{
+		FileName	BOMBEREVENT=BFTEMP_0.BF
+	};
+
+
+	BattleField
+	{
+		FileName	FIL_MainWorld=MainWld.BF
+//DeadCode MS 11May98 //		Douai,
+//DeadCode MS 11May98 		Albert,
+//DeadCode MS 11May98 		InnerCambraiTowns,
+//DeadCode MS 11May98 		TankArtillery,
+//DeadCode MS 11May98 		InnerCambraiMilitary,
+//DeadCode MS 11May98 		Cambrai,
+//DeadCode MS 11May98 		Arras,
+//DeadCode MS 11May98 		MidSomme,
+//DeadCode MS 11May98 //		NotRight,
+//DeadCode MS 11May98 		AfBOLLOX,
+//DeadCode MS 11May98 //		AfCambrai17,
+//DeadCode MS 11May98 		AfArras17,		 //
+//DeadCode MS 11May98 		AfMidSomme17,	 //
+//DeadCode MS 11May98 		AfBruay17,		 //
+//DeadCode MS 11May98 		AfDouai17,		 //
+//DeadCode MS 11May98 		AfAmiens17,
+//DeadCode MS 11May98 		AfDouai18,		   //
+//DeadCode MS 11May98 		AfCambrai18,	   //
+//DeadCode MS 11May98 //DeadCode RDH 08Dec96 		AfArras18,
+//DeadCode MS 11May98 		AfMidSomme18,	  //
+//DeadCode MS 11May98 		AfAmiens18,		 //
+//DeadCode MS 11May98 		AfNotRight,	   //
+//DeadCode MS 11May98 //		SOMar24Onwards,
+//DeadCode MS 11May98 //		SOMar27Onwards,
+//DeadCode MS 11May98 //		SOApr12Onwards,
+//DeadCode MS 11May98 //		SOBeforeMar24,
+//DeadCode MS 11May98 		SOBeforeMar26,
+//DeadCode MS 11May98 //		FCFrontArras_P1,
+//DeadCode MS 11May98 //		FCFrontCambraiAllied_P1,								//MS 25Nov96
+//DeadCode MS 11May98 //		FCFrontCambraiGerman_P1,								//MS 25Nov96
+//DeadCode MS 11May98 //		FCFrontStQuentinAllied_P1,								//MS 25Nov96
+//DeadCode MS 11May98 //		FCFrontStQuentinGerman_P1,								//MS 25Nov96
+//DeadCode MS 11May98 //		FCFrontSouth_P1,										//MS 25Nov96
+//DeadCode MS 11May98 		Specials
+	};
+
+
+//--------------------------------
+	BattleField
+	{
+		FileName	FIL_PaintShop = Paintshp.BF,
+		AirGroup
+		{
+			Route
+			{
+				WayPoint
+				{
+					Posn	{X 100000,Y FT_1000,Z 100000};
+					Action	wpatakeoffno
+				}
+			},
+			NumInWing	1,
+			NumInForm	1,
+//			DUTYMIGCAP,
+			Posn	{X 100000,Y MILES02,Z 100000};
+		   	AirItem
+			{
+				Attitude	{Heading ANGLES_0Deg,Pitch ANGLES_0Deg,Roll	ANGLES_0Deg},
+//DeadCode JIM 04Mar99 				PS_PAINTSHOP,
+				Scram_G0_Squad,
+				EMPTY,
+				NAT_RED,
+				AUTO_NOPPILOT
+			}
+
+		}
+	},
+	Level		139,FileName	..\src\userobj
+//#INCLUDE	usersrc\custom.bfi
+
+}	//end of File!
+}}}}}}}}}}

@@ -1,0 +1,51 @@
+	SimpleItem	BRIDGE32_046a,
+	SimpleItem	BRIDGE32_046e,
+	SimpleItem	BRIDGE32_0471,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE32=BRIDGE32.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlKapyong,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE32_046a=
+				{
+					Posn
+					{
+						Abs
+						{	X	67958784,
+							Z	64311808
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE32_046e=
+				{
+					Posn
+					{
+						Abs
+						{	X	68059136,
+							Z	64335872
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE32_0471=
+				{
+					Posn
+					{
+						Abs
+						{	X	67923456,
+							Z	64271360
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

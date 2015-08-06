@@ -1,0 +1,168 @@
+	SimpleItem	KUJANG_0411,
+	SimpleItem	KUJANG_0415,
+	SimpleItem	KUJANG_0418,
+	SimpleItem	KUJANG_041b,
+	SimpleItem	KUJANG_2004,
+	SimpleItem	KUJANG_2005,
+	SimpleItem	KUJANG_2006,
+	SimpleItem	KUJANG_2008,
+	SimpleItem	KUJANG_2009,
+	SimpleItem	KUJANG_200a,
+	SimpleItem	KUJANG_200c,
+	SimpleItem	KUJANG_200d,
+	BattleField
+	{
+		FileName	FIL_1_KUJANG=KUJANG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKujang,
+		ItemGroup
+		{
+				SimpleItem	KUJANG_0411=
+				{
+					Posn
+					{
+						Abs
+						{	X	55156736,
+							Z	86904832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	KUJANG_0415=
+				{
+					Posn
+					{
+						Abs
+						{	X	55178240,
+							Z	86909952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KUJANG_0418=
+				{
+					Posn
+					{
+						Abs
+						{	X	55179264,
+							Z	86965248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KUJANG_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	55093248,
+							Z	87025664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	KUJANG_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	55175168,
+							Z	86934528
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUJANG_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	55076864,
+							Z	87001088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KUJANG_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	55152640,
+							Z	86949888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	KUJANG_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	55129088,
+							Z	86901760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUJANG_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	55112704,
+							Z	87000064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUJANG_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	55100416,
+							Z	86938624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUJANG_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	55076864,
+							Z	86961152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KUJANG_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	55193600,
+							Z	86933504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				}
+		}	}
+	};

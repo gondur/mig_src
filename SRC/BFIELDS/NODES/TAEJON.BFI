@@ -1,0 +1,1200 @@
+	SimpleItem	TAEJON_1803,
+	SimpleItem	TAEJON_1804,
+	SimpleItem	TAEJON_1805,
+	SimpleItem	TAEJON_1806,
+	SimpleItem	TAEJON_1807,
+	SimpleItem	TAEJON_1808,
+	SimpleItem	TAEJON_1809,
+	SimpleItem	TAEJON_180a,
+	SimpleItem	TAEJON_180b,
+	SimpleItem	TAEJON_180c,
+	SimpleItem	TAEJON_2004,
+	SimpleItem	TAEJON_2005,
+	SimpleItem	TAEJON_2006,
+	SimpleItem	TAEJON_2007,
+	SimpleItem	TAEJON_2008,
+	SimpleItem	TAEJON_2009,
+	SimpleItem	TAEJON_200a,
+	SimpleItem	TAEJON_200b,
+	SimpleItem	TAEJON_200c,
+	SimpleItem	TAEJON_200d,
+	SimpleItem	TAEJON_200e,
+	SimpleItem	TAEJON_200f,
+	SimpleItem	TAEJON_2010,
+	SimpleItem	TAEJON_2011,
+	SimpleItem	TAEJON_2012,
+	SimpleItem	TAEJON_2013,
+	SimpleItem	TAEJON_2014,
+	SimpleItem	TAEJON_2015,
+	SimpleItem	TAEJON_2016,
+	SimpleItem	TAEJON_2017,
+	SimpleItem	TAEJON_2018,
+	SimpleItem	TAEJON_2019,
+	SimpleItem	TAEJON_201a,
+	SimpleItem	TAEJON_201b,
+	SimpleItem	TAEJON_201c,
+	SimpleItem	TAEJON_201d,
+	SimpleItem	TAEJON_201e,
+	SimpleItem	TAEJON_201f,
+	SimpleItem	TAEJON_2020,
+	SimpleItem	TAEJON_2021,
+	SimpleItem	TAEJON_2022,
+	SimpleItem	TAEJON_2023,
+	SimpleItem	TAEJON_2024,
+	SimpleItem	TAEJON_2025,
+	SimpleItem	TAEJON_2026,
+	SimpleItem	TAEJON_2027,
+	SimpleItem	TAEJON_2028,
+	SimpleItem	TAEJON_2029,
+	SimpleItem	TAEJON_202a,
+	SimpleItem	TAEJON_202b,
+	SimpleItem	TAEJON_202c,
+	SimpleItem	TAEJON_202d,
+	SimpleItem	TAEJON_202e,
+	SimpleItem	TAEJON_202f,
+	SimpleItem	TAEJON_2030,
+	SimpleItem	TAEJON_2031,
+	SimpleItem	TAEJON_2032,
+	SimpleItem	TAEJON_2033,
+	SimpleItem	TAEJON_2034,
+	SimpleItem	TAEJON_2035,
+	SimpleItem	TAEJON_2036,
+	SimpleItem	TAEJON_2037,
+	SimpleItem	TAEJON_2038,
+	SimpleItem	TAEJON_2039,
+	SimpleItem	TAEJON_203a,
+	SimpleItem	TAEJON_203b,
+	SimpleItem	TAEJON_203c,
+	SimpleItem	TAEJON_203d,
+	SimpleItem	TAEJON_203e,
+	SimpleItem	TAEJON_203f,
+	SimpleItem	TAEJON_2040,
+	SimpleItem	TAEJON_2041,
+	SimpleItem	TAEJON_2042,
+	SimpleItem	TAEJON_2043,
+	SimpleItem	TAEJON_2044,
+	SimpleItem	TAEJON_2045,
+	SimpleItem	TAEJON_2046,
+	SimpleItem	TAEJON_2047,
+	SimpleItem	TAEJON_2048,
+	SimpleItem	TAEJON_2049,
+	SimpleItem	TAEJON_2200,
+	SimpleItem	TAEJON_2201,
+	SimpleItem	TAEJON_2202,
+	SimpleItem	TAEJON_2203,
+	SimpleItem	TAEJON_2204,
+	SimpleItem	TAEJON_2205,
+	SimpleItem	TAEJON_2206,
+	SimpleItem	TAEJON_2207,
+	SimpleItem	TAEJON_2208,
+	SimpleItem	TAEJON_2209,
+	SimpleItem	TAEJON_220a,
+	BattleField
+	{
+		FileName	FIL_1_TAEJON=TAEJON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StTaejon,
+		ItemGroup
+		{
+			SimpleItem	TAEJON_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	66765824,
+						Z	47550464
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	TAEJON_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	66705408,
+						Z	47501312
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	TAEJON_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	67262464,
+						Z	47656960
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	TAEJON_2007=
+			{
+				Posn
+				{
+					Abs
+					{	X	67195904,
+						Z	47789056
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	TAEJON_2008=
+			{
+				Posn
+				{
+					Abs
+					{	X	67004416,
+						Z	47462400
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD3
+			},
+			SimpleItem	TAEJON_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	66761728,
+						Z	47416320
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	TAEJON_200a=
+			{
+				Posn
+				{
+					Abs
+					{	X	66789376,
+						Z	47609856
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST2
+			},
+			SimpleItem	TAEJON_200b=
+			{
+				Posn
+				{
+					Abs
+					{	X	66869248,
+						Z	47654912
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+			SimpleItem	TAEJON_200c=
+			{
+				Posn
+				{
+					Abs
+					{	X	67392512,
+						Z	47643648
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD2
+			},
+				SimpleItem	TAEJON_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	66978816,
+							Z	47689728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	TAEJON_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	66978816,
+							Z	47677440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	TAEJON_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	66978816,
+							Z	47710208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	TAEJON_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	67060736,
+							Z	47478784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TAEJON_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	67112960,
+							Z	47810560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	67306496,
+							Z	47766528
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	67217408,
+							Z	47728640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	67061760,
+							Z	47655936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	67146752,
+							Z	47681536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	67026944,
+							Z	47747072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	67123200,
+							Z	47867904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	67257344,
+							Z	47905792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	67298304,
+							Z	47848448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	67207168,
+							Z	47856640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	67313664,
+							Z	47690752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67302400,
+							Z	47539200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67127296,
+							Z	47505408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	67221504,
+							Z	47595520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	67052544,
+							Z	47560704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	66947072,
+							Z	47467520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	66853888,
+							Z	47471616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	66768896,
+							Z	47491072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	66678784,
+							Z	47550464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	66860032,
+							Z	47610880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	66744320,
+							Z	47744000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	66854912,
+							Z	47739904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	66932736,
+							Z	47745024
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	66933760,
+							Z	47666176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	66936832,
+							Z	47552512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	66856960,
+							Z	47553536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	66798592,
+							Z	47739904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67113984,
+							Z	47746048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	TAEJON_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	66976768,
+							Z	47601664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	TAEJON_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	67386368,
+							Z	47558656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	TAEJON_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	67449856,
+							Z	47562752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	67262464,
+							Z	47726592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TAEJON_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	67263488,
+							Z	47753216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TAEJON_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	67133440,
+							Z	47564800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	67165184,
+							Z	47563776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	67146752,
+							Z	47538176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	67233792,
+							Z	47543296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	67158016,
+							Z	47765504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	66931712,
+							Z	47704064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	66966528,
+							Z	47733760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	66963456,
+							Z	47692800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	66937856,
+							Z	47508480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TAEJON_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	66935808,
+							Z	47598592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_203c=
+				{
+					Posn
+					{
+						Abs
+						{	X	66627584,
+							Z	47598592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_203d=
+				{
+					Posn
+					{
+						Abs
+						{	X	66659328,
+							Z	47599616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TAEJON_203e=
+				{
+					Posn
+					{
+						Abs
+						{	X	66691072,
+							Z	47598592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_203f=
+				{
+					Posn
+					{
+						Abs
+						{	X	67354624,
+							Z	47762432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	TAEJON_2040=
+				{
+					Posn
+					{
+						Abs
+						{	X	67350528,
+							Z	47720448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TAEJON_2041=
+				{
+					Posn
+					{
+						Abs
+						{	X	67062784,
+							Z	47792128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TAEJON_2042=
+				{
+					Posn
+					{
+						Abs
+						{	X	67065856,
+							Z	47840256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TAEJON_2043=
+				{
+					Posn
+					{
+						Abs
+						{	X	67121152,
+							Z	47924224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TAEJON_2044=
+				{
+					Posn
+					{
+						Abs
+						{	X	67308544,
+							Z	47954944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	TAEJON_2045=
+				{
+					Posn
+					{
+						Abs
+						{	X	67375104,
+							Z	47876096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TAEJON_2046=
+				{
+					Posn
+					{
+						Abs
+						{	X	67188736,
+							Z	47925248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TAEJON_2047=
+				{
+					Posn
+					{
+						Abs
+						{	X	66722816,
+							Z	47561728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TAEJON_2048=
+				{
+					Posn
+					{
+						Abs
+						{	X	66829312,
+							Z	47507456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TAEJON_2049=
+				{
+					Posn
+					{
+						Abs
+						{	X	66803712,
+							Z	47489024
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TAEJON_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	66889728,
+							Z	47515648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_SdBlTaejon,
+		ItemGroup
+		{
+				SimpleItem	TAEJON_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	67004416,
+							Z	47694848
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TAEJON_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	67031040,
+							Z	47859712
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TAEJON_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	66939904,
+							Z	47620096
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TAEJON_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	67027968,
+							Z	47806464
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TAEJON_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	66952192,
+							Z	47819776
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TAEJON_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	67015680,
+							Z	47491072
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TAEJON_1809=
+				{
+					Posn
+					{
+						Abs
+						{	X	66963456,
+							Z	47506432
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TAEJON_180a=
+				{
+					Posn
+					{
+						Abs
+						{	X	66903040,
+							Z	47475712
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TAEJON_180b=
+				{
+					Posn
+					{
+						Abs
+						{	X	66806784,
+							Z	47453184
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TAEJON_180c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67004416,
+							Z	47626240
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TAEJON_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	66980864,
+							Z	47583232
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	TAEJON_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	66975744,
+							Z	47626240
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	TAEJON_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	66975744,
+							Z	47558656
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	TAEJON_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	66989056,
+							Z	47785984
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	TAEJON_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	66983936,
+							Z	47773696
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	TAEJON_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	66992128,
+							Z	47816704
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	TAEJON_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	66990080,
+							Z	47800320
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	TAEJON_2208=
+				{
+					Posn
+					{
+						Abs
+						{	X	66870272,
+							Z	47509504
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	TAEJON_2209=
+				{
+					Posn
+					{
+						Abs
+						{	X	66907136,
+							Z	47509504
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	TAEJON_220a=
+				{
+					Posn
+					{
+						Abs
+						{	X	66857984,
+							Z	47509504
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				}
+		}	}
+	};

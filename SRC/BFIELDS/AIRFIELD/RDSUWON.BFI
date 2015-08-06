@@ -1,0 +1,36 @@
+	BattleField
+	{
+		FileName	FIL_1_RDSUWON=RDSUWON.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_AfBlSuwon,
+			ItemGroup
+			{
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	63432536,
+							Z	57759044
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH12ML
+				},
+				SimpleItem
+				{
+					Posn
+					{
+						Abs
+						{	X	63300235,
+							Z	57939268
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH12ML
+				}
+			}
+		}
+	};

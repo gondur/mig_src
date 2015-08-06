@@ -1,0 +1,38 @@
+	SimpleItem	BRIDGE21_040f,
+	SimpleItem	BRIDGE21_0414,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE21=BRIDGE21.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRdInje,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE21_040f=
+				{
+					Posn
+					{
+						Abs
+						{	X	73546240,
+							Z	66716160
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE21_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	73464832,
+							Z	66665472
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

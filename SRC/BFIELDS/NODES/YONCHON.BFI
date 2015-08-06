@@ -1,0 +1,407 @@
+	SimpleItem	YONCHON_040c,
+	SimpleItem	YONCHON_040f,
+	SimpleItem	YONCHON_0411,
+	SimpleItem	YONCHON_0413,
+	SimpleItem	YONCHON_0415,
+	SimpleItem	YONCHON_0417,
+	SimpleItem	YONCHON_0419,
+	SimpleItem	YONCHON_041b,
+	SimpleItem	YONCHON_2004,
+	SimpleItem	YONCHON_2006,
+	SimpleItem	YONCHON_2007,
+	SimpleItem	YONCHON_2008,
+	SimpleItem	YONCHON_2009,
+	SimpleItem	YONCHON_200a,
+	SimpleItem	YONCHON_200b,
+	SimpleItem	YONCHON_200c,
+	SimpleItem	YONCHON_200d,
+	SimpleItem	YONCHON_200e,
+	SimpleItem	YONCHON_200f,
+	SimpleItem	YONCHON_2010,
+	SimpleItem	YONCHON_2011,
+	SimpleItem	YONCHON_2012,
+	SimpleItem	YONCHON_2013,
+	SimpleItem	YONCHON_2200,
+	SimpleItem	YONCHON_2201,
+	SimpleItem	YONCHON_2202,
+	SimpleItem	YONCHON_2203,
+	SimpleItem	YONCHON_2204,
+	SimpleItem	YONCHON_2205,
+	SimpleItem	YONCHON_2206,
+	BattleField
+	{
+		FileName	FIL_1_YONCHON=YONCHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StYonchon,
+		ItemGroup
+		{
+				SimpleItem	YONCHON_040c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64069632,
+							Z	67363840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	YONCHON_040f=
+				{
+					Posn
+					{
+						Abs
+						{	X	64120832,
+							Z	67336192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	YONCHON_0411=
+				{
+					Posn
+					{
+						Abs
+						{	X	64149504,
+							Z	67355648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	YONCHON_0413=
+				{
+					Posn
+					{
+						Abs
+						{	X	64168960,
+							Z	67414016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	YONCHON_0415=
+				{
+					Posn
+					{
+						Abs
+						{	X	64101376,
+							Z	67412992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	YONCHON_0417=
+				{
+					Posn
+					{
+						Abs
+						{	X	64029696,
+							Z	67263488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	YONCHON_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	63985664,
+							Z	67278848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	YONCHON_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63984640,
+							Z	67297280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	YONCHON_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	64003072,
+							Z	67311616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	YONCHON_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	64054272,
+							Z	67297280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YONCHON_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	64071680,
+							Z	67309568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YONCHON_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	64022528,
+							Z	67308544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YONCHON_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	64057344,
+							Z	67264512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YONCHON_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64090112,
+							Z	67292160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YONCHON_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	64071680,
+							Z	67283968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YONCHON_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64008192,
+							Z	67331072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YONCHON_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	64098304,
+							Z	67330048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	YONCHON_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	64035840,
+							Z	67326976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	YONCHON_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	64007168,
+							Z	67288064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	YONCHON_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	64040960,
+							Z	67281920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	YONCHON_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	64049152,
+							Z	67343360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	YONCHON_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	64071680,
+							Z	67331072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	YONCHON_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	64104448,
+							Z	67310592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				}
+	>	>,
+	ItemGroup
+	{	Target	UID_StYonchon,
+		ItemGroup
+		{
+				SimpleItem	YONCHON_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	64125952,
+							Z	67378176
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	YONCHON_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	64090112,
+							Z	67371008
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	YONCHON_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	64108544,
+							Z	67362816
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	YONCHON_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	64089088,
+							Z	67391488
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	YONCHON_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	64144384,
+							Z	67378176
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	YONCHON_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	64122880,
+							Z	67357696
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	YONCHON_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	64107520,
+							Z	67384320
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				}
+		}	}
+	};

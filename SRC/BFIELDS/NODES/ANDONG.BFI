@@ -1,0 +1,87 @@
+	BattleField
+	{
+		FileName	FIL_1_Andong=Andong.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_StAndong,
+			ItemGroup
+			{
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StAndong},
+						Rel	{X METRES300
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StAndong},
+						Rel	{Z -METRES400	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StAndong},
+						Rel	{Z METRES400	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StAndong},
+						Rel	{X -METRES250,
+							 Z METRES250	 
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2A
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StAndong},
+						Rel	{X -METRES500,
+							 Z METRES500
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs	{UID_StAndong},
+						Rel	{X -METRES500
+							}
+						
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				}
+			}
+		}
+	};
+

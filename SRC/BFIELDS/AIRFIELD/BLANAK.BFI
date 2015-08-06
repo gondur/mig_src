@@ -1,0 +1,272 @@
+	WayPoint	blanak_0100,
+	WayPoint	blanak_0101,
+	WayPoint	blanak_0102,
+	SimpleItem	blanak_1703,
+	SimpleItem	blanak_1704,
+	SimpleItem	blanak_1705,
+	SimpleItem	blanak_2880,
+	GroundItem	blanak_2f60,
+	SimpleItem	blanak_2aff,
+	SimpleItem	blanak_2afe,
+	SimpleItem	blanak_2afd,
+	SimpleItem	blanak_2afc,
+	SimpleItem	blanak_2afb,
+	SimpleItem	blanak_2afa,
+	SimpleItem	blanak_2af9,
+	SimpleItem	blanak_2af8,
+	SimpleItem	blanak_2af7,
+	SimpleItem	blanak_2af6,
+	BattleField
+	{
+		FileName	FIL_1_BLANAK=blanak.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdAnak,
+		ItemGroup
+		{
+				SimpleItem	blanak_2aff=
+				{
+					Posn
+					{
+						Abs
+						{	X	50344538,
+							Z	71688774
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI2,
+					Shape		WINDSC
+				},
+				SimpleItem	blanak_2afe=
+				{
+					Posn
+					{
+						Abs
+						{	X	50317095,
+							Z	71647813
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI1,
+					Shape		WINDSC
+				},
+				SimpleItem	blanak_2afd=
+				{
+					Posn
+					{
+						Abs
+						{	X	50303782,
+							Z	71628562
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXI0,
+					Shape		WINDSC
+				},
+				SimpleItem	blanak_2afc=
+				{
+					Posn
+					{
+						Abs
+						{	X	50288218,
+							Z	71630815
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIE,
+					Shape		WINDSC
+				},
+				SimpleItem	blanak_2afb=
+				{
+					Posn
+					{
+						Abs
+						{	X	50286989,
+							Z	71635525
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_TAXIL,
+					Shape		WINDSC
+				},
+				SimpleItem	blanak_2afa=
+				{
+					Posn
+					{
+						Abs
+						{	X	50356450,
+							Z	71765497
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK0,
+					Shape		WINDSC
+				},
+				SimpleItem	blanak_2af9=
+				{
+					Posn
+					{
+						Abs
+						{	X	50334167,
+							Z	71727486
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARK1,
+					Shape		WINDSC
+				},
+				SimpleItem	blanak_2af8=
+				{
+					Posn
+					{
+						Abs
+						{	X	50332856,
+							Z	71724209
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKL,
+					Shape		WINDSC
+				},
+				SimpleItem	blanak_2af7=
+				{
+					Posn
+					{
+						Abs
+						{	X	50331218,
+							Z	71721915
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_PARKW,
+					Shape		WINDSC
+				},
+				SimpleItem	blanak_2af6=
+				{
+					Posn
+					{
+						Abs
+						{	X	50247463,
+							Z	71577362
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					SetUID	UID_LANDING,
+					Shape		WINDSC
+				},
+				SimpleItem	blanak_1703=
+				{
+					Posn
+					{
+						Abs
+						{	X	50340442,
+							Z	71784620
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		SAAA
+				},
+				SimpleItem	blanak_1704=
+				{
+					Posn
+					{
+						Abs
+						{	X	50278182,
+							Z	71692050
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		SAAA
+				},
+				SimpleItem	blanak_1705=
+				{
+					Posn
+					{
+						Abs
+						{	X	50306035,
+							Z	71589240
+						}
+					},
+					UIDBand		BlueAAASiteBAND,
+					Shape		SAAA
+				},
+				SimpleItem	blanak_2880=
+				{
+					Posn
+					{
+						Abs
+						{	X	64213504,
+							Z	56454144
+						}
+					},
+					UIDBand		AmberBattleNodeBAND,
+					Shape		WINDSC
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	50349248,
+						Z	71764755
+					}
+				},
+				Route
+				{
+					WayPoint	blanak_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	50267123,
+								Z	71636754
+							}
+						},
+						Vel	126,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	blanak_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	50272858,
+								Z	71632453
+							}
+						},
+						Vel	126,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	blanak_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	50328154,
+								Z	71717035
+							}
+						},
+						Vel	126,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	blanak_2f60=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_BLUE,
+					Shape
+						{List
+							JEEP2,
+							UNTRCK,
+							UNTRCK
+						},
+					Vel	140
+			}	}	}
+	};

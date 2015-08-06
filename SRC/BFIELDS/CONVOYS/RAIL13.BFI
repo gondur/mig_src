@@ -1,0 +1,499 @@
+	WayPoint	Rail13_0100,
+	WayPoint	Rail13_0101,
+	WayPoint	Rail13_0102,
+	WayPoint	Rail13_0103,
+	WayPoint	Rail13_0104,
+	WayPoint	Rail13_0105,
+	WayPoint	Rail13_0106,
+	WayPoint	Rail13_0107,
+	WayPoint	Rail13_0108,
+	WayPoint	Rail13_0109,
+	WayPoint	Rail13_010a,
+	WayPoint	Rail13_010b,
+	WayPoint	Rail13_010c,
+	WayPoint	Rail13_010d,
+	WayPoint	Rail13_010e,
+	WayPoint	Rail13_010f,
+	WayPoint	Rail13_0110,
+	WayPoint	Rail13_0111,
+	WayPoint	Rail13_0112,
+	WayPoint	Rail13_0113,
+	WayPoint	Rail13_0114,
+	WayPoint	Rail13_0115,
+	WayPoint	Rail13_0116,
+	WayPoint	Rail13_0117,
+	WayPoint	Rail13_0118,
+	WayPoint	Rail13_0119,
+	WayPoint	Rail13_011a,
+	WayPoint	Rail13_011b,
+	WayPoint	Rail13_011c,
+	SimpleItem	Rail13_1505,
+	SimpleItem	Rail13_1506,
+	SimpleItem	Rail13_1507,
+	SimpleItem	Rail13_1508,
+	GroundItem	Rail13_2b00,
+	GroundItem	Rail13_2b01,
+	BattleField
+	{
+		FileName	FIL_1_RAIL13=Rail13.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_RAIL_Munsan2Seoul,
+		ItemGroup
+		{
+				SimpleItem	Rail13_1505=
+				{
+					Posn
+					{
+						Abs
+						{	X	61395968,
+							Z	63663616
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CHLBAA
+				},
+				SimpleItem	Rail13_1506=
+				{
+					Posn
+					{
+						Abs
+						{	X	61359616,
+							Z	63346688
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CHLBAA
+				},
+				SimpleItem	Rail13_1507=
+				{
+					Posn
+					{
+						Abs
+						{	X	61268992,
+							Z	63043584
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CHLBAA
+				},
+				SimpleItem	Rail13_1508=
+				{
+					Posn
+					{
+						Abs
+						{	X	61283840,
+							Z	62787072
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CHLBAA
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	61358080,
+						Z	63406080
+					}
+				},
+				Route
+				{
+					WayPoint	Rail13_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	61356544,
+								Z	63369728
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	61351936,
+								Z	63331328
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	61347840,
+								Z	63324160
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	61346304,
+								Z	63308288
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	61342208,
+								Z	63303680
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	61335040,
+								Z	63293440
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0106=
+					{
+						Posn
+						{
+							Abs
+							{	X	61329408,
+								Z	63281152
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0107=
+					{
+						Posn
+						{
+							Abs
+							{	X	61319168,
+								Z	63253504
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0108=
+					{
+						Posn
+						{
+							Abs
+							{	X	61312000,
+								Z	63235584
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0109=
+					{
+						Posn
+						{
+							Abs
+							{	X	61297664,
+								Z	63206400
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_010a=
+					{
+						Posn
+						{
+							Abs
+							{	X	61295616,
+								Z	63194624
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_010b=
+					{
+						Posn
+						{
+							Abs
+							{	X	61287936,
+								Z	63179776
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_010c=
+					{
+						Posn
+						{
+							Abs
+							{	X	61288960,
+								Z	63176192
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_010d=
+					{
+						Posn
+						{
+							Abs
+							{	X	61280256,
+								Z	63159808
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		-2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	Rail13_2b00=
+				{
+					RedTrainBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	{List
+						TPINC,THAUL,THAUL,THAUL,
+						THAUL,THAUL,THAUL,THAUL,
+						SUPPLY,SUPPLY,SUPPLY,SUPPLY,
+						SUPPLY,SUPPLY,SUPPLY,SUPPLY
+						},
+					Vel	84
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	61325312,
+						Z	62709760
+					}
+				},
+				Route
+				{
+					WayPoint	Rail13_010e=
+					{
+						Posn
+						{
+							Abs
+							{	X	61359104,
+								Z	62695424
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_010f=
+					{
+						Posn
+						{
+							Abs
+							{	X	61385728,
+								Z	62676992
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0110=
+					{
+						Posn
+						{
+							Abs
+							{	X	61411328,
+								Z	62666752
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0111=
+					{
+						Posn
+						{
+							Abs
+							{	X	61450240,
+								Z	62654464
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0112=
+					{
+						Posn
+						{
+							Abs
+							{	X	61472768,
+								Z	62636032
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0113=
+					{
+						Posn
+						{
+							Abs
+							{	X	61501440,
+								Z	62603264
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0114=
+					{
+						Posn
+						{
+							Abs
+							{	X	61520896,
+								Z	62564352
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0115=
+					{
+						Posn
+						{
+							Abs
+							{	X	61532160,
+								Z	62547968
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0116=
+					{
+						Posn
+						{
+							Abs
+							{	X	61553664,
+								Z	62486528
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0117=
+					{
+						Posn
+						{
+							Abs
+							{	X	61561856,
+								Z	62469120
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0118=
+					{
+						Posn
+						{
+							Abs
+							{	X	61575168,
+								Z	62447616
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_0119=
+					{
+						Posn
+						{
+							Abs
+							{	X	61586432,
+								Z	62413824
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_011a=
+					{
+						Posn
+						{
+							Abs
+							{	X	61607936,
+								Z	62364672
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_011b=
+					{
+						Posn
+						{
+							Abs
+							{	X	61616128,
+								Z	62348288
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	Rail13_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	61616128,
+								Z	62336000
+							}
+						},
+						Vel	84,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		-2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	Rail13_2b01=
+				{
+					RedTrainBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	{List
+						TPINC,THAUL,THAUL,THAUL,
+						THAUL,THAUL,THAUL,THAUL,
+						SUPPLY,SUPPLY,SUPPLY,SUPPLY,
+						SUPPLY,SUPPLY,SUPPLY,SUPPLY
+						},
+					Vel	84
+			}	}	}
+	};

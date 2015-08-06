@@ -1,0 +1,220 @@
+	SimpleItem	KURI_0403,
+	SimpleItem	KURI_0404,
+	SimpleItem	KURI_0405,
+	SimpleItem	KURI_0406,
+	SimpleItem	KURI_2004,
+	SimpleItem	KURI_2005,
+	SimpleItem	KURI_2006,
+	SimpleItem	KURI_2007,
+	SimpleItem	KURI_2008,
+	SimpleItem	KURI_2009,
+	SimpleItem	KURI_200a,
+	SimpleItem	KURI_200b,
+	SimpleItem	KURI_200c,
+	SimpleItem	KURI_200d,
+	SimpleItem	KURI_200e,
+	SimpleItem	KURI_200f,
+	BattleField
+	{
+		FileName	FIL_1_KURI=KURI.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKuri,
+		ItemGroup
+		{
+				SimpleItem	KURI_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	64969728,
+							Z	62305280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KURI_0404=
+				{
+					Posn
+					{
+						Abs
+						{	X	64961536,
+							Z	62281728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KURI_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	65005568,
+							Z	62286848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KURI_0406=
+				{
+					Posn
+					{
+						Abs
+						{	X	64937984,
+							Z	62287872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KURI_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	64951296,
+							Z	62302208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KURI_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	64923648,
+							Z	62322688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KURI_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	64985088,
+							Z	62287872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KURI_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	64976896,
+							Z	62270464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KURI_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	64923648,
+							Z	62303232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KURI_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	65035264,
+							Z	62282752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KURI_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	65017856,
+							Z	62272512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KURI_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	64965632,
+							Z	62327808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	KURI_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64939008,
+							Z	62324736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	KURI_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	64973824,
+							Z	62327808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	KURI_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	64997376,
+							Z	62269440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KURI_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	64955392,
+							Z	62235648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				}
+		}	}
+	};

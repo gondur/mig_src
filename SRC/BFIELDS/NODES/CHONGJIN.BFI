@@ -1,0 +1,1109 @@
+	SimpleItem	CHONGJIN_0403,
+	SimpleItem	CHONGJIN_0404,
+	SimpleItem	CHONGJIN_0405,
+	SimpleItem	CHONGJIN_0406,
+	SimpleItem	CHONGJIN_0407,
+	SimpleItem	CHONGJIN_0408,
+	SimpleItem	CHONGJIN_0409,
+	SimpleItem	CHONGJIN_1803,
+	SimpleItem	CHONGJIN_1804,
+	SimpleItem	CHONGJIN_1805,
+	SimpleItem	CHONGJIN_1806,
+	SimpleItem	CHONGJIN_1807,
+	SimpleItem	CHONGJIN_1808,
+	SimpleItem	CHONGJIN_1809,
+	SimpleItem	CHONGJIN_180a,
+	SimpleItem	CHONGJIN_180b,
+	SimpleItem	CHONGJIN_180c,
+	SimpleItem	CHONGJIN_180d,
+	SimpleItem	CHONGJIN_180e,
+	SimpleItem	CHONGJIN_180f,
+	SimpleItem	CHONGJIN_1810,
+	SimpleItem	CHONGJIN_2004,
+	SimpleItem	CHONGJIN_2005,
+	SimpleItem	CHONGJIN_2006,
+	SimpleItem	CHONGJIN_2007,
+	SimpleItem	CHONGJIN_2008,
+	SimpleItem	CHONGJIN_2009,
+	SimpleItem	CHONGJIN_200a,
+	SimpleItem	CHONGJIN_200b,
+	SimpleItem	CHONGJIN_200c,
+	SimpleItem	CHONGJIN_200d,
+	SimpleItem	CHONGJIN_200e,
+	SimpleItem	CHONGJIN_200f,
+	SimpleItem	CHONGJIN_2010,
+	SimpleItem	CHONGJIN_2011,
+	SimpleItem	CHONGJIN_2012,
+	SimpleItem	CHONGJIN_2013,
+	SimpleItem	CHONGJIN_2014,
+	SimpleItem	CHONGJIN_2015,
+	SimpleItem	CHONGJIN_2016,
+	SimpleItem	CHONGJIN_2017,
+	SimpleItem	CHONGJIN_2018,
+	SimpleItem	CHONGJIN_2019,
+	SimpleItem	CHONGJIN_201a,
+	SimpleItem	CHONGJIN_201b,
+	SimpleItem	CHONGJIN_201c,
+	SimpleItem	CHONGJIN_201d,
+	SimpleItem	CHONGJIN_201e,
+	SimpleItem	CHONGJIN_201f,
+	SimpleItem	CHONGJIN_2020,
+	SimpleItem	CHONGJIN_2021,
+	SimpleItem	CHONGJIN_2022,
+	SimpleItem	CHONGJIN_2023,
+	SimpleItem	CHONGJIN_2024,
+	SimpleItem	CHONGJIN_2025,
+	SimpleItem	CHONGJIN_2026,
+	SimpleItem	CHONGJIN_2027,
+	SimpleItem	CHONGJIN_2028,
+	SimpleItem	CHONGJIN_2029,
+	SimpleItem	CHONGJIN_202a,
+	SimpleItem	CHONGJIN_202b,
+	SimpleItem	CHONGJIN_202c,
+	SimpleItem	CHONGJIN_202d,
+	SimpleItem	CHONGJIN_202e,
+	SimpleItem	CHONGJIN_202f,
+	SimpleItem	CHONGJIN_2030,
+	SimpleItem	CHONGJIN_2031,
+	SimpleItem	CHONGJIN_2032,
+	SimpleItem	CHONGJIN_2033,
+	SimpleItem	CHONGJIN_2034,
+	SimpleItem	CHONGJIN_2035,
+	SimpleItem	CHONGJIN_2036,
+	SimpleItem	CHONGJIN_2037,
+	SimpleItem	CHONGJIN_2038,
+	SimpleItem	CHONGJIN_2039,
+	SimpleItem	CHONGJIN_203a,
+	SimpleItem	CHONGJIN_203b,
+	SimpleItem	CHONGJIN_203c,
+	SimpleItem	CHONGJIN_203d,
+	SimpleItem	CHONGJIN_2200,
+	SimpleItem	CHONGJIN_2201,
+	SimpleItem	CHONGJIN_2202,
+	SimpleItem	CHONGJIN_2203,
+	SimpleItem	CHONGJIN_2204,
+	BattleField
+	{
+		FileName	FIL_1_CHONGJIN=CHONGJIN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StChongjin,
+		ItemGroup
+		{
+				SimpleItem	CHONGJIN_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	86192128,
+							Z	108070912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHONGJIN_0404=
+				{
+					Posn
+					{
+						Abs
+						{	X	86228992,
+							Z	108077056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHONGJIN_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	86247424,
+							Z	108079104
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHONGJIN_0406=
+				{
+					Posn
+					{
+						Abs
+						{	X	86178816,
+							Z	107950080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHONGJIN_0407=
+				{
+					Posn
+					{
+						Abs
+						{	X	86376448,
+							Z	108235776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHONGJIN_0408=
+				{
+					Posn
+					{
+						Abs
+						{	X	86368256,
+							Z	108209152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHONGJIN_0409=
+				{
+					Posn
+					{
+						Abs
+						{	X	86282240,
+							Z	108073984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	CHONGJIN_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	86319104,
+							Z	108146688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	86448128,
+							Z	108152832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	86285312,
+							Z	108151808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHONGJIN_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	86286336,
+							Z	108130304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHONGJIN_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	86334464,
+							Z	108128256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHONGJIN_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	86199296,
+							Z	108047360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHONGJIN_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	86211584,
+							Z	108076032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHONGJIN_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	86364160,
+							Z	108059648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHONGJIN_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	86312960,
+							Z	108057600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHONGJIN_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	86281216,
+							Z	108057600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHONGJIN_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	86312960,
+							Z	108077056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHONGJIN_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	86213632,
+							Z	108124160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHONGJIN_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	86227968,
+							Z	108156928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHONGJIN_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	86163456,
+							Z	107995136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	CHONGJIN_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	86222848,
+							Z	107941888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	CHONGJIN_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	86354944,
+							Z	108017664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHONGJIN_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	86396928,
+							Z	108157952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHONGJIN_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	86397952,
+							Z	108145664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHONGJIN_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	86447104,
+							Z	108186624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHONGJIN_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	86466560,
+							Z	108174336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHONGJIN_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	86504448,
+							Z	108108800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHONGJIN_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	86490112,
+							Z	108108800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHONGJIN_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	86519808,
+							Z	108108800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHONGJIN_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	86337536,
+							Z	108075008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	CHONGJIN_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	86287360,
+							Z	108178432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	86279168,
+							Z	108221440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	86142976,
+							Z	108144640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	86187008,
+							Z	108137472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	86336512,
+							Z	108224512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	86171648,
+							Z	108091392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	86290432,
+							Z	108098560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	86337536,
+							Z	108183552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PUFF
+				},
+				SimpleItem	CHONGJIN_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	86225920,
+							Z	108095488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	86492160,
+							Z	108185600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	86497280,
+							Z	108142592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	86538240,
+							Z	108165120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	86542336,
+							Z	108091392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	86246400,
+							Z	108195840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PUFF
+				},
+				SimpleItem	CHONGJIN_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	86206464,
+							Z	108174336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	86305792,
+							Z	108006400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	86248448,
+							Z	107991040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	86348800,
+							Z	107942912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	CHONGJIN_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	86328320,
+							Z	107915264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	CHONGJIN_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	86344704,
+							Z	108046336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	86272000,
+							Z	108026880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PUFF
+				},
+				SimpleItem	CHONGJIN_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	86245376,
+							Z	108137472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	86392832,
+							Z	108067840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PUFF
+				},
+				SimpleItem	CHONGJIN_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	86345728,
+							Z	108098560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	86432768,
+							Z	108215296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	86435840,
+							Z	108084224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	86489088,
+							Z	108087296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	CHONGJIN_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	86461440,
+							Z	108047360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	CHONGJIN_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	86487040,
+							Z	108058624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	CHONGJIN_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	86515712,
+							Z	108064768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	CHONGJIN_203c=
+				{
+					Posn
+					{
+						Abs
+						{	X	86476800,
+							Z	108048384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	CHONGJIN_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	86396928,
+							Z	107940864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_MyRlChongjin,
+		ItemGroup
+		{
+				SimpleItem	CHONGJIN_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	86384640,
+							Z	108264448
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_203d=
+				{
+					Posn
+					{
+						Abs
+						{	X	86503424,
+							Z	108056576
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		FOODS
+				},
+				SimpleItem	CHONGJIN_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	86526976,
+							Z	108026880
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		CARGO
+				},
+				SimpleItem	CHONGJIN_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	86363136,
+							Z	108126208
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	86413312,
+							Z	108110848
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	86429696,
+							Z	108125184
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	86423552,
+							Z	108158976
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	86360064,
+							Z	108176384
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_1809=
+				{
+					Posn
+					{
+						Abs
+						{	X	86170624,
+							Z	108033024
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_180a=
+				{
+					Posn
+					{
+						Abs
+						{	X	86132736,
+							Z	108042240
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_180b=
+				{
+					Posn
+					{
+						Abs
+						{	X	86340608,
+							Z	108281856
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_180c=
+				{
+					Posn
+					{
+						Abs
+						{	X	86368256,
+							Z	108089344
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_180d=
+				{
+					Posn
+					{
+						Abs
+						{	X	86404096,
+							Z	108012544
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_180e=
+				{
+					Posn
+					{
+						Abs
+						{	X	86398976,
+							Z	108229632
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_180f=
+				{
+					Posn
+					{
+						Abs
+						{	X	86410240,
+							Z	108193792
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_1810=
+				{
+					Posn
+					{
+						Abs
+						{	X	86415360,
+							Z	108072960
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	CHONGJIN_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	86378496,
+							Z	108181504
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	CHONGJIN_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	86382592,
+							Z	108158976
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	CHONGJIN_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	86395904,
+							Z	108181504
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	CHONGJIN_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	86388736,
+							Z	108207104
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	CHONGJIN_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	86390784,
+							Z	108095488
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		LAREA
+				}
+		}	}
+	};

@@ -1,0 +1,38 @@
+	SimpleItem	BRIDGE26_0442,
+	SimpleItem	BRIDGE26_0446,
+	BattleField
+	{
+		FileName	FIL_1_BRIDGE26=BRIDGE26.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_BrRlKowon,
+		ItemGroup
+		{
+				SimpleItem	BRIDGE26_0442=
+				{
+					Posn
+					{
+						Abs
+						{	X	65500160,
+							Z	81453056
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				},
+				SimpleItem	BRIDGE26_0446=
+				{
+					Posn
+					{
+						Abs
+						{	X	65477632,
+							Z	81507840
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		CH37ML
+				}
+		}	}
+	};

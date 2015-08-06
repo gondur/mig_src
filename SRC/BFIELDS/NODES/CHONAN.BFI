@@ -1,0 +1,728 @@
+	SimpleItem	CHONAN_0407,
+	SimpleItem	CHONAN_040a,
+	SimpleItem	CHONAN_040d,
+	SimpleItem	CHONAN_0411,
+	SimpleItem	CHONAN_0413,
+	SimpleItem	CHONAN_0415,
+	SimpleItem	CHONAN_041c,
+	SimpleItem	CHONAN_041e,
+	SimpleItem	CHONAN_2004,
+	SimpleItem	CHONAN_2005,
+	SimpleItem	CHONAN_2006,
+	SimpleItem	CHONAN_2007,
+	SimpleItem	CHONAN_2008,
+	SimpleItem	CHONAN_2009,
+	SimpleItem	CHONAN_200a,
+	SimpleItem	CHONAN_200b,
+	SimpleItem	CHONAN_200c,
+	SimpleItem	CHONAN_200d,
+	SimpleItem	CHONAN_200e,
+	SimpleItem	CHONAN_200f,
+	SimpleItem	CHONAN_2010,
+	SimpleItem	CHONAN_2011,
+	SimpleItem	CHONAN_2012,
+	SimpleItem	CHONAN_2013,
+	SimpleItem	CHONAN_2014,
+	SimpleItem	CHONAN_2015,
+	SimpleItem	CHONAN_2016,
+	SimpleItem	CHONAN_2017,
+	SimpleItem	CHONAN_2018,
+	SimpleItem	CHONAN_2019,
+//TempCode RC 28Apr99 	SimpleItem	CHONAN_201a,
+//TempCode RC 28Apr99 	SimpleItem	CHONAN_201b,
+	SimpleItem	CHONAN_201c,
+	SimpleItem	CHONAN_201d,
+	SimpleItem	CHONAN_201e,
+	SimpleItem	CHONAN_201f,
+	SimpleItem	CHONAN_2020,
+	SimpleItem	CHONAN_2021,
+	SimpleItem	CHONAN_2022,
+	SimpleItem	CHONAN_2023,
+	SimpleItem	CHONAN_2024,
+	SimpleItem	CHONAN_2025,
+	SimpleItem	CHONAN_2026,
+	SimpleItem	CHONAN_2027,
+	SimpleItem	CHONAN_2028,
+	SimpleItem	CHONAN_2029,
+	SimpleItem	CHONAN_202a,
+	SimpleItem	CHONAN_202b,
+	SimpleItem	CHONAN_202c,
+	SimpleItem	CHONAN_202d,
+	SimpleItem	CHONAN_202e,
+	SimpleItem	CHONAN_202f,
+	SimpleItem	CHONAN_2030,
+	SimpleItem	CHONAN_2031,
+	SimpleItem	CHONAN_2032,
+	BattleField
+	{
+		FileName	FIL_1_CHONAN=CHONAN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StChonan,
+		ItemGroup
+		{
+			SimpleItem	CHONAN_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	64816128,
+						Z	52668416
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN4
+			},
+			SimpleItem	CHONAN_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	64852992,
+						Z	52758528
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+	
+				SimpleItem	CHONAN_0407=
+				{
+					Posn
+					{
+						Abs
+						{	X	64769024,
+							Z	52932608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	CHONAN_040a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64815104,
+							Z	53145600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	CHONAN_040d=
+				{
+					Posn
+					{
+						Abs
+						{	X	64660480,
+							Z	52922368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHONAN_0411=
+				{
+					Posn
+					{
+						Abs
+						{	X	64714752,
+							Z	52898816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHONAN_0413=
+				{
+					Posn
+					{
+						Abs
+						{	X	64748544,
+							Z	52857856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHONAN_0415=
+				{
+					Posn
+					{
+						Abs
+						{	X	64754688,
+							Z	52820992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHONAN_041c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64832512,
+							Z	52727808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHONAN_041e=
+				{
+					Posn
+					{
+						Abs
+						{	X	64830464,
+							Z	52710400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	CHONAN_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	64863232,
+							Z	52704256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONAN_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	64626688,
+							Z	52982784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHONAN_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	64655360,
+							Z	52791296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONAN_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	64675840,
+							Z	52799488
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONAN_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64635904,
+							Z	52939776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONAN_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	64815104,
+							Z	52827136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONAN_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64834560,
+							Z	52805632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONAN_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	64826368,
+							Z	52782080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	CHONAN_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	64631808,
+							Z	52923392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	CHONAN_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	64691200,
+							Z	52816896
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	CHONAN_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	64618496,
+							Z	52942848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONAN_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	64619520,
+							Z	53010432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHONAN_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	64709632,
+							Z	53124096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONAN_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	64728064,
+							Z	53112832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHONAN_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	64721920,
+							Z	53090304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHONAN_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	64744448,
+							Z	53089280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	CHONAN_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	64745472,
+							Z	53130240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHONAN_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	64759808,
+							Z	53107712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONAN_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	64774144,
+							Z	53085184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHONAN_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	64651264,
+							Z	53045248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI05
+				},
+//TempCode RC 28Apr99 				SimpleItem	CHONAN_201a=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	64646144,
+//TempCode RC 28Apr99 							Z	53025792
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberCivilianBAND,
+//TempCode RC 28Apr99 					Shape		SUPPLY
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				SimpleItem	CHONAN_201b=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	64658432,
+//TempCode RC 28Apr99 							Z	52985856
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberCivilianBAND,
+//TempCode RC 28Apr99 					Shape		SUPPLY
+//TempCode RC 28Apr99 				},
+				SimpleItem	CHONAN_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64668672,
+							Z	53036032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	CHONAN_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	64691200,
+							Z	53087232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONAN_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	64788480,
+							Z	53124096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	CHONAN_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	64707584,
+							Z	52989952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONAN_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	64786432,
+							Z	52760576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	CHONAN_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	64808960,
+							Z	53184512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONAN_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	64788480,
+							Z	52860928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONAN_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	64827392,
+							Z	52624384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONAN_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	64860160,
+							Z	52648960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONAN_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	64676864,
+							Z	52950016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONAN_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	64756736,
+							Z	53002240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONAN_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	64673792,
+							Z	52847616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONAN_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	64666624,
+							Z	53004288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWOOD
+				},
+				SimpleItem	CHONAN_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	64667648,
+							Z	53020672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWOOD
+				},
+				SimpleItem	CHONAN_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64797696,
+							Z	52714496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONAN_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	64795648,
+							Z	52806656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONAN_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64755712,
+							Z	52897792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONAN_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	64683008,
+							Z	52903936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONAN_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	64766976,
+							Z	53160960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONAN_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	64836608,
+							Z	53219328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONAN_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	64760832,
+							Z	53045248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONAN_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	64713728,
+							Z	53045248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	CHONAN_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	64627712,
+							Z	53047296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				}
+		}	}
+	};

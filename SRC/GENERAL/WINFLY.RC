@@ -1,0 +1,5 @@
+#include <windows.h>
+
+MYICON32	ICON	"c:\\fly\\src\\general\\wfly.ico"
+MYICON16	ICON	"c:\\fly\\src\\general\\wfly16.ico"
+

@@ -1,0 +1,1005 @@
+	SimpleItem	TANCHON_0403,
+	SimpleItem	TANCHON_1803,
+	SimpleItem	TANCHON_1804,
+	SimpleItem	TANCHON_1805,
+	SimpleItem	TANCHON_1806,
+	SimpleItem	TANCHON_1807,
+	SimpleItem	TANCHON_1808,
+	SimpleItem	TANCHON_1809,
+	SimpleItem	TANCHON_180a,
+	SimpleItem	TANCHON_180b,
+	SimpleItem	TANCHON_180c,
+	SimpleItem	TANCHON_2004,
+	SimpleItem	TANCHON_2005,
+	SimpleItem	TANCHON_2006,
+	SimpleItem	TANCHON_2007,
+	SimpleItem	TANCHON_2008,
+	SimpleItem	TANCHON_2009,
+	SimpleItem	TANCHON_200a,
+	SimpleItem	TANCHON_200b,
+	SimpleItem	TANCHON_200c,
+	SimpleItem	TANCHON_200d,
+	SimpleItem	TANCHON_200e,
+	SimpleItem	TANCHON_200f,
+	SimpleItem	TANCHON_2010,
+	SimpleItem	TANCHON_2011,
+	SimpleItem	TANCHON_2012,
+	SimpleItem	TANCHON_2013,
+	SimpleItem	TANCHON_2014,
+	SimpleItem	TANCHON_2015,
+	SimpleItem	TANCHON_2016,
+	SimpleItem	TANCHON_2017,
+	SimpleItem	TANCHON_2018,
+	SimpleItem	TANCHON_2019,
+	SimpleItem	TANCHON_201a,
+	SimpleItem	TANCHON_201b,
+	SimpleItem	TANCHON_201c,
+	SimpleItem	TANCHON_201d,
+	SimpleItem	TANCHON_201e,
+	SimpleItem	TANCHON_201f,
+	SimpleItem	TANCHON_2020,
+	SimpleItem	TANCHON_2021,
+	SimpleItem	TANCHON_2022,
+	SimpleItem	TANCHON_2023,
+	SimpleItem	TANCHON_2024,
+	SimpleItem	TANCHON_2025,
+	SimpleItem	TANCHON_2026,
+	SimpleItem	TANCHON_2027,
+	SimpleItem	TANCHON_2028,
+	SimpleItem	TANCHON_2029,
+	SimpleItem	TANCHON_202a,
+	SimpleItem	TANCHON_202b,
+	SimpleItem	TANCHON_202c,
+	SimpleItem	TANCHON_202d,
+	SimpleItem	TANCHON_202e,
+	SimpleItem	TANCHON_202f,
+	SimpleItem	TANCHON_2030,
+	SimpleItem	TANCHON_2031,
+	SimpleItem	TANCHON_2032,
+	SimpleItem	TANCHON_2033,
+	SimpleItem	TANCHON_2034,
+	SimpleItem	TANCHON_2035,
+	SimpleItem	TANCHON_2036,
+	SimpleItem	TANCHON_2037,
+	SimpleItem	TANCHON_2038,
+	SimpleItem	TANCHON_2039,
+	SimpleItem	TANCHON_203a,
+	SimpleItem	TANCHON_203b,
+	SimpleItem	TANCHON_2200,
+	SimpleItem	TANCHON_2201,
+	SimpleItem	TANCHON_2202,
+	SimpleItem	TANCHON_2203,
+	SimpleItem	TANCHON_2204,
+	SimpleItem	TANCHON_2205,
+	SimpleItem	TANCHON_2206,
+	SimpleItem	TANCHON_2207,
+	SimpleItem	TANCHON_2208,
+	BattleField
+	{
+		FileName	FIL_1_TANCHON=TANCHON.BF,
+		Title	{},
+		Comment	{},
+	ItemGroup
+	{	Target	UID_StTanchon,
+		ItemGroup
+		{
+			SimpleItem	TANCHON_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	79572992,
+						Z	93538304
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		STEPTO
+			},
+			SimpleItem	TANCHON_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	79833088,
+						Z	93366272
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		STEPTO
+			},
+				SimpleItem	TANCHON_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	79795200,
+							Z	93493248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+			SimpleItem	TANCHON_2007=
+			{
+				Posn
+				{
+					Abs
+					{	X	79474688,
+						Z	93251584
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FISHR
+			},
+			SimpleItem	TANCHON_2008=
+			{
+				Posn
+				{
+					Abs
+					{	X	79417344,
+						Z	93273088
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FISHR
+			},
+			SimpleItem	TANCHON_200b=
+			{
+				Posn
+				{
+					Abs
+					{	X	79748096,
+						Z	93532160
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	TANCHON_200c=
+			{
+				Posn
+				{
+					Abs
+					{	X	79775744,
+						Z	93502464
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN2
+			},
+			SimpleItem	TANCHON_200d=
+			{
+				Posn
+				{
+					Abs
+					{	X	74539008,
+						Z	91176960
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V2EW
+			},
+			SimpleItem	TANCHON_200e=
+			{
+				Posn
+				{
+					Abs
+					{	X	74571776,
+						Z	91166720
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	TANCHON_200f=
+			{
+				Posn
+				{
+					Abs
+					{	X	74598400,
+						Z	91197440
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V3NESW
+			},
+			SimpleItem	TANCHON_2010=
+			{
+				Posn
+				{
+					Abs
+					{	X	74636288,
+						Z	91181056
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	TANCHON_2011=
+			{
+				Posn
+				{
+					Abs
+					{	X	74618880,
+						Z	91136000
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V4NWSE
+			},
+			SimpleItem	TANCHON_2012=
+			{
+				Posn
+				{
+					Abs
+					{	X	74583040,
+						Z	91120640
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	TANCHON_2013=
+			{
+				Posn
+				{
+					Abs
+					{	X	74649600,
+						Z	91150336
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V3NESW
+			},
+			SimpleItem	TANCHON_2014=
+			{
+				Posn
+				{
+					Abs
+					{	X	74602496,
+						Z	91161600
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	TANCHON_2015=
+			{
+				Posn
+				{
+					Abs
+					{	X	79722496,
+						Z	93554688
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN4
+			},
+			SimpleItem	TANCHON_2019=
+			{
+				Posn
+				{
+					Abs
+					{	X	79809536,
+						Z	93470720
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V3NESW
+			},
+			SimpleItem	TANCHON_201a=
+			{
+				Posn
+				{
+					Abs
+					{	X	79785984,
+						Z	93465600
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V3NESW
+			        },
+		
+				SimpleItem	TANCHON_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	79704064,
+							Z	93577216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TANCHON_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	79770624,
+							Z	93480960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	TANCHON_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	79789056,
+							Z	93535232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	TANCHON_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	79740928,
+							Z	93479936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	TANCHON_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	79745024,
+							Z	93466624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	TANCHON_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	79694848,
+							Z	93528064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	79713280,
+							Z	93526016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TANCHON_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	79706112,
+							Z	93502464
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	TANCHON_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	79710208,
+							Z	93483008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TANCHON_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	79691776,
+							Z	93492224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	TANCHON_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	79651840,
+							Z	93498368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TANCHON_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	79635456,
+							Z	93451264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TANCHON_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	79691776,
+							Z	93443072
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	TANCHON_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	79763456,
+							Z	93411328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	TANCHON_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	79706112,
+							Z	93416448
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TANCHON_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	79776768,
+							Z	93551616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	TANCHON_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	79748096,
+							Z	93570048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	79726592,
+							Z	93467648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	TANCHON_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	79714304,
+							Z	93318144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	79689728,
+							Z	93331456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TANCHON_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	79761408,
+							Z	93310976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TANCHON_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	79655936,
+							Z	93243392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TANCHON_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	79609856,
+							Z	93305856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TANCHON_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	79583232,
+							Z	93289472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	79461376,
+							Z	93324288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	79406080,
+							Z	93318144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TANCHON_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	79319040,
+							Z	93310976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	79250432,
+							Z	93295616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	79336448,
+							Z	93217792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	79420416,
+							Z	93223936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	79371264,
+							Z	93190144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	79891456,
+							Z	93239296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	79948800,
+							Z	93285376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	79468544,
+							Z	93382656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	TANCHON_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	79567872,
+							Z	93318144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TANCHON_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	79744000,
+							Z	93249536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	TANCHON_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	79974400,
+							Z	93234176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_MSPTanchon,
+		ItemGroup
+		{
+				SimpleItem	TANCHON_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	79675392,
+							Z	93493248
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TANCHON_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	79775744,
+							Z	93431808
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TANCHON_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	79832064,
+							Z	93486080
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TANCHON_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	79588352,
+							Z	93490176
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TANCHON_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	79577088,
+							Z	93415424
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TANCHON_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	79665152,
+							Z	93445120
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TANCHON_1809=
+				{
+					Posn
+					{
+						Abs
+						{	X	79875072,
+							Z	93414400
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TANCHON_180a=
+				{
+					Posn
+					{
+						Abs
+						{	X	79822848,
+							Z	93412352
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TANCHON_180b=
+				{
+					Posn
+					{
+						Abs
+						{	X	79750144,
+							Z	93433856
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TANCHON_180c=
+				{
+					Posn
+					{
+						Abs
+						{	X	79849472,
+							Z	93463552
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	TANCHON_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	79828992,
+							Z	93458432
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	TANCHON_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	79814656,
+							Z	93438976
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	TANCHON_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	79796224,
+							Z	93444096
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	TANCHON_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	79761408,
+							Z	93464576
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	TANCHON_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	79798272,
+							Z	93459456
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+			SimpleItem	TANCHON_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	80234496,
+						Z	93351936
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		CARGO
+			},
+				SimpleItem	TANCHON_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	79648768,
+							Z	93476864
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+			SimpleItem	TANCHON_2016=
+			{
+				Posn
+				{
+					Abs
+					{	X	79817728,
+						Z	93456384
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		AMMOS
+			},
+				SimpleItem	TANCHON_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	79666176,
+							Z	93473792
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	TANCHON_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	79682560,
+							Z	93471744
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	TANCHON_2208=
+				{
+					Posn
+					{
+						Abs
+						{	X	79700992,
+							Z	93467648
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				}
+		}	}
+	};

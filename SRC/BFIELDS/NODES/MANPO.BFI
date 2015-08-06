@@ -1,0 +1,693 @@
+	SimpleItem	MANPO_1803,
+	SimpleItem	MANPO_1804,
+	SimpleItem	MANPO_1805,
+	SimpleItem	MANPO_1806,
+	SimpleItem	MANPO_1807,
+	SimpleItem	MANPO_1808,
+	SimpleItem	MANPO_1809,
+	SimpleItem	MANPO_2004,
+	SimpleItem	MANPO_2005,
+	SimpleItem	MANPO_2006,
+	SimpleItem	MANPO_2007,
+	SimpleItem	MANPO_2008,
+	SimpleItem	MANPO_2009,
+	SimpleItem	MANPO_200a,
+	SimpleItem	MANPO_200b,
+	SimpleItem	MANPO_200c,
+	SimpleItem	MANPO_200d,
+	SimpleItem	MANPO_200e,
+	SimpleItem	MANPO_200f,
+	SimpleItem	MANPO_2010,
+	SimpleItem	MANPO_2011,
+	SimpleItem	MANPO_2012,
+	SimpleItem	MANPO_2013,
+	SimpleItem	MANPO_2014,
+	SimpleItem	MANPO_2015,
+	SimpleItem	MANPO_2016,
+	SimpleItem	MANPO_2017,
+	SimpleItem	MANPO_2018,
+	SimpleItem	MANPO_2019,
+	SimpleItem	MANPO_201a,
+	SimpleItem	MANPO_201c,
+	SimpleItem	MANPO_201d,
+	SimpleItem	MANPO_201e,
+	SimpleItem	MANPO_201f,
+	SimpleItem	MANPO_2020,
+	SimpleItem	MANPO_2021,
+	SimpleItem	MANPO_2022,
+	SimpleItem	MANPO_2023,
+	SimpleItem	MANPO_2024,
+	SimpleItem	MANPO_2025,
+	SimpleItem	MANPO_2026,
+	SimpleItem	MANPO_2027,
+	SimpleItem	MANPO_2028,
+	SimpleItem	MANPO_2029,
+	SimpleItem	MANPO_202a,
+	SimpleItem	MANPO_2200,
+	SimpleItem	MANPO_2201,
+	SimpleItem	MANPO_2202,
+	SimpleItem	MANPO_2203,
+	SimpleItem	MANPO_2204,
+	SimpleItem	MANPO_2205,
+	SimpleItem	MANPO_2206,
+	BattleField
+	{
+		FileName	FIL_1_MANPO=MANPO.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SCCManpo,
+		ItemGroup
+		{
+				SimpleItem	MANPO_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	57269248,
+							Z	101234688
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	MANPO_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	57276416,
+							Z	101271552
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	MANPO_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	57294848,
+							Z	101331968
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	MANPO_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	57342976,
+							Z	101369856
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	MANPO_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	57360384,
+							Z	101313536
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	MANPO_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	57460736,
+							Z	101314560
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	MANPO_1809=
+				{
+					Posn
+					{
+						Abs
+						{	X	57375744,
+							Z	101238784
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	MANPO_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	57354240,
+							Z	101292032
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	MANPO_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	57361408,
+							Z	101276672
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	MANPO_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	57324544,
+							Z	101296128
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				},
+				SimpleItem	MANPO_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	57372672,
+							Z	101304320
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	MANPO_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	57350144,
+							Z	101307392
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		FUELS
+				},
+				SimpleItem	MANPO_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	57399296,
+							Z	101337088
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	MANPO_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	57383936,
+							Z	101326848
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StManpo,
+		ItemGroup
+		{
+			SimpleItem	MANPO_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	57322496,
+						Z	101216256
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	MANPO_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	57039872,
+						Z	101111808
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+				SimpleItem	MANPO_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	57313280,
+							Z	101273600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		RMAST
+				},
+				SimpleItem	MANPO_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	57411584,
+							Z	101345280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		RMAST
+				},
+				SimpleItem	MANPO_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	57321472,
+							Z	101315584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		BOAT
+				},
+			SimpleItem	MANPO_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	57097216,
+						Z	101122048
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V4NWSE
+			},
+				SimpleItem	MANPO_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	57057280,
+							Z	101094400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	MANPO_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	57100288,
+							Z	101152768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	MANPO_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	56993792,
+							Z	101137408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	MANPO_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	57025536,
+							Z	101150720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	MANPO_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	57054208,
+							Z	101163008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	MANPO_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	57232384,
+							Z	101250048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	MANPO_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	57209856,
+							Z	101236736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	MANPO_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	57330688,
+							Z	101253120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	MANPO_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	57393152,
+							Z	101288960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	MANPO_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	57394176,
+							Z	101271552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	MANPO_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	57353216,
+							Z	101257216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	MANPO_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	57378816,
+							Z	101261312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	MANPO_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	57314304,
+							Z	101340160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	MANPO_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	57331712,
+							Z	101350400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	MANPO_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	57461760,
+							Z	101344256
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	MANPO_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	57447424,
+							Z	101404672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	MANPO_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	57408512,
+							Z	101402624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	MANPO_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	57359360,
+							Z	101219328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	MANPO_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	57418752,
+							Z	101292032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	MANPO_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	57400320,
+							Z	101231616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	MANPO_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	57118720,
+							Z	101140480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	MANPO_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	57079808,
+							Z	101144576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	MANPO_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	57056256,
+							Z	101128192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	MANPO_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	57076736,
+							Z	101108736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	MANPO_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	57021440,
+							Z	101101568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	MANPO_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	57304064,
+							Z	101250048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	MANPO_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	57337856,
+							Z	101302272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	MANPO_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	57439232,
+							Z	101381120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	MANPO_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	57443328,
+							Z	101359616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	MANPO_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	57440256,
+							Z	101332992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	MANPO_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	57307136,
+							Z	101286912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	MANPO_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	57422848,
+							Z	101356544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				}
+		}	}
+	};

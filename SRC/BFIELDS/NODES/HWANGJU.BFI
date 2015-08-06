@@ -1,0 +1,116 @@
+	SimpleItem	HWANGJU_0412,
+	SimpleItem	HWANGJU_0416,
+	SimpleItem	HWANGJU_0418,
+	SimpleItem	HWANGJU_041b,
+	SimpleItem	HWANGJU_041e,
+	SimpleItem	HWANGJU_0420,
+	SimpleItem	HWANGJU_0423,
+	SimpleItem	HWANGJU_0425,
+	BattleField
+	{
+		FileName	FIL_1_HWANGJU=HWANGJU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StHwangju,
+		ItemGroup
+		{
+				SimpleItem	HWANGJU_0412=
+				{
+					Posn
+					{
+						Abs
+						{	X	52942848,
+							Z	73892864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HWANGJU_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	52974592,
+							Z	73954304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HWANGJU_0418=
+				{
+					Posn
+					{
+						Abs
+						{	X	52961280,
+							Z	73840640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HWANGJU_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52925440,
+							Z	73767936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	HWANGJU_041e=
+				{
+					Posn
+					{
+						Abs
+						{	X	52952064,
+							Z	73711616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY1
+				},
+				SimpleItem	HWANGJU_0420=
+				{
+					Posn
+					{
+						Abs
+						{	X	53000192,
+							Z	73710592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	HWANGJU_0423=
+				{
+					Posn
+					{
+						Abs
+						{	X	53008384,
+							Z	73643008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				},
+				SimpleItem	HWANGJU_0425=
+				{
+					Posn
+					{
+						Abs
+						{	X	53069824,
+							Z	73643008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CITY2
+				}
+		}	}
+	};

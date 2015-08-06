@@ -1,0 +1,23 @@
+	SimpleItem	test_087f,
+	BattleField
+	{
+		FileName	FIL_1_test=test.BF,
+		Title	{osan test},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	test_087f=
+			{
+				Posn
+				{
+					Abs
+					{	X	37740544,
+						Z	84525056
+					}
+				},
+				UIDBand		MissileBAND,
+				Shape		HUT
+			}
+		}
+	};

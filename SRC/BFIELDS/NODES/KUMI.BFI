@@ -1,0 +1,337 @@
+	SimpleItem	KUMI_2001,
+	SimpleItem	KUMI_2002,
+	SimpleItem	KUMI_2003,
+	SimpleItem	KUMI_2004,
+	SimpleItem	KUMI_2005,
+	SimpleItem	KUMI_2006,
+	SimpleItem	KUMI_2007,
+	SimpleItem	KUMI_2008,
+	SimpleItem	KUMI_200a,
+	SimpleItem	KUMI_200b,
+	SimpleItem	KUMI_200c,
+	SimpleItem	KUMI_200d,
+	SimpleItem	KUMI_200e,
+	SimpleItem	KUMI_200f,
+	SimpleItem	KUMI_2010,
+	SimpleItem	KUMI_2011,
+	SimpleItem	KUMI_2012,
+	SimpleItem	KUMI_2013,
+	SimpleItem	KUMI_2014,
+	SimpleItem	KUMI_2015,
+	SimpleItem	KUMI_2016,
+	SimpleItem	KUMI_2017,
+	SimpleItem	KUMI_2018,
+	SimpleItem	KUMI_2019,
+	SimpleItem	KUMI_201a,
+	BattleField
+	{
+		FileName	FIL_1_KUMI=KUMI.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKumi,
+		ItemGroup
+		{
+				SimpleItem	KUMI_2001=
+				{
+					Posn
+					{
+						Abs
+						{	X	75073536,
+							Z	45595648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KUMI_2002=
+				{
+					Posn
+					{
+						Abs
+						{	X	75041792,
+							Z	45596672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_2003=
+				{
+					Posn
+					{
+						Abs
+						{	X	75019264,
+							Z	45569024
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KUMI_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	75085824,
+							Z	45564928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KUMI_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	75041792,
+							Z	45542400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KUMI_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	75124736,
+							Z	45553664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	75137024,
+							Z	45494272
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	75086848,
+							Z	45532160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	75450368,
+							Z	45325312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	75496448,
+							Z	45417472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	75500544,
+							Z	45365248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	75384832,
+							Z	45451264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KUMI_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	75427840,
+							Z	45353984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	75416576,
+							Z	45404160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KUMI_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	75463680,
+							Z	45363200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KUMI_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	75455488,
+							Z	45403136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	75437056,
+							Z	45225984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	75484160,
+							Z	45220864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	KUMI_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	75478016,
+							Z	45186048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	75418624,
+							Z	45134848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	KUMI_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	75467776,
+							Z	45073408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KUMI_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	75495424,
+							Z	45073408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KUMI_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	75463680,
+							Z	45111296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KUMI_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	75464704,
+							Z	45145088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KUMI_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	75495424,
+							Z	45105152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				}
+		}	}
+	};

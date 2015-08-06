@@ -1,0 +1,207 @@
+	SimpleItem	afseoul_3993,
+	SimpleItem	afseoul_3994,
+	SimpleItem	afseoul_3995,
+	SimpleItem	afseoul_3996,
+	SimpleItem	afseoul_3997,
+	SimpleItem	afseoul_3998,
+	SimpleItem	afseoul_3999,
+	SimpleItem	afseoul_399a,
+	SimpleItem	afseoul_399b,
+	SimpleItem	afseoul_3b90,
+	SimpleItem	afseoul_3b91,
+	SimpleItem	afseoul_3b92,
+	SimpleItem	afseoul_3b93,
+	SimpleItem	afseoul_3b94,
+	SimpleItem	afseoul_3b95,
+	BattleField
+	{
+		FileName	FIL_1_AFSEOUL=afseoul.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlSeoul,
+		ItemGroup
+		{
+				SimpleItem	afseoul_3993=
+				{
+					Posn
+					{
+						Abs
+						{	X	62808832,
+							Z	60854784
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afseoul_3994=
+				{
+					Posn
+					{
+						Abs
+						{	X	62799292,
+							Z	60895772
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	afseoul_3995=
+				{
+					Posn
+					{
+						Abs
+						{	X	62826240,
+							Z	60854784
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	afseoul_3996=
+				{
+					Posn
+					{
+						Abs
+						{	X	62806256,
+							Z	60906421
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afseoul_3997=
+				{
+					Posn
+					{
+						Abs
+						{	X	62838205,
+							Z	60887171
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afseoul_3998=
+				{
+					Posn
+					{
+						Abs
+						{	X	62847216,
+							Z	60887171
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afseoul_3999=
+				{
+					Posn
+					{
+						Abs
+						{	X	62830013,
+							Z	60887171
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	afseoul_399a=
+				{
+					Posn
+					{
+						Abs
+						{	X	62768640,
+							Z	60855040
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afseoul_399b=
+				{
+					Posn
+					{
+						Abs
+						{	X	62809942,
+							Z	60844163
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	afseoul_3b90=
+				{
+					Posn
+					{
+						Abs
+						{	X	62795606,
+							Z	60890448
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		RTRUCK
+				},
+				SimpleItem	afseoul_3b91=
+				{
+					Posn
+					{
+						Abs
+						{	X	62776969,
+							Z	60890243
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afseoul_3b92=
+				{
+					Posn
+					{
+						Abs
+						{	X	62790486,
+							Z	60887990
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afseoul_3b93=
+				{
+					Posn
+					{
+						Abs
+						{	X	62781440,
+							Z	60854016
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afseoul_3b94=
+				{
+					Posn
+					{
+						Abs
+						{	X	62796016,
+							Z	60853993
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afseoul_3b95=
+				{
+					Posn
+					{
+						Abs
+						{	X	62765500,
+							Z	60890243
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				}
+		}	}
+	};

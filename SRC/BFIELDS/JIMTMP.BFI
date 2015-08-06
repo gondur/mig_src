@@ -1,0 +1,132 @@
+	WayPoint	jimtmp_0100,
+	WayPoint	jimtmp_0101,
+	WayPoint	jimtmp_0102,
+	GroundItem	jimtmp_3100,
+	GroundItem	jimtmp_3101,
+	BattleField
+	{
+		FileName	FIL_1_jimtmp=jimtmp.BF,
+		Title	{},
+		Comment	{}
+,
+		WayPoint	jimtmp_0101,
+		WayPoint	jimtmp_0100,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	37412864,
+					Z	126283776
+				}
+			},
+			Route
+			{
+				WayPoint	jimtmp_0101=
+				{
+					Posn
+					{
+						Abs
+						{	X	39604224,
+							Z	125802496
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	jimtmp_0100=
+				{
+					Posn
+					{
+						Abs
+						{	X	41795584,
+							Z	125321216
+						}
+					},
+					Action	WP_spottarget
+				}
+			},
+			NumInForm		3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	jimtmp_3100=
+			{
+				BlueArmourBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_BLUE,
+				Shape
+					{List
+						TPINC,
+						TBACK,
+					
+						{Select
+							{List
+								{Random	0,	3,	1},
+							
+								{List
+									{Random	0,	6,	1},
+									CART1,
+									TANKER,
+									TCOAL,
+									THAUL,
+									SUPPLY,
+									SUPPLY
+								},
+							
+								{List
+									{Random	0,	6,	1},
+									CRANE,
+									TWOOD,
+									TROOPC,
+									TPIPE,
+									SUPPLY,
+									SUPPLY
+								},
+							
+								{List
+									{Random	0,	6,	1},
+									TCABLE,
+									TEMPTY,
+									TROLL,
+									TGOODS,
+									SUPPLY,
+									SUPPLY
+								}
+							},	1,	0}
+					},
+				Vel	601
+		}	},
+		WayPoint	jimtmp_0102,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	37617664,
+					Z	127614976
+				}
+			},
+			Route
+			{
+				WayPoint	jimtmp_0102=
+				{
+					Posn
+					{
+						Abs
+						{	X	38641664,
+							Z	126590976
+						}
+					},
+					Vel	600,
+					Action	wpacnoactionno,
+					Range	0
+				}
+			},
+			NumInForm		3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	jimtmp_3101=
+			{
+				BlueArmourBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_BLUE,
+				Shape	HUT
+		}	}
+	};

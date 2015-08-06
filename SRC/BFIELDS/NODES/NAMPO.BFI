@@ -1,0 +1,1499 @@
+	SimpleItem	NAMPO_0405,
+	SimpleItem	NAMPO_0409,
+	SimpleItem	NAMPO_040b,
+	SimpleItem	NAMPO_040d,
+	SimpleItem	NAMPO_0412,
+	SimpleItem	NAMPO_0414,
+	SimpleItem	NAMPO_0420,
+	SimpleItem	NAMPO_0423,
+	SimpleItem	NAMPO_0425,
+	SimpleItem	NAMPO_0427,
+	SimpleItem	NAMPO_0432,
+	SimpleItem	NAMPO_0435,
+	SimpleItem	NAMPO_0437,
+	SimpleItem	NAMPO_0439,
+	SimpleItem	NAMPO_043b,
+	SimpleItem	NAMPO_043d,
+	SimpleItem	NAMPO_043f,
+	SimpleItem	NAMPO_0446,
+	SimpleItem	NAMPO_044a,
+	SimpleItem	NAMPO_044c,
+	SimpleItem	NAMPO_044e,
+	SimpleItem	NAMPO_0453,
+	SimpleItem	NAMPO_0455,
+	SimpleItem	NAMPO_0457,
+	SimpleItem	NAMPO_045d,
+	SimpleItem	NAMPO_045f,
+	SimpleItem	NAMPO_0463,
+	SimpleItem	NAMPO_0465,
+	SimpleItem	NAMPO_0467,
+	SimpleItem	NAMPO_0469,
+	SimpleItem	NAMPO_046b,
+	SimpleItem	NAMPO_0472,
+	SimpleItem	NAMPO_0475,
+	SimpleItem	NAMPO_0477,
+	SimpleItem	NAMPO_047b,
+	SimpleItem	NAMPO_047d,
+	SimpleItem	NAMPO_0481,
+	SimpleItem	NAMPO_0483,
+	SimpleItem	NAMPO_1803,
+	SimpleItem	NAMPO_1804,
+	SimpleItem	NAMPO_1805,
+	SimpleItem	NAMPO_1806,
+	SimpleItem	NAMPO_1807,
+	SimpleItem	NAMPO_1808,
+	SimpleItem	NAMPO_1809,
+	SimpleItem	NAMPO_180a,
+	SimpleItem	NAMPO_180b,
+	SimpleItem	NAMPO_180c,
+	SimpleItem	NAMPO_2004,
+	SimpleItem	NAMPO_2005,
+	SimpleItem	NAMPO_2006,
+	SimpleItem	NAMPO_2007,
+	SimpleItem	NAMPO_2008,
+	SimpleItem	NAMPO_2009,
+	SimpleItem	NAMPO_200a,
+	SimpleItem	NAMPO_200b,
+	SimpleItem	NAMPO_200c,
+	SimpleItem	NAMPO_200d,
+	SimpleItem	NAMPO_200e,
+	SimpleItem	NAMPO_200f,
+	SimpleItem	NAMPO_2010,
+	SimpleItem	NAMPO_2011,
+	SimpleItem	NAMPO_2012,
+	SimpleItem	NAMPO_2013,
+	SimpleItem	NAMPO_2014,
+	SimpleItem	NAMPO_2015,
+	SimpleItem	NAMPO_2016,
+	SimpleItem	NAMPO_2017,
+	SimpleItem	NAMPO_2018,
+	SimpleItem	NAMPO_2019,
+	SimpleItem	NAMPO_201a,
+	SimpleItem	NAMPO_201b,
+	SimpleItem	NAMPO_201c,
+	SimpleItem	NAMPO_201d,
+	SimpleItem	NAMPO_201e,
+	SimpleItem	NAMPO_201f,
+	SimpleItem	NAMPO_2020,
+	SimpleItem	NAMPO_2021,
+	SimpleItem	NAMPO_2022,
+	SimpleItem	NAMPO_2023,
+	SimpleItem	NAMPO_2024,
+	SimpleItem	NAMPO_2025,
+	SimpleItem	NAMPO_2026,
+	SimpleItem	NAMPO_2027,
+	SimpleItem	NAMPO_2028,
+	SimpleItem	NAMPO_2029,
+	SimpleItem	NAMPO_202a,
+	SimpleItem	NAMPO_202b,
+	SimpleItem	NAMPO_202c,
+	SimpleItem	NAMPO_202d,
+	SimpleItem	NAMPO_202e,
+	SimpleItem	NAMPO_202f,
+	SimpleItem	NAMPO_2030,
+	SimpleItem	NAMPO_2031,
+	SimpleItem	NAMPO_2032,
+	SimpleItem	NAMPO_2033,
+	SimpleItem	NAMPO_2034,
+	SimpleItem	NAMPO_2035,
+	SimpleItem	NAMPO_2036,
+	SimpleItem	NAMPO_2037,
+	SimpleItem	NAMPO_2038,
+	SimpleItem	NAMPO_2039,
+	SimpleItem	NAMPO_203a,
+	SimpleItem	NAMPO_203b,
+	SimpleItem	NAMPO_2200,
+	SimpleItem	NAMPO_2201,
+	SimpleItem	NAMPO_2202,
+	SimpleItem	NAMPO_2203,
+	SimpleItem	NAMPO_2204,
+	SimpleItem	NAMPO_2205,
+	SimpleItem	NAMPO_2206,
+	SimpleItem	NAMPO_2207,
+	SimpleItem	NAMPO_2208,
+	SimpleItem	NAMPO_2209,
+	BattleField
+	{
+		FileName	FIL_1_NAMPO=NAMPO.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StNampo,
+		ItemGroup
+		{
+			SimpleItem	NAMPO_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	49679360,
+						Z	74264576
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	NAMPO_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	50016256,
+						Z	74396672
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	NAMPO_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	49999872,
+						Z	74442752
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+				SimpleItem	NAMPO_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	49869824,
+							Z	74304512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	NAMPO_0409=
+				{
+					Posn
+					{
+						Abs
+						{	X	49881088,
+							Z	74304512
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	NAMPO_040b=
+				{
+					Posn
+					{
+						Abs
+						{	X	49894400,
+							Z	74307584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	NAMPO_040d=
+				{
+					Posn
+					{
+						Abs
+						{	X	49896448,
+							Z	74296320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	NAMPO_0412=
+				{
+					Posn
+					{
+						Abs
+						{	X	49740800,
+							Z	74224640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	NAMPO_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	49747968,
+							Z	74225664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	NAMPO_0420=
+				{
+					Posn
+					{
+						Abs
+						{	X	49617920,
+							Z	74339328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	NAMPO_0423=
+				{
+					Posn
+					{
+						Abs
+						{	X	49574912,
+							Z	74339328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_0425=
+				{
+					Posn
+					{
+						Abs
+						{	X	49603584,
+							Z	74374144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	NAMPO_0427=
+				{
+					Posn
+					{
+						Abs
+						{	X	49625088,
+							Z	74408960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	NAMPO_0432=
+				{
+					Posn
+					{
+						Abs
+						{	X	49454080,
+							Z	74318848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	NAMPO_0435=
+				{
+					Posn
+					{
+						Abs
+						{	X	49816576,
+							Z	74594304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	NAMPO_0437=
+				{
+					Posn
+					{
+						Abs
+						{	X	49715200,
+							Z	74618880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_0439=
+				{
+					Posn
+					{
+						Abs
+						{	X	49757184,
+							Z	74604544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	NAMPO_043b=
+				{
+					Posn
+					{
+						Abs
+						{	X	49660928,
+							Z	74604544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	NAMPO_043d=
+				{
+					Posn
+					{
+						Abs
+						{	X	49653760,
+							Z	74563584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	NAMPO_043f=
+				{
+					Posn
+					{
+						Abs
+						{	X	49636352,
+							Z	74514432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	NAMPO_0446=
+				{
+					Posn
+					{
+						Abs
+						{	X	49753088,
+							Z	74313728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	NAMPO_044a=
+				{
+					Posn
+					{
+						Abs
+						{	X	49718272,
+							Z	74348544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	NAMPO_044c=
+				{
+					Posn
+					{
+						Abs
+						{	X	49794048,
+							Z	74312704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_044e=
+				{
+					Posn
+					{
+						Abs
+						{	X	49794048,
+							Z	74341376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	NAMPO_0453=
+				{
+					Posn
+					{
+						Abs
+						{	X	49967104,
+							Z	74457088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	NAMPO_0455=
+				{
+					Posn
+					{
+						Abs
+						{	X	49926144,
+							Z	74456064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_0457=
+				{
+					Posn
+					{
+						Abs
+						{	X	49938432,
+							Z	74490880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_045d=
+				{
+					Posn
+					{
+						Abs
+						{	X	50058240,
+							Z	74457088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	NAMPO_045f=
+				{
+					Posn
+					{
+						Abs
+						{	X	50070528,
+							Z	74440704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	NAMPO_0463=
+				{
+					Posn
+					{
+						Abs
+						{	X	49884160,
+							Z	74562560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_0465=
+				{
+					Posn
+					{
+						Abs
+						{	X	49927168,
+							Z	74526720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	NAMPO_0467=
+				{
+					Posn
+					{
+						Abs
+						{	X	49938432,
+							Z	74566656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_0469=
+				{
+					Posn
+					{
+						Abs
+						{	X	49922048,
+							Z	74608640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	NAMPO_046b=
+				{
+					Posn
+					{
+						Abs
+						{	X	49885184,
+							Z	74613760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_0472=
+				{
+					Posn
+					{
+						Abs
+						{	X	49723392,
+							Z	74476544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	NAMPO_0475=
+				{
+					Posn
+					{
+						Abs
+						{	X	49697792,
+							Z	74504192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_0477=
+				{
+					Posn
+					{
+						Abs
+						{	X	49724416,
+							Z	74439680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	NAMPO_047b=
+				{
+					Posn
+					{
+						Abs
+						{	X	49575936,
+							Z	74307584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	NAMPO_047d=
+				{
+					Posn
+					{
+						Abs
+						{	X	49537024,
+							Z	74324992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_0481=
+				{
+					Posn
+					{
+						Abs
+						{	X	49494016,
+							Z	74231808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	NAMPO_0483=
+				{
+					Posn
+					{
+						Abs
+						{	X	49502208,
+							Z	74214400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	NAMPO_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	49833984,
+							Z	74392576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	49939456,
+							Z	74417152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	49833984,
+							Z	74330112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	49564672,
+							Z	74370048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		STEPTO
+				},
+				SimpleItem	NAMPO_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	49582080,
+							Z	74405888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		STEPTO
+				},
+				SimpleItem	NAMPO_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	49541120,
+							Z	74240000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	49633280,
+							Z	74228736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	49687552,
+							Z	74465280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	49700864,
+							Z	74548224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	49830912,
+							Z	74547200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	49742848,
+							Z	74269696
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	49814528,
+							Z	74289152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	49894400,
+							Z	74364928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	49936384,
+							Z	74229760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	NAMPO_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	50016256,
+							Z	74234880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	NAMPO_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	49451008,
+							Z	74217472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	NAMPO_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	49974272,
+							Z	74206208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	NAMPO_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	49589248,
+							Z	74281984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	50011136,
+							Z	74275840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	NAMPO_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	49652736,
+							Z	74305536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	49694720,
+							Z	74416128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	49757184,
+							Z	74360832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	49889280,
+							Z	74449920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	49876992,
+							Z	74514432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	49828864,
+							Z	74468352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	49933312,
+							Z	74335232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	49760256,
+							Z	74451968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	49667072,
+							Z	74363904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	49994752,
+							Z	74493952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	49746944,
+							Z	74513408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	NAMPO_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	49413120,
+							Z	74280960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	NAMPO_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	50003968,
+							Z	74361856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	NAMPO_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	49651712,
+							Z	74184704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	NAMPO_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	49771520,
+							Z	74240000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	NAMPO_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	49620992,
+							Z	74180608
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				>,
+				SimpleItem	NAMPO_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	49697792,
+							Z	74219520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	NAMPO_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	49552384,
+							Z	74188800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	NAMPO_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	49566720,
+							Z	74186752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	NAMPO_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	49762304,
+							Z	74224640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		LCRANE
+				},
+				SimpleItem	NAMPO_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	50060288,
+							Z	74399744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				},
+				SimpleItem	NAMPO_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	49516544,
+							Z	74285056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				>,
+				SimpleItem	NAMPO_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	49507328,
+							Z	74198016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI10
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_ICMPNampo,
+		ItemGroup
+		{
+				SimpleItem	NAMPO_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	49695744,
+							Z	74586112
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	NAMPO_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	49843200,
+							Z	74570752
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	NAMPO_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	49779712,
+							Z	74596352
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	NAMPO_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	49531904,
+							Z	74295296
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	NAMPO_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	49671168,
+							Z	74224640
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	NAMPO_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	49929216,
+							Z	74306560
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	NAMPO_1809=
+				{
+					Posn
+					{
+						Abs
+						{	X	49952768,
+							Z	74382336
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	NAMPO_180a=
+				{
+					Posn
+					{
+						Abs
+						{	X	50039808,
+							Z	74484736
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	NAMPO_180b=
+				{
+					Posn
+					{
+						Abs
+						{	X	50046976,
+							Z	74403840
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	NAMPO_180c=
+				{
+					Posn
+					{
+						Abs
+						{	X	49568768,
+							Z	74217472
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	NAMPO_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	49984512,
+							Z	74316800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		LCRANE
+				},
+				SimpleItem	NAMPO_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	49722368,
+							Z	74224640
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	NAMPO_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	49586176,
+							Z	74188800
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	NAMPO_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	49987584,
+							Z	74356736
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	NAMPO_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	49882112,
+							Z	74293248
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	NAMPO_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	50065408,
+							Z	74420224
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	NAMPO_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	49494016,
+							Z	74257408
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	NAMPO_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	49525760,
+							Z	74195968
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	NAMPO_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	49784832,
+							Z	74552320
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF2S
+				},
+				SimpleItem	NAMPO_2208=
+				{
+					Posn
+					{
+						Abs
+						{	X	49754112,
+							Z	74558464
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	NAMPO_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	50183168,
+							Z	74470400
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		CARGO
+				},
+				SimpleItem	NAMPO_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	50016256,
+							Z	74566656
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		CARGO
+				},
+				SimpleItem	NAMPO_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	49976320,
+							Z	74313728
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				},
+				SimpleItem	NAMPO_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	49968128,
+							Z	74309632
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		FUELS
+				},
+				SimpleItem	NAMPO_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	49869824,
+							Z	74279936
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	NAMPO_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	49502208,
+							Z	74272768
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		FUELS
+				},
+				SimpleItem	NAMPO_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	49971200,
+							Z	74341376
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	NAMPO_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	49634304,
+							Z	74192896
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	NAMPO_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	49539072,
+							Z	74277888
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	NAMPO_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	49546240,
+							Z	74296320
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	NAMPO_2209=
+				{
+					Posn
+					{
+						Abs
+						{	X	49728512,
+							Z	74572800
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				}
+		}	}
+	};

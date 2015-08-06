@@ -1,0 +1,177 @@
+	BattleField
+	{
+		FileName	FIL_1_BLSIN_NE=BLSIN_NE.BF
+//DeadCode MS 30Apr99 	ItemGroup
+//DeadCode MS 30Apr99 	{	Target	UID_AfRdSinuijuNE,
+//DeadCode MS 30Apr99 		ItemGroup
+//DeadCode MS 30Apr99 		{
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63572736,
+//DeadCode MS 30Apr99 							Z	56372992
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_TAXI2,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63672576,
+//DeadCode MS 30Apr99 							Z	56381184
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_TAXI1,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63689971,
+//DeadCode MS 30Apr99 							Z	56396299
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_TAXI0,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63690176,
+//DeadCode MS 30Apr99 							Z	56400805
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_TAXIE,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63689561,
+//DeadCode MS 30Apr99 							Z	56403467
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_TAXIL,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63685465,
+//DeadCode MS 30Apr99 							Z	56405106
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_RUNWAY0,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63466415,
+//DeadCode MS 30Apr99 							Z	56387961
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_RUNWAY1,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63468784,
+//DeadCode MS 30Apr99 							Z	56363531
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_PARK0,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63561970,
+//DeadCode MS 30Apr99 							Z	56370494
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_PARK1,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63568523,
+//DeadCode MS 30Apr99 							Z	56371518
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_PARKL,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	63564837,
+//DeadCode MS 30Apr99 							Z	56370904
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_PARKW,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	64213504,
+//DeadCode MS 30Apr99 							Z	56454144
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					SetUID	UID_LANDING,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				},
+//DeadCode MS 30Apr99 				SimpleItem	
+//DeadCode MS 30Apr99 				{
+//DeadCode MS 30Apr99 					Posn
+//DeadCode MS 30Apr99 					{
+//DeadCode MS 30Apr99 						Abs
+//DeadCode MS 30Apr99 						{	X	64213504,
+//DeadCode MS 30Apr99 							Z	56454144
+//DeadCode MS 30Apr99 						}
+//DeadCode MS 30Apr99 					},
+//DeadCode MS 30Apr99 					UIDBand		AmberBattleNodeBAND,
+//DeadCode MS 30Apr99 					Shape		WINDSC
+//DeadCode MS 30Apr99 				}
+//DeadCode MS 30Apr99 		}	}
+	};

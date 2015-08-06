@@ -1,0 +1,406 @@
+	WayPoint	SUKCHON_0100,
+	WayPoint	SUKCHON_0101,
+	WayPoint	SUKCHON_0102,
+	SimpleItem	SUKCHON_1813,
+	SimpleItem	SUKCHON_1814,
+	SimpleItem	SUKCHON_1815,
+	SimpleItem	SUKCHON_2051,
+	SimpleItem	SUKCHON_2052,
+	SimpleItem	SUKCHON_2053,
+	SimpleItem	SUKCHON_2054,
+	SimpleItem	SUKCHON_2055,
+	SimpleItem	SUKCHON_2056,
+	SimpleItem	SUKCHON_2057,
+	SimpleItem	SUKCHON_2058,
+	SimpleItem	SUKCHON_2059,
+	SimpleItem	SUKCHON_205a,
+	SimpleItem	SUKCHON_205b,
+	SimpleItem	SUKCHON_205c,
+	SimpleItem	SUKCHON_2219,
+	SimpleItem	SUKCHON_221a,
+	SimpleItem	SUKCHON_221b,
+	SimpleItem	SUKCHON_221c,
+	SimpleItem	SUKCHON_221d,
+	SimpleItem	SUKCHON_221e,
+	SimpleItem	SUKCHON_221f,
+	SimpleItem	SUKCHON_2220,
+	GroundItem	SUKCHON_3080,
+	GroundItem	SUKCHON_3081,
+	BattleField
+	{
+		FileName	FIL_1_SUKCHON=SUKCHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_WhRdSukchon,
+		ItemGroup
+		{
+				SimpleItem	SUKCHON_2220=
+				{
+					Posn
+					{
+						Abs
+						{	X	51666944,
+							Z	81753088
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	SUKCHON_1813=
+				{
+					Posn
+					{
+						Abs
+						{	X	51771392,
+							Z	81853440
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SUKCHON_1814=
+				{
+					Posn
+					{
+						Abs
+						{	X	51745792,
+							Z	81814528
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SUKCHON_1815=
+				{
+					Posn
+					{
+						Abs
+						{	X	51634176,
+							Z	81799168
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SUKCHON_2219=
+				{
+					Posn
+					{
+						Abs
+						{	X	51765248,
+							Z	81890304
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF1S
+				},
+				SimpleItem	SUKCHON_221a=
+				{
+					Posn
+					{
+						Abs
+						{	X	51697664,
+							Z	81836032
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	SUKCHON_221b=
+				{
+					Posn
+					{
+						Abs
+						{	X	51699712,
+							Z	81808384
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF1S
+				},
+				SimpleItem	SUKCHON_221c=
+				{
+					Posn
+					{
+						Abs
+						{	X	51666944,
+							Z	81781760
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	SUKCHON_221d=
+				{
+					Posn
+					{
+						Abs
+						{	X	51665920,
+							Z	81812480
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	SUKCHON_221e=
+				{
+					Posn
+					{
+						Abs
+						{	X	51690496,
+							Z	81780736
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	SUKCHON_221f=
+				{
+					Posn
+					{
+						Abs
+						{	X	51746816,
+							Z	81840128
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF1S
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StSukchon,
+//		WayPoint	SUKCHON_0100,
+//		WayPoint	SUKCHON_0101,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	51815478,
+					Z	81955784
+				}
+			},
+			Route
+			{
+				WayPoint	SUKCHON_0100=
+				{
+					Posn
+					{
+						Abs
+						{	X	51790902,
+							Z	81956467
+						}
+					},
+					Vel	50,
+					Action	wpdmbtrknoactno,
+					Range	0
+				},
+				WayPoint	SUKCHON_0101=
+				{
+					Posn
+					{
+						Abs
+						{	X	51762913,
+							Z	81955784
+						}
+					},
+					Vel	50,
+					Action	wpdmbtrkstopno,
+					Range	0
+				}
+			},
+			NumInForm		3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	SUKCHON_3080=
+			{
+				BlueCombatVehicleBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	STEPTO,
+				Vel	50
+		}	},
+//DeadCode RC 27Apr99 		WayPoint	SUKCHON_0102,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	51371059,
+					Z	81714801
+				}
+			},
+			Route
+			{
+				WayPoint	SUKCHON_0102=
+				{
+					Posn
+					{
+						Abs
+						{	X	51405193,
+							Z	81680667
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel	40
+				}
+			},
+			NumInForm		3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	SUKCHON_3081=
+			{
+				BlueCombatVehicleBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	STEPTO,
+				Vel	40
+		}	},
+		ItemGroup
+		{
+				SimpleItem	SUKCHON_2051=
+				{
+					Posn
+					{
+						Abs
+						{	X	51768320,
+							Z	81939456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SUKCHON_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	51743744,
+							Z	81908736
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SUKCHON_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	51642368,
+							Z	81867776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SUKCHON_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	51607552,
+							Z	81853440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SUKCHON_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	51617792,
+							Z	81933312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SUKCHON_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	51784704,
+							Z	81903616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SUKCHON_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	51697664,
+							Z	81917952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SUKCHON_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	51565568,
+							Z	81928192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SUKCHON_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	51652608,
+							Z	81837056
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SUKCHON_205a=
+				{
+					Posn
+					{
+						Abs
+						{	X	51655680,
+							Z	81922048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SUKCHON_205b=
+				{
+					Posn
+					{
+						Abs
+						{	X	51719168,
+							Z	81857536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SUKCHON_205c=
+				{
+					Posn
+					{
+						Abs
+						{	X	51548160,
+							Z	81979392
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				}
+		}	}
+	};

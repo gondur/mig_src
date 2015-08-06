@@ -1,0 +1,299 @@
+//list of all global variables and their types
+{
+//Keep these UIDs at start of list... and in this order...
+	SetUID		{
+				Pack_BlankZero,
+				Pack_Takeoff,	//package key points
+				Pack_Target,
+				Pack_Regroup,
+						//element targets
+				Pack_Targ_F0_E0,	Pack_Targ_F0_E1,
+				Pack_Targ_F1_E0,	Pack_Targ_F1_E1,
+				Pack_Targ_F2_E0,	Pack_Targ_F2_E1,
+				Pack_Targ_F3_E0,	Pack_Targ_F3_E1,
+				Pack_Targ_F4_E0,	Pack_Targ_F4_E1,
+
+				Pack_Targ_F5_E0,	Pack_Targ_F5_E1,
+				Pack_Targ_F6_E0,	Pack_Targ_F6_E1,
+				Pack_Targ_F7_E0,	Pack_Targ_F7_E1,
+				Pack_Targ_F8_E0,	Pack_Targ_F8_E1,
+				Pack_Targ_F9_E0,	Pack_Targ_F9_E1,
+
+				Pack_Targ_F10_E0,	Pack_Targ_F10_E1,
+				Pack_Targ_F11_E0,	Pack_Targ_F11_E1,
+				Pack_Targ_F12_E0,	Pack_Targ_F12_E1,
+				Pack_Targ_F13_E0,	Pack_Targ_F13_E1,
+				Pack_Targ_F14_E0,	Pack_Targ_F14_E1,
+
+				Pack_Targ_F15_E0,	Pack_Targ_F15_E1,
+				Pack_Targ_F16_E0,	Pack_Targ_F16_E1,
+				Pack_Targ_F17_E0,	Pack_Targ_F17_E1,
+				Pack_Targ_F18_E0,	Pack_Targ_F18_E1,
+				Pack_Targ_F19_E0,	Pack_Targ_F19_E1,
+
+				Pack_Targ_F20_E0,	Pack_Targ_F20_E1,
+				Pack_Targ_F21_E0,	Pack_Targ_F21_E1,
+				Pack_Targ_F22_E0,	Pack_Targ_F22_E1,
+				Pack_Targ_F23_E0,	Pack_Targ_F23_E1,
+				Pack_Targ_F24_E0,	Pack_Targ_F24_E1,
+
+				WPP_Rendevous,	//package key route
+				WPP_Ingress,
+				WPP_Target,
+				WPP_Regroup,
+				WPP_Egress,
+				WPP_Disperse,
+
+				WPC_Rendevous,	//wave current route
+				WPC_Ingress,
+				WPC_Target,
+				WPC_Regroup,
+				WPC_Egress,
+				WPC_Disperse,
+
+
+				Pack_Sq0_Home,	Pack_Sq1_Home,
+				Pack_Sq2_Home,	Pack_Sq3_Home,
+				Pack_Sq4_Home,	Pack_Sq5_Home,
+				Pack_Sq6_Home,	Pack_Sq7_Home
+
+			},
+	
+	Int		{
+				Pack_Sq0_Used,
+				Pack_Sq1_Used,
+				Pack_Sq2_Used,
+				Pack_Sq3_Used,
+				Pack_Sq4_Used,
+
+				Scram_G0_Alt,	Scram_G1_Alt,	Scram_G2_Alt,	Scram_G3_Alt,
+				Scram_G4_Alt,	Scram_G5_Alt,	Scram_G6_Alt,	Scram_G7_Alt,
+				Scram_G0_AC,	Scram_G1_AC,	Scram_G2_AC,	Scram_G3_AC,
+				Scram_G4_AC,	Scram_G5_AC,	Scram_G6_AC,	Scram_G7_AC
+			},
+	Skill		{
+				Scram_G0_Skill,	Scram_G1_Skill,	Scram_G2_Skill,	Scram_G3_Skill,
+				Scram_G4_Skill,	Scram_G5_Skill,	Scram_G6_Skill,	Scram_G7_Skill
+			},
+	Type		{
+				Scram_G0_Squad,	Scram_G1_Squad,	Scram_G2_Squad,	Scram_G3_Squad,
+				Scram_G4_Squad,	Scram_G5_Squad,	Scram_G6_Squad,	Scram_G7_Squad
+			},
+	Int			{	BLUESKILLCONFIG,REDSKILLCONFIG		},	
+//Ok.. you can do what you want, now!
+
+	NumInForm	{	bluestrength,
+				bluefighters,
+				bluebombers,
+				redstrength,
+				redfighters,
+				redbombers,
+				greenstrength,
+				amberstrength,
+				PlyrFormSize,
+				rndbluescouts,
+				ConvoyCount
+			};
+
+	NumInWing	{
+				PlyrWingSize,
+				EnemyWingSize00
+			};
+
+	Type		{
+				EnemyScoutType00,
+				EnemyChargeType00,
+				EnemyScoutType01,
+				EnemyChargeType01,
+				CampaignEnemyScoutType00,
+				CampaignEnemyChargeType00,
+				CampaignEnemyScoutType01,
+				CampaignEnemyChargeType01,
+				FriendlyScoutType00,
+				FriendlyChargeType00,
+				CampaignFriendlyScoutType00,
+				CampaignFriendlyChargeType00
+			};
+
+	Side		{
+				NAT_ENEMY,
+				NAT_FRIEND
+			};
+		
+	Int		{
+				FormSize00,
+				FormSize01,
+				FormSize02,
+				FormSize03,
+				AngleStepSize,
+				HeightStepSize,
+				RangeStepSize,			//MS 02Jul96
+				EncounterSize,
+				ParentRand			//MS 15Dec96
+			};	
+
+	Y		{
+				HeightSize,
+				CloudBase			//MS 21Nov96
+			};
+
+//Cam_CamItem should be of type unique ID
+
+//	SetUID		{
+//				Cam_CamItem,
+//				Cam_TrgtItem
+//			};
+
+	SetUID		{
+//				UIDDeathItem,			//MS 07May96
+
+				EnemyScoutHomeBase,
+				EnemyChargeHomeBase,
+				FriendlyChargeHomeBase,
+				FriendlyScoutHomeBase,
+				EnemyObjective,
+				FriendlyObjective,
+
+				MainObjective,			//RDH 13Jun96
+				SubObjective,
+				WP1,
+				WP2,
+				WP3,
+				EnemyHomeBase,
+				FriendHomeBase,
+				CPP,
+				CWP
+
+			};
+
+	Morale			EnemyScoutMorale;
+	Morale			FriendlyScoutMorale;
+	Morale			FriendlyChargeMorale;
+	Morale			EnemyChargeMorale;
+	Character		EnemyScoutCharacter;
+	Character		EnemyScoutTactician;		//MS 02Oct96
+	Character		EnemyScoutMrAverage;		//MS 02Oct96
+	Character		EnemyScoutCavalier;		//MS 02Oct96
+	Character		FriendlyScoutCharacter;
+	Character		FriendlyScoutTactician;		//MS 02Oct96
+	Character		FriendlyScoutMrAverage;		//MS 02Oct96
+	Character		FriendlyScoutCavalier;		//MS 02Oct96
+	Character		FriendlyChargeCharacter;
+	Character		EnemyChargeCharacter;
+
+	Skill			EnemyScoutSkillMin;		//MS 30Aug96
+	Skill			EnemyChargeSkillMin;		//MS 30Aug96
+	Skill			FriendlyScoutSkillMin;		//MS 30Aug96
+	Skill			FriendlyChargeSkillMin;		//MS 30Aug96
+	Skill			EnemyScoutSkillMax;		//MS 30Aug96
+	Skill			EnemyChargeSkillMax;		//MS 30Aug96
+	Skill			FriendlyScoutSkillMax;		//MS 30Aug96
+	Skill			FriendlyChargeSkillMax;		//MS 30Aug96
+	Skill			GlobalSkillMin;			//MS 30Aug96
+	Skill			GlobalSkillMax;			//MS 30Aug96
+
+
+	Squadron	{
+				EnemyScoutSquad,		//MS 27Sep96
+				FriendlyScoutSquad,		//MS 27Sep96
+				EnemyChargeSquad,		//MS 27Sep96
+				FriendlyChargeSquad		//MS 27Sep96
+			};
+
+	Int			{OkToQuit3DNow,Quit3DNow};	//RDH 11Dec96
+
+	Int		{
+	//			AutoBulletCount,
+	//			deathtype,			//MS 07May96
+	//			Cam_ViewTarg,			//PD 02Apr96
+	//			Cam_ViewMode,			//PD 02Apr96
+	//			Cam_CutType,	
+	//			Cam_PanRate,	
+	//			Cam_Zoom,		
+	//			Cam_RollRate,	
+	//			Cam_RotateRate,
+	//			Cam_PitchRate,
+	//			Sample_Play,
+	//			Sample_Volume,
+	//			Sample_Pan,
+				MainPosX,
+				MainPosY,
+				MainPosZ,
+				SubPosX,
+				SubPosY,
+				SubPosZ
+			};
+
+//	Angles		{
+//				Cam_Heading,	
+//				Cam_Pitch
+//			};
+
+	PaintScheme	{	
+				PS_1,				//MS 11Aug96
+				PS_2,				//MS 11Aug96
+				PS_3,				//MS 11Aug96
+				PS_4,				//MS 11Aug96
+				PS_5,				//MS 30Aug96
+				PS_6,				//MS 30Aug96
+				PS_7,				//MS 30Aug96
+				PS_8				//MS 30Aug96
+			};					
+
+	Nationality	RequiredNationality;
+	Angles		DesPitch;
+	Angles		DesHdg;
+	Angles		RandAngle;
+	Action			{				//RDH 05Dec96
+					MainAction,		//RDH 05Dec96
+					SubAction		//RDH 05Dec96
+				};
+    Shape		{
+				TankShape,
+				TroopShape,
+				GunShape,
+				DefendBarageShape,
+				Truck1Shape,
+				Truck2Shape,
+				TentsShape,
+				ParkedACShape
+    			};
+	Int			GroundForceType;
+	Int			WaveNum,
+	MoveCode	movecode,
+
+	Int			AAALevel64K,
+	Int			TakeOffTime,
+	Int			{	Pack_TakeTime_W0G0,
+					Pack_TakeTime_W1G0,
+					Pack_TakeTime_W2G0,
+					Pack_TakeTime_W3G0,
+					Pack_TakeTime_W4G0,
+					Pack_TakeTime_W5G0,
+					Pack_TakeTime_W6G0,
+					Pack_TakeTime_W7G0
+				},
+	Int			{	Pack_TakeTime_W0G1,
+					Pack_TakeTime_W1G1,
+					Pack_TakeTime_W2G1,
+					Pack_TakeTime_W3G1,
+					Pack_TakeTime_W4G1,
+					Pack_TakeTime_W5G1,
+					Pack_TakeTime_W6G1,
+					Pack_TakeTime_W7G1
+				},
+	Int			{	Pack_TakeTime_W0G2,
+					Pack_TakeTime_W1G2,
+					Pack_TakeTime_W2G2,
+					Pack_TakeTime_W3G2,
+					Pack_TakeTime_W4G2,
+					Pack_TakeTime_W5G2,
+					Pack_TakeTime_W6G2,
+					Pack_TakeTime_W7G2
+				},
+	Formation		{	FormType00,		//MS 18Apr99
+					FormType01,		//MS 18Apr99
+					FormType02		//MS 18Apr99
+				},
+	MoveCode	TruckMoveCode
+}

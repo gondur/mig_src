@@ -1,0 +1,110 @@
+	WayPoint	Road13_0109,
+	WayPoint	Road13_010a,
+	GroundItem	Road13_2f49,
+	GroundItem	Road13_2f4a,
+	BattleField
+	{
+		FileName	FIL_1_ROAD13=Road13.BF,
+		ItemGroup
+		{	Target	UID_ROAD_Kumchon2Kaesong,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	59424768,
+					Z	66715648
+				}
+			},
+			Route
+			{
+				WayPoint	Road13_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	59465728,
+							Z	66650112
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road13_2f49=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	59015168,
+					Z	67530752
+				}
+			},
+			Route
+			{
+				WayPoint	Road13_010a=
+				{
+					Posn
+					{
+						Abs
+						{	X	58994688,
+							Z	67473408
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	Road13_2f4a=
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK
+		}	},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	59015168,
+					Z	67530752
+				}
+			},
+			Route
+			{
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	58994688,
+							Z	67473408
+						}
+					},
+					Action	wpdmbtrkstopno,
+					Vel 50
+				}
+			},
+			NumInForm		-3,
+			Formation	FORM_SINGLEFILE,
+			GroundItem	
+			{
+				RedTruckBAND,
+				Type	SQ_VEHICLES,
+				Side	NAT_RED,
+				Shape	CHTRCK
+		}	}
+	}
+	};

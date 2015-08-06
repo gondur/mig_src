@@ -1,0 +1,23 @@
+	BattleField
+	{
+		FileName	FIL_1_RDSINUIJ=RDSINUIJ.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_AfRdSinuiju,
+			ItemGroup
+			{
+					SimpleItem
+					{
+  						Posn	{Abs	UID_AfRdSinuiju, 
+  					 		 	Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 	Range		{Random	METRES50,400,METRES01}
+										}
+								},	
+						UIDBand		AfNoScoreBAND,
+						Shape		GRNDD4
+					}
+
+			}
+		}
+	};

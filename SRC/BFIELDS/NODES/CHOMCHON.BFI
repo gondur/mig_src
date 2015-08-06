@@ -1,0 +1,116 @@
+	SimpleItem	CHOMCHON_2051,
+	SimpleItem	CHOMCHON_2052,
+	SimpleItem	CHOMCHON_2053,
+	SimpleItem	CHOMCHON_2054,
+	SimpleItem	CHOMCHON_2056,
+	SimpleItem	CHOMCHON_2057,
+	SimpleItem	CHOMCHON_2058,
+	SimpleItem	CHOMCHON_2059,
+	BattleField
+	{
+		FileName	FIL_1_CHOMCHON=CHOMCHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StChomchon,
+		ItemGroup
+		{
+				SimpleItem	CHOMCHON_2051=
+				{
+					Posn
+					{
+						Abs
+						{	X	73848832,
+							Z	50734080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHOMCHON_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	73803776,
+							Z	50708480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CRANE
+				},
+				SimpleItem	CHOMCHON_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	73831424,
+							Z	50670592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	CHOMCHON_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	73846784,
+							Z	50770944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHOMCHON_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	73788416,
+							Z	50745344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHOMCHON_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	73775104,
+							Z	50677760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHOMCHON_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	73800704,
+							Z	50700288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI05
+				},
+				SimpleItem	CHOMCHON_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	73832448,
+							Z	50696192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				}
+		}	}
+	};

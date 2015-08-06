@@ -1,0 +1,324 @@
+	SimpleItem	KILCHU_2051,
+	SimpleItem	KILCHU_2052,
+	SimpleItem	KILCHU_2053,
+	SimpleItem	KILCHU_2054,
+	SimpleItem	KILCHU_2055,
+	SimpleItem	KILCHU_2056,
+	SimpleItem	KILCHU_2057,
+	SimpleItem	KILCHU_2058,
+	SimpleItem	KILCHU_2059,
+	SimpleItem	KILCHU_205a,
+	SimpleItem	KILCHU_205b,
+	SimpleItem	KILCHU_205c,
+	SimpleItem	KILCHU_205d,
+	SimpleItem	KILCHU_205e,
+	SimpleItem	KILCHU_205f,
+	SimpleItem	KILCHU_2060,
+	SimpleItem	KILCHU_2061,
+	SimpleItem	KILCHU_2062,
+	SimpleItem	KILCHU_2063,
+	SimpleItem	KILCHU_2064,
+	SimpleItem	KILCHU_2065,
+	SimpleItem	KILCHU_2066,
+	SimpleItem	KILCHU_2067,
+	SimpleItem	KILCHU_2068,
+	BattleField
+	{
+		FileName	FIL_1_KILCHU=KILCHU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKilchu,
+		ItemGroup
+		{
+			SimpleItem	KILCHU_2051=
+			{
+				Posn
+				{
+					Abs
+					{	X	83415040,
+						Z	99059712
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V3NESW
+			},
+				SimpleItem	KILCHU_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	83351552,
+							Z	99116032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	83374080,
+							Z	99100672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KILCHU_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	83450880,
+							Z	99093504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KILCHU_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	83388416,
+							Z	99120128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	83360768,
+							Z	99083264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KILCHU_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	83438592,
+							Z	99129344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	KILCHU_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	83308544,
+							Z	99191808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KILCHU_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	83317760,
+							Z	99159040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_205a=
+				{
+					Posn
+					{
+						Abs
+						{	X	83425280,
+							Z	99083264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KILCHU_205b=
+				{
+					Posn
+					{
+						Abs
+						{	X	83377152,
+							Z	99061760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_205c=
+				{
+					Posn
+					{
+						Abs
+						{	X	83400704,
+							Z	99099648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_205d=
+				{
+					Posn
+					{
+						Abs
+						{	X	83397632,
+							Z	99077120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_205e=
+				{
+					Posn
+					{
+						Abs
+						{	X	83410944,
+							Z	99125248
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_205f=
+				{
+					Posn
+					{
+						Abs
+						{	X	83367936,
+							Z	99127296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_2060=
+				{
+					Posn
+					{
+						Abs
+						{	X	83416064,
+							Z	99146752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_2061=
+				{
+					Posn
+					{
+						Abs
+						{	X	83425280,
+							Z	99106816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_2062=
+				{
+					Posn
+					{
+						Abs
+						{	X	83468288,
+							Z	99112960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_2063=
+				{
+					Posn
+					{
+						Abs
+						{	X	83310592,
+							Z	99218432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KILCHU_2064=
+				{
+					Posn
+					{
+						Abs
+						{	X	83343360,
+							Z	99161088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_2065=
+				{
+					Posn
+					{
+						Abs
+						{	X	83331072,
+							Z	99133440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	KILCHU_2066=
+				{
+					Posn
+					{
+						Abs
+						{	X	83288064,
+							Z	99208192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_2067=
+				{
+					Posn
+					{
+						Abs
+						{	X	83289088,
+							Z	99166208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	KILCHU_2068=
+				{
+					Posn
+					{
+						Abs
+						{	X	83288064,
+							Z	99187712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				}
+		}	}
+	};

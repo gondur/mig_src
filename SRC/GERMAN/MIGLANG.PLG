@@ -1,0 +1,11 @@
+--------------------Configuration: miglang - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\english\miglang.dsp", with item "Mig.rc"
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+
+Creating command line "rc.exe /l 0x809 /fo"\mig\Debug/Mig.res" /i "..\mfc" /i "..\mfc\res" /d "_DEBUG" "C:\mig\Src\english\Mig.rc"" 
+Compiling resources...
+
+
+
+Mig.res - 0 error(s), 0 warning(s)

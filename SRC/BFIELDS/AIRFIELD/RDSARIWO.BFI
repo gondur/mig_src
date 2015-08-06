@@ -1,0 +1,82 @@
+	WayPoint	RDSARIWO_0106,
+	WayPoint	RDSARIWO_0107,
+	GroundItem	RDSARIWO_3082,
+	BattleField
+	{
+		FileName	FIL_1_RDSARIWO=RDSARIWO.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdSariwon,
+		ItemGroup
+		{
+			SimpleItem
+			{
+ 				Posn	{Abs	UID_AfRdSariwon, 
+ 					 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+				 		 Range		{Random	METRES50,400,METRES01}
+						}
+					},	
+				UIDBand		AfNoScoreBAND,
+				Shape		GRNDD4
+			},
+			SimpleItem
+			{
+ 				Posn	{Abs	UID_AfRdSariwon, 
+ 					 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+				 		 Range		{Random	METRES50,400,METRES01}
+						}
+					},	
+				UIDBand		AfNoScoreBAND,
+				Shape		GRNDD4
+			}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	52721456,
+						Z	72491593
+					}
+				},
+				Route
+				{
+					WayPoint	RDSARIWO_0106=
+					{
+						Posn
+						{
+							Abs
+							{	X	52661654,
+								Z	72374856
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDSARIWO_0107=
+					{
+						Posn
+						{
+							Abs
+							{	X	52641994,
+								Z	72374037
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		2,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDSARIWO_3082=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	SFTRCK,
+					Vel	112
+			}	}	}
+	};

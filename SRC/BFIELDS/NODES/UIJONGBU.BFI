@@ -1,0 +1,454 @@
+	SimpleItem	UIJONGBU_0403,
+	SimpleItem	UIJONGBU_0404,
+	SimpleItem	UIJONGBU_040e,
+	SimpleItem	UIJONGBU_0411,
+	SimpleItem	UIJONGBU_0414,
+	SimpleItem	UIJONGBU_0417,
+	SimpleItem	UIJONGBU_0419,
+	SimpleItem	UIJONGBU_041f,
+	SimpleItem	UIJONGBU_0422,
+	SimpleItem	UIJONGBU_0424,
+	SimpleItem	UIJONGBU_0426,
+	SimpleItem	UIJONGBU_042b,
+	SimpleItem	UIJONGBU_042e,
+	SimpleItem	UIJONGBU_0430,
+	SimpleItem	UIJONGBU_2004,
+	SimpleItem	UIJONGBU_2005,
+	SimpleItem	UIJONGBU_2006,
+	SimpleItem	UIJONGBU_2007,
+	SimpleItem	UIJONGBU_2008,
+	SimpleItem	UIJONGBU_2009,
+	SimpleItem	UIJONGBU_200a,
+	SimpleItem	UIJONGBU_200b,
+	SimpleItem	UIJONGBU_200c,
+	SimpleItem	UIJONGBU_200d,
+	SimpleItem	UIJONGBU_200e,
+	SimpleItem	UIJONGBU_200f,
+	SimpleItem	UIJONGBU_2010,
+	SimpleItem	UIJONGBU_2011,
+	SimpleItem	UIJONGBU_2012,
+	SimpleItem	UIJONGBU_2013,
+	SimpleItem	UIJONGBU_2014,
+	SimpleItem	UIJONGBU_2015,
+	SimpleItem	UIJONGBU_2016,
+	SimpleItem	UIJONGBU_2017,
+	BattleField
+	{
+		FileName	FIL_1_UIJONGBU=UIJONGBU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StUijongbu,
+		ItemGroup
+		{
+				SimpleItem	UIJONGBU_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	63709184,
+							Z	63283200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	UIJONGBU_0404=
+				{
+					Posn
+					{
+						Abs
+						{	X	63706112,
+							Z	63251456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	UIJONGBU_040e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63577088,
+							Z	63452160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	UIJONGBU_0411=
+				{
+					Posn
+					{
+						Abs
+						{	X	63666176,
+							Z	63442944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	UIJONGBU_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	63747072,
+							Z	63310848
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	UIJONGBU_0417=
+				{
+					Posn
+					{
+						Abs
+						{	X	63801344,
+							Z	63356928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	UIJONGBU_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	63818752,
+							Z	63356928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	UIJONGBU_041f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63674368,
+							Z	63322112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	UIJONGBU_0422=
+				{
+					Posn
+					{
+						Abs
+						{	X	63717376,
+							Z	63212544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	UIJONGBU_0424=
+				{
+					Posn
+					{
+						Abs
+						{	X	63809536,
+							Z	63276032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	UIJONGBU_0426=
+				{
+					Posn
+					{
+						Abs
+						{	X	63794176,
+							Z	63263744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	UIJONGBU_042b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63596544,
+							Z	63396864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	UIJONGBU_042e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63609856,
+							Z	63396864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	UIJONGBU_0430=
+				{
+					Posn
+					{
+						Abs
+						{	X	63623168,
+							Z	63395840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	UIJONGBU_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	63757312,
+							Z	63339520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	UIJONGBU_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	63574016,
+							Z	63416320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	UIJONGBU_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	63828992,
+							Z	63334400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	UIJONGBU_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	63759360,
+							Z	63252480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	UIJONGBU_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	63607808,
+							Z	63433728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	UIJONGBU_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	63640576,
+							Z	63418368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	UIJONGBU_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	63634432,
+							Z	63373312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	UIJONGBU_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	63585280,
+							Z	63373312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	UIJONGBU_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	63706112,
+							Z	63387648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	UIJONGBU_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	63762432,
+							Z	63289344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	UIJONGBU_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63802368,
+							Z	63333376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	UIJONGBU_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	63756288,
+							Z	63407104
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	UIJONGBU_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	63801344,
+							Z	63381504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	UIJONGBU_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	63788032,
+							Z	63404032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	UIJONGBU_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	63721472,
+							Z	63331328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	UIJONGBU_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	63833088,
+							Z	63293440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	UIJONGBU_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	63719424,
+							Z	63356928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	UIJONGBU_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	63700992,
+							Z	63356928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	UIJONGBU_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	63811584,
+							Z	63298560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	UIJONGBU_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	63788032,
+							Z	63292416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				}
+		}	}
+	};

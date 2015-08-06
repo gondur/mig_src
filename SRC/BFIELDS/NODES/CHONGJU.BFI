@@ -1,0 +1,246 @@
+	SimpleItem	CHONGJU_0408,
+	SimpleItem	CHONGJU_204f,
+	SimpleItem	CHONGJU_2050,
+	SimpleItem	CHONGJU_2051,
+	SimpleItem	CHONGJU_2052,
+	SimpleItem	CHONGJU_2053,
+	SimpleItem	CHONGJU_2054,
+	SimpleItem	CHONGJU_2055,
+	SimpleItem	CHONGJU_2056,
+	SimpleItem	CHONGJU_2057,
+	SimpleItem	CHONGJU_2058,
+	SimpleItem	CHONGJU_2059,
+	SimpleItem	CHONGJU_205a,
+	SimpleItem	CHONGJU_205b,
+	SimpleItem	CHONGJU_205c,
+	SimpleItem	CHONGJU_2176,
+	SimpleItem	CHONGJU_2175,
+	SimpleItem	CHONGJU_2173,
+	BattleField
+	{
+		FileName	FIL_1_CHONGJU=CHONGJU.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StChongju,
+		ItemGroup
+		{
+			SimpleItem	CHONGJU_0408=
+			{
+				Posn
+				{
+					Abs
+					{	X	67326976,
+						Z	51226624
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+			SimpleItem	CHONGJU_205b=
+			{
+				Posn
+				{
+					Abs
+					{	X	48120832,
+						Z	84916224
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	CHONGJU_205c=
+			{
+				Posn
+				{
+					Abs
+					{	X	48187392,
+						Z	84911104
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+				SimpleItem	CHONGJU_2176=
+				{
+					Posn
+					{
+						Abs
+						{	X	48215040,
+							Z	84978688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONGJU_2175=
+				{
+					Posn
+					{
+						Abs
+						{	X	48152576,
+							Z	84913152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	CHONGJU_2173=
+				{
+					Posn
+					{
+						Abs
+						{	X	48188416,
+							Z	84941824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONGJU_204f=
+				{
+					Posn
+					{
+						Abs
+						{	X	48052224,
+							Z	85011456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHONGJU_2050=
+				{
+					Posn
+					{
+						Abs
+						{	X	48086016,
+							Z	84983808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONGJU_2051=
+				{
+					Posn
+					{
+						Abs
+						{	X	48112640,
+							Z	84987904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	CHONGJU_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	48130048,
+							Z	85009408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONGJU_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	48150528,
+							Z	84976640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHONGJU_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	48154624,
+							Z	84876288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PUFF
+				},
+				SimpleItem	CHONGJU_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	48088064,
+							Z	85019648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	CHONGJU_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	48182272,
+							Z	84978688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	CHONGJU_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	48073728,
+							Z	84994048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONGJU_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	48064512,
+							Z	84969472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONGJU_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	48086016,
+							Z	84956160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHONGJU_205a=
+				{
+					Posn
+					{
+						Abs
+						{	X	48035840,
+							Z	84989952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				}
+		}	}
+	};

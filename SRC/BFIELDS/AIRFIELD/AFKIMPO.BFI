@@ -1,0 +1,327 @@
+//DeadCode MS 07Jun99 	WayPoint	afkimpo_0100,
+	SimpleItem	afkimpo_0408,
+	SimpleItem	afkimpo_040e,
+//DeadCode MS 07Jun99 	GroundItem	afkimpo_2f60,
+	SimpleItem	afkimpo_3980,
+	SimpleItem	afkimpo_3a00,
+	SimpleItem	afkimpo_3a01,
+	SimpleItem	afkimpo_3a82,
+	SimpleItem	afkimpo_3a83,
+	SimpleItem	afkimpo_3b02,
+	SimpleItem	afkimpo_3b03,
+	SimpleItem	afkimpo_3b04,
+	SimpleItem	afkimpo_3b05,
+	SimpleItem	afkimpo_3b06,
+	SimpleItem	afkimpo_3b07,
+	SimpleItem	afkimpo_3b08,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b80,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b81,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b82,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b83,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b84,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b85,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b86,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b87,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b88,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b89,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b8a,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b8b,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b8c,
+//DeadCode MS 07Jun99 	SimpleItem	afkimpo_3b8d,
+	SimpleItem	afkimpo_3b90,
+	SimpleItem	afkimpo_3b91,
+	SimpleItem	afkimpo_3b92,
+	SimpleItem	afkimpo_3b93,
+	SimpleItem	afkimpo_3b94,
+	SimpleItem	afkimpo_3b95,
+	SimpleItem	afkimpo_3b96,
+	SimpleItem	afkimpo_3b97,
+	SimpleItem	afkimpo_3b98,
+	BattleField
+	{
+		FileName	FIL_1_AFKIMPO=afkimpo.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlKimpo,
+		ItemGroup
+		{
+				SimpleItem	afkimpo_0408=
+				{
+					Posn
+					{
+						Abs
+						{	X	61569024,
+							Z	61397504
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		BULL
+				},
+				SimpleItem	afkimpo_040e=
+				{
+					Posn
+					{
+						Abs
+						{	X	61558784,
+							Z	61352448
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		BULL
+				},
+				SimpleItem	afkimpo_3980=
+				{
+					Posn
+					{
+						Abs
+						{	X	61563934,
+							Z	61412689
+						}
+					},
+					UIDBand		AfHangerBAND,
+					Shape		HREW
+				},
+				SimpleItem	afkimpo_3a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	61535262,
+							Z	61353707
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BRNS
+				},
+				SimpleItem	afkimpo_3a01=
+				{
+					Posn
+					{
+						Abs
+						{	X	61535262,
+							Z	61340599
+						}
+					},
+					UIDBand		AfRevetmentBAND,
+					Shape		BRNS
+				},
+				SimpleItem	afkimpo_3a82=
+				{
+					Posn
+					{
+						Abs
+						{	X	61523074,
+							Z	61381419
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	afkimpo_3a83=
+				{
+					Posn
+					{
+						Abs
+						{	X	61518879,
+							Z	61365175
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	afkimpo_3b02=
+				{
+					Posn
+					{
+						Abs
+						{	X	61521336,
+							Z	61344695
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afkimpo_3b03=
+				{
+					Posn
+					{
+						Abs
+						{	X	61567211,
+							Z	61428254
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afkimpo_3b04=
+				{
+					Posn
+					{
+						Abs
+						{	X	61584414,
+							Z	61428254
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSM
+				},
+				SimpleItem	afkimpo_3b05=
+				{
+					Posn
+					{
+						Abs
+						{	X	61550827,
+							Z	61429893
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSL
+				},
+				SimpleItem	afkimpo_3b06=
+				{
+					Posn
+					{
+						Abs
+						{	X	61522156,
+							Z	61329950
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	afkimpo_3b07=
+				{
+					Posn
+					{
+						Abs
+						{	X	61535262,
+							Z	61429893
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSL
+				},
+				SimpleItem	afkimpo_3b08=
+				{
+					Posn
+					{
+						Abs
+						{	X	61583595,
+							Z	61411870
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CTWR1
+				},
+				SimpleItem	afkimpo_3b90=
+				{
+					Posn
+					{
+						Abs
+						{	X	61507372,
+							Z	61355478
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		SLIT
+				},
+				SimpleItem	afkimpo_3b91=
+				{
+					Posn
+					{
+						Abs
+						{	X	61510102,
+							Z	61326123
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		SLIT
+				},
+				SimpleItem	afkimpo_3b92=
+				{
+					Posn
+					{
+						Abs
+						{	X	61489622,
+							Z	61384150
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V2EW
+				},
+				SimpleItem	afkimpo_3b93=
+				{
+					Posn
+					{
+						Abs
+						{	X	61506688,
+							Z	61434668
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V2EW
+				},
+				SimpleItem	afkimpo_3b94=
+				{
+					Posn
+					{
+						Abs
+						{	X	61505323,
+							Z	61268778
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	afkimpo_3b95=
+				{
+					Posn
+					{
+						Abs
+						{	X	61470507,
+							Z	61345920
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	afkimpo_3b96=
+				{
+					Posn
+					{
+						Abs
+						{	X	61568030,
+							Z	61443819
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V2EW
+				},
+				SimpleItem	afkimpo_3b97=
+				{
+					Posn
+					{
+						Abs
+						{	X	61585233,
+							Z	61443819
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V2EW
+				},
+				SimpleItem	afkimpo_3b98=
+				{
+					Posn
+					{
+						Abs
+						{	X	61543454,
+							Z	61445458
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		V2EW
+				}
+		}	}
+	};

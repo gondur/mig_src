@@ -1,0 +1,2919 @@
+//-----------------------------------
+//FLYING CIRCUS PLAYER PARENT BFIELDS	(findme)
+//-----------------------------------
+//BFDENYINTELL00
+//Partially follows line from mainobjective to enemy af
+
+//	home/main	noaction	
+//	main		noaction	mainevent
+//	main/enemyAFnoaction	subplot0
+//	homebase	landing
+
+	BattleField
+	{
+		FileName	BFDENYINTELL00=FCicpt04.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	40
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_InterceptAlt}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno,
+					Event	{Event MAINEVENT,
+							 Window	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},	
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_InterceptAlt}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	1,2}
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+
+			Posn		{Abs	FriendHomeBase, 
+					 	Abs	{Y FT_10}
+						},
+		   	AirItem		     	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		CampaignEnemyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Morale		MORALE_HIGH
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFPATROLFROMBASE00
+//Features 2 events so that the raws and the scout can be seperated
+//	home/main	noaction	subplot0		
+//	home/main	noaction	mainevent
+//	main		noaction	
+//	homebase	landing
+
+//Event	BalloonAttackList00	= {RndLst	
+//			BFEV_ENEMYATTACKBALLOON00,BFEV_ENEMYATTACKBALLOON01,
+//			BFEV_ENEMYATTACKBALLOON02,BFEV_ENEMYATTACKWINCH00,
+//			BFEV_ENEMYATTACKWINCH01};
+
+
+	BattleField
+	{
+		FileName	BFPATROLFROMBASE00=FCbase00.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_5000},
+							 Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	10
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_5000},
+							 Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	20,20}
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno,
+//					Event	{Event BalloonAttackList00,
+					Event	{Event SUBPLOT0
+							 Window	{H 1},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_5000},
+							 Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	60,20}
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno,
+					Event	{Event MAINEVENT,
+							 Window	{M 30},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective, 
+						 	Abs	{Y FT_5000}	
+							},
+					Action	wpacnoactionno,
+					Range 	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+
+			Posn		{Abs	FriendHomeBase, 
+					 	Abs	{Y FT_10}
+						},
+		   	AirItem		     	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		CampaignEnemyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Morale		MORALE_HIGH
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFPATROLFROMBASE01
+
+//1 event
+//	home/main	noaction	mainevent
+//	main		noaction	
+//	homebase	landing
+
+	BattleField
+	{
+		FileName	BFPATROLFROMBASE01=FCbase01.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_3000},
+							 Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	5,95,1}
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno,	
+					Event	{Event MAINEVENT,
+							 Window	{M 30},
+							 Setval	{EncounterSize,Int {Select Encounter04Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective, 
+						 	Abs	{Y FT_5000}	
+							},
+					Action	wpacnoactionno,
+					Range 	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+
+			Posn		{Abs	FriendHomeBase, 
+					 	Abs	{Y FT_10}
+						},
+		   	AirItem		     	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		CampaignEnemyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Morale		MORALE_HIGH
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFPATROLFROMBASE02
+
+//1 event
+//	home/main	noaction	mainevent
+//	main		noaction	
+//	homebase	landing
+
+	BattleField
+	{
+		FileName	BFPATROLFROMBASE02=FCbase02.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_3000},
+							 Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	5,95,1}
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno,	
+					Event	{Event MAINEVENT,
+							 Window	{M 30},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective, 
+						 	Abs	{Y FT_5000}	
+							},
+					Action	wpacnoactionno,
+					Range 	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+
+			Posn		{Abs	FriendHomeBase, 
+					 	Abs	{Y FT_10}
+						},
+		   	AirItem		     	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		CampaignEnemyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Morale		MORALE_HIGH
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFREDPATROLBALLOON00
+//Patrol the area around a balloon and ensure that it is not attacked.
+//	home/WP1	noaction	subplot0		
+//	WP1			startloop	mainevent
+//	main		noaction	subplot1
+//	WP2			endloop
+//	homebase	landing
+
+	BattleField
+	{
+		FileName	BFREDPATROLBALLOON00=FCbaln00.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_2000},
+							 Rel	{Intercept	{FriendHomeBase,WP1},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	45,10}
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno,
+					Event	{Event SUBPLOT0,
+							 Window	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1, 
+						 	Abs	{Y FT_2000}
+							},
+					Action	wpstartloopno,
+					Range 	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 40},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1, 
+						 	Abs	{Y FT_2000}
+							},
+					Action	wpacnoactionno,
+					Range 	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective, 
+						 	Abs	{Y FT_2000}	
+							},
+					Action	wpacnoactionno,
+					Range 	STANDARDTRIGGER,
+					Event	{Event SUBPLOT1,
+							 Window	{M 60},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective, 
+						 	Abs	{Y FT_2000}
+							},
+					Action	wpacnoactionno,
+					Range 	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP2, 
+						 	Abs	{Y FT_2000}	
+							},
+					Action	wpstoploopchkno
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+
+			Posn		{Abs	FriendHomeBase, 
+					 	Abs	{Y FT_10}
+						},
+		   	AirItem		     	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		CampaignEnemyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Morale		MORALE_HIGH
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//crcsnorthballoonpatrol
+//BFREDPATROLBALLOON01
+//Patrol the area around a balloon and ensure that it is not attacked.
+//	WP1			startloop	
+//	WP1/main	noaction	subplot0
+//	main		noaction	
+//	main/WP2	noaction	mainevent
+//	WP2			endloop
+//	homebase	landing
+
+	BattleField
+	{
+		FileName	BFREDPATROLBALLOON01=FCbaln01.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs WP1,
+							 Abs	{Y	FT_4000},
+							 Rel	{Intercept	{WP1,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	5,45}
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpstartloopno,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1, 
+						 	Abs	{Y FT_4000}	
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective, 
+						 	Abs	{Y FT_4000}	
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_4000},
+							 Rel	{Intercept	{MainObjective,WP2},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	99}
+									}
+							},
+					Action	wpacnoactionno,
+					Range 	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Start	{M 45},
+							 Window	{M 45},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP2, 
+						 	Abs	{Y FT_2000}	
+							},
+					Range 	MARGIN,
+					Action	wpstoploopchkno
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+
+			Posn		{Abs	FriendHomeBase, 
+					 	Abs	{Y FT_10}
+						},
+		   	AirItem		     	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		CampaignEnemyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Morale		MORALE_HIGH
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFREDPATROLBALLOON02
+//Patrol the area around a balloon and ensure that it is not attacked by 56 sqdn
+//	home/main		noaction
+//	Main/EnemyAF270	startloop	subplot0
+//	MainObjective	noaction	mainevent
+//	Main/EnemyAF90	stoploop	subplot1
+//	redhomebase  	landing
+
+	BattleField
+	{
+		FileName	BFREDPATROLBALLOON02=FCbaln02.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_5000},
+							 Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	50
+									}
+							},
+					Action	wpacnoactionno,
+					Range 	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_5000},
+							 Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 			 Bearing	ANGLES_270Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range		METRE2000
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpstartloopno,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_5000}
+							},
+					Event	{Event MAINEVENT,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_5000},
+							 Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 			 Bearing	ANGLES_90Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range		METRE2000
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpstoploopchkno,
+					Event	{Event SUBPLOT1,
+							 Setval	{EncounterSize,Int {Select Encounter02Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+
+			Posn		{Abs	FriendHomeBase, 
+					 	Abs	{Y FT_10}
+						},
+		   	AirItem		     	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		CampaignEnemyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Morale		MORALE_HIGH
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFREDPATROLSPOTTER00
+//Patrol the area around a target and wait for a spotter.
+//	redhomebase	takeoff
+//	main/enemyAF00	startloop	subplot0
+//	main/enemyAF90	noaction 	main event
+//	main/enemyAF270	endloop
+//	redhomebase	landing
+
+	BattleField
+	{
+		FileName	BFREDPATROLSPOTTER00=FCarea00.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range		METRE4000
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpstartloopno,
+					Event	{Event SUBPLOT0,
+							 Start	{M 30},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+					}
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range		METRE4000
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 			 Bearing	ANGLES_90Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range		METRE4000
+									}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno,
+					Event	{Event MAINEVENT,
+							 Start {H 1},
+							 Window	{M 30},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+					}
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 			 Bearing	ANGLES_90Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range		METRE4000
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 			 Bearing	ANGLES_270Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 Range		METRE4000
+									}
+							},
+					Range 	MARGIN,
+					Action	wpstoploopchkno
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+
+			Posn		{Abs	FriendHomeBase, 
+					 	Abs	{Y FT_10}
+						},
+		   	AirItem		     	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		CampaignEnemyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Morale		MORALE_HIGH
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFFCDEFENDAFLD00
+
+//	redhomebase		takeoff		mainevent
+//	redhomebase		noaction
+//	redhomebase		noaction
+//	redhomebase		landing
+
+	BattleField
+	{
+		FileName	BFFCDEFENDAFLD00=FCafld00.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_4000}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno,
+					Event	{Event MAINEVENT,
+							 Window	{M 0},
+							 Setval	{EncounterSize, Int {Select Encounter00Mod}},
+							 Setval	{EnemyChargeType00, Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_6000}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+
+			Posn		{Abs	FriendHomeBase, 
+					 	Abs	{Y FT_10}
+						},
+		   	AirItem		     	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		CampaignEnemyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Morale		MORALE_HIGH
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+	BattleField
+	{
+		FileName	BFFCINTERCEPTF2A01=poopoo.BF
+	};
+
+//---------------------------------------------------------------------------
+//BFFCINTERCEPTF2A00
+//intercept enemy reconn flight
+//	redhomebase		takeoff	
+//	MainObjective	noaction	mainevent
+//	redhomebase  	landing
+
+
+	BattleField
+	{
+		FileName	BFFCINTERCEPTF2A00=FCicpt02.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_ReconAlt},
+							 Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	25
+									}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_ReconAlt}
+							},
+					Range 	STANDARDTRIGGER,
+					Action	wpacnoactionno,
+					Event	{Event MAINEVENT,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select PT_BRISTOL_F2A}}	//Type should be crap F2A, not fighter.
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs MainObjective,
+							 Abs	{Y	FT_ReconAlt}
+							},
+					Range 	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_ReconAlt}
+							},
+					Action	wpacnoactionno,
+					Range	METRE4000
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+
+			Posn		{Abs	FriendHomeBase, 
+					 	Abs	{Y FT_10}
+						},
+		   	AirItem		     	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		CampaignEnemyScoutType00,
+				MoveCode	AUTO_FOLLOWWP,
+				Skill		SKILL_ACE,
+				Morale		MORALE_HIGH
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFREDPATROLGENERAL00
+//Patrol the area 
+
+//	redhomebase	takeoff
+//	WP1			startloop	
+//	main		noaction 	main event
+//	WP2			stoploop	subplot0
+//	redhomebase	landing
+
+	BattleField
+	{
+		FileName	BFREDPATROLGENERAL00=FCptrl01.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Target	WP1,
+					Posn	{Abs {Y FT_5000}},
+					Range	METRE100,
+					Action	wpstartloopno
+				},
+				WayPoint	
+				{
+					Target	MainObjective,
+					Posn	{Abs {Y FT_5000}},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Start	{H 1},
+							 Window	{M 30},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Target	MainObjective,
+					Posn	{Abs {Y FT_5000}},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},	
+				WayPoint	
+				{
+					Target	WP2,
+					Posn	{Abs {Y FT_5000}},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Target	WP2,
+					Posn	{Abs {Y FT_5000}},
+					Action	wpstoploopchkno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFREDPATROLGENERAL01
+//Patrol the area 
+
+//	WP1		startloop	
+//	WP1/main	noaction	mainevent
+//	WP1/main	noaction	subplot1
+//	main		noaction 	
+//	main/WP2	noaction	subplot0
+//	WP2		endloop	
+//	redhomebase	landing
+
+	BattleField
+	{
+		FileName	BFREDPATROLGENERAL01=FCptrl02.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Target	WP1,
+					Posn	{Abs {Y FT_10000}},
+					Range	MARGIN,
+					Action	wpstartloopno
+				},
+				WayPoint	
+				{
+					Target	WP1,
+					Posn	{Abs {Y FT_10000},
+							 Rel	{Intercept	{WP1,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	45
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 60},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs {Y FT_10000},
+							Rel	{Intercept	{WP1,MainObjective},
+						 		Bearing	ANGLES_0Deg,
+						 		Pitch	ANGLES_0Deg,
+						 		RangePercent	55
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT1,
+							 Start	{M 90},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Target	MainObjective,
+					Posn	{Abs {Y FT_10000}},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint
+				{
+					Posn	{Abs	MainObjective,
+							Abs {Y FT_10000},
+							Rel	{Intercept	{MainObjective,WP2},
+							 	Bearing	ANGLES_0Deg,
+						 	 	Pitch	ANGLES_0Deg,
+						 	 	RangePercent	GARBAGE={Random	40,5,10} 
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event	SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},	
+				WayPoint	
+				{
+					Target	WP2,
+					Posn	{Abs {Y FT_10000}},
+					Action	wpstoploopchkno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},	
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFREDLOWFRONTPATROL
+
+//	home/WP1	noaction	
+//	home/WP1	noaction	subplot0
+//	WP1			noaction	mainevent
+//	homebase	landing
+
+	BattleField
+	{
+		FileName	BFREDLOWFRONTPATROL=FCptrl03.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+							Abs {Y FT_4000},
+							Rel	{Intercept	{FriendHomeBase,WP1},
+						 	 	Bearing	ANGLES_0Deg,
+						 	 	Pitch	ANGLES_0Deg,
+						 	 	RangePercent	50
+								}
+							},	
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+							Abs {Y FT_5000},
+							Rel	{Intercept	{FriendHomeBase,WP1},
+						 	 	Bearing	ANGLES_0Deg,
+						 	 	Pitch		ANGLES_0Deg,
+						 	 	RangePercent	75 
+								}
+							},	
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Start	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs {Y FT_5000}
+							},
+					Action	wpacircleno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase, 
+						 	Abs	{Y FT_EnterLandingPattern}
+							},
+					Action	wpalandingno,
+					Range	DistEnterLandingPattern
+				}
+			},
+
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFREDPATROL3WP00
+//Patrol the area through 3 points
+
+//	home/WP1	noaction	subplot0
+//	WP1		noaction
+//	WP1/WP2		noaction	subplot1
+//	WP2		noaction
+//	WP2/WP3		noaction	subplot2
+//	WP3		noaction
+//	redhomebase	landing
+
+	BattleField
+	{
+		FileName	BFREDPATROL3WP00=FCptrl04.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs FriendHomeBase,
+							 Abs	{Y	FT_10000},
+							 Rel	{Intercept	{FriendHomeBase,WP1},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	50,40}
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs WP1,
+							 Abs	{Y	FT_10000}
+							},
+					Range	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs WP1,
+							 Abs	{Y	FT_10000},
+							 Rel	{Intercept	{WP1,WP2},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	90}
+									}
+							},
+					Range	STANDARDTRIGGER,
+					Action	wpacnoactionno,
+					Event	{Event SUBPLOT1,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs WP2,
+							 Abs	{Y	FT_10000}
+							},
+					Range	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs WP2,
+							 Abs	{Y	FT_10000},
+							 Rel	{Intercept	{WP2,WP3},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	90}
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT2,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Target	WP3,
+					Posn	{Abs {Y FT_10000}},
+					Range	MARGIN,
+					Action	wpacnoactionno
+				},	
+				WayPoint	
+				{
+					Target	FriendHomeBase,
+					Posn	{Abs {Y FT_500}},
+					Range	METRE1000,
+					Action	wpalandingno
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFREDPATROL3WP01
+//Patrol the area through 3 points
+
+//	WP1		noaction
+//	WP2		noaction	subplot0
+//	WP2/WP3		noaction	subplot1
+//	WP3		noaction
+//	redhomebase	landing
+
+	BattleField
+	{
+		FileName	BFREDPATROL3WP01=FCptrl05.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs WP1,
+							 Abs	{Y	FT_8000}
+							},
+					Range	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs WP2,
+							 Abs	{Y	FT_6000}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs WP2,
+							 Abs	{Y	FT_6000}
+							},
+					Range	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs WP2,
+							 Abs	{Y	FT_6000},
+							 Rel	{Intercept	{WP2,WP3},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	50,40}
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT1,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Target	WP3,
+					Posn	{Abs {Y FT_6000}},
+					Range	MARGIN,
+					Action	wpacnoactionno
+				},	
+				WayPoint	
+				{
+					Target	FriendHomeBase,
+					Posn	{Abs {Y FT_500}},
+					Range	METRE1000,
+					Action	wpalandingno
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,		//PD 16Feb96
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFREDPATROL3WP02
+
+//	WP1			noaction
+//	WP1/WP2		noaction	subplot0
+//	WP2			noaction	
+//	WP3			noaction	subplot1
+//	redhomebase	landing
+
+	BattleField
+	{
+		FileName	BFREDPATROL3WP02=FCptrl06.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs WP1,
+							 Abs	{Y	FT_6000}
+							},
+					Range	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs WP1,
+							 Abs	{Y	FT_6000},
+							 Rel	{Intercept	{WP1,WP2},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	10,40}
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs WP2,
+							 Abs	{Y	FT_6000}
+							},
+					Range	MARGIN,
+					Action	wpacnoactionno
+				},
+				WayPoint	
+				{
+					Posn	{Abs WP3,
+							 Abs	{Y	FT_6000}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT1,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Target	WP3,
+					Posn	{Abs {Y FT_6000}},
+					Range	MARGIN,
+					Action	wpacnoactionno
+				},	
+				WayPoint	
+				{
+					Target	FriendHomeBase,
+					Posn	{Abs {Y FT_500}},
+					Range	METRE1000,
+					Action	wpalandingno
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFREDINTERCEPTGENERAL00 
+//wait for enemy to cross lines
+//	home/main		noaction	mainevent
+//	MainObjective	circle
+//	redhomebase  	landing	
+
+	BattleField
+	{
+		FileName	BFREDINTERCEPTGENERAL00=FCicpt00.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_ReconAlt},
+							Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	45 
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Target	MainObjective,
+					Posn	{Abs {Y FT_ReconAlt}},
+					Action	wpacircleno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno,
+					Range	MARGIN
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,		//PD 16Feb96
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFREDINTERCEPTGENERAL01 passes through MainObjective
+//	home/main	noaction
+//	MainObjective	noaction	subplot0
+//	main/enemyAF	noaction	mainevent
+//	enemyAF/main	noaction	subplot1	
+//	homebase  		landing	
+
+	BattleField
+	{
+		FileName	BFREDINTERCEPTGENERAL01=FCicpt05.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_15000},
+							Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_15000}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_15000}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_12000},
+							Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 Range		METRE4000
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 30},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_12000},
+							Rel	{Intercept	{EnemyHomeBase,MainObjective},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 Range		METRE4000
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT1,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno,
+					Range	MARGIN
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFREDINTERCEPTGENERAL01B
+//	home/main	noaction
+//	MainObjective	noaction	subplot0
+//	main/enemyAF	noaction	mainevent
+//	enemyAF/main	noaction	subplot1	
+//	homebase  		landing	
+
+	BattleField
+	{
+		FileName	BFREDINTERCEPTGENERAL01B=FCicpt08.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_15000},
+							Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_15000}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter02Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_15000}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_12000},
+							Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 Range		METRE4000
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 30},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_12000},
+							Rel	{Intercept	{EnemyHomeBase,MainObjective},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 Range		METRE4000
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT1,
+							 Setval	{EncounterSize,Int {Select Encounter01Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno,
+					Range	MARGIN
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFREDINTERCEPTGENERAL02 passes through MainObjective
+//	home/main	noaction
+//	MainObjective	noaction	subplot0
+//	main/enemyAF	noaction	mainevent
+//	homebase  		landing	
+
+	BattleField
+	{
+		FileName	BFREDINTERCEPTGENERAL02=FCicpt11.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_15000},
+							Rel	{Intercept	{FriendHomeBase,MainObjective},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_15000}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_15000}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_12000},
+							Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 Range		METRE4000
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 30},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno,
+					Range	MARGIN
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFREDINTERCEPT2OBJECTIVES00
+
+//	homebase  	takeoff
+//	WP1		noaction
+//	WP1/WP2		noaction	subplot0
+//	WP1/WP2		noaction
+//	main		noaction
+//	main/WP2	noaction	mainevent
+//	main/WP2	noaction
+//	homebase  	landing	
+
+	BattleField
+	{
+		FileName	BFREDINTERCEPT2OBJECTIVES00=FCicpt06.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{WP1,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	{Random 49}
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Window {M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{WP1,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{MainObjective,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	{Random	49}
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window {M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{MainObjective,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+						Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno,
+					Range	MARGIN
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFREDINTERCEPT2OBJECTIVES01
+
+//	homebase  	takeoff
+//	main		noaction
+//	main/WP2	noaction	subplot0
+//	main/WP2	noaction	mainevent
+//	main/WP2	noaction
+//	WP1			noaction
+//	WP1/WP2		noaction	
+//	homebase  	landing	
+
+	BattleField
+	{
+		FileName	BFREDINTERCEPT2OBJECTIVES01=FCicpt09.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{MainObjective,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	{Random 25}
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{MainObjective,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	{Random	25,25,1}
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window {M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{MainObjective,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{WP1,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+						Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno,
+					Range	MARGIN
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFREDINTERCEPT2OBJECTIVES02
+
+//	homebase  	takeoff
+//	main		noaction
+//	main/WP2	noaction	mainevent
+//	main/WP2	noaction	subplot0
+//	main/WP2	noaction
+//	WP1			noaction
+//	WP1/WP2		noaction	
+//	homebase  	landing	
+
+	BattleField
+	{
+		FileName	BFREDINTERCEPT2OBJECTIVES02=FCicpt10.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{MainObjective,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	{Random 25}
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window {M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{MainObjective,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	{Random	25,25,1}
+								}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Window {M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{MainObjective,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt},
+							Rel	{Intercept	{WP1,WP2},
+						 		 Bearing	ANGLES_0Deg,
+						 		 Pitch		ANGLES_0Deg,
+						 		 RangePercent	50
+								}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+						Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno,
+					Range	MARGIN
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFREDINTERCEPTPREESCORTED
+
+//	WP1			noaction	subplot0
+// 	WP1			circle		mainevent
+//	frdhomebase	landing
+
+	BattleField
+	{
+		FileName	BFREDINTERCEPTPREESCORTED=FCicpt07.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacircleno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window {M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno,
+					Range	MARGIN
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+//---------------------------------------------------------------------------
+//BFREDINTERCEPTUNESCORTED 
+
+//	frdhomebase	takeoff
+//  	WP1		circle		mainevent
+//	main		noaction	
+//	frdhomebase	landing
+
+	BattleField
+	{
+		FileName	BFREDINTERCEPTUNESCORTED =FCicpt01.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacircleno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno,
+					Range	MARGIN
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFCRCWAITATWP1_00
+
+//	frdhomebase				takeoff
+//	frdhomebase/WP1			subplot0
+//  WP1			circle		mainevent
+//	main		noaction	
+//	frdhomebase	landing
+
+	BattleField
+	{
+		FileName	BFCRCWAITATWP1_00 =FCw1w1.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{FriendHomeBase,WP1},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	25,25,1}
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacircleno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno,
+					Range	MARGIN
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFWP1TOMAIN00
+//	frdhomebase	takeoff
+//	WP1			noaction	subplot0
+//	WP1/Main	noaction	mainevent
+//	MainObjective	noaction
+//	frdhomebase	landing
+
+	BattleField
+	{
+		FileName	BFWP1TOMAIN00=FCw1ob00.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{WP1,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	99}
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+
+//---------------------------------------------------------------------------
+//BFWP1TOMAIN01
+//	frdhomebase	takeoff
+//	WP1		noaction	
+//	WP1/Main	noaction	mainevent
+//	WP1/Main	noaction	subplot0
+//	MainObjective	noaction
+//	frdhomebase	landing
+
+	BattleField
+	{
+		FileName	BFWP1TOMAIN01=FCw1ob01.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{WP1,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	50
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{WP1,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	51
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event SUBPLOT0,
+							 Window	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+//---------------------------------------------------------------------------
+//BFWP1TOMAIN02
+//	frdhomebase	takeoff
+//	WP1			noaction	
+//	WP1/Main	noaction	mainevent
+//	MainObjective	noaction
+//	frdhomebase	landing
+
+	BattleField
+	{
+		FileName	BFWP1TOMAIN02=FCw1ob02.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	WP1,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{WP1,MainObjective},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	0,99,1}
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+
+
+
+//---------------------------------------------------------------------------
+//BFREDINTERCEPTAGGRESSGENERAL
+//	MainObjective	noaction
+//	Main/EnemyAF00	noaction	mainevent
+//	Main/EnemyAF00	noaction
+//	MainObjective	noaction
+//	frdhomebase		landing
+
+	BattleField
+	{
+		FileName	BFREDINTERCEPTAGGRESSGENERAL=FCicpt03.BF,
+		AirGroup	
+		{
+			Route		
+			{
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	{Random	1,2}
+									}
+							},
+					Action	wpacnoactionno,
+					Range	STANDARDTRIGGER,
+					Event	{Event MAINEVENT,
+							 Window	{M 20},
+							 Setval	{EncounterSize,Int {Select Encounter00Mod}},
+							 Setval	{EnemyScoutType00,Type {Select CampaignEnemyScoutType00}},
+							 Setval	{EnemyChargeType00,Type {Select CampaignEnemyChargeType00}}
+							}
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							 Abs	{Y	FT_InterceptAlt},
+							 Rel	{Intercept	{MainObjective,EnemyHomeBase},
+						 			 Bearing	ANGLES_0Deg,
+						 			 Pitch		ANGLES_0Deg,
+						 			 RangePercent	3
+									}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	MainObjective,
+							Abs	{Y	FT_InterceptAlt}
+							},
+					Action	wpacnoactionno,
+					Range	MARGIN
+				},
+				WayPoint	
+				{
+					Posn	{Abs	FriendHomeBase,
+						 	 Abs		{Y FT_1000},	
+						 	 Rel		{X 0, Z 100}
+							},
+					Action	wpalandingno
+				}
+			},
+//			NumInForm	PlyrDefined,
+			Duty		DUTYCAP,
+			Posn		{Abs	FriendHomeBase, 
+					 Abs	{Y FT_GRND}
+					},
+
+		   	AirItem	
+			{
+				Shape		DIII,
+				Side		NAT_FRIEND,
+				Type		PT_ALBATROS_D3,
+				MoveCode	AUTO_FOLLOWWP,
+//							TAKEOFF
+				Skill		SKILL_ACE
+			}
+		}
+	};
+

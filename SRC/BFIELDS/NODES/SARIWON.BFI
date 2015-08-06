@@ -1,0 +1,927 @@
+	SimpleItem	SARIWON_181d,
+	SimpleItem	SARIWON_181e,
+	SimpleItem	SARIWON_181f,
+	SimpleItem	SARIWON_1842,
+	SimpleItem	SARIWON_1844,
+	SimpleItem	SARIWON_1846,
+	SimpleItem	SARIWON_2014,
+	SimpleItem	SARIWON_2015,
+	SimpleItem	SARIWON_2016,
+	SimpleItem	SARIWON_2017,
+	SimpleItem	SARIWON_2018,
+	SimpleItem	SARIWON_2019,
+	SimpleItem	SARIWON_201a,
+	SimpleItem	SARIWON_201b,
+	SimpleItem	SARIWON_201c,
+	SimpleItem	SARIWON_201d,
+	SimpleItem	SARIWON_201e,
+	SimpleItem	SARIWON_201f,
+	SimpleItem	SARIWON_2020,
+	SimpleItem	SARIWON_2021,
+	SimpleItem	SARIWON_2022,
+	SimpleItem	SARIWON_2023,
+	SimpleItem	SARIWON_2024,
+	SimpleItem	SARIWON_2025,
+	SimpleItem	SARIWON_2026,
+	SimpleItem	SARIWON_2027,
+	SimpleItem	SARIWON_2028,
+	SimpleItem	SARIWON_2029,
+	SimpleItem	SARIWON_202a,
+	SimpleItem	SARIWON_202b,
+	SimpleItem	SARIWON_202c,
+	SimpleItem	SARIWON_202d,
+	SimpleItem	SARIWON_202e,
+	SimpleItem	SARIWON_202f,
+	SimpleItem	SARIWON_2030,
+	SimpleItem	SARIWON_2031,
+	SimpleItem	SARIWON_2032,
+	SimpleItem	SARIWON_2033,
+	SimpleItem	SARIWON_2034,
+	SimpleItem	SARIWON_2035,
+	SimpleItem	SARIWON_2036,
+	SimpleItem	SARIWON_2037,
+	SimpleItem	SARIWON_2038,
+	SimpleItem	SARIWON_2039,
+	SimpleItem	SARIWON_203a,
+	SimpleItem	SARIWON_203b,
+	SimpleItem	SARIWON_203c,
+	SimpleItem	SARIWON_203d,
+	SimpleItem	SARIWON_203e,
+	SimpleItem	SARIWON_203f,
+	SimpleItem	SARIWON_2040,
+	SimpleItem	SARIWON_2041,
+	SimpleItem	SARIWON_2042,
+	SimpleItem	SARIWON_2043,
+	SimpleItem	SARIWON_2044,
+	SimpleItem	SARIWON_2045,
+	SimpleItem	SARIWON_2046,
+	SimpleItem	SARIWON_2047,
+	SimpleItem	SARIWON_2207,
+	SimpleItem	SARIWON_2208,
+	SimpleItem	SARIWON_2209,
+	SimpleItem	SARIWON_220b,
+	SimpleItem	SARIWON_220c,
+	SimpleItem	SARIWON_220d,
+	SimpleItem	SARIWON_220e,
+	SimpleItem	SARIWON_220f,
+	SimpleItem	SARIWON_2210,
+	SimpleItem	SARIWON_2211,
+	SimpleItem	SARIWON_2212,
+	SimpleItem	SARIWON_2213,
+	BattleField
+	{
+		FileName	FIL_1_SARIWON=SARIWON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SdRdSariwon,
+		ItemGroup
+		{
+			SimpleItem	SARIWON_2207=
+			{
+				Posn
+				{
+					Abs
+					{	X	53167104,
+						Z	71677952
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		WF4M
+			},
+			SimpleItem	SARIWON_181d=
+			{
+				Posn
+				{
+					Abs
+					{	X	53052416,
+						Z	71695360
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	SARIWON_181e=
+			{
+				Posn
+				{
+					Abs
+					{	X	53312512,
+						Z	71792640
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	SARIWON_181f=
+			{
+				Posn
+				{
+					Abs
+					{	X	53368832,
+						Z	71680000
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		SAAA2
+			},
+			SimpleItem	SARIWON_2209=
+			{
+				Posn
+				{
+					Abs
+					{	X	53140480,
+						Z	71676928
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		WF1S
+			},
+			SimpleItem	SARIWON_220b=
+			{
+				Posn
+				{
+					Abs
+					{	X	53113856,
+						Z	71692288
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		WF1S
+			},
+			SimpleItem	SARIWON_220c=
+			{
+				Posn
+				{
+					Abs
+					{	X	53328896,
+						Z	71704576
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+			SimpleItem	SARIWON_220d=
+			{
+				Posn
+				{
+					Abs
+					{	X	53306368,
+						Z	71715840
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP3
+			},
+			SimpleItem	SARIWON_220f=
+			{
+				Posn
+				{
+					Abs
+					{	X	53284864,
+						Z	71724032
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SDISP2
+			},
+				SimpleItem	SARIWON_1842=
+				{
+					Posn
+					{
+						Abs
+						{	X	53198848,
+							Z	71714816
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SARIWON_1844=
+				{
+					Posn
+					{
+						Abs
+						{	X	53124096,
+							Z	71778304
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SARIWON_1846=
+				{
+					Posn
+					{
+						Abs
+						{	X	53124096,
+							Z	71647232
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	SARIWON_2208=
+				{
+					Posn
+					{
+						Abs
+						{	X	53112832,
+							Z	71713792
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	SARIWON_220e=
+				{
+					Posn
+					{
+						Abs
+						{	X	53263360,
+							Z	71725056
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	SARIWON_2210=
+				{
+					Posn
+					{
+						Abs
+						{	X	53337088,
+							Z	71736320
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	SARIWON_2211=
+				{
+					Posn
+					{
+						Abs
+						{	X	53260288,
+							Z	71756800
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	SARIWON_2212=
+				{
+					Posn
+					{
+						Abs
+						{	X	53285888,
+							Z	71752704
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	SARIWON_2213=
+				{
+					Posn
+					{
+						Abs
+						{	X	53314560,
+							Z	71743488
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StSariwon,
+		ItemGroup
+		{
+				SimpleItem	SARIWON_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	52757504,
+							Z	71874560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+			SimpleItem	SARIWON_2014=
+			{
+				Posn
+				{
+					Abs
+					{	X	52890624,
+						Z	71657472
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN4
+			},
+			SimpleItem	SARIWON_2016=
+			{
+				Posn
+				{
+					Abs
+					{	X	52801536,
+						Z	71705600
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	SARIWON_2018=
+			{
+				Posn
+				{
+					Abs
+					{	X	53039104,
+						Z	71782400
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	SARIWON_2019=
+			{
+				Posn
+				{
+					Abs
+					{	X	52777984,
+						Z	71817216
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	SARIWON_201a=
+			{
+				Posn
+				{
+					Abs
+					{	X	52807680,
+						Z	71914496
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN4
+			},
+			SimpleItem	SARIWON_201b=
+			{
+				Posn
+				{
+					Abs
+					{	X	52651008,
+						Z	72001536
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	SARIWON_201c=
+			{
+				Posn
+				{
+					Abs
+					{	X	52850688,
+						Z	71788544
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3
+			},
+			SimpleItem	SARIWON_201e=
+			{
+				Posn
+				{
+					Abs
+					{	X	52982784,
+						Z	71730176
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+				SimpleItem	SARIWON_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	52996096,
+							Z	71788544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SARIWON_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52714496,
+							Z	71847936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SARIWON_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52623360,
+							Z	72024064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SARIWON_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	52695040,
+							Z	71986176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SARIWON_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	52861952,
+							Z	71903232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	52876288,
+							Z	71874560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	52731904,
+							Z	71946240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SARIWON_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	52811776,
+							Z	71997440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SARIWON_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	52864000,
+							Z	71854080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	52833280,
+							Z	71879680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	52846592,
+							Z	71875584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SARIWON_2028=
+				{
+					Posn
+					{
+						Abs
+						{	X	52873216,
+							Z	71841792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	SARIWON_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	52882432,
+							Z	71829504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	52900864,
+							Z	71808000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	52915200,
+							Z	71795712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	52962304,
+							Z	71749632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52945920,
+							Z	71763968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	SARIWON_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	52929536,
+							Z	71780352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	SARIWON_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52789248,
+							Z	71774208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	52804608,
+							Z	71786496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	SARIWON_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	52825088,
+							Z	71793664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SARIWON_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	52792320,
+							Z	71757824
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	52777984,
+							Z	71762944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	52815872,
+							Z	71970816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	SARIWON_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	52823040,
+							Z	71950336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SARIWON_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	52846592,
+							Z	71918592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	SARIWON_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	52888576,
+							Z	71860224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	SARIWON_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	52907008,
+							Z	71754752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SARIWON_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	52953088,
+							Z	71887872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SARIWON_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	52988928,
+							Z	71834624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SARIWON_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	53040128,
+							Z	71835648
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SARIWON_203c=
+				{
+					Posn
+					{
+						Abs
+						{	X	52872192,
+							Z	71704576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SARIWON_203d=
+				{
+					Posn
+					{
+						Abs
+						{	X	52780032,
+							Z	71732224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SARIWON_203e=
+				{
+					Posn
+					{
+						Abs
+						{	X	53083136,
+							Z	71826432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SARIWON_203f=
+				{
+					Posn
+					{
+						Abs
+						{	X	52636672,
+							Z	71951360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SARIWON_2040=
+				{
+					Posn
+					{
+						Abs
+						{	X	52924416,
+							Z	71726080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SARIWON_2041=
+				{
+					Posn
+					{
+						Abs
+						{	X	52698112,
+							Z	71945216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SARIWON_2042=
+				{
+					Posn
+					{
+						Abs
+						{	X	52812800,
+							Z	71851008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SARIWON_2043=
+				{
+					Posn
+					{
+						Abs
+						{	X	52917248,
+							Z	71854080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SARIWON_2044=
+				{
+					Posn
+					{
+						Abs
+						{	X	52943872,
+							Z	71822336
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SARIWON_2045=
+				{
+					Posn
+					{
+						Abs
+						{	X	52746240,
+							Z	71793664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	SARIWON_2046=
+				{
+					Posn
+					{
+						Abs
+						{	X	52779008,
+							Z	71952384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	SARIWON_2047=
+				{
+					Posn
+					{
+						Abs
+						{	X	52846592,
+							Z	71821312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				}
+		}	}
+	};

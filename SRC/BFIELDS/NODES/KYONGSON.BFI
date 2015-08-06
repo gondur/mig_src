@@ -1,0 +1,116 @@
+	SimpleItem	KYONGSON_0405,
+//TempCode RC 28Apr99 	SimpleItem	KYONGSON_0412,
+//TempCode RC 28Apr99 	SimpleItem	KYONGSON_0415,
+//TempCode RC 28Apr99 	SimpleItem	KYONGSON_0418,
+	SimpleItem	KYONGSON_2003,
+	SimpleItem	KYONGSON_2009,
+	SimpleItem	KYONGSON_200b,
+	SimpleItem	KYONGSON_200c,
+	BattleField
+	{
+		FileName	FIL_1_KYONGSON=KYONGSON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StKyongsong,
+		ItemGroup
+		{
+			SimpleItem	KYONGSON_2003=
+			{
+				Posn
+				{
+					Abs
+					{	X	84741120,
+						Z	105897984
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		HUT
+			},
+				SimpleItem	KYONGSON_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	84472832,
+							Z	106022912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+//TempCode RC 28Apr99 				SimpleItem	KYONGSON_0412=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	84798464,
+//TempCode RC 28Apr99 							Z	105942016
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberSupplyBAND,
+//TempCode RC 28Apr99 					Shape		WF7L
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				SimpleItem	KYONGSON_0415=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	84794368,
+//TempCode RC 28Apr99 							Z	105921536
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberSupplyBAND,
+//TempCode RC 28Apr99 					Shape		WF7L
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				SimpleItem	KYONGSON_0418=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	84769792,
+//TempCode RC 28Apr99 							Z	105921536
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberSupplyBAND,
+//TempCode RC 28Apr99 					Shape		WF7L
+//TempCode RC 28Apr99 				},
+				SimpleItem	KYONGSON_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	84742144,
+							Z	105922560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KYONGSON_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	84747264,
+							Z	105950208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	KYONGSON_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	84765696,
+							Z	105889792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				}
+		}	}
+	};

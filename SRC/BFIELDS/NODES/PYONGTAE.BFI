@@ -1,0 +1,641 @@
+	SimpleItem	Pyongtae_0403,
+	SimpleItem	Pyongtae_0404,
+	SimpleItem	Pyongtae_0408,
+	SimpleItem	Pyongtae_040c,
+	SimpleItem	Pyongtae_040f,
+	SimpleItem	Pyongtae_0411,
+	SimpleItem	Pyongtae_0417,
+	SimpleItem	Pyongtae_041a,
+	SimpleItem	Pyongtae_041d,
+	SimpleItem	Pyongtae_041f,
+	SimpleItem	Pyongtae_0421,
+	SimpleItem	Pyongtae_0423,
+	SimpleItem	Pyongtae_0425,
+	SimpleItem	Pyongtae_1803,
+	SimpleItem	Pyongtae_1804,
+	SimpleItem	Pyongtae_1805,
+	SimpleItem	Pyongtae_1806,
+	SimpleItem	Pyongtae_1807,
+	SimpleItem	Pyongtae_1808,
+	SimpleItem	Pyongtae_1809,
+	SimpleItem	Pyongtae_180a,
+	SimpleItem	Pyongtae_2004,
+	SimpleItem	Pyongtae_2006,
+	SimpleItem	Pyongtae_2007,
+	SimpleItem	Pyongtae_2008,
+	SimpleItem	Pyongtae_2009,
+	SimpleItem	Pyongtae_200a,
+	SimpleItem	Pyongtae_200b,
+	SimpleItem	Pyongtae_200c,
+	SimpleItem	Pyongtae_200d,
+	SimpleItem	Pyongtae_200e,
+	SimpleItem	Pyongtae_200f,
+	SimpleItem	Pyongtae_2010,
+	SimpleItem	Pyongtae_2011,
+	SimpleItem	Pyongtae_2012,
+	SimpleItem	Pyongtae_2013,
+	SimpleItem	Pyongtae_2014,
+	SimpleItem	Pyongtae_2015,
+	SimpleItem	Pyongtae_2016,
+	SimpleItem	Pyongtae_2200,
+	SimpleItem	Pyongtae_2201,
+	SimpleItem	Pyongtae_2202,
+	SimpleItem	Pyongtae_2203,
+	SimpleItem	Pyongtae_2204,
+	SimpleItem	Pyongtae_2205,
+	SimpleItem	Pyongtae_2206,
+	SimpleItem	Pyongtae_2207,
+	SimpleItem	Pyongtae_2208,
+	BattleField
+	{
+		FileName	FIL_1_Pyongtae=Pyongtae.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StPyongtaek,
+		ItemGroup
+		{
+				SimpleItem	Pyongtae_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	64697344,
+							Z	53073920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	Pyongtae_0404=
+				{
+					Posn
+					{
+						Abs
+						{	X	64681984,
+							Z	52924416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	Pyongtae_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	64636928,
+							Z	53038080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI05
+				},
+				SimpleItem	Pyongtae_0408=
+				{
+					Posn
+					{
+						Abs
+						{	X	63976448,
+							Z	55070720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Pyongtae_040c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64026624,
+							Z	55058432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Pyongtae_040f=
+				{
+					Posn
+					{
+						Abs
+						{	X	64251904,
+							Z	54916096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Pyongtae_0411=
+				{
+					Posn
+					{
+						Abs
+						{	X	64005120,
+							Z	55027712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	Pyongtae_0417=
+				{
+					Posn
+					{
+						Abs
+						{	X	64053248,
+							Z	55037952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Pyongtae_041a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64095232,
+							Z	55012352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Pyongtae_041d=
+				{
+					Posn
+					{
+						Abs
+						{	X	64079872,
+							Z	55127040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Pyongtae_041f=
+				{
+					Posn
+					{
+						Abs
+						{	X	64132096,
+							Z	55142400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	Pyongtae_0421=
+				{
+					Posn
+					{
+						Abs
+						{	X	64024576,
+							Z	55160832
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Pyongtae_0423=
+				{
+					Posn
+					{
+						Abs
+						{	X	64243712,
+							Z	54883328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Pyongtae_0425=
+				{
+					Posn
+					{
+						Abs
+						{	X	64216064,
+							Z	54858752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Pyongtae_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	64432128,
+							Z	54149120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PUFF
+				},
+				SimpleItem	Pyongtae_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	64129024,
+							Z	54942720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Pyongtae_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	64106496,
+							Z	54936576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	Pyongtae_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	64063488,
+							Z	54944768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	Pyongtae_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64054272,
+							Z	54897664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	Pyongtae_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	64084992,
+							Z	54914048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Pyongtae_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64096256,
+							Z	54970368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Pyongtae_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	64153600,
+							Z	54894592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	Pyongtae_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	63825920,
+							Z	55069696
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	Pyongtae_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	64166912,
+							Z	55002112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Pyongtae_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	64196608,
+							Z	54969344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	Pyongtae_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	64221184,
+							Z	54938624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	Pyongtae_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	64136192,
+							Z	55038976
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	Pyongtae_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	64144384,
+							Z	55060480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Pyongtae_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	64118784,
+							Z	55058432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Pyongtae_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	64126976,
+							Z	55081984
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Pyongtae_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	64104448,
+							Z	55092224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_SdBlPyongtaek,
+		ItemGroup
+		{
+				SimpleItem	Pyongtae_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	64197632,
+							Z	54866944
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Pyongtae_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	64154624,
+							Z	54915072
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Pyongtae_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	64198656,
+							Z	54899712
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Pyongtae_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	64119808,
+							Z	54983680
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Pyongtae_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	64080896,
+							Z	55057408
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Pyongtae_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	64050176,
+							Z	55110656
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Pyongtae_1809=
+				{
+					Posn
+					{
+						Abs
+						{	X	64153600,
+							Z	54848512
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Pyongtae_180a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64002048,
+							Z	55088128
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Pyongtae_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	64152576,
+							Z	54951936
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	Pyongtae_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	64176128,
+							Z	54873088
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	Pyongtae_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	64187392,
+							Z	54890496
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	Pyongtae_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	64167936,
+							Z	54933504
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				},
+				SimpleItem	Pyongtae_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	64132096,
+							Z	54966272
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	Pyongtae_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	64047104,
+							Z	55087104
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	Pyongtae_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	64070656,
+							Z	55101440
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	Pyongtae_2207=
+				{
+					Posn
+					{
+						Abs
+						{	X	64064512,
+							Z	55078912
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	Pyongtae_2208=
+				{
+					Posn
+					{
+						Abs
+						{	X	64029696,
+							Z	55092224
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				}
+		}	}
+	};

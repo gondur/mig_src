@@ -1,0 +1,589 @@
+	SimpleItem	HUICHON_1803,
+	SimpleItem	HUICHON_1804,
+	SimpleItem	HUICHON_1805,
+	SimpleItem	HUICHON_2004,
+	SimpleItem	HUICHON_2005,
+	SimpleItem	HUICHON_2006,
+	SimpleItem	HUICHON_2008,
+	SimpleItem	HUICHON_2009,
+	SimpleItem	HUICHON_200a,
+	SimpleItem	HUICHON_200b,
+	SimpleItem	HUICHON_200c,
+	SimpleItem	HUICHON_200d,
+	SimpleItem	HUICHON_200e,
+	SimpleItem	HUICHON_200f,
+	SimpleItem	HUICHON_2010,
+	SimpleItem	HUICHON_2011,
+	SimpleItem	HUICHON_2012,
+	SimpleItem	HUICHON_2013,
+	SimpleItem	HUICHON_2014,
+	SimpleItem	HUICHON_2015,
+	SimpleItem	HUICHON_2016,
+	SimpleItem	HUICHON_2017,
+	SimpleItem	HUICHON_2018,
+	SimpleItem	HUICHON_2019,
+	SimpleItem	HUICHON_201a,
+	SimpleItem	HUICHON_201b,
+	SimpleItem	HUICHON_201c,
+	SimpleItem	HUICHON_201d,
+	SimpleItem	HUICHON_201e,
+	SimpleItem	HUICHON_201f,
+	SimpleItem	HUICHON_2020,
+	SimpleItem	HUICHON_2021,
+	SimpleItem	HUICHON_2022,
+	SimpleItem	HUICHON_2023,
+	SimpleItem	HUICHON_2024,
+	SimpleItem	HUICHON_2025,
+	SimpleItem	HUICHON_2026,
+	SimpleItem	HUICHON_2200,
+	SimpleItem	HUICHON_2201,
+	SimpleItem	HUICHON_2202,
+	SimpleItem	HUICHON_2203,
+	SimpleItem	HUICHON_2204,
+	SimpleItem	HUICHON_2205,
+	SimpleItem	HUICHON_2206,
+	BattleField
+	{
+		FileName	FIL_1_HUICHON=HUICHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SCCHuichon,
+		ItemGroup
+		{
+			SimpleItem	HUICHON_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	57254912,
+						Z	90220544
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		FUELS
+			},
+				SimpleItem	HUICHON_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	57228288,
+							Z	90185728
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HUICHON_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	57103360,
+							Z	90298368
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HUICHON_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	57293824,
+							Z	90259456
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	HUICHON_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	57279488,
+							Z	90248192
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	HUICHON_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	57269248,
+							Z	90176512
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	HUICHON_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	57267200,
+							Z	90198016
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				},
+				SimpleItem	HUICHON_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	57275392,
+							Z	90218496
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	HUICHON_2204=
+				{
+					Posn
+					{
+						Abs
+						{	X	57251840,
+							Z	90246144
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				},
+				SimpleItem	HUICHON_2205=
+				{
+					Posn
+					{
+						Abs
+						{	X	57267200,
+							Z	90252288
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		LCRANE
+				},
+				SimpleItem	HUICHON_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	57250816,
+							Z	90203136
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	HUICHON_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	57261056,
+							Z	90267648
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		FUELS
+				},
+				SimpleItem	HUICHON_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	57247744,
+							Z	90266624
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		AMMOS
+				},
+				SimpleItem	HUICHON_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	57253888,
+							Z	90230784
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SUPPLY
+				},
+				SimpleItem	HUICHON_2206=
+				{
+					Posn
+					{
+						Abs
+						{	X	57237504,
+							Z	90246144
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StHuichon,
+		ItemGroup
+		{
+			SimpleItem	HUICHON_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	57198592,
+						Z	90266624
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	HUICHON_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	57216000,
+						Z	90223616
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+			SimpleItem	HUICHON_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	57182208,
+						Z	90271744
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+				SimpleItem	HUICHON_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	57242624,
+							Z	90261504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		PMAST
+				},
+			SimpleItem	HUICHON_2008=
+			{
+				Posn
+				{
+					Abs
+					{	X	57146368,
+						Z	90223616
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		V1NS
+			},
+				SimpleItem	HUICHON_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	57228288,
+							Z	90236928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI01
+				},
+				SimpleItem	HUICHON_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	57128960,
+							Z	90224640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HUICHON_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	57142272,
+							Z	90258432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HUICHON_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	57216000,
+							Z	90247168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HUICHON_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	57142272,
+							Z	90244096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HUICHON_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	57177088,
+							Z	90256384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HUICHON_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	57169920,
+							Z	90271744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	HUICHON_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	57140224,
+							Z	90277888
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HUICHON_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	57216000,
+							Z	90266624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HUICHON_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	57194496,
+							Z	90244096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	HUICHON_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	57163776,
+							Z	90248192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	HUICHON_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	57114624,
+							Z	90259456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HUICHON_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	57194496,
+							Z	90222592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	HUICHON_2017=
+				{
+					Posn
+					{
+						Abs
+						{	X	57172992,
+							Z	90222592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	HUICHON_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	57238528,
+							Z	90233856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		RMAST
+				},
+				SimpleItem	HUICHON_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	57147392,
+							Z	90179584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HUICHON_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	57193472,
+							Z	90196992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HUICHON_201f=
+				{
+					Posn
+					{
+						Abs
+						{	X	57099264,
+							Z	90223616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HUICHON_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	57083904,
+							Z	90264576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HUICHON_2021=
+				{
+					Posn
+					{
+						Abs
+						{	X	57126912,
+							Z	90316800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	HUICHON_2022=
+				{
+					Posn
+					{
+						Abs
+						{	X	57292800,
+							Z	90185728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	HUICHON_2023=
+				{
+					Posn
+					{
+						Abs
+						{	X	57310208,
+							Z	90219520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HUICHON_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	57266176,
+							Z	90142720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	HUICHON_2025=
+				{
+					Posn
+					{
+						Abs
+						{	X	57295872,
+							Z	90286080
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				}
+		}	}
+	};

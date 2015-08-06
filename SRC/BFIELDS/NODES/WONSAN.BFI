@@ -1,0 +1,1915 @@
+	SimpleItem	WONSAN_1803,
+	SimpleItem	WONSAN_1804,
+	SimpleItem	WONSAN_1805,
+	SimpleItem	WONSAN_1806,
+	SimpleItem	WONSAN_1807,
+	SimpleItem	WONSAN_1808,
+	SimpleItem	WONSAN_1809,
+	SimpleItem	WONSAN_180a,
+	SimpleItem	WONSAN_180b,
+	SimpleItem	WONSAN_180c,
+	SimpleItem	WONSAN_180d,
+	SimpleItem	WONSAN_2004,
+	SimpleItem	WONSAN_2005,
+	SimpleItem	WONSAN_2006,
+	SimpleItem	WONSAN_2007,
+	SimpleItem	WONSAN_2008,
+	SimpleItem	WONSAN_2009,
+	SimpleItem	WONSAN_200a,
+	SimpleItem	WONSAN_200b,
+	SimpleItem	WONSAN_200c,
+	SimpleItem	WONSAN_200d,
+	SimpleItem	WONSAN_200e,
+	SimpleItem	WONSAN_200f,
+	SimpleItem	WONSAN_2010,
+	SimpleItem	WONSAN_2011,
+	SimpleItem	WONSAN_2012,
+	SimpleItem	WONSAN_2013,
+	SimpleItem	WONSAN_2014,
+	SimpleItem	WONSAN_2015,
+	SimpleItem	WONSAN_2016,
+	SimpleItem	WONSAN_2017,
+	SimpleItem	WONSAN_2018,
+	SimpleItem	WONSAN_2019,
+	SimpleItem	WONSAN_201a,
+	SimpleItem	WONSAN_201b,
+	SimpleItem	WONSAN_201c,
+	SimpleItem	WONSAN_201d,
+	SimpleItem	WONSAN_201e,
+	SimpleItem	WONSAN_201f,
+	SimpleItem	WONSAN_2020,
+	SimpleItem	WONSAN_2021,
+	SimpleItem	WONSAN_2022,
+	SimpleItem	WONSAN_2023,
+	SimpleItem	WONSAN_2024,
+	SimpleItem	WONSAN_2025,
+	SimpleItem	WONSAN_2026,
+	SimpleItem	WONSAN_2027,
+	SimpleItem	WONSAN_2028,
+	SimpleItem	WONSAN_2029,
+	SimpleItem	WONSAN_202a,
+	SimpleItem	WONSAN_202b,
+	SimpleItem	WONSAN_202c,
+	SimpleItem	WONSAN_202d,
+	SimpleItem	WONSAN_202e,
+	SimpleItem	WONSAN_202f,
+	SimpleItem	WONSAN_2030,
+	SimpleItem	WONSAN_2031,
+	SimpleItem	WONSAN_2032,
+	SimpleItem	WONSAN_2033,
+	SimpleItem	WONSAN_2034,
+	SimpleItem	WONSAN_2035,
+	SimpleItem	WONSAN_2036,
+	SimpleItem	WONSAN_2037,
+	SimpleItem	WONSAN_2038,
+	SimpleItem	WONSAN_2039,
+	SimpleItem	WONSAN_203a,
+	SimpleItem	WONSAN_203b,
+	SimpleItem	WONSAN_203c,
+	SimpleItem	WONSAN_203d,
+	SimpleItem	WONSAN_203e,
+	SimpleItem	WONSAN_203f,
+	SimpleItem	WONSAN_2040,
+	SimpleItem	WONSAN_2041,
+	SimpleItem	WONSAN_2042,
+	SimpleItem	WONSAN_2044,
+	SimpleItem	WONSAN_2045,
+	SimpleItem	WONSAN_2046,
+	SimpleItem	WONSAN_2047,
+	SimpleItem	WONSAN_2048,
+	SimpleItem	WONSAN_2049,
+	SimpleItem	WONSAN_204a,
+	SimpleItem	WONSAN_204b,
+	SimpleItem	WONSAN_204c,
+	SimpleItem	WONSAN_204d,
+	SimpleItem	WONSAN_204e,
+	SimpleItem	WONSAN_204f,
+	SimpleItem	WONSAN_2051,
+	SimpleItem	WONSAN_2052,
+	SimpleItem	WONSAN_2053,
+	SimpleItem	WONSAN_2054,
+	SimpleItem	WONSAN_2055,
+	SimpleItem	WONSAN_2056,
+	SimpleItem	WONSAN_2057,
+	SimpleItem	WONSAN_2058,
+	SimpleItem	WONSAN_2059,
+	SimpleItem	WONSAN_205a,
+	SimpleItem	WONSAN_205b,
+	SimpleItem	WONSAN_205c,
+	SimpleItem	WONSAN_205d,
+	SimpleItem	WONSAN_205e,
+	SimpleItem	WONSAN_205f,
+	SimpleItem	WONSAN_2060,
+	SimpleItem	WONSAN_2061,
+	SimpleItem	WONSAN_2062,
+	SimpleItem	WONSAN_2063,
+	SimpleItem	WONSAN_2064,
+	SimpleItem	WONSAN_2065,
+	SimpleItem	WONSAN_2066,
+	SimpleItem	WONSAN_2067,
+	SimpleItem	WONSAN_2068,
+	SimpleItem	WONSAN_2069,
+	SimpleItem	WONSAN_206a,
+	SimpleItem	WONSAN_206b,
+	SimpleItem	WONSAN_206c,
+	SimpleItem	WONSAN_206d,
+	SimpleItem	WONSAN_206e,
+	SimpleItem	WONSAN_206f,
+	SimpleItem	WONSAN_2070,
+	SimpleItem	WONSAN_2071,
+	SimpleItem	WONSAN_2072,
+	SimpleItem	WONSAN_2073,
+	SimpleItem	WONSAN_2074,
+	SimpleItem	WONSAN_2075,
+	SimpleItem	WONSAN_2076,
+	SimpleItem	WONSAN_2077,
+	SimpleItem	WONSAN_2078,
+	SimpleItem	WONSAN_2079,
+	SimpleItem	WONSAN_207a,
+	SimpleItem	WONSAN_207b,
+	SimpleItem	WONSAN_207c,
+	SimpleItem	WONSAN_207d,
+	SimpleItem	WONSAN_207e,
+	SimpleItem	WONSAN_207f,
+	SimpleItem	WONSAN_2081,
+	SimpleItem	WONSAN_2082,
+	SimpleItem	WONSAN_2083,
+	SimpleItem	WONSAN_2084,
+	SimpleItem	WONSAN_2085,
+	SimpleItem	WONSAN_2086,
+	SimpleItem	WONSAN_2087,
+	SimpleItem	WONSAN_2800,
+	SimpleItem	WONSAN_2801,
+	SimpleItem	WONSAN_2802,
+	SimpleItem	WONSAN_2803,
+	SimpleItem	WONSAN_2804,
+	SimpleItem	WONSAN_3400,
+	BattleField
+	{
+		FileName	FIL_1_WONSAN=WONSAN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_MyRlWonsan,
+		ItemGroup
+		{
+			SimpleItem	WONSAN_1803=
+			{
+				Posn
+				{
+					Abs
+					{	X	41113600,
+						Z	89522176
+					}
+				},
+				UIDBand		RedAAASiteBAND,
+				Shape		LBFLAK2
+			},
+				SimpleItem	WONSAN_1804=
+				{
+					Posn
+					{
+						Abs
+						{	X	67680256,
+							Z	78842880
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	WONSAN_1805=
+				{
+					Posn
+					{
+						Abs
+						{	X	67400704,
+							Z	78920704
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	WONSAN_1806=
+				{
+					Posn
+					{
+						Abs
+						{	X	67453952,
+							Z	78951424
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	WONSAN_1807=
+				{
+					Posn
+					{
+						Abs
+						{	X	67531776,
+							Z	79072256
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	WONSAN_1808=
+				{
+					Posn
+					{
+						Abs
+						{	X	67499008,
+							Z	79038464
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	WONSAN_1809=
+				{
+					Posn
+					{
+						Abs
+						{	X	67357696,
+							Z	79019008
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	WONSAN_180a=
+				{
+					Posn
+					{
+						Abs
+						{	X	66950144,
+							Z	79188992
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	WONSAN_180b=
+				{
+					Posn
+					{
+						Abs
+						{	X	66861056,
+							Z	79223808
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	WONSAN_180c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67176448,
+							Z	79162368
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	WONSAN_180d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67301376,
+							Z	79021056
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	WONSAN_2800=
+				{
+					Posn
+					{
+						Abs
+						{	X	67319808,
+							Z	79066112
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+				SimpleItem	WONSAN_2801=
+				{
+					Posn
+					{
+						Abs
+						{	X	67476480,
+							Z	79070208
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF7L
+				},
+			SimpleItem	WONSAN_202a=
+			{
+				Posn
+				{
+					Abs
+					{	X	67440640,
+						Z	79069184
+					}
+				},
+				UIDBand		AmberSupplyBAND,
+				Shape		SUPPLY
+			},
+				SimpleItem	WONSAN_203a=
+				{
+					Posn
+					{
+						Abs
+						{	X	67407872,
+							Z	79124480
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		CARGO
+				},
+				SimpleItem	WONSAN_2802=
+				{
+					Posn
+					{
+						Abs
+						{	X	67392512,
+							Z	79067136
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	WONSAN_2803=
+				{
+					Posn
+					{
+						Abs
+						{	X	67432448,
+							Z	78919680
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	WONSAN_2804=
+				{
+					Posn
+					{
+						Abs
+						{	X	67432448,
+							Z	78950400
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF3M
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StWonsan,
+		ItemGroup
+		{
+			SimpleItem	WONSAN_3400=
+			{
+				Posn
+				{
+					Abs
+					{	X	64552960,
+						Z	49719296
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN2
+			},
+			SimpleItem	WONSAN_2004=
+			{
+				Posn
+				{
+					Abs
+					{	X	64707584,
+						Z	53056512
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2005=
+			{
+				Posn
+				{
+					Abs
+					{	X	64683008,
+						Z	52910080
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2006=
+			{
+				Posn
+				{
+					Abs
+					{	X	64648192,
+						Z	52952064
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2007=
+			{
+				Posn
+				{
+					Abs
+					{	X	64435200,
+						Z	49085440
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2008=
+			{
+				Posn
+				{
+					Abs
+					{	X	64410624,
+						Z	49065984
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2009=
+			{
+				Posn
+				{
+					Abs
+					{	X	64432128,
+						Z	49065984
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_200a=
+			{
+				Posn
+				{
+					Abs
+					{	X	64454656,
+						Z	49082368
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_200b=
+			{
+				Posn
+				{
+					Abs
+					{	X	64448512,
+						Z	49067008
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_200c=
+			{
+				Posn
+				{
+					Abs
+					{	X	64418816,
+						Z	49050624
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_200d=
+			{
+				Posn
+				{
+					Abs
+					{	X	64453632,
+						Z	49050624
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_200e=
+			{
+				Posn
+				{
+					Abs
+					{	X	64434176,
+						Z	49049600
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_200f=
+			{
+				Posn
+				{
+					Abs
+					{	X	64470016,
+						Z	49077248
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2010=
+			{
+				Posn
+				{
+					Abs
+					{	X	64487424,
+						Z	49061888
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2011=
+			{
+				Posn
+				{
+					Abs
+					{	X	64478208,
+						Z	49043456
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2012=
+			{
+				Posn
+				{
+					Abs
+					{	X	64460800,
+						Z	49028096
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2013=
+			{
+				Posn
+				{
+					Abs
+					{	X	64419840,
+						Z	49030144
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2014=
+			{
+				Posn
+				{
+					Abs
+					{	X	64448512,
+						Z	49012736
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2015=
+			{
+				Posn
+				{
+					Abs
+					{	X	64425984,
+						Z	49011712
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2016=
+			{
+				Posn
+				{
+					Abs
+					{	X	64437248,
+						Z	48973824
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2017=
+			{
+				Posn
+				{
+					Abs
+					{	X	64417792,
+						Z	48967680
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2018=
+			{
+				Posn
+				{
+					Abs
+					{	X	64454656,
+						Z	48966656
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_2019=
+			{
+				Posn
+				{
+					Abs
+					{	X	64433152,
+						Z	48957440
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_201a=
+			{
+				Posn
+				{
+					Abs
+					{	X	64449536,
+						Z	48951296
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_201b=
+			{
+				Posn
+				{
+					Abs
+					{	X	64411648,
+						Z	48953344
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN1
+			},
+			SimpleItem	WONSAN_201c=
+			{
+				Posn
+				{
+					Abs
+					{	X	67184640,
+						Z	79210496
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	WONSAN_201f=
+			{
+				Posn
+				{
+					Abs
+					{	X	67464192,
+						Z	79022080
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	WONSAN_2020=
+			{
+				Posn
+				{
+					Abs
+					{	X	67372032,
+						Z	78991360
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	WONSAN_2021=
+			{
+				Posn
+				{
+					Abs
+					{	X	67284992,
+						Z	78987264
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	WONSAN_2022=
+			{
+				Posn
+				{
+					Abs
+					{	X	66987008,
+						Z	79108096
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	WONSAN_2023=
+			{
+				Posn
+				{
+					Abs
+					{	X	66984960,
+						Z	79041536
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	WONSAN_2024=
+			{
+				Posn
+				{
+					Abs
+					{	X	67028992,
+						Z	79056896
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	WONSAN_2025=
+			{
+				Posn
+				{
+					Abs
+					{	X	67079168,
+						Z	79052800
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	WONSAN_2026=
+			{
+				Posn
+				{
+					Abs
+					{	X	66945024,
+						Z	78996480
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	WONSAN_2027=
+			{
+				Posn
+				{
+					Abs
+					{	X	66999296,
+						Z	78947328
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		TWN3EW
+			},
+			SimpleItem	WONSAN_2028=
+			{
+				Posn
+				{
+					Abs
+					{	X	67408896,
+						Z	79053824
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CIVI10
+			},
+			SimpleItem	WONSAN_2029=
+			{
+				Posn
+				{
+					Abs
+					{	X	67297280,
+						Z	79094784
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CARNE2
+			},
+			SimpleItem	WONSAN_202c=
+			{
+				Posn
+				{
+					Abs
+					{	X	67374080,
+						Z	79055872
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CIVI10
+			},
+			SimpleItem	WONSAN_202d=
+			{
+				Posn
+				{
+					Abs
+					{	X	67297280,
+						Z	79059968
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		CIVI10
+			},
+			SimpleItem	WONSAN_202e=
+			{
+				Posn
+				{
+					Abs
+					{	X	67514368,
+						Z	78792704
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		WOOD1
+			},
+				SimpleItem	WONSAN_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67135488,
+							Z	79173632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_201e=
+				{
+					Posn
+					{
+						Abs
+						{	X	67222528,
+							Z	79160320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	67355648,
+							Z	79064064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	WONSAN_202f=
+				{
+					Posn
+					{
+						Abs
+						{	X	67325952,
+							Z	78971904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2030=
+				{
+					Posn
+					{
+						Abs
+						{	X	67589120,
+							Z	79004672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	66849792,
+							Z	79350784
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	WONSAN_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	66925568,
+							Z	79223808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	WONSAN_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	66832384,
+							Z	79293440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	WONSAN_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	66833408,
+							Z	79229952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	WONSAN_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	67559424,
+							Z	79213568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2036=
+				{
+					Posn
+					{
+						Abs
+						{	X	67580928,
+							Z	79066112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2037=
+				{
+					Posn
+					{
+						Abs
+						{	X	67639296,
+							Z	78991360
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2038=
+				{
+					Posn
+					{
+						Abs
+						{	X	67623936,
+							Z	79037440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	WONSAN_2039=
+				{
+					Posn
+					{
+						Abs
+						{	X	67045376,
+							Z	79130624
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	WONSAN_203b=
+				{
+					Posn
+					{
+						Abs
+						{	X	67551232,
+							Z	79153152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	WONSAN_203c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67547136,
+							Z	79129600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	WONSAN_203d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67503104,
+							Z	79122432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SAMPAN
+				},
+				SimpleItem	WONSAN_203e=
+				{
+					Posn
+					{
+						Abs
+						{	X	67132416,
+							Z	79221760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_203f=
+				{
+					Posn
+					{
+						Abs
+						{	X	67086336,
+							Z	79106048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI03
+				},
+				SimpleItem	WONSAN_2040=
+				{
+					Posn
+					{
+						Abs
+						{	X	67132416,
+							Z	79271936
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2041=
+				{
+					Posn
+					{
+						Abs
+						{	X	67223552,
+							Z	79207424
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI03
+				},
+				SimpleItem	WONSAN_2042=
+				{
+					Posn
+					{
+						Abs
+						{	X	67230720,
+							Z	79101952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2044=
+				{
+					Posn
+					{
+						Abs
+						{	X	67256320,
+							Z	79140864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2045=
+				{
+					Posn
+					{
+						Abs
+						{	X	67260416,
+							Z	79076352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2046=
+				{
+					Posn
+					{
+						Abs
+						{	X	67529728,
+							Z	78982144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2047=
+				{
+					Posn
+					{
+						Abs
+						{	X	67486720,
+							Z	78982144
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2048=
+				{
+					Posn
+					{
+						Abs
+						{	X	67484672,
+							Z	78930944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI04
+				},
+				SimpleItem	WONSAN_2049=
+				{
+					Posn
+					{
+						Abs
+						{	X	67531776,
+							Z	78931968
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_204a=
+				{
+					Posn
+					{
+						Abs
+						{	X	67533824,
+							Z	78895104
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_204b=
+				{
+					Posn
+					{
+						Abs
+						{	X	67617792,
+							Z	78908416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_204c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67608576,
+							Z	78848000
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_204d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67543040,
+							Z	78845952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_204e=
+				{
+					Posn
+					{
+						Abs
+						{	X	67440640,
+							Z	78844928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_204f=
+				{
+					Posn
+					{
+						Abs
+						{	X	67440640,
+							Z	78800896
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2051=
+				{
+					Posn
+					{
+						Abs
+						{	X	67373056,
+							Z	78941184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2052=
+				{
+					Posn
+					{
+						Abs
+						{	X	67286016,
+							Z	78920704
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2053=
+				{
+					Posn
+					{
+						Abs
+						{	X	67301376,
+							Z	78857216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2054=
+				{
+					Posn
+					{
+						Abs
+						{	X	67052544,
+							Z	79105024
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2055=
+				{
+					Posn
+					{
+						Abs
+						{	X	67031040,
+							Z	79185920
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2056=
+				{
+					Posn
+					{
+						Abs
+						{	X	67092480,
+							Z	79169536
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2057=
+				{
+					Posn
+					{
+						Abs
+						{	X	66952192,
+							Z	79126528
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2058=
+				{
+					Posn
+					{
+						Abs
+						{	X	66949120,
+							Z	79058944
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_2059=
+				{
+					Posn
+					{
+						Abs
+						{	X	66942976,
+							Z	78946304
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_205a=
+				{
+					Posn
+					{
+						Abs
+						{	X	66971648,
+							Z	78909440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_205b=
+				{
+					Posn
+					{
+						Abs
+						{	X	66989056,
+							Z	79000576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CIVI02
+				},
+				SimpleItem	WONSAN_205c=
+				{
+					Posn
+					{
+						Abs
+						{	X	66898944,
+							Z	79034368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_205d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67227648,
+							Z	78909440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	WONSAN_205e=
+				{
+					Posn
+					{
+						Abs
+						{	X	67325952,
+							Z	78937088
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_205f=
+				{
+					Posn
+					{
+						Abs
+						{	X	67325952,
+							Z	79007744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	WONSAN_2060=
+				{
+					Posn
+					{
+						Abs
+						{	X	67398656,
+							Z	79016960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	WONSAN_2061=
+				{
+					Posn
+					{
+						Abs
+						{	X	67400704,
+							Z	78891008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	WONSAN_2062=
+				{
+					Posn
+					{
+						Abs
+						{	X	67568640,
+							Z	78951424
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2063=
+				{
+					Posn
+					{
+						Abs
+						{	X	67579904,
+							Z	78899200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2064=
+				{
+					Posn
+					{
+						Abs
+						{	X	67367936,
+							Z	78753792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	WONSAN_2065=
+				{
+					Posn
+					{
+						Abs
+						{	X	67362816,
+							Z	78868480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	WONSAN_2066=
+				{
+					Posn
+					{
+						Abs
+						{	X	67396608,
+							Z	78852096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	WONSAN_2067=
+				{
+					Posn
+					{
+						Abs
+						{	X	67360768,
+							Z	78826496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	WONSAN_2068=
+				{
+					Posn
+					{
+						Abs
+						{	X	67392512,
+							Z	78817280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2069=
+				{
+					Posn
+					{
+						Abs
+						{	X	67239936,
+							Z	79025152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_206a=
+				{
+					Posn
+					{
+						Abs
+						{	X	67158016,
+							Z	79068160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_206b=
+				{
+					Posn
+					{
+						Abs
+						{	X	67145728,
+							Z	79127552
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_206c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67144704,
+							Z	79101952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	WONSAN_206d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67113984,
+							Z	79063040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_206e=
+				{
+					Posn
+					{
+						Abs
+						{	X	67076096,
+							Z	79307776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_206f=
+				{
+					Posn
+					{
+						Abs
+						{	X	67042304,
+							Z	79341568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2070=
+				{
+					Posn
+					{
+						Abs
+						{	X	67060736,
+							Z	79268864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2071=
+				{
+					Posn
+					{
+						Abs
+						{	X	67024896,
+							Z	79298560
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2072=
+				{
+					Posn
+					{
+						Abs
+						{	X	66991104,
+							Z	79339520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2073=
+				{
+					Posn
+					{
+						Abs
+						{	X	67200000,
+							Z	79129600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2074=
+				{
+					Posn
+					{
+						Abs
+						{	X	67198976,
+							Z	79178752
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2075=
+				{
+					Posn
+					{
+						Abs
+						{	X	67454976,
+							Z	78919680
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2076=
+				{
+					Posn
+					{
+						Abs
+						{	X	67447808,
+							Z	78934016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	WONSAN_2077=
+				{
+					Posn
+					{
+						Abs
+						{	X	67504128,
+							Z	79076352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	WONSAN_2078=
+				{
+					Posn
+					{
+						Abs
+						{	X	67289088,
+							Z	79120384
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2079=
+				{
+					Posn
+					{
+						Abs
+						{	X	67287040,
+							Z	79144960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_207a=
+				{
+					Posn
+					{
+						Abs
+						{	X	67063808,
+							Z	79129600
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	WONSAN_207b=
+				{
+					Posn
+					{
+						Abs
+						{	X	67334144,
+							Z	79062016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	WONSAN_207c=
+				{
+					Posn
+					{
+						Abs
+						{	X	67325952,
+							Z	79055872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	WONSAN_207d=
+				{
+					Posn
+					{
+						Abs
+						{	X	67435520,
+							Z	78941184
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	WONSAN_207e=
+				{
+					Posn
+					{
+						Abs
+						{	X	67457024,
+							Z	79070208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	WONSAN_207f=
+				{
+					Posn
+					{
+						Abs
+						{	X	67466240,
+							Z	79070208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	WONSAN_2081=
+				{
+					Posn
+					{
+						Abs
+						{	X	67523584,
+							Z	79089664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2082=
+				{
+					Posn
+					{
+						Abs
+						{	X	67259392,
+							Z	78886912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2083=
+				{
+					Posn
+					{
+						Abs
+						{	X	67045376,
+							Z	78967808
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2084=
+				{
+					Posn
+					{
+						Abs
+						{	X	67007488,
+							Z	78904320
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2085=
+				{
+					Posn
+					{
+						Abs
+						{	X	66957312,
+							Z	79164416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	WONSAN_2086=
+				{
+					Posn
+					{
+						Abs
+						{	X	67243008,
+							Z	78841856
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	WONSAN_2087=
+				{
+					Posn
+					{
+						Abs
+						{	X	67304448,
+							Z	78778368
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				}
+		}	}
+	};

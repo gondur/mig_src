@@ -1,0 +1,147 @@
+	WayPoint	RDKANGDO_0110,
+	WayPoint	RDKANGDO_0111,
+	WayPoint	RDKANGDO_0112,
+	WayPoint	RDKANGDO_0113,
+	WayPoint	RDKANGDO_0114,
+	GroundItem	RDKANGDO_3086,
+	GroundItem	RDKANGDO_3087,
+	BattleField
+	{
+		FileName	FIL_1_RDKANGDO=RDKANGDO.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfRdKangdong,
+		ItemGroup
+		{
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdKangdong, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				},
+				SimpleItem
+				{
+  					Posn	{Abs	UID_AfRdKangdong, 
+  					 		 Rel	{Bearing	{Random ANGLES_0Deg,359,ANGLES_1Deg},
+							 		 Range		{Random	METRES50,400,METRES01}
+									}
+							},	
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	55469063,
+						Z	79236092
+					}
+				},
+				Route
+				{
+					WayPoint	RDKANGDO_0110=
+					{
+						Posn
+						{
+							Abs
+							{	X	55522721,
+								Z	79186940
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDKANGDO_0111=
+					{
+						Posn
+						{
+							Abs
+							{	X	55523540,
+								Z	79165231
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDKANGDO_3086=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	{List CH12ML,CHTRCK,CHTRCK},
+					Vel	112
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	55476026,
+						Z	79324566
+					}
+				},
+				Route
+				{
+					WayPoint	RDKANGDO_0112=
+					{
+						Posn
+						{
+							Abs
+							{	X	55494049,
+								Z	79342588
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDKANGDO_0113=
+					{
+						Posn
+						{
+							Abs
+							{	X	55651745,
+								Z	79184482
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	RDKANGDO_0114=
+					{
+						Posn
+						{
+							Abs
+							{	X	55636999,
+								Z	79168508
+							}
+						},
+						Vel	112,
+						Action	wpdmbtrkstopno,
+						Range	0
+					}
+				},
+				NumInForm		1,
+				Formation	FORM_SINGLEFILE,
+				GroundItem	RDKANGDO_3087=
+				{
+					AfNoScoreBAND,
+					Type	SQ_VEHICLES,
+					Side	NAT_RED,
+					Shape	SFTRCK,
+					Vel	112
+				}	
+			}
+		}
+	};

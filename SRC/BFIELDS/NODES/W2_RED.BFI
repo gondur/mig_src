@@ -1,0 +1,24 @@
+	SimpleItem	W2_Red_08a6,
+	BattleField
+	{
+		FileName	FIL_1_W2_Red=W2_Red.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	W2_Red_08a6=
+			{
+				Posn
+				{
+					Abs
+					{	X	64789137,
+						Z	53518036
+					}
+				},
+				UIDBand		MissileBAND,
+				SetUID	UID_BNW_2a,
+				Shape		EMPTY2
+			}
+		}
+	};

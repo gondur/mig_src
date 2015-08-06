@@ -1,0 +1,537 @@
+	SimpleItem	Kangye_1503,
+	SimpleItem	Kangye_1504,
+	SimpleItem	Kangye_1505,
+	SimpleItem	Kangye_1506,
+	SimpleItem	Kangye_1507,
+	SimpleItem	Kangye_1508,
+	SimpleItem	Kangye_1a00,
+	SimpleItem	Kangye_1a01,
+	SimpleItem	Kangye_1a02,
+	SimpleItem	Kangye_1a03,
+	SimpleItem	Kangye_1a04,
+	SimpleItem	Kangye_1a05,
+	SimpleItem	Kangye_1a06,
+	SimpleItem	Kangye_1a07,
+	SimpleItem	Kangye_1a08,
+	SimpleItem	Kangye_1a09,
+	SimpleItem	Kangye_1a0a,
+	SimpleItem	Kangye_1a0b,
+	SimpleItem	Kangye_1a0c,
+	SimpleItem	Kangye_1a0d,
+	SimpleItem	Kangye_1a0e,
+	SimpleItem	Kangye_1a0f,
+	SimpleItem	Kangye_1a10,
+	SimpleItem	Kangye_1a11,
+	SimpleItem	Kangye_1a12,
+	SimpleItem	Kangye_1a13,
+	SimpleItem	Kangye_1a14,
+	SimpleItem	Kangye_1a15,
+	SimpleItem	Kangye_1a16,
+	SimpleItem	Kangye_2500,
+	SimpleItem	Kangye_2501,
+	SimpleItem	Kangye_2502,
+	SimpleItem	Kangye_2503,
+	SimpleItem	Kangye_2504,
+	SimpleItem	Kangye_2505,
+	SimpleItem	Kangye_2506,
+	SimpleItem	Kangye_2507,
+	SimpleItem	Kangye_2508,
+	SimpleItem	Kangye_2509,
+	SimpleItem	Kangye_250a,
+	BattleField
+	{
+		FileName	FIL_1_KANGYE=Kangye.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_SCCKangye,
+		ItemGroup
+		{
+				SimpleItem	Kangye_1503=
+				{
+					Posn
+					{
+						Abs
+						{	X	59970560,
+							Z	99075072
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Kangye_1504=
+				{
+					Posn
+					{
+						Abs
+						{	X	59820032,
+							Z	99146752
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Kangye_1505=
+				{
+					Posn
+					{
+						Abs
+						{	X	59973632,
+							Z	99117056
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Kangye_1506=
+				{
+					Posn
+					{
+						Abs
+						{	X	59873280,
+							Z	99185664
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Kangye_1507=
+				{
+					Posn
+					{
+						Abs
+						{	X	59906048,
+							Z	99200000
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Kangye_1508=
+				{
+					Posn
+					{
+						Abs
+						{	X	59898880,
+							Z	99068928
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	Kangye_2500=
+				{
+					Posn
+					{
+						Abs
+						{	X	59837440,
+							Z	99166208
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	Kangye_2501=
+				{
+					Posn
+					{
+						Abs
+						{	X	59868160,
+							Z	99119104
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	Kangye_2502=
+				{
+					Posn
+					{
+						Abs
+						{	X	59863040,
+							Z	99131392
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	Kangye_2503=
+				{
+					Posn
+					{
+						Abs
+						{	X	59934720,
+							Z	99139584
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		CIVI01
+				},
+				SimpleItem	Kangye_2504=
+				{
+					Posn
+					{
+						Abs
+						{	X	59925504,
+							Z	99153920
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	Kangye_2505=
+				{
+					Posn
+					{
+						Abs
+						{	X	59906048,
+							Z	99175424
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF6L
+				},
+				SimpleItem	Kangye_2506=
+				{
+					Posn
+					{
+						Abs
+						{	X	59889664,
+							Z	99153920
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	Kangye_2507=
+				{
+					Posn
+					{
+						Abs
+						{	X	59907072,
+							Z	99134464
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	Kangye_2508=
+				{
+					Posn
+					{
+						Abs
+						{	X	59919360,
+							Z	99112960
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF5M
+				},
+				SimpleItem	Kangye_2509=
+				{
+					Posn
+					{
+						Abs
+						{	X	59881472,
+							Z	99110912
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF2S
+				},
+				SimpleItem	Kangye_250a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59855872,
+							Z	99143680
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_StKangye,
+		ItemGroup
+		{
+				SimpleItem	Kangye_1a00=
+				{
+					Posn
+					{
+						Abs
+						{	X	59878400,
+							Z	99163136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		LCRANE
+				},
+				SimpleItem	Kangye_1a01=
+				{
+					Posn
+					{
+						Abs
+						{	X	59906048,
+							Z	99120128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		LCRANE
+				},
+				SimpleItem	Kangye_1a02=
+				{
+					Posn
+					{
+						Abs
+						{	X	59894784,
+							Z	99139584
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CARNE2
+				},
+				SimpleItem	Kangye_1a03=
+				{
+					Posn
+					{
+						Abs
+						{	X	59880448,
+							Z	99210240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	Kangye_1a04=
+				{
+					Posn
+					{
+						Abs
+						{	X	59904000,
+							Z	99218432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Kangye_1a05=
+				{
+					Posn
+					{
+						Abs
+						{	X	59956224,
+							Z	99104768
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Kangye_1a06=
+				{
+					Posn
+					{
+						Abs
+						{	X	59974656,
+							Z	99141632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	Kangye_1a07=
+				{
+					Posn
+					{
+						Abs
+						{	X	59852800,
+							Z	99103744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	Kangye_1a08=
+				{
+					Posn
+					{
+						Abs
+						{	X	59808768,
+							Z	99099136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	Kangye_1a09=
+				{
+					Posn
+					{
+						Abs
+						{	X	59836416,
+							Z	99127296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	Kangye_1a0a=
+				{
+					Posn
+					{
+						Abs
+						{	X	59888640,
+							Z	99093504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	Kangye_1a0b=
+				{
+					Posn
+					{
+						Abs
+						{	X	59912192,
+							Z	99044352
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	Kangye_1a0c=
+				{
+					Posn
+					{
+						Abs
+						{	X	59922432,
+							Z	99023872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	Kangye_1a0d=
+				{
+					Posn
+					{
+						Abs
+						{	X	59820032,
+							Z	99179520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	Kangye_1a0e=
+				{
+					Posn
+					{
+						Abs
+						{	X	60011520,
+							Z	99186688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		STEPTO
+				},
+				SimpleItem	Kangye_1a0f=
+				{
+					Posn
+					{
+						Abs
+						{	X	60043264,
+							Z	99247104
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		STEPTO
+				},
+				SimpleItem	Kangye_1a10=
+				{
+					Posn
+					{
+						Abs
+						{	X	59811840,
+							Z	99210240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FISHR
+				},
+				SimpleItem	Kangye_1a11=
+				{
+					Posn
+					{
+						Abs
+						{	X	59936256,
+							Z	99167744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Kangye_1a12=
+				{
+					Posn
+					{
+						Abs
+						{	X	59951616,
+							Z	99174912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	Kangye_1a13=
+				{
+					Posn
+					{
+						Abs
+						{	X	59953152,
+							Z	99133440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	Kangye_1a14=
+				{
+					Posn
+					{
+						Abs
+						{	X	59937792,
+							Z	99123200
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		RMAST
+				},
+				SimpleItem	Kangye_1a15=
+				{
+					Posn
+					{
+						Abs
+						{	X	59927552,
+							Z	99184640
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	Kangye_1a16=
+				{
+					Posn
+					{
+						Abs
+						{	X	59947520,
+							Z	99149312
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				}
+		}	}
+	};

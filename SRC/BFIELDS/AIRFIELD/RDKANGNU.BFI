@@ -1,0 +1,38 @@
+	SimpleItem	rdkangnu_041b,
+	SimpleItem	rdkangnu_041e,
+	BattleField
+	{
+		FileName	FIL_1_RDKANGNU=rdkangnu.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_AfBlKangnung,
+			ItemGroup
+			{
+				SimpleItem	rdkangnu_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	80383232,
+							Z	63653376
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				},
+				SimpleItem	rdkangnu_041e=
+				{
+					Posn
+					{
+						Abs
+						{	X	80238336,
+							Z	63553024
+						}
+					},
+					UIDBand		AfNoScoreBAND,
+					Shape		GRNDD4
+				}
+			}
+		}
+	};

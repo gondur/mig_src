@@ -1,0 +1,636 @@
+	SimpleItem	CHORWON_044e,
+	SimpleItem	CHORWON_0451,
+	SimpleItem	CHORWON_0453,
+	SimpleItem	CHORWON_0455,
+	SimpleItem	CHORWON_045d,
+	SimpleItem	CHORWON_045f,
+	SimpleItem	CHORWON_2004,
+//TempCode RC 28Apr99	SimpleItem	CHORWON_2007,
+	SimpleItem	CHORWON_2008,
+	SimpleItem	CHORWON_2009,
+//TempCode RC 28Apr99 	SimpleItem	CHORWON_200a,
+	SimpleItem	CHORWON_200b,
+	SimpleItem	CHORWON_200c,
+	SimpleItem	CHORWON_200d,
+	SimpleItem	CHORWON_200e,
+	SimpleItem	CHORWON_200f,
+	SimpleItem	CHORWON_2010,
+	SimpleItem	CHORWON_2011,
+	SimpleItem	CHORWON_2012,
+	SimpleItem	CHORWON_2013,
+	SimpleItem	CHORWON_2014,
+	SimpleItem	CHORWON_2015,
+	SimpleItem	CHORWON_2016,
+	SimpleItem	CHORWON_2018,
+	SimpleItem	CHORWON_2019,
+	SimpleItem	CHORWON_201a,
+	SimpleItem	CHORWON_201b,
+	SimpleItem	CHORWON_201c,
+	SimpleItem	CHORWON_201d,
+//TempCode RC 28Apr99 	SimpleItem	CHORWON_201e,
+	SimpleItem	CHORWON_2020,
+	SimpleItem	CHORWON_2024,
+//TempCode RC 28Apr99 	SimpleItem	CHORWON_2025,
+	SimpleItem	CHORWON_2026,
+	SimpleItem	CHORWON_2027,
+	SimpleItem	CHORWON_2029,
+	SimpleItem	CHORWON_202a,
+	SimpleItem	CHORWON_202b,
+	SimpleItem	CHORWON_202c,
+	SimpleItem	CHORWON_202d,
+	SimpleItem	CHORWON_202e,
+	SimpleItem	CHORWON_202f,
+	SimpleItem	CHORWON_2030,
+	SimpleItem	CHORWON_2031,
+	SimpleItem	CHORWON_2032,
+	SimpleItem	CHORWON_2033,
+	SimpleItem	CHORWON_2034,
+	SimpleItem	CHORWON_2035,
+	BattleField
+	{
+		FileName	FIL_1_CHORWON=CHORWON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StChorwon,
+		ItemGroup
+		{
+//TempCode RC 28Apr99 			SimpleItem	CHORWON_2007=
+//TempCode RC 28Apr99 			{
+//TempCode RC 28Apr99 				Posn
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Abs
+//TempCode RC 28Apr99 					{	X	65295360,
+//TempCode RC 28Apr99 						Z	68636672
+//TempCode RC 28Apr99 					}
+//TempCode RC 28Apr99 				},
+//TempCode RC 28Apr99 				UIDBand		AmberCivilianBAND,
+//TempCode RC 28Apr99 				Shape		FUELS
+//TempCode RC 28Apr99 			},
+			SimpleItem	CHORWON_202f=
+			{
+				Posn
+				{
+					Abs
+					{	X	65437696,
+						Z	68682752
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST2
+			},
+			SimpleItem	CHORWON_2030=
+			{
+				Posn
+				{
+					Abs
+					{	X	65381376,
+						Z	68661248
+					}
+				},
+				UIDBand		AmberCivilianBAND,
+				Shape		FOREST2
+			},
+				SimpleItem	CHORWON_044e=
+				{
+					Posn
+					{
+						Abs
+						{	X	65317888,
+							Z	68568064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHORWON_0451=
+				{
+					Posn
+					{
+						Abs
+						{	X	65324032,
+							Z	68568064
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHORWON_0453=
+				{
+					Posn
+					{
+						Abs
+						{	X	65332224,
+							Z	68570112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHORWON_0455=
+				{
+					Posn
+					{
+						Abs
+						{	X	65340416,
+							Z	68571136
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHORWON_045d=
+				{
+					Posn
+					{
+						Abs
+						{	X	65280000,
+							Z	68559872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHORWON_045f=
+				{
+					Posn
+					{
+						Abs
+						{	X	65293312,
+							Z	68616192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	CHORWON_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	65517568,
+							Z	68831232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHORWON_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	65276928,
+							Z	68474880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHORWON_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	65223680,
+							Z	68402176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+//TempCode RC 28Apr99 				SimpleItem	CHORWON_200a=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	65394688,
+//TempCode RC 28Apr99 							Z	68488192
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberCivilianBAND,
+//TempCode RC 28Apr99 					Shape		FUELS
+//TempCode RC 28Apr99 				},
+				SimpleItem	CHORWON_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	65381376,
+							Z	68567040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHORWON_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	65414144,
+							Z	68572160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHORWON_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	65370112,
+							Z	68586496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	CHORWON_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	65325056,
+							Z	68454400
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHORWON_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	65418240,
+							Z	68705280
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHORWON_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	65246208,
+							Z	68581376
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	CHORWON_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	65284096,
+							Z	68431872
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	CHORWON_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	65244160,
+							Z	68487168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHORWON_2013=
+				{
+					Posn
+					{
+						Abs
+						{	X	65430528,
+							Z	68760576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHORWON_2014=
+				{
+					Posn
+					{
+						Abs
+						{	X	65529856,
+							Z	68859904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHORWON_2015=
+				{
+					Posn
+					{
+						Abs
+						{	X	65499136,
+							Z	68811776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	CHORWON_2016=
+				{
+					Posn
+					{
+						Abs
+						{	X	65484800,
+							Z	68791296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V1NS
+				},
+				SimpleItem	CHORWON_2018=
+				{
+					Posn
+					{
+						Abs
+						{	X	65310720,
+							Z	68401152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHORWON_2019=
+				{
+					Posn
+					{
+						Abs
+						{	X	65264640,
+							Z	68392960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	CHORWON_201a=
+				{
+					Posn
+					{
+						Abs
+						{	X	65246208,
+							Z	68428800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHORWON_201b=
+				{
+					Posn
+					{
+						Abs
+						{	X	65356800,
+							Z	68427776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	CHORWON_201c=
+				{
+					Posn
+					{
+						Abs
+						{	X	65220608,
+							Z	68458496
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHORWON_201d=
+				{
+					Posn
+					{
+						Abs
+						{	X	65370112,
+							Z	68484096
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		LCRANE
+				},
+//TempCode RC 28Apr99 				SimpleItem	CHORWON_201e=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	65323008,
+//TempCode RC 28Apr99 							Z	68620288
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberCivilianBAND,
+//TempCode RC 28Apr99 					Shape		AMMOS
+//TempCode RC 28Apr99				},
+				SimpleItem	CHORWON_2020=
+				{
+					Posn
+					{
+						Abs
+						{	X	65298432,
+							Z	68572160
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHORWON_2024=
+				{
+					Posn
+					{
+						Abs
+						{	X	65255424,
+							Z	68627456
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				},
+//TempCode RC 28Apr99 				SimpleItem	CHORWON_2025=
+//TempCode RC 28Apr99 				{
+//TempCode RC 28Apr99 					Posn
+//TempCode RC 28Apr99 					{
+//TempCode RC 28Apr99 						Abs
+//TempCode RC 28Apr99 						{	X	65449984,
+//TempCode RC 28Apr99 							Z	68777984
+//TempCode RC 28Apr99 						}
+//TempCode RC 28Apr99 					},
+//TempCode RC 28Apr99 					UIDBand		AmberCivilianBAND,
+//TempCode RC 28Apr99 					Shape		SUPPLY
+//TempCode RC 28Apr99 				},
+				SimpleItem	CHORWON_2026=
+				{
+					Posn
+					{
+						Abs
+						{	X	65235968,
+							Z	68603904
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	CHORWON_2027=
+				{
+					Posn
+					{
+						Abs
+						{	X	65461248,
+							Z	68756480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHORWON_2029=
+				{
+					Posn
+					{
+						Abs
+						{	X	65384448,
+							Z	68732928
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHORWON_202a=
+				{
+					Posn
+					{
+						Abs
+						{	X	65326080,
+							Z	68638720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		LCRANE
+				},
+				SimpleItem	CHORWON_202b=
+				{
+					Posn
+					{
+						Abs
+						{	X	65106944,
+							Z	68409344
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHORWON_202c=
+				{
+					Posn
+					{
+						Abs
+						{	X	65085440,
+							Z	68385792
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V2EW
+				},
+				SimpleItem	CHORWON_202d=
+				{
+					Posn
+					{
+						Abs
+						{	X	65111040,
+							Z	68386816
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		HUT
+				},
+				SimpleItem	CHORWON_202e=
+				{
+					Posn
+					{
+						Abs
+						{	X	65276928,
+							Z	68610048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	CHORWON_2031=
+				{
+					Posn
+					{
+						Abs
+						{	X	65441792,
+							Z	68730880
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	CHORWON_2032=
+				{
+					Posn
+					{
+						Abs
+						{	X	65310720,
+							Z	68541440
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	CHORWON_2033=
+				{
+					Posn
+					{
+						Abs
+						{	X	65315840,
+							Z	68518912
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	CHORWON_2034=
+				{
+					Posn
+					{
+						Abs
+						{	X	65345536,
+							Z	68509696
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	CHORWON_2035=
+				{
+					Posn
+					{
+						Abs
+						{	X	65395712,
+							Z	68587520
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		V3NESW
+				}
+		}	}
+	};

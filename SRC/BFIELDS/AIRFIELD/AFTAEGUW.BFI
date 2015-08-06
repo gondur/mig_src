@@ -1,0 +1,168 @@
+	SimpleItem	aftaeguw_1200,
+	SimpleItem	aftaeguw_3980,
+	SimpleItem	aftaeguw_3981,
+	SimpleItem	aftaeguw_3982,
+	SimpleItem	aftaeguw_3983,
+	SimpleItem	aftaeguw_3984,
+	SimpleItem	aftaeguw_3b82,
+	SimpleItem	aftaeguw_3b83,
+	SimpleItem	aftaeguw_3b84,
+	SimpleItem	aftaeguw_3b85,
+	SimpleItem	aftaeguw_3b86,
+	SimpleItem	aftaeguw_3b87,
+	BattleField
+	{
+		FileName	FIL_1_AFTAEGUW=aftaeguw.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AfBlTaeguW,
+		ItemGroup
+		{
+				SimpleItem	aftaeguw_1200=
+				{
+					Posn
+					{
+						Abs
+						{	X	77164429,
+							Z	42497289
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	aftaeguw_3980=
+				{
+					Posn
+					{
+						Abs
+						{	X	77183488,
+							Z	42523136
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	aftaeguw_3981=
+				{
+					Posn
+					{
+						Abs
+						{	X	77131008,
+							Z	42465024
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDXL
+				},
+				SimpleItem	aftaeguw_3982=
+				{
+					Posn
+					{
+						Abs
+						{	X	77140224,
+							Z	42469376
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		AFDS
+				},
+				SimpleItem	aftaeguw_3983=
+				{
+					Posn
+					{
+						Abs
+						{	X	77164032,
+							Z	42514432
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDL
+				},
+				SimpleItem	aftaeguw_3984=
+				{
+					Posn
+					{
+						Abs
+						{	X	77149274,
+							Z	42490326
+						}
+					},
+					UIDBand		AfSupplyBAND,
+					Shape		MDM
+				},
+				SimpleItem	aftaeguw_3b82=
+				{
+					Posn
+					{
+						Abs
+						{	X	77157376,
+							Z	42494976
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		CTS
+				},
+				SimpleItem	aftaeguw_3b83=
+				{
+					Posn
+					{
+						Abs
+						{	X	77177856,
+							Z	42519808
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	aftaeguw_3b84=
+				{
+					Posn
+					{
+						Abs
+						{	X	77184256,
+							Z	42536192
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	aftaeguw_3b85=
+				{
+					Posn
+					{
+						Abs
+						{	X	77179904,
+							Z	42529792
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	aftaeguw_3b86=
+				{
+					Posn
+					{
+						Abs
+						{	X	77172224,
+							Z	42511872
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				},
+				SimpleItem	aftaeguw_3b87=
+				{
+					Posn
+					{
+						Abs
+						{	X	77154598,
+							Z	42495241
+						}
+					},
+					UIDBand		AfRunwayBAND,
+					Shape		OPPSS
+				}
+		}	}
+	};

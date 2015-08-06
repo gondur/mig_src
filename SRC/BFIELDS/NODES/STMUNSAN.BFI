@@ -1,0 +1,180 @@
+	BattleField
+	{
+		FileName	FIL_1_StMunsan=Munsan.BF,
+		Title	{},
+		Comment	{},
+
+	ItemGroup
+	{	Target	UID_StMunsan,
+		ItemGroup
+		{
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61347665,
+							Z	65022918
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V4NWSE
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61330461,
+							Z	65045036
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V3NESW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61432042,
+							Z	65194132
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61610629,
+							Z	65035206
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		V2EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61437952,
+							Z	64805888
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		HUT
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61538304,
+							Z	64711680
+						}
+					},
+					UIDBand		MissileBAND,
+					Shape		TPM15
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61533624,
+							Z	64689502
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61549189,
+							Z	64663288
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61489152,
+							Z	64689152
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61509632,
+							Z	64688128
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61493248,
+							Z	64671744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61529528,
+							Z	64666564
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61611008,
+							Z	65095680
+						}
+					},
+					UIDBand		GreenBoatBAND,
+					Shape		FISHR
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	61650944,
+							Z	65067008
+						}
+					},
+					UIDBand		GreenBoatBAND,
+					Shape		SAMPAN
+				}
+		}	}
+	};

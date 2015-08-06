@@ -1,0 +1,355 @@
+	SimpleItem	ICHON_040b,
+	SimpleItem	ICHON_040d,
+	SimpleItem	ICHON_0412,
+	SimpleItem	ICHON_0414,
+	SimpleItem	ICHON_0416,
+	SimpleItem	ICHON_041b,
+	SimpleItem	ICHON_041d,
+	SimpleItem	ICHON_041f,
+	SimpleItem	ICHON_0421,
+	SimpleItem	ICHON_0429,
+	SimpleItem	ICHON_042c,
+	SimpleItem	ICHON_042f,
+	SimpleItem	ICHON_1803,
+	SimpleItem	ICHON_2004,
+	SimpleItem	ICHON_2005,
+	SimpleItem	ICHON_2006,
+	SimpleItem	ICHON_2007,
+	SimpleItem	ICHON_2008,
+	SimpleItem	ICHON_200a,
+	SimpleItem	ICHON_200b,
+	SimpleItem	ICHON_200c,
+	SimpleItem	ICHON_200d,
+	SimpleItem	ICHON_2200,
+	SimpleItem	ICHON_2201,
+	SimpleItem	ICHON_2202,
+	SimpleItem	ICHON_2203,
+	BattleField
+	{
+		FileName	FIL_1_ICHON=ICHON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StIchon,
+		ItemGroup
+		{
+				SimpleItem	ICHON_040b=
+				{
+					Posn
+					{
+						Abs
+						{	X	62441472,
+							Z	71766016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	ICHON_040d=
+				{
+					Posn
+					{
+						Abs
+						{	X	62458880,
+							Z	71766016
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	ICHON_0412=
+				{
+					Posn
+					{
+						Abs
+						{	X	62566400,
+							Z	71716864
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	ICHON_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	62582784,
+							Z	71661568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	ICHON_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	62531584,
+							Z	71660544
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST2
+				},
+				SimpleItem	ICHON_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	62399488,
+							Z	71651328
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	ICHON_041d=
+				{
+					Posn
+					{
+						Abs
+						{	X	62371840,
+							Z	71701504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	ICHON_041f=
+				{
+					Posn
+					{
+						Abs
+						{	X	62364672,
+							Z	71735296
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	ICHON_0421=
+				{
+					Posn
+					{
+						Abs
+						{	X	62364672,
+							Z	71770112
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD2
+				},
+				SimpleItem	ICHON_0429=
+				{
+					Posn
+					{
+						Abs
+						{	X	62431232,
+							Z	71740416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	ICHON_042c=
+				{
+					Posn
+					{
+						Abs
+						{	X	62439424,
+							Z	71740416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	ICHON_042f=
+				{
+					Posn
+					{
+						Abs
+						{	X	62469120,
+							Z	71724032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		CHTRCK
+				},
+				SimpleItem	ICHON_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	62435328,
+							Z	71797760
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	ICHON_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	62486528,
+							Z	71794688
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	ICHON_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	62490624,
+							Z	71749632
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	ICHON_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	62517248,
+							Z	71710720
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	ICHON_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	62412800,
+							Z	71764992
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	ICHON_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	62395392,
+							Z	71720960
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	ICHON_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	62447616,
+							Z	71715840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	ICHON_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	62488576,
+							Z	71702528
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				}
+		}	},
+	ItemGroup
+	{	Target	UID_SdRdIchon,
+		ItemGroup
+		{
+				SimpleItem	ICHON_1803=
+				{
+					Posn
+					{
+						Abs
+						{	X	62444544,
+							Z	71662592
+						}
+					},
+					UIDBand		RedAAASiteBAND,
+					Shape		SAAA2
+				},
+				SimpleItem	ICHON_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	62409728,
+							Z	71687168
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		SDISP3
+				},
+				SimpleItem	ICHON_2200=
+				{
+					Posn
+					{
+						Abs
+						{	X	62447616,
+							Z	71685120
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		WF4M
+				},
+				SimpleItem	ICHON_2201=
+				{
+					Posn
+					{
+						Abs
+						{	X	62532608,
+							Z	71689216
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	ICHON_2202=
+				{
+					Posn
+					{
+						Abs
+						{	X	62553088,
+							Z	71692288
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP2
+				},
+				SimpleItem	ICHON_2203=
+				{
+					Posn
+					{
+						Abs
+						{	X	62568448,
+							Z	71696384
+						}
+					},
+					UIDBand		AmberSupplyBAND,
+					Shape		SDISP1
+				}
+		}	}	
+	};

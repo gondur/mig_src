@@ -1,0 +1,272 @@
+	SimpleItem	HOEYANG_0407,
+	SimpleItem	HOEYANG_040b,
+	SimpleItem	HOEYANG_2001,
+	SimpleItem	HOEYANG_2002,
+	SimpleItem	HOEYANG_2003,
+	SimpleItem	HOEYANG_2004,
+	SimpleItem	HOEYANG_2005,
+	SimpleItem	HOEYANG_2006,
+	SimpleItem	HOEYANG_2007,
+	SimpleItem	HOEYANG_2008,
+	SimpleItem	HOEYANG_2009,
+	SimpleItem	HOEYANG_200a,
+	SimpleItem	HOEYANG_200b,
+	SimpleItem	HOEYANG_200c,
+	SimpleItem	HOEYANG_200d,
+	SimpleItem	HOEYANG_200e,
+	SimpleItem	HOEYANG_200f,
+	SimpleItem	HOEYANG_2010,
+	SimpleItem	HOEYANG_2011,
+	SimpleItem	HOEYANG_2012,
+	BattleField
+	{
+		FileName	FIL_1_HOEYANG=HOEYANG.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StHoeyang,
+		ItemGroup
+		{
+				SimpleItem	HOEYANG_0407=
+				{
+					Posn
+					{
+						Abs
+						{	X	68630528,
+							Z	74122240
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HOEYANG_040b=
+				{
+					Posn
+					{
+						Abs
+						{	X	68558848,
+							Z	74162176
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3EW
+				},
+				SimpleItem	HOEYANG_2001=
+				{
+					Posn
+					{
+						Abs
+						{	X	68723712,
+							Z	73989120
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	HOEYANG_2002=
+				{
+					Posn
+					{
+						Abs
+						{	X	68688896,
+							Z	74015744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_2003=
+				{
+					Posn
+					{
+						Abs
+						{	X	68713472,
+							Z	74044416
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	HOEYANG_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	68687872,
+							Z	74078208
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_2005=
+				{
+					Posn
+					{
+						Abs
+						{	X	68768768,
+							Z	74099712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	68811776,
+							Z	74121216
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	HOEYANG_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	68782080,
+							Z	74182656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	68777984,
+							Z	74130432
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	HOEYANG_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	68740096,
+							Z	74283008
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	HOEYANG_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	68656128,
+							Z	74182656
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	68685824,
+							Z	74275840
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	68701184,
+							Z	74237952
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	HOEYANG_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	68623360,
+							Z	74261504
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	68658176,
+							Z	74223616
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_200f=
+				{
+					Posn
+					{
+						Abs
+						{	X	68490240,
+							Z	74264576
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_2010=
+				{
+					Posn
+					{
+						Abs
+						{	X	68426752,
+							Z	74242048
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_2011=
+				{
+					Posn
+					{
+						Abs
+						{	X	68500480,
+							Z	74188800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	HOEYANG_2012=
+				{
+					Posn
+					{
+						Abs
+						{	X	68466688,
+							Z	74222592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				}
+		}	}
+	};

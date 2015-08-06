@@ -1,0 +1,259 @@
+	SimpleItem	SONGNAM_0403,
+	SimpleItem	SONGNAM_0404,
+	SimpleItem	SONGNAM_041a,
+	SimpleItem	SONGNAM_041e,
+	SimpleItem	SONGNAM_0420,
+	SimpleItem	SONGNAM_0424,
+	SimpleItem	SONGNAM_0427,
+	SimpleItem	SONGNAM_042a,
+	SimpleItem	SONGNAM_042c,
+	SimpleItem	SONGNAM_2004,
+	SimpleItem	SONGNAM_2006,
+	SimpleItem	SONGNAM_2007,
+	SimpleItem	SONGNAM_2008,
+	SimpleItem	SONGNAM_2009,
+	SimpleItem	SONGNAM_200a,
+	SimpleItem	SONGNAM_200b,
+	SimpleItem	SONGNAM_200c,
+	SimpleItem	SONGNAM_200d,
+	SimpleItem	SONGNAM_200e,
+	BattleField
+	{
+		FileName	FIL_1_SONGNAM=SONGNAM.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_StSongnam,
+		ItemGroup
+		{
+				SimpleItem	SONGNAM_0403=
+				{
+					Posn
+					{
+						Abs
+						{	X	64724992,
+							Z	59915264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SONGNAM_0404=
+				{
+					Posn
+					{
+						Abs
+						{	X	64753664,
+							Z	59956224
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	SONGNAM_041a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64588800,
+							Z	60049408
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SONGNAM_041e=
+				{
+					Posn
+					{
+						Abs
+						{	X	64720896,
+							Z	60052480
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SONGNAM_0420=
+				{
+					Posn
+					{
+						Abs
+						{	X	64740352,
+							Z	60043264
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	SONGNAM_0424=
+				{
+					Posn
+					{
+						Abs
+						{	X	64649216,
+							Z	60063744
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD3
+				},
+				SimpleItem	SONGNAM_0427=
+				{
+					Posn
+					{
+						Abs
+						{	X	64648192,
+							Z	59977728
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SONGNAM_042a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64774144,
+							Z	59932672
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		FOREST1
+				},
+				SimpleItem	SONGNAM_042c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64794624,
+							Z	60013568
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		WOOD1
+				},
+				SimpleItem	SONGNAM_2004=
+				{
+					Posn
+					{
+						Abs
+						{	X	64596992,
+							Z	60019712
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SONGNAM_2006=
+				{
+					Posn
+					{
+						Abs
+						{	X	64619520,
+							Z	59999232
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SONGNAM_2007=
+				{
+					Posn
+					{
+						Abs
+						{	X	64658432,
+							Z	60014592
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SONGNAM_2008=
+				{
+					Posn
+					{
+						Abs
+						{	X	64709632,
+							Z	60009472
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN2
+				},
+				SimpleItem	SONGNAM_2009=
+				{
+					Posn
+					{
+						Abs
+						{	X	64687104,
+							Z	60040192
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SONGNAM_200a=
+				{
+					Posn
+					{
+						Abs
+						{	X	64691200,
+							Z	59979776
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SONGNAM_200b=
+				{
+					Posn
+					{
+						Abs
+						{	X	64777216,
+							Z	59980800
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN1
+				},
+				SimpleItem	SONGNAM_200c=
+				{
+					Posn
+					{
+						Abs
+						{	X	64735232,
+							Z	59991040
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN4
+				},
+				SimpleItem	SONGNAM_200d=
+				{
+					Posn
+					{
+						Abs
+						{	X	64756736,
+							Z	60017664
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				},
+				SimpleItem	SONGNAM_200e=
+				{
+					Posn
+					{
+						Abs
+						{	X	64721920,
+							Z	59948032
+						}
+					},
+					UIDBand		AmberCivilianBAND,
+					Shape		TWN3
+				}
+		}	}
+	};
